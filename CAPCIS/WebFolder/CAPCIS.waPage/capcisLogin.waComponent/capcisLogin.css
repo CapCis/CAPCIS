@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button1 {
+	 z-index: 5;
+	 width: 185px;
+	 height: 30px;
+	 top: 117px;
+	 left: 71px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label2 {
 	 z-index: 4;
 	 width: 52px;

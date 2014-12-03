@@ -11,14 +11,27 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-
+		
+		 //(data.userData.myTestValue);
 	// @region namespaceDeclaration// @startlock
+	var button1 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('textField2')).setValue(data.userData.myTestData);
+	};// @lock
+
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
+	//$$(getHtmlId('textField2')).setValue(data.myData);
+	//var myT = data.myData;
+	
+
+
 
 	};// @lock
 
