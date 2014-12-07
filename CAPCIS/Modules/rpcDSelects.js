@@ -4,28 +4,16 @@
 	
 	For more information, refer to http://doc.wakanda.org/Wakanda0.Beta/help/Title/en/page1516.html
 */
-exports.helloWorld = function helloWorld () {
-	return ('Hello world');
-	
-};
+//include("./Modules/rpcDSelects.js");
+//include("./Modules/serverUtilities.js");
 
 exports.getSelect = function getSelect(array)
 {
-	var selectStatement = dSelectQuery.buildQuery(array);
-	/*
-	var dbConnect = require('waf-sql');
-	var param ={
-		hostname: '68.106.70.68',
-		user: 'teamcapcis2',
-		password: 'teamcapcis2',
-		database: 'capcis',
-		port: '3306',
-		ssl: false,
-		dbtype: 'mysql'
-	}
-	var connection = dbconnect.connect(param);
-	*/
-	var connection = serverUtilities.getDBConnection();
+	var serverUtil = require('serverUtilities');
+	var dBQueryBuilder = require('dSelectsQuery');
+	var selectStatement = dBQueryBuilder.buildQuery(array);
+	
+	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
 	myResults = results.getAllRows();
 	connection.close;

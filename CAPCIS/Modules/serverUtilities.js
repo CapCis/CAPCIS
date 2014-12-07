@@ -3,22 +3,17 @@
 
 	For more information, refer to http://doc.wakanda.org/Wakanda Studio0.Beta/help/Title/en/page3355.html
 */
-exports.helloWorld = function helloWorld () {
-	return ('Hello world');
-};
-
-getDBConnection()
-{
+exports.getDBConnection = function getDBConnection(x){
 	var dbConnect = require('waf-sql');
 	var param ={
 		hostname: '68.106.70.68',
 		user: 'teamcapcis2',
 		password: 'teamcapcis2',
 		database: 'capcis',
-		port: '3306',
+		port: 3306,
 		ssl: false,
-		dbtype: 'mysql'
+		dbType: 'mysql'
 	}
-	var connection = dbconnect.connect(param);
+	var connection = dbConnect.connect(param);
 	return connection;
 }
