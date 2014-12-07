@@ -10,7 +10,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		$$('component1_textField1').setValue('my username');
+		$$('component1_textField1').setValue('my username'); 			//how to use an element on the page
 	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
@@ -25,10 +25,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 								
 		//$$('component1').loadComponent({path:'/CAPCIS.waPage/capcisLogin.waComponent',userData: {myData: 'mysentdata'}}); 		//loads webComponent with data, same as below
 		
-		WAF.loadComponent ( {
-		id: 	'component1',
-		path: 	'/CAPCIS.waPage/capcisLogin.waComponent',
-		userData: 	{myTestData: 'I made it'}
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	'component1', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/capcisLogin.waComponent', 				//designate the webcomponent to load
+		userData: 	{myTestData: 'I made it',mySecondData: 'I also made it}							//data that you want to send to the webcomponent
 		});
 	};// @lock
 
