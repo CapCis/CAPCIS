@@ -8,3 +8,27 @@ exports.helloWorld = function helloWorld () {
 	return ('Hello world');
 	
 };
+
+exports.getSelect = function getSelect(array)
+{
+	var selectStatement = dSelectQuery.buildQuery(array);
+	/*
+	var dbConnect = require('waf-sql');
+	var param ={
+		hostname: '68.106.70.68',
+		user: 'teamcapcis2',
+		password: 'teamcapcis2',
+		database: 'capcis',
+		port: '3306',
+		ssl: false,
+		dbtype: 'mysql'
+	}
+	var connection = dbconnect.connect(param);
+	*/
+	var connection = serverUtilities.getDBConnection();
+	var result = connection.execute(selectStatement);
+	myResults = results.getAllRows();
+	connection.close;
+	return myResults;
+	
+};

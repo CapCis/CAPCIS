@@ -17,3 +17,5 @@ exports.getHash = function getHash(user, pass)
       var HA1 = directory.computeHA1(user, pass);
       return HA1;
 };
+
+
