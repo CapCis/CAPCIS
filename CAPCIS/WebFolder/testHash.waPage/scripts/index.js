@@ -12,8 +12,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		$$("richText2").setValue($$("textUser").getValue());
 		var user = $$("textUser").getValue();
 		var pass = $$("textPass").getValue();
-		var hash = rpcUtilities.getHash(user,pass);
-		$$("hashOut").setValue(hash);
+		var hash = CryptoJS.SHA3("Message");//rpcUtilities.getHash(user,pass);
+		$$("hashOut").setValue(hash.toString());
+		alert(hash);
+
 	};// @lock
 
 // @region eventManager// @startlock
