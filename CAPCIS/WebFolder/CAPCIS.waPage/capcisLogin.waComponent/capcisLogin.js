@@ -21,7 +21,12 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('textField2')).setValue(data.userData.myTestData);
+		
+        var passHash = CryptoJS.SHA3($$("tfPassword").getValue());   //Hash password on client
+		var myToken = rpcDSelects.getSelect(myArray = [passHash,0,0,$$("tfUserName").getValue()]);
+		
+		if (myToken === 
+		
 	};// @lock
 
 	// @region eventManager// @startlock
