@@ -23,7 +23,7 @@ function constructor (id) {
 	{// @endlock
 		var myPassword = $$(getHtmlId("tfPassword")).getValue();
         var passHash = CryptoJS.SHA3(myPassword).toString();   //Hash password on client
-		dsLogin = rpcDSelects.getSelect(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);
+		dsLogin = rpcGetToken.getToken(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);
 		sources.dsLogin.sync();
 		
 		var myToken = rpcDSelects.getSelect(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);

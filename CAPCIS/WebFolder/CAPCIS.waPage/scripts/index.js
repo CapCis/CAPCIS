@@ -28,7 +28,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	'component1', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/capcisLogin.waComponent', 				//designate the webcomponent to load
-		userData: 	{myTestData: 'I made it',mySecondData: 'I also made it}					
+		userData: 	{myTestData: 'I made it',mySecondData: 'I also made it'}					
 		});
 	};// @lock
 

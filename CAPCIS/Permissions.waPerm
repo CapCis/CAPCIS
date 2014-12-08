@@ -3,4 +3,5 @@
 	<allow type="module" resource="rpcDSelects" action="executeFromClient"/>
 	<allow type="module" resource="rpcGetToken" action="executeFromClient"/>
 	<allow type="module" resource="rpcDUpdate" action="executeFromClient"/>
+	<allow type="module" resource="rpcDInsert" action="executeFromClient"/>
 </permissions>
