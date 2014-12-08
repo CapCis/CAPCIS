@@ -10,9 +10,14 @@ exports.buildQuery = function buildQuery(array)
 	var answer; 
 	switch(array[1]){
 		case 0:
-			answer = 'SELECT UserName, UserPassword FROM useraccounts WHERE UserPassword = "' + array[0] + '" AND UserName = "' + array[3] +'"';
-			break;
-		case 1:
+			switch(array[2]){
+				case 0: answer = 'SELECT UserName, UserPassword, UserAccountsID FROM useraccounts WHERE UserPassword = "' + array[0] + '" AND UserName = "' + array[3] +'"';
+						break;
+				case 1: answer = 'SELECT * FROM authenticationtokens WHERE Tokens = "' + array[0] + '"';
+						break;	
+			}
+			
+		case 1:			
 			break;
 		case 2:
 			break;
