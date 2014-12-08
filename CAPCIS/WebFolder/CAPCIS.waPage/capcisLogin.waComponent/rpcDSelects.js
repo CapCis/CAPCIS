@@ -11,23 +11,12 @@ exports.getSelect = function getSelect(array)
 {
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
-	var checkToken = dbQueryBuilder.buildQuery(token = [array[0],0,1,]);
-	var tokenAnswer = connection.execute(selectStatement);
-	var myResults = result.getAllRows();
-	if (tokenAnswer > 0) {
-		var selectStatement = dBQueryBuilder.buildQuery(array);	
-		var connection = serverUtil.getDBConnection();
-		var result = connection.execute(selectStatement);
-		myResults = result.getAllRows();
-		connection.close;
-		return myResults;
-	}
-	else {		
-		return myResults = ["err","Invalid Token"];
-	}
-		
+	var selectStatement = dBQueryBuilder.buildQuery(array);
 	
-	
-	
+	var connection = serverUtil.getDBConnection();
+	var result = connection.execute(selectStatement);
+	myResults = result.getAllRows();
+	connection.close;
+	return myResults;
 	
 };
