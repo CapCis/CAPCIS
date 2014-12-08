@@ -9,7 +9,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		rpcDSelects.getSelect(array=[19,15,5]);
+		rpcDSelects.getSelect(array=["jennifer",0,5, "TimLevey"]);
 	};// @lock
 
 // @region eventManager// @startlock

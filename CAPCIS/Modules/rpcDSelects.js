@@ -15,7 +15,7 @@ exports.getSelect = function getSelect(array)
 	
 	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
-	myResults = results.getAllRows();
+	myResults = result.getAllRows();
 	connection.close;
 	return myResults;
 	
