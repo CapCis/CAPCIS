@@ -21,12 +21,12 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+		debugger;
 		var myPassword = $$(getHtmlId("tfPassword")).getValue();
-        var passHash = CryptoJS.SHA3(myPassword).toString();   //Hash password on client
-		dsLogin = rpcGetToken.getToken(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);
-		sources.dsLogin.sync();
-		
-		var myToken = rpcDSelects.getSelect(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);
+        var passHash = CryptoJS.SHA3(myPassword).toString();   //Hash password on client        
+		dsLogin = rpcGetToken.getToken(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);		
+		sources.dsLogin.sync();	
+		//var myToken = rpcDSelects.getSelect(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);
 		
 		//if (myToken === 
 		

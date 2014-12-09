@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html><section data-group="[]">
     <meta name="generator" content="Wakanda GUIDesigner"/>
     <meta name="WAF.catalog" content=""/>
-    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="array" data-source="{id}dsLogin" data-scope="local" data-lib="WAF" data-id="{id}dsLogin" data-dataType="string" data-autoLoad="true" data-attributes="UserName:string,UserPassword:string" content="dsLogin"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="array" data-source="dsLogin" data-scope="global" data-lib="WAF" data-id="dsLogin" data-dataType="string" data-autoLoad="true" data-attributes="myToken:number,UserAccountsID:number" content="dsLogin"/>
     <meta name="WAF.config.rpc.file" content="/rpc-proxy/rpcDSelects?namespace=rpcDSelects"/>
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
 
@@ -10,4 +10,5 @@
 		<input type="text" id="{id}tfPassword" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Password" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-textField"/>
 		<label id="{id}label2" for="{id}tfPassword" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Password</label>
 		<button id="{id}button1" data-type="button" data-text="Log In" data-target="_blank" data-lib="WAF" data-action="simple" class="waf-widget waf-button"></button>
-				</section>
+					<div id="{id}dataGrid1" data-type="dataGrid" data-lib="WAF" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'myToken','colID':'myToken','width':'90','title':'myToken'},{'sourceAttID':'UserAccountsID','colID':'UserAccountsID','width':'90','title':'UserAccountsID'}]" data-constraint-left="true" data-constraint-top="true" data-binding="dsLogin"></div>
+	</section>

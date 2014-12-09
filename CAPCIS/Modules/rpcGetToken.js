@@ -22,8 +22,8 @@ exports.getToken = function getToken(array)
 		var connection2 = serverUtil.getDBConnection();
 		var result2 = connection.execute(insertStatement);
 		connection2.close;
-		var myToken = Math.floor((Math.random() *1000000000) +1);
-		var finalData = [myToken, myResults[0].UserAccountsID];
+		var myTokenRan = Math.floor((Math.random() *1000000000) +1);
+		var finalData = [{myToken: myTokenRan, UserAccountsID: myResults[0].UserAccountsID}];
 		return finalData;
 	}
 	else
