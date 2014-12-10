@@ -9,7 +9,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	genHash.click = function genHash_click (event)// @startlock
 	{// @endlock
-		$$("richText2").setValue($$("textUser").getValue());
+		debugger;		
 		var user = $$("textUser").getValue();
 		var pass = $$("textPass").getValue();
 		var hash = CryptoJS.SHA3("Message");//rpcUtilities.getHash(user,pass);
