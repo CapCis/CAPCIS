@@ -10,7 +10,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		$$('component1_textField1').setValue('my username'); 			//how to use an element on the page
+		
 	};// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock

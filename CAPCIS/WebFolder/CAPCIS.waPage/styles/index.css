@@ -3,23 +3,12 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#label1 {
-	 z-index: 5;
-	 width: 29px;
-	 height: 13px;
-	 top: 78px;
-	 left: 465px;
-	
-	 position: absolute;
-	 
-}
-
-#textField1 {
-	 z-index: 5;
-	 width: 130px;
-	 height: 22px;
-	 top: 74px;
-	 left: 499px;
+#component2 {
+	 z-index: 6;
+	 width: 166px;
+	 height: 791px;
+	 top: 67px;
+	 left: 2px;
 	
 	 position: absolute;
 	 
@@ -29,8 +18,8 @@
 	 z-index: 1;
 	 width: 201px;
 	 height: 50px;
-	 top: 59px;
-	 left: 67px;
+	 top: 114px;
+	 left: 407px;
 	
 	 position: absolute;
 	 
