@@ -22,14 +22,29 @@ function constructor (id) {
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
 		debugger;
+		$$(getHtmlId("rtMessage")).setValue("");
 		var myPassword = $$(getHtmlId("tfPassword")).getValue();
         var passHash = CryptoJS.SHA3(myPassword).toString();   //Hash password on client        
 		dsLogin = rpcGetToken.getToken(myArray = [passHash,0,0,$$(getHtmlId("tfUserName")).getValue()]);		
 		sources.dsLogin.sync();	
 		
 		
-		//if (myToken === 
-		
+		if (dsLogin.length > 0)
+		{
+			if(dsLogin[0] == "err")
+			{
+				$$(getHtmlId("rtMessage")).setValue("Invalid User Name Or Password");
+			}
+			else 
+			{
+				//close this popup
+				//open main forms
+			}
+		}
+		else
+		{
+			$$(getHtmlId("rtMessage")).setValue("Invalid User Name Or Password");
+		}
 	};// @lock
 
 	// @region eventManager// @startlock
