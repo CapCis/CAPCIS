@@ -3,12 +3,88 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#button1 {
-	 z-index: 1;
+#component1 {
+	 z-index: 7;
+	 width: 791px;
+	 height: 487px;
+	 top: 47px;
+	 left: 47px;
+	
+	 position: absolute;
+	 
+}
+
+#button2 {
+	 z-index: 3;
 	 width: 92px;
 	 height: 22px;
-	 top: 273px;
-	 left: 275px;
+	 top: -1px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#richText1 {
+	 z-index: 1;
+	 width: 64px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem1 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuBar1 > .waf-menuItem {
+	 margin-bottom: 0px;
+	 
+}
+
+#menuBar1 > .waf-menuItem:not(.waf-menuItem-last) {
+	 margin-right: 5px;
+	 
+}
+
+#menuBar1 {
+	 z-index: 3;
+	 height: 23px;
+	 top: 5px;
+	 left: 5px;
+	 right: -322px;
+	
+	 position: absolute;
+	 
+}
+
+#tabView1 {
+	 z-index: 2;
+	 width: 813px;
+	 height: 542px;
+	 top: 16px;
+	 left: 31px;
+	
+	 position: absolute;
+	 
+}
+
+#tab1 {
+	 z-index: 4;
+	 width: 803px;
+	 top: 28px;
+	 bottom: 5px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
