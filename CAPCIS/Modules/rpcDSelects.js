@@ -12,8 +12,10 @@ exports.getSelect = function getSelect(array)
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	var checkToken = dbQueryBuilder.buildQuery(token = [array[0],0,1,]);
-	var tokenAnswer = connection.execute(selectStatement);
-	var myResults = result.getAllRows();
+	var connection = serverUtil.getDBConnection();
+	var tokenAnswer = connection.execute(checkToken);
+	var myResults = tokenAnswer.getAllRows();
+	connection.close;
 	if (tokenAnswer > 0) {
 		var selectStatement = dBQueryBuilder.buildQuery(array);	
 		var connection = serverUtil.getDBConnection();
