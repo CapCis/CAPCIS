@@ -10,8 +10,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
 		debugger;
-		var ClientPicture2 = ds.clientPicture2.getMySQLPictures();
-		sources.clientPicture2.sync();
+		ds.Clientpictures.getclientpictures();
+		sources.clientpictures.sync();
 	};// @lock
 
 // @region eventManager// @startlock

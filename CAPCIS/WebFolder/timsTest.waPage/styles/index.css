@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#dataGrid1 {
+	 z-index: 6;
+	 width: 300px;
+	 height: 300px;
+	 top: 160px;
+	 left: 175px;
+	
+	 position: absolute;
+	 
+}
+
 #button1 {
 	 z-index: 4;
 	 width: 278px;
@@ -18,8 +29,8 @@
 	 z-index: 3;
 	 width: 244px;
 	 height: 213px;
-	 top: 183px;
-	 left: 684px;
+	 top: 208px;
+	 left: 567px;
 	
 	 position: absolute;
 	 

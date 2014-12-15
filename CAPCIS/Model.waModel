@@ -2,13 +2,63 @@
 	"toJSON": true,
 	"extraProperties": {
 		"version": "2",
-		"classes": {},
+		"classes": {
+			"Clientpictures": {
+				"panelColor": "#76923C",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 147,
+						"Y": 56
+					}
+				}
+			}
+		},
 		"model": {
 			"scriptMode": "manual",
 			"workspaceLeft": 0,
 			"workspaceTop": 0,
-			"lastScriptLocation": {}
+			"lastScriptLocation": {
+				"Clientpictures": {
+					"method": "Clientpictures/Clientpictures-methods.js"
+				}
+			}
 		}
 	},
-	"dataClasses": []
+	"dataClasses": [
+		{
+			"name": "Clientpictures",
+			"className": "Clientpictures",
+			"collectionName": "ClientpicturesCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ClientPictureID",
+					"kind": "storage",
+					"matchColumn": "ID",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "ClientPicture",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
+				}
+			],
+			"methods": [
+				{
+					"name": "getclientpictures",
+					"applyTo": "dataClass",
+					"scope": "publicOnServer",
+					"from": "$mainModel.Clientpictures.methods.getclientpictures",
+					"userDefined": true
+				}
+			]
+		}
+	]
 }

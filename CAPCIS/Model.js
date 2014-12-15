@@ -1,2 +1,2 @@
 ﻿
-include("./Model/clientPicture/clientPicture-methods.js");
+include("./Model/Clientpictures/Clientpictures-methods.js");
