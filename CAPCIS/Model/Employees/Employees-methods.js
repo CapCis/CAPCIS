@@ -10,7 +10,7 @@ model.Employees.methods.getEmployees = function(fristName) {
 		port: 3306,
 		SSL: false,
 		dbType: 'mysql'
-	}
+	};
 	var connection = dbConnect.connect(param);
 	var result = connection.execute('SELECT * FROM Employees');
 	

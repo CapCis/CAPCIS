@@ -2,63 +2,13 @@
 	"toJSON": true,
 	"extraProperties": {
 		"version": "2",
-		"classes": {
-			"ClientPicture": {
-				"panelColor": "#996699",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 25,
-						"Y": 20
-					}
-				}
-			}
-		},
+		"classes": {},
 		"model": {
 			"scriptMode": "manual",
 			"workspaceLeft": 0,
 			"workspaceTop": 0,
-			"lastScriptLocation": {
-				"ClientPicture": {
-					"method": "Clientpicture/Clientpicture-methods.js"
-				}
-			}
+			"lastScriptLocation": {}
 		}
 	},
-	"dataClasses": [
-		{
-			"name": "Clientpicture",
-			"className": "ClientPicture",
-			"collectionName": "ClientPictureCollection",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ClientPictureID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				},
-				{
-					"name": "ClientPicture",
-					"kind": "storage",
-					"scope": "public",
-					"type": "image"
-				}
-			],
-			"methods": [
-				{
-					"name": "getMySQLPictures",
-					"applyTo": "dataClass",
-					"scope": "public",
-					"from": "model.ClientPicture.methods.getMySQLPictures",
-					"userDefined": true
-				}
-			]
-		}
-	],
-	"type": []
+	"dataClasses": []
 }
