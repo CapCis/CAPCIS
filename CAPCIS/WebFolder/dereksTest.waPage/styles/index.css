@@ -3,6 +3,11 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#menuItem1.waf-state-selected {
+	 background-color: rgb(158, 44, 44);
+	 
+}
+
 #component1 {
 	 z-index: 7;
 	 width: 791px;
