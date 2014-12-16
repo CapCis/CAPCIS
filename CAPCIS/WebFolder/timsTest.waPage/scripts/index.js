@@ -11,7 +11,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		debugger;		
 		ds.Clientpictures.getclientpictures();				
-		sources.clientpictures.all();		
+		source.clientpictures.orderBy("ClientPicturesID desc");
+		var sec;
+		//sources.clientpictures.all();		
 	};// @lock
 
 // @region eventManager// @startlock
