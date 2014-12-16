@@ -4,9 +4,11 @@ model.Clientpictures.methods.getclientpictures = function() {
 	var serverUtil = require('serverUtilities');
 	var connection = serverUtil.getDBConnection();
 	
-	var dbQuery = 'SELECT ClientPictureID,ClientPicture FROM clientpicture WHERE ClientPictureID < 10';
-	var result = connection.execute(dbQuery);
+	var deleteOld = ds.Clientpictures.query("ClientPictureID < :1",10);
+	deleteOld.remove();
 	
+	var dbQuery = 'SELECT ClientPictureID,ClientPicture FROM clientpicture WHERE ClientPictureID < 10';
+	var result = connection.execute(dbQuery);	
 	while (result.hasNext())
 	{
 		var thisRow = result.getNextRow();
@@ -16,5 +18,6 @@ model.Clientpictures.methods.getclientpictures = function() {
 		clientPic.save();
 		
 	}
+	connection.close();
 };
 model.Clientpictures.methods.getclientpictures.scope = 'public';
