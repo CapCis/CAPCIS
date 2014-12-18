@@ -18,8 +18,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 		function handleOnReturnSuccess(event)
 			{
-				source.clientpictures.orderBy("ClientPicturesID desc");
-				var myEvent = event
+				if (event.result == "success") 
+				{
+					source.clientpictures.orderBy("ClientPicturesID desc");
+				}
+				else
+				{
+					alert(event.result);	
+				}
+				
 			}
 		function handleOnReturnError(event)
 			{

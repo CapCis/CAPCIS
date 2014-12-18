@@ -3,12 +3,13 @@
 model.Clientpictures.methods.getclientpictures = function(methodResponse) {
 	try
 	{
-		var serverUtil = require('serverUtilities');
-		var connection = serverUtil.getDBConnection();
+		var serverUtil = require('serverUtilities'); 																//get connection to db			
+		var connection = serverUtil.getDBConnection(); 																//open connection to db
 	}
 	catch(err)
 	{
-		return("error code 9000, could not connect to database");	
+		connection.close();
+		return("error code 9000, could not connect to database");
 	}
 	
 	try
@@ -21,26 +22,25 @@ model.Clientpictures.methods.getclientpictures = function(methodResponse) {
 		return("error code 9001, data error")	
 	}
 	
-	//try
-	//{
-		var dbQuery = 'SELECT ClientPictureID,ClientPicture FROM clientpicture WHERE ClientPictureID < 10';
+	try
+	{
+		var dbQuery = 'SELECT ClientPictureID,ClientPicture FROM clientpicture WHERE ClientPictureID < 10'; 		//build query for client pictures
 		var result = connection.execute(dbQuery);	
-		while (result.hasaNext())
+		while (result.hasNext()) 																					//loop threw all records(entities)
 		{
-			var thisRow = result.getNextRow();
-			var clientPic = ds.Clientpictures.createEntity();
-			clientPic.ClientPictureID = thisRow.ClientPictureID;
+			var thisRow = result.getNextRow(); 																		//get next record
+			var clientPic = ds.Clientpictures.createEntity(); 														//create the new record in clientPic
+			clientPic.ClientPictureID = thisRow.ClientPictureID; 													
 			clientPic.ClientPicture = thisRow.ClientPicture;
-			clientPic.save();		
+			clientPic.save();																						//save the reocrd to actual disk
 		}
 		connection.close();
-		methodResponse = "success";
-		return(methodResponse);
-	//}
-	//catch(err)
-	//{
+		return("success");
+	}
+	catch(err)
+	{
 		var parsedErr = err.message.toString();
 		return("error code 9002, picture error");
-	//}
+	}
 };
 model.Clientpictures.methods.getclientpictures.scope = 'public';
