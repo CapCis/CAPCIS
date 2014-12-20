@@ -21,7 +21,7 @@ exports.getToken = function getToken(array)
 		connection.close; 												//close the Connection to the Database
 		if(myResults.length > 0) 										//check to see if any record was returned for an authenticated user
 		{
-			var insertStatement = dBQueryBuilder2.buildQuery(LoginAttempt = [0,0,0,array[3],myResults[0].UserAccountsID,1]); 		//If authenticated insert the login attempt with login data
+			var insertStatement = dBQueryBuilder2.buildQuery(loginAttempt = [0,0,0,array[3],myResults[0].UserAccountsID,1]); 		//If authenticated insert the login attempt with login data
 			var connection2 = serverUtil.getDBConnection();
 			var result2 = connection.execute(insertStatement);
 			connection2.close;
@@ -31,7 +31,7 @@ exports.getToken = function getToken(array)
 		}
 		else
 		{
-			var insertStatement = dBQueryBuilder2.buildQuery(LoginAttempt = [0,0,0,array[3],0,0]); 		//If not authenticated insert the login attempted username only
+			var insertStatement = dBQueryBuilder2.buildQuery(loginAttempt = [0,0,0,array[3],0,0]); 		//If not authenticated insert the login attempted username only
 			var connection2 = serverUtil.getDBConnection(); 											
 			var result2 = connection.execute(insertStatement);
 			connection2.close;
