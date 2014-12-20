@@ -3,34 +3,90 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#component2 {
-	 z-index: 6;
-	 width: 166px;
-	 height: 791px;
-	 top: 67px;
-	 left: 2px;
+#richText1 {
+	 z-index: 1;
+	 width: 162px;
+	 height: 48px;
+	 top: 7px;
+	 left: 22px;
 	
 	 position: absolute;
+	 background-color: rgb(78, 117, 163);
+	 font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+	 font-weight: bold;
+	 font-style: italic;
+	 color: rgb(255, 255, 255);
+	 font-size: 36px;
+	 line-height: normal;
+	 letter-spacing: 4px;
+	 text-align: left;
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(255, 255, 255, 0)),color-stop(1, rgba(255, 255, 255, 0)));
+	 background-image:-webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-repeat: repeat;
 	 
 }
 
-#button1 {
-	 z-index: 1;
-	 width: 201px;
-	 height: 50px;
-	 top: 114px;
-	 left: 407px;
-	
-	 position: absolute;
+#waf-body {
+	 background-color: rgb(78, 117, 163);
 	 
 }
 
 #component1 {
-	 z-index: 2;
-	 width: 584px;
-	 height: 309px;
-	 top: 201px;
-	 left: 271px;
+	 z-index: 10;
+	 width: 1390px;
+	 height: 730px;
+	 top: 60px;
+	 left: 190px;
+	
+	 position: absolute;
+	 border-top-style: none;
+	 border-top-width: 0px;
+	 border-left-style: none;
+	 border-left-width: 0px;
+	 border-right-style: none;
+	 border-right-width: 0px;
+	 border-bottom-style: none;
+	 border-bottom-width: 0px;
+	 
+}
+
+#capcisUserGreeting {
+	 z-index: 11;
+	 width: 231px;
+	 height: 27px;
+	 top: 24px;
+	 left: 1199px;
+	
+	 position: absolute;
+	 color: rgb(255, 255, 255);
+	 font-size: 14px;
+	 text-align: right;
+	 line-height: 25px;
+	 
+}
+
+#capcisSignOut {
+	 z-index: 12;
+	 width: 77px;
+	 height: 30px;
+	 top: 21px;
+	 left: 1469px;
+	
+	 position: absolute;
+	 
+}
+
+#capcisMainSelect {
+	 z-index: 6;
+	 width: 190px;
+	 height: 380px;
+	 top: 91px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
