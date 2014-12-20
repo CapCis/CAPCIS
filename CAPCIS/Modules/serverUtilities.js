@@ -17,3 +17,18 @@ exports.getDBConnection = function getDBConnection(x){
 	var connection = dbConnect.connect(param);
 	return connection;
 }
+
+exports.getDBConnectionCapcisClientPicture = function getDBConnection(x){
+	var dbConnect = require('waf-sql');
+	var param ={
+		hostname: '68.106.70.68',
+		user: 'teamcapcis2',
+		password: 'teamcapcis2',
+		database: 'capcisclientpicture',
+		port: 3306,
+		ssl: false,
+		dbType: 'mysql'
+	}
+	var connection = dbConnect.connect(param);
+	return connection;
+}
