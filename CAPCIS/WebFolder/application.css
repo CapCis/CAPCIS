@@ -3,3 +3,26 @@
 	The CSS styles that are created when you create a Widget Role are placed in this file too.
 */
 
+.waf-theme.capcis .waf-menuItem.waf-role-CAPCISTab {
+	background-color: rgb(255, 178, 42);
+}
+
+
+.waf-theme.capcis .waf-button.waf-role-TestingRed.waf-state-focus {
+	background-color: rgb(86, 255, 255);
+	}
+
+.waf-theme.capcis .waf-button.waf-role-TestingRed {
+	background-color: rgb(255, 0, 0);
+	}
+
+
+.waf-theme.capcis .waf-button.waf-role-Accent {
+	background-color: rgb(255, 133, 0);
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+	}
+
