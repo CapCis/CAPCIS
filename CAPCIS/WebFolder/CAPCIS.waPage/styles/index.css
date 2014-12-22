@@ -7,8 +7,8 @@
 	 z-index: 1;
 	 width: 162px;
 	 height: 48px;
-	 top: 7px;
-	 left: 22px;
+	 top: 5px;
+	 left: 1410px;
 	
 	 position: absolute;
 	 background-color: rgb(78, 117, 163);
@@ -39,19 +39,15 @@
 #component1 {
 	 z-index: 10;
 	 width: 1390px;
-	 height: 730px;
+	 height: 720px;
 	 top: 60px;
 	 left: 190px;
 	
 	 position: absolute;
-	 border-top-style: none;
-	 border-top-width: 0px;
-	 border-left-style: none;
-	 border-left-width: 0px;
-	 border-right-style: none;
-	 border-right-width: 0px;
-	 border-bottom-style: none;
-	 border-bottom-width: 0px;
+	 border-top-color: transparent;
+	 border-left-color: transparent;
+	 border-right-color: transparent;
+	 border-bottom-color: transparent;
 	 
 }
 
@@ -59,23 +55,23 @@
 	 z-index: 11;
 	 width: 231px;
 	 height: 27px;
-	 top: 24px;
-	 left: 1199px;
+	 top: 3px;
+	 left: 189px;
 	
 	 position: absolute;
 	 color: rgb(255, 255, 255);
 	 font-size: 14px;
-	 text-align: right;
 	 line-height: 25px;
+	 text-align: left;
 	 
 }
 
 #capcisSignOut {
 	 z-index: 12;
-	 width: 77px;
-	 height: 30px;
-	 top: 21px;
-	 left: 1469px;
+	 width: 75px;
+	 height: 25px;
+	 top: 4px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -83,12 +79,13 @@
 
 #capcisMainSelect {
 	 z-index: 6;
-	 width: 190px;
-	 height: 380px;
-	 top: 91px;
-	 left: 5px;
+	 width: 185px;
+	 height: 496px;
+	 top: 100px;
+	 left: 4px;
 	
 	 position: absolute;
+	 background-color: rgb(78, 117, 163);
 	 
 }
 
