@@ -3,12 +3,12 @@
 
 	For more information, refer to http://doc.wakanda.org/Wakanda Studio0.Beta/help/Title/en/page3355.html
 */
-exports.buildQuery = function buildQuery(array) {
+exports.buildQuery = function buildQuery(myObject) {
 	var answer;
-	switch(array[1]){
+	switch(myObject.major){
 		case 0:
-			switch(array[2]){
-				case 0: answer = 'INSERT INTO logintracking (UsernameAttempted,FK_useraccounts_UserAccountsID,LoginAuthenticated) VALUES("'+ array[3] +'","'+ array[4] +'","'+ array[5] +'")';
+			switch(myObject.minor){
+				case 0: answer = 'INSERT INTO logintracking (UsernameAttempted,FK_useraccounts_UserAccountsID,LoginAuthenticated) VALUES("'+ myObject.data1 +'","'+ myObject.id +'","'+ myObject.data2 +'")';
 						break;
 				default: answer = null;
 				

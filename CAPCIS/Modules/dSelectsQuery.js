@@ -5,21 +5,49 @@
 */
 
 
-exports.buildQuery = function buildQuery(array)
+exports.buildQuery = function buildQuery(myObject)
 {
 	var answer; 
-	switch(array[1]){
+	switch(myObject.major){
 		case 0:
-			switch(array[2]){
-				case 0: answer = 'SELECT UserName, UserAccountsID FROM useraccounts WHERE UserPassword = "' + array[0] + '" AND UserName = "' + array[3] +'"';
+			switch(myObject.minor){
+				case 0: answer = 'SELECT UserName, UserAccountsID FROM useraccounts WHERE UserPassword = "' + myObject.data1 + '" AND UserName = "' + myObject.user +'"';
 						break;
-				case 1: answer = 'SELECT * FROM authenticationtokens WHERE Tokens = "' + array[0] + '"';
+				case 1: answer = 'SELECT * FROM authenticationtokens WHERE Tokens = "' + myObject.token + '"';
 						break;
 				default:
 						answer = null;			
 			}
 			break;
-		case 1:			
+		case 1:
+			switch(myObject.minor){
+				case 0: answer = "SELECT \
+								(( attendedcounter + classescredited - WeeksClass)/13) as phasenumber, \
+								attendedcounter, weeksclass, clientrequirementsID, clientIDentry, CIID, clientFirstName,ClientMiddleName, \
+								ClientLastName,ClientNameSuffix, \
+								concat(ClientLastName , ', ' , ClientFirstName , ', ' , coalesce(ClientMiddleName, ', ') , ' ' , coalesce(ClientNameSuffix, ', ')) as CoalescedName, \
+								program, reportingstatus,clientStatus, classescredited, \
+								((attendedCounter + classesCredited -WeeksClass)) as PhaseUpYes, \
+								mod((attendedCounter+ classescredited - weeksclass),13) as phaseCount,\
+								(attendedCounter - weeksClass) as NoPhase,\
+								 MC_MonitoringCategoryID\
+								 FROM \
+								 capcis.weeklyphaseprelistq" + myObject.user +" left join capcis.ClientRequirements on CR_ClientRequirementsID = ClientRequirementsID \
+								 left join capcis.ClientInformation on capcis.clientrequirements.ClientInformation_CIID = CIID \
+								 left join capcis.WeeklyPhaseAttendedCounterDateQ"+ myObject.user+" on ClientRequirementsID = capcis.weeklyphaseattendedcounterdateq.CR_ClientRequirementsID \
+								 WHERE \
+								 mod((attendedCounter + classesCredited - WeeksClass),13)=0 and (attendedCounter-WeeksClass)>0 and program is not null and program != 'CBI'\
+								 GROUP BY \
+								 attendedCounter, WeeksClass, ClientRequirementsID, ClientIdEntry,CIID, ClientFirstName, ClientMiddleName, ClientLastName, \
+								 ClientNameSuffix, Program, ReportingStatus, ClientStatus, ClassesCredited, MC_MonitoringCategoryID \
+								 HAVING \
+								 MC_MonitoringCategoryID = 1 \
+								 ORDER BY 1 asc, 11 asc ";
+						break;
+				case 1: answer	="";
+						break;
+				default:
+						answer = null;		
 			break;
 		case 2:
 			break;
