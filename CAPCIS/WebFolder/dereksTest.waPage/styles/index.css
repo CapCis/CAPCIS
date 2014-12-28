@@ -3,9 +3,9 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#container4 {
-	 z-index: 5;
-	 width: 1130px;
+#container7 {
+	 z-index: 6;
+	 width: 490px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
@@ -14,7 +14,7 @@
 	 
 }
 
-#richText5 {
+#richText9 {
 	 z-index: 1;
 	 width: 66px;
 	 height: 23px;
@@ -25,7 +25,40 @@
 	 
 }
 
-#menuItem5 {
+#menuItem8 {
+	 z-index: 3;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#container6 {
+	 z-index: 5;
+	 width: 490px;
+	 top: 28px;
+	 bottom: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#richText8 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem7 {
 	 z-index: 2;
 	 width: 66px;
 	 height: 23px;
@@ -36,21 +69,86 @@
 	 
 }
 
-#container3 {
-	 z-index: 6;
-	 width: 545px;
-	 top: 5px;
+#container5 {
+	 z-index: 4;
+	 width: 490px;
+	 top: 28px;
 	 bottom: 5px;
-	 left: 71px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#richText4 {
+#richText7 {
 	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem6 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuBar3 > .waf-menuItem {
+	 margin-bottom: 0px;
+	 
+}
+
+#menuBar3 > .waf-menuItem:not(.waf-menuItem-last) {
+	 margin-right: 5px;
+	 
+}
+
+#menuBar3 {
+	 z-index: 3;
+	 height: 23px;
+	 top: 5px;
+	 left: 5px;
+	 right: -94px;
+	
+	 position: absolute;
+	 
+}
+
+#tabView3 {
+	 z-index: 1;
+	 width: 500px;
+	 height: 500px;
+	 top: 0px;
+	 left: 1px;
+	
+	 position: absolute;
+	 
+}
+
+#container3 {
+	 z-index: 6;
+	 width: 1058px;
+	 top: 28px;
+	 bottom: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#richText6 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -71,19 +169,19 @@
 
 #container2 {
 	 z-index: 5;
-	 width: 545px;
-	 top: 5px;
+	 width: 1058px;
+	 top: 28px;
 	 bottom: 5px;
-	 left: 71px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#richText3 {
+#richText4 {
 	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
+	 width: 66px;
+	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -104,18 +202,18 @@
 
 #container1 {
 	 z-index: 4;
-	 width: 545px;
-	 top: 5px;
+	 width: 1058px;
+	 top: 28px;
 	 bottom: 5px;
-	 left: 71px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#richText2 {
+#richText3 {
 	 z-index: 1;
-	 width: 65px;
+	 width: 64px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
@@ -137,125 +235,42 @@
 
 #menuBar2 > .waf-menuItem {
 	 margin-bottom: 0px;
-	 margin-right: 0px;
 	 
 }
 
 #menuBar2 > .waf-menuItem:not(.waf-menuItem-last) {
 	 margin-right: 5px;
-	 margin-bottom: 5px;
 	 
 }
 
 #menuBar2 {
 	 z-index: 3;
-	 width: 66px;
-	 height: 80px;
+	 height: 23px;
 	 top: 5px;
 	 left: 5px;
+	 right: 855px;
 	
 	 position: absolute;
 	 
 }
 
-#tabView2 {
-	 z-index: 1;
-	 width: 621px;
-	 height: 500px;
-	 top: 0px;
-	 left: 2px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem1.waf-state-selected {
-	 background-color: rgb(158, 44, 44);
-	 
-}
-
-#component1 {
-	 z-index: 1;
-	 width: 791px;
-	 height: 487px;
-	 top: -15px;
-	 left: -121px;
-	
-	 position: absolute;
-	 
-}
-
-#button2 {
-	 z-index: 3;
+#button4 {
+	 z-index: 5;
 	 width: 92px;
 	 height: 22px;
-	 top: -1px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#richText1 {
-	 z-index: 1;
-	 width: 64px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem1 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: NaNpx;
-	
-	 position: absolute;
-	 
-}
-
-#menuBar1 > .waf-menuItem {
-	 margin-bottom: 0px;
-	 
-}
-
-#menuBar1 > .waf-menuItem:not(.waf-menuItem-last) {
-	 margin-right: 5px;
-	 
-}
-
-#menuBar1 {
-	 z-index: 3;
-	 height: 23px;
-	 top: 5px;
-	 left: 5px;
-	 right: 5px;
+	 top: 577px;
+	 left: 339px;
 	
 	 position: absolute;
 	 
 }
 
 #tabView1 {
-	 z-index: 2;
-	 width: 1140px;
-	 height: 542px;
-	 top: 16px;
-	 left: 31px;
-	
-	 position: absolute;
-	 
-}
-
-#tab1 {
-	 z-index: 4;
-	 width: 1130px;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
+	 z-index: 6;
+	 width: 1068px;
+	 height: 681px;
+	 top: 24px;
+	 left: 42px;
 	
 	 position: absolute;
 	 
