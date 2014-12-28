@@ -1,4 +1,0 @@
-HOW TO RUN A REPORT IN JASPER REPORTS
-
-	http://localhost:8080/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9
-													  direcotry/reportname   	? report parameter

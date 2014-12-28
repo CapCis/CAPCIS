@@ -1,5 +1,0 @@
-<<<<<<< Updated upstream
-﻿[{"dataTableNum":1,"tableName":"Clientpictures","dataTableID":"80ECF74E6CECE04185F8181A95535105","fields":[{"fieldName":"ClientPictureID","posInRecord":1},{"fieldName":"ClientPicture","posInRecord":2},{"fieldName":"ClientPicturesID","posInRecord":3}]}]
-=======
-﻿[{"dataTableNum":1,"tableName":"Employees","dataTableID":"537212CE8364834C87AF3485252104B7","fields":[{"fieldName":"ID","posInRecord":1}]},{"dataTableNum":2,"tableName":"Clientpictures","dataTableID":"B25149496AF1084783413755E1EFED6D","fields":[{"fieldName":"ClientPictureID","posInRecord":1},{"fieldName":"ClientPicture","posInRecord":2},{"fieldName":"ClientPicturesID","posInRecord":3}]}]
->>>>>>> Stashed changes
