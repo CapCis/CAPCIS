@@ -37,7 +37,7 @@
 }
 
 #component1 {
-	 z-index: 10;
+	 z-index: 12;
 	 width: 1390px;
 	 height: 720px;
 	 top: 60px;
@@ -52,7 +52,7 @@
 }
 
 #capcisUserGreeting {
-	 z-index: 11;
+	 z-index: 10;
 	 width: 231px;
 	 height: 27px;
 	 top: 3px;
@@ -67,7 +67,7 @@
 }
 
 #capcisSignOut {
-	 z-index: 12;
+	 z-index: 11;
 	 width: 75px;
 	 height: 25px;
 	 top: 4px;

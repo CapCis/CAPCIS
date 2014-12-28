@@ -846,11 +846,11 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
 }
 .waf-theme.capcis .waf-combobox.waf-state-active {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0.4)));
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
-    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
-    background-image:     -ms-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
-    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
-    background-image:         linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(170, 218, 255, 0.8) 0%, rgba(170, 218, 255, 0.4) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(170, 218, 255, 0.8) 0%, rgba(170, 218, 255, 0.4) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(170, 218, 255, 0.8) 0%, rgba(170, 218, 255, 0.4) 100%);
+    background-image:      -o-linear-gradient(top, rgba(170, 218, 255, 0.8) 0%, rgba(170, 218, 255, 0.4) 100%);
+    background-image:         linear-gradient(top, rgba(170, 218, 255, 0.8) 0%, rgba(170, 218, 255, 0.4) 100%);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.45) inset,
                 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
@@ -934,6 +934,7 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
  */
 .waf-theme.capcis .waf-combobox-list .ui-menu-item a {
     border-color: transparent;
+    background-color: rgb(255,133,0)
 }
 .waf-theme.capcis .waf-combobox-list .ui-menu-item a,
 .waf-theme.capcis .waf-combobox-list .ui-menu-item a.ui-state-hover {
@@ -966,6 +967,8 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
     background-image:         linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
 
 	color: rgb(0, 159, 199);
+    font-size: 12px;
+    color: rgb(255, 133, 0);
 }
 
 
@@ -1604,7 +1607,7 @@ body.yui-layout .waf-theme.capcis .waf-designer-fileupload .waf-button.waf-fileU
  */
 .waf-theme.capcis .waf-matrix .waf-matrix-element {
 	border-radius: 0;
-
+	
 	-webkit-transition: border 0.2s ease-in-out,
 						-webkit-box-shadow 0.2s ease-in-out;
 	   -moz-transition: border 0.2s ease-in-out,
