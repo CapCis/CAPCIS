@@ -3,9 +3,59 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid1 {
+	 z-index: 14;
+	 width: 183px;
+	 height: 99px;
+	 top: 115px;
+	 left: 219px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container2 {
+	 z-index: 1;
+	 width: 415px;
+	 height: 255px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id} {
+	 background-color: rgb(225, 225, 225);
+	 
+}
+
+#{id}label8 {
+	 z-index: 13;
+	 width: 66px;
+	 height: 13px;
+	 top: 97px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}TIClientNotes {
+	 z-index: 13;
+	 width: 206px;
+	 height: 98px;
+	 top: 115px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label6 {
-	 z-index: 11;
-	 width: 29px;
+	 z-index: 10;
+	 width: 31px;
 	 height: 13px;
 	 top: 7px;
 	 left: 331px;
@@ -14,8 +64,8 @@
 	 
 }
 
-#{id}combobox1 {
-	 z-index: 11;
+#{id}CMBClientNameSuffix {
+	 z-index: 10;
 	 width: 63px;
 	 height: 22px;
 	 top: 25px;
@@ -25,30 +75,8 @@
 	 
 }
 
-#{id}label5 {
-	 z-index: 10;
-	 width: 29px;
-	 height: 13px;
-	 top: 52px;
-	 left: 6px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField5 {
-	 z-index: 10;
-	 width: 72px;
-	 height: 22px;
-	 top: 70px;
-	 left: 6px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label4 {
-	 z-index: 9;
+	 z-index: 8;
 	 width: 58px;
 	 height: 13px;
 	 top: 7px;
@@ -58,41 +86,20 @@
 	 
 }
 
-#{id}textField4 {
-	 z-index: 9;
+#{id}TIClientLastName {
+	 z-index: 8;
 	 width: 105px;
 	 height: 22px;
 	 top: 25px;
 	 left: 221px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}label3 {
-	 z-index: 8;
-	 width: 73px;
-	 height: 13px;
-	 top: 7px;
-	 left: 113px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField3 {
-	 z-index: 8;
-	 width: 105px;
-	 height: 22px;
-	 top: 25px;
-	 left: 113px;
-	
-	 position: absolute;
+	 text-align: left;
 	 
 }
 
 #{id}label2 {
-	 z-index: 7;
+	 z-index: 6;
 	 width: 59px;
 	 height: 13px;
 	 top: 7px;
@@ -102,118 +109,118 @@
 	 
 }
 
-#{id}textField2 {
-	 z-index: 7;
+#{id}TIClientFirstName {
+	 z-index: 6;
 	 width: 105px;
 	 height: 22px;
 	 top: 25px;
 	 left: 5px;
 	
 	 position: absolute;
+	 text-align: left;
 	 
 }
 
-#{id}component1 {
-	 z-index: 6;
-	 width: 630px;
-	 height: 361px;
-	 top: 276px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-left-style: solid;
-	 border-right-style: solid;
-	 border-bottom-style: solid;
-	 border-top-width: 1px;
-	 border-left-width: 1px;
-	 border-right-width: 1px;
-	 border-bottom-width: 1px;
-	 
-}
-
-#{id}container2 {
-	 z-index: 1;
-	 width: 1310px;
-	 height: 665px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}button1 {
-	 z-index: 4;
-	 width: 439px;
-	 height: 262px;
-	 top: 0px;
-	 left: 424px;
+#{id}label3 {
+	 z-index: 7;
+	 width: 73px;
+	 height: 13px;
+	 top: 7px;
+	 left: 113px;
 	
 	 position: absolute;
 	 
 }
 
-#{id} {
-	 background-color: rgb(225, 225, 225);
-	 
-}
-
-#{id}StaticClientInformation {
-	 z-index: 1;
-	 width: 400px;
-	 height: 261px;
-	 top: 0px;
-	 left: 0px;
+#{id}TIClientMiddleName {
+	 z-index: 7;
+	 width: 105px;
+	 height: 22px;
+	 top: 25px;
+	 left: 113px;
 	
 	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
+	 text-align: left;
 	 
 }
 
-#{id}CorrespondenceNotes {
-	 z-index: 3;
-	 width: 400px;
-	 height: 244px;
-	 top: 0px;
-	 left: 885px;
+#{id}label7 {
+	 z-index: 12;
+	 width: 38px;
+	 height: 13px;
+	 top: 52px;
+	 left: 202px;
 	
 	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
 	 
 }
 
-#{id}ClientReferralInformation {
+#{id}TIClientAliases {
+	 z-index: 12;
+	 width: 191px;
+	 height: 22px;
+	 top: 70px;
+	 left: 202px;
+	
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}label1 {
+	 z-index: 11;
+	 width: 22px;
+	 height: 13px;
+	 top: 52px;
+	 left: 100px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}TIClientSSN {
+	 z-index: 11;
+	 width: 97px;
+	 height: 22px;
+	 top: 70px;
+	 left: 100px;
+	
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}label5 {
+	 z-index: 9;
+	 width: 55px;
+	 height: 13px;
+	 top: 52px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}DTMClientBirthDate {
+	 z-index: 9;
+	 width: 90px;
+	 height: 22px;
+	 top: 70px;
+	 left: 5px;
+	
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}ClientPrescriptions {
 	 z-index: 2;
-	 width: 635px;
-	 height: 361px;
-	 top: 274px;
-	 left: 653px;
+	 width: 171px;
+	 height: 16px;
+	 top: 98px;
+	 left: 220px;
 	
 	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
 	 
 }
 

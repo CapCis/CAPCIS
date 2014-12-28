@@ -7,7 +7,7 @@ function constructor (id) {
 
 	// @region beginComponentDeclaration// @startlock
 	var $comp = this;
-	this.name = 'capcisPrimaryComponent';
+	this.name = 'clientRequirementsList';
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock

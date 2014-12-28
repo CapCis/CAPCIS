@@ -1,1 +1,1 @@
-﻿[{"dataTableNum":1,"tableName":"Clientpictures","fields":[{"fieldName":"ClientPictureID","posInRecord":1},{"fieldName":"ClientPicture","posInRecord":2},{"fieldName":"ClientPicturesID","posInRecord":3}]}]
+﻿[{"dataTableNum":1,"tableName":"Clientpictures","dataTableID":"80ECF74E6CECE04185F8181A95535105","fields":[{"fieldName":"ClientPictureID","posInRecord":1},{"fieldName":"ClientPicture","posInRecord":2},{"fieldName":"ClientPicturesID","posInRecord":3}]}]
