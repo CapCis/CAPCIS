@@ -1,6 +1,0 @@
-{
-    "name"    : "capcisPrimaryComponent",    
-    "html"    : "capcisPrimaryComponent.html",
-    "styles"  : [],
-    "scripts" : ["capcisPrimaryComponent.js"]
-}
