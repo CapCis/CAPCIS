@@ -4,7 +4,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @region namespaceDeclaration// @startlock
 	var button1 = {};	// @button
 // @endregion// @endlock
-
+testGlobal = "init";
 // eventHandlers// @lock
 
 	button1.click = function button1_click (event)// @startlock
