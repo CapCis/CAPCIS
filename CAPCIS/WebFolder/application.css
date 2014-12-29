@@ -26,3 +26,22 @@
 	font-weight: normal;
 	}
 
+.waf-theme.capcis .waf-container.waf-role-AccentContainer.waf-state-selected {
+	background-color: rgba(248, 80, 0, 0.796875);
+}
+
+.waf-theme.capcis .waf-container.waf-role-AccentContainer {
+	border-top-color: rgb(78, 117, 163);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-left-color: rgb(78, 117, 163);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(78, 117, 163);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgb(78, 117, 163);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
