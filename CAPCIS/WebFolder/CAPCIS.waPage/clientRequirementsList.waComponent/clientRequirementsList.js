@@ -1,7 +1,7 @@
 ﻿
 (function Component (id) {// @lock
 
-// Add the code that needs to be shared between components here
+	
 
 function constructor (id) {
 
@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-
+	
 	// @region namespaceDeclaration// @startlock
 	// @endregion// @endlock
 
@@ -19,7 +19,7 @@ function constructor (id) {
 
 	// @region eventManager// @startlock
 	// @endregion// @endlock
-
+	
 	};// @lock
 
 
