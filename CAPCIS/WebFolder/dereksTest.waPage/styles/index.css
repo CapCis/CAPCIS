@@ -3,11 +3,22 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText1 {
+	 z-index: 1;
+	 width: 50px;
+	 height: 16px;
+	 top: 68px;
+	 left: 153px;
+	
+	 position: absolute;
+	 
+}
+
 #container7 {
 	 z-index: 6;
 	 width: 490px;
 	 top: 28px;
-	 bottom: 5px;
+	 bottom: 0px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -40,7 +51,7 @@
 	 z-index: 5;
 	 width: 490px;
 	 top: 28px;
-	 bottom: 5px;
+	 bottom: 0px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -73,7 +84,7 @@
 	 z-index: 4;
 	 width: 490px;
 	 top: 28px;
-	 bottom: 5px;
+	 bottom: 0px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -117,7 +128,7 @@
 	 height: 23px;
 	 top: 5px;
 	 left: 5px;
-	 right: -94px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
