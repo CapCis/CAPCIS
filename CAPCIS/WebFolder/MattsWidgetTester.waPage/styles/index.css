@@ -3,6 +3,466 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#label15 {
+	 z-index: 72;
+	 width: 26px;
+	 height: 13px;
+	 top: 858px;
+	 left: 463px;
+	
+	 position: absolute;
+	 
+}
+
+#jQDateTime3 {
+	 z-index: 72;
+	 width: 168px;
+	 height: 35px;
+	 top: 847px;
+	 left: 494px;
+	
+	 position: absolute;
+	 
+}
+
+#wakendoCalendar1 {
+	 z-index: 70;
+	 width: 200px;
+	 height: 215px;
+	 top: 48px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#label6 {
+	 z-index: 69;
+	 width: 29px;
+	 height: 13px;
+	 top: 245px;
+	 left: 273px;
+	
+	 position: absolute;
+	 
+}
+
+#wakendoColorPicker1 {
+	 z-index: 69;
+	 width: 106px;
+	 height: 84px;
+	 top: 210px;
+	 left: 307px;
+	
+	 position: absolute;
+	 
+}
+
+#label5 {
+	 z-index: 67;
+	 width: 29px;
+	 height: 13px;
+	 top: 243px;
+	 left: 530px;
+	
+	 position: absolute;
+	 
+}
+
+#wakendoPaletteColorPicker1 {
+	 z-index: 67;
+	 width: 162px;
+	 height: 197px;
+	 top: 151px;
+	 left: 564px;
+	
+	 position: absolute;
+	 
+}
+
+#label4 {
+	 z-index: 65;
+	 width: 26px;
+	 height: 13px;
+	 top: 118px;
+	 left: -1px;
+	
+	 position: absolute;
+	 
+}
+
+#jQDateTime2 {
+	 z-index: 65;
+	 width: 108px;
+	 height: 42px;
+	 top: 104px;
+	 left: 30px;
+	
+	 position: absolute;
+	 
+}
+
+#label3 {
+	 z-index: 63;
+	 width: 29px;
+	 height: 13px;
+	 top: 579px;
+	 left: 390px;
+	
+	 position: absolute;
+	 
+}
+
+#wakendoTimePicker1 {
+	 z-index: 63;
+	 width: 196px;
+	 height: 33px;
+	 top: 569px;
+	 left: 424px;
+	
+	 position: absolute;
+	 background-color: rgb(78, 117, 163);
+	 
+}
+
+#menuItem12.waf-state-selected {
+	 background-color: rgb(0, 27, 90);
+	 
+}
+
+#menuItem3.waf-state-hover {
+	 background-color: rgb(86, 255, 255);
+	 
+}
+
+#menuItem3.waf-state-active {
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#menuItem3.waf-state-selected {
+	 background-color: rgb(255, 255, 255);
+	 
+}
+
+#container3 {
+	 z-index: 6;
+	 top: 28px;
+	 bottom: 5px;
+	 left: 5px;
+	 right: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#richText4 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem3 {
+	 z-index: 3;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 0, 0);
+	 
+}
+
+#container2 {
+	 z-index: 5;
+	 top: 28px;
+	 bottom: 5px;
+	 left: 5px;
+	 right: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#richText3 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem2 {
+	 z-index: 2;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#container1 {
+	 z-index: 4;
+	 top: 28px;
+	 bottom: 5px;
+	 left: 5px;
+	 right: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#richText1 {
+	 z-index: 1;
+	 width: 64px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuItem1 {
+	 z-index: 1;
+	 width: 66px;
+	 height: 23px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#menuBar1 > .waf-menuItem {
+	 margin-bottom: 0px;
+	 
+}
+
+#menuBar1 > .waf-menuItem:not(.waf-menuItem-last) {
+	 margin-right: 5px;
+	 
+}
+
+#menuBar1 {
+	 z-index: 3;
+	 height: 23px;
+	 top: 5px;
+	 left: 5px;
+	 right: 85px;
+	
+	 position: absolute;
+	 
+}
+
+#tabView1 {
+	 z-index: 61;
+	 width: 298px;
+	 height: 147px;
+	 top: 692px;
+	 left: 211px;
+	
+	 position: absolute;
+	 
+}
+
+#button1 {
+	 z-index: 60;
+	 width: 183px;
+	 height: 43px;
+	 top: 540px;
+	 left: 70px;
+	
+	 position: absolute;
+	 
+}
+
+#dataGrid3 {
+	 z-index: 1;
+	 width: 769px;
+	 height: 155px;
+	 top: 303px;
+	 left: 2px;
+	
+	 position: absolute;
+	 
+}
+
+#button16 {
+	 z-index: 2;
+	 width: 60px;
+	 height: 20px;
+	 top: 2px;
+	 right: -1089px;
+	
+	 position: absolute;
+	 
+}
+
+#button15 {
+	 z-index: 1;
+	 width: 60px;
+	 height: 20px;
+	 top: 2px;
+	 right: -1024px;
+	
+	 position: absolute;
+	 
+}
+
+#container7 {
+	 z-index: 3;
+	 height: 25px;
+	 bottom: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#container6 {
+	 z-index: 2;
+	 top: 25px;
+	 bottom: 25px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#button14 {
+	 z-index: 3;
+	 width: 15px;
+	 height: 15px;
+	 top: 5px;
+	 right: -1089px;
+	
+	 position: absolute;
+	 
+}
+
+#button13 {
+	 z-index: 2;
+	 width: 15px;
+	 height: 15px;
+	 top: 5px;
+	 right: -1051px;
+	
+	 position: absolute;
+	 
+}
+
+#button12 {
+	 z-index: 1;
+	 width: 15px;
+	 height: 15px;
+	 top: 5px;
+	 right: -1070px;
+	
+	 position: absolute;
+	 
+}
+
+#image2 {
+	 width: 20px;
+	 height: 20px;
+	 top: 2px;
+	 left: 2px;
+	
+	 position: absolute;
+	 
+}
+
+#richText2 {
+	 z-index: -1;
+	 height: 14px;
+	 top: 6px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#container5 {
+	 z-index: 1;
+	 height: 25px;
+	 top: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#dialog2 {
+	 z-index: 59;
+	 width: 773px;
+	 height: 509px;
+	 top: 986px;
+	 left: 7px;
+	
+	 position: absolute;
+	 
+}
+
+#label2 {
+	 z-index: 54;
+	 width: 29px;
+	 height: 13px;
+	 top: 1002px;
+	 left: 32px;
+	
+	 position: absolute;
+	 
+}
+
+#textField1 {
+	 z-index: 54;
+	 width: 143px;
+	 height: 53px;
+	 top: 982px;
+	 left: 66px;
+	
+	 position: absolute;
+	 
+}
+
+#label1 {
+	 z-index: 50;
+	 width: 26px;
+	 height: 13px;
+	 top: 943px;
+	 left: -7px;
+	
+	 position: absolute;
+	 
+}
+
+#jQDateTime1 {
+	 z-index: 50;
+	 width: 179px;
+	 height: 34px;
+	 top: 933px;
+	 left: 24px;
+	
+	 position: absolute;
+	 
+}
+
 #textField2.waf-state-focus {
 	 background-color: rgb(255, 255, 255);
 	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2FhZGFmZiIgb2Zmc2V0PSIxMDAlIiBzdG9wLW9wYWNpdHk9IjEiIC8+PHN0b3Agc3RvcC1jb2xvcj0iIzliZmZmZiIgb2Zmc2V0PSIxMDAlIiBzdG9wLW9wYWNpdHk9IjAuMzk4NDM4IiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
@@ -39,631 +499,7 @@
 	 left: 467px;
 	
 	 position: absolute;
-	 
-}
-
-#container73 {
-	 z-index: 31;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container72 {
-	 z-index: 30;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container71 {
-	 z-index: 29;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container70 {
-	 z-index: 28;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container69 {
-	 z-index: 27;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container68 {
-	 z-index: 26;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container67 {
-	 z-index: 25;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container66 {
-	 z-index: 24;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container65 {
-	 z-index: 23;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container64 {
-	 z-index: 22;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container63 {
-	 z-index: 21;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container62 {
-	 z-index: 20;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container61 {
-	 z-index: 19;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container60 {
-	 z-index: 18;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container59 {
-	 z-index: 17;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container58 {
-	 z-index: 16;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container57 {
-	 z-index: 15;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container56 {
-	 z-index: 14;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container55 {
-	 z-index: 13;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container54 {
-	 z-index: 12;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container53 {
-	 z-index: 11;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container52 {
-	 z-index: 10;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container51 {
-	 z-index: 9;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container50 {
-	 z-index: 8;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container49 {
-	 z-index: 7;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container48 {
-	 z-index: 6;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container47 {
-	 z-index: 5;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#container46 {
-	 z-index: 4;
-	 top: 5px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 71px;
-	
-	 position: absolute;
-	 
-}
-
-#richText23 {
-	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem18 {
-	 z-index: 3;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText22 {
-	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem17 {
-	 z-index: 2;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText21 {
-	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem16 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuBar6 > .waf-menuItem {
-	 margin-bottom: 0px;
-	 margin-right: 0px;
-	 
-}
-
-#menuBar6 > .waf-menuItem:not(.waf-menuItem-last) {
-	 margin-right: 5px;
-	 margin-bottom: 5px;
-	 
-}
-
-#menuBar6 {
-	 z-index: 3;
-	 width: 66px;
-	 height: 79px;
-	 top: 5px;
-	 left: 337px;
-	
-	 position: absolute;
-	 
-}
-
-#tabView4 {
-	 z-index: 1;
-	 width: 408px;
-	 height: 137px;
-	 top: 8px;
-	 left: 8px;
-	
-	 position: absolute;
-	 
-}
-
-#container45 {
-	 z-index: 1;
-	 width: 433px;
-	 height: 164px;
-	 top: 9px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container41 {
-	 z-index: 24;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container40 {
-	 z-index: 23;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container39 {
-	 z-index: 22;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container38 {
-	 z-index: 21;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container37 {
-	 z-index: 20;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container36 {
-	 z-index: 19;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem4 .waf-menuBar {
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-right-color: rgb(0, 27, 90);
-	 border-left-color: rgb(0, 27, 90);
-	 border-top-color: rgb(0, 27, 90);
-	 
-}
-
-#container32 {
-	 z-index: 18;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container31 {
-	 z-index: 17;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container30 {
-	 z-index: 16;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container29 {
-	 z-index: 15;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container28 {
-	 z-index: 14;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container27 {
-	 z-index: 13;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container26 {
-	 z-index: 12;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container25 {
-	 z-index: 11;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container24 {
-	 z-index: 10;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container23 {
-	 z-index: 9;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container22 {
-	 z-index: 8;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container21 {
-	 z-index: 7;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
+	 background-color: rgb(0, 27, 90);
 	 
 }
 
@@ -745,105 +581,6 @@
 	 
 }
 
-#richText14 {
-	 z-index: 1;
-	 width: 110px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem9 {
-	 z-index: 3;
-	 width: 110px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText13 {
-	 z-index: 1;
-	 width: 110px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem8 {
-	 z-index: 2;
-	 width: 110px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText12 {
-	 z-index: 1;
-	 width: 110px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem7 {
-	 z-index: 1;
-	 width: 110px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuBar3 {
-	 z-index: 44;
-	 width: 332px;
-	 height: 52px;
-	 top: 855px;
-	 left: 640px;
-	
-	 position: absolute;
-	 
-}
-
-#dataGrid1 {
-	 z-index: 43;
-	 width: 200px;
-	 height: 157px;
-	 top: 927px;
-	 left: 479px;
-	
-	 position: absolute;
-	 
-}
-
-#container20 {
-	 z-index: 42;
-	 width: 216px;
-	 height: 121px;
-	 top: 562px;
-	 left: 54px;
-	
-	 position: absolute;
-	 
-}
-
 #queryForm1 {
 	 z-index: 41;
 	 width: 264px;
@@ -861,148 +598,6 @@
 	 height: 216px;
 	 top: 170px;
 	 left: 672px;
-	
-	 position: absolute;
-	 
-}
-
-#autoForm2 {
-	 z-index: 39;
-	 width: 250px;
-	 height: 250px;
-	 top: 596px;
-	 left: 644px;
-	
-	 position: absolute;
-	 
-}
-
-#container18 {
-	 z-index: 6;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container17 {
-	 z-index: 5;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#container15 {
-	 z-index: 4;
-	 top: 28px;
-	 bottom: 5px;
-	 left: 5px;
-	 right: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#richText11 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem6 {
-	 z-index: 3;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText10 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem5 {
-	 z-index: 2;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#richText9 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuItem4 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#menuBar2 > .waf-menuItem {
-	 margin-bottom: 0px;
-	 
-}
-
-#menuBar2 > .waf-menuItem:not(.waf-menuItem-last) {
-	 margin-right: 5px;
-	 
-}
-
-#menuBar2 {
-	 z-index: 3;
-	 width: 208px;
-	 height: 23px;
-	 top: 5px;
-	 right: 359px;
-	
-	 position: absolute;
-	 
-}
-
-#tabView2 {
-	 z-index: 37;
-	 width: 572px;
-	 height: 222px;
-	 top: 705px;
-	 left: 0px;
 	
 	 position: absolute;
 	 
