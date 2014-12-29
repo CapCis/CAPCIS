@@ -7,17 +7,18 @@
 //include("./Modules/rpcDSelects.js");
 //include("./Modules/serverUtilities.js");
 
-exports.getSelect = function getSelect(array)
+exports.getSelect = function getSelect(myObject)
 {
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
-	var checkToken = dbQueryBuilder.buildQuery(token = [array[0],0,1,]);
+	var token = {token:myObject.token,major:0,minor:1};
+	var checkToken = dBQueryBuilder.buildQuery(token);
 	var connection = serverUtil.getDBConnection();
 	var tokenAnswer = connection.execute(checkToken);
 	var myResults = tokenAnswer.getAllRows();
 	connection.close;
-	if (tokenAnswer > 0) {
-		var selectStatement = dBQueryBuilder.buildQuery(array);	
+	if (myResults.length > 0) {
+		var selectStatement = dBQueryBuilder.buildQuery(myObject);	
 		var connection = serverUtil.getDBConnection();
 		var result = connection.execute(selectStatement);
 		myResults = result.getAllRows();

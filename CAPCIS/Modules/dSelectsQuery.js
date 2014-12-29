@@ -11,9 +11,13 @@ exports.buildQuery = function buildQuery(myObject)
 	switch(myObject.major){
 		case 0:
 			switch(myObject.minor){
-				case 0: answer = 'SELECT UserName, UserAccountsID FROM useraccounts WHERE UserPassword = "' + myObject.data1 + '" AND UserName = "' + myObject.user +'"';
+				case 0: answer = 'SELECT UserName, FxUserAccountsID FROM useraccounts WHERE UserPassword = "' + myObject.data1 + '" AND UserName = "' + myObject.user +'"';
 						break;
-				case 1: answer = 'SELECT * FROM authenticationtokens WHERE Tokens = "' + myObject.token + '"';
+				case 1: answer = 'SELECT * FROM fxauthenticationtokens WHERE Tokens = "' + myObject.token + '"';
+						break;
+				case 2: answer = "SELECT FxWebComponentNamesID, PrimaryHeaderOption, SubHeaderOption,WebComponentSort FROM fxuserpageaccess LEFT JOIN fxwebcomponentnames on FxWebComponentNamesID = FK_FxWebComponentNamesID WHERE FK_UserAccountsID = '" + myObject.id + "' ORDER BY 4 asc";
+						break;
+				case 3: answer = "SELECT WebComponentName FROM fxwebcomponentnames WHERE FxWebComponentNamesID = " + myObject.data1;
 						break;
 				default:
 						answer = null;			
@@ -47,7 +51,8 @@ exports.buildQuery = function buildQuery(myObject)
 				case 1: answer	="";
 						break;
 				default:
-						answer = null;		
+						answer = null;
+					}		
 			break;
 		case 2:
 			break;
@@ -73,5 +78,5 @@ exports.buildQuery = function buildQuery(myObject)
 	}
 	
 	return answer;
-	
+
 };
