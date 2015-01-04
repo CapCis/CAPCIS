@@ -2,3 +2,8 @@ HOW TO RUN A REPORT IN JASPER REPORTS
 
 	http://localhost:8080/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9
 													  direcotry/reportname   	? report parameter
+
+
+HOW TO CHANGE CSS OF A WIDGET 
+
+getHtmlObj('button1').css('background-color' , 'red');

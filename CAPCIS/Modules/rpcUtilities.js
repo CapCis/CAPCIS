@@ -18,4 +18,21 @@ exports.getHash = function getHash(user, pass)
       return HA1;
 };
 
+exports.timMatrixData = function helloWorld () {
+	var dbConnect = require('waf-sql');
+	var param ={
+		hostname: '68.106.70.68',
+		user: 'teamcapcis2',
+		password: 'teamcapcis2',
+		database: 'capcis',
+		port: 3306,
+		ssl: false,
+		dbType: 'mysql'
+	};
+	var connection = dbConnect.connect(param);
+	var result = connection.execute("SELECT WebComponentName,PrimaryHeaderOption FROM fxwebcomponentnames WHERE FxWebComponentNamesID > 0");
+	result = result.getAllRows();
+	return (result);
+	
+};
 
