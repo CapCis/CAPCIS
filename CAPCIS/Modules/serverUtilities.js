@@ -13,7 +13,7 @@ exports.getDBConnection = function getDBConnection(x){
 		port: 3306,
 		ssl: false,
 		dbType: 'mysql'
-	}
+	};
 	var connection = dbConnect.connect(param);
 	return connection;
 }
@@ -28,7 +28,7 @@ exports.getDBConnectionCapcisClientPicture = function getDBConnection(x){
 		port: 3306,
 		ssl: false,
 		dbType: 'mysql'
-	}
+	};
 	var connection = dbConnect.connect(param);
 	return connection;
 }

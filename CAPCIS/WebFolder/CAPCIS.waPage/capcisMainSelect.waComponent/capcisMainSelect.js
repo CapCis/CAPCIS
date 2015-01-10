@@ -45,9 +45,9 @@ debugger;
 	 		tempID = getRandom();
 			var buttonElement2 = document.createElement('button'); //HTML tag
         	buttonElement2.setAttribute('id',myMenuButtons[x].FxWebComponentNamesID.toString()); // ID that links to the widget constructor ID
-        	buttonElement2.setAttribute('style','width:0px;height:0px;left:0px;top:0px;position:absolute;color:#E1E1E1;font:12px sans-serif;background-color:#001B5A \
+        	buttonElement2.setAttribute('style','width:0px;height:0px;left:0px;top:0px;position:absolute;font:12px sans-serif;color:#E1E1E1;-webkit-font-smoothing: antialiased;font-smooth: always; background-color:#001B5A\
         	;border: 1px solid #001B5A;border-radius: 4px;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)))\
-        	;background-color:hover: #4E75A3');
+        	;text-shadow: rgba(225, 225, 225, 0.3) 0 1px;background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);background-color:hover: #4E75A3');
         	buttonElement2.setAttribute('rel','capcis.css');
         	buttonElement2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         	buttonElement2.setAttribute('class','waf-widget waf-button waf-state-default');
@@ -78,8 +78,8 @@ debugger;
 			var buttonElement2 = document.createElement('button'); //HTML tag
         	buttonElement2.setAttribute('id',myMenuButtons[x].FxWebComponentNamesID.toString()); // ID that links to the widget constructor ID
         	buttonElement2.setAttribute('style','width:0px;height:0px;left:40px;top:0px;position:absolute;color:#E1E1E1;font:12px sans-serif;background-color:#001B5A \
-        	;border: 1px solid #001B5A;border-radius: 4px;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)))\
-        	;background-color:hover: #4E75A3');
+        	;border: 1px solid #001B5A; border: 1px solid rgb(0, 27, 90) ;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)));\
+        	;text-shadow: rgba(225, 225, 225, 0.3) 0 1px;background-color: rgb(0, 27, 90)');
         	buttonElement2.setAttribute('rel','capcis.css');
         	buttonElement2.setAttribute('class','waf-widget waf-button capcis capcis');
         	buttonElement2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
