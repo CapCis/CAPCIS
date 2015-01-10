@@ -1,11 +1,13 @@
 ﻿
 WAF.onAfterInit = function onAfterInit() {// @lock
+	/*
 	debugger;
 	var tabCount = 0;
 	
 	
 	
 // @region namespaceDeclaration// @startlock
+	var button1 = {};	// @button
 // @endregion// @endlock
 	var tempID = getRandom();
 	var buttonElement = document.createElement('button'); //HTML tag
@@ -72,6 +74,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
  		tabRenderer.setAttribute('id', 'subTab1');
  		document.body.appendChild(tabRenderer);
  		*/
+ 		/*
  		var subTabWidget = new WAF.widget.TabView({
  			'id': 'subtab1'
  			//'data-lib': 'WAF',
@@ -81,6 +84,18 @@ WAF.onAfterInit = function onAfterInit() {// @lock
  		$$(container).addChild($$('subtab1'));
 	
 // eventHandlers// @lock
+*/
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		debugger;
+		
+		$$('menuItem3').toggle("hidden");
+		var x = 5;
+		
+		
+		
+		
+	};// @lock
 	/*
 	button3.click = function button2_click (event)
 	{
@@ -145,5 +160,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	WAF.addListener("button3", "click", button3.click, "WAF");
 	*/
 // @region eventManager// @startlock
+	WAF.addListener("button1", "click", button1.click, "WAF");
 // @endregion
 };// @endlock
