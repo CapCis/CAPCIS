@@ -104,10 +104,10 @@
 
 #{id}component2 {
 	 z-index: 1;
-	 top: 0px;
-	 bottom: 0px;
+	 width: 1210px;
+	 height: 650px;
+	 top: 30px;
 	 left: 0px;
-	 right: 0px;
 	
 	 position: absolute;
 	 
@@ -209,7 +209,7 @@
 #{id}tabView1 {
 	 z-index: 3;
 	 width: 1225px;
-	 height: 725px;
+	 height: 720px;
 	 top: 30px;
 	 left: 150px;
 	
@@ -302,6 +302,17 @@
 	 left: 0px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}component3 {
+	 width: 1210px;
+	 height: 650px;
+	 top: 30px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
 	 
 }
 
