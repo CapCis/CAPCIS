@@ -31,8 +31,8 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-debugger;
-	 var myObject = {token:1 ,id:1,major:0,minor:2};
+	debugger;
+	 var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};
 	 myMenuButtons = rpcDSelects.getSelect(myObject);
 	 sources.myMenuButtons.sync();
 	 
@@ -106,38 +106,47 @@ debugger;
 	function getRandom()
 	{
 		var domID = Math.floor((Math.random()*100000)+1); //create a random ID
-		return domID
+		return domID;
 	};
 	function pageOpener(id)
 	{
-		var myObject = {token:1 ,id:1,major:0,minor:3,data1:id.id};
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,data1:id.id};
 	 	myWCName = rpcDSelects.getSelect(myObject)
 	 	
-	 	WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	'testComponent', 											//designate the component to load into
-		path: 	myWCName[0].WebComponentName, 				//designate the webcomponent to load							//data that you want to send to the webcomponent
-		});
+	 	var subTabCount = 0;
+	    for (var x = 1;x<=9;x++);
+	    {
+	    	if (masterTabArray[x].tabName === id.id)
+	    	{
+	    		for (var y = 0;y<=9;y++)
+	    		{
+	    			if (masterTabArray[x].subTab[y] === false)
+	    			{
+	    				$$("subTab"+x+y).toggle("hidden");
+						WAF.loadComponent ( {											//load webcomponent into this page component1 element
+						id: 	'tabComponent'+x+y, 											//designate the component to load into
+						path: 	myWCName[0].WebComponentName, 				//designate the webcomponent to load							//data that you want to send to the webcomponent
+						});
+	    			}
+	    			subTabCount++;	    			
+	    		}
+	    		
+	    	}
+	    	
+	    };
+	 	
+	 	
+	 	
 	 	//sources.myMenuButtons.sync();
 		
 	};
 	
 	// @region namespaceDeclaration// @startlock
-	var button1 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	button1.click = function button1_click (event)// @startlock
-	{// @endlock
-		debugger;
-		var testChild = $$(getHtmlId("button1"));
-		alert(testChild);
-		//$$(getHtmlId("menuBar2")).	
-			
-	};// @lock
-
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
