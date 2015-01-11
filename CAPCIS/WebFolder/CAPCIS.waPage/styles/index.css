@@ -38,10 +38,10 @@
 
 #capcisUserGreeting {
 	 z-index: 10;
-	 width: 231px;
+	 width: 275px;
 	 height: 27px;
-	 top: 4px;
-	 left: 334px;
+	 top: 5px;
+	 left: 290px;
 	
 	 position: absolute;
 	 color: rgb(255, 255, 255);
@@ -92,7 +92,7 @@
 #capcisLoginWC {
 	 z-index: 13;
 	 width: 265px;
-	 height: 90px;
+	 height: 100px;
 	 top: 0px;
 	 left: 0px;
 	
