@@ -3,12 +3,12 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}component1 {
-	 z-index: 5;
-	 top: 74px;
-	 bottom: 0px;
-	 left: 0px;
-	 right: 0px;
+#{id}component2 {
+	 z-index: 2;
+	 width: 131px;
+	 height: 606px;
+	 top: 73px;
+	 left: 6px;
 	
 	 position: absolute;
 	 

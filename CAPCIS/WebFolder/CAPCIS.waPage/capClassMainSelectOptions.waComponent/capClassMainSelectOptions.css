@@ -3,12 +3,12 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}component1 {
-	 z-index: 4;
-	 top: 159px;
-	 bottom: 0px;
+#{id}component2 {
+	 z-index: 5;
+	 width: 131px;
+	 height: 460px;
+	 top: 150px;
 	 left: 0px;
-	 right: 0px;
 	
 	 position: absolute;
 	 
@@ -16,10 +16,10 @@
 
 #{id}button1 {
 	 z-index: 3;
-	 width: 130px;
+	 width: 120px;
 	 height: 25px;
 	 top: 115px;
-	 left: 5px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -30,7 +30,7 @@
 	 width: 21px;
 	 height: 13px;
 	 top: 52px;
-	 left: 5px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -38,10 +38,10 @@
 
 #{id}combobox2 {
 	 z-index: 2;
-	 width: 130px;
+	 width: 120px;
 	 height: 26px;
 	 top: 70px;
-	 left: 5px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -52,7 +52,7 @@
 	 width: 47px;
 	 height: 13px;
 	 top: 3px;
-	 left: 5px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -60,10 +60,10 @@
 
 #{id}combobox1 {
 	 z-index: 1;
-	 width: 130px;
+	 width: 120px;
 	 height: 25px;
 	 top: 21px;
-	 left: 5px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -71,7 +71,7 @@
 
 #{id}container1 {
 	 z-index: 1;
-	 width: 144px;
+	 width: 131px;
 	 height: 610px;
 	 top: 0px;
 	 left: 0px;
