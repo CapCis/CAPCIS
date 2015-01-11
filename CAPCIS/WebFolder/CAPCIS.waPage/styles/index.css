@@ -36,7 +36,34 @@
 	 
 }
 
-#component1 {
+#capcisUserGreeting {
+	 z-index: 10;
+	 width: 231px;
+	 height: 27px;
+	 top: 4px;
+	 left: 334px;
+	
+	 position: absolute;
+	 color: rgb(255, 255, 255);
+	 font-size: 14px;
+	 line-height: 25px;
+	 text-align: left;
+	 
+}
+
+#capcisMainSelect {
+	 z-index: 6;
+	 width: 185px;
+	 height: 496px;
+	 top: 100px;
+	 left: 4px;
+	
+	 position: absolute;
+	 background-color: rgb(78, 117, 163);
+	 
+}
+
+#capcisMainWC {
 	 z-index: 12;
 	 width: 1390px;
 	 height: 720px;
@@ -51,41 +78,25 @@
 	 
 }
 
-#capcisUserGreeting {
-	 z-index: 10;
-	 width: 231px;
-	 height: 27px;
-	 top: 3px;
-	 left: 189px;
-	
-	 position: absolute;
-	 color: rgb(255, 255, 255);
-	 font-size: 14px;
-	 line-height: 25px;
-	 text-align: left;
-	 
-}
-
-#capcisSignOut {
+#capcisSignInOut {
 	 z-index: 11;
 	 width: 75px;
 	 height: 25px;
-	 top: 4px;
-	 left: 5px;
+	 top: 5px;
+	 left: 190px;
 	
 	 position: absolute;
 	 
 }
 
-#capcisMainSelect {
-	 z-index: 6;
-	 width: 185px;
-	 height: 496px;
-	 top: 100px;
-	 left: 4px;
+#capcisLoginWC {
+	 z-index: 13;
+	 width: 265px;
+	 height: 90px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
-	 background-color: rgb(78, 117, 163);
 	 
 }
 
