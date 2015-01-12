@@ -60,10 +60,10 @@
 
 #container7 {
 	 z-index: 6;
-	 width: 1309px;
 	 top: 5px;
 	 bottom: 5px;
 	 left: 71px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -93,10 +93,10 @@
 
 #container6 {
 	 z-index: 5;
-	 width: 1309px;
 	 top: 5px;
 	 bottom: 5px;
 	 left: 71px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -126,10 +126,10 @@
 
 #container5 {
 	 z-index: 4;
-	 width: 1309px;
 	 top: 5px;
 	 bottom: 5px;
 	 left: 71px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -193,10 +193,10 @@
 
 #container3 {
 	 z-index: 6;
-	 width: 1375px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -226,10 +226,10 @@
 
 #container2 {
 	 z-index: 5;
-	 width: 1375px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -251,7 +251,7 @@
 	 width: 66px;
 	 height: 23px;
 	 top: 0px;
-	 left: NaNpx;
+	 left: auto;
 	
 	 position: absolute;
 	 
@@ -259,10 +259,10 @@
 
 #container1 {
 	 z-index: 4;
-	 width: 1375px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -284,7 +284,7 @@
 	 width: 66px;
 	 height: 23px;
 	 top: 0px;
-	 left: NaNpx;
+	 left: auto;
 	
 	 position: absolute;
 	 

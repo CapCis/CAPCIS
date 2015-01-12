@@ -1,24 +1,4 @@
 ﻿
-	 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (function Component (id) {// @lock
 
 // Add the code that needs to be shared between components here
@@ -31,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-	debugger;
+	
 	 var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};
 	 myMenuButtons = rpcDSelects.getSelect(myObject);
 	 sources.myMenuButtons.sync();
@@ -71,7 +51,7 @@ function constructor (id) {
             //button5.setLeft(20);
             button5.setHeight(35);
             top = top + 35;
-        } 
+        }
 	 	else
 	 	{
 	 		tempID = getRandom();
@@ -105,35 +85,44 @@ function constructor (id) {
 	 }
 	function getRandom()
 	{
-		var domID = Math.floor((Math.random()*100000)+1); //create a random ID
+		var domID = Math.floor((Math.random()*100000)+1);  //create a random ID
 		return domID;
 	};
-	function pageOpener(id)
+	
+	function pageOpener (id) 
 	{
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,data1:id.id};
-	 	myWCName = rpcDSelects.getSelect(myObject)
-	 	
+	 	myWCName = rpcDSelects.getSelect(myObject);
+	 	debugger;
 	 	var subTabCount = 0;
-	    for (var x = 1;x<=9;x++);
+	    for (var x = 1; x <= 9; x++)
 	    {
-	    	if (masterTabArray[x].tabName === id.id)
+	    	if (masterTabArray[x].tabName === id.innerText)
 	    	{
-	    		for (var y = 0;y<=9;y++)
+	    		for (var y = 0; y <= 9; y++)
 	    		{
-	    			if (masterTabArray[x].subTab[y] === false)
-	    			{
-	    				$$("subTab"+x+y).toggle("hidden");
-						WAF.loadComponent ( {											//load webcomponent into this page component1 element
-						id: 	'tabComponent'+x+y, 											//designate the component to load into
-						path: 	myWCName[0].WebComponentName, 				//designate the webcomponent to load							//data that you want to send to the webcomponent
+	    			if (masterTabArray[x].subTab[y][0] === false)
+	    			{	    				
+	    				masterTabArray[x].subTab[y][0] = true;
+	    				$$("capcisMainWC_subTab"+(x+1)+(y+1)).toggle();  //+(x+1)+(y+1)
+	    				$$("capcisMainWC_subTab"+(x+1)+(y+1)).focus();	    				
+	    				$$("capcisMainWC_tabView").selectTab(x+1);
+	    				$$("capcisMainWC_subTabView"+(x+1)).selectTab(y+1);   				
+						WAF.loadComponent({											//load webcomponent into this page component1 element
+						id: 	"capcisMainWC_tabComponent"+(x+1)+(y+1), 											//designate the component to load into
+						path: 	myWCName[0].WebComponentName 				//designate the webcomponent to load						
 						});
+						return
 	    			}
-	    			subTabCount++;	    			
+	    			if (y === 9)
+	    			{
+	    				alert("No Available " + id + " Tabs");	
+	    			}	    			
 	    		}
 	    		
 	    	}
 	    	
-	    };
+	    }
 	 	
 	 	
 	 	

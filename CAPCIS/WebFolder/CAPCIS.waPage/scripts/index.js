@@ -28,16 +28,16 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		userConfigObj = {fullName:"",userName:"",userID:"",secToken:"",selectedUserDivision:"",approvedDivArray:[]};
 		
-		var masterTabArray = [
+		masterTabArray = [
 		tabObj = {
 			tabName:"Utilities",
 			subTab:[[true],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
-			tabName:"",
+			tabName:"Client Files",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
@@ -67,11 +67,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		tabObj = {
 			tabName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
-			};
+			},
 		tabObj = {
 			tabName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
-			};
+			}
 			]
 		//WAF.loadComponent ( {									//load webcomponent into this pages component1 element
 		//id:   	'component1',

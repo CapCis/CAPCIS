@@ -138,8 +138,8 @@
 
 #{id}richText11 {
 	 z-index: 1;
-	 width: 66px;
-	 height: 50px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -149,8 +149,8 @@
 
 #{id}menuItem11 {
 	 z-index: 4;
-	 width: 66px;
-	 height: 50px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -160,8 +160,8 @@
 
 #{id}richText10 {
 	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -171,8 +171,8 @@
 
 #{id}menuItem10 {
 	 z-index: 3;
-	 width: 66px;
-	 height: 23px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -182,8 +182,8 @@
 
 #{id}richText9 {
 	 z-index: 1;
-	 width: 65px;
-	 height: 21px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -193,8 +193,8 @@
 
 #{id}menuItem9 {
 	 z-index: 2;
-	 width: 66px;
-	 height: 23px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -204,8 +204,8 @@
 
 #{id}richText8 {
 	 z-index: 1;
-	 width: 65px;
-	 height: 22px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -215,8 +215,8 @@
 
 #{id}menuItem8 {
 	 z-index: 1;
-	 width: 66px;
-	 height: 23px;
+	 width: 211378px;
+	 height: 417px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -296,8 +296,8 @@
 
 #{id}menuBar {
 	 z-index: 3;
-	 height: 23px;
 	 top: 5px;
+	 bottom: 520px;
 	 left: 5px;
 	 right: 277px;
 	
@@ -307,10 +307,10 @@
 
 #{id}subTabViewUtility {
 	 z-index: 1;
-	 width: 888px;
-	 height: 467px;
-	 top: 27px;
-	 left: 61px;
+	 width: 3382025px;
+	 height: 1683px;
+	 top: 5px;
+	 left: 19px;
 	
 	 position: absolute;
 	 
@@ -330,9 +330,9 @@
 
 #{id}subMenuBarUtility {
 	 z-index: 3;
-	 width: 66px;
-	 height: 190px;
+	 width: 3382020px;
 	 top: 0px;
+	 bottom: 0px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -341,10 +341,10 @@
 
 #{id}subContainerCapInfo {
 	 z-index: 4;
-	 width: 822px;
+	 width: 6px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 66px;
+	 left: 3382019px;
 	
 	 position: absolute;
 	 
@@ -363,10 +363,10 @@
 
 #{id}subContainerRDLInfo {
 	 z-index: 5;
-	 width: 822px;
+	 width: 6px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 66px;
+	 left: 3382019px;
 	
 	 position: absolute;
 	 
@@ -374,10 +374,10 @@
 
 #{id}subContainerTasks {
 	 z-index: 6;
-	 width: 822px;
+	 width: 6px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 66px;
+	 left: 3382019px;
 	
 	 position: absolute;
 	 
@@ -385,10 +385,10 @@
 
 #{id}subContainerMessenger {
 	 z-index: 7;
+	 width: 6px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 66px;
-	 right: 0px;
+	 left: 3382019px;
 	
 	 position: absolute;
 	 
@@ -675,6 +675,17 @@
 	 height: 323px;
 	 top: 11px;
 	 left: 20px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}tabComponent22 {
+	 z-index: 1;
+	 width: 630px;
+	 height: 307px;
+	 top: 32px;
+	 left: 34px;
 	
 	 position: absolute;
 	 
