@@ -138,8 +138,8 @@
 
 #{id}richText11 {
 	 z-index: 1;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6371px;
+	 height: 21px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -149,8 +149,8 @@
 
 #{id}menuItem11 {
 	 z-index: 4;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6372px;
+	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -160,8 +160,8 @@
 
 #{id}richText10 {
 	 z-index: 1;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6371px;
+	 height: 21px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -171,8 +171,8 @@
 
 #{id}menuItem10 {
 	 z-index: 3;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6372px;
+	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -182,8 +182,8 @@
 
 #{id}richText9 {
 	 z-index: 1;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6371px;
+	 height: 21px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -193,8 +193,8 @@
 
 #{id}menuItem9 {
 	 z-index: 2;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6372px;
+	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -204,8 +204,8 @@
 
 #{id}richText8 {
 	 z-index: 1;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6371px;
+	 height: 21px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -215,8 +215,8 @@
 
 #{id}menuItem8 {
 	 z-index: 1;
-	 width: 211378px;
-	 height: 417px;
+	 width: 6372px;
+	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -274,7 +274,7 @@
 }
 
 #{id}tabView {
-	 z-index: 5;
+	 z-index: 3;
 	 width: 987px;
 	 height: 548px;
 	 top: 40px;
@@ -307,10 +307,10 @@
 
 #{id}subTabViewUtility {
 	 z-index: 1;
-	 width: 3382025px;
-	 height: 1683px;
-	 top: 5px;
-	 left: 19px;
+	 width: 31856px;
+	 height: 406px;
+	 top: 46px;
+	 left: 37px;
 	
 	 position: absolute;
 	 
@@ -330,9 +330,9 @@
 
 #{id}subMenuBarUtility {
 	 z-index: 3;
-	 width: 3382020px;
+	 width: 6372px;
 	 top: 0px;
-	 bottom: 0px;
+	 bottom: 244px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -341,10 +341,10 @@
 
 #{id}subContainerCapInfo {
 	 z-index: 4;
-	 width: 6px;
+	 width: 25484px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 3382019px;
+	 left: 6372px;
 	
 	 position: absolute;
 	 
@@ -363,10 +363,10 @@
 
 #{id}subContainerRDLInfo {
 	 z-index: 5;
-	 width: 6px;
+	 width: 25484px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 3382019px;
+	 left: 6372px;
 	
 	 position: absolute;
 	 
@@ -374,10 +374,10 @@
 
 #{id}subContainerTasks {
 	 z-index: 6;
-	 width: 6px;
+	 width: 25484px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 3382019px;
+	 left: 6372px;
 	
 	 position: absolute;
 	 
@@ -385,10 +385,10 @@
 
 #{id}subContainerMessenger {
 	 z-index: 7;
-	 width: 6px;
+	 width: 25484px;
 	 top: 0px;
 	 bottom: 0px;
-	 left: 3382019px;
+	 left: 6372px;
 	
 	 position: absolute;
 	 
@@ -617,9 +617,9 @@
 #{id}subContainer21 {
 	 z-index: 4;
 	 top: 5px;
-	 bottom: 5px;
+	 bottom: 0px;
 	 left: 71px;
-	 right: 5px;
+	 right: 0px;
 	
 	 position: absolute;
 	 
@@ -639,9 +639,9 @@
 #{id}subContainer22 {
 	 z-index: 5;
 	 top: 5px;
-	 bottom: 5px;
+	 bottom: 0px;
 	 left: 71px;
-	 right: 5px;
+	 right: 0px;
 	
 	 position: absolute;
 	 
@@ -661,9 +661,9 @@
 #{id}subContainer23 {
 	 z-index: 6;
 	 top: 5px;
-	 bottom: 5px;
+	 bottom: 0px;
 	 left: 71px;
-	 right: 5px;
+	 right: 0px;
 	
 	 position: absolute;
 	 
