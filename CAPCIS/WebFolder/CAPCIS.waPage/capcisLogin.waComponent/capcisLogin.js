@@ -32,6 +32,8 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+		debugger;
+		this.id;
 		loginGo();
 	};// @lock
 	
