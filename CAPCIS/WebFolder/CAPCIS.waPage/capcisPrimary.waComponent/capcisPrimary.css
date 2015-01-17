@@ -296,10 +296,10 @@
 
 #{id}menuBar {
 	 z-index: 3;
-	 height: 23px;
+	 width: 705px;
 	 top: 5px;
+	 bottom: 520px;
 	 left: 5px;
-	 right: 277px;
 	
 	 position: absolute;
 	 
@@ -331,8 +331,8 @@
 #{id}subMenuBarUtility {
 	 z-index: 3;
 	 width: 66px;
-	 height: 190px;
 	 top: 0px;
+	 bottom: 277px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -385,10 +385,10 @@
 
 #{id}subContainerMessenger {
 	 z-index: 7;
+	 width: 294px;
 	 top: 0px;
 	 bottom: 0px;
 	 left: 66px;
-	 right: 0px;
 	
 	 position: absolute;
 	 
@@ -396,10 +396,10 @@
 
 #{id}mainContainer2 {
 	 z-index: 5;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -407,10 +407,10 @@
 
 #{id}mainContainer3 {
 	 z-index: 6;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -451,10 +451,10 @@
 
 #{id}mainContainer4 {
 	 z-index: 7;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -473,10 +473,10 @@
 
 #{id}mainContainer5 {
 	 z-index: 8;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -495,10 +495,10 @@
 
 #{id}mainContainer6 {
 	 z-index: 9;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -517,10 +517,10 @@
 
 #{id}mainContainer7 {
 	 z-index: 10;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -539,10 +539,10 @@
 
 #{id}mainContainer8 {
 	 z-index: 11;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -561,10 +561,10 @@
 
 #{id}mainContainer9 {
 	 z-index: 12;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -583,10 +583,10 @@
 
 #{id}mainContainer10 {
 	 z-index: 13;
+	 width: 294px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -616,10 +616,10 @@
 
 #{id}subContainer21 {
 	 z-index: 4;
+	 width: 294px;
 	 top: 5px;
 	 bottom: 5px;
 	 left: 71px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -638,10 +638,10 @@
 
 #{id}subContainer22 {
 	 z-index: 5;
+	 width: 294px;
 	 top: 5px;
 	 bottom: 5px;
 	 left: 71px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -660,10 +660,10 @@
 
 #{id}subContainer23 {
 	 z-index: 6;
+	 width: 294px;
 	 top: 5px;
 	 bottom: 5px;
 	 left: 71px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
