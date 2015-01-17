@@ -108,11 +108,16 @@ function constructor (id) {
 	    				$$("capcisMainWC_subTab"+(x+1)+(y+1)).focus();	    				
 	    				$$("capcisMainWC_tabView").selectTab(x+1);
 	    				$$("capcisMainWC_subTabView"+(x+1)).selectTab(y+1);   				
+						
 						WAF.loadComponent({											//load webcomponent into this page component1 element
 						id: 	"capcisMainWC_tabComponent"+(x+1)+(y+1), 											//designate the component to load into
 						path: 	myWCName[0].WebComponentName 				//designate the webcomponent to load						
 						});
 						return
+	    			}
+	    			if (y === 1)
+	    			{
+	    			  //make the main tab visible and name it		
 	    			}
 	    			if (y === 9)
 	    			{
