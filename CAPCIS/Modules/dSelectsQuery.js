@@ -9,7 +9,7 @@ exports.buildQuery = function buildQuery(myObject)
 {
 	var answer; 
 	switch(myObject.major){
-		case 0:
+		case 0:  //utilities
 			switch(myObject.minor){
 				case 0: answer = 'SELECT FullName, FxUserAccountsID FROM fxuseraccounts WHERE UserPassword = "' + myObject.data1 + '" AND UserName = "' + myObject.user +'"';
 						break;
@@ -26,7 +26,7 @@ exports.buildQuery = function buildQuery(myObject)
 			}
 			break;
 		case 1:
-			switch(myObject.minor){
+			switch(myObject.minor){//weekly monitoring
 				case 0: answer = "SELECT \
 								(( attendedcounter + classescredited - WeeksClass)/13) as phasenumber, \
 								attendedcounter, weeksclass, clientrequirementsID, clientIDentry, CIID, clientFirstName,ClientMiddleName, \
@@ -56,8 +56,17 @@ exports.buildQuery = function buildQuery(myObject)
 						answer = null;
 					}		
 			break;
-		case 2:
-			break;
+		case 2://classes
+			switch(myObject.minor){
+				case 0: answer = 'SELECT ClassType, WeekDayNumber, Class, ClassTime,ClassDay,TimeNumber,ClassRoom FROM capcis.capclasses where ClassStatus = "OPEN" order by 1,2,6,7';
+						break;
+				case 1: answer = 'SELECT Program, ProgramsID FROM capcis.programs  where InactivePrograms = 0';
+						break;
+				//case 2: answer = "SELECT ClassType, WeekDayNumber, Class, ClassTime,ClassDay,TimeNumber,ClassRoom FROM capcis.capclasses where ClassStatus = 'OPEN' and ClassDay = " + myObject.data1 +" and Program = "myObject.data2" order by 1,2,6,7"
+				default:
+						answer = null;
+					}
+			break	
 		case 3:
 			break;
 		case 4:
