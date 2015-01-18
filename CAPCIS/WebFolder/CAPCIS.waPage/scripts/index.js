@@ -30,49 +30,74 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		
 		userConfigObj = {fullName:"",userName:"",userID:"",secToken:"",selectedUserDivision:"",approvedDivArray:[]};
-		
+		mainColumnPosLeft = [0,126,251,376,501,626,751,876,1001,1126];
+		subColumnPosTop = [0,100,200,300,400,500,600,700,800,900];
 		masterTabArray = [
 		tabObj = {
-			tabName:"Utilities",
-			subTab:[[true],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
-			},
-		tabObj = {
-			tabName:"Client Files",
+			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			},
 		tabObj = {
 			tabName:"",
+			colNumber:"",
+			butName:"",
+			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
+			},
+		tabObj = {
+			tabName:"",
+			colNumber:"",
+			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			}
 			]
+			
+			
+			
+		
 		//WAF.loadComponent ( {									//load webcomponent into this pages component1 element
 		//id:   	'component1',
 		//path: 	'/CAPCIS.waPage/capcisLogin.waComponent',

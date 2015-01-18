@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		debugger;
+		
 		$$(getHtmlId("tfUserName")).focus();
 	//(data.userData.myTestValue);
 	// @region namespaceDeclaration// @startlock
@@ -32,7 +32,7 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		this.id;
 		loginGo();
 	};// @lock
