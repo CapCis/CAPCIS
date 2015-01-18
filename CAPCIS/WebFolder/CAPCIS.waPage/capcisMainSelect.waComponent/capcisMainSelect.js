@@ -95,8 +95,9 @@ function constructor (id) {
 	 	myWCName = rpcDSelects.getSelect(myObject);
 	 	debugger;
 	 	var subTabCount = 0;
-	    for (var x = 1; x <= 9; x++)
+	    for (var x = 0; x <= 9; x++)
 	    {
+	    	//Find a tab already open with this category
 	    	if (masterTabArray[x].tabName === id.innerText)
 	    	{
 	    		for (var y = 0; y <= 9; y++)
@@ -126,7 +127,79 @@ function constructor (id) {
 	    		}
 	    		
 	    	}
-	    	
+	    	//Find a blank tab to use
+	    	if (masterTabArray[x].tabName ==="")
+	    	{
+	    		var mainTabCount = 0;
+	    		var subTabCount = 0;
+	    		var availBut;
+	    		var colCount = 0;
+	    		var colNumberFound;	    		
+	    		for (;mainTabCount < 10; mainTabCount++)  //loop threw main tab array
+				{
+					if (masterTabArray[mainTabCount].tabName === "")  //if this tab is blank it is available
+					{
+						for (availBut = 0; availBut < 10; availBut++)  //loop threw the buttons to find an available one
+						{
+							if (masterTabArray[availBut].butName === "")  //if this button is blank use it and set all the variables for the main button
+							{
+								masterTabArray[availBut].butName = "mt" + availBut.toString();  //set the value in the main tab array to the button name
+								
+								for (;colCount < 10; colCount++) 		//loop threw coloumns to find an open one
+								{			
+									colNumberFound = 0;						
+									for (var mycounter = 0; mycounter < 10; mycounter++)   
+									{										
+										if (masterTabArray[mycounter].colNumber === colCount)   //check mastertabarray column numbers to find last loaded
+										{
+											colNumberFound = 1;												
+										}										
+																				
+									}
+									if (colNumberFound != 1)
+									{
+										var getMainTabObj = document.getElementById("capcisMainWC_mt" + availBut.toString());   //Move Button into this column	
+										getMainTabObj.style.top = "250px";
+										getMainTabObj.style.left = mainColumnPosLeft[colCount];
+										masterTabArray[mainTabCount].colNumber = colCount;
+										getMainTabObj;
+										return;
+									}		
+								}
+							}	
+						}
+						masterTabArray[mainTabCount].tabName = id.innerText
+						
+					}
+				}
+	    		
+	    		
+	    		for (var y = 0; y <= 9; y++)
+	    		{
+	    			if (masterTabArray[x].subTab[y][0] === false)
+	    			{	    				
+	    				masterTabArray[x].subTab[y][0] = true;
+	    				$$("capcisMainWC_subTab"+(x+1)+(y+1)).toggle();  //+(x+1)+(y+1)
+	    				$$("capcisMainWC_subTab"+(x+1)+(y+1)).focus();	    				
+	    				$$("capcisMainWC_tabView").selectTab(x+1);
+	    				$$("capcisMainWC_subTabView"+(x+1)).selectTab(y+1);   				
+						
+						WAF.loadComponent({											//load webcomponent into this page component1 element
+						id: 	"capcisMainWC_tabComponent"+(x+1)+(y+1), 											//designate the component to load into
+						path: 	myWCName[0].WebComponentName 				//designate the webcomponent to load						
+						});
+						return
+	    			}
+	    			if (y === 1)
+	    			{
+	    			  //make the main tab visible and name it		
+	    			}
+	    			if (y === 9)
+	    			{
+	    				alert("No Available " + id + " Tabs");	
+	    			}	    			
+	    		}		
+	    	}
 	    }
 	 	
 	 	
