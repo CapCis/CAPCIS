@@ -32,6 +32,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		userConfigObj = {fullName:"",userName:"",userID:"",secToken:"",selectedUserDivision:"",approvedDivArray:[]};
 		mainColumnPosLeft = [0,126,251,376,501,626,751,876,1001,1126];
 		subColumnPosTop = [0,100,200,300,400,500,600,700,800,900];
+		tabPosTrack = [
+			tabsPos = {
+				mainTabsPos:"",
+				subTabsPos:[
+				
 		masterTabArray = [
 		tabObj = {
 			tabName:"",
