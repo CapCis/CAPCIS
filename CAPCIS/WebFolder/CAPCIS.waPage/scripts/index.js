@@ -30,9 +30,64 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		
 		userConfigObj = {fullName:"",userName:"",userID:"",secToken:"",selectedUserDivision:"",approvedDivArray:[]};
+		currentVisibleMainContainer = "";
+		currentVisibleSubTab = "";
 		mainColumnPosLeft = [0,126,251,376,501,626,751,876,1001,1126];
-		subColumnPosTop = [0,100,200,300,400,500,600,700,800,900];
-		masterTabArray = [
+		subColumnPosTop = [36,60,75,90,105,120,135,145,165,180];
+		tabColumnTracking = [																	//array to track used columns
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:"",
+				mainColumnName:"",
+				mainColumnButtonID:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnButtonID:["","","","","","","","","",""]
+			}
+			];
+			
+				
+		masterTabArray = [																			//array to track data for open tabs
 		tabObj = {
 			tabName:"",
 			colNumber:"",
@@ -93,7 +148,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			butName:"",
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			}
-			]
+			];
 			
 			
 			
