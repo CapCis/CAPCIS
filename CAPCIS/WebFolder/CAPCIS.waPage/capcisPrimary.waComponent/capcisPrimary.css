@@ -3,72 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}component5 {
-	 width: 545px;
-	 height: 350px;
-	 top: 225px;
-	 left: 84px;
-	
-	 position: absolute;
-	 z-index: 66;
-	 
-}
-
-#{id}component4 {
-	 width: 545px;
-	 height: 350px;
-	 top: 221px;
-	 left: 80px;
-	
-	 position: absolute;
-	 z-index: 65;
-	 
-}
-
-#{id}component3 {
-	 width: 545px;
-	 height: 350px;
-	 top: 217px;
-	 left: 76px;
-	
-	 position: absolute;
-	 z-index: 64;
-	 
-}
-
-#{id}component2 {
-	 width: 545px;
-	 height: 350px;
-	 top: 213px;
-	 left: 72px;
-	
-	 position: absolute;
-	 z-index: 63;
-	 
-}
-
-#{id}component1 {
-	 z-index: 62;
-	 width: 545px;
-	 height: 350px;
-	 top: 209px;
-	 left: 68px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button1 {
-	 z-index: 31;
-	 width: 127px;
-	 height: 56px;
-	 top: 678px;
-	 left: 36px;
-	
-	 position: absolute;
-	 
-}
-
 #{id} {
 	 background-color: rgb(78, 117, 163);
 	 
@@ -79,7 +13,7 @@
 	 width: 125px;
 	 height: 35px;
 	 top: 1px;
-	 left: 24px;
+	 left: 50px;
 	
 	 position: absolute;
 	 
@@ -188,8 +122,8 @@
 	 z-index: 29;
 	 width: 31px;
 	 height: 21px;
-	 top: 61px;
-	 left: 6px;
+	 top: 535px;
+	 left: 288px;
 	
 	 position: absolute;
 	 
@@ -199,8 +133,8 @@
 	 z-index: 22;
 	 width: 31px;
 	 height: 21px;
-	 top: 61px;
-	 left: 11px;
+	 top: 535px;
+	 left: 293px;
 	
 	 position: absolute;
 	 
@@ -210,8 +144,8 @@
 	 z-index: 23;
 	 width: 31px;
 	 height: 21px;
-	 top: 60px;
-	 left: 8px;
+	 top: 534px;
+	 left: 290px;
 	
 	 position: absolute;
 	 
@@ -221,8 +155,8 @@
 	 z-index: 24;
 	 width: 31px;
 	 height: 21px;
-	 top: 61px;
-	 left: 8px;
+	 top: 535px;
+	 left: 290px;
 	
 	 position: absolute;
 	 
@@ -232,8 +166,8 @@
 	 z-index: 25;
 	 width: 31px;
 	 height: 21px;
-	 top: 62px;
-	 left: 10px;
+	 top: 536px;
+	 left: 292px;
 	
 	 position: absolute;
 	 
@@ -243,8 +177,8 @@
 	 z-index: 26;
 	 width: 31px;
 	 height: 21px;
-	 top: 60px;
-	 left: 6px;
+	 top: 534px;
+	 left: 288px;
 	
 	 position: absolute;
 	 
@@ -254,8 +188,8 @@
 	 z-index: 27;
 	 width: 31px;
 	 height: 21px;
-	 top: 60px;
-	 left: 7px;
+	 top: 534px;
+	 left: 289px;
 	
 	 position: absolute;
 	 
@@ -265,8 +199,8 @@
 	 z-index: 30;
 	 width: 31px;
 	 height: 21px;
-	 top: 57px;
-	 left: 6px;
+	 top: 531px;
+	 left: 288px;
 	
 	 position: absolute;
 	 
@@ -276,8 +210,8 @@
 	 z-index: 28;
 	 width: 31px;
 	 height: 21px;
-	 top: 52px;
-	 left: 5px;
+	 top: 526px;
+	 left: 287px;
 	
 	 position: absolute;
 	 
@@ -287,340 +221,241 @@
 	 z-index: 11;
 	 width: 31px;
 	 height: 21px;
-	 top: 47px;
-	 left: 5px;
+	 top: 521px;
+	 left: 287px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st00 {
-	 z-index: 32;
-	 width: 35px;
-	 height: 79px;
-	 top: 42px;
-	 left: 77px;
+	 z-index: 1;
+	 width: 39px;
+	 height: 30px;
+	 top: 23px;
+	 left: 94px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st01 {
-	 z-index: 33;
-	 width: 35px;
-	 height: 81px;
-	 top: 49px;
-	 left: 82px;
+	 z-index: 2;
+	 width: 39px;
+	 height: 30px;
+	 top: 23px;
+	 left: 139px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st02 {
-	 z-index: 34;
-	 width: 35px;
-	 height: 81px;
-	 top: 57px;
-	 left: 86px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}st09 {
-	 z-index: 41;
-	 width: 35px;
-	 height: 81px;
-	 top: 109px;
-	 left: 125px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}st08 {
-	 z-index: 40;
-	 width: 35px;
-	 height: 81px;
-	 top: 100px;
-	 left: 121px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}st07 {
-	 z-index: 39;
-	 width: 35px;
-	 height: 81px;
-	 top: 92px;
-	 left: 115px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}st06 {
-	 z-index: 38;
-	 width: 35px;
-	 height: 81px;
-	 top: 85px;
-	 left: 110px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}st05 {
-	 z-index: 37;
-	 width: 35px;
-	 height: 81px;
-	 top: 78px;
-	 left: 104px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}st04 {
-	 z-index: 36;
-	 width: 35px;
-	 height: 81px;
-	 top: 71px;
-	 left: 97px;
+	 z-index: 3;
+	 width: 39px;
+	 height: 30px;
+	 top: 23px;
+	 left: 182px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st03 {
-	 z-index: 35;
-	 width: 35px;
-	 height: 81px;
-	 top: 65px;
-	 left: 92px;
+	 z-index: 4;
+	 width: 39px;
+	 height: 30px;
+	 top: 24px;
+	 left: 226px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st04 {
+	 z-index: 5;
+	 width: 39px;
+	 height: 30px;
+	 top: 59px;
+	 left: 94px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st05 {
+	 z-index: 6;
+	 width: 39px;
+	 height: 30px;
+	 top: 61px;
+	 left: 138px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st06 {
+	 z-index: 7;
+	 width: 39px;
+	 height: 30px;
+	 top: 61px;
+	 left: 185px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st08 {
+	 z-index: 8;
+	 width: 39px;
+	 height: 29px;
+	 top: 98px;
+	 left: 118px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st09 {
+	 z-index: 9;
+	 width: 39px;
+	 height: 27px;
+	 top: 100px;
+	 left: 202px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc00 {
-	 width: 20px;
-	 height: 21px;
-	 top: 123px;
-	 left: 18px;
+	 z-index: 10;
+	 width: 18px;
+	 height: 17px;
+	 top: 163px;
+	 left: 79px;
 	
 	 position: absolute;
-	 z-index: 42;
 	 
 }
 
 #{id}stc01 {
-	 width: 20px;
-	 height: 21px;
-	 top: 127px;
-	 left: 22px;
+	 width: 18px;
+	 height: 17px;
+	 top: 167px;
+	 left: 83px;
 	
 	 position: absolute;
-	 z-index: 43;
+	 z-index: 11;
 	 
 }
 
 #{id}stc02 {
-	 width: 20px;
-	 height: 21px;
-	 top: 131px;
-	 left: 26px;
+	 width: 18px;
+	 height: 17px;
+	 top: 171px;
+	 left: 87px;
 	
 	 position: absolute;
-	 z-index: 44;
+	 z-index: 12;
 	 
 }
 
 #{id}stc03 {
-	 width: 20px;
-	 height: 21px;
-	 top: 135px;
-	 left: 30px;
+	 width: 18px;
+	 height: 17px;
+	 top: 175px;
+	 left: 91px;
 	
 	 position: absolute;
-	 z-index: 45;
+	 z-index: 13;
 	 
 }
 
 #{id}stc04 {
-	 width: 20px;
-	 height: 21px;
-	 top: 139px;
-	 left: 34px;
+	 width: 18px;
+	 height: 17px;
+	 top: 179px;
+	 left: 95px;
 	
 	 position: absolute;
-	 z-index: 46;
+	 z-index: 14;
 	 
 }
 
 #{id}stc05 {
-	 width: 20px;
-	 height: 21px;
-	 top: 143px;
-	 left: 38px;
+	 width: 18px;
+	 height: 17px;
+	 top: 183px;
+	 left: 99px;
 	
 	 position: absolute;
-	 z-index: 47;
+	 z-index: 15;
 	 
 }
 
 #{id}stc06 {
-	 width: 20px;
-	 height: 21px;
-	 top: 147px;
-	 left: 42px;
+	 width: 18px;
+	 height: 17px;
+	 top: 187px;
+	 left: 103px;
 	
 	 position: absolute;
-	 z-index: 48;
+	 z-index: 16;
 	 
 }
 
 #{id}stc07 {
-	 width: 20px;
-	 height: 21px;
-	 top: 151px;
-	 left: 46px;
+	 width: 18px;
+	 height: 17px;
+	 top: 191px;
+	 left: 107px;
 	
 	 position: absolute;
-	 z-index: 49;
+	 z-index: 17;
 	 
 }
 
 #{id}stc08 {
-	 width: 20px;
-	 height: 21px;
-	 top: 155px;
-	 left: 50px;
+	 width: 18px;
+	 height: 17px;
+	 top: 195px;
+	 left: 111px;
 	
 	 position: absolute;
-	 z-index: 50;
+	 z-index: 18;
 	 
 }
 
 #{id}stc09 {
-	 width: 20px;
-	 height: 21px;
-	 top: 159px;
-	 left: 54px;
+	 width: 18px;
+	 height: 17px;
+	 top: 199px;
+	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 51;
+	 z-index: 19;
 	 
 }
 
-#{id}st10 {
-	 width: 35px;
-	 height: 81px;
-	 top: 45px;
-	 left: 217px;
+#{id}mc0 {
+	 z-index: 31;
+	 width: 1168px;
+	 height: 410px;
+	 top: 35px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 52;
 	 
 }
 
-#{id}st11 {
-	 width: 35px;
-	 height: 81px;
-	 top: 49px;
-	 left: 221px;
+#{id}st07 {
+	 width: 39px;
+	 height: 30px;
+	 top: 62px;
+	 left: 228px;
 	
 	 position: absolute;
-	 z-index: 53;
-	 
-}
-
-#{id}st12 {
-	 width: 35px;
-	 height: 81px;
-	 top: 53px;
-	 left: 225px;
-	
-	 position: absolute;
-	 z-index: 54;
-	 
-}
-
-#{id}st13 {
-	 width: 35px;
-	 height: 81px;
-	 top: 57px;
-	 left: 229px;
-	
-	 position: absolute;
-	 z-index: 55;
-	 
-}
-
-#{id}st14 {
-	 width: 35px;
-	 height: 81px;
-	 top: 61px;
-	 left: 233px;
-	
-	 position: absolute;
-	 z-index: 56;
-	 
-}
-
-#{id}st16 {
-	 width: 35px;
-	 height: 81px;
-	 top: 65px;
-	 left: 237px;
-	
-	 position: absolute;
-	 z-index: 57;
-	 
-}
-
-#{id}st17 {
-	 width: 35px;
-	 height: 81px;
-	 top: 69px;
-	 left: 241px;
-	
-	 position: absolute;
-	 z-index: 58;
-	 
-}
-
-#{id}st18 {
-	 width: 35px;
-	 height: 81px;
-	 top: 73px;
-	 left: 245px;
-	
-	 position: absolute;
-	 z-index: 59;
-	 
-}
-
-#{id}st19 {
-	 width: 35px;
-	 height: 81px;
-	 top: 77px;
-	 left: 249px;
-	
-	 position: absolute;
-	 z-index: 60;
-	 
-}
-
-#{id}st15 {
-	 width: 35px;
-	 height: 81px;
-	 top: 81px;
-	 left: 253px;
-	
-	 position: absolute;
-	 z-index: 61;
+	 z-index: 20;
 	 
 }
 
