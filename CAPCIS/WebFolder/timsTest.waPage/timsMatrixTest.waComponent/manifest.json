@@ -1,6 +1,0 @@
-{
-    "name"    : "timsMatrixTest",    
-    "html"    : "timsMatrixTest.html",
-    "styles"  : [],
-    "scripts" : ["timsMatrixTest.js"]
-}
