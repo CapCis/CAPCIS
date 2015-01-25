@@ -12,9 +12,9 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 	
-		$$(getHtmlId('component2')).$domNode.css('overflow','auto');
+		$$(getHtmlId('component9')).$domNode.css('overflow','auto');
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	getHtmlId('component2'), 											//designate the component to load into
+		id: 	getHtmlId('component9'), 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/capClassMainSelectFullView.waComponent'	//designate the webcomponent to load
 		});
 
@@ -29,7 +29,7 @@ function constructor (id) {
 	{// @endlock
 
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	getHtmlId('component2'), 											//designate the component to load into
+		id: 	getHtmlId('component9'), 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/capClassMainSelectOptions.waComponent'	//designate the webcomponent to load
 		});
 
@@ -41,7 +41,7 @@ function constructor (id) {
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	getHtmlId('component2'), 											//designate the component to load into
+		id: 	getHtmlId('component9'), 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/capClassMainSelectFullView.waComponent', 				//designate the webcomponent to load	
 	});
 		

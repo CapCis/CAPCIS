@@ -3,17 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}component2 {
-	 z-index: 2;
-	 width: 131px;
-	 height: 606px;
-	 top: 73px;
-	 left: 6px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}button2 {
 	 z-index: 4;
 	 width: 130px;
@@ -57,6 +46,17 @@
 	 border-bottom-style: solid;
 	 border-bottom-width: 3px;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}component9 {
+	 z-index: 2;
+	 width: 131px;
+	 height: 606px;
+	 top: 73px;
+	 left: 6px;
+	
+	 position: absolute;
 	 
 }
 
