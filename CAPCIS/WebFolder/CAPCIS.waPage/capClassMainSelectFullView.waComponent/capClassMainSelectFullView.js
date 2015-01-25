@@ -48,8 +48,9 @@ function constructor (id) {
             		'class': 'waf-widget waf-textField default inherited'
             		//'style': 'top:500;position:relative'
             	});
+            	debugger;
             	var testme = getHtmlId('classFullViewCont');
-            	var testicles = $$(getHtmlId('classFullViewCont'));
+            	var testicles = $comp.id;
             	$$(getHtmlId('classFullViewCont')).addChild($$("Class2"));
                              
             	$$('Class2').setValue('Class');
