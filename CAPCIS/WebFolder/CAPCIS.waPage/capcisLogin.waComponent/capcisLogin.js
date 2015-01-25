@@ -39,6 +39,7 @@ function constructor (id) {
 	
 	function loginGo()
 	{
+		
 		$$(getHtmlId("rtMessage")).setValue("");
 		var myPassword = $$(getHtmlId("tfPassword")).getValue();
         var passHash = CryptoJS.SHA3(myPassword).toString();   //Hash password on client        

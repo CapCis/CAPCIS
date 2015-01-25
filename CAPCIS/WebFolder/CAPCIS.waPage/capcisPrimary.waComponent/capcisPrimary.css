@@ -3,6 +3,61 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}component5 {
+	 width: 545px;
+	 height: 350px;
+	 top: 225px;
+	 left: 84px;
+	
+	 position: absolute;
+	 z-index: 66;
+	 
+}
+
+#{id}component4 {
+	 width: 545px;
+	 height: 350px;
+	 top: 221px;
+	 left: 80px;
+	
+	 position: absolute;
+	 z-index: 65;
+	 
+}
+
+#{id}component3 {
+	 width: 545px;
+	 height: 350px;
+	 top: 217px;
+	 left: 76px;
+	
+	 position: absolute;
+	 z-index: 64;
+	 
+}
+
+#{id}component2 {
+	 width: 545px;
+	 height: 350px;
+	 top: 213px;
+	 left: 72px;
+	
+	 position: absolute;
+	 z-index: 63;
+	 
+}
+
+#{id}component1 {
+	 z-index: 62;
+	 width: 545px;
+	 height: 350px;
+	 top: 209px;
+	 left: 68px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}button1 {
 	 z-index: 31;
 	 width: 127px;
@@ -133,8 +188,8 @@
 	 z-index: 29;
 	 width: 31px;
 	 height: 21px;
-	 top: 112px;
-	 left: 1203px;
+	 top: 61px;
+	 left: 6px;
 	
 	 position: absolute;
 	 
@@ -144,8 +199,8 @@
 	 z-index: 22;
 	 width: 31px;
 	 height: 21px;
-	 top: 112px;
-	 left: 1078px;
+	 top: 61px;
+	 left: 11px;
 	
 	 position: absolute;
 	 
@@ -155,8 +210,8 @@
 	 z-index: 23;
 	 width: 31px;
 	 height: 21px;
-	 top: 113px;
-	 left: 950px;
+	 top: 60px;
+	 left: 8px;
 	
 	 position: absolute;
 	 
@@ -166,8 +221,8 @@
 	 z-index: 24;
 	 width: 31px;
 	 height: 21px;
-	 top: 110px;
-	 left: 825px;
+	 top: 61px;
+	 left: 8px;
 	
 	 position: absolute;
 	 
@@ -177,8 +232,8 @@
 	 z-index: 25;
 	 width: 31px;
 	 height: 21px;
-	 top: 111px;
-	 left: 697px;
+	 top: 62px;
+	 left: 10px;
 	
 	 position: absolute;
 	 
@@ -188,8 +243,8 @@
 	 z-index: 26;
 	 width: 31px;
 	 height: 21px;
-	 top: 108px;
-	 left: 569px;
+	 top: 60px;
+	 left: 6px;
 	
 	 position: absolute;
 	 
@@ -199,8 +254,8 @@
 	 z-index: 27;
 	 width: 31px;
 	 height: 21px;
-	 top: 107px;
-	 left: 443px;
+	 top: 60px;
+	 left: 7px;
 	
 	 position: absolute;
 	 
@@ -210,8 +265,8 @@
 	 z-index: 30;
 	 width: 31px;
 	 height: 21px;
-	 top: 108px;
-	 left: 313px;
+	 top: 57px;
+	 left: 6px;
 	
 	 position: absolute;
 	 
@@ -221,8 +276,8 @@
 	 z-index: 28;
 	 width: 31px;
 	 height: 21px;
-	 top: 109px;
-	 left: 177px;
+	 top: 52px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -232,8 +287,8 @@
 	 z-index: 11;
 	 width: 31px;
 	 height: 21px;
-	 top: 111px;
-	 left: 33px;
+	 top: 47px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -251,13 +306,321 @@
 }
 
 #{id}st01 {
+	 z-index: 33;
 	 width: 35px;
 	 height: 81px;
-	 top: 128px;
-	 left: 77px;
+	 top: 49px;
+	 left: 82px;
 	
 	 position: absolute;
-	 z-index: 33;
+	 
+}
+
+#{id}st02 {
+	 z-index: 34;
+	 width: 35px;
+	 height: 81px;
+	 top: 57px;
+	 left: 86px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st09 {
+	 z-index: 41;
+	 width: 35px;
+	 height: 81px;
+	 top: 109px;
+	 left: 125px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st08 {
+	 z-index: 40;
+	 width: 35px;
+	 height: 81px;
+	 top: 100px;
+	 left: 121px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st07 {
+	 z-index: 39;
+	 width: 35px;
+	 height: 81px;
+	 top: 92px;
+	 left: 115px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st06 {
+	 z-index: 38;
+	 width: 35px;
+	 height: 81px;
+	 top: 85px;
+	 left: 110px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st05 {
+	 z-index: 37;
+	 width: 35px;
+	 height: 81px;
+	 top: 78px;
+	 left: 104px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st04 {
+	 z-index: 36;
+	 width: 35px;
+	 height: 81px;
+	 top: 71px;
+	 left: 97px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}st03 {
+	 z-index: 35;
+	 width: 35px;
+	 height: 81px;
+	 top: 65px;
+	 left: 92px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}stc00 {
+	 width: 20px;
+	 height: 21px;
+	 top: 123px;
+	 left: 18px;
+	
+	 position: absolute;
+	 z-index: 42;
+	 
+}
+
+#{id}stc01 {
+	 width: 20px;
+	 height: 21px;
+	 top: 127px;
+	 left: 22px;
+	
+	 position: absolute;
+	 z-index: 43;
+	 
+}
+
+#{id}stc02 {
+	 width: 20px;
+	 height: 21px;
+	 top: 131px;
+	 left: 26px;
+	
+	 position: absolute;
+	 z-index: 44;
+	 
+}
+
+#{id}stc03 {
+	 width: 20px;
+	 height: 21px;
+	 top: 135px;
+	 left: 30px;
+	
+	 position: absolute;
+	 z-index: 45;
+	 
+}
+
+#{id}stc04 {
+	 width: 20px;
+	 height: 21px;
+	 top: 139px;
+	 left: 34px;
+	
+	 position: absolute;
+	 z-index: 46;
+	 
+}
+
+#{id}stc05 {
+	 width: 20px;
+	 height: 21px;
+	 top: 143px;
+	 left: 38px;
+	
+	 position: absolute;
+	 z-index: 47;
+	 
+}
+
+#{id}stc06 {
+	 width: 20px;
+	 height: 21px;
+	 top: 147px;
+	 left: 42px;
+	
+	 position: absolute;
+	 z-index: 48;
+	 
+}
+
+#{id}stc07 {
+	 width: 20px;
+	 height: 21px;
+	 top: 151px;
+	 left: 46px;
+	
+	 position: absolute;
+	 z-index: 49;
+	 
+}
+
+#{id}stc08 {
+	 width: 20px;
+	 height: 21px;
+	 top: 155px;
+	 left: 50px;
+	
+	 position: absolute;
+	 z-index: 50;
+	 
+}
+
+#{id}stc09 {
+	 width: 20px;
+	 height: 21px;
+	 top: 159px;
+	 left: 54px;
+	
+	 position: absolute;
+	 z-index: 51;
+	 
+}
+
+#{id}st10 {
+	 width: 35px;
+	 height: 81px;
+	 top: 45px;
+	 left: 217px;
+	
+	 position: absolute;
+	 z-index: 52;
+	 
+}
+
+#{id}st11 {
+	 width: 35px;
+	 height: 81px;
+	 top: 49px;
+	 left: 221px;
+	
+	 position: absolute;
+	 z-index: 53;
+	 
+}
+
+#{id}st12 {
+	 width: 35px;
+	 height: 81px;
+	 top: 53px;
+	 left: 225px;
+	
+	 position: absolute;
+	 z-index: 54;
+	 
+}
+
+#{id}st13 {
+	 width: 35px;
+	 height: 81px;
+	 top: 57px;
+	 left: 229px;
+	
+	 position: absolute;
+	 z-index: 55;
+	 
+}
+
+#{id}st14 {
+	 width: 35px;
+	 height: 81px;
+	 top: 61px;
+	 left: 233px;
+	
+	 position: absolute;
+	 z-index: 56;
+	 
+}
+
+#{id}st16 {
+	 width: 35px;
+	 height: 81px;
+	 top: 65px;
+	 left: 237px;
+	
+	 position: absolute;
+	 z-index: 57;
+	 
+}
+
+#{id}st17 {
+	 width: 35px;
+	 height: 81px;
+	 top: 69px;
+	 left: 241px;
+	
+	 position: absolute;
+	 z-index: 58;
+	 
+}
+
+#{id}st18 {
+	 width: 35px;
+	 height: 81px;
+	 top: 73px;
+	 left: 245px;
+	
+	 position: absolute;
+	 z-index: 59;
+	 
+}
+
+#{id}st19 {
+	 width: 35px;
+	 height: 81px;
+	 top: 77px;
+	 left: 249px;
+	
+	 position: absolute;
+	 z-index: 60;
+	 
+}
+
+#{id}st15 {
+	 width: 35px;
+	 height: 81px;
+	 top: 81px;
+	 left: 253px;
+	
+	 position: absolute;
+	 z-index: 61;
 	 
 }
 

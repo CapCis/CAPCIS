@@ -3,6 +3,11 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#matrix1 .waf-widget.waf-clone-label1 {
+	 position: absolute;
+	 
+}
+
 #matrix1 .waf-widget.waf-clone-textField1 {
 	 position: absolute;
 	 
@@ -97,10 +102,10 @@
 
 #dataGrid1 {
 	 z-index: 6;
-	 width: 300px;
+	 width: 25px;
 	 height: 300px;
-	 top: 8px;
-	 left: 449px;
+	 top: 81px;
+	 left: 354px;
 	
 	 position: absolute;
 	 
