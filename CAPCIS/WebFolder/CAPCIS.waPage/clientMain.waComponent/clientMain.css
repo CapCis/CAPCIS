@@ -3,9 +3,203 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}label23 {
+	 z-index: 2;
+	 width: 180px;
+	 height: 13px;
+	 top: 7px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField11 {
+	 z-index: 2;
+	 width: 385px;
+	 height: 180px;
+	 top: 25px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label22 {
+	 z-index: 1;
+	 width: 29px;
+	 height: 13px;
+	 top: 101px;
+	 left: -29px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField10 {
+	 z-index: 1;
+	 width: 395px;
+	 height: 195px;
+	 top: 10px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button12 {
+	 width: 75px;
+	 height: 25px;
+	 top: 210px;
+	 left: 315px;
+	
+	 position: absolute;
+	 font-size: 12px;
+	 z-index: 1;
+	 
+}
+
+#{id}button11 {
+	 z-index: 2;
+	 width: 75px;
+	 height: 30px;
+	 top: 210px;
+	 left: 330px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid3 {
+	 z-index: 4;
+	 height: 175px;
+	 top: 30px;
+	 left: 0px;
+	 right: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText21 {
+	 width: 210px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 font-size: 16px;
+	 text-align: left;
+	 color: rgb(0, 27, 90);
+	 z-index: 1;
+	 
+}
+
+#{id}combobox3 {
+	 z-index: 3;
+	 width: 120px;
+	 height: 22px;
+	 top: 5px;
+	 left: 285px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container25 {
+	 z-index: 2;
+	 width: 395px;
+	 height: 245px;
+	 top: 0px;
+	 left: 8px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container24 {
+	 z-index: 1;
+	 width: 8px;
+	 height: 245px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container23 {
+	 z-index: 2;
+	 width: 403px;
+	 height: 245px;
+	 top: 0px;
+	 left: 7px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container20 {
+	 z-index: 1;
+	 width: 7px;
+	 height: 245px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container19 {
+	 z-index: 16;
+	 width: 410px;
+	 height: 245px;
+	 top: 30px;
+	 left: 880px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 border-top-color: rgb(0, 27, 90);
+	 border-left-color: rgb(0, 27, 90);
+	 border-right-color: rgb(0, 27, 90);
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}label14 {
+	 z-index: 3;
+	 width: 29px;
+	 height: 13px;
+	 top: 601px;
+	 left: 623px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox1 {
+	 z-index: 3;
+	 width: 164px;
+	 height: 24px;
+	 top: 596px;
+	 left: 657px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}container15 {
 	 z-index: 2;
-	 width: -312px;
+	 width: 294px;
 	 height: 388px;
 	 top: 0px;
 	 left: 317px;
@@ -26,6 +220,7 @@
 }
 
 #{id}richText19 {
+	 z-index: 4;
 	 width: 365px;
 	 height: 22px;
 	 top: 27px;
@@ -35,11 +230,12 @@
 	 font-weight: bold;
 	 font-size: 16px;
 	 text-align: left;
-	 z-index: 4;
+	 color: rgb(0, 27, 90);
 	 
 }
 
 #{id}richText18 {
+	 z-index: 18;
 	 width: 90px;
 	 height: 25px;
 	 top: 5px;
@@ -48,11 +244,11 @@
 	 position: absolute;
 	 font-size: 20px;
 	 color: rgb(0, 27, 90);
-	 z-index: 18;
 	 
 }
 
 #{id}richText17 {
+	 z-index: 17;
 	 width: 90px;
 	 height: 25px;
 	 top: 5px;
@@ -61,11 +257,11 @@
 	 position: absolute;
 	 font-size: 20px;
 	 color: rgb(0, 27, 90);
-	 z-index: 17;
 	 
 }
 
 #{id}richText16 {
+	 z-index: 3;
 	 width: 90px;
 	 height: 25px;
 	 top: 5px;
@@ -74,11 +270,11 @@
 	 position: absolute;
 	 font-size: 20px;
 	 color: rgb(0, 27, 90);
-	 z-index: 3;
 	 
 }
 
 #{id}richText15 {
+	 z-index: 2;
 	 width: 90px;
 	 height: 25px;
 	 top: 5px;
@@ -87,7 +283,6 @@
 	 position: absolute;
 	 font-size: 20px;
 	 color: rgb(0, 27, 90);
-	 z-index: 2;
 	 
 }
 
@@ -102,6 +297,7 @@
 	 font-weight: bold;
 	 font-size: 16px;
 	 text-align: left;
+	 color: rgb(0, 27, 90);
 	 
 }
 
@@ -336,10 +532,10 @@
 
 #{id}container13 {
 	 z-index: 3;
-	 width: -465px;
+	 width: -104px;
 	 height: 243px;
 	 top: 0px;
-	 left: 470px;
+	 left: 237px;
 	
 	 position: absolute;
 	 
@@ -347,7 +543,7 @@
 
 #{id}container12 {
 	 z-index: 2;
-	 width: 470px;
+	 width: 237px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -613,10 +809,10 @@
 
 #{id}container11 {
 	 z-index: 3;
-	 width: 5px;
+	 width: 133px;
 	 height: 243px;
 	 top: 0px;
-	 left: 473px;
+	 left: 345px;
 	
 	 position: absolute;
 	 
@@ -624,7 +820,7 @@
 
 #{id}container10 {
 	 z-index: 2;
-	 width: 473px;
+	 width: 345px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -634,7 +830,7 @@
 }
 
 #{id}container9 {
-	 z-index: 15;
+	 z-index: 14;
 	 width: 480px;
 	 height: 245px;
 	 top: 30px;
@@ -681,10 +877,10 @@
 
 #{id}container6 {
 	 z-index: 4;
-	 width: 5px;
+	 width: 4px;
 	 height: 388px;
 	 top: 0px;
-	 left: 633px;
+	 left: 634px;
 	
 	 position: absolute;
 	 
@@ -692,7 +888,7 @@
 
 #{id}container5 {
 	 z-index: 3;
-	 width: 633px;
+	 width: 634px;
 	 height: 388px;
 	 top: 0px;
 	 left: 0px;
@@ -744,11 +940,11 @@
 }
 
 #{id}container4 {
-	 z-index: 14;
+	 z-index: 13;
 	 width: 410px;
 	 height: 245px;
-	 top: 30px;
-	 left: 880px;
+	 top: 301px;
+	 left: 721px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -779,7 +975,7 @@
 }
 
 #{id}container3 {
-	 z-index: 13;
+	 z-index: 12;
 	 width: 400px;
 	 height: 245px;
 	 top: 30px;
@@ -1012,7 +1208,7 @@
 }
 
 #{id}container1 {
-	 z-index: 12;
+	 z-index: 11;
 	 width: 640px;
 	 height: 390px;
 	 top: 275px;
@@ -1035,7 +1231,7 @@
 }
 
 #{id}button6 {
-	 z-index: 11;
+	 z-index: 10;
 	 width: 65px;
 	 height: 30px;
 	 top: 0px;
@@ -1047,7 +1243,7 @@
 }
 
 #{id}button5 {
-	 z-index: 10;
+	 z-index: 9;
 	 width: 65px;
 	 height: 30px;
 	 top: 0px;
@@ -1059,7 +1255,7 @@
 }
 
 #{id}button4 {
-	 z-index: 9;
+	 z-index: 8;
 	 width: 65px;
 	 height: 30px;
 	 top: 0px;
@@ -1071,7 +1267,7 @@
 }
 
 #{id}button3 {
-	 z-index: 8;
+	 z-index: 7;
 	 width: 65px;
 	 height: 30px;
 	 top: 0px;
@@ -1083,7 +1279,7 @@
 }
 
 #{id}button2 {
-	 z-index: 7;
+	 z-index: 6;
 	 width: 65px;
 	 height: 30px;
 	 top: 0px;
@@ -1095,7 +1291,7 @@
 }
 
 #{id}button1 {
-	 z-index: 6;
+	 z-index: 5;
 	 width: 65px;
 	 height: 30px;
 	 top: 0px;
@@ -1107,7 +1303,7 @@
 }
 
 #{id}label4 {
-	 z-index: 5;
+	 z-index: 4;
 	 width: 37px;
 	 height: 13px;
 	 top: 7px;
@@ -1118,7 +1314,7 @@
 }
 
 #{id}textField3 {
-	 z-index: 5;
+	 z-index: 4;
 	 width: 198px;
 	 height: 22px;
 	 top: 3px;
@@ -1195,7 +1391,7 @@
 }
 
 #{id}menuBar2 {
-	 z-index: 4;
+	 z-index: 3;
 	 width: 1290px;
 	 height: 30px;
 	 top: 0px;
@@ -1232,8 +1428,8 @@
 	 z-index: 1;
 	 width: 1310px;
 	 height: 700px;
-	 top: 4px;
-	 left: 4px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
