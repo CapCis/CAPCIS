@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-	
+		
 		$$(getHtmlId('component9')).$domNode.css('overflow','auto');
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	getHtmlId('component9'), 											//designate the component to load into

@@ -9,6 +9,7 @@ testGlobal = "init";
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	'testComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/capclassmain.waComponent', 				//designate the webcomponent to load
