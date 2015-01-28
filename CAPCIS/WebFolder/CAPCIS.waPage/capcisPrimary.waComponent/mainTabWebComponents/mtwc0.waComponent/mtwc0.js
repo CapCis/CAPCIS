@@ -7,26 +7,20 @@ function constructor (id) {
 
 	// @region beginComponentDeclaration// @startlock
 	var $comp = this;
-	this.name = 'capcisPrimary';
+	this.name = 'mtwc0';
 	// @endregion// @endlock
-
+	debugger;
+	
 	this.load = function (data) {// @lock
-
+	
+	debugger;
 	// @region namespaceDeclaration// @startlock
-	var button1 = {};	// @button
 	// @endregion// @endlock
-
+	
 	// eventHandlers// @lock
 
-	button1.click = function button1_click (event)// @startlock
-	{// @endlock
-	 //debugger;
-	 var testwebc = document.getElementById("capcisMainWC_mtComponent0");
-	 testwebc.style.visibility = "visible";
-	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
