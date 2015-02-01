@@ -3,6 +3,144 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid1 {
+	 z-index: 1;
+	 width: 1210px;
+	 height: 678px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix4 .waf-widget.waf-clone-{id}classFilterMatrix {
+	 position: absolute;
+	 
+}
+
+#{id}matrix4 .waf-widget.waf-clone-{id}richText31 {
+	 position: absolute;
+	 
+}
+
+#{id}container9 {
+	 z-index: 1;
+	 width: 80px;
+	 height: 21px;
+	 top: 10px;
+	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix4 {
+	 z-index: 8;
+	 width: 94px;
+	 height: 500px;
+	 top: 148px;
+	 left: 14px;
+	
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}richText31 {
+	 position: absolute;
+	 
+}
+
+#{id}label6 {
+	 z-index: 4;
+	 width: 21px;
+	 height: 16px;
+	 top: 49px;
+	 left: 4px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label5 {
+	 z-index: 3;
+	 width: 40px;
+	 height: 16px;
+	 top: 0px;
+	 left: 4px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button4 {
+	 z-index: 5;
+	 width: 117px;
+	 height: 25px;
+	 top: 115px;
+	 left: 4px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox6 {
+	 z-index: 4;
+	 width: 117px;
+	 height: 26px;
+	 top: 70px;
+	 left: 4px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox5 {
+	 z-index: 3;
+	 width: 117px;
+	 height: 25px;
+	 top: 21px;
+	 left: 4px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classFullViewCont {
+	 z-index: 3;
+	 width: 113px;
+	 height: 601px;
+	 top: 72px;
+	 left: 17px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container4 {
+	 z-index: 3;
+	 width: 150px;
+	 height: 690px;
+	 top: 55px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 3px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 3px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 3px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 3px;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
 #{id}richText8 {
 	 z-index: 1;
 	 width: 106px;
@@ -102,17 +240,6 @@
 	 
 }
 
-#{id}component2 {
-	 z-index: 1;
-	 width: 1210px;
-	 height: 650px;
-	 top: 30px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}container3 {
 	 z-index: 5;
 	 top: 28px;
@@ -151,10 +278,10 @@
 
 #{id}container2 {
 	 z-index: 4;
+	 width: 1215px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 border-top-style: solid;
@@ -197,21 +324,21 @@
 
 #{id}menuBar2 {
 	 z-index: 3;
+	 width: 3168px;
 	 height: 23px;
 	 top: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}tabView1 {
-	 z-index: 3;
+	 z-index: 4;
 	 width: 1225px;
 	 height: 720px;
-	 top: 30px;
-	 left: 150px;
+	 top: 33px;
+	 left: 148px;
 	
 	 position: absolute;
 	 
@@ -224,18 +351,6 @@
 
 #{id}menuBar1 > .waf-menuItem:not(.waf-menuItem-last) {
 	 margin-right: 0px;
-	 
-}
-
-#{id}component1 {
-	 z-index: 2;
-	 width: 150px;
-	 height: 690px;
-	 top: 60px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
 	 
 }
 
@@ -305,14 +420,125 @@
 	 
 }
 
-#{id}component3 {
-	 width: 1210px;
-	 height: 650px;
-	 top: 30px;
+#{id}classFilterViewCont {
+	 z-index: 4;
+	 width: 133px;
+	 height: 601px;
+	 top: 67px;
+	 left: 9px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}filterButton {
+	 z-index: 2;
+	 width: 130px;
+	 height: 25px;
+	 top: 40px;
+	 left: 7px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}fullButton {
+	 z-index: 1;
+	 width: 130px;
+	 height: 25px;
+	 top: 5px;
+	 left: 7px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classFilterMatrix {
+	 z-index: 1;
+	 width: 66px;
+	 height: 18px;
+	 top: 1px;
+	 left: 8px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classRosterMainCont {
+	 z-index: 1;
+	 width: 1205px;
+	 height: 680px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}classRosterSubCont {
 	 z-index: 1;
+	 width: 1195px;
+	 height: 678px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classRosterRecieptCont {
+	 z-index: 2;
+	 width: 8px;
+	 height: 678px;
+	 top: 0px;
+	 left: 1195px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRosterMainCont {
+	 z-index: 3;
+	 width: 1211px;
+	 height: 682px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRosterSubCont {
+	 z-index: 1;
+	 width: 1204px;
+	 height: 680px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRecieptCont {
+	 z-index: 2;
+	 width: 5px;
+	 height: 680px;
+	 top: 0px;
+	 left: 1204px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRosterDG {
+	 z-index: 1;
+	 width: 1201px;
+	 height: 680px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
 	 
 }
 
