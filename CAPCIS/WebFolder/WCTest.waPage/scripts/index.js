@@ -12,7 +12,7 @@ testGlobal = "init";
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	'testComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/capclassmain.waComponent', 				//designate the webcomponent to load
+		path: 	'/CAPCIS.waPage/referralAssessors.waComponent', 				//designate the webcomponent to load
 		userData: 	{myTestData: 'I made it'}							//data that you want to send to the webcomponent
 		});
 	
