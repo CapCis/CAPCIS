@@ -39,47 +39,47 @@ function constructor (id) {
 
 	mtc9.click = function mtc9_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc8.click = function mtc8_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc7.click = function mtc7_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc6.click = function mtc6_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc5.click = function mtc5_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc4.click = function mtc4_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc3.click = function mtc3_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc2.click = function mtc2_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc1.click = function mtc1_click (event)// @startlock
 	{// @endlock
-		// Add your code here
+		mainTabXClick(this.id);
 	};// @lock
 
 	mtc0.click = function mtc0_click (event)// @startlock
@@ -198,19 +198,64 @@ function constructor (id) {
 				var myMainTabButtonColumn = masterTabArray[myMainTabXButtonNumber].colNumber;
 				var hideMainTabXButtonClicked = document.getElementById(clickedMainTabXId);
 				var hideMainTabButtonClicked = document.getElementById("capcisMainWC_mt" + myMainTabXButtonNumber);
+				var hideMainTabContainer = document.getElementById("capcisMainWC_mc" + myMainTabXButtonNumber);
 				hideMainTabXButtonClicked.style.visibility = "hidden";    //hide the x button
 				hideMainTabButtonClicked.style.visibility = "hidden";     //hide the tab button
-				masterTabArray[myMainTabXButtonNumber].tabName = "";			//clear the tabName
+				hideMainTabContainer.style.display = "none";
+				var getCurrentColNumber = masterTabArray[myMainTabXButtonNumber].colNumber;
+				masterTabArray[myMainTabXButtonNumber].tabName = "";			//clear the tabName				
 				masterTabArray[myMainTabXButtonNumber].colNumber = "";			//clear the colNumber
-				masterTabArray[myMainTabXButtonNumber].butName = ""; 			//clear the butName
-					for (x = 0; x <= masterTabArray[myMainTabXButtonNumber].subTab.length -1; x++) 	//clear subTab[] array
+				masterTabArray[myMainTabXButtonNumber].butName = ""; 			//clear the butName				
+				masterTabArray[myMainTabXButtonNumber].subTab = [[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]];
+				tabColumnTracking[getCurrentColNumber].mainColumnOpen = false;				//clear tabsPos Array
+				tabColumnTracking[getCurrentColNumber].mainColumnName = ""; 					//clear tabsPos Array
+				tabColumnTracking[getCurrentColNumber].mainColumnButtonID = ""; 				//clear tabsPos Array
+					for (x = 0; x <= (masterTabArray[myMainTabXButtonNumber].subTab.length -1); x++) 	//clear subTab[] array
 					{
 						
-							for (y = 0; y <= masterTabArray[myMainTabXButtonNumber].subTab[x].length; y++) 	//clear subTab[][] array
+						for (y = 0; y <= (masterTabArray[myMainTabXButtonNumber].subTab[x].length - 1); y++) 	//clear subTab[][] array
+						{
+							masterTabArray[myMainTabXButtonNumber].subTab[x].length = 0;
+							masterTabArray[myMainTabXButtonNumber].subTab[x].push(false);
+						}						
+					}
+					for (x = myMainTabButtonColumn; x <= (masterTabArray.length - 1); x++) 			//find the next tabs to the right and bring them down one
+					{
+						if (masterTabArray[x].tabName !== "")
+						{
+							thisMasterTabsColNumber = masterTabArray[x].colNumber; 		//get this masterTabArray Column Number							
+							masterTabArray[x].colNumber = x - 1;					//set the new column Number 1 to the left in masterTabArray
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnOpen = false;				//clear tabsPos Array
+							var oldTabsPosMainColumnName = tabColumnTracking[thisMasterTabsColNumber].mainColumnName;
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnName = ""; 					//clear tabsPos Array
+							var oldTabsPosMainColumnButtonID = tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID;
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID = ""; 				//clear tabsPos Array
+							var oldTabsPosSubColumnOpen = tabColumnTracking[thisMasterTabsColNumber].subColumnOpen;
+							tabColumnTracking[thisMasterTabsColNumber].subColumnOpen = [false,false,false,false,false,false,false,false,false,false];
+							var oldTabsPossubColumnButtonID = tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID;
+							tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID = ["","","","","","","","","",""];
+							var nextRightTabButton = document.getElementById("capcisMainWC_mt" + x);
+							var nextRightTabXButton = document.getElementById("capcisMainWC_mtc" + x);
+							//set the next right tab variables and position
+							thisMasterTabsColNumber = thisMasterTabsColNumber - 1;
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnOpen = true;
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnName = oldTabsPosMainColumnName;
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID = oldTabsPosMainColumnButtonID;
+							tabColumnTracking[thisMasterTabsColNumber].subColumnOpen = oldTabsPosSubColumnOpen;
+							tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID = oldTabsPossubColumnButtonID;
+							nextRightTabButton.style.left = mainColumnPosLeft[thisMasterTabsColNumber] + "px";
+							nextRightTabXButton.style.left = mainColumnPosLeft[thisMasterTabsColNumber] + "px";
+						}
+					} 
+					if (tabColumnTracking[getCurrentColNumber].mainColumnOpen !== false)   			//find the current column and set it visible
+					{
+						for (findThisColumnTabNumber = 0; findThisColumnTabNumber <= (tabColumnTracking.length -1); findThisColumnTabNumber)
+						{
+							if (tabColumnTracking[getCurrentColNumber].mainColumnButtonID = "capcisMainWC_mt" + findThisColumnTabNumber)
 							{
-								masterTabArray[myMainTabXButtonNumber].subTab[x].length = 0;
-								masterTabArray[myMainTabXButtonNumber].subTab[x].push(false);
+								//show the tab,x,and container
 							}
+						}
 					}
 				return;				
 			}

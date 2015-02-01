@@ -37,49 +37,49 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		subColumnPosTop = [36,60,75,90,105,120,135,145,165,180];
 		tabColumnTracking = [																	//array to track used columns
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
 			tabsPos = {
-				mainColumnOpen:"",
+				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
