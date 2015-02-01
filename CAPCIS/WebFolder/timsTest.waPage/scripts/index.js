@@ -2,12 +2,22 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var changeme = {};	// @button
 	var button3 = {};	// @button
 	var button2 = {};	// @button
 	var button1 = {};	// @button
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	changeme.click = function changeme_click (event)// @startlock
+	{// @endlock
+		debugger;
+		var mybutton = document.getElementById("changeme");
+		mybutton.style.webkitBoxReflect = "below 20px";
+		mybutton.style.webkitBoxShadow = "10px 10px 5px #888888";
+		mybutton.style.width = "300px"
+	};// @lock
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
@@ -85,6 +95,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("changeme", "click", changeme.click, "WAF");
 	WAF.addListener("button3", "click", button3.click, "WAF");
 	WAF.addListener("button2", "click", button2.click, "WAF");
 	WAF.addListener("button1", "click", button1.click, "WAF");
