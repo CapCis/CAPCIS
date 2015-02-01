@@ -67,7 +67,7 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 4: answer = 'SELECT WeekDayNumber, Class, TimeNumber,ClassRoom FROM capcis.capclasses where ClassStatus = "OPEN" and ClassDay = "'+ myObject.data1 + '"order by 1,3,2';
 						break;
-				case 5: answer = "SELECT ALL ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
+				case 5: answer = "SELECT ALL clientinformation.ClientFullNameReverse, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
 								clientrequirements.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								clientrequirements.ClientInformation_CIID, counterfinancialq.AmtPd, coalesce(AmtPd, 0) as TotalAmountPaid, counterfinancialq.AmtChrgd, coalesce(AmtChrgd, 0) as TotalAmountCharged, \
 								counterfinancialq.Currbal, coalesce(Currbal, 0)as CurrentBalence, counterattendedclassesq.AttendedCounter, concat(ClientLastName, ',', ClientFirstName, ' ', coalesce(ClientMiddleName, ','),' ', coalesce(ClientNameSuffix, ',')) as CoalescedName, \
@@ -80,16 +80,16 @@ exports.buildQuery = function buildQuery(myObject)
 								ClientRequirementsID = counterattendedclassesq.CR_ClientRequirementsID LEFT JOIN counterfinancialq ON ClientRequirementsID = counterfinancialq.CR_ClientRequirementsID \
 								LEFT JOIN testingflagactiveq ON ClientRequirementsID = testingflagactiveq.CR_ClientRequirementsID AND  clientrequirements.FK_PriceCategoryID = testingflagactiveq.PC_PriceCategoryID \
 								LEFT JOIN classrosterimportclassq ON FK_PriceCategoryID = classrosterimportclassq.PC_PriceCategoryID \
-								GROUP BY ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, clientrequirements.ReportingStatus, \
+								GROUP BY ClientFullNameReverse, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, clientrequirements.ReportingStatus, \
 								EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								clientrequirements.ClientInformation_CIID, counterfinancialq.AmtPd, counterfinancialq.AmtChrgd, counterfinancialq.Currbal, counterattendedclassesq.AttendedCounter, testingflagactiveq.Flag, testingflagactiveq.Alert, \
 								testingflagactiveq.PC_PriceCategoryID, testingflagactiveq.ItemPriceListID, testingflagactiveq.Flag_TT_TestingTypeID, testingflagactiveq.TestingFlagID,testingflagactiveq.ItemPrice, \
 								testingflagactiveq.Item, testingflagactiveq.IsClass, testingflagactiveq.ItemDescription, classrosterimportclassq.ClassItemPrice, classrosterimportclassq.ClassItemDesc, classrosterimportclassq.ClassIsClass, \
 								classrosterimportclassq.ClassItem, classrosterimportclassq.ClassIPLID,testingflagactiveq.FlagTestType, clientrequirements.FK_MonitoringCategoryID \
 								HAVING clientrequirements.ClientStatus = 'Active' AND Class = '"+myObject.data1+"' AND clientrequirements.FK_MonitoringCategoryID = 1 \
-								ORDER BY ClientLastName ASC, ClientFirstName ASC, ClientMiddleName ASC";
+								ORDER BY ClientFullNameReverse ASC";
 						break;
-				case 6: answer = 'SELECT ALL  clientinformation.ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
+				case 6: answer = 'SELECT ALL  clientinformation.ClientFullNameReverse, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
 								activeclientrequirementsq.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								activeclientrequirementsq.ClientInformation_CIID, counterfinancialq.AmtPd, coalesce(AmtPd, 0) as TotalAmountPaid, counterfinancialq.AmtChrgd, coalesce(AmtChrgd, 0) as TotalAmountCharged, \
 								counterfinancialq.Currbal, coalesce(Currbal, 0)as CurrentBalence, counterattendedclassesq.AttendedCounter, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
@@ -105,7 +105,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN clientinformation on activeclientrequirementsq.ClientInformation_CIID = clientinformation.CIID \
 								LEFT JOIN testingflagactiveq on activeclientrequirementsq.ClientRequirementsID = testingflagactiveq.CR_ClientRequirementsID AND activeclientrequirementsq.FK_PriceCategoryID = testingflagactiveq.PC_PriceCategoryID \
 								INNER JOIN activeschedulemuclassesq on activeclientrequirementsq.ClientRequirementsID = activeschedulemuclassesq.CR_ClientRequirementsID \
-								GROUP BY clientinformation.ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
+								GROUP BY ClientFullNameReverse,clientinformation.ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
 								activeclientrequirementsq.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								activeclientrequirementsq.ClientInformation_CIID, counterfinancialq.AmtPd, TotalAmountPaid, counterfinancialq.AmtChrgd,  TotalAmountCharged,\
 								counterfinancialq.Currbal, CurrentBalence,counterattendedclassesq.AttendedCounter,CoalescedName, ClassesTotalView, TwelveStepMeetingView,activeschedulemuclassesq.MUClass , \
@@ -115,13 +115,19 @@ exports.buildQuery = function buildQuery(myObject)
 								classrosterimportclassmuq.ClassItem, classrosterimportclassmuq.ClassIPLID,testingflagactiveq.FlagTestType, activeclientrequirementsq.FK_MonitoringCategoryID \
 								HAVING (MUClass = "'+myObject.data1 +'" AND (activeschedulemuclassesq.MUDate between "'+myObject.weekStartDate+'" and "'+myObject.weekEndDate+'") AND RecurringMU != 1 AND activeclientrequirementsq.FK_MonitoringCategoryID =1) OR \
 								(MUClass = "'+myObject.data1 +'" AND RecurringMU =1 AND activeclientrequirementsq.FK_MonitoringCategoryID=1) \
-								ORDER BY ClientLastName ASC, ClientFirstName ASC, ClientMiddleName ASC';
+								ORDER BY ClientFullNameReverse ASC';
 						break;		
 				default:
 						answer = null;
 					}
 			break	
-		case 3:
+		case 3: //referalls
+			switch(myObject.minor){
+				case 0: answer = 'SELECT * FROM capcis.assessorinformation where InactiveAssessorInfo = '+myObject.data1;
+				break;
+				default:answer = null;
+				break;
+			}
 			break;
 		case 4:
 			break;

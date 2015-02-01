@@ -11,22 +11,106 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		debugger;
+		
 
 		var whatsVisible = 'full'
 		fillFullView();
+		$$(getHtmlId('classFullViewCont')).$domNode.css('overflow','auto');
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:1}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	myPrograms = rpcDSelects.getSelect(myObject);
 	 	var filterMatrix = document.getElementById(getHtmlId('matrix4'));
 	 	filterMatrix.style.display = 'none';
 	 	sources.myPrograms.sync();
 	// @region namespaceDeclaration// @startlock
+	var button2 = {};	// @button
+	var muClassRosterDG = {};	// @dataGrid
+	var button1 = {};	// @button
+	var dataGrid1 = {};	// @dataGrid
+	var matrix4 = {};	// @matrix
+	var classFilterMatrix = {};	// @richText
 	var filterButton = {};	// @button
 	var button4 = {};	// @button
 	var fullButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button2.click = function button2_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('muClassRosterMainCont')).setSplitPosition(1205);
+	};// @lock
+
+	muClassRosterDG.onRowDraw = function muClassRosterDG_onRowDraw (event)// @startlock
+	{// @endlock
+		var item = event.row.cells[2].value;
+		if(item != null)
+		{
+			var y = event.row.cells[1].dom.css("backgroundColor","yellow");
+			var y = event.row.cells[2].dom.css("backgroundColor","yellow");
+			
+		}
+		else
+		{
+			var y = event.row.cells[1].dom.css("backgroundColor","");
+			var y = event.row.cells[2].dom.css("backgroundColor","");
+		}
+	};// @lock
+
+	muClassRosterDG.onRowClick = function muClassRosterDG_onRowClick (event)// @startlock
+	{// @endlock
+		
+		$$(getHtmlId('muClassRosterMainCont')).setSplitPosition(600);
+	};// @lock
+
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('classRosterMainCont')).setSplitPosition(1205);
+	};// @lock
+
+	dataGrid1.onRowDraw = function dataGrid1_onRowDraw (event)// @startlock
+	{// @endlock
+		
+		
+		var item = event.row.cells[2].value;
+		if(item != null)
+		{
+			var y = event.row.cells[1].dom.css("backgroundColor","yellow");
+			var y = event.row.cells[2].dom.css("backgroundColor","yellow");
+			
+		}
+		else
+		{
+			var y = event.row.cells[1].dom.css("backgroundColor","");
+			var y = event.row.cells[2].dom.css("backgroundColor","");
+		}
+		
+	};// @lock
+
+	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
+	{// @endlock
+		debugger;
+		//var reciept = document.getElementById(getHtmlId('classRosterRecieptCont'));
+		//reciept.style.left = '150px';
+		$$(getHtmlId('classRosterMainCont')).setSplitPosition(600);
+		var x = event.data.cell.value;
+		
+	};// @lock
+
+	matrix4.click = function matrix4_click (event)// @startlock
+	{// @endlock
+		
+		var htmlID = $comp.id + "_classFilterMatrix";
+		var  selectedClass = $$(htmlID).getValue();
+		var id = {id:selectedClass};
+		pageOpener(id);
+		
+		
+	};// @lock
+
+	classFilterMatrix.click = function classFilterMatrix_click (event)// @startlock
+	{// @endlock
+		// Add your code here
+	};// @lock
 
 	filterButton.click = function filterButton_click (event)// @startlock
 	{// @endlock
@@ -109,11 +193,11 @@ function constructor (id) {
 		
 		
 	};// @lock
-	function pageOpenerMU(id)
+	function pageOpenerMU(classTaken)
 	 {
-	 	debugger;
-		alert("clicked" + id.id.toString());
-		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:6,data1:id.id.toString(),weekStartDate:'2014-3-16',weekEndDate:'2014-3-22'}; //dont forget to change token and id
+	 	//var htmlID = $comp.id + "_classFilterMatrix";
+		//var  selectedClass = $$(htmlID).getValue();
+		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:6,data1:classTaken,weekStartDate:'2014-3-16',weekEndDate:'2014-3-22'}; //dont forget to change token and id
 	 	myMURosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myMURosterList.sync();
 	 	
@@ -122,13 +206,12 @@ function constructor (id) {
 	 function pageOpener (id) 
 	{
 	
-		debugger;
-		alert("clicked" + id.id.toString());
+			
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:id.id.toString()}; //dont forget to change token and id
 	 	myRosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myRosterList.sync();
-	 	var x = ds.myRosterList.CoalescedName[0];
-	 	var y=7;
+	 	pageOpenerMU(id.id.toString());
+	 	
 	
 		
 	};
@@ -315,7 +398,7 @@ function constructor (id) {
 					textInput5.setAttribute('id',myClassList[x].Class.toString()); // ID that links to the widget constructor ID
         			textInput5.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:bold');
         			textInput5.setAttribute('rel','capcis.css');
-        			textInput5.addEventListener('click', function(){pageOpenerMU(document.getElementById(this.id))}, false);
+        			textInput5.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         			textInput5.setAttribute('class','waf-widget waf-richText waf-state-default');
         			document.body.appendChild(textInput5); //insert html tag
         		
@@ -352,6 +435,14 @@ function constructor (id) {
 	};
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_muClassRosterDG", "onRowDraw", muClassRosterDG.onRowDraw, "WAF");
+	WAF.addListener(this.id + "_dataGrid1", "onRowDraw", dataGrid1.onRowDraw, "WAF");
+	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
+	WAF.addListener(this.id + "_muClassRosterDG", "onRowClick", muClassRosterDG.onRowClick, "WAF");
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
+	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
+	WAF.addListener(this.id + "_matrix4", "click", matrix4.click, "WAF");
+	WAF.addListener(this.id + "_classFilterMatrix", "click", classFilterMatrix.click, "WAF");
 	WAF.addListener(this.id + "_filterButton", "click", filterButton.click, "WAF");
 	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
 	WAF.addListener(this.id + "_fullButton", "click", fullButton.click, "WAF");
