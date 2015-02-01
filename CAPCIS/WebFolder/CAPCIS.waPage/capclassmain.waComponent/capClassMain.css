@@ -3,6 +3,28 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button2 {
+	 z-index: 1;
+	 width: 92px;
+	 height: 22px;
+	 top: 126px;
+	 left: 45px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button1 {
+	 z-index: 1;
+	 width: 92px;
+	 height: 22px;
+	 top: 94px;
+	 left: 28px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}dataGrid1 {
 	 z-index: 1;
 	 width: 1210px;
@@ -108,10 +130,10 @@
 
 #{id}classFullViewCont {
 	 z-index: 3;
-	 width: 113px;
-	 height: 601px;
+	 width: 150px;
+	 height: 606px;
 	 top: 72px;
-	 left: 17px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -278,10 +300,10 @@
 
 #{id}container2 {
 	 z-index: 4;
-	 width: 1215px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
+	 right: 5px;
 	
 	 position: absolute;
 	 border-top-style: solid;
@@ -422,10 +444,10 @@
 
 #{id}classFilterViewCont {
 	 z-index: 4;
-	 width: 133px;
-	 height: 601px;
-	 top: 67px;
-	 left: 9px;
+	 width: 150px;
+	 height: 606px;
+	 top: 72px;
+	 left: 0px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -511,7 +533,7 @@
 
 #{id}muClassRosterSubCont {
 	 z-index: 1;
-	 width: 1204px;
+	 width: 1205px;
 	 height: 680px;
 	 top: 0px;
 	 left: 0px;
@@ -522,10 +544,10 @@
 
 #{id}muClassRecieptCont {
 	 z-index: 2;
-	 width: 5px;
+	 width: 4px;
 	 height: 680px;
 	 top: 0px;
-	 left: 1204px;
+	 left: 1205px;
 	
 	 position: absolute;
 	 

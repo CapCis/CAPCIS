@@ -47,17 +47,6 @@
 	 
 }
 
-#{id}dataGrid1 {
-	 z-index: 1;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	 right: -488px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label31 {
 	 z-index: 33;
 	 width: 118px;
@@ -594,8 +583,8 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 425px;
-	 height: 379px;
+	 width: 423px;
+	 height: 377px;
 	 top: 246px;
 	 left: 0px;
 	
@@ -620,7 +609,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 425px;
+	 width: 423px;
 	 height: 246px;
 	 top: 0px;
 	 left: 0px;
@@ -631,8 +620,8 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 425px;
-	 height: 625px;
+	 width: 423px;
+	 height: 623px;
 	 top: 0px;
 	 left: 438px;
 	
@@ -679,7 +668,7 @@
 #{id}container8 {
 	 z-index: 2;
 	 width: -371px;
-	 height: 289px;
+	 height: 287px;
 	 top: 0px;
 	 left: 809px;
 	
@@ -739,7 +728,7 @@
 #{id}container7 {
 	 z-index: 1;
 	 width: 809px;
-	 height: 289px;
+	 height: 287px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -750,7 +739,7 @@
 #{id}container6 {
 	 z-index: 2;
 	 width: 438px;
-	 height: 289px;
+	 height: 287px;
 	 top: 336px;
 	 left: 0px;
 	
@@ -974,7 +963,7 @@
 #{id}container4 {
 	 z-index: 1;
 	 width: 438px;
-	 height: 625px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -984,8 +973,8 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 863px;
-	 height: 625px;
+	 width: 861px;
+	 height: 623px;
 	 top: 0px;
 	 left: 427px;
 	
@@ -996,7 +985,7 @@
 #{id}container2 {
 	 z-index: 1;
 	 width: 427px;
-	 height: 625px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -1018,6 +1007,17 @@
 
 .waf-combobox-list-combobox1 {
 	 text-align: right;
+	 
+}
+
+#{id}assessorFullList {
+	 z-index: 1;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	 right: -488px;
+	
+	 position: absolute;
 	 
 }
 
