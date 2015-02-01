@@ -48,7 +48,7 @@ function constructor (id) {
             		'class': 'waf-widget waf-textField default inherited'
             		//'style': 'top:500;position:relative'
             	});
-            	debugger;
+            	
             	var testme = getHtmlId('classFullViewCont');
             	var testicles = $comp.id;
             	$$(getHtmlId('classFullViewCont')).addChild($$("Class2"));
@@ -201,7 +201,7 @@ function constructor (id) {
 					textInput5.setAttribute('id',myClassList[x].Class.toString()); // ID that links to the widget constructor ID
         			textInput5.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:bold');
         			textInput5.setAttribute('rel','capcis.css');
-        			textInput5.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
+        			textInput5.addEventListener('click', function(){pageOpenerMU(document.getElementById(this.id))}, false);
         			textInput5.setAttribute('class','waf-widget waf-richText waf-state-default');
         			document.body.appendChild(textInput5); //insert html tag
         		
@@ -234,10 +234,31 @@ function constructor (id) {
 	 	
 	 	
 	 }
+	 function pageOpenerMU(id)
+	 {
+	 	debugger;
+		alert("clicked" + id.id.toString());
+		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:6,data1:id.id.toString(),weekStartDate:'2014-3-16',weekEndDate:'2014-3-22'}; //dont forget to change token and id
+	 	myMURosterList = rpcDSelects.getSelect(myObject);
+	 	sources.myMURosterList.sync();
+	 	
+	 };
+	 
 	 function pageOpener (id) 
 	{
 	
+		debugger;
 		alert("clicked" + id.id.toString());
+		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:id.id.toString()}; //dont forget to change token and id
+	 	myRosterList = rpcDSelects.getSelect(myObject);
+	 	sources.myRosterList.sync();
+	 	
+	 	
+	 	
+		
+		
+		
+		
 		/*
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,data1:id.id};
 	 	myWCName = rpcDSelects.getSelect(myObject);
