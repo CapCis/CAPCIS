@@ -3,904 +3,122 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid1 {
+	 z-index: 1;
+	 width: 1210px;
+	 height: 678px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix4 .waf-widget.waf-clone-{id}classFilterMatrix {
+	 position: absolute;
+	 
+}
+
+#{id}matrix4 .waf-widget.waf-clone-{id}richText31 {
+	 position: absolute;
+	 
+}
+
+#{id}container9 {
+	 z-index: 1;
+	 width: 80px;
+	 height: 21px;
+	 top: 10px;
+	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix4 {
+	 z-index: 8;
+	 width: 94px;
+	 height: 500px;
+	 top: 148px;
+	 left: 14px;
+	
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}richText31 {
+	 position: absolute;
+	 
+}
+
 #{id}label6 {
+	 z-index: 4;
 	 width: 21px;
-	 height: 13px;
-	 top: 52px;
+	 height: 16px;
+	 top: 49px;
 	 left: 4px;
 	
 	 position: absolute;
-	 z-index: 4;
 	 
 }
 
 #{id}label5 {
-	 width: 47px;
-	 height: 13px;
-	 top: 3px;
-	 left: 4px;
-	
-	 position: absolute;
 	 z-index: 3;
-	 
-}
-
-#{id}richText31 {
-	 width: 109px;
-	 height: 13px;
-	 top: 15px;
-	 left: 15px;
-	
-	 position: absolute;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix5 .waf-widget.waf-clone-{id}richText31 {
-	 position: absolute;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix5 .waf-widget.waf-clone-{id}richText1 {
-	 position: absolute;
-	 
-}
-
-#{id}matrix5 .waf-widget.waf-clone-{id}textField1 {
-	 position: absolute;
-	 
-}
-
-#{id}matrix5 {
-	 width: 110px;
-	 height: 450px;
-	 top: 146px;
+	 width: 40px;
+	 height: 16px;
+	 top: 0px;
 	 left: 4px;
 	
 	 position: absolute;
-	 z-index: 6;
 	 
 }
 
 #{id}button4 {
+	 z-index: 5;
 	 width: 117px;
 	 height: 25px;
 	 top: 115px;
 	 left: 4px;
 	
 	 position: absolute;
-	 z-index: 5;
 	 
 }
 
 #{id}combobox6 {
+	 z-index: 4;
 	 width: 117px;
 	 height: 26px;
 	 top: 70px;
 	 left: 4px;
 	
 	 position: absolute;
-	 z-index: 4;
 	 
 }
 
 #{id}combobox5 {
+	 z-index: 3;
 	 width: 117px;
 	 height: 25px;
 	 top: 21px;
 	 left: 4px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}classFullViewCont {
+	 z-index: 3;
 	 width: 113px;
 	 height: 601px;
 	 top: 72px;
 	 left: 17px;
 	
 	 position: absolute;
-	 z-index: 3;
-	 
-}
-
-#{id}richText29 {
-	 width: 69px;
-	 height: 18px;
-	 top: 0px;
-	 left: 655px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 10;
-	 
-}
-
-#{id}richText28 {
-	 width: 75px;
-	 height: 18px;
-	 top: 0px;
-	 left: 410px;
-	
-	 position: absolute;
-	 background-color: rgba(0, 0, 0, 0);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 9;
-	 
-}
-
-#{id}richText27 {
-	 width: 25px;
-	 height: 18px;
-	 top: 0px;
-	 left: 800px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 8;
-	 
-}
-
-#{id}richText26 {
-	 width: 60px;
-	 height: 18px;
-	 top: 1px;
-	 left: 725px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 color: rgb(191, 0, 0);
-	 border-top-color: transparent;
-	 border-left-color: transparent;
-	 border-right-color: transparent;
-	 border-bottom-color: transparent;
-	 border-top-width: 0px;
-	 border-top-style: none;
-	 border-left-width: 0px;
-	 border-left-style: none;
-	 border-right-width: 0px;
-	 border-right-style: none;
-	 border-bottom-width: 0px;
-	 border-bottom-style: none;
-	 z-index: 7;
-	 
-}
-
-#{id}richText25 {
-	 width: 55px;
-	 height: 18px;
-	 top: 0px;
-	 left: 600px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 6;
-	 
-}
-
-#{id}richText24 {
-	 width: 60px;
-	 height: 18px;
-	 top: 0px;
-	 left: 540px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 5;
-	 
-}
-
-#{id}richText23 {
-	 width: 55px;
-	 height: 18px;
-	 top: 0px;
-	 left: 485px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 4;
-	 
-}
-
-#{id}richText22 {
-	 width: 65px;
-	 height: 18px;
-	 top: 0px;
-	 left: 345px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: right;
-	 z-index: 3;
-	 
-}
-
-#{id}richText21 {
-	 width: 115px;
-	 height: 18px;
-	 top: 0px;
-	 left: 175px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 2;
-	 
-}
-
-#{id}richText20 {
-	 width: 175px;
-	 height: 18px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: left;
-	 z-index: 1;
-	 
-}
-
-#{id}container8 {
-	 width: 290px;
-	 height: 20px;
-	 top: -1px;
-	 left: 55px;
-	
-	 position: absolute;
-	 z-index: 2;
-	 
-}
-
-#{id}richText19 {
-	 width: 55px;
-	 height: 18px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: left;
-	 z-index: 1;
-	 
-}
-
-#{id}container7 {
-	 width: 850px;
-	 height: 18px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-color: rgb(0, 27, 90);
-	 border-left-color: rgb(0, 27, 90);
-	 border-right-color: rgb(0, 27, 90);
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-width: 1px;
-	 border-bottom-style: solid;
-	 border-top-width: 1px;
-	 border-top-style: solid;
-	 border-left-width: 1px;
-	 border-left-style: solid;
-	 border-right-width: 1px;
-	 border-right-style: solid;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix2 {
-	 width: 850px;
-	 height: 650px;
-	 top: 30px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 z-index: 2;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText19 {
-	 background-color: rgba(0, 0, 0, 0);
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: left;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText20 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: left;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText21 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 2;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText22 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: right;
-	 z-index: 3;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText23 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 4;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText24 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 5;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText25 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 6;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText29 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 10;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText26 {
-	 position: absolute;
-	 font-weight: bold;
-	 color: rgb(191, 0, 0);
-	 border-top-color: transparent;
-	 border-left-color: transparent;
-	 border-right-color: transparent;
-	 border-bottom-color: transparent;
-	 border-top-width: 0px;
-	 border-top-style: none;
-	 border-left-width: 0px;
-	 border-left-style: none;
-	 border-right-width: 0px;
-	 border-right-style: none;
-	 border-bottom-width: 0px;
-	 border-bottom-style: none;
-	 z-index: 7;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText27 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 8;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}container7 {
-	 border-top-color: rgb(0, 27, 90);
-	 border-left-color: rgb(0, 27, 90);
-	 border-right-color: rgb(0, 27, 90);
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-width: 1px;
-	 border-bottom-style: solid;
-	 border-top-width: 1px;
-	 border-top-style: solid;
-	 border-left-width: 1px;
-	 border-left-style: solid;
-	 border-right-width: 1px;
-	 border-right-style: solid;
-	 
-}
-
-#{id}matrix2 .waf-widget.waf-clone-{id}richText28 {
-	 position: absolute;
-	 background-color: rgba(0, 0, 0, 0);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 9;
-	 
-}
-
-#{id}richText16 {
-	 width: 70px;
-	 height: 18px;
-	 top: 0px;
-	 left: 580px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 7;
-	 
-}
-
-#{id}richText15 {
-	 width: 55px;
-	 height: 18px;
-	 top: 0px;
-	 left: 525px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 6;
-	 
-}
-
-#{id}richText14 {
-	 width: 60px;
-	 height: 18px;
-	 top: 0px;
-	 left: 465px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 5;
-	 
-}
-
-#{id}richText13 {
-	 width: 55px;
-	 height: 18px;
-	 top: 0px;
-	 left: 410px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 4;
-	 
-}
-
-#{id}richText12 {
-	 width: 65px;
-	 height: 18px;
-	 top: 0px;
-	 left: 345px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: right;
-	 z-index: 3;
-	 
-}
-
-#{id}richText11 {
-	 width: 115px;
-	 height: 18px;
-	 top: 0px;
-	 left: 175px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 2;
-	 
-}
-
-#{id}richText18 {
-	 width: 25px;
-	 height: 18px;
-	 top: 0px;
-	 left: 750px;
-	
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 9;
-	 
-}
-
-#{id}container6 {
-	 width: 290px;
-	 height: 20px;
-	 top: -1px;
-	 left: 55px;
-	
-	 position: absolute;
-	 z-index: 2;
-	 
-}
-
-#{id}richText17 {
-	 width: 60px;
-	 height: 18px;
-	 top: 0px;
-	 left: 650px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 color: rgb(191, 0, 0);
-	 border-top-color: transparent;
-	 border-left-color: transparent;
-	 border-right-color: transparent;
-	 border-bottom-color: transparent;
-	 border-top-style: none;
-	 border-top-width: 0px;
-	 border-left-style: none;
-	 border-left-width: 0px;
-	 border-right-style: none;
-	 border-right-width: 0px;
-	 border-bottom-style: none;
-	 border-bottom-width: 0px;
-	 z-index: 8;
-	 
-}
-
-#{id}container5 {
-	 width: 850px;
-	 height: 18px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-bottom-style: solid;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix1 {
-	 width: 850px;
-	 height: 650px;
-	 top: 30px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 z-index: 2;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText11 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 2;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText12 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: right;
-	 z-index: 3;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText13 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 4;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText14 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 5;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText15 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 6;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText16 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 text-align: center;
-	 z-index: 7;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText17 {
-	 position: absolute;
-	 font-weight: bold;
-	 color: rgb(191, 0, 0);
-	 border-top-color: transparent;
-	 border-left-color: transparent;
-	 border-right-color: transparent;
-	 border-bottom-color: transparent;
-	 border-top-style: none;
-	 border-top-width: 0px;
-	 border-left-style: none;
-	 border-left-width: 0px;
-	 border-right-style: none;
-	 border-right-width: 0px;
-	 border-bottom-style: none;
-	 border-bottom-width: 0px;
-	 z-index: 8;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}richText18 {
-	 position: absolute;
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 z-index: 9;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}container5 {
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-width: 1px;
-	 border-bottom-style: solid;
 	 
 }
 
 #{id}container4 {
+	 z-index: 3;
 	 width: 150px;
 	 height: 690px;
 	 top: 55px;
@@ -920,7 +138,6 @@
 	 border-bottom-style: solid;
 	 border-bottom-width: 3px;
 	 background-color: rgba(240, 240, 255, 0.898438);
-	 z-index: 4;
 	 
 }
 
@@ -1061,10 +278,10 @@
 
 #{id}container2 {
 	 z-index: 4;
+	 width: 1215px;
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 border-top-style: solid;
@@ -1107,21 +324,21 @@
 
 #{id}menuBar2 {
 	 z-index: 3;
+	 width: 3168px;
 	 height: 23px;
 	 top: 5px;
 	 left: 5px;
-	 right: 5px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}tabView1 {
-	 z-index: 3;
+	 z-index: 4;
 	 width: 1225px;
 	 height: 720px;
-	 top: 30px;
-	 left: 150px;
+	 top: 33px;
+	 left: 148px;
 	
 	 position: absolute;
 	 
@@ -1204,6 +421,7 @@
 }
 
 #{id}classFilterViewCont {
+	 z-index: 4;
 	 width: 133px;
 	 height: 601px;
 	 top: 67px;
@@ -1211,29 +429,116 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
-	 z-index: 4;
 	 
 }
 
 #{id}filterButton {
+	 z-index: 2;
 	 width: 130px;
 	 height: 25px;
 	 top: 40px;
 	 left: 7px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}fullButton {
+	 z-index: 1;
 	 width: 130px;
 	 height: 25px;
 	 top: 5px;
 	 left: 7px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}classFilterMatrix {
 	 z-index: 1;
+	 width: 66px;
+	 height: 18px;
+	 top: 1px;
+	 left: 8px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classRosterMainCont {
+	 z-index: 1;
+	 width: 1205px;
+	 height: 680px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classRosterSubCont {
+	 z-index: 1;
+	 width: 1195px;
+	 height: 678px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}classRosterRecieptCont {
+	 z-index: 2;
+	 width: 8px;
+	 height: 678px;
+	 top: 0px;
+	 left: 1195px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRosterMainCont {
+	 z-index: 3;
+	 width: 1211px;
+	 height: 682px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRosterSubCont {
+	 z-index: 1;
+	 width: 1204px;
+	 height: 680px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRecieptCont {
+	 z-index: 2;
+	 width: 5px;
+	 height: 680px;
+	 top: 0px;
+	 left: 1204px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muClassRosterDG {
+	 z-index: 1;
+	 width: 1201px;
+	 height: 680px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
 	 
 }
 
