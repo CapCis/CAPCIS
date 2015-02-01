@@ -102,7 +102,7 @@ function constructor (id) {
 	    //var subColumnNumber = openOrFindSubColumn(mainColumnNumber);  //go find an open sub column
 	    
 	    
-	//Maint Tab Section
+	//Main Tab Section
 	    var mainColumnNumber = openOrFindMainColumn(myWCName[0].PrimaryHeaderOption);  //go find an open main column
 		var mainTabNumber = openOrFindMainTab(myWCName[0].PrimaryHeaderOption);      //go find a main tab to use and return the array number(position)	    
 	    var getMainTabButton = document.getElementById("capcisMainWC_mt" + mainTabNumber.toString());   //set the main button config
@@ -111,6 +111,7 @@ function constructor (id) {
 	    	getMainTabButton.style.visibility = "visible";
 	    	getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
 	    	tabColumnTracking[mainColumnNumber].mainColumnButtonID = "capcisMainWC_mt" + mainTabNumber.toString();  //set the button name in the column tracker
+	    	tabColumnTracking[mainColumnNumber].mainColumnOpen = true;
 	    	masterTabArray[mainTabNumber].colNumber = mainColumnNumber;
 	    	
 	    var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainTabNumber.toString()); //set the main container visible and current active	    	    
@@ -128,7 +129,8 @@ function constructor (id) {
 	    var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabNumber.toString());     //set the main X button config
 	    	getMainTabX.style.top = "0px";
 	    	getMainTabX.style.left = mainColumnPosLeft[mainColumnNumber] + "px";
-	    	getMainTabX.style.display = "block";
+	    	getMainTabX.style.visibility = "visible";
+	    	getMainTabX.style.zIndex = "101";
 	    
 	//Sub Tab Section    	   
 	    if (myWCName[0].WebComponentName !== "no page")
