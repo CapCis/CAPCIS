@@ -64,17 +64,25 @@
 }
 
 #capcisMainWC {
-	 z-index: 12;
+	 z-index: 13;
 	 width: 1390px;
 	 height: 720px;
 	 top: 60px;
 	 left: 190px;
 	
 	 position: absolute;
-	 border-top-color: transparent;
-	 border-left-color: transparent;
-	 border-right-color: transparent;
-	 border-bottom-color: transparent;
+	 border-top-style: solid;
+	 border-top-color: rgb(255, 0, 0);
+	 border-left-style: solid;
+	 border-left-width: 2px;
+	 border-left-color: rgb(255, 0, 0);
+	 border-right-style: solid;
+	 border-right-width: 2px;
+	 border-right-color: rgb(255, 0, 0);
+	 border-bottom-style: solid;
+	 border-bottom-color: rgb(255, 0, 0);
+	 border-top-width: 0px;
+	 border-bottom-width: 0px;
 	 
 }
 
@@ -90,7 +98,7 @@
 }
 
 #capcisLoginWC {
-	 z-index: 13;
+	 z-index: 12;
 	 width: 265px;
 	 height: 100px;
 	 top: 0px;
