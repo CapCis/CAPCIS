@@ -1084,7 +1084,7 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
 	border-top-style: none;
 	border-bottom-style: none;
 	
-	border-color: transparent;
+	border-color:  transparent;
 }
 .waf-theme.capcis .waf-dataGrid .waf-dataGrid-row .waf-dataGrid-cell {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -1096,8 +1096,9 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
 
 /* States */
 .waf-theme.capcis .waf-dataGrid-row.waf-state-hover:not(.waf-state-selected) {
-    background-color: rgb(138, 139, 144);
-	color: rgb(255, 255, 255);
+    background-color: rgb(78, 117, 163);
+	color: rgb(255, 128, 0);
+	font-size: 12pt
 }
 .waf-theme.capcis .waf-dataGrid-row.waf-state-active {
     background-color: rgb(255, 255, 255);
@@ -1155,7 +1156,7 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
 
 .waf-theme.capcis .waf-dataGrid .ui-icon-gripsmall-diagonal-se {
 	width: 22px;
-	height: 22px;
+	height: 30px;
 	background: url("/walib/WAF/widget/dataGrid/skin/default/svg/widget-dataGrid-skin-default-resizable.svg") 0 0 no-repeat;
 }
 .waf-theme.capcis .waf-dataGrid .ui-resizable-se {
@@ -1169,7 +1170,7 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
  * -------------------------------------------------------
  */
 .waf-theme.capcis .waf-dataGrid .waf-status .waf-status-element {
-    line-height: 30px;
+    line-height: 20px;
 }
 .waf-theme.capcis .waf-dataGrid .waf-status .waf-status-element .waf-toolbar .waf-toolbar-element {
     top: 4px;
