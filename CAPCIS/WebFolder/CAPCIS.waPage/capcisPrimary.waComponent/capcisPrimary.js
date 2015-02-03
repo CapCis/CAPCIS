@@ -191,11 +191,11 @@ function constructor (id) {
 		debugger;
 		masterTabArray;
 		
-		for (var myMainTabXButtonNumber = 0; myMainTabXButtonNumber <= (masterTabArray.length - 1); myMainTabXButtonNumber++)
+		for (var myMainTabXButtonNumber = 0; myMainTabXButtonNumber <= (masterTabArray.length - 1); myMainTabXButtonNumber++) 				//for 
 		{
 			if (clickedMainTabXId === "capcisMainWC_mtc" + myMainTabXButtonNumber)
 			{
-				var myMainTabButtonColumn = masterTabArray[myMainTabXButtonNumber].colNumber;
+				var myMainTabButtonColumn = masterTabArray[myMainTabXButtonNumber].colNumber;									
 				var hideMainTabXButtonClicked = document.getElementById(clickedMainTabXId);
 				var hideMainTabButtonClicked = document.getElementById("capcisMainWC_mt" + myMainTabXButtonNumber);
 				var hideMainTabContainer = document.getElementById("capcisMainWC_mc" + myMainTabXButtonNumber);
@@ -208,33 +208,39 @@ function constructor (id) {
 				masterTabArray[myMainTabXButtonNumber].subTab = [[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]];
 				tabColumnTracking[myMainTabButtonColumn].mainColumnOpen = false;				//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnName = ""; 					//clear tabsPos Array
-				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array					
-					for (x = myMainTabButtonColumn; x <= (masterTabArray.length - 1); x++) 			//find the next tabs to the right and bring them down one
+				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
+				tabColumnTracking[myMainTabButtonColumn].mainColumnMasterTabArrayNumber	= "";				
+					for (x = myMainTabButtonColumn; x <= (tabColumnTracking.length - 1); x++) 			//find the next tabs to the right and bring them down one
 					{
-						if (masterTabArray[x].tabName !== "")
-						{
-							thisMasterTabsColNumber = masterTabArray[x].colNumber; 		//get this masterTabArray Column Number							
-							masterTabArray[x].colNumber = x - 1;					//set the new column Number 1 to the left in masterTabArray
+						if (tabColumnTracking[x].mainColumnOpen === true) 		//see if the next column is open  (masterTabArray[x].tabName !== "")
+						{							
+							nextOpenColumnMasterTabArrayNumber = tabColumnTracking[x].mainColumnMasterTabArrayNumber;
+							thisMasterTabsColNumber = masterTabArray[nextOpenColumnMasterTabArrayNumber].colNumber; 		//get this masterTabArray Column Number							
+							masterTabArray[nextOpenColumnMasterTabArrayNumber].colNumber = x - 1;					//set the new column Number 1 to the left in masterTabArray
+							newTabToLeftColNumber = x - 1;
 							tabColumnTracking[thisMasterTabsColNumber].mainColumnOpen = false;				//clear tabsPos Array
 							var oldTabsPosMainColumnName = tabColumnTracking[thisMasterTabsColNumber].mainColumnName;
 							tabColumnTracking[thisMasterTabsColNumber].mainColumnName = ""; 					//clear tabsPos Array
 							var oldTabsPosMainColumnButtonID = tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID;
-							tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID = ""; 				//clear tabsPos Array
+							tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID = ""; 
+							var oldMainColumnMasterTabArrayNumber = tabColumnTracking[thisMasterTabsColNumber].mainColumnMasterTabArrayNumber;
+							tabColumnTracking[newTabToLeftColNumber].mainColumnMasterTabArrayNumber = "";	//clear tabsPos Array
 							var oldTabsPosSubColumnOpen = tabColumnTracking[thisMasterTabsColNumber].subColumnOpen;
 							tabColumnTracking[thisMasterTabsColNumber].subColumnOpen = [false,false,false,false,false,false,false,false,false,false];
 							var oldTabsPossubColumnButtonID = tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID;
 							tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID = ["","","","","","","","","",""];
-							var nextRightTabButton = document.getElementById("capcisMainWC_mt" + x);
-							var nextRightTabXButton = document.getElementById("capcisMainWC_mtc" + x);
-							//set the next right tab variables and position
-							thisMasterTabsColNumber = thisMasterTabsColNumber - 1;
-							tabColumnTracking[thisMasterTabsColNumber].mainColumnOpen = true;
-							tabColumnTracking[thisMasterTabsColNumber].mainColumnName = oldTabsPosMainColumnName;
-							tabColumnTracking[thisMasterTabsColNumber].mainColumnButtonID = oldTabsPosMainColumnButtonID;
-							tabColumnTracking[thisMasterTabsColNumber].subColumnOpen = oldTabsPosSubColumnOpen;
-							tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID = oldTabsPossubColumnButtonID;
-							nextRightTabButton.style.left = mainColumnPosLeft[thisMasterTabsColNumber] + "px";
-							nextRightTabXButton.style.left = mainColumnPosLeft[thisMasterTabsColNumber] + "px";
+							var nextRightTabButton = document.getElementById("capcisMainWC_mt" + nextOpenColumnMasterTabArrayNumber);
+							var nextRightTabXButton = document.getElementById("capcisMainWC_mtc" + nextOpenColumnMasterTabArrayNumber);
+							
+							//set the next right tab variables and position								
+							tabColumnTracking[newTabToLeftColNumber].mainColumnOpen = true;
+							tabColumnTracking[newTabToLeftColNumber].mainColumnName = oldTabsPosMainColumnName;
+							tabColumnTracking[newTabToLeftColNumber].mainColumnButtonID = oldTabsPosMainColumnButtonID;
+							tabColumnTracking[newTabToLeftColNumber].subColumnOpen = oldTabsPosSubColumnOpen;
+							tabColumnTracking[newTabToLeftColNumber].subColumnButtonID = oldTabsPossubColumnButtonID;
+							tabColumnTracking[newTabToLeftColNumber].mainColumnMasterTabArrayNumber = oldMainColumnMasterTabArrayNumber;							
+							nextRightTabButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";
+							nextRightTabXButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";							
 						}
 					}
 					if (currentVisibleMainTabNumber === myMainTabXButtonNumber)
@@ -258,7 +264,7 @@ function constructor (id) {
 							}
 						}
 					}
-					if (tabColumnTracking[myMainTabButtonColumn].mainColumnOpen === false)
+					else //(tabColumnTracking[myMainTabButtonColumn].mainColumnOpen === false)
 					{
 						for (findColumnOpened = (tabColumnTracking.length -1); findColumnOpened >= 0; findColumnOpened--)
 						{

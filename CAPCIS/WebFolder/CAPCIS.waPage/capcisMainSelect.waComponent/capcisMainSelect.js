@@ -112,6 +112,7 @@ function constructor (id) {
 	    	getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
 	    	tabColumnTracking[mainColumnNumber].mainColumnButtonID = "capcisMainWC_mt" + mainTabNumber.toString();  //set the button name in the column tracker
 	    	tabColumnTracking[mainColumnNumber].mainColumnOpen = true;
+	    	tabColumnTracking[mainColumnNumber].mainColumnMasterTabArrayNumber = mainTabNumber;
 	    	masterTabArray[mainTabNumber].colNumber = mainColumnNumber;
 	    	
 	    var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainTabNumber.toString()); //set the main container visible and current active	    	    
@@ -124,7 +125,7 @@ function constructor (id) {
 	    	getMainTabContainer.style.display = "block";
 	    	getMainTabContainer.style.zIndex = "100";
 	    	currentVisibleMainContainerId = "capcisMainWC_mc" + mainTabNumber.toString();
-	    	currentVisibleMainTabNumber = mainTabNumber.toString();
+	    	currentVisibleMainTabNumber = mainTabNumber;
 	    	    
 	    var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabNumber.toString());     //set the main X button config
 	    	getMainTabX.style.top = "0px";

@@ -40,6 +40,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
@@ -47,6 +48,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
@@ -54,6 +56,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
@@ -61,6 +64,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
@@ -68,6 +72,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
@@ -75,6 +80,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			},
@@ -82,6 +88,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
 				subColumnButtonID:["","","","","","","","","",""]
 			}
