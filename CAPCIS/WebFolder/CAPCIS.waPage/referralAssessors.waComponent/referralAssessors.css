@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button2 {
+	 z-index: 5;
+	 width: 75px;
+	 height: 35px;
+	 top: 244px;
+	 left: 220px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label32 {
 	 z-index: 4;
 	 width: 180px;
@@ -25,31 +36,9 @@
 	 
 }
 
-#{id}dataGrid3 {
-	 z-index: 2;
-	 width: 405px;
-	 height: 200px;
-	 top: 25px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}dataGrid2 {
-	 z-index: 5;
-	 width: 405px;
-	 height: 165px;
-	 top: 35px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label31 {
 	 z-index: 33;
-	 width: 118px;
+	 width: 21px;
 	 height: 13px;
 	 top: 166px;
 	 left: 260px;
@@ -60,7 +49,7 @@
 
 #{id}label30 {
 	 z-index: 32;
-	 width: 118px;
+	 width: 98px;
 	 height: 13px;
 	 top: 257px;
 	 left: 260px;
@@ -583,7 +572,7 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 423px;
+	 width: 3px;
 	 height: 377px;
 	 top: 246px;
 	 left: 0px;
@@ -609,7 +598,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 423px;
+	 width: 3px;
 	 height: 246px;
 	 top: 0px;
 	 left: 0px;
@@ -620,10 +609,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 423px;
+	 width: -1012px;
 	 height: 623px;
 	 top: 0px;
-	 left: 438px;
+	 left: 1015px;
 	
 	 position: absolute;
 	 
@@ -645,7 +634,7 @@
 #{id}richText11 {
 	 z-index: 2;
 	 width: 125px;
-	 height: 22px;
+	 height: 30px;
 	 top: 5px;
 	 left: 5px;
 	
@@ -657,8 +646,8 @@
 #{id}richText8 {
 	 z-index: 1;
 	 width: 250px;
-	 height: 230px;
-	 top: 27px;
+	 height: 200px;
+	 top: 40px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -667,10 +656,10 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: -371px;
+	 width: 3px;
 	 height: 287px;
 	 top: 0px;
-	 left: 809px;
+	 left: 1012px;
 	
 	 position: absolute;
 	 
@@ -727,7 +716,7 @@
 
 #{id}container7 {
 	 z-index: 1;
-	 width: 809px;
+	 width: 1012px;
 	 height: 287px;
 	 top: 0px;
 	 left: 0px;
@@ -738,7 +727,7 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 438px;
+	 width: 1015px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -773,67 +762,12 @@
 	 
 }
 
-#{id}button4 {
-	 z-index: 30;
-	 width: 75px;
-	 height: 35px;
-	 top: 295px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button3 {
-	 z-index: 29;
-	 width: 75px;
-	 height: 35px;
-	 top: 295px;
-	 left: 335px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button1 {
-	 z-index: 28;
-	 width: 75px;
-	 height: 35px;
-	 top: 295px;
-	 left: 250px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}textField11 {
 	 z-index: 27;
 	 width: 250px;
 	 height: 55px;
 	 top: 230px;
 	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox3 {
-	 z-index: 26;
-	 width: 150px;
-	 height: 22px;
-	 top: 230px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox2 {
-	 z-index: 25;
-	 width: 150px;
-	 height: 22px;
-	 top: 140px;
-	 left: 260px;
 	
 	 position: absolute;
 	 
@@ -927,31 +861,9 @@
 	 
 }
 
-#{id}textField2 {
-	 z-index: 16;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 210px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField1 {
-	 z-index: 15;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}container5 {
 	 z-index: 1;
-	 width: 438px;
+	 width: 1015px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -962,7 +874,7 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 438px;
+	 width: 1015px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -973,10 +885,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 861px;
+	 width: 3px;
 	 height: 623px;
 	 top: 0px;
-	 left: 427px;
+	 left: 1285px;
 	
 	 position: absolute;
 	 
@@ -984,24 +896,12 @@
 
 #{id}container2 {
 	 z-index: 1;
-	 width: 427px;
+	 width: 1285px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}container1 {
-	 z-index: 1;
-	 width: 1290px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
 	 
 }
 
@@ -1015,7 +915,129 @@
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
-	 right: -488px;
+	 right: -12px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}mainAssessorCont {
+	 z-index: 1;
+	 width: 1290px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}assessorNameField {
+	 z-index: 15;
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assessorFullNameField {
+	 z-index: 16;
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}correspondanceGrid {
+	 z-index: 5;
+	 width: 405px;
+	 height: 165px;
+	 top: 35px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}cityComboBox {
+	 z-index: 25;
+	 width: 150px;
+	 height: 22px;
+	 top: 140px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}reportingComboBox {
+	 z-index: 26;
+	 width: 150px;
+	 height: 22px;
+	 top: 230px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}previousVersionButton {
+	 z-index: 30;
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}submitButton {
+	 z-index: 28;
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 250px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}closeAssesorCurrentButton {
+	 z-index: 29;
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 335px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}closeAssesorPreviousButton {
+	 z-index: 34;
+	 width: 75px;
+	 height: 35px;
+	 top: 332px;
+	 left: 261px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorPreviousGrid {
+	 z-index: 2;
+	 width: 405px;
+	 height: 200px;
+	 top: 25px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
