@@ -178,7 +178,7 @@ function constructor (id) {
 	    		getMainTabContainer.style.display = "block";
 	    		getMainTabContainer.style.zIndex = "100";
 	    		currentVisibleMainContainerId = "capcisMainWC_mc" + myMasterTabButtonNumber;
-	    		currentVisibleMainTabNumber = myMasterTabButtonNumber.toString();
+	    		currentVisibleMainTabNumber = myMasterTabButtonNumber;
 	    		return;
 			}	
 		}
@@ -201,24 +201,14 @@ function constructor (id) {
 				var hideMainTabContainer = document.getElementById("capcisMainWC_mc" + myMainTabXButtonNumber);
 				hideMainTabXButtonClicked.style.visibility = "hidden";    //hide the x button
 				hideMainTabButtonClicked.style.visibility = "hidden";     //hide the tab button
-				hideMainTabContainer.style.display = "none";
-				var getCurrentColNumber = masterTabArray[myMainTabXButtonNumber].colNumber;
+				hideMainTabContainer.style.display = "none";				
 				masterTabArray[myMainTabXButtonNumber].tabName = "";			//clear the tabName				
 				masterTabArray[myMainTabXButtonNumber].colNumber = "";			//clear the colNumber
 				masterTabArray[myMainTabXButtonNumber].butName = ""; 			//clear the butName				
 				masterTabArray[myMainTabXButtonNumber].subTab = [[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]];
-				tabColumnTracking[getCurrentColNumber].mainColumnOpen = false;				//clear tabsPos Array
-				tabColumnTracking[getCurrentColNumber].mainColumnName = ""; 					//clear tabsPos Array
-				tabColumnTracking[getCurrentColNumber].mainColumnButtonID = ""; 				//clear tabsPos Array
-					for (x = 0; x <= (masterTabArray[myMainTabXButtonNumber].subTab.length -1); x++) 	//clear subTab[] array
-					{
-						
-						for (y = 0; y <= (masterTabArray[myMainTabXButtonNumber].subTab[x].length - 1); y++) 	//clear subTab[][] array
-						{
-							masterTabArray[myMainTabXButtonNumber].subTab[x].length = 0;
-							masterTabArray[myMainTabXButtonNumber].subTab[x].push(false);
-						}						
-					}
+				tabColumnTracking[myMainTabButtonColumn].mainColumnOpen = false;				//clear tabsPos Array
+				tabColumnTracking[myMainTabButtonColumn].mainColumnName = ""; 					//clear tabsPos Array
+				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array					
 					for (x = myMainTabButtonColumn; x <= (masterTabArray.length - 1); x++) 			//find the next tabs to the right and bring them down one
 					{
 						if (masterTabArray[x].tabName !== "")
@@ -246,16 +236,53 @@ function constructor (id) {
 							nextRightTabButton.style.left = mainColumnPosLeft[thisMasterTabsColNumber] + "px";
 							nextRightTabXButton.style.left = mainColumnPosLeft[thisMasterTabsColNumber] + "px";
 						}
-					} 
-					if (tabColumnTracking[getCurrentColNumber].mainColumnOpen !== false)   			//find the current column and set it visible
+					}
+					if (currentVisibleMainTabNumber === myMainTabXButtonNumber)
+					{ 
+					if (tabColumnTracking[myMainTabButtonColumn].mainColumnOpen !== false)   			//find the current column and set it visible
 					{
-						for (findThisColumnTabNumber = 0; findThisColumnTabNumber <= (tabColumnTracking.length -1); findThisColumnTabNumber)
+						for (findThisColumnTabNumber = 0; findThisColumnTabNumber <= (tabColumnTracking.length -1); findThisColumnTabNumber++)
 						{
-							if (tabColumnTracking[getCurrentColNumber].mainColumnButtonID = "capcisMainWC_mt" + findThisColumnTabNumber)
+							if (tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID === "capcisMainWC_mt" + findThisColumnTabNumber)
 							{
 								//show the tab,x,and container
+								var thisTabButton = document.getElementById("capcisMainWC_mt" + findThisColumnTabNumber);
+								var thisTabXButton = document.getElementById("capcisMainWC_mtc" + findThisColumnTabNumber);
+								var thisContainer = document.getElementById("capcisMainWC_mc" + findThisColumnTabNumber);
+								thisTabButton.style.visible = "visible";
+								thisTabXButton.style.visible = "visible";
+								thisContainer.style.display = "block";
+								currentVisibleMainContainerId = "capcisMainWC_mc" + findThisColumnTabNumber;
+								currentVisibleMainTabNumber	= findThisColumnTabNumber;
+								return;
 							}
 						}
+					}
+					if (tabColumnTracking[myMainTabButtonColumn].mainColumnOpen === false)
+					{
+						for (findColumnOpened = (tabColumnTracking.length -1); findColumnOpened >= 0; findColumnOpened--)
+						{
+							if (tabColumnTracking[findColumnOpened].mainColumnOpen === true)
+							{
+								var foundTabButtonID = tabColumnTracking[findColumnOpened].mainColumnButtonID;
+								for (foundTabButtonNumber = 0; foundTabButtonNumber <= (tabColumnTracking.length -1); foundTabButtonNumber++)
+								{
+									if (foundTabButtonID === "capcisMainWC_mt" + foundTabButtonNumber)
+									{
+										var thisTabButton = document.getElementById("capcisMainWC_mt" + foundTabButtonNumber);
+										var thisTabXButton = document.getElementById("capcisMainWC_mtc" + foundTabButtonNumber);
+										var thisContainer = document.getElementById("capcisMainWC_mc" + foundTabButtonNumber);
+										thisTabButton.style.visible = "visible";
+										thisTabXButton.style.visible = "visible";
+										thisContainer.style.display = "block";
+										currentVisibleMainContainerId = "capcisMainWC_mc" + foundTabButtonNumber;
+										currentVisibleMainTabNumber = findColumnOpened;
+										return;
+									}
+								}
+							}
+						} 						
+					}
 					}
 				return;				
 			}
