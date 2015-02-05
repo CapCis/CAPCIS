@@ -208,8 +208,12 @@ function constructor (id) {
 				masterTabArray[myMainTabXButtonNumber].subTab = [[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]];
 				tabColumnTracking[myMainTabButtonColumn].mainColumnOpen = false;				//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnName = ""; 					//clear tabsPos Array
+//<<<<<<< Updated upstream
 				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnMasterTabArrayNumber	= "";				
+//=======
+				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array					
+//>>>>>>> Stashed changes
 					for (x = myMainTabButtonColumn; x <= (tabColumnTracking.length - 1); x++) 			//find the next tabs to the right and bring them down one
 					{
 						if (tabColumnTracking[x].mainColumnOpen === true) 		//see if the next column is open  (masterTabArray[x].tabName !== "")
@@ -291,6 +295,21 @@ function constructor (id) {
 					}
 					}
 				return;				
+			}
+		}
+	};
+	function subTabClick(clickedSubTabId)
+	{
+		for (var x = 0; x <= (masterTabArray.length -1); x++)
+		{
+			if (("capcisMainWC_st" + x).search(clickedSubTabId) !== -1)
+			{
+				var foundMainTabNumber = x;
+				for (var y = 0; y <= (masterTabArray.length -1); y++)
+				{
+					//if (("capcisMainWC_st" + x + y) === clickedSubTabId
+				}
+				
 			}
 		}
 	};
