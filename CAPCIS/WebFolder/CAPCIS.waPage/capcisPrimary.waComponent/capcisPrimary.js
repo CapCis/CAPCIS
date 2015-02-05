@@ -13,6 +13,9 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var st02 = {};	// @button
+	var st01 = {};	// @button
+	var st00 = {};	// @button
 	var mtc9 = {};	// @button
 	var mtc8 = {};	// @button
 	var mtc7 = {};	// @button
@@ -36,6 +39,21 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	st02.click = function st02_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st01.click = function st01_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st00.click = function st00_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);		
+	};// @lock
 
 	mtc9.click = function mtc9_click (event)// @startlock
 	{// @endlock
@@ -138,6 +156,9 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_st02", "click", st02.click, "WAF");
+	WAF.addListener(this.id + "_st01", "click", st01.click, "WAF");
+	WAF.addListener(this.id + "_st00", "click", st00.click, "WAF");
 	WAF.addListener(this.id + "_mtc9", "click", mtc9.click, "WAF");
 	WAF.addListener(this.id + "_mtc8", "click", mtc8.click, "WAF");
 	WAF.addListener(this.id + "_mtc7", "click", mtc7.click, "WAF");
@@ -208,12 +229,9 @@ function constructor (id) {
 				masterTabArray[myMainTabXButtonNumber].subTab = [[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]];
 				tabColumnTracking[myMainTabButtonColumn].mainColumnOpen = false;				//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnName = ""; 					//clear tabsPos Array
-//<<<<<<< Updated upstream
 				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
-				tabColumnTracking[myMainTabButtonColumn].mainColumnMasterTabArrayNumber	= "";				
-//=======
-				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array					
-//>>>>>>> Stashed changes
+				tabColumnTracking[myMainTabButtonColumn].mainColumnMasterTabArrayNumber	= "";
+				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
 					for (x = myMainTabButtonColumn; x <= (tabColumnTracking.length - 1); x++) 			//find the next tabs to the right and bring them down one
 					{
 						if (tabColumnTracking[x].mainColumnOpen === true) 		//see if the next column is open  (masterTabArray[x].tabName !== "")
@@ -300,16 +318,29 @@ function constructor (id) {
 	};
 	function subTabClick(clickedSubTabId)
 	{
-		for (var x = 0; x <= (masterTabArray.length -1); x++)
+		var myClickedSubTab = document.getElementById(clickedSubTabId);
+		myClickedSubTab.style.visibility = "visible"; 							//set the clicked subTab visible
+		
+		for (var x = 0; x <= (masterTabArray.length -1); x++) 					//find the mainTab and subTab numbers
 		{
 			if (("capcisMainWC_st" + x).search(clickedSubTabId) !== -1)
 			{
 				var foundMainTabNumber = x;
 				for (var y = 0; y <= (masterTabArray.length -1); y++)
 				{
-					//if (("capcisMainWC_st" + x + y) === clickedSubTabId
-				}
-				
+					if (("capcisMainWC_st" + x + y) === clickedSubTabId)
+					{
+						var foundSubTabNumber = y;
+					}
+				}				
+			}
+		}
+		for (var z = 0; z <= (masterTabArray[foundMainTabNumber].subTab.length - 1); z++)  			//set all other subTab Containers Hidden
+		{
+			if ("capcisMainWC_st" + foundMainTabNumber + z !== clickedSubTabId)
+			{
+				var hideMe = document.getElementById("capcisMainWC_st" + foundMainTabNumber + z);
+				hideMe.style.visibility = "hidden";				
 			}
 		}
 	};
