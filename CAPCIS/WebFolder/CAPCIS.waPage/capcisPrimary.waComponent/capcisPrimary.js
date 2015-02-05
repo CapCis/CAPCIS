@@ -13,6 +13,14 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var stc00 = {};	// @button
+	var st09 = {};	// @button
+	var st08 = {};	// @button
+	var st07 = {};	// @button
+	var st06 = {};	// @button
+	var st05 = {};	// @button
+	var st04 = {};	// @button
+	var st03 = {};	// @button
 	var st02 = {};	// @button
 	var st01 = {};	// @button
 	var st00 = {};	// @button
@@ -39,6 +47,46 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	stc00.click = function stc00_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st09.click = function st09_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st08.click = function st08_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st07.click = function st07_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st06.click = function st06_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st05.click = function st05_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st04.click = function st04_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st03.click = function st03_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
 
 	st02.click = function st02_click (event)// @startlock
 	{// @endlock
@@ -156,6 +204,14 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_stc00", "click", stc00.click, "WAF");
+	WAF.addListener(this.id + "_st09", "click", st09.click, "WAF");
+	WAF.addListener(this.id + "_st08", "click", st08.click, "WAF");
+	WAF.addListener(this.id + "_st07", "click", st07.click, "WAF");
+	WAF.addListener(this.id + "_st06", "click", st06.click, "WAF");
+	WAF.addListener(this.id + "_st05", "click", st05.click, "WAF");
+	WAF.addListener(this.id + "_st04", "click", st04.click, "WAF");
+	WAF.addListener(this.id + "_st03", "click", st03.click, "WAF");
 	WAF.addListener(this.id + "_st02", "click", st02.click, "WAF");
 	WAF.addListener(this.id + "_st01", "click", st01.click, "WAF");
 	WAF.addListener(this.id + "_st00", "click", st00.click, "WAF");
@@ -318,12 +374,10 @@ function constructor (id) {
 	};
 	function subTabClick(clickedSubTabId)
 	{
-		var myClickedSubTab = document.getElementById(clickedSubTabId);
-		myClickedSubTab.style.visibility = "visible"; 							//set the clicked subTab visible
-		
+		debugger;		
 		for (var x = 0; x <= (masterTabArray.length -1); x++) 					//find the mainTab and subTab numbers
 		{
-			if (("capcisMainWC_st" + x).search(clickedSubTabId) !== -1)
+			if (clickedSubTabId.search("capcisMainWC_st" + x) !== -1)
 			{
 				var foundMainTabNumber = x;
 				for (var y = 0; y <= (masterTabArray.length -1); y++)
@@ -332,18 +386,25 @@ function constructor (id) {
 					{
 						var foundSubTabNumber = y;
 					}
-				}				
+				}
 			}
-		}
+		}		
+		var myClickedSubTab = document.getElementById("capcisMainWC_sc" + foundMainTabNumber + foundSubTabNumber);
+		myClickedSubTab.style.visibility = "visible"; 							//set the clicked subTab visible
+		currentVisibleSubComponent[foundMainTabNumber] = "capcisMainWC_sc" + foundMainTabNumber + foundSubTabNumber;	
 		for (var z = 0; z <= (masterTabArray[foundMainTabNumber].subTab.length - 1); z++)  			//set all other subTab Containers Hidden
 		{
 			if ("capcisMainWC_st" + foundMainTabNumber + z !== clickedSubTabId)
 			{
-				var hideMe = document.getElementById("capcisMainWC_st" + foundMainTabNumber + z);
+				var hideMe = document.getElementById("capcisMainWC_sc" + foundMainTabNumber + z);
 				hideMe.style.visibility = "hidden";				
 			}
 		}
 	};
+	function subTabXClick(clickedSubTabXId)
+	{
+		
+	}
 }// @startlock
 return constructor;
 })();// @endlock
