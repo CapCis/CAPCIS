@@ -89,6 +89,30 @@ function constructor (id) {
 		return domID;
 	};
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	subColumnButtonID
+	
+	
+	
 	function pageOpener (id) 
 	{
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,data1:id.id};
