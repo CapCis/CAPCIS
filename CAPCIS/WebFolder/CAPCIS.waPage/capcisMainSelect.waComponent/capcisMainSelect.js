@@ -145,7 +145,8 @@ function constructor (id) {
 	    		getSubTabButton.style.top = subColumnPosTop[subColumnNumber] + "px";
 	    		getSubTabButton.style.left = "0px";
 	    		tabColumnTracking[mainColumnNumber].subColumnButtonID[subColumnNumber] = "capcisMainWC_st" + mainTabNumber.toString() + subTabNumber.toString();
-	    
+	    		masterTabArray[mainTabNumber].subTab[subTabNumber][1] = subColumnNumber;
+	    		
 	    	var getSubTabComponent = document.getElementById("capcisMainWC_sc" +  mainTabNumber.toString() + subTabNumber.toString());    	//set the sub tab config   
 				WAF.loadComponent ( {																			
 					id: 	'capcisMainWC_sc' + mainTabNumber.toString() + subTabNumber.toString(), 				

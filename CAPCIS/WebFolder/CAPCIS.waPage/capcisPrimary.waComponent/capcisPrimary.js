@@ -282,7 +282,7 @@ function constructor (id) {
 				masterTabArray[myMainTabXButtonNumber].tabName = "";			//clear the tabName				
 				masterTabArray[myMainTabXButtonNumber].colNumber = "";			//clear the colNumber
 				masterTabArray[myMainTabXButtonNumber].butName = ""; 			//clear the butName				
-				masterTabArray[myMainTabXButtonNumber].subTab = [[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]];
+				masterTabArray[myMainTabXButtonNumber].subTab = [[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""]];
 				tabColumnTracking[myMainTabButtonColumn].mainColumnOpen = false;				//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnName = ""; 					//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
@@ -307,6 +307,8 @@ function constructor (id) {
 							tabColumnTracking[thisMasterTabsColNumber].subColumnOpen = [false,false,false,false,false,false,false,false,false,false];
 							var oldTabsPossubColumnButtonID = tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID;
 							tabColumnTracking[thisMasterTabsColNumber].subColumnButtonID = ["","","","","","","","","",""];
+							var oldTabsPosSubColumnMasterTabArraySubTabNumber = tabColumnTracking[thisMasterTabsColNumber].subColumnMasterTabArraySubTabNumber;
+							tabColumnTracking[thisMasterTabsColNumber].subColumnMasterTabArraySubTabNumber = ["","","","","","","","","",""];							
 							var nextRightTabButton = document.getElementById("capcisMainWC_mt" + nextOpenColumnMasterTabArrayNumber);
 							var nextRightTabXButton = document.getElementById("capcisMainWC_mtc" + nextOpenColumnMasterTabArrayNumber);
 							
@@ -316,7 +318,8 @@ function constructor (id) {
 							tabColumnTracking[newTabToLeftColNumber].mainColumnButtonID = oldTabsPosMainColumnButtonID;
 							tabColumnTracking[newTabToLeftColNumber].subColumnOpen = oldTabsPosSubColumnOpen;
 							tabColumnTracking[newTabToLeftColNumber].subColumnButtonID = oldTabsPossubColumnButtonID;
-							tabColumnTracking[newTabToLeftColNumber].mainColumnMasterTabArrayNumber = oldMainColumnMasterTabArrayNumber;							
+							tabColumnTracking[newTabToLeftColNumber].mainColumnMasterTabArrayNumber = oldMainColumnMasterTabArrayNumber;
+							tabColumnTracking[thisMasterTabsColNumber].subColumnMasterTabArraySubTabNumber = oldTabsPosSubColumnMasterTabArraySubTabNumber;
 							nextRightTabButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";
 							nextRightTabXButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";							
 						}
@@ -403,8 +406,36 @@ function constructor (id) {
 	};
 	function subTabXClick(clickedSubTabXId)
 	{
-		
-	}
+		debugger;
+		for (var x = 0; x <= (masterTabArray.length -1); x++) 					//find the mainTab and subTab numbers
+		{
+			if (clickedSubTabXId.search("capcisMainWC_stc" + x) !== -1)
+			{
+				var foundMainTabNumber = x;
+				for (var y = 0; y <= (masterTabArray.length -1); y++)
+				{
+					if (("capcisMainWC_stc" + x + y) === clickedSubTabXId)
+					{
+						var foundSubTabNumber = y;
+					}
+				}
+			}
+		}
+		var foundMainColumnNumber = masterTabArray[foundMainTabNumber].colNumber; 							// find the mainTab column number
+		var foundSubColumnNumber = masterTabArray[foundMainTabNumber].subTab[foundSubTabNumber][1]; 		// find the subtab column number
+		masterTabArray[foundMainTabNumber].subTab[foundSubTabNumber] = [false,""]; 							// set the subtab information in MasterTabArray to default
+		tabColumnTracking[foundMainColumnNumber].subColumnOpen[foundSubColumnNumber] = false; 				// close the column out in tabColumnTracking array
+		var loopFoundSubColumnNumbers = foundMainColumnNumber;
+		for (var loopFoundSubColumnNumbers = 0; loopFoundSubColumnNumbers <= (masterTabArray.length -1); loopFoundSubColumnNumbers++)
+		{
+			if (tabcolumnTracking[foundMainColumnNumber].subColumnOpen[(loopFoundSubColumnNumbers)] = true)
+			{
+				var nextOpenSubColumn = tabcolumnTracking[foundMainColumnNumber].subColumnOpen[loopFoundSubColumnNumbers];
+				var masterTabArraySubTabColumn = tabcolumnTracking[foundMainColumnNumber].subColumnMasterTabArraySubTabNumber[nextOpenSubColumn];
+				
+			}
+		}
+	};
 }// @startlock
 return constructor;
 })();// @endlock

@@ -42,7 +42,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
@@ -50,7 +51,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
@@ -58,7 +60,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
@@ -66,7 +69,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
@@ -74,7 +78,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
@@ -82,7 +87,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
@@ -90,7 +96,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 				mainColumnButtonID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			}
 			];
 			
@@ -100,7 +107,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			tabName:"",
 			colNumber:"",
 			butName:"",
-			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
+			subTab:[[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""]]
 			},
 		tabObj = {
 			tabName:"",
