@@ -132,6 +132,7 @@ function constructor (id) {
 	    	getMainTabButton.style.top = "0px";
 	    	getMainTabButton.style.left = mainColumnPosLeft[mainColumnNumber] + "px";
 	    	getMainTabButton.style.visibility = "visible";
+	    	getMainTabButton.style.display = "block";
 	    	getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
 	    	tabColumnTracking[mainColumnNumber].mainColumnButtonID = "capcisMainWC_mt" + mainTabNumber.toString();  //set the button name in the column tracker
 	    	tabColumnTracking[mainColumnNumber].mainColumnOpen = true;
@@ -154,6 +155,7 @@ function constructor (id) {
 	    	getMainTabX.style.top = "0px";
 	    	getMainTabX.style.left = mainColumnPosLeft[mainColumnNumber] + "px";
 	    	getMainTabX.style.visibility = "visible";
+	    	getMainTabX.style.display = "block";
 	    	getMainTabX.style.zIndex = "101";
 	    
 	//Sub Tab Section 		   	   
@@ -183,7 +185,6 @@ function constructor (id) {
 				}
 				getSubTabComponent.style.visibility = "visible";
 				currentVisibleSubComponent[mainTabNumber] = "capcisMainWC_sc" + mainTabNumber.toString() + subTabNumber.toString();
-			debugger;
 	    	var getSubTabX = document.getElementById("capcisMainWC_stc" + mainTabNumber.toString() + subTabNumber.toString());   //set the subtab X button config
 	    		getSubTabX.style.visibility = "visible";
 	    		getSubTabX.style.display = "block";
