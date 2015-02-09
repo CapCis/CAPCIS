@@ -130,7 +130,8 @@ exports.buildQuery = function buildQuery(myObject)
 				case 2: answer = 'SELECT assessorcorrespondence.CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, fxuseraccounts.FullName FROM capcis.assessorcorrespondence \
 								LEFT JOIN capcis.assessorinformation on assessorcorrespondence.FK_AssessorInformationID = AssessorInformationID \
 								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE assessorinformation.AssessorName = "'+myObject.data1+'"';
+								WHERE assessorinformation.AssessorName = "'+myObject.data1+' " \
+								ORDER BY 1 DESC';
 				break;
 				case 3: answer = 'SELECT CityListing FROM capcis.citylistings';
 				break;
@@ -138,7 +139,8 @@ exports.buildQuery = function buildQuery(myObject)
 				break;
 				case 5: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName FROM capcis.bakassessorinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakassessorinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE AssessorName = "'+myObject.data1+'"';
+								WHERE AssessorName = "'+myObject.data1+'" \
+								ORDER BY 2 DESC';
 				break;
 				case 6: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName, bakassessorinformation.AssessorFullNameDisplay \
 								, bakassessorinformation.AssessorPhone, bakassessorinformation.AssessorPhoneExt, bakassessorinformation.AssessorMobilePhone, bakassessorinformation.AssessorFax, \

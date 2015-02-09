@@ -12,20 +12,29 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		
 		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	assessorList = rpcDSelects.getSelect(myObject);
 	 	sources.assessorList.sync();
 	 	
 	 	var myObject3 = {token:'7836140170460568' ,id:'1',major:3,minor:3}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject3);
+	 	var tempCity= city[0];
+	 	city[0] = {CityListing: "None"};
+	 	city[city.length] = tempCity;
 	 	sources.city.sync();
 	 	
 	 	var myObject4 = {token:'7836140170460568' ,id:'1',major:3,minor:4}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	reporting = rpcDSelects.getSelect(myObject4);
+	 	var tempReporting = reporting[0];
+	 	reporting[0] = {ReportingMethod: "None"};
+	 	reporting[reporting.length] = tempReporting;
 	 	sources.reporting.sync();
 
 	// @region namespaceDeclaration// @startlock
+	var voidCorrespondanceCheck = {};	// @checkbox
+	var button5 = {};	// @button
+	var submitButton = {};	// @button
+	var button1 = {};	// @button
 	var button2 = {};	// @button
 	var correspondanceGrid = {};	// @dataGrid
 	var assesorPreviousGrid = {};	// @dataGrid
@@ -37,6 +46,129 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
+	{// @endlock
+		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
+		var myObject8 = 
+			{
+				token:'7836140170460568' ,id:'1',major:3,minor:1,
+				data1:currentCorresondanceDate,
+				data2:status
+			}; //dontf
+		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
+		var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	assessorCorespondance = rpcDSelects.getSelect(myObject2);
+	 	sources.assessorCorespondance.sync();
+	};// @lock
+
+	button5.click = function button5_click (event)// @startlock
+	{// @endlock
+		debugger;
+		
+			var x = $$(getHtmlId("newCorrespondanceField"));
+		var myObject8 = 
+			{
+				token:'7836140170460568' ,id:'1',major:3,minor:1,
+				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data2:currentID
+			}; //dontf
+			var update = rpcDInsert.setInsert(myObject8)
+			var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
+	 			sources.assessorCorespondance.sync();
+	};// @lock
+
+	submitButton.click = function submitButton_click (event)// @startlock
+	{// @endlock
+		debugger;
+		changed = false;
+		if($$(getHtmlId("assessorNameField")).sourceAtt.getValue() != currentName)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assessorFullNameField")).sourceAtt.getValue() != currentDisplay)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assessorPhoneField")).sourceAtt.getValue() != currentPhone)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorExtField")).sourceAtt.getValue() != currentExt)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorMobileField")).sourceAtt.getValue() != currentMobile)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorFaxField")).sourceAtt.getValue() != currentFax)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorAddressField")).sourceAtt.getValue() != currentAddress)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorStateField")).sourceAtt.getValue() != currentState)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorZipField")).sourceAtt.getValue() != currentZip)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorEmailField")).sourceAtt.getValue() != currentEmail)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("assesorNotesField")).sourceAtt.getValue() != currentNotes)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("cityComboBox")).getValue() != currentCity)
+		{
+			changed = true;
+		}
+		if($$(getHtmlId("reportingComboBox")).getValue() != currentReportingMethod)
+		{
+			changed = true;
+		}
+		
+		//run update if needed
+		if(changed)
+		{
+			var myObject7 = 
+			{
+				token:'7836140170460568' ,id:'1',major:3,minor:0,
+				data1:$$(getHtmlId("assessorNameField")).sourceAtt.getValue(),
+				data2:$$(getHtmlId("assessorPhoneField")).sourceAtt.getValue(),
+				data3:$$(getHtmlId("assesorEmailField")).sourceAtt.getValue(),
+				data4:$$(getHtmlId("assesorFaxField")).sourceAtt.getValue(),
+				data5:$$(getHtmlId("assesorAddressField")).sourceAtt.getValue(),
+				data6:$$(getHtmlId("cityComboBox")).getValue(),
+				data7:$$(getHtmlId("assesorStateField")).sourceAtt.getValue(),
+				data8:$$(getHtmlId("assesorZipField")).sourceAtt.getValue(),
+				data9:$$(getHtmlId("assesorExtField")).sourceAtt.getValue(),
+				data10:$$(getHtmlId("assesorMobileField")).sourceAtt.getValue(),
+				data11:$$(getHtmlId("assesorNotesField")).sourceAtt.getValue(),
+				data12:$$(getHtmlId("assessorFullNameField")).sourceAtt.getValue(),
+				data13:$$(getHtmlId("reportingComboBox")).getValue(),
+				data14:currentID,
+				data15:$$(getHtmlId("assessorInactiveCheckBox")).getValue()
+			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 		assessorUpdate = rpcDUpdate.setUpdate(myObject7);
+	 		bakAssessorInsert = rpcDInsert.setInsert(myObject7);
+	 		
+		}
+		
+	};// @lock
+
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('container3')).setSplitPosition(1290);
+	};// @lock
+
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('container6')).setSplitPosition(1290);
@@ -45,12 +177,14 @@ function constructor (id) {
 	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('container6')).setSplitPosition(420);
-		
+		$$(getHtmlId('container3')).setSplitPosition(1290);
+		currentCorresondanceDate = event.data.row.cells[0].value;
 	};// @lock
 
 	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
-		debugger
+
+		$$(getHtmlId('container9')).setSplitPosition(250);
 		var date = event.data.row.cells[0].value;
 		var assessor = event.data.row.cells[1].value;
 		var employee = event.data.row.cells[2].value;
@@ -68,12 +202,12 @@ function constructor (id) {
 
 	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container3')).setSplitPosition(1290);
+		$$(getHtmlId('container9')).setSplitPosition(625);
 	};// @lock
 
 	previousVersionButton.click = function previousVersionButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		$$(getHtmlId('container3')).setSplitPosition(420);
 		var name = $$(getHtmlId('assessorNameField')).getValue();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:name}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -85,6 +219,9 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(400);
+		$$(getHtmlId('container3')).setSplitPosition(1290);
+		$$(getHtmlId('container6')).setSplitPosition(1290);
+		$$(getHtmlId('container9')).setSplitPosition(625);
 		var name = event.data.row.cells[0].value;
 		var city = event.data.row.cells[8].value;
 		var reportingMethod = event.data.row.cells[6].value;
@@ -92,10 +229,20 @@ function constructor (id) {
 		{
 			$$(getHtmlId('cityComboBox')).setValue(city);
 		}
-		if(reporting != "" && reporting != null)
+		else
 		{
-			var x = $$(getHtmlId('reportingComboBox'));	
-			x.setValue(reportingMethod);
+			$$(getHtmlId('cityComboBox')).setValue("None");
+		}
+		
+		if(reportingMethod != "" && reportingMethod != null)
+		{
+				
+			$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
+		}
+		else
+		{
+				
+			$$(getHtmlId('reportingComboBox')).setValue("None");
 		}
 		
 		
@@ -107,9 +254,98 @@ function constructor (id) {
 	 	assessorCorespondance = rpcDSelects.getSelect(myObject2);
 	 	sources.assessorCorespondance.sync();
 		var y = 7;
+		
+		
+		///////////////////////////////////////////////////////////get data
+		
+		currentName = name;
+		currentCity = city;
+		currentReportingMethod = reportingMethod;
+		currentPhone = sources.specificAssessorList.AssessorPhone;
+		currentExt = sources.specificAssessorList.AssessorPhoneExt;
+		currentEmail = sources.specificAssessorList.AssessorEmail;
+		currentFax = sources.specificAssessorList.AssessorFax;
+		currentMobile = sources.specificAssessorList.AssessorMobilePhone;
+		currentAddress = sources.specificAssessorList.AssessorAddress;
+		currentState = sources.specificAssessorList.AssessorState;
+		currentZip = sources.specificAssessorList.AssessorZipCode;
+		currentNotes = sources.specificAssessorList.AssessorNotes;
+		currentDisplay = sources.specificAssessorList.AssessorFullNameDisplay;
+		currentID = sources.specificAssessorList.AssessorInformationID;
+		
+		if(currentName == null)
+		{
+			currentName = "";
+			
+		}
+		if(currentCity == null || currentCity == "")
+		{
+			currentCity = "None";
+			
+		}
+		if(currentReportingMethod == null || currentReportingMethod == "")
+		{
+			currentReportingMethod = "None";
+			
+		}
+		if(currentPhone == null)
+		{
+			currentPhone = "";
+			
+		}
+		if(currentExt == null)
+		{
+			currentExt = "";
+			
+		}
+		if(currentEmail == null)
+		{
+			currentEmail = "";
+			
+		}
+		if(currentFax == null)
+		{
+			currentFax = "";
+			
+		}
+		if(currentMobile == null)
+		{
+			currentMobile = "";
+			
+		}
+		if(currentAddress == null)
+		{
+			currentAddress = "";
+			
+		}
+		if(currentState == null)
+		{
+			currentState = "";
+			
+		}
+		if(currentZip == null)
+		{
+			currentZip = "";
+			
+		}
+		if(currentNotes == null)
+		{
+			currentNotes = "";
+			
+		}
+		if(currentDisplay == null)
+		{
+			currentDisplay = "";
+			
+		}
+		
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
+	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
+	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_correspondanceGrid", "onRowClick", correspondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_assesorPreviousGrid", "onRowClick", assesorPreviousGrid.onRowClick, "WAF");
