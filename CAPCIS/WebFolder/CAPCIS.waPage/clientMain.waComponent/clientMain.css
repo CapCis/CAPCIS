@@ -4,6 +4,7 @@
 */
 
 #{id}textField48 {
+	 z-index: 45;
 	 width: 50px;
 	 height: 22px;
 	 top: 209px;
@@ -11,11 +12,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 45;
 	 
 }
 
 #{id}label63 {
+	 z-index: 45;
 	 width: 49px;
 	 height: 13px;
 	 top: 213px;
@@ -23,11 +24,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 45;
 	 
 }
 
 #{id}textField45 {
+	 z-index: 40;
 	 width: 50px;
 	 height: 22px;
 	 top: 262px;
@@ -35,11 +36,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 40;
 	 
 }
 
 #{id}label60 {
+	 z-index: 40;
 	 width: 50px;
 	 height: 13px;
 	 top: 266px;
@@ -47,11 +48,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 40;
 	 
 }
 
 #{id}textField44 {
+	 z-index: 39;
 	 width: 50px;
 	 height: 22px;
 	 top: 234px;
@@ -59,11 +60,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 39;
 	 
 }
 
 #{id}label59 {
+	 z-index: 39;
 	 width: 47px;
 	 height: 13px;
 	 top: 238px;
@@ -71,11 +72,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 39;
 	 
 }
 
 #{id}textField43 {
+	 z-index: 38;
 	 width: 50px;
 	 height: 22px;
 	 top: 214px;
@@ -83,11 +84,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 38;
 	 
 }
 
 #{id}label57 {
+	 z-index: 37;
 	 width: 49px;
 	 height: 13px;
 	 top: 218px;
@@ -95,11 +96,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 37;
 	 
 }
 
 #{id}textField42 {
+	 z-index: 36;
 	 width: 50px;
 	 height: 22px;
 	 top: 239px;
@@ -107,11 +108,11 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 36;
 	 
 }
 
 #{id}label56 {
+	 z-index: 36;
 	 width: 47px;
 	 height: 13px;
 	 top: 243px;
@@ -119,117 +120,116 @@
 	
 	 position: absolute;
 	 text-align: center;
-	 z-index: 36;
 	 
 }
 
 #{id}jQDateTime6 {
+	 z-index: 35;
 	 width: 80px;
 	 height: 20px;
 	 top: 108px;
 	 left: 294px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}label55 {
+	 z-index: 35;
 	 width: 54px;
 	 height: 13px;
 	 top: 111px;
 	 left: 235px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}jQDateTime5 {
+	 z-index: 34;
 	 width: 80px;
 	 height: 20px;
 	 top: 32px;
 	 left: 294px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}label54 {
+	 z-index: 34;
 	 width: 45px;
 	 height: 13px;
 	 top: 35px;
 	 left: 244px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}jQDateTime4 {
+	 z-index: 33;
 	 width: 80px;
 	 height: 20px;
 	 top: 58px;
 	 left: 295px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}label53 {
+	 z-index: 33;
 	 width: 26px;
 	 height: 13px;
 	 top: 61px;
 	 left: 264px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}jQDateTime3 {
+	 z-index: 32;
 	 width: 80px;
 	 height: 20px;
 	 top: 82px;
 	 left: 294px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}label52 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 13px;
 	 top: 85px;
 	 left: 251px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}jQDateTime2 {
+	 z-index: 31;
 	 width: 80px;
 	 height: 20px;
 	 top: 172px;
 	 left: 295px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}label51 {
+	 z-index: 31;
 	 width: 26px;
 	 height: 13px;
 	 top: 175px;
 	 left: 264px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
@@ -256,6 +256,7 @@
 }
 
 #{id}richText33 {
+	 z-index: 29;
 	 width: 360px;
 	 height: 22px;
 	 top: 137px;
@@ -266,11 +267,11 @@
 	 font-size: 16px;
 	 color: rgb(0, 27, 90);
 	 text-align: left;
-	 z-index: 29;
 	 
 }
 
 #{id}richText32 {
+	 z-index: 21;
 	 width: 150px;
 	 height: 22px;
 	 top: 5px;
@@ -281,7 +282,6 @@
 	 font-size: 16px;
 	 color: rgb(0, 27, 90);
 	 text-align: right;
-	 z-index: 21;
 	 
 }
 
@@ -1298,7 +1298,7 @@
 	 height: 175px;
 	 top: 30px;
 	 left: 0px;
-	 right: 17px;
+	 right: 19px;
 	
 	 position: absolute;
 	 
@@ -1744,7 +1744,7 @@
 
 #{id}container13 {
 	 z-index: 3;
-	 width: -112px;
+	 width: 294px;
 	 height: 243px;
 	 top: 0px;
 	 left: 237px;

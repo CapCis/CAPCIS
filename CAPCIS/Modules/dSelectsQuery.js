@@ -125,6 +125,31 @@ exports.buildQuery = function buildQuery(myObject)
 			switch(myObject.minor){
 				case 0: answer = 'SELECT * FROM capcis.assessorinformation where InactiveAssessorInfo = '+myObject.data1;
 				break;
+				case 1: answer = 'SELECT * FROM capcis.assessorinformation where AssessorName = "'+myObject.data1+'"';
+				break;
+				case 2: answer = 'SELECT assessorcorrespondence.CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, fxuseraccounts.FullName FROM capcis.assessorcorrespondence \
+								LEFT JOIN capcis.assessorinformation on assessorcorrespondence.FK_AssessorInformationID = AssessorInformationID \
+								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE assessorinformation.AssessorName = "'+myObject.data1+' " \
+								ORDER BY 1 DESC';
+				break;
+				case 3: answer = 'SELECT CityListing FROM capcis.citylistings';
+				break;
+				case 4: answer = 'SELECT ReportingMethod FROM capcis.reportingmethods';
+				break;
+				case 5: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName FROM capcis.bakassessorinformation \
+								LEFT JOIN capcis.fxuseraccounts on bakassessorinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE AssessorName = "'+myObject.data1+'" \
+								ORDER BY 2 DESC';
+				break;
+				case 6: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName, bakassessorinformation.AssessorFullNameDisplay \
+								, bakassessorinformation.AssessorPhone, bakassessorinformation.AssessorPhoneExt, bakassessorinformation.AssessorMobilePhone, bakassessorinformation.AssessorFax, \
+								bakassessorinformation.AssessorAddress, bakassessorinformation.AssessorCity, bakassessorinformation.AssessorState, bakassessorinformation.AssessorZipCode, \
+								bakassessorinformation.AssessorEmail, bakassessorinformation.AssessorNotes, bakassessorinformation.AssPreferredReportingMethod, bakassessorinformation.InactiveAssessorInfo \
+								FROM capcis.bakassessorinformation  \
+								LEFT JOIN capcis.fxuseraccounts on bakassessorinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE AssessorName = "'+myObject.data1+'" and bakassessorinformation.CreatedDateTime = "'+myObject.data2+'" and FullName = "'+myObject.data3+'"';
+				break;
 				default:answer = null;
 				break;
 			}

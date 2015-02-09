@@ -4,33 +4,30 @@
 */
 
 #richText1 {
-	 z-index: 3;
 	 width: 50px;
 	 height: 16px;
-	 top: 54px;
-	 left: 55px;
-	
-	 position: absolute;
-	 
-}
-
-#button1 {
-	 z-index: 1;
-	 width: 304px;
-	 height: 40px;
-	 top: 3px;
-	 left: 168px;
+	 top: auto;
+	 left: auto;
 	
 	 position: absolute;
 	 
 }
 
 #testComponent {
-	 z-index: 2;
-	 width: 1600px;
-	 height: 800px;
-	 top: 44px;
-	 left: 4px;
+	 width: 1400px;
+	 height: 690px;
+	 top: 25px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#button1 {
+	 width: 92px;
+	 height: 22px;
+	 top: auto;
+	 left: auto;
 	
 	 position: absolute;
 	 

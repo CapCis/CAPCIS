@@ -5,22 +5,22 @@
 	For more information, refer to http://doc.wakanda.org/Wakanda0.Beta/help/Title/en/page1516.html
 */
 
-exports.setUpdate = function setUpdate(array)
+exports.setUpdate = function setUpdate(myObject)
 {
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	var dBUpdateBuilder = require('dUpdateQuery');
-	var tokenArray = [array[0],0,1];
+	var tokenArray = {token:myObject.token,major:0,minor:1};
 	var selectStatement = dBQueryBuilder.buildQuery(tokenArray);
 	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
 	var myResults = result.getAllRows();
 	connection.close;
-	if(myResults > 0)
+	if(myResults.length > 0)
 	{
-		var selectStatement = dBUpdateBuilder.buildQuery(array);
+		var updateStatement = dBUpdateBuilder.buildQuery(myObject);
 		var connection = serverUtil.getDBConnection();
-		connection.execute(selectStatement);
+		connection.execute(updateStatement);
 		myResults = ["suc"];
 	}
 	else
