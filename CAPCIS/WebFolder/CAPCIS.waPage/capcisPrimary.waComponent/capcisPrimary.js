@@ -13,6 +13,186 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var stc99 = {};	// @button
+	var stc98 = {};	// @button
+	var stc97 = {};	// @button
+	var stc96 = {};	// @button
+	var stc95 = {};	// @button
+	var stc94 = {};	// @button
+	var stc93 = {};	// @button
+	var stc92 = {};	// @button
+	var stc91 = {};	// @button
+	var stc90 = {};	// @button
+	var st99 = {};	// @button
+	var st98 = {};	// @button
+	var st97 = {};	// @button
+	var st96 = {};	// @button
+	var st95 = {};	// @button
+	var st94 = {};	// @button
+	var st93 = {};	// @button
+	var st92 = {};	// @button
+	var st91 = {};	// @button
+	var st90 = {};	// @button
+	var stc89 = {};	// @button
+	var stc88 = {};	// @button
+	var stc87 = {};	// @button
+	var stc86 = {};	// @button
+	var stc85 = {};	// @button
+	var stc84 = {};	// @button
+	var stc83 = {};	// @button
+	var stc82 = {};	// @button
+	var stc81 = {};	// @button
+	var stc80 = {};	// @button
+	var st89 = {};	// @button
+	var st88 = {};	// @button
+	var st87 = {};	// @button
+	var st86 = {};	// @button
+	var st85 = {};	// @button
+	var st84 = {};	// @button
+	var st83 = {};	// @button
+	var st82 = {};	// @button
+	var st81 = {};	// @button
+	var st80 = {};	// @button
+	var stc79 = {};	// @button
+	var stc78 = {};	// @button
+	var stc77 = {};	// @button
+	var stc76 = {};	// @button
+	var stc75 = {};	// @button
+	var stc74 = {};	// @button
+	var stc73 = {};	// @button
+	var stc72 = {};	// @button
+	var stc71 = {};	// @button
+	var stc70 = {};	// @button
+	var st79 = {};	// @button
+	var st78 = {};	// @button
+	var st77 = {};	// @button
+	var st76 = {};	// @button
+	var st75 = {};	// @button
+	var st74 = {};	// @button
+	var st73 = {};	// @button
+	var st72 = {};	// @button
+	var st71 = {};	// @button
+	var st70 = {};	// @button
+	var stc69 = {};	// @button
+	var stc68 = {};	// @button
+	var stc67 = {};	// @button
+	var stc66 = {};	// @button
+	var stc65 = {};	// @button
+	var stc64 = {};	// @button
+	var stc63 = {};	// @button
+	var stc62 = {};	// @button
+	var stc61 = {};	// @button
+	var stc60 = {};	// @button
+	var st69 = {};	// @button
+	var st68 = {};	// @button
+	var st67 = {};	// @button
+	var st66 = {};	// @button
+	var st65 = {};	// @button
+	var st64 = {};	// @button
+	var st63 = {};	// @button
+	var st62 = {};	// @button
+	var st61 = {};	// @button
+	var st60 = {};	// @button
+	var stc59 = {};	// @button
+	var stc58 = {};	// @button
+	var stc57 = {};	// @button
+	var stc56 = {};	// @button
+	var stc55 = {};	// @button
+	var stc54 = {};	// @button
+	var stc53 = {};	// @button
+	var stc52 = {};	// @button
+	var stc51 = {};	// @button
+	var stc50 = {};	// @button
+	var st59 = {};	// @button
+	var st58 = {};	// @button
+	var st57 = {};	// @button
+	var st56 = {};	// @button
+	var st55 = {};	// @button
+	var st54 = {};	// @button
+	var st53 = {};	// @button
+	var st52 = {};	// @button
+	var st51 = {};	// @button
+	var st50 = {};	// @button
+	var stc49 = {};	// @button
+	var stc48 = {};	// @button
+	var stc47 = {};	// @button
+	var stc46 = {};	// @button
+	var stc45 = {};	// @button
+	var stc44 = {};	// @button
+	var stc43 = {};	// @button
+	var stc42 = {};	// @button
+	var stc41 = {};	// @button
+	var stc40 = {};	// @button
+	var st49 = {};	// @button
+	var st48 = {};	// @button
+	var st47 = {};	// @button
+	var st46 = {};	// @button
+	var st45 = {};	// @button
+	var st44 = {};	// @button
+	var st43 = {};	// @button
+	var st42 = {};	// @button
+	var st41 = {};	// @button
+	var st40 = {};	// @button
+	var stc39 = {};	// @button
+	var stc38 = {};	// @button
+	var stc37 = {};	// @button
+	var stc36 = {};	// @button
+	var stc35 = {};	// @button
+	var stc34 = {};	// @button
+	var stc33 = {};	// @button
+	var stc32 = {};	// @button
+	var stc31 = {};	// @button
+	var stc30 = {};	// @button
+	var st39 = {};	// @button
+	var st38 = {};	// @button
+	var st37 = {};	// @button
+	var st36 = {};	// @button
+	var st35 = {};	// @button
+	var st34 = {};	// @button
+	var st33 = {};	// @button
+	var st32 = {};	// @button
+	var st31 = {};	// @button
+	var st30 = {};	// @button
+	var st29 = {};	// @button
+	var st28 = {};	// @button
+	var st27 = {};	// @button
+	var st26 = {};	// @button
+	var st25 = {};	// @button
+	var st24 = {};	// @button
+	var st23 = {};	// @button
+	var st22 = {};	// @button
+	var st21 = {};	// @button
+	var st20 = {};	// @button
+	var stc20 = {};	// @button
+	var stc21 = {};	// @button
+	var stc22 = {};	// @button
+	var stc23 = {};	// @button
+	var stc24 = {};	// @button
+	var stc25 = {};	// @button
+	var stc26 = {};	// @button
+	var stc27 = {};	// @button
+	var stc28 = {};	// @button
+	var stc29 = {};	// @button
+	var stc19 = {};	// @button
+	var stc18 = {};	// @button
+	var stc17 = {};	// @button
+	var stc16 = {};	// @button
+	var stc15 = {};	// @button
+	var stc14 = {};	// @button
+	var stc13 = {};	// @button
+	var stc12 = {};	// @button
+	var stc11 = {};	// @button
+	var stc10 = {};	// @button
+	var st19 = {};	// @button
+	var st18 = {};	// @button
+	var st17 = {};	// @button
+	var st16 = {};	// @button
+	var st15 = {};	// @button
+	var st14 = {};	// @button
+	var st13 = {};	// @button
+	var st12 = {};	// @button
+	var st11 = {};	// @button
+	var st10 = {};	// @button
 	var stc09 = {};	// @button
 	var stc08 = {};	// @button
 	var stc07 = {};	// @button
@@ -56,6 +236,906 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	stc99.click = function stc99_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc98.click = function stc98_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc97.click = function stc97_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc96.click = function stc96_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc95.click = function stc95_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc94.click = function stc94_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc93.click = function stc93_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc92.click = function stc92_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc91.click = function stc91_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc90.click = function stc90_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st99.click = function st99_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st98.click = function st98_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st97.click = function st97_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st96.click = function st96_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st95.click = function st95_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st94.click = function st94_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st93.click = function st93_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st92.click = function st92_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st91.click = function st91_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st90.click = function st90_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc89.click = function stc89_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc88.click = function stc88_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc87.click = function stc87_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc86.click = function stc86_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc85.click = function stc85_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc84.click = function stc84_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc83.click = function stc83_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc82.click = function stc82_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc81.click = function stc81_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc80.click = function stc80_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st89.click = function st89_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st88.click = function st88_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st87.click = function st87_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st86.click = function st86_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st85.click = function st85_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st84.click = function st84_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st83.click = function st83_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st82.click = function st82_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st81.click = function st81_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st80.click = function st80_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc79.click = function stc79_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc78.click = function stc78_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc77.click = function stc77_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc76.click = function stc76_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc75.click = function stc75_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc74.click = function stc74_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc73.click = function stc73_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc72.click = function stc72_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc71.click = function stc71_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc70.click = function stc70_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st79.click = function st79_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st78.click = function st78_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st77.click = function st77_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st76.click = function st76_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st75.click = function st75_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st74.click = function st74_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st73.click = function st73_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st72.click = function st72_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st71.click = function st71_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st70.click = function st70_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc69.click = function stc69_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc68.click = function stc68_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc67.click = function stc67_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc66.click = function stc66_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc65.click = function stc65_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc64.click = function stc64_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc63.click = function stc63_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc62.click = function stc62_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc61.click = function stc61_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc60.click = function stc60_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st69.click = function st69_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st68.click = function st68_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st67.click = function st67_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st66.click = function st66_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st65.click = function st65_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st64.click = function st64_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st63.click = function st63_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st62.click = function st62_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st61.click = function st61_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st60.click = function st60_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc59.click = function stc59_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc58.click = function stc58_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc57.click = function stc57_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc56.click = function stc56_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc55.click = function stc55_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc54.click = function stc54_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc53.click = function stc53_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc52.click = function stc52_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc51.click = function stc51_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc50.click = function stc50_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st59.click = function st59_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st58.click = function st58_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st57.click = function st57_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st56.click = function st56_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st55.click = function st55_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st54.click = function st54_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st53.click = function st53_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st52.click = function st52_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st51.click = function st51_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st50.click = function st50_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc49.click = function stc49_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc48.click = function stc48_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc47.click = function stc47_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc46.click = function stc46_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc45.click = function stc45_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc44.click = function stc44_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc43.click = function stc43_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc42.click = function stc42_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc41.click = function stc41_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc40.click = function stc40_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st49.click = function st49_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st48.click = function st48_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st47.click = function st47_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st46.click = function st46_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st45.click = function st45_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st44.click = function st44_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st43.click = function st43_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st42.click = function st42_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st41.click = function st41_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st40.click = function st40_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc39.click = function stc39_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc38.click = function stc38_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc37.click = function stc37_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc36.click = function stc36_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc35.click = function stc35_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc34.click = function stc34_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc33.click = function stc33_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc32.click = function stc32_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc31.click = function stc31_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc30.click = function stc30_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st39.click = function st39_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st38.click = function st38_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st37.click = function st37_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st36.click = function st36_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st35.click = function st35_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st34.click = function st34_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st33.click = function st33_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st32.click = function st32_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st31.click = function st31_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st30.click = function st30_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st29.click = function st29_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st28.click = function st28_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st27.click = function st27_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st26.click = function st26_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st25.click = function st25_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st24.click = function st24_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st23.click = function st23_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st22.click = function st22_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st21.click = function st21_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st20.click = function st20_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	stc20.click = function stc20_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc21.click = function stc21_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc22.click = function stc22_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc23.click = function stc23_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc24.click = function stc24_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc25.click = function stc25_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc26.click = function stc26_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc27.click = function stc27_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc28.click = function stc28_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc29.click = function stc29_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc19.click = function stc19_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc18.click = function stc18_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc17.click = function stc17_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc16.click = function stc16_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc15.click = function stc15_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc14.click = function stc14_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc13.click = function stc13_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc12.click = function stc12_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc11.click = function stc11_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	stc10.click = function stc10_click (event)// @startlock
+	{// @endlock
+		subTabXClick(this.id);
+	};// @lock
+
+	st19.click = function st19_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st18.click = function st18_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st17.click = function st17_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st16.click = function st16_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st15.click = function st15_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st14.click = function st14_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st13.click = function st13_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st12.click = function st12_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st11.click = function st11_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
+
+	st10.click = function st10_click (event)// @startlock
+	{// @endlock
+		subTabClick(this.id);
+	};// @lock
 
 	stc09.click = function stc09_click (event)// @startlock
 	{// @endlock
@@ -258,6 +1338,186 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_stc99", "click", stc99.click, "WAF");
+	WAF.addListener(this.id + "_stc98", "click", stc98.click, "WAF");
+	WAF.addListener(this.id + "_stc97", "click", stc97.click, "WAF");
+	WAF.addListener(this.id + "_stc96", "click", stc96.click, "WAF");
+	WAF.addListener(this.id + "_stc95", "click", stc95.click, "WAF");
+	WAF.addListener(this.id + "_stc94", "click", stc94.click, "WAF");
+	WAF.addListener(this.id + "_stc93", "click", stc93.click, "WAF");
+	WAF.addListener(this.id + "_stc92", "click", stc92.click, "WAF");
+	WAF.addListener(this.id + "_stc91", "click", stc91.click, "WAF");
+	WAF.addListener(this.id + "_stc90", "click", stc90.click, "WAF");
+	WAF.addListener(this.id + "_st99", "click", st99.click, "WAF");
+	WAF.addListener(this.id + "_st98", "click", st98.click, "WAF");
+	WAF.addListener(this.id + "_st97", "click", st97.click, "WAF");
+	WAF.addListener(this.id + "_st96", "click", st96.click, "WAF");
+	WAF.addListener(this.id + "_st95", "click", st95.click, "WAF");
+	WAF.addListener(this.id + "_st94", "click", st94.click, "WAF");
+	WAF.addListener(this.id + "_st93", "click", st93.click, "WAF");
+	WAF.addListener(this.id + "_st92", "click", st92.click, "WAF");
+	WAF.addListener(this.id + "_st91", "click", st91.click, "WAF");
+	WAF.addListener(this.id + "_st90", "click", st90.click, "WAF");
+	WAF.addListener(this.id + "_stc89", "click", stc89.click, "WAF");
+	WAF.addListener(this.id + "_stc88", "click", stc88.click, "WAF");
+	WAF.addListener(this.id + "_stc87", "click", stc87.click, "WAF");
+	WAF.addListener(this.id + "_stc86", "click", stc86.click, "WAF");
+	WAF.addListener(this.id + "_stc85", "click", stc85.click, "WAF");
+	WAF.addListener(this.id + "_stc84", "click", stc84.click, "WAF");
+	WAF.addListener(this.id + "_stc83", "click", stc83.click, "WAF");
+	WAF.addListener(this.id + "_stc82", "click", stc82.click, "WAF");
+	WAF.addListener(this.id + "_stc81", "click", stc81.click, "WAF");
+	WAF.addListener(this.id + "_stc80", "click", stc80.click, "WAF");
+	WAF.addListener(this.id + "_st89", "click", st89.click, "WAF");
+	WAF.addListener(this.id + "_st88", "click", st88.click, "WAF");
+	WAF.addListener(this.id + "_st87", "click", st87.click, "WAF");
+	WAF.addListener(this.id + "_st86", "click", st86.click, "WAF");
+	WAF.addListener(this.id + "_st85", "click", st85.click, "WAF");
+	WAF.addListener(this.id + "_st84", "click", st84.click, "WAF");
+	WAF.addListener(this.id + "_st83", "click", st83.click, "WAF");
+	WAF.addListener(this.id + "_st82", "click", st82.click, "WAF");
+	WAF.addListener(this.id + "_st81", "click", st81.click, "WAF");
+	WAF.addListener(this.id + "_st80", "click", st80.click, "WAF");
+	WAF.addListener(this.id + "_stc79", "click", stc79.click, "WAF");
+	WAF.addListener(this.id + "_stc78", "click", stc78.click, "WAF");
+	WAF.addListener(this.id + "_stc77", "click", stc77.click, "WAF");
+	WAF.addListener(this.id + "_stc76", "click", stc76.click, "WAF");
+	WAF.addListener(this.id + "_stc75", "click", stc75.click, "WAF");
+	WAF.addListener(this.id + "_stc74", "click", stc74.click, "WAF");
+	WAF.addListener(this.id + "_stc73", "click", stc73.click, "WAF");
+	WAF.addListener(this.id + "_stc72", "click", stc72.click, "WAF");
+	WAF.addListener(this.id + "_stc71", "click", stc71.click, "WAF");
+	WAF.addListener(this.id + "_stc70", "click", stc70.click, "WAF");
+	WAF.addListener(this.id + "_st79", "click", st79.click, "WAF");
+	WAF.addListener(this.id + "_st78", "click", st78.click, "WAF");
+	WAF.addListener(this.id + "_st77", "click", st77.click, "WAF");
+	WAF.addListener(this.id + "_st76", "click", st76.click, "WAF");
+	WAF.addListener(this.id + "_st75", "click", st75.click, "WAF");
+	WAF.addListener(this.id + "_st74", "click", st74.click, "WAF");
+	WAF.addListener(this.id + "_st73", "click", st73.click, "WAF");
+	WAF.addListener(this.id + "_st72", "click", st72.click, "WAF");
+	WAF.addListener(this.id + "_st71", "click", st71.click, "WAF");
+	WAF.addListener(this.id + "_st70", "click", st70.click, "WAF");
+	WAF.addListener(this.id + "_stc69", "click", stc69.click, "WAF");
+	WAF.addListener(this.id + "_stc68", "click", stc68.click, "WAF");
+	WAF.addListener(this.id + "_stc67", "click", stc67.click, "WAF");
+	WAF.addListener(this.id + "_stc66", "click", stc66.click, "WAF");
+	WAF.addListener(this.id + "_stc65", "click", stc65.click, "WAF");
+	WAF.addListener(this.id + "_stc64", "click", stc64.click, "WAF");
+	WAF.addListener(this.id + "_stc63", "click", stc63.click, "WAF");
+	WAF.addListener(this.id + "_stc62", "click", stc62.click, "WAF");
+	WAF.addListener(this.id + "_stc61", "click", stc61.click, "WAF");
+	WAF.addListener(this.id + "_stc60", "click", stc60.click, "WAF");
+	WAF.addListener(this.id + "_st69", "click", st69.click, "WAF");
+	WAF.addListener(this.id + "_st68", "click", st68.click, "WAF");
+	WAF.addListener(this.id + "_st67", "click", st67.click, "WAF");
+	WAF.addListener(this.id + "_st66", "click", st66.click, "WAF");
+	WAF.addListener(this.id + "_st65", "click", st65.click, "WAF");
+	WAF.addListener(this.id + "_st64", "click", st64.click, "WAF");
+	WAF.addListener(this.id + "_st63", "click", st63.click, "WAF");
+	WAF.addListener(this.id + "_st62", "click", st62.click, "WAF");
+	WAF.addListener(this.id + "_st61", "click", st61.click, "WAF");
+	WAF.addListener(this.id + "_st60", "click", st60.click, "WAF");
+	WAF.addListener(this.id + "_stc59", "click", stc59.click, "WAF");
+	WAF.addListener(this.id + "_stc58", "click", stc58.click, "WAF");
+	WAF.addListener(this.id + "_stc57", "click", stc57.click, "WAF");
+	WAF.addListener(this.id + "_stc56", "click", stc56.click, "WAF");
+	WAF.addListener(this.id + "_stc55", "click", stc55.click, "WAF");
+	WAF.addListener(this.id + "_stc54", "click", stc54.click, "WAF");
+	WAF.addListener(this.id + "_stc53", "click", stc53.click, "WAF");
+	WAF.addListener(this.id + "_stc52", "click", stc52.click, "WAF");
+	WAF.addListener(this.id + "_stc51", "click", stc51.click, "WAF");
+	WAF.addListener(this.id + "_stc50", "click", stc50.click, "WAF");
+	WAF.addListener(this.id + "_st59", "click", st59.click, "WAF");
+	WAF.addListener(this.id + "_st58", "click", st58.click, "WAF");
+	WAF.addListener(this.id + "_st57", "click", st57.click, "WAF");
+	WAF.addListener(this.id + "_st56", "click", st56.click, "WAF");
+	WAF.addListener(this.id + "_st55", "click", st55.click, "WAF");
+	WAF.addListener(this.id + "_st54", "click", st54.click, "WAF");
+	WAF.addListener(this.id + "_st53", "click", st53.click, "WAF");
+	WAF.addListener(this.id + "_st52", "click", st52.click, "WAF");
+	WAF.addListener(this.id + "_st51", "click", st51.click, "WAF");
+	WAF.addListener(this.id + "_st50", "click", st50.click, "WAF");
+	WAF.addListener(this.id + "_stc49", "click", stc49.click, "WAF");
+	WAF.addListener(this.id + "_stc48", "click", stc48.click, "WAF");
+	WAF.addListener(this.id + "_stc47", "click", stc47.click, "WAF");
+	WAF.addListener(this.id + "_stc46", "click", stc46.click, "WAF");
+	WAF.addListener(this.id + "_stc45", "click", stc45.click, "WAF");
+	WAF.addListener(this.id + "_stc44", "click", stc44.click, "WAF");
+	WAF.addListener(this.id + "_stc43", "click", stc43.click, "WAF");
+	WAF.addListener(this.id + "_stc42", "click", stc42.click, "WAF");
+	WAF.addListener(this.id + "_stc41", "click", stc41.click, "WAF");
+	WAF.addListener(this.id + "_stc40", "click", stc40.click, "WAF");
+	WAF.addListener(this.id + "_st49", "click", st49.click, "WAF");
+	WAF.addListener(this.id + "_st48", "click", st48.click, "WAF");
+	WAF.addListener(this.id + "_st47", "click", st47.click, "WAF");
+	WAF.addListener(this.id + "_st46", "click", st46.click, "WAF");
+	WAF.addListener(this.id + "_st45", "click", st45.click, "WAF");
+	WAF.addListener(this.id + "_st44", "click", st44.click, "WAF");
+	WAF.addListener(this.id + "_st43", "click", st43.click, "WAF");
+	WAF.addListener(this.id + "_st42", "click", st42.click, "WAF");
+	WAF.addListener(this.id + "_st41", "click", st41.click, "WAF");
+	WAF.addListener(this.id + "_st40", "click", st40.click, "WAF");
+	WAF.addListener(this.id + "_stc39", "click", stc39.click, "WAF");
+	WAF.addListener(this.id + "_stc38", "click", stc38.click, "WAF");
+	WAF.addListener(this.id + "_stc37", "click", stc37.click, "WAF");
+	WAF.addListener(this.id + "_stc36", "click", stc36.click, "WAF");
+	WAF.addListener(this.id + "_stc35", "click", stc35.click, "WAF");
+	WAF.addListener(this.id + "_stc34", "click", stc34.click, "WAF");
+	WAF.addListener(this.id + "_stc33", "click", stc33.click, "WAF");
+	WAF.addListener(this.id + "_stc32", "click", stc32.click, "WAF");
+	WAF.addListener(this.id + "_stc31", "click", stc31.click, "WAF");
+	WAF.addListener(this.id + "_stc30", "click", stc30.click, "WAF");
+	WAF.addListener(this.id + "_st39", "click", st39.click, "WAF");
+	WAF.addListener(this.id + "_st38", "click", st38.click, "WAF");
+	WAF.addListener(this.id + "_st37", "click", st37.click, "WAF");
+	WAF.addListener(this.id + "_st36", "click", st36.click, "WAF");
+	WAF.addListener(this.id + "_st35", "click", st35.click, "WAF");
+	WAF.addListener(this.id + "_st34", "click", st34.click, "WAF");
+	WAF.addListener(this.id + "_st33", "click", st33.click, "WAF");
+	WAF.addListener(this.id + "_st32", "click", st32.click, "WAF");
+	WAF.addListener(this.id + "_st31", "click", st31.click, "WAF");
+	WAF.addListener(this.id + "_st30", "click", st30.click, "WAF");
+	WAF.addListener(this.id + "_st29", "click", st29.click, "WAF");
+	WAF.addListener(this.id + "_st28", "click", st28.click, "WAF");
+	WAF.addListener(this.id + "_st27", "click", st27.click, "WAF");
+	WAF.addListener(this.id + "_st26", "click", st26.click, "WAF");
+	WAF.addListener(this.id + "_st25", "click", st25.click, "WAF");
+	WAF.addListener(this.id + "_st24", "click", st24.click, "WAF");
+	WAF.addListener(this.id + "_st23", "click", st23.click, "WAF");
+	WAF.addListener(this.id + "_st22", "click", st22.click, "WAF");
+	WAF.addListener(this.id + "_st21", "click", st21.click, "WAF");
+	WAF.addListener(this.id + "_st20", "click", st20.click, "WAF");
+	WAF.addListener(this.id + "_stc20", "click", stc20.click, "WAF");
+	WAF.addListener(this.id + "_stc21", "click", stc21.click, "WAF");
+	WAF.addListener(this.id + "_stc22", "click", stc22.click, "WAF");
+	WAF.addListener(this.id + "_stc23", "click", stc23.click, "WAF");
+	WAF.addListener(this.id + "_stc24", "click", stc24.click, "WAF");
+	WAF.addListener(this.id + "_stc25", "click", stc25.click, "WAF");
+	WAF.addListener(this.id + "_stc26", "click", stc26.click, "WAF");
+	WAF.addListener(this.id + "_stc27", "click", stc27.click, "WAF");
+	WAF.addListener(this.id + "_stc28", "click", stc28.click, "WAF");
+	WAF.addListener(this.id + "_stc29", "click", stc29.click, "WAF");
+	WAF.addListener(this.id + "_stc19", "click", stc19.click, "WAF");
+	WAF.addListener(this.id + "_stc18", "click", stc18.click, "WAF");
+	WAF.addListener(this.id + "_stc17", "click", stc17.click, "WAF");
+	WAF.addListener(this.id + "_stc16", "click", stc16.click, "WAF");
+	WAF.addListener(this.id + "_stc15", "click", stc15.click, "WAF");
+	WAF.addListener(this.id + "_stc14", "click", stc14.click, "WAF");
+	WAF.addListener(this.id + "_stc13", "click", stc13.click, "WAF");
+	WAF.addListener(this.id + "_stc12", "click", stc12.click, "WAF");
+	WAF.addListener(this.id + "_stc11", "click", stc11.click, "WAF");
+	WAF.addListener(this.id + "_stc10", "click", stc10.click, "WAF");
+	WAF.addListener(this.id + "_st19", "click", st19.click, "WAF");
+	WAF.addListener(this.id + "_st18", "click", st18.click, "WAF");
+	WAF.addListener(this.id + "_st17", "click", st17.click, "WAF");
+	WAF.addListener(this.id + "_st16", "click", st16.click, "WAF");
+	WAF.addListener(this.id + "_st15", "click", st15.click, "WAF");
+	WAF.addListener(this.id + "_st14", "click", st14.click, "WAF");
+	WAF.addListener(this.id + "_st13", "click", st13.click, "WAF");
+	WAF.addListener(this.id + "_st12", "click", st12.click, "WAF");
+	WAF.addListener(this.id + "_st11", "click", st11.click, "WAF");
+	WAF.addListener(this.id + "_st10", "click", st10.click, "WAF");
 	WAF.addListener(this.id + "_stc09", "click", stc09.click, "WAF");
 	WAF.addListener(this.id + "_stc08", "click", stc08.click, "WAF");
 	WAF.addListener(this.id + "_stc07", "click", stc07.click, "WAF");
@@ -349,6 +1609,20 @@ function constructor (id) {
 				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
 				tabColumnTracking[myMainTabButtonColumn].mainColumnMasterTabArrayNumber	= "";
 				tabColumnTracking[myMainTabButtonColumn].mainColumnButtonID = ""; 				//clear tabsPos Array
+				tabColumnTracking[myMainTabButtonColumn].subColumnOpen = [false,false,false,false,false,false,false,false,false,false];
+				tabColumnTracking[myMainTabButtonColumn].subColumnButtonID = ["","","","","","","","","",""];
+				tabColumnTracking[myMainTabButtonColumn].subColumnMasterTabArraySubTabNumber = ["","","","","","","","","",""];
+				currentVisibleSubComponent[myMainTabButtonColumn] = "";
+				debugger;
+					for (var subTabLoop = 0;subTabLoop <= (tabColumnTracking.length - 1); subTabLoop++) 	//set all subContainers and Buttons Invisible
+					{						
+						var hideSubContainer = document.getElementById("capcisMainWC_sc" + myMainTabXButtonNumber.toString() + subTabLoop.toString());
+						hideSubContainer.style.visibility = "hidden";						
+						var hideSubTabButton = document.getElementById("capcisMainWC_stc" + myMainTabXButtonNumber.toString() + subTabLoop.toString());
+						hideSubTabButton.style.visibility = "hidden";						
+						var hideSubTabXButton = document.getElementById("capcisMainWC_st" + myMainTabXButtonNumber.toString() + subTabLoop.toString());
+						hideSubTabXButton.style.visibility = "hidden";														
+					}
 					for (x = myMainTabButtonColumn; x <= (tabColumnTracking.length - 1); x++) 			//find the next tabs to the right and bring them down one
 					{
 						if (tabColumnTracking[x].mainColumnOpen === true) 		//see if the next column is open  (masterTabArray[x].tabName !== "")
@@ -381,7 +1655,13 @@ function constructor (id) {
 							tabColumnTracking[newTabToLeftColNumber].subColumnButtonID = oldTabsPossubColumnButtonID;
 							tabColumnTracking[newTabToLeftColNumber].mainColumnMasterTabArrayNumber = oldMainColumnMasterTabArrayNumber;
 							tabColumnTracking[thisMasterTabsColNumber].subColumnMasterTabArraySubTabNumber = oldTabsPosSubColumnMasterTabArraySubTabNumber;
+							nextRightTabButton.style.transitionProperty = "left";
+							nextRightTabButton.style.transitionDelay = "0s";
+							nextRightTabButton.style.transitionDuration = ".5s";
 							nextRightTabButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";
+							nextRightTabXButton.style.transitionProperty = "left";
+							nextRightTabXButton.style.transitionDelay = "0s";
+							nextRightTabXButton.style.transitionDuration = ".5s";
 							nextRightTabXButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";							
 						}
 					}
@@ -397,12 +1677,14 @@ function constructor (id) {
 								var thisTabButton = document.getElementById("capcisMainWC_mt" + findThisColumnTabNumber);
 								var thisTabXButton = document.getElementById("capcisMainWC_mtc" + findThisColumnTabNumber);
 								var thisContainer = document.getElementById("capcisMainWC_mc" + findThisColumnTabNumber);
+								setTimeout(function(){
 								thisTabButton.style.visible = "visible";
 								thisTabXButton.style.visible = "visible";
 								thisContainer.style.display = "block";
 								currentVisibleMainContainerId = "capcisMainWC_mc" + findThisColumnTabNumber;
 								currentVisibleMainTabNumber	= findThisColumnTabNumber;
-								return;
+								}, 500);
+								return;								
 							}
 						}
 					}
@@ -489,11 +1771,11 @@ function constructor (id) {
 		tabColumnTracking[foundMainColumnNumber].subColumnMasterTabArraySubTabNumber[foundSubColumnNumber] = "";
 		var loopFoundSubColumnNumbers = (foundSubColumnNumber + 1);
 		var mySubTabXButton = document.getElementById("capcisMainWC_stc" + foundMainTabNumber + foundSubTabNumber);
-		mySubTabXButton.style.visibility = "hidden";
+		mySubTabXButton.style.visibility = "hidden";		
 		var mySubTabButton = document.getElementById("capcisMainWC_st" + foundMainTabNumber + foundSubTabNumber);
-		mySubTabButton.style.visibility = "hidden";
+		mySubTabButton.style.visibility = "hidden";		
 		var mySubComponent = document.getElementById("capcisMainWC_sc" + foundMainTabNumber + foundSubTabNumber);
-		mySubComponent.style.visibility = "hidden";
+		mySubComponent.style.visibility = "hidden";		
 		// check for open columns down the line		
 		for (var loopFoundSubColumnNumbers; loopFoundSubColumnNumbers <= (masterTabArray.length -1); loopFoundSubColumnNumbers++)
 		{
