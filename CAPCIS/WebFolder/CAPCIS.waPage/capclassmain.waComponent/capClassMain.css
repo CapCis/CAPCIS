@@ -3,8 +3,53 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-selected .waf-dataGrid-row.waf-widget-odd {
+	 background-color: transparent;
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-active .waf-dataGrid-row.waf-widget-even {
+	 background-color: rgb(78, 117, 163);
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-active .waf-dataGrid-row.waf-widget-odd {
+	 background-color: rgb(78, 117, 163);
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-selected .waf-dataGrid-row.waf-widget-even {
+	 background-color: rgb(78, 117, 163);
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-active {
+	 color: rgb(255, 128, 0);
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-hover .waf-dataGrid-row.waf-widget-odd {
+	 background-color: rgba(0, 0, 0, 0);
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-widget-odd {
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-selected {
+	 color: rgb(255, 128, 0);
+	 background-color: rgb(78, 117, 163);
+	 
+}
+
+#{id}dataGrid1 .waf-dataGrid-row.waf-state-hover {
+	 font-size: 12px;
+	 background-color: transparent;
+	 
+}
+
 #{id}dataGrid1 .waf-dataGrid-row.waf-widget-even {
-	 background-color: rgba(204, 250, 252, 0.597656);
 	 
 }
 
@@ -77,10 +122,9 @@
 	 height: 620px;
 	 top: 0px;
 	 left: 0px;
-	 right: 5px;
+	 right: 4px;
 	
 	 position: absolute;
-	 line-height: 18px;
 	 
 }
 
@@ -191,7 +235,7 @@
 }
 
 #{id}container4 {
-	 z-index: 3;
+	 z-index: 2;
 	 width: 160px;
 	 height: 650px;
 	 top: 40px;
@@ -407,7 +451,7 @@
 }
 
 #{id}tabView1 {
-	 z-index: 4;
+	 z-index: 3;
 	 width: 1225px;
 	 height: 655px;
 	 top: 35px;
@@ -472,7 +516,7 @@
 }
 
 #{id}menuBar1 {
-	 z-index: 1;
+	 z-index: 4;
 	 width: 1477px;
 	 height: 30px;
 	 top: 0px;
