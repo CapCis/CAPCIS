@@ -17,9 +17,9 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 2: answer = 'INSERT INTO fxlogintracking (UsernameAttempted,LoginAuthenticated) VALUES("'+ myObject.data1 +'","'+ myObject.data2 +'")';
 						break;
-				default: answer = null;
-				
+				default: answer = null;				
 			}
+			break;
 		case 3:
 			switch(myObject.minor)
 			{
@@ -35,7 +35,7 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				default: answer = null;
 			}
-	
+			break;
 	}
 		return answer;
 };

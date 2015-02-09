@@ -11,7 +11,6 @@ exports.getToken = function getToken(array)
 	var serverUtil = require('serverUtilities'); 					//include serverUtilities Module
 	var dBQueryBuilder1 = require('dSelectsQuery'); 					//include dSelectsQuery Module
 	var dBQueryBuilder2 = require('dInsertQuery');
-	
 	try 
 	{
 		var selectStatement = dBQueryBuilder1.buildQuery(array);	 		//call the buildQuery function in dSelectsQuery Module
