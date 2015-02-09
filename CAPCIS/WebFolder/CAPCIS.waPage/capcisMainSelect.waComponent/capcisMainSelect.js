@@ -109,7 +109,7 @@ function constructor (id) {
 	
 	
 	
-	subColumnButtonID
+	
 	
 	
 	
@@ -117,7 +117,6 @@ function constructor (id) {
 	{
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,data1:id.id};
 	 	myWCName = rpcDSelects.getSelect(myObject);	 	
-	 	debugger;
 	 	//var subTabCount = 0;
 	    
 	    //var mainTabNumber = openOrFindMainTab(myWCName[0].PrimaryHeaderOption);      //go find a main tab to use and return the array number(position)	    
@@ -157,20 +156,21 @@ function constructor (id) {
 	    	getMainTabX.style.visibility = "visible";
 	    	getMainTabX.style.zIndex = "101";
 	    
-	//Sub Tab Section    	   
+	//Sub Tab Section 		   	   
 	    if (myWCName[0].WebComponentName !== "no page")
 	    {
 			var subColumnNumber = openOrFindSubColumn(mainColumnNumber);  //go find an open sub column	    
 	    	var subTabNumber = openOrFindSubTab(mainTabNumber);     //go find a sub tab to use and return the array number(position)	    
 		
 			var getSubTabButton = document.getElementById("capcisMainWC_st" + mainTabNumber.toString() + subTabNumber.toString());  //set the subtab button config
+	    		getSubTabButton.style.visibility = "visible";
 	    		getSubTabButton.style.display = "block";
 	    		getSubTabButton.style.zIndex = "101";
 	    		getSubTabButton.style.top = subColumnPosTop[subColumnNumber] + "px";
 	    		getSubTabButton.style.left = "0px";
 	    		tabColumnTracking[mainColumnNumber].subColumnButtonID[subColumnNumber] = "capcisMainWC_st" + mainTabNumber.toString() + subTabNumber.toString();
 	    		masterTabArray[mainTabNumber].subTab[subTabNumber][1] = subColumnNumber;
-	    		
+	    		tabColumnTracking[mainColumnNumber].subColumnMasterTabArraySubTabNumber[subColumnNumber] = subTabNumber;
 	    	var getSubTabComponent = document.getElementById("capcisMainWC_sc" +  mainTabNumber.toString() + subTabNumber.toString());    	//set the sub tab config   
 				WAF.loadComponent ( {																			
 					id: 	'capcisMainWC_sc' + mainTabNumber.toString() + subTabNumber.toString(), 				
@@ -183,8 +183,9 @@ function constructor (id) {
 				}
 				getSubTabComponent.style.visibility = "visible";
 				currentVisibleSubComponent[mainTabNumber] = "capcisMainWC_sc" + mainTabNumber.toString() + subTabNumber.toString();
-			
+			debugger;
 	    	var getSubTabX = document.getElementById("capcisMainWC_stc" + mainTabNumber.toString() + subTabNumber.toString());   //set the subtab X button config
+	    		getSubTabX.style.visibility = "visible";
 	    		getSubTabX.style.display = "block";
 	    		getSubTabX.style.zIndex = "102";
 	    		getSubTabX.style.top = subColumnPosTop[subColumnNumber] + "px";
