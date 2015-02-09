@@ -32,58 +32,72 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		userConfigObj = {fullName:"",userName:"",userID:"",secToken:"",selectedUserDivision:"",approvedDivArray:[]};
 		currentVisibleMainContainerId = "";
 		currentVisibleMainTabNumber = "";
-		currentVisibleSubComponent = ["","","","","","","","","",""];          						//array to track which subtab is visible, 1 for each Main Tab
+		currentVisibleSubComponent = ["","","","","","","","","",""];       //array to track which subtab is visible, 1 for each Main Tab
 		mainColumnPosLeft = [0,126,251,376,501,626,751,876,1001,1126];
 		subColumnPosTop = [36,60,75,90,105,120,135,145,165,180];
-		tabColumnTracking = [																	//array to track used columns
+		tabColumnTracking = [											//array to track used columns
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
 				mainColumnButtonID:"",
+				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""]
+				subColumnButtonID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			}
 			];
 			
@@ -93,7 +107,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			tabName:"",
 			colNumber:"",
 			butName:"",
-			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
+			subTab:[[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""],[false,""]]
 			},
 		tabObj = {
 			tabName:"",
