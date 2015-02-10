@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var fileUpload2 = {};	// @fileUpload
 	var changeme = {};	// @button
 	var button3 = {};	// @button
 	var button2 = {};	// @button
@@ -9,6 +10,13 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	fileUpload2.filesUploaded = function fileUpload2_filesUploaded (event)// @startlock
+	{// @endlock
+		debugger;
+		rpcBlobUploadUtilities.clientPictureUpload(1,1,50,1,"test.jpg",334);
+		
+	};// @lock
 
 	changeme.click = function changeme_click (event)// @startlock
 	{// @endlock
@@ -95,6 +103,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("fileUpload2", "filesUploaded", fileUpload2.filesUploaded, "WAF");
 	WAF.addListener("changeme", "click", changeme.click, "WAF");
 	WAF.addListener("button3", "click", button3.click, "WAF");
 	WAF.addListener("button2", "click", button2.click, "WAF");

@@ -3,6 +3,89 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#container3 {
+	 z-index: 5;
+	 width: 365px;
+	 height: 50px;
+	 top: 94px;
+	 left: -1px;
+	
+	 position: absolute;
+	 -webkit-box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgb(153, 153, 153) 0px 0px 0px 0px inset;
+	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgb(153, 153, 153) 0px 0px 0px 0px inset;
+	 box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgb(153, 153, 153) 0px 0px 0px 0px inset;
+	 
+}
+
+#button11 {
+	 z-index: 4;
+	 width: 20px;
+	 height: 22px;
+	 top: 3px;
+	 right: -780px;
+	
+	 position: absolute;
+	 
+}
+
+#button10 {
+	 z-index: 3;
+	 width: 20px;
+	 height: 22px;
+	 top: 3px;
+	 right: -729px;
+	
+	 position: absolute;
+	 
+}
+
+#button9 {
+	 z-index: 2;
+	 width: 25px;
+	 height: 22px;
+	 top: 3px;
+	 right: -655px;
+	
+	 position: absolute;
+	 
+}
+
+#button8 {
+	 z-index: 1;
+	 width: 23px;
+	 height: 22px;
+	 top: 3px;
+	 right: -553px;
+	
+	 position: absolute;
+	 
+}
+
+#label3 {
+	 z-index: 13;
+	 width: 29px;
+	 height: 13px;
+	 top: 402px;
+	 left: 887px;
+	
+	 position: absolute;
+	 
+}
+
+#fileUpload2 {
+	 z-index: 13;
+	 width: 365px;
+	 height: 94px;
+	 top: 362px;
+	 left: 921px;
+	
+	 position: absolute;
+	 -webkit-box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgb(153, 153, 153) 0px 0px 0px 0px inset;
+	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgb(153, 153, 153) 0px 0px 0px 0px inset;
+	 box-shadow: rgba(0, 0, 0, 0.199219) 2px 2px 6px 0px, rgb(153, 153, 153) 0px 0px 0px 0px inset;
+	 
+}
+
 #matrix1 .waf-widget.waf-clone-label1 {
 	 position: absolute;
 	 
@@ -102,10 +185,10 @@
 
 #dataGrid1 {
 	 z-index: 6;
-	 width: 25px;
+	 width: 195px;
 	 height: 300px;
-	 top: 81px;
-	 left: 354px;
+	 top: 24px;
+	 left: 333px;
 	
 	 position: absolute;
 	 
@@ -126,8 +209,8 @@
 	 z-index: 3;
 	 width: 244px;
 	 height: 213px;
-	 top: 322px;
-	 left: 581px;
+	 top: 27px;
+	 left: 536px;
 	
 	 position: absolute;
 	 
