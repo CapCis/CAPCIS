@@ -31,7 +31,7 @@ function constructor (id) {
 
 	fileUpload2.filesUploaded = function fileUpload2_filesUploaded (event)// @startlock
 	{// @endlock
-		
+		rpcBlobUploadUtilities.clientPictureUpload(1,1,50,1,"test.jpg",334);
 	};// @lock
 
 	// @region eventManager// @startlock

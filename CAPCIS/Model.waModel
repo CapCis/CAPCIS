@@ -45,6 +45,16 @@
 			"attributes" : 
 			[
 				{
+					"name" : "ClientPicturesID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
 					"name" : "ClientPictureID",
 					"kind" : "storage",
 					"matchColumn" : "ID",
@@ -58,14 +68,40 @@
 					"type" : "image"
 				},
 				{
-					"name" : "ClientPicturesID",
+					"name" : "FK_ClientInformation_CIID",
 					"kind" : "storage",
 					"scope" : "public",
-					"indexed" : true,
-					"unique" : true,
-					"autosequence" : true,
-					"type" : "long",
-					"indexKind" : "btree"
+					"type" : "number"
+				},
+				{
+					"name" : "FK_UserAccountsID",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "InvalidClientPicture",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "PrimaryPicture",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "PictureFileName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "RandomID",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				}
 			],
 			"methods" : 
