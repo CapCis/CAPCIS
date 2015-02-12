@@ -12,6 +12,33 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
+		
+	 	
+		mainAssessorCont = document.getElementById(getHtmlId('container3'));
+		mainAssessorCont.style.transitionProperty = "width,left";
+		mainAssessorCont.style.transitionDelay = "0s,0s";
+		mainAssessorCont.style.transitionDuration = ".5s,.5s";
+		bakAssessorCont = document.getElementById(getHtmlId('container10'));
+		bakAssessorCont.style.transitionProperty = "width,left";
+		bakAssessorCont.style.transitionDelay = "0s,0s";
+		bakAssessorCont.style.transitionDuration = ".5s,.5s";
+		bakAssessorSpecific = document.getElementById(getHtmlId("container11"));
+		bakAssessorSpecific.style.transitionProperty = "width,left";
+		bakAssessorSpecific.style.transitionDelay = "0s,0s";
+		bakAssessorSpecific.style.transitionDuration = ".5s,.5s";
+		assessorCorespondanceCont = document.getElementById(getHtmlId('container8'));
+		assessorCorespondanceCont.style.transitionProperty = "width,left";
+		assessorCorespondanceCont.style.transitionDelay = "0s,0s";
+		assessorCorespondanceCont.style.transitionDuration = ".5s,.5s";
+		
+		$$(getHtmlId('container3')).setSplitPosition(2000);
+	 	$$(getHtmlId('container9')).setSplitPosition(1000);
+	 	$$(getHtmlId('container6')).setSplitPosition(1500);
+	 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+		
+		
+		mainAssessorCont.style.visibility = 'visible';
+		
 		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	assessorList = rpcDSelects.getSelect(myObject);
 	 	sources.assessorList.sync();
@@ -29,8 +56,10 @@ function constructor (id) {
 	 	reporting[0] = {ReportingMethod: "None"};
 	 	reporting[reporting.length] = tempReporting;
 	 	sources.reporting.sync();
-
+	 	
+	 	
 	// @region namespaceDeclaration// @startlock
+	var correspondanceActiveBox = {};	// @combobox
 	var voidCorrespondanceCheck = {};	// @checkbox
 	var button5 = {};	// @button
 	var submitButton = {};	// @button
@@ -46,8 +75,14 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();
+	};// @lock
+
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
+		debugger;
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
 		var myObject8 = 
 			{
@@ -56,10 +91,46 @@ function constructor (id) {
 				data2:status
 			}; //dontf
 		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
-		var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	assessorCorespondance = rpcDSelects.getSelect(myObject2);
-	 	sources.assessorCorespondance.sync();
+		
+		
+		
+		
+		
 	};// @lock
+	function fillCorrespondance()
+		{
+			
+			var currentCorrespondenceActiveSelected = $$(getHtmlId('correspondanceActiveBox')).getValue();
+			var currentCorrespondanceViewVoided;
+			var currentCorrespondanceAll;
+			
+			if(currentCorrespondenceActiveSelected == 'Active')
+			{
+				currentCorrespondanceViewVoided = false;
+			}
+			else if (currentCorrespondenceActiveSelected == 'Voided')
+			{
+				currentCorrespondanceViewVoided = true;
+			}
+			else
+			{
+				currentCorrespondanceAll = true;
+			}
+		
+			if(currentCorrespondanceAll != null)
+			{
+				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:7,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
+	 			sources.assessorCorespondance.sync();
+		
+			}
+			else
+			{
+				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
+	 			sources.assessorCorespondance.sync();
+			}	
+		}
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
@@ -72,7 +143,7 @@ function constructor (id) {
 				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
 				data2:currentID
 			}; //dontf
-			var update = rpcDInsert.setInsert(myObject8)
+			var update = rpcDInsert.setInsert(myObject8);
 			var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
 	 			sources.assessorCorespondance.sync();
@@ -134,6 +205,10 @@ function constructor (id) {
 		{
 			changed = true;
 		}
+		if($$(getHtmlId("assessorInactiveCheckBox")).getValue() == sources.specificAssessorList.InactiveAssessorInfo)
+		{
+			changed = true;
+		}
 		
 		//run update if needed
 		if(changed)
@@ -171,6 +246,7 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
+		fillCorrespondance();
 		$$(getHtmlId('container6')).setSplitPosition(1290);
 	};// @lock
 
@@ -218,10 +294,16 @@ function constructor (id) {
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
 		
+		
+		
+		
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(400);
-		$$(getHtmlId('container3')).setSplitPosition(1290);
-		$$(getHtmlId('container6')).setSplitPosition(1290);
-		$$(getHtmlId('container9')).setSplitPosition(625);
+		$$(getHtmlId('container3')).setSplitPosition(2000);
+	 	$$(getHtmlId('container9')).setSplitPosition(1000);
+	 	$$(getHtmlId('container6')).setSplitPosition(1500);
+		
+		
+		
 		var name = event.data.row.cells[0].value;
 		var city = event.data.row.cells[8].value;
 		var reportingMethod = event.data.row.cells[6].value;
@@ -250,10 +332,6 @@ function constructor (id) {
 	 	specificAssessorList = rpcDSelects.getSelect(myObject);
 	 	sources.specificAssessorList.sync();
 		
-		var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:name}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	assessorCorespondance = rpcDSelects.getSelect(myObject2);
-	 	sources.assessorCorespondance.sync();
-		var y = 7;
 		
 		
 		///////////////////////////////////////////////////////////get data
@@ -339,9 +417,15 @@ function constructor (id) {
 			
 		}
 		
+		fillCorrespondance();
+		
+		
+		
+		
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_correspondanceActiveBox", "change", correspondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
