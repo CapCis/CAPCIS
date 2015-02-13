@@ -3,6 +3,28 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#image2 {
+	 z-index: 19;
+	 width: 218px;
+	 height: 158px;
+	 top: 362px;
+	 left: 1330px;
+	
+	 position: absolute;
+	 
+}
+
+#button12 {
+	 z-index: 18;
+	 width: 143px;
+	 height: 40px;
+	 top: 533px;
+	 left: 1013px;
+	
+	 position: absolute;
+	 
+}
+
 #container3 {
 	 z-index: 5;
 	 width: 365px;

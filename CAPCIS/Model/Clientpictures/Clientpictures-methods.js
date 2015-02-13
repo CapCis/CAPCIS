@@ -50,3 +50,16 @@ model.Clientpictures.methods.getclientpictures = function(userToken,userAccountI
 	}
 };
 model.Clientpictures.methods.getclientpictures.scope = 'public';
+
+model.Clientpictures.methods.sendFIleAsHttpRequest = function() {
+	var serverUtil = require('serverUtilities'); 																//get connection to db			
+	var connection = serverUtil.getDBConnectionCapcisClientPicture(); 
+	var dbQuery = 'SELECT ClientPicturesID,ClientPicture,FK_ClientInformation_CIID,FK_UserAccountsID,InvalidClientPicture,PrimaryPicture,PictureFileName FROM clientpictures WHERE FK_ClientInformation_CIID = '+ CIID; 		//build query for client pictures
+	var result = connection.execute(dbQuery);
+	var thisRow = result.getNextRow();
+	
+	
+		
+		
+};
+model.Clientpictures.methods.sendFIleAsHttpRequest.scope = 'public';

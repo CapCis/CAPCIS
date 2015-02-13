@@ -20,9 +20,10 @@ exports.clientPictureUpload = function clientPictureUpload (userToken,userAccoun
 	var pictureConnection = serverUtil.getDBConnectionCapcisClientPicture();
 	//var dbquery = 'INSERT INTO clientpictures (ClientPicture,FK_ClientInformation_CIID,FK_UserAccountsID,InvalidClientPicture,PrimaryPicturePictureFileName) VALUES (x\''+myBufferTestFile+'\,' + CIID + ',' + userAccountID + ',0,' + primaryPicture + ',\'' + pictureFileName +'\)'; 	// Send the String to MySQL
 	var dbquery = 'INSERT INTO clientpictures (PictureFileName,FK_ClientInformation_CIID,FK_UserAccountsID,InvalidClientPicture,PrimaryPicture,ClientPicture) VALUES (\'' + pictureFileName +'\','+ CIID +','+ userAccountID +',0,'+ primaryPicture +',x\''+myBufferTestFile+'\')'; 	// Send the String to MySQL
-	var myQueryLog = new TextStream("c:/Temp/querylog.txt","write",-2);
-	myQueryLog.write(dbquery);	
-    myQueryLog.close();
+	
+	//var myQueryLog = new TextStream("c:/Temp/querylog.txt","write",-2);
+	//myQueryLog.write(dbquery);	
+    //myQueryLog.close();
 	//var dbquery = 'INSERT INTO clientpictures (ClientPicture) VALUES (x\''+myBufferTestFile+'\')'; 	// Send the String to MySQL
 	
 	var res = pictureConnection.execute(dbquery);
