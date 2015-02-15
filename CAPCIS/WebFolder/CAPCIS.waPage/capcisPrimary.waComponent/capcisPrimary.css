@@ -3,12 +3,32 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}container1 {
+	 z-index: 39;
+	 width: 1285px;
+	 height: 2px;
+	 top: 35px;
+	 left: 100px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.746094);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIyMyUiIHN0b3Atb3BhY2l0eT0iMCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjNGU3NWEzIiBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMSIgLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjd2FmLWllLWdyYWRpZW50KSIgLz48L3N2Zz4=");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0.23, rgba(255, 255, 255, 0)),color-stop(1, rgb(78, 117, 163)));
+	 background-image:-webkit-linear-gradient(left, rgba(255, 255, 255, 0) 23%,rgb(78, 117, 163) 100%);
+	 background-image:-moz-linear-gradient(left, rgba(255, 255, 255, 0) 23%,rgb(78, 117, 163) 100%);
+	 background-image:-ms-linear-gradient(left, rgba(255, 255, 255, 0) 23%,rgb(78, 117, 163) 100%);
+	 background-image:-o-linear-gradient(left, rgba(255, 255, 255, 0) 23%,rgb(78, 117, 163) 100%);
+	 background-image:linear-gradient(left, rgba(255, 255, 255, 0) 23%,rgb(78, 117, 163) 100%);
+	 background-repeat: repeat;
+	 
+}
+
 #{id}sc10 {
 	 z-index: 21;
-	 width: 884px;
-	 height: 517px;
-	 top: 51px;
-	 left: 182px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -16,10 +36,10 @@
 
 #{id}stc19 {
 	 z-index: 20;
-	 width: 20px;
-	 height: 18px;
-	 top: 60px;
-	 left: 58px;
+	 width: 15px;
+	 height: 35px;
+	 top: 319px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -27,10 +47,10 @@
 
 #{id}stc18 {
 	 z-index: 19;
-	 width: 20px;
-	 height: 18px;
-	 top: 56px;
-	 left: 54px;
+	 width: 15px;
+	 height: 35px;
+	 top: 284px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -38,10 +58,10 @@
 
 #{id}stc17 {
 	 z-index: 18;
-	 width: 20px;
-	 height: 18px;
-	 top: 52px;
-	 left: 50px;
+	 width: 15px;
+	 height: 35px;
+	 top: 249px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -49,10 +69,10 @@
 
 #{id}stc16 {
 	 z-index: 17;
-	 width: 20px;
-	 height: 18px;
-	 top: 48px;
-	 left: 46px;
+	 width: 15px;
+	 height: 35px;
+	 top: 214px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -60,10 +80,10 @@
 
 #{id}stc15 {
 	 z-index: 16;
-	 width: 20px;
-	 height: 18px;
-	 top: 44px;
-	 left: 42px;
+	 width: 15px;
+	 height: 35px;
+	 top: 179px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -71,10 +91,10 @@
 
 #{id}stc14 {
 	 z-index: 15;
-	 width: 20px;
-	 height: 18px;
-	 top: 40px;
-	 left: 38px;
+	 width: 15px;
+	 height: 35px;
+	 top: 144px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -82,10 +102,10 @@
 
 #{id}stc13 {
 	 z-index: 14;
-	 width: 20px;
-	 height: 18px;
-	 top: 36px;
-	 left: 34px;
+	 width: 15px;
+	 height: 35px;
+	 top: 109px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -93,10 +113,10 @@
 
 #{id}stc12 {
 	 z-index: 13;
-	 width: 19px;
-	 height: 18px;
-	 top: 32px;
-	 left: 30px;
+	 width: 15px;
+	 height: 35px;
+	 top: 74px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -104,10 +124,10 @@
 
 #{id}stc11 {
 	 z-index: 12;
-	 width: 20px;
-	 height: 18px;
-	 top: 28px;
-	 left: 26px;
+	 width: 15px;
+	 height: 35px;
+	 top: 39px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -115,10 +135,10 @@
 
 #{id}stc10 {
 	 z-index: 11;
-	 width: 20px;
-	 height: 18px;
-	 top: 24px;
-	 left: 22px;
+	 width: 15px;
+	 height: 35px;
+	 top: 4px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -126,10 +146,10 @@
 
 #{id}st19 {
 	 z-index: 10;
-	 width: 38px;
-	 height: 25px;
-	 top: 56px;
-	 left: 120px;
+	 width: 100px;
+	 height: 35px;
+	 top: 319px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -137,10 +157,10 @@
 
 #{id}st18 {
 	 z-index: 9;
-	 width: 38px;
-	 height: 25px;
-	 top: 52px;
-	 left: 116px;
+	 width: 100px;
+	 height: 35px;
+	 top: 284px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -148,10 +168,10 @@
 
 #{id}st17 {
 	 z-index: 8;
-	 width: 38px;
-	 height: 25px;
-	 top: 48px;
-	 left: 112px;
+	 width: 100px;
+	 height: 35px;
+	 top: 249px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -159,10 +179,10 @@
 
 #{id}st16 {
 	 z-index: 7;
-	 width: 38px;
-	 height: 25px;
-	 top: 44px;
-	 left: 108px;
+	 width: 100px;
+	 height: 35px;
+	 top: 214px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -170,10 +190,10 @@
 
 #{id}st15 {
 	 z-index: 6;
-	 width: 38px;
-	 height: 25px;
-	 top: 40px;
-	 left: 104px;
+	 width: 100px;
+	 height: 35px;
+	 top: 179px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -181,10 +201,10 @@
 
 #{id}st14 {
 	 z-index: 5;
-	 width: 38px;
-	 height: 25px;
-	 top: 36px;
-	 left: 99px;
+	 width: 100px;
+	 height: 35px;
+	 top: 144px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -192,10 +212,10 @@
 
 #{id}st13 {
 	 z-index: 4;
-	 width: 38px;
-	 height: 25px;
-	 top: 32px;
-	 left: 96px;
+	 width: 100px;
+	 height: 35px;
+	 top: 109px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -203,10 +223,10 @@
 
 #{id}st12 {
 	 z-index: 3;
-	 width: 38px;
-	 height: 25px;
-	 top: 28px;
-	 left: 92px;
+	 width: 100px;
+	 height: 35px;
+	 top: 74px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -214,10 +234,10 @@
 
 #{id}st11 {
 	 z-index: 2;
-	 width: 38px;
-	 height: 25px;
-	 top: 24px;
-	 left: 88px;
+	 width: 100px;
+	 height: 35px;
+	 top: 39px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -225,175 +245,175 @@
 
 #{id}st10 {
 	 z-index: 1;
-	 width: 38px;
-	 height: 25px;
-	 top: 20px;
-	 left: 84px;
+	 width: 100px;
+	 height: 35px;
+	 top: 4px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}mc1 {
-	 z-index: 30;
-	 width: 1167px;
-	 height: 611px;
-	 top: 598px;
-	 left: 20px;
+	 z-index: 29;
+	 width: 1390px;
+	 height: 685px;
+	 top: 38px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc09 {
-	 z-index: 30;
-	 width: 884px;
-	 height: 356px;
-	 top: 56px;
-	 left: 204px;
+	 z-index: 29;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc08 {
-	 z-index: 29;
-	 width: 884px;
-	 height: 356px;
-	 top: 52px;
-	 left: 200px;
+	 z-index: 28;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc07 {
-	 z-index: 28;
-	 width: 884px;
-	 height: 356px;
-	 top: 48px;
-	 left: 196px;
+	 z-index: 27;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc06 {
-	 z-index: 27;
-	 width: 884px;
-	 height: 356px;
-	 top: 44px;
-	 left: 192px;
+	 z-index: 26;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc05 {
-	 z-index: 26;
-	 width: 884px;
-	 height: 356px;
-	 top: 40px;
-	 left: 188px;
+	 z-index: 25;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc04 {
-	 z-index: 25;
-	 width: 884px;
-	 height: 356px;
-	 top: 36px;
-	 left: 184px;
+	 z-index: 24;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc03 {
-	 z-index: 24;
-	 width: 884px;
-	 height: 356px;
-	 top: 59px;
-	 left: 180px;
+	 z-index: 23;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc02 {
-	 z-index: 23;
-	 width: 884px;
-	 height: 356px;
-	 top: 28px;
-	 left: 176px;
+	 z-index: 22;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc01 {
-	 z-index: 22;
-	 width: 884px;
-	 height: 356px;
-	 top: 24px;
-	 left: 172px;
+	 z-index: 21;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc00 {
-	 z-index: 21;
-	 width: 884px;
-	 height: 356px;
-	 top: 20px;
-	 left: 168px;
+	 z-index: 20;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st07 {
-	 z-index: 20;
-	 width: 39px;
-	 height: 30px;
-	 top: 57px;
-	 left: 96px;
+	 z-index: 8;
+	 width: 100px;
+	 height: 35px;
+	 top: 250px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc09 {
-	 z-index: 19;
-	 width: 18px;
-	 height: 17px;
-	 top: 115px;
-	 left: 56px;
+	 z-index: 18;
+	 width: 15px;
+	 height: 35px;
+	 top: 320px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc08 {
-	 z-index: 18;
-	 width: 18px;
-	 height: 17px;
-	 top: 111px;
-	 left: 52px;
+	 z-index: 17;
+	 width: 15px;
+	 height: 35px;
+	 top: 285px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc07 {
-	 z-index: 17;
-	 width: 18px;
-	 height: 17px;
-	 top: 107px;
-	 left: 48px;
+	 z-index: 30;
+	 width: 15px;
+	 height: 35px;
+	 top: 250px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -401,10 +421,10 @@
 
 #{id}stc06 {
 	 z-index: 16;
-	 width: 18px;
-	 height: 17px;
-	 top: 103px;
-	 left: 44px;
+	 width: 15px;
+	 height: 35px;
+	 top: 215px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -412,10 +432,10 @@
 
 #{id}stc05 {
 	 z-index: 15;
-	 width: 18px;
-	 height: 17px;
-	 top: 99px;
-	 left: 40px;
+	 width: 15px;
+	 height: 35px;
+	 top: 180px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -423,10 +443,10 @@
 
 #{id}stc04 {
 	 z-index: 14;
-	 width: 18px;
-	 height: 17px;
-	 top: 95px;
-	 left: 36px;
+	 width: 15px;
+	 height: 35px;
+	 top: 145px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -434,10 +454,10 @@
 
 #{id}stc03 {
 	 z-index: 13;
-	 width: 18px;
-	 height: 17px;
-	 top: 91px;
-	 left: 32px;
+	 width: 15px;
+	 height: 35px;
+	 top: 110px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -445,10 +465,10 @@
 
 #{id}stc02 {
 	 z-index: 12;
-	 width: 18px;
-	 height: 17px;
-	 top: 87px;
-	 left: 28px;
+	 width: 15px;
+	 height: 35px;
+	 top: 75px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -456,10 +476,10 @@
 
 #{id}stc01 {
 	 z-index: 11;
-	 width: 18px;
-	 height: 17px;
-	 top: 83px;
-	 left: 24px;
+	 width: 15px;
+	 height: 35px;
+	 top: 40px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
@@ -467,32 +487,32 @@
 
 #{id}stc00 {
 	 z-index: 10;
-	 width: 18px;
-	 height: 17px;
-	 top: 120px;
-	 left: 62px;
+	 width: 15px;
+	 height: 35px;
+	 top: 5px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st09 {
-	 z-index: 9;
-	 width: 39px;
-	 height: 27px;
-	 top: 52px;
-	 left: 94px;
+	 z-index: 10;
+	 width: 100px;
+	 height: 35px;
+	 top: 320px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st08 {
-	 z-index: 8;
-	 width: 39px;
-	 height: 29px;
-	 top: 51px;
-	 left: 94px;
+	 z-index: 9;
+	 width: 100px;
+	 height: 35px;
+	 top: 285px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -500,10 +520,10 @@
 
 #{id}st06 {
 	 z-index: 7;
-	 width: 39px;
-	 height: 30px;
-	 top: 42px;
-	 left: 86px;
+	 width: 100px;
+	 height: 35px;
+	 top: 215px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -511,10 +531,10 @@
 
 #{id}st05 {
 	 z-index: 6;
-	 width: 39px;
-	 height: 30px;
-	 top: 37px;
-	 left: 82px;
+	 width: 100px;
+	 height: 35px;
+	 top: 180px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -522,10 +542,10 @@
 
 #{id}st04 {
 	 z-index: 5;
-	 width: 39px;
-	 height: 30px;
-	 top: 32px;
-	 left: 79px;
+	 width: 100px;
+	 height: 35px;
+	 top: 145px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -533,10 +553,10 @@
 
 #{id}st03 {
 	 z-index: 4;
-	 width: 39px;
-	 height: 30px;
-	 top: 27px;
-	 left: 77px;
+	 width: 100px;
+	 height: 35px;
+	 top: 110px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -544,10 +564,10 @@
 
 #{id}st02 {
 	 z-index: 3;
-	 width: 39px;
-	 height: 30px;
-	 top: 23px;
-	 left: 75px;
+	 width: 100px;
+	 height: 35px;
+	 top: 75px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -555,10 +575,10 @@
 
 #{id}st01 {
 	 z-index: 2;
-	 width: 39px;
-	 height: 30px;
-	 top: 17px;
-	 left: 60px;
+	 width: 100px;
+	 height: 35px;
+	 top: 40px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -566,21 +586,21 @@
 
 #{id}st00 {
 	 z-index: 1;
-	 width: 39px;
-	 height: 30px;
-	 top: 66px;
-	 left: 101px;
+	 width: 100px;
+	 height: 35px;
+	 top: 5px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}mc0 {
-	 z-index: 29;
-	 width: 1168px;
-	 height: 478px;
-	 top: 106px;
-	 left: 16px;
+	 z-index: 28;
+	 width: 1390px;
+	 height: 685px;
+	 top: 38px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
@@ -595,10 +615,18 @@
 	 z-index: 10;
 	 width: 125px;
 	 height: 35px;
-	 top: 4px;
-	 left: 369px;
+	 top: 0px;
+	 left: 101px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-left-width: 1px;
+	 border-right-width: 15px;
+	 border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
 	 
 }
 
@@ -606,10 +634,16 @@
 	 z-index: 12;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 496px;
+	 top: 0px;
+	 left: 228px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -617,10 +651,16 @@
 	 z-index: 13;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 625px;
+	 top: 0px;
+	 left: 357px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -628,10 +668,16 @@
 	 z-index: 14;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 756px;
+	 top: 0px;
+	 left: 479px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -639,10 +685,16 @@
 	 z-index: 15;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 884px;
+	 top: 0px;
+	 left: 607px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -650,10 +702,16 @@
 	 z-index: 16;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 1012px;
+	 top: 0px;
+	 left: 735px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -661,10 +719,16 @@
 	 z-index: 17;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 1139px;
+	 top: 0px;
+	 left: 862px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -672,10 +736,16 @@
 	 z-index: 18;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 1265px;
+	 top: 0px;
+	 left: 988px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -683,10 +753,16 @@
 	 z-index: 19;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 1393px;
+	 top: 0px;
+	 left: 1116px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
@@ -694,129 +770,224 @@
 	 z-index: 20;
 	 width: 125px;
 	 height: 35px;
-	 top: 3px;
-	 left: 1522px;
+	 top: 0px;
+	 left: 1245px;
 	
 	 position: absolute;
+	 border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-right-width: 15px;
+	 border-left-width: 1px;
 	 
 }
 
 #{id}mtc9 {
-	 z-index: 28;
-	 width: 31px;
-	 height: 21px;
-	 top: 48px;
-	 left: 628px;
+	 z-index: 27;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 1354px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc8 {
 	 z-index: 21;
-	 width: 31px;
-	 height: 21px;
-	 top: 50px;
-	 left: 594px;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 1224px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc7 {
 	 z-index: 22;
-	 width: 31px;
-	 height: 21px;
-	 top: 50px;
-	 left: 562px;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 1098px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc6 {
-	 z-index: 23;
-	 width: 31px;
-	 height: 21px;
-	 top: 50px;
-	 left: 529px;
+	 z-index: 38;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 971px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc5 {
-	 z-index: 24;
-	 width: 31px;
-	 height: 21px;
-	 top: 51px;
-	 left: 495px;
+	 z-index: 23;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 843px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc4 {
-	 z-index: 25;
-	 width: 31px;
-	 height: 21px;
-	 top: 51px;
-	 left: 462px;
+	 z-index: 24;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 713px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc3 {
-	 z-index: 26;
-	 width: 31px;
-	 height: 21px;
-	 top: 48px;
-	 left: 421px;
+	 z-index: 25;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 589px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc2 {
-	 z-index: 28;
-	 width: 31px;
-	 height: 21px;
-	 top: 49px;
-	 left: 388px;
+	 z-index: 27;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 465px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc1 {
-	 z-index: 27;
-	 width: 31px;
-	 height: 21px;
-	 top: 49px;
-	 left: 354px;
+	 z-index: 26;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 337px;
 	
 	 position: absolute;
+	 background-color: rgb(127, 0, 0);
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}mtc0 {
 	 z-index: 11;
-	 width: 31px;
-	 height: 21px;
-	 top: 50px;
-	 left: 322px;
+	 width: 15px;
+	 height: 35px;
+	 top: 0px;
+	 left: 210px;
 	
 	 position: absolute;
+	 border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	 border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
 	 
 }
 
 #{id}sc11 {
 	 z-index: 22;
-	 width: 884px;
-	 height: 517px;
-	 top: 55px;
-	 left: 186px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -824,10 +995,10 @@
 
 #{id}sc12 {
 	 z-index: 23;
-	 width: 884px;
-	 height: 517px;
-	 top: 59px;
-	 left: 190px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -835,10 +1006,10 @@
 
 #{id}sc13 {
 	 z-index: 24;
-	 width: 884px;
-	 height: 517px;
-	 top: 63px;
-	 left: 194px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -846,10 +1017,10 @@
 
 #{id}sc14 {
 	 z-index: 25;
-	 width: 884px;
-	 height: 517px;
-	 top: 67px;
-	 left: 198px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -857,10 +1028,10 @@
 
 #{id}sc15 {
 	 z-index: 26;
-	 width: 884px;
-	 height: 517px;
-	 top: 71px;
-	 left: 202px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -868,10 +1039,10 @@
 
 #{id}sc16 {
 	 z-index: 27;
-	 width: 884px;
-	 height: 517px;
-	 top: 75px;
-	 left: 206px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -879,10 +1050,10 @@
 
 #{id}sc17 {
 	 z-index: 28;
-	 width: 884px;
-	 height: 517px;
-	 top: 79px;
-	 left: 210px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -890,10 +1061,10 @@
 
 #{id}sc18 {
 	 z-index: 29;
-	 width: 884px;
-	 height: 517px;
-	 top: 83px;
-	 left: 214px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
@@ -901,17 +1072,17 @@
 
 #{id}sc19 {
 	 z-index: 30;
-	 width: 884px;
-	 height: 517px;
-	 top: 87px;
-	 left: 218px;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}mc3 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 1156px;
 	 height: 609px;
 	 top: 596px;
@@ -1142,7 +1313,7 @@
 }
 
 #{id}mc4 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 805px;
 	 height: 472px;
 	 top: 108px;
@@ -1373,7 +1544,7 @@
 }
 
 #{id}mc5 {
-	 z-index: 34;
+	 z-index: 33;
 	 width: 804px;
 	 height: 601px;
 	 top: 594px;
@@ -1604,7 +1775,7 @@
 }
 
 #{id}mc6 {
-	 z-index: 35;
+	 z-index: 34;
 	 width: 825px;
 	 height: 470px;
 	 top: 111px;
@@ -1835,7 +2006,7 @@
 }
 
 #{id}mc7 {
-	 z-index: 36;
+	 z-index: 35;
 	 width: 821px;
 	 height: 595px;
 	 top: 600px;
@@ -2066,7 +2237,7 @@
 }
 
 #{id}mc8 {
-	 z-index: 37;
+	 z-index: 36;
 	 width: 974px;
 	 height: 469px;
 	 top: 110px;
@@ -2297,7 +2468,7 @@
 }
 
 #{id}mc9 {
-	 z-index: 38;
+	 z-index: 37;
 	 width: 980px;
 	 height: 591px;
 	 top: 603px;
@@ -2528,1113 +2699,1113 @@
 }
 
 #{id}mc2 {
-	 z-index: 31;
-	 width: 1153px;
-	 height: 474px;
-	 top: 110px;
-	 left: 1255px;
+	 z-index: 30;
+	 width: 1390px;
+	 height: 685px;
+	 top: 38px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc29 {
-	 z-index: 30;
-	 width: 692px;
-	 height: 278px;
-	 top: 141px;
-	 left: 130px;
+	 z-index: 20;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc28 {
-	 z-index: 29;
-	 width: 692px;
-	 height: 278px;
-	 top: 137px;
-	 left: 126px;
+	 z-index: 19;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc27 {
-	 z-index: 28;
-	 width: 692px;
-	 height: 278px;
-	 top: 133px;
-	 left: 122px;
+	 z-index: 18;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc26 {
-	 z-index: 27;
-	 width: 692px;
-	 height: 278px;
-	 top: 129px;
-	 left: 118px;
+	 z-index: 17;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc25 {
-	 z-index: 26;
-	 width: 692px;
-	 height: 278px;
-	 top: 125px;
-	 left: 114px;
+	 z-index: 16;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc24 {
-	 z-index: 25;
-	 width: 692px;
-	 height: 278px;
-	 top: 121px;
-	 left: 110px;
+	 z-index: 15;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc23 {
-	 z-index: 24;
-	 width: 692px;
-	 height: 278px;
-	 top: 117px;
-	 left: 106px;
+	 z-index: 14;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc22 {
-	 z-index: 23;
-	 width: 692px;
-	 height: 278px;
-	 top: 113px;
-	 left: 102px;
+	 z-index: 13;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc21 {
-	 z-index: 22;
-	 width: 692px;
-	 height: 278px;
-	 top: 109px;
-	 left: 98px;
+	 z-index: 12;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}sc20 {
-	 z-index: 21;
-	 width: 692px;
-	 height: 278px;
-	 top: 105px;
-	 left: 94px;
+	 z-index: 11;
+	 width: 1290px;
+	 height: 685px;
+	 top: 0px;
+	 left: 100px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc29 {
-	 z-index: 10;
-	 width: 22px;
-	 height: 17px;
-	 top: 62px;
-	 left: 78px;
+	 z-index: 40;
+	 width: 15px;
+	 height: 35px;
+	 top: 320px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc28 {
-	 z-index: 9;
-	 width: 22px;
-	 height: 17px;
-	 top: 58px;
-	 left: 74px;
+	 z-index: 39;
+	 width: 15px;
+	 height: 35px;
+	 top: 285px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc27 {
-	 z-index: 8;
-	 width: 22px;
-	 height: 17px;
-	 top: 54px;
-	 left: 70px;
+	 z-index: 38;
+	 width: 15px;
+	 height: 35px;
+	 top: 250px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc26 {
-	 z-index: 7;
-	 width: 22px;
-	 height: 17px;
-	 top: 50px;
-	 left: 66px;
+	 z-index: 37;
+	 width: 15px;
+	 height: 35px;
+	 top: 215px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc25 {
-	 z-index: 6;
-	 width: 22px;
-	 height: 17px;
-	 top: 46px;
-	 left: 62px;
+	 z-index: 36;
+	 width: 15px;
+	 height: 35px;
+	 top: 180px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc24 {
-	 z-index: 5;
-	 width: 22px;
-	 height: 17px;
-	 top: 42px;
-	 left: 58px;
+	 z-index: 35;
+	 width: 15px;
+	 height: 35px;
+	 top: 145px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc23 {
-	 z-index: 4;
-	 width: 22px;
-	 height: 17px;
-	 top: 38px;
-	 left: 54px;
+	 z-index: 34;
+	 width: 15px;
+	 height: 35px;
+	 top: 110px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc22 {
-	 z-index: 3;
-	 width: 22px;
-	 height: 17px;
-	 top: 34px;
-	 left: 50px;
+	 z-index: 33;
+	 width: 15px;
+	 height: 35px;
+	 top: 75px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc21 {
-	 z-index: 2;
-	 width: 22px;
-	 height: 17px;
-	 top: 30px;
-	 left: 46px;
+	 z-index: 32;
+	 width: 15px;
+	 height: 35px;
+	 top: 40px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}stc20 {
-	 z-index: 1;
-	 width: 22px;
-	 height: 17px;
-	 top: 26px;
-	 left: 42px;
+	 z-index: 31;
+	 width: 15px;
+	 height: 35px;
+	 top: 5px;
+	 left: 85px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}st20 {
-	 width: 38px;
-	 height: 25px;
-	 top: 24px;
-	 left: 88px;
+	 z-index: 21;
+	 width: 100px;
+	 height: 35px;
+	 top: 5px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st21 {
-	 width: 38px;
-	 height: 25px;
-	 top: 28px;
-	 left: 92px;
+	 z-index: 22;
+	 width: 100px;
+	 height: 35px;
+	 top: 40px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st22 {
-	 width: 38px;
-	 height: 25px;
-	 top: 32px;
-	 left: 96px;
+	 z-index: 23;
+	 width: 100px;
+	 height: 35px;
+	 top: 75px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st23 {
-	 width: 38px;
-	 height: 25px;
-	 top: 36px;
-	 left: 100px;
+	 z-index: 24;
+	 width: 100px;
+	 height: 35px;
+	 top: 110px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st24 {
-	 width: 38px;
-	 height: 25px;
-	 top: 40px;
-	 left: 103px;
+	 z-index: 25;
+	 width: 100px;
+	 height: 35px;
+	 top: 145px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st25 {
-	 width: 38px;
-	 height: 25px;
-	 top: 44px;
-	 left: 108px;
+	 z-index: 26;
+	 width: 100px;
+	 height: 35px;
+	 top: 180px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st26 {
-	 width: 38px;
-	 height: 25px;
-	 top: 48px;
-	 left: 112px;
+	 z-index: 27;
+	 width: 100px;
+	 height: 35px;
+	 top: 215px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st27 {
-	 width: 38px;
-	 height: 25px;
-	 top: 52px;
-	 left: 116px;
+	 z-index: 28;
+	 width: 100px;
+	 height: 35px;
+	 top: 250px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st28 {
-	 width: 38px;
-	 height: 25px;
-	 top: 56px;
-	 left: 120px;
+	 z-index: 29;
+	 width: 100px;
+	 height: 35px;
+	 top: 285px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st29 {
-	 width: 38px;
-	 height: 25px;
-	 top: 60px;
-	 left: 124px;
+	 z-index: 30;
+	 width: 100px;
+	 height: 35px;
+	 top: 320px;
+	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st30 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 28px;
 	 left: 92px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st31 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 32px;
 	 left: 96px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st32 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 36px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st33 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st34 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 107px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st35 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 112px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st36 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 116px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st37 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 120px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st38 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st39 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st40 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 28px;
 	 left: 92px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st41 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 32px;
 	 left: 96px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st42 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 36px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st43 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st44 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 107px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st45 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 112px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st46 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 116px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st47 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 120px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st48 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st49 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st50 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 32px;
 	 left: 96px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st51 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 36px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st52 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st53 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 108px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st54 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 111px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st55 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 116px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st56 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 120px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st57 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st58 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st59 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 68px;
 	 left: 132px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st60 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 32px;
 	 left: 96px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st61 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 36px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st62 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st63 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 108px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st64 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 111px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st65 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 116px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st66 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 120px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st67 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st68 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st69 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 68px;
 	 left: 132px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st70 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 36px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st71 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st72 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 108px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st73 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 112px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st74 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st75 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 120px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st76 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st77 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st78 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 68px;
 	 left: 132px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st79 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 72px;
 	 left: 136px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st80 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 36px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st81 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st82 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 108px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st83 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 112px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st84 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st85 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 120px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st86 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st87 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st88 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 68px;
 	 left: 132px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st89 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 72px;
 	 left: 136px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
 #{id}st90 {
+	 z-index: 31;
 	 width: 38px;
 	 height: 25px;
 	 top: 40px;
 	 left: 104px;
 	
 	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}st91 {
+	 z-index: 32;
 	 width: 38px;
 	 height: 25px;
 	 top: 44px;
 	 left: 108px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}st92 {
+	 z-index: 33;
 	 width: 38px;
 	 height: 25px;
 	 top: 48px;
 	 left: 112px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}st93 {
+	 z-index: 34;
 	 width: 38px;
 	 height: 25px;
 	 top: 52px;
 	 left: 116px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}st94 {
+	 z-index: 35;
 	 width: 38px;
 	 height: 25px;
 	 top: 56px;
 	 left: 119px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}st95 {
+	 z-index: 36;
 	 width: 38px;
 	 height: 25px;
 	 top: 60px;
 	 left: 124px;
 	
 	 position: absolute;
-	 z-index: 36;
 	 
 }
 
 #{id}st96 {
+	 z-index: 37;
 	 width: 38px;
 	 height: 25px;
 	 top: 64px;
 	 left: 128px;
 	
 	 position: absolute;
-	 z-index: 37;
 	 
 }
 
 #{id}st97 {
+	 z-index: 38;
 	 width: 38px;
 	 height: 25px;
 	 top: 68px;
 	 left: 132px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}st98 {
+	 z-index: 39;
 	 width: 38px;
 	 height: 25px;
 	 top: 72px;
 	 left: 136px;
 	
 	 position: absolute;
-	 z-index: 39;
 	 
 }
 
 #{id}st99 {
+	 z-index: 40;
 	 width: 38px;
 	 height: 25px;
 	 top: 76px;
 	 left: 140px;
 	
 	 position: absolute;
-	 z-index: 40;
 	 
 }
 
