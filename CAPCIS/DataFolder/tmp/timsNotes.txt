@@ -1,0 +1,1 @@
+http://localhost:8080/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9
