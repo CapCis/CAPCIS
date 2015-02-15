@@ -1662,7 +1662,7 @@ function constructor (id) {
 							nextRightTabXButton.style.transitionProperty = "left";
 							nextRightTabXButton.style.transitionDelay = "0s";
 							nextRightTabXButton.style.transitionDuration = ".5s";
-							nextRightTabXButton.style.left = mainColumnPosLeft[newTabToLeftColNumber] + "px";							
+							nextRightTabXButton.style.left = mainColumnPosLeftX[newTabToLeftColNumber] + "px";							
 						}
 					}
 					if (currentVisibleMainTabNumber === myMainTabXButtonNumber)
