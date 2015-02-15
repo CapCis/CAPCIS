@@ -24,7 +24,7 @@ exports.getDBConnectionCapcisClientPicture = function getDBConnection(x){
 		hostname: '68.106.70.68',
 		user: 'teamcapcis2',
 		password: 'teamcapcis2',
-		database: 'capcisclientpicture',
+		database: 'capcisclientpictures',
 		port: 3306,
 		ssl: false,
 		dbType: 'mysql'
