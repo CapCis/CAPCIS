@@ -33,8 +33,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		currentVisibleMainContainerId = "";
 		currentVisibleMainTabNumber = "";
 		currentVisibleSubComponent = ["","","","","","","","","",""];       //array to track which subtab is visible, 1 for each Main Tab
-		mainColumnPosLeft = [0,126,251,376,501,626,751,876,1001,1126];
-		subColumnPosTop = [36,60,75,90,105,120,135,145,165,180];
+		mainColumnPosLeft = [100,225,350,475,600,725,850,975,1100,1225];
+		mainColumnPosLeftX = [210,335,460,585,710,835,960,1085,1210,1335];
+		subColumnPosTop = [0,31,62,93,124,155,186,217,248,279];
 		tabColumnTracking = [											//array to track used columns
 			tabsPos = {
 				mainColumnOpen:false,
