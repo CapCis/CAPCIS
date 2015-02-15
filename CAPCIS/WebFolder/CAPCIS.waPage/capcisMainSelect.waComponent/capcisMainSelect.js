@@ -153,7 +153,7 @@ function constructor (id) {
 	    	    
 	    var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabNumber.toString());     //set the main X button config
 	    	getMainTabX.style.top = "0px";
-	    	getMainTabX.style.left = mainColumnPosLeft[mainColumnNumber] + "px";
+	    	getMainTabX.style.left = mainColumnPosLeftX[mainColumnNumber] + "px";
 	    	getMainTabX.style.visibility = "visible";
 	    	getMainTabX.style.display = "block";
 	    	getMainTabX.style.zIndex = "101";
@@ -190,7 +190,7 @@ function constructor (id) {
 	    		getSubTabX.style.display = "block";
 	    		getSubTabX.style.zIndex = "102";
 	    		getSubTabX.style.top = subColumnPosTop[subColumnNumber] + "px";
-	    		getSubTabX.style.left = "0px";
+	    		getSubTabX.style.left = "85px";
 		}
 	     
 	    

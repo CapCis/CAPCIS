@@ -3,6 +3,26 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#container1 {
+	 z-index: 14;
+	 width: 2px;
+	 height: 500px;
+	 top: 105px;
+	 left: 160px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIxJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiM0ZTc1YTMiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0.01, rgba(255, 255, 255, 0)),color-stop(1, rgb(78, 117, 163)));
+	 background-image:-webkit-linear-gradient(top, rgba(255, 255, 255, 0) 1%,rgb(78, 117, 163) 100%);
+	 background-image:-moz-linear-gradient(top, rgba(255, 255, 255, 0) 1%,rgb(78, 117, 163) 100%);
+	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 1%,rgb(78, 117, 163) 100%);
+	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 1%,rgb(78, 117, 163) 100%);
+	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 1%,rgb(78, 117, 163) 100%);
+	 background-repeat: repeat;
+	 
+}
+
 #richText1 {
 	 z-index: 1;
 	 width: 162px;
@@ -66,23 +86,11 @@
 #capcisMainWC {
 	 z-index: 13;
 	 width: 1390px;
-	 height: 720px;
+	 height: 885px;
 	 top: 60px;
 	 left: 190px;
 	
 	 position: absolute;
-	 border-top-style: solid;
-	 border-top-color: rgb(255, 0, 0);
-	 border-left-style: solid;
-	 border-left-width: 2px;
-	 border-left-color: rgb(255, 0, 0);
-	 border-right-style: solid;
-	 border-right-width: 2px;
-	 border-right-color: rgb(255, 0, 0);
-	 border-bottom-style: solid;
-	 border-bottom-color: rgb(255, 0, 0);
-	 border-top-width: 0px;
-	 border-bottom-width: 0px;
 	 
 }
 
