@@ -13,36 +13,47 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 		
 		
-	 	
+	 	/*
 		mainAssessorCont = document.getElementById(getHtmlId('container3'));
-		mainAssessorCont.style.transitionProperty = "width,left";
-		mainAssessorCont.style.transitionDelay = "0s,0s";
-		mainAssessorCont.style.transitionDuration = ".5s,.5s";
-		bakAssessorCont = document.getElementById(getHtmlId('container10'));
-		bakAssessorCont.style.transitionProperty = "width,left";
-		bakAssessorCont.style.transitionDelay = "0s,0s";
-		bakAssessorCont.style.transitionDuration = ".5s,.5s";
-		bakAssessorSpecific = document.getElementById(getHtmlId("container11"));
-		bakAssessorSpecific.style.transitionProperty = "width,left";
-		bakAssessorSpecific.style.transitionDelay = "0s,0s";
-		bakAssessorSpecific.style.transitionDuration = ".5s,.5s";
-		assessorCorespondanceCont = document.getElementById(getHtmlId('container8'));
-		assessorCorespondanceCont.style.transitionProperty = "width,left";
-		assessorCorespondanceCont.style.transitionDelay = "0s,0s";
-		assessorCorespondanceCont.style.transitionDuration = ".5s,.5s";
+		mainAssessorCont.style.transitionProperty = "all";
+		mainAssessorCont.style.transitionDelay = "0s";
+		mainAssessorCont.style.transitionDuration = ".5s";
 		
-		$$(getHtmlId('container3')).setSplitPosition(2000);
+		bakAssessorCont = document.getElementById(getHtmlId('container10'));
+		bakAssessorCont.style.transitionProperty = "all";
+		bakAssessorCont.style.transitionDelay = "0s";
+		bakAssessorCont.style.transitionDuration = "1s";
+		bakAssessorSpecific = document.getElementById(getHtmlId("container11"));
+		bakAssessorSpecific.style.transitionProperty = "all";
+		bakAssessorSpecific.style.transitionDelay = "0s";
+		bakAssessorSpecific.style.transitionDuration = "1s";
+		
+		assessorCorespondanceCont = document.getElementById(getHtmlId('container8'));
+		assessorCorespondanceCont.style.transitionProperty = "all";
+		assessorCorespondanceCont.style.transitionDelay = "0s";
+		assessorCorespondanceCont.style.transitionDuration = "1s";
+		*/
+		
+		$$(getHtmlId('container3')).setSplitPosition(900);
 	 	$$(getHtmlId('container9')).setSplitPosition(1000);
 	 	$$(getHtmlId('container6')).setSplitPosition(1500);
 	 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 		
 		
-		mainAssessorCont.style.visibility = 'visible';
-		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	assessorList = rpcDSelects.getSelect(myObject);
-	 	sources.assessorList.sync();
-	 	
+		//mainAssessorCont.style.visibility = 'visible';
+		try
+		{
+			debugger;
+			var searchCrit = data.userData.searchCrit;
+			var searchType = data.userData.searchType;
+			
+		}
+		catch(err)
+		{
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 	assessorList = rpcDSelects.getSelect(myObject);
+		 	sources.assessorList.sync();
+		}
 	 	var myObject3 = {token:'7836140170460568' ,id:'1',major:3,minor:3}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject3);
 	 	var tempCity= city[0];
@@ -241,7 +252,7 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container3')).setSplitPosition(1290);
+		$$(getHtmlId('container3')).setSplitPosition(900);
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -253,7 +264,7 @@ function constructor (id) {
 	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('container6')).setSplitPosition(420);
-		$$(getHtmlId('container3')).setSplitPosition(1290);
+		$$(getHtmlId('container3')).setSplitPosition(900);
 		currentCorresondanceDate = event.data.row.cells[0].value;
 	};// @lock
 
@@ -294,6 +305,7 @@ function constructor (id) {
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
 		
+		debugger;
 		
 		
 		
