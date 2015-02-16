@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid1 {
+	 z-index: 1;
+	 height: 625px;
+	 top: 2px;
+	 left: 2px;
+	 right: -887px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label102 {
 	 z-index: 33;
 	 width: 118px;

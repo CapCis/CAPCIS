@@ -158,6 +158,22 @@ exports.buildQuery = function buildQuery(myObject)
 								WHERE assessorinformation.AssessorName = "'+myObject.data1+'" \
 								ORDER BY 1 DESC';
 				break;
+				case 8: answer = 'SELECT * FROM capcis.assessorinformation';
+				break;
+				case 9: answer = "SELECT * FROM capcis.assessorinformation where assessorinformation.AssessorName LIKE '%"+myObject.data1+"%' or assessorinformation.AssessorPhone LIKE '%"+myObject.data1+"%' \
+								OR assessorinformation.AssessorEmail LIKE  '%"+myObject.data1+"%' OR assessorinformation.AssessorFax LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorAddress LIKE '%"+myObject.data1+"%' \
+								OR assessorinformation.AssessorCity LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorState LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorZipCode LIKE '%"+myObject.data1+"%'  \
+								OR assessorinformation.AssessorInformationID LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorPhoneExt LIKE '%"+myObject.data1+"%' \
+								OR assessorinformation.AssessorMobilePhone LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorNotes LIKE '%"+myObject.data1+"%'\
+								OR assessorinformation.AssessorFullNameDisplay LIKE '%"+myObject.data1+"%'";
+				break;
+				case 10: answer = "SELECT * FROM capcis.assessorinformation where (assessorinformation.AssessorName LIKE '%"+myObject.data1+"%' or assessorinformation.AssessorPhone LIKE '%"+myObject.data1+"%' \
+								OR assessorinformation.AssessorEmail LIKE  '%"+myObject.data1+"%' OR assessorinformation.AssessorFax LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorAddress LIKE '%"+myObject.data1+"%' \
+								OR assessorinformation.AssessorCity LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorState LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorZipCode LIKE '%"+myObject.data1+"%'  \
+								OR assessorinformation.AssessorInformationID LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorPhoneExt LIKE '%"+myObject.data1+"%' \
+								OR assessorinformation.AssessorMobilePhone LIKE '%"+myObject.data1+"%' OR assessorinformation.AssessorNotes LIKE '%"+myObject.data1+"%'\
+								OR assessorinformation.AssessorFullNameDisplay LIKE '%"+myObject.data1+"%') AND InactiveAssessorInfo = "+myObject.data2;
+				break;
 				default:answer = null;
 				break;
 			}

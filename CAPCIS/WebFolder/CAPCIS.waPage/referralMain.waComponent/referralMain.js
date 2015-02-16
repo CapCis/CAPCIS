@@ -62,18 +62,7 @@ function constructor (id) {
 		ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionComponent'));
 		court = document.getElementById(getHtmlId('CourtJursidictionComponent'));
 		
-		assessor.style.visibility = 'visible';
-		attorney.style.visibility = 'hidden';
-		dhs.style.visibility = 'hidden';
-		judge.style.visibility = 'hidden';
-		other.style.visibility = 'hidden';
-		prosecutor.style.visibility = 'hidden';
-		prosecutor.style.visibility = 'hidden';
-		probationO.style.visibility = 'hidden';
-		ProbationJ.style.visibility = 'hidden';
-		court.style.visibility = 'hidden';
-		
-		
+		changeWindow('Assessors');
 		
 
 	// @region namespaceDeclaration// @startlock
@@ -93,43 +82,44 @@ function constructor (id) {
 
 	courtJurisdictionButton.click = function courtJurisdictionButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	probationJurisdictionButton.click = function probationJurisdictionButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	probationOfficerButton.click = function probationOfficerButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	prosecutorsButton.click = function prosecutorsButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	otherButton.click = function otherButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	judgesButton.click = function judgesButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	dhsButton.click = function dhsButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	assessorButton.click = function assessorButton_click (event)// @startlock
 	{// @endlock
-		
-		changeWindow(this.id);
+		debugger;
+		$comp;
+		changeWindow(event.currentTarget.innerText);
 
 	};// @lock
 
@@ -151,7 +141,7 @@ function constructor (id) {
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
 		
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 		
 	};// @lock
 
@@ -172,18 +162,55 @@ function constructor (id) {
 	
 	function changeWindow(id)
 	{
+		debugger;
+		
 		assessor.style.visibility = 'hidden';
 		attorney.style.visibility = 'hidden';
 		dhs.style.visibility = 'hidden';
 		judge.style.visibility = 'hidden';
 		other.style.visibility = 'hidden';
 		prosecutor.style.visibility = 'hidden';
-		prosecutor.style.visibility = 'hidden';
 		probationO.style.visibility = 'hidden';
 		ProbationJ.style.visibility = 'hidden';
 		court.style.visibility = 'hidden';
-		var myVisibleButton = document.getElementById(id);
-		myVisibleButton.style.visibility = "visible";
+		
+		if(id == 'Assessors')
+		{
+			assessor.style.visibility = 'visible';
+		}
+		else if(id == 'Attorneys')
+		{
+			attorney.style.visibility = 'visible';
+		}
+		else if(id == 'DHS Officers')
+		{
+			dhs.style.visibility = 'visible';
+		}
+		else if(id == 'Judges')
+		{
+			judge.style.visibility = 'visible';
+		}
+		else if(id == 'Other Monitors')
+		{
+			other.style.visibility = 'visible';
+		}
+		else if(id == 'Prosecutors')
+		{
+			prosecutor.style.visibility = 'visible';
+		}
+		else if(id == 'Probation Officers')
+		{
+			probationO.style.visibility = 'visible';
+		}
+		else if(id == 'Probation Jurisdictions')
+		{
+			ProbationJ.style.visibility = 'visible';
+		}
+		else if(id == 'Court Jurisdictions')
+		{
+			court.style.visibility = 'visible';
+		}
+		
 		
 		
 	}

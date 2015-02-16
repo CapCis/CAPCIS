@@ -46,6 +46,42 @@ function constructor (id) {
 			debugger;
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
+			if(searchCrit == "" && searchType == 'Active')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if(searchCrit == '' && searchType == 'Inactive')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if(searchCrit == '' && searchType == 'All')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:8}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if (searchCrit != '' && searchType == 'Active')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:10, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if (searchCrit != '' && searchType == 'Inactive')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:10, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if (searchCrit != '' && searchType == 'All')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:9, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
 			
 		}
 		catch(err)
