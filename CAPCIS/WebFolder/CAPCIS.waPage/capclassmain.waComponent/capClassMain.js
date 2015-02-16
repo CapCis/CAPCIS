@@ -12,15 +12,17 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-
-		var whatsVisible = 'full'
+		debugger;
+		var whatsVisible = 'full';
 		fillFullView();
 		$$(getHtmlId('classFullViewCont')).$domNode.css('overflow','auto');
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:1}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	myPrograms = rpcDSelects.getSelect(myObject);
+	 	var myPrograms = rpcDSelects.getSelect(myObject);
 	 	var filterMatrix = document.getElementById(getHtmlId('matrix4'));
 	 	filterMatrix.style.display = 'none';
 	 	sources.myPrograms.sync();
+	 	
+	 	
 	// @region namespaceDeclaration// @startlock
 	var button2 = {};	// @button
 	var muClassRosterDG = {};	// @dataGrid
@@ -186,9 +188,11 @@ function constructor (id) {
 		if(whatsVisible = 'filter')
 		{
 			whatsVisible = 'full';
-			full.style.display = 'block';
+			
 			filter.style.display = 'none';
 			filterMatrix.style.display = 'none';
+			full.style.display = 'block';
+			full.style.visibility = "visible";
 		}
 		
 		
@@ -198,7 +202,7 @@ function constructor (id) {
 	 	//var htmlID = $comp.id + "_classFilterMatrix";
 		//var  selectedClass = $$(htmlID).getValue();
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:6,data1:classTaken,weekStartDate:'2014-3-16',weekEndDate:'2014-3-22'}; //dont forget to change token and id
-	 	myMURosterList = rpcDSelects.getSelect(myObject);
+	 	var myMURosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myMURosterList.sync();
 	 	
 	 };
@@ -206,10 +210,14 @@ function constructor (id) {
 	 function pageOpener (id) 
 	{
 	
-			
+		debugger;	
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:id.id.toString()}; //dont forget to change token and id
-	 	myRosterList = rpcDSelects.getSelect(myObject);
-	 	sources.myRosterList.sync();
+	 	var myRosterList = rpcDSelects.getSelect(myObject);
+	 	$comp.sourcesVar;
+	 	$comp.sourcesVar.myRosterList = myRosterList;
+	 	$comp.sources.myRosterList.sync();
+	 	
+	 	var myLocalVar = $comp.sourcesVar.myRosterList;
 	 	pageOpenerMU(id.id.toString());
 	 	
 	
@@ -219,7 +227,7 @@ function constructor (id) {
 	{
 		
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:0}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	myClassList = rpcDSelects.getSelect(myObject);
+	 	var myClassList = rpcDSelects.getSelect(myObject);
 	 	sources.myClassList.sync();	//get list of classes
 	 
 	 	var muNotDone = true;
