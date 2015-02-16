@@ -160,12 +160,24 @@ function constructor (id) {
 		    					getMainTabButton.style.top = "0px";
 		    					getMainTabButton.style.left = mainColumnPosLeft[mainTabFinder] + "px";
 		    					getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
-							var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabFinder.toString());
+							var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabFinder.toString()); 		// set the main tab x vixible
 								getMainTabX.style.visibility = "visible";
 								getMainTabX.style.display = "block";
 								getMainTabX.style.zIndex = "101";
 								getMainTabX.style.top = "0px";
 								getMainTabX.style.left = mainColumnPosLeftX[mainTabFinder] + "px";
+							var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainTabFinder.toString());  //set the main container visible
+								getMainTabContainer.style.display = "block";
+								getMainTabContainer.style.zIndex = "100";
+								
+								if (currentVisibleMainContainerId !== "")
+	    						{
+	    	 						var hideCurrentVisibleMainContainer = document.getElementById(currentVisibleMainContainerId);	    	 
+	    	 							hideCurrentVisibleMainContainer.style.display = "none";
+	    	 							hideCurrentVisibleMainContainer.style.zIndex = "0";	    	 
+	    						}
+	    						currentVisibleMainTabNumber = mainTabFinder;
+	    						currentVisibleMainContainerId = "capcisMainWC_mc" + mainTabFinder.toString();
 								return;	    				
 	    				}
 	    			}
