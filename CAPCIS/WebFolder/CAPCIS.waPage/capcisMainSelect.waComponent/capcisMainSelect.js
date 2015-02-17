@@ -125,60 +125,203 @@ function constructor (id) {
 	    
 	    
 	//Main Tab Section
-	    for (var mainTabFinder = 0; mainTabFinder <= 9; mainTabFinder++)                                             //find the Main Tab To Use
+	    for (var mainColumnFinder = 0; mainColumnFinder <= 9; mainColumnFinder++)                                             //find the Main Tab To Use
 	    	{
-	    		if (tabColumnTracking[mainTabFinder].mainColumnName === myWCName[0].PrimaryHeaderOption) 			// If the tab name is found
+	    		if (tabColumnTracking[mainColumnFinder].mainColumnName === myWCName[0].PrimaryHeaderOption) 			// If the tab name is found
 	    		{
-	    			var getMainTabButton = document.getElementById("capcisMainWC_mt" + mainTabFinder.toString());   // set the main tab visible
-		    			getMainTabButton.style.visibility = "visible";
-		    			getMainTabButton.display = "block";
-		    			getMainTabButton.style.top = "0px";
-		    			getMainTabButton.style.left = mainColumnPosLeft[mainTabFinder] + "px";
-		    			getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
-					var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabFinder.toString());
-						getMainTabX.style.visibility = "visible";
-						getMainTabX.style.display = "block";
-						getMainTabX.style.top = "0px";
-						getMainTabX.style.left = mainColumnPosLeftX[mainTabFinder] + "px";	
-					//set subcontainer visible
-						
-					// set this tab as the current viewed tab
-	    			// set the previous viewed tab invisible
+	    			for (var foundWebComponentName = 0; foundWebComponentName <= 9; foundWebComponentName ++)
+	    			{
+	    				if (tabColumnTracking[mainColumnFinder].subColumnWebComponentName[foundWebComponentName] === myWCName[0].WebComponentName)
+	    				{
+	    					var getMainTabButton = document.getElementById("capcisMainWC_mt" + mainColumnFinder.toString());   // set the main tab visible
+		    					getMainTabButton.style.visibility = "visible";
+		    					getMainTabButton.display = "block";
+		    					getMainTabButton.style.top = "0px";
+		    					getMainTabButton.style.left = mainColumnPosLeft[mainColumnFinder] + "px";
+		    					getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
+							var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainColumnFinder.toString());
+								getMainTabX.style.visibility = "visible";
+								getMainTabX.style.display = "block";
+								getMainTabX.style.top = "0px";
+								getMainTabX.style.left = mainColumnPosLeftX[mainColumnFinder] + "px";	
+							
+							if (currentVisibleMainContainerId !== "")
+	    					{
+	    	 					var hideCurrentVisibleMainContainer = document.getElementById(currentVisibleMainContainerId);	    	 
+	    	 						hideCurrentVisibleMainContainer.style.display = "none";
+	    	 						hideCurrentVisibleMainContainer.style.zIndex = "0";	    	 
+	    					}
+							var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainColumnFinder.toString());  //set the main container visible
+								getMainTabContainer.style.display = "block";
+								getMainTabContainer.style.zIndex = "100";	//set subcontainer visible
+							
+							if (currentVisibleSubComponent[mainColumnFinder] !== "")
+							{
+								var hideCurrentVisibleSubComponent = document.getElementById(currentVisibleSubComponent[mainColumnFinder]);
+									hideCurrentVisibleSubComponent.style.visibility = "hidden";
+							}
+							var getSubTabComponent = document.getElementById("capcisMainWC_sc" +  mainColumnFinder.toString() + foundWebComponentName.toString());    	//set the sub tab config   
+								getSubTabComponent.style.visibility = "visible";
+							
+							currentVisibleMainTabNumber = mainColumnFinder;
+							currentVisibleMainContainerId = "capcisMainWC_mc" + mainColumnFinder.toString();	
+							currentVisibleSubComponent[mainColumnFinder] = "capcisMainWC_sc" + mainColumnFinder.toString() + foundWebComponentName.toString();
+	    							
+	    						// set the previous viewed tab invisible
+	    					return;
+	    				}
+	    			}
 	    			
+	    			
+	    			
+	    			if (myWCName[0].WebComponentName === "/CAPCIS.waPage/clientMain.waComponent")
+	    			{
+						for (var subColumnFinder = 0; subColumnFinder <= 9; subColumnFinder++)
+						{
+							if (tabColumnTracking[mainColumnFinder].subColumnOpen[subColumnFinder] === false)
+							{								
+	   							tabColumnTracking[mainColumnFinder].subColumnOpen[subColumnFinder] = true;
+								tabColumnTracking[mainColumnFinder].subColumnTabID[subColumnFinder] = subColumnFinder;								
+								tabColumnTracking[mainColumnFinder].subColumnWebComponentName = myWCName[0].WebComponentName;
+	    						
+	    						var getMainTabButton = document.getElementById("capcisMainWC_mt" + mainColumnFinder.toString());   // set the main tab visible
+		    						getMainTabButton.style.visibility = "visible";
+			    					getMainTabButton.style.display = "block";		    					
+			    					getMainTabButton.style.zIndex = "100";
+			    					getMainTabButton.style.top = "0px";
+		    						getMainTabButton.style.left = mainColumnPosLeft[mainColumnFinder] + "px";
+		    						getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
+								var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainColumnFinder.toString()); 		// set the main tab x vixible
+									getMainTabX.style.visibility = "visible";
+									getMainTabX.style.display = "block";
+									getMainTabX.style.zIndex = "101";
+									getMainTabX.style.top = "0px";
+									getMainTabX.style.left = mainColumnPosLeftX[mainColumnFinder] + "px";								
+									if (currentVisibleMainContainerId !== "")
+	    							{
+	    	 							var hideCurrentVisibleMainContainer = document.getElementById(currentVisibleMainContainerId);	    	 
+	    	 								hideCurrentVisibleMainContainer.style.display = "none";
+	    	 								hideCurrentVisibleMainContainer.style.zIndex = "0";	    	 
+		    						}
+		    					var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainColumnFinder.toString());  //set the main container visible
+									getMainTabContainer.style.display = "block";
+									getMainTabContainer.style.zIndex = "100";			
+								var getSubTabButton = document.getElementById("capcisMainWC_st" + mainColumnFinder.toString() + subColumnFinder.toString());
+									getSubTabButton.style.visibility = "visible";
+									getSubTabButton.style.display = "block";
+									getSubTabButton.style.zIndex = "101";
+									getSubTabButton.style.top = subColumnPosTop[subColumnFinder] + "px";
+									getSubTabButton.style.left = "0px";
+								var getSubTabX = document.getElementById("capcisMainWC_stc" + mainColumnFinder.toString() + subColumnFinder.toString());   //set the subtab X button config
+									getSubTabX.style.visibility = "visible";
+									getSubTabX.style.display = "block";
+									getSubTabX.style.zIndex = "102";
+									getSubTabX.style.top = subColumnPosTop[subColumnFinder] + "px";
+									getSubTabX.style.left = "85px";
+								var getSubTabComponent = document.getElementById("capcisMainWC_sc" +  mainColumnFinder.toString() + subColumnFinder.toString());    	//set the sub tab config   
+									getSubTabComponent.style.visibility = "visible";
+									WAF.loadComponent ( {																			
+										id: 	'capcisMainWC_sc' + mainColumnFinder.toString() + subColumnFinder.toString(), 				
+										path: 	myWCName[0].WebComponentName																				
+									});
+								if (currentVisibleSubComponent[mainColumnFinder] !== "")
+								{
+									var hideCurrentVisibleSubComponent = document.getElementById(currentVisibleSubComponent[mainColumnFinder]);
+										hideCurrentVisibleSubComponent.style.visibility = "hidden";
+								}
+									
+									currentVisibleSubComponent[mainColumnFinder] = "capcisMainWC_sc" + mainColumnFinder.toString() + subColumnFinder.toString();
+	    							currentVisibleMainTabNumber = mainColumnFinder;
+	    							currentVisibleMainContainerId = "capcisMainWC_mc" + mainColumnFinder.toString();
+	    							return;	    									
+	    					}
+	    					if (subColumnFinder === 9)
+	    					{
+	    						return("error")
+	    					}
+	    				}
+	    			}
+					
+				
 	    			
 	    		}
-	    		if (mainTabFinder === 9)
+	    		if (mainColumnFinder === 9) 			// IF NO EXISTING TAB FOR THIS TYPE EXIST THEN CREATE ONE
 	    		{
-	    			for (var mainTabFinder = 0; mainTabFinder <= 9; mainTabFinder++)
+	    			for (var mainColumnFinder = 0; mainColumnFinder <= 9; mainColumnFinder++)
 	    			{
-	    				if (masterTabArray[mainTabFinder].tabName === "")
+	    				if (tabColumnTracking[mainColumnFinder].mainColumnName === "")
 	    				{	  
-	    					var getMainTabButton = document.getElementById("capcisMainWC_mt" + mainTabFinder.toString());   // set the main tab visible
+	    					var getMainTabButton = document.getElementById("capcisMainWC_mt" + mainColumnFinder.toString());   // set the main tab visible
 		    					getMainTabButton.style.visibility = "visible";
 		    					getMainTabButton.style.display = "block";		    					
 		    					getMainTabButton.style.zIndex = "100";
 		    					getMainTabButton.style.top = "0px";
-		    					getMainTabButton.style.left = mainColumnPosLeft[mainTabFinder] + "px";
+		    					getMainTabButton.style.left = mainColumnPosLeft[mainColumnFinder] + "px";
 		    					getMainTabButton.innerText = myWCName[0].PrimaryHeaderOption;
-							var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainTabFinder.toString()); 		// set the main tab x vixible
+							var getMainTabX = document.getElementById("capcisMainWC_mtc" + mainColumnFinder.toString()); 		// set the main tab x vixible
 								getMainTabX.style.visibility = "visible";
 								getMainTabX.style.display = "block";
 								getMainTabX.style.zIndex = "101";
 								getMainTabX.style.top = "0px";
-								getMainTabX.style.left = mainColumnPosLeftX[mainTabFinder] + "px";
-							var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainTabFinder.toString());  //set the main container visible
-								getMainTabContainer.style.display = "block";
-								getMainTabContainer.style.zIndex = "100";
-								
+								getMainTabX.style.left = mainColumnPosLeftX[mainColumnFinder] + "px";								
 								if (currentVisibleMainContainerId !== "")
 	    						{
 	    	 						var hideCurrentVisibleMainContainer = document.getElementById(currentVisibleMainContainerId);	    	 
 	    	 							hideCurrentVisibleMainContainer.style.display = "none";
 	    	 							hideCurrentVisibleMainContainer.style.zIndex = "0";	    	 
 	    						}
-	    						currentVisibleMainTabNumber = mainTabFinder;
-	    						currentVisibleMainContainerId = "capcisMainWC_mc" + mainTabFinder.toString();
-								return;	    				
+	    					var getMainTabContainer = document.getElementById("capcisMainWC_mc" + mainColumnFinder.toString());  //set the main container visible
+								getMainTabContainer.style.display = "block";
+								getMainTabContainer.style.zIndex = "100";		    						
+	    						
+	    						// FIND THE SUB TAB TO USE
+	    							for (var subColumnFinder = 0; subColumnFinder <= 9; subColumnFinder++)
+	    							{
+	    								if (tabColumnTracking[mainColumnFinder].subColumnOpen[subColumnFinder] === false)
+	    								{
+	    									tabColumnTracking[mainColumnFinder].mainColumnOpen = true;
+	    									tabColumnTracking[mainColumnFinder].mainColumnTabID = mainColumnFinder;
+	    									tabColumnTracking[mainColumnFinder].subColumnOpen[subColumnFinder] = true;
+	    									tabColumnTracking[mainColumnFinder].subColumnTabID[subColumnFinder] = subColumnFinder;
+	    									tabColumnTracking[mainColumnFinder].mainColumnName = myWCName[0].PrimaryHeaderOption;
+	    									tabColumnTracking[mainColumnFinder].subColumnWebComponentName = myWCName[0].WebComponentName;
+	    										    									
+	    									var getSubTabButton = document.getElementById("capcisMainWC_st" + mainColumnFinder.toString() + subColumnFinder.toString());
+	    										getSubTabButton.style.visibility = "visible";
+	    										getSubTabButton.style.display = "block";
+	    										getSubTabButton.style.zIndex = "101";
+	    										getSubTabButton.style.top = subColumnPosTop[subColumnFinder] + "px";
+	    										getSubTabButton.style.left = "0px";
+	    									var getSubTabX = document.getElementById("capcisMainWC_stc" + mainColumnFinder.toString() + subColumnFinder.toString());   //set the subtab X button config
+	    										getSubTabX.style.visibility = "visible";
+	    										getSubTabX.style.display = "block";
+	    										getSubTabX.style.zIndex = "102";
+	    										getSubTabX.style.top = subColumnPosTop[subColumnFinder] + "px";
+	    										getSubTabX.style.left = "85px";
+											var getSubTabComponent = document.getElementById("capcisMainWC_sc" +  mainColumnFinder.toString() + subColumnFinder.toString());    	//set the sub tab config   
+												WAF.loadComponent ( {																			
+													id: 	'capcisMainWC_sc' + mainColumnFinder.toString() + subColumnFinder.toString(), 				
+													path: 	myWCName[0].WebComponentName																				
+												});
+												if (currentVisibleSubComponent[mainColumnFinder] !== "")
+												{
+													var hideCurrentVisibleSubComponent = document.getElementById(currentVisibleSubComponent[mainColumnFinder]);
+														hideCurrentVisibleSubComponent.style.visibility = "hidden";
+												}
+												getSubTabComponent.style.visibility = "visible";
+												currentVisibleSubComponent[mainColumnFinder] = "capcisMainWC_sc" + mainColumnFinder.toString() + subColumnFinder.toString();
+	    										currentVisibleMainTabNumber = mainColumnFinder;
+	    										currentVisibleMainContainerId = "capcisMainWC_mc" + mainColumnFinder.toString();
+	    										return;
+	    									
+	    									
+	    								}
+	    								if (subColumnFinder === 9)
+	    								{
+	    									return("error")
+	    								}
+	    							}
+									return;	    				
 	    				}
 	    			}
 	    		}
