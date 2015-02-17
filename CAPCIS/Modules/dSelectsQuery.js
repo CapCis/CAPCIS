@@ -141,7 +141,7 @@ exports.buildQuery = function buildQuery(myObject)
 				break;
 				case 5: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName FROM capcis.bakassessorinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakassessorinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE AssessorName = "'+myObject.data1+'" \
+								WHERE FK_assessorinformation_AssessorInformationID = "'+myObject.data1+'" \
 								ORDER BY 2 DESC';
 				break;
 				case 6: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName, bakassessorinformation.AssessorFullNameDisplay \
@@ -213,6 +213,19 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.fxuseraccounts on attorneycorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE attorneyinformation.AttorneyName = "'+myObject.data1+'" AND attorneycorrespondence.VoidedAttorneyCorrespondence = '+myObject.data2+' \
 								ORDER BY 1 DESC';
+				break;
+				case 18: answer = 'SELECT fxuseraccounts.FullName, bakattorneyinformation.CreatedDateTime, bakattorneyinformation.AttorneyName FROM capcis.bakattorneyinformation \
+								LEFT JOIN capcis.fxuseraccounts on bakattorneyinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE FK_attorneyinformation_AttorneyInformationID = "'+myObject.data1+'" \
+								ORDER BY 2 DESC';
+				break;
+				case 19: answer = 'SELECT fxuseraccounts.FullName, bakattorneyinformation.CreatedDateTime, bakattorneyinformation.AttorneyName, bakattorneyinformation.AttorneyFullNameDisplay \
+								, bakattorneyinformation.AttorneyPhone, bakattorneyinformation.AttorneyPhoneExt, bakattorneyinformation.AttorneyAdditionalPhone, bakattorneyinformation.AttorneyFax, bakattorneyinformation.AttorneyStaffInfo, \
+								bakattorneyinformation.AttorneyAddress, bakattorneyinformation.AttorneyCity, bakattorneyinformation.AttorneyState, bakattorneyinformation.AttorneyZipCode, bakattorneyinformation.PublicDefender, \
+								bakattorneyinformation.AttorneyEmail, bakattorneyinformation.AttorneyNotes, bakattorneyinformation.AttPreferredReportingMethod, bakattorneyinformation.InactiveAttorneyInfo \
+								FROM capcis.bakattorneyinformation  \
+								LEFT JOIN capcis.fxuseraccounts on bakattorneyinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE AttorneyName = "'+myObject.data1+'" and bakattorneyinformation.CreatedDateTime = "'+myObject.data2+'" and FullName = "'+myObject.data3+'"';
 				break;
 				default:answer = null;
 				break;
