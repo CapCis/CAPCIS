@@ -36,68 +36,106 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		mainColumnPosLeft = [100,225,350,475,600,725,850,975,1100,1225];
 		mainColumnPosLeftX = [210,335,460,585,710,835,960,1085,1210,1335];
 		subColumnPosTop = [0,31,62,93,124,155,186,217,248,279];
-		tabColumnTracking = [											//array to track used columns
+		
+			tabColumnTracking = [											//array to track used columns
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			},
 			tabsPos = {
 				mainColumnOpen:false,
 				mainColumnName:"",
-				mainColumnButtonID:"",
+				mainColumnTabID:"",
 				mainColumnMasterTabArrayNumber:"",
 				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
-				subColumnButtonID:["","","","","","","","","",""],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:false,
+				mainColumnName:"",
+				mainColumnTabID:"",
+				mainColumnMasterTabArrayNumber:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:false,
+				mainColumnName:"",
+				mainColumnTabID:"",
+				mainColumnMasterTabArrayNumber:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
+				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
+			},
+			tabsPos = {
+				mainColumnOpen:false,
+				mainColumnName:"",
+				mainColumnTabID:"",
+				mainColumnMasterTabArrayNumber:"",
+				subColumnOpen:[false,false,false,false,false,false,false,false,false,false],
+				subColumnWebComponentName:["","","","","","","","","",""],
+				subColumnTabID:["","","","","","","","","",""],
 				subColumnMasterTabArraySubTabNumber:["","","","","","","","","",""]
 			}
 			];
