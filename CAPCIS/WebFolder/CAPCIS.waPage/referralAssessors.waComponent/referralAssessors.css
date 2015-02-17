@@ -572,7 +572,7 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 444px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -598,7 +598,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 294px;
+	 width: 444px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -609,10 +609,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: -116px;
+	 width: 444px;
 	 height: 623px;
 	 top: 0px;
-	 left: 778px;
+	 left: 631px;
 	
 	 position: absolute;
 	 
@@ -656,7 +656,7 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: 355px;
+	 width: 208px;
 	 height: 287px;
 	 top: 0px;
 	 left: 423px;
@@ -704,7 +704,7 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 778px;
+	 width: 631px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -730,7 +730,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 778px;
+	 width: 631px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -741,7 +741,7 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 778px;
+	 width: 631px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -752,10 +752,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 662px;
+	 width: 1075px;
 	 height: 623px;
 	 top: 0px;
-	 left: 626px;
+	 left: 213px;
 	
 	 position: absolute;
 	 
@@ -763,7 +763,7 @@
 
 #{id}container2 {
 	 z-index: 1;
-	 width: 626px;
+	 width: 213px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -1050,7 +1050,7 @@
 	 left: 300px;
 	
 	 position: absolute;
-	 text-align: right;
+	 text-align: left;
 	 
 }
 
