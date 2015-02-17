@@ -43,7 +43,7 @@ function constructor (id) {
 		//mainAssessorCont.style.visibility = 'visible';
 		try
 		{
-			debugger;
+			
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
 			if(searchCrit == "" && searchType == 'Active')
@@ -129,13 +129,15 @@ function constructor (id) {
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
+		var id  = $$(getHtmlId('hiddenCorrId')).getValue();
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:1,
 				data1:currentCorresondanceDate,
-				data2:status
+				data2:status,
+				data3: id
 			}; //dontf
 		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
 		
@@ -181,7 +183,7 @@ function constructor (id) {
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		
 			var x = $$(getHtmlId("newCorrespondanceField"));
 		var myObject8 = 
