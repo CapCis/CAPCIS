@@ -193,9 +193,13 @@ function constructor (id) {
 				data2:currentID
 			}; //dontf
 			var update = rpcDInsert.setInsert(myObject8);
+			/*
 			var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
 	 			sources.assessorCorespondance.sync();
+	 			*/
+	 			fillCorrespondance();
+	 			x.setValue("");
 	};// @lock
 
 	submitButton.click = function submitButton_click (event)// @startlock
@@ -332,10 +336,10 @@ function constructor (id) {
 
 	previousVersionButton.click = function previousVersionButton_click (event)// @startlock
 	{// @endlock
-		
+			 
 		$$(getHtmlId('container3')).setSplitPosition(420);
-		var name = $$(getHtmlId('assessorNameField')).getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:name}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		//var name = $$(getHtmlId('assessorNameField')).getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	bakAssessorInfo = rpcDSelects.getSelect(myObject5);
 	 	sources.bakAssessorInfo.sync();
 	};// @lock
