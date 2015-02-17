@@ -17,7 +17,7 @@
  						AssPreferredReportingMethod = "'+myObject.data13+'", InactiveAssessorInfo = '+myObject.data15+' \
 						WHERE AssessorInformationID="'+myObject.data14+'";';
 						break;
-				case 1: answer = 'UPDATE capcis.assessorcorrespondence SET VoidedAssessorCorrespondence = '+myObject.data2+' WHERE CreatedDateTime = "'+myObject.data1+'"'
+				case 1: answer = 'UPDATE capcis.assessorcorrespondence SET VoidedAssessorCorrespondence = '+myObject.data2+' WHERE AssessorCorrespondenceID = "'+myObject.data3+'"';
 						break;
 				default: answer = null;	
 						break;
