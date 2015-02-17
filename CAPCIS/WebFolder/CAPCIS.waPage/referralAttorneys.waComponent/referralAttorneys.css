@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}label1 {
+	 z-index: 10;
+	 width: 130px;
+	 height: 13px;
+	 top: 600px;
+	 left: 963px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label102 {
 	 z-index: 33;
 	 width: 118px;
@@ -538,7 +549,7 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 207px;
+	 width: 97px;
 	 height: 392px;
 	 top: 233px;
 	 left: 0px;
@@ -563,21 +574,10 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 207px;
+	 width: 97px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container22 {
-	 z-index: 2;
-	 width: 207px;
-	 height: 625px;
-	 top: 0px;
-	 left: 671px;
 	
 	 position: absolute;
 	 
@@ -610,9 +610,9 @@
 
 #{id}richText3 {
 	 z-index: 1;
-	 width: 250px;
-	 height: 255px;
-	 top: 27px;
+	 width: 319px;
+	 height: 202px;
+	 top: 40px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -621,24 +621,12 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 233px;
+	 width: 424px;
 	 height: 289px;
 	 top: 0px;
 	 left: 438px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}combobox1 {
-	 z-index: 5;
-	 width: 110px;
-	 height: 22px;
-	 top: 9px;
-	 left: 300px;
-	
-	 position: absolute;
-	 text-align: right;
 	 
 }
 
@@ -667,33 +655,11 @@
 	 
 }
 
-#{id}textField83 {
-	 z-index: 2;
-	 width: 325px;
-	 height: 22px;
-	 top: 225px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}container25 {
 	 z-index: 1;
 	 width: 438px;
 	 height: 289px;
 	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container24 {
-	 z-index: 2;
-	 width: 671px;
-	 height: 289px;
-	 top: 336px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -711,17 +677,6 @@
 	 font-weight: bold;
 	 text-align: center;
 	 font-size: 16px;
-	 
-}
-
-#{id}checkbox5 {
-	 z-index: 31;
-	 width: 22px;
-	 height: 22px;
-	 top: 263px;
-	 left: 385px;
-	
-	 position: absolute;
 	 
 }
 
@@ -758,139 +713,97 @@
 	 
 }
 
-#{id}textField69 {
-	 z-index: 27;
-	 width: 250px;
-	 height: 55px;
-	 top: 230px;
-	 left: 5px;
+#{id}container21 {
+	 z-index: 1;
+	 width: 862px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}combobox12 {
-	 z-index: 26;
-	 width: 150px;
+#{id}container19 {
+	 z-index: 1;
+	 width: 329px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attorneyDataGird {
+	 z-index: 1;
+	 height: 625px;
+	 top: 2px;
+	 left: 2px;
+	 right: -887px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}mainAttorneyCont {
+	 z-index: 4;
+	 width: 1290px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}attPrevVersionCont {
+	 z-index: 2;
+	 width: 97px;
+	 height: 625px;
+	 top: 0px;
+	 left: 862px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attSpecificInfoCont {
+	 z-index: 2;
+	 width: 959px;
+	 height: 625px;
+	 top: 0px;
+	 left: 329px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attCorrCont {
+	 z-index: 2;
+	 width: 862px;
+	 height: 289px;
+	 top: 336px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attCorrespondanceActiveBox {
+	 z-index: 5;
+	 width: 110px;
 	 height: 22px;
-	 top: 230px;
-	 left: 260px;
+	 top: 9px;
+	 left: 300px;
 	
 	 position: absolute;
+	 text-align: right;
 	 
 }
 
-#{id}combobox11 {
-	 z-index: 25;
-	 width: 150px;
-	 height: 22px;
-	 top: 140px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField68 {
-	 z-index: 24;
-	 width: 260px;
-	 height: 22px;
-	 top: 185px;
-	 left: 150px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField67 {
-	 z-index: 23;
-	 width: 100px;
-	 height: 22px;
-	 top: 185px;
-	 left: 45px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField66 {
-	 z-index: 22;
-	 width: 35px;
-	 height: 22px;
-	 top: 185px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField65 {
-	 z-index: 21;
-	 width: 250px;
-	 height: 22px;
-	 top: 140px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField64 {
-	 z-index: 20;
-	 width: 105px;
-	 height: 22px;
-	 top: 95px;
-	 left: 305px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField63 {
-	 z-index: 19;
-	 width: 105px;
-	 height: 22px;
-	 top: 95px;
-	 left: 190px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField62 {
-	 z-index: 18;
-	 width: 50px;
-	 height: 22px;
-	 top: 95px;
-	 left: 115px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField61 {
-	 z-index: 17;
-	 width: 100px;
-	 height: 22px;
-	 top: 95px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField60 {
-	 z-index: 16;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 210px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField59 {
+#{id}attName {
 	 z-index: 15;
 	 width: 200px;
 	 height: 22px;
@@ -901,9 +814,163 @@
 	 
 }
 
-#{id}container23 {
+#{id}attFullName {
+	 z-index: 16;
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attPhone {
+	 z-index: 17;
+	 width: 100px;
+	 height: 22px;
+	 top: 95px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attExt {
+	 z-index: 18;
+	 width: 50px;
+	 height: 22px;
+	 top: 95px;
+	 left: 115px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attAdditional {
+	 z-index: 19;
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attFax {
+	 z-index: 20;
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 305px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attAddress {
+	 z-index: 21;
+	 width: 250px;
+	 height: 22px;
+	 top: 140px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attCityComboBox {
+	 z-index: 25;
+	 width: 150px;
+	 height: 22px;
+	 top: 140px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attReportingComboBox {
+	 z-index: 26;
+	 width: 150px;
+	 height: 22px;
+	 top: 230px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attState {
+	 z-index: 22;
+	 width: 35px;
+	 height: 22px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attZip {
+	 z-index: 23;
+	 width: 100px;
+	 height: 22px;
+	 top: 185px;
+	 left: 45px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attEmail {
+	 z-index: 24;
+	 width: 260px;
+	 height: 22px;
+	 top: 185px;
+	 left: 150px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attNotes {
+	 z-index: 27;
+	 width: 250px;
+	 height: 55px;
+	 top: 230px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attInactive {
+	 z-index: 31;
+	 width: 22px;
+	 height: 22px;
+	 top: 263px;
+	 left: 385px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attCorrespondanceGrid {
+	 z-index: 5;
+	 width: 405px;
+	 height: 165px;
+	 top: 35px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attSpecificSubCont {
 	 z-index: 1;
-	 width: 671px;
+	 width: 862px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -912,48 +979,47 @@
 	 
 }
 
-#{id}container21 {
-	 z-index: 1;
-	 width: 671px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container20 {
-	 z-index: 2;
-	 width: 878px;
-	 height: 625px;
-	 top: 0px;
-	 left: 412px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container19 {
-	 z-index: 1;
-	 width: 412px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container18 {
+#{id}attCorCloseButton {
 	 z-index: 4;
-	 width: 1290px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
+	 width: 92px;
+	 height: 22px;
+	 top: 249px;
+	 left: 34px;
 	
 	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}attNewCoresspondenceField {
+	 z-index: 2;
+	 width: 325px;
+	 height: 22px;
+	 top: 225px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attHiddenCorrId {
+	 z-index: 5;
+	 width: 10px;
+	 height: 11px;
+	 top: 10px;
+	 left: 128px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attVoidedCorrespondanceCheck {
+	 z-index: 10;
+	 width: 16px;
+	 height: 16px;
+	 top: 599px;
+	 left: 942px;
+	
+	 position: absolute;
 	 
 }
 

@@ -9,7 +9,7 @@ function constructor (id) {
 	var $comp = this;
 	this.name = 'referralMain';
 	// @endregion// @endlock
-
+		
 	this.load = function (data) {// @lock
 		
 		var parentContainer = $comp.id;
@@ -52,28 +52,19 @@ function constructor (id) {
 		});
 		
 		
-		assessor = document.getElementById(getHtmlId('AssessorComponent'));
-		attorney = document.getElementById(getHtmlId('AttorneyComponent'));
-		dhs = document.getElementById(getHtmlId('DHSOfficerComponent'));
-		judge = document.getElementById(getHtmlId('JudgeComponent'));
-		other = document.getElementById(getHtmlId('OtherMonitorComponent'));
-		prosecutor = document.getElementById(getHtmlId('ProsecutorComponent'));
-		probationO = document.getElementById(getHtmlId('ProbationOfficerComponent'));
-		ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionComponent'));
-		court = document.getElementById(getHtmlId('CourtJursidictionComponent'));
-		
-		assessor.style.visibility = 'visible';
-		attorney.style.visibility = 'hidden';
-		dhs.style.visibility = 'hidden';
-		judge.style.visibility = 'hidden';
-		other.style.visibility = 'hidden';
-		prosecutor.style.visibility = 'hidden';
-		prosecutor.style.visibility = 'hidden';
-		probationO.style.visibility = 'hidden';
-		ProbationJ.style.visibility = 'hidden';
-		court.style.visibility = 'hidden';
+		assessor = document.getElementById(getHtmlId('AssessorContainer'));
+		attorney = document.getElementById(getHtmlId('AttorneyContainer'));
+		dhs = document.getElementById(getHtmlId('DHSOfficerContainer'));
+		judge = document.getElementById(getHtmlId('JudgeContainer'));
+		other = document.getElementById(getHtmlId('OtherMonitorContainer'));
+		prosecutor = document.getElementById(getHtmlId('ProsecutorContainer'));
+		probationO = document.getElementById(getHtmlId('ProbationOfficerContainer'));
+		ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionContainer'));
+		court = document.getElementById(getHtmlId('CourtJursidictionContainer'));
 		
 		
+		
+		changeWindow('Assessors');
 		
 
 	// @region namespaceDeclaration// @startlock
@@ -93,49 +84,49 @@ function constructor (id) {
 
 	courtJurisdictionButton.click = function courtJurisdictionButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	probationJurisdictionButton.click = function probationJurisdictionButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	probationOfficerButton.click = function probationOfficerButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	prosecutorsButton.click = function prosecutorsButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	otherButton.click = function otherButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	judgesButton.click = function judgesButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	dhsButton.click = function dhsButton_click (event)// @startlock
 	{// @endlock
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 	};// @lock
 
 	assessorButton.click = function assessorButton_click (event)// @startlock
 	{// @endlock
-		
-		changeWindow(this.id);
+
+		changeWindow(event.currentTarget.innerText);
 
 	};// @lock
 
 	SearchReferralButton.click = function SearchReferralButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
@@ -151,7 +142,7 @@ function constructor (id) {
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
 		
-		changeWindow(this.id);
+		changeWindow(event.currentTarget.innerText);
 		
 	};// @lock
 
@@ -172,18 +163,76 @@ function constructor (id) {
 	
 	function changeWindow(id)
 	{
+		
+		
+		
 		assessor.style.visibility = 'hidden';
 		attorney.style.visibility = 'hidden';
 		dhs.style.visibility = 'hidden';
 		judge.style.visibility = 'hidden';
 		other.style.visibility = 'hidden';
 		prosecutor.style.visibility = 'hidden';
-		prosecutor.style.visibility = 'hidden';
 		probationO.style.visibility = 'hidden';
 		ProbationJ.style.visibility = 'hidden';
 		court.style.visibility = 'hidden';
-		var myVisibleButton = document.getElementById(id);
-		myVisibleButton.style.visibility = "visible";
+		
+		assessor.style.zIndex = '8';
+		attorney.style.zIndex = '7';
+		dhs.style.zIndex = '6';
+		judge.style.zIndex = '5';
+		other.style.zIndex = '4';
+		prosecutor.style.zIndex = '3';
+		probationO.style.zIndex = '2';
+		ProbationJ.style.zIndex = '1';
+		court.style.zIndex = '0';
+		
+		
+		if(id == 'Assessors')
+		{
+			assessor.style.zIndex = '9';
+			assessor.style.visibility = 'visible';
+		}
+		else if(id == 'Attorneys')
+		{
+			attorney.style.zIndex = '9';
+			attorney.style.visibility = 'visible';
+		}
+		else if(id == 'DHS Officers')
+		{
+			dhs.style.zIndex = '9';
+			dhs.style.visibility = 'visible';
+		}
+		else if(id == 'Judges')
+		{
+			judge.style.zIndex = '9';
+			judge.style.visibility = 'visible';
+		}
+		else if(id == 'Other Monitors')
+		{
+			other.style.zIndex = '9';
+			other.style.visibility = 'visible';
+		}
+		else if(id == 'Prosecutors')
+		{
+			prosecutor.style.zIndex = '9';
+			prosecutor.style.visibility = 'visible';
+		}
+		else if(id == 'Probation Officers')
+		{
+			probationO.style.zIndex = '9';
+			probationO.style.visibility = 'visible';
+		}
+		else if(id == 'Probation Jurisdictions')
+		{
+			ProbationJ.style.zIndex = '9';
+			ProbationJ.style.visibility = 'visible';
+		}
+		else if(id == 'Court Jurisdictions')
+		{
+			court.style.zIndex = '9';
+			court.style.visibility = 'visible';
+		}
+		
 		
 		
 	}
