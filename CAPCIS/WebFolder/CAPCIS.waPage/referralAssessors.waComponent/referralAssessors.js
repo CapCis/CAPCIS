@@ -43,9 +43,45 @@ function constructor (id) {
 		//mainAssessorCont.style.visibility = 'visible';
 		try
 		{
-			debugger;
+			
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
+			if(searchCrit == "" && searchType == 'Active')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if(searchCrit == '' && searchType == 'Inactive')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if(searchCrit == '' && searchType == 'All')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:8}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if (searchCrit != '' && searchType == 'Active')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:10, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if (searchCrit != '' && searchType == 'Inactive')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:10, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
+			else if (searchCrit != '' && searchType == 'All')
+			{
+				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:9, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		assessorList = rpcDSelects.getSelect(myObject);
+		 		sources.assessorList.sync();
+			}
 			
 		}
 		catch(err)
@@ -93,13 +129,15 @@ function constructor (id) {
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
+		var id  = $$(getHtmlId('hiddenCorrId')).getValue();
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:1,
 				data1:currentCorresondanceDate,
-				data2:status
+				data2:status,
+				data3: id
 			}; //dontf
 		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
 		
@@ -145,7 +183,7 @@ function constructor (id) {
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		
 			var x = $$(getHtmlId("newCorrespondanceField"));
 		var myObject8 = 
