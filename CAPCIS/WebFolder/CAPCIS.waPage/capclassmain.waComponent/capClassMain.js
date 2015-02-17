@@ -12,14 +12,15 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		debugger;
+		
 		var whatsVisible = 'full';
 		fillFullView();
 		$$(getHtmlId('classFullViewCont')).$domNode.css('overflow','auto');
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:1}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	var myPrograms = rpcDSelects.getSelect(myObject);
+	 	myPrograms = rpcDSelects.getSelect(myObject);
 	 	var filterMatrix = document.getElementById(getHtmlId('matrix4'));
 	 	filterMatrix.style.display = 'none';
+	 	
 	 	sources.myPrograms.sync();
 	 	
 	 	
@@ -202,7 +203,7 @@ function constructor (id) {
 	 	//var htmlID = $comp.id + "_classFilterMatrix";
 		//var  selectedClass = $$(htmlID).getValue();
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:6,data1:classTaken,weekStartDate:'2014-3-16',weekEndDate:'2014-3-22'}; //dont forget to change token and id
-	 	var myMURosterList = rpcDSelects.getSelect(myObject);
+	 	myMURosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myMURosterList.sync();
 	 	
 	 };
@@ -212,12 +213,12 @@ function constructor (id) {
 	
 		debugger;	
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:id.id.toString()}; //dont forget to change token and id
-	 	var myRosterList = rpcDSelects.getSelect(myObject);
-	 	$comp.sourcesVar;
-	 	$comp.sourcesVar.myRosterList = myRosterList;
-	 	$comp.sources.myRosterList.sync();
+	 	myRosterList = rpcDSelects.getSelect(myObject);
+	 	sources.myRosterList.sync();
 	 	
-	 	var myLocalVar = $comp.sourcesVar.myRosterList;
+	 	//$comp.sourcesVar.myRosterList = myRosterList;
+	 	
+	 	
 	 	pageOpenerMU(id.id.toString());
 	 	
 	
@@ -227,7 +228,7 @@ function constructor (id) {
 	{
 		
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:0}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	var myClassList = rpcDSelects.getSelect(myObject);
+	 	myClassList = rpcDSelects.getSelect(myObject);
 	 	sources.myClassList.sync();	//get list of classes
 	 
 	 	var muNotDone = true;
@@ -305,7 +306,7 @@ function constructor (id) {
 	 					var textInput2 =  document.createElement('richText');
 	 					textInput2.setAttribute('type','richText');
 						textInput2.setAttribute('id',myClassList[x].Class.toString()); // ID that links to the widget constructor ID
-        				textInput2.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
+        				textInput2.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal;cursor:pointer');
         				textInput2.setAttribute('rel','capcis.css');
         				textInput2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         				textInput2.setAttribute('class','waf-widget waf-richText waf-state-default');
@@ -404,7 +405,7 @@ function constructor (id) {
 	 				var textInput5 =  document.createElement('richText');
 	 				textInput5.setAttribute('type','richText');
 					textInput5.setAttribute('id',myClassList[x].Class.toString()); // ID that links to the widget constructor ID
-        			textInput5.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:normal');
+        			textInput5.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:normal;cursor:pointer');
         			textInput5.setAttribute('rel','capcis.css');
         			textInput5.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         			textInput5.setAttribute('class','waf-widget waf-richText waf-state-default');
