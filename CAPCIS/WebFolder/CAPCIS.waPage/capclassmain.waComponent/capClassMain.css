@@ -119,10 +119,10 @@
 
 #{id}dataGrid1 {
 	 z-index: 1;
-	 height: 620px;
+	 height: 610px;
 	 top: 0px;
 	 left: 0px;
-	 right: 4px;
+	 right: 3px;
 	
 	 position: absolute;
 	 
@@ -155,7 +155,7 @@
 #{id}matrix4 {
 	 z-index: 8;
 	 width: 150px;
-	 height: 425px;
+	 height: 415px;
 	 top: 145px;
 	 left: 0px;
 	
@@ -237,9 +237,9 @@
 #{id}container4 {
 	 z-index: 2;
 	 width: 160px;
-	 height: 650px;
+	 height: 640px;
 	 top: 40px;
-	 left: 0px;
+	 left: 3px;
 	
 	 position: absolute;
 	 border-top-color: rgb(0, 27, 90);
@@ -350,7 +350,7 @@
 	 z-index: 2;
 	 width: 110px;
 	 height: 90px;
-	 top: 28px;
+	 top: 30px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -451,10 +451,10 @@
 }
 
 #{id}tabView1 {
-	 z-index: 3;
-	 width: 1225px;
-	 height: 655px;
-	 top: 35px;
+	 z-index: 2;
+	 width: 1135px;
+	 height: 645px;
+	 top: 33px;
 	 left: 160px;
 	
 	 position: absolute;
@@ -473,7 +473,7 @@
 
 #{id}richText2 {
 	 z-index: 1;
-	 width: 110px;
+	 width: 125px;
 	 height: 28px;
 	 top: 0px;
 	 left: 0px;
@@ -484,7 +484,7 @@
 
 #{id}menuItem2 {
 	 z-index: 2;
-	 width: 110px;
+	 width: 125px;
 	 height: 28px;
 	 top: 0px;
 	 left: 0px;
@@ -495,7 +495,7 @@
 
 #{id}richText1 {
 	 z-index: 1;
-	 width: 1264px;
+	 width: 1149px;
 	 height: 28px;
 	 top: 0px;
 	 left: 0px;
@@ -506,7 +506,7 @@
 
 #{id}menuItem1 {
 	 z-index: 1;
-	 width: 1265px;
+	 width: 1150px;
 	 height: 28px;
 	 top: 0px;
 	 left: 0px;
@@ -517,7 +517,7 @@
 
 #{id}menuBar1 {
 	 z-index: 4;
-	 width: 1477px;
+	 width: 1277px;
 	 height: 30px;
 	 top: 0px;
 	 left: 0px;
@@ -540,7 +540,7 @@
 #{id}classFilterViewCont {
 	 z-index: 4;
 	 width: 150px;
-	 height: 570px;
+	 height: 560px;
 	 top: 70px;
 	 left: 2px;
 	
@@ -594,8 +594,8 @@
 
 #{id}classRosterMainCont {
 	 z-index: 1;
-	 width: 1220px;
-	 height: 620px;
+	 width: 1125px;
+	 height: 610px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -605,8 +605,8 @@
 
 #{id}classRosterSubCont {
 	 z-index: 1;
-	 width: 1214px;
-	 height: 620px;
+	 width: 1118px;
+	 height: 610px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -616,10 +616,10 @@
 
 #{id}classRosterRecieptCont {
 	 z-index: 2;
-	 width: 6px;
-	 height: 620px;
+	 width: 7px;
+	 height: 610px;
 	 top: 0px;
-	 left: 1214px;
+	 left: 1118px;
 	
 	 position: absolute;
 	 
@@ -627,8 +627,8 @@
 
 #{id}muClassRosterMainCont {
 	 z-index: 3;
-	 width: 1220px;
-	 height: 620px;
+	 width: 1140px;
+	 height: 610px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -638,8 +638,8 @@
 
 #{id}muClassRosterSubCont {
 	 z-index: 1;
-	 width: 1213px;
-	 height: 620px;
+	 width: 1123px;
+	 height: 610px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -649,10 +649,10 @@
 
 #{id}muClassRecieptCont {
 	 z-index: 2;
-	 width: 7px;
-	 height: 620px;
+	 width: 17px;
+	 height: 610px;
 	 top: 0px;
-	 left: 1213px;
+	 left: 1123px;
 	
 	 position: absolute;
 	 
@@ -660,7 +660,7 @@
 
 #{id}muClassRosterDG {
 	 z-index: 1;
-	 height: 620px;
+	 height: 610px;
 	 top: 0px;
 	 left: 0px;
 	 right: 3px;
