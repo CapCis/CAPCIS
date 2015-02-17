@@ -1588,7 +1588,80 @@ function constructor (id) {
 	function mainTabXClick(clickedMainTabXId)
 	{		
 		masterTabArray;
+		tabColumnTracking;
 		
+		for (x = 0; x <= (tabColumnTracking.length - 1); x++)
+		{
+			if ("capcisMainWC_mtc" + x.toString() === clickedMainTabXId )
+			{
+				clickedTabID = x
+			}
+		}
+		debugger;		
+		for (var mainColumn = 0; mainColumn <= (tabColumnTracking.length - 1); mainColumn++)
+		{
+			if (tabColumnTracking[mainColumn].mainColumnTabID === clickedTabID)
+			{
+				var hideMainTabXButtonClicked = document.getElementById(clickedMainTabXId);
+				var hideMainTabButtonClicked = document.getElementById("capcisMainWC_mt" + clickedTabID);
+				var hideMainTabContainer = document.getElementById("capcisMainWC_mc" + clickedTabID);
+				hideMainTabXButtonClicked.style.visibility = "hidden";    //hide the x button
+				hideMainTabButtonClicked.style.visibility = "hidden";     //hide the tab button
+				hideMainTabContainer.style.display = "none"; 			  //hide the container
+				
+				tabColumnTracking[mainColumn].mainColumnOpen = false;				//clear tabsPos Array
+				tabColumnTracking[mainColumn].mainColumnName = ""; 					//clear tabsPos Array
+				tabColumnTracking[mainColumn].mainColumnTabID = ""; 				//clear tabsPos Array				
+				tabColumnTracking[mainColumn].subColumnOpen = [false,false,false,false,false,false,false,false,false,false];
+				tabColumnTracking[mainColumn].subColumnTabID = ["","","","","","","","","",""];
+				tabColumnTracking[mainColumn].subColumnWebComponentName = ["","","","","","","","","",""];
+				currentVisibleSubComponent[mainColumn] = "";
+				for (var subTabLoop = 0;subTabLoop <= (tabColumnTracking.length - 1); subTabLoop++) 	//set all subContainers and Buttons Invisible
+					{						
+						var hideSubContainer = document.getElementById("capcisMainWC_sc" + clickedTabID.toString() + subTabLoop.toString());
+						hideSubContainer.style.visibility = "hidden";						
+						var hideSubTabButton = document.getElementById("capcisMainWC_stc" + clickedTabID.toString() + subTabLoop.toString());
+						hideSubTabButton.style.visibility = "hidden";						
+						var hideSubTabXButton = document.getElementById("capcisMainWC_st" + clickedTabID.toString() + subTabLoop.toString());
+						hideSubTabXButton.style.visibility = "hidden";														
+					}
+				for (x = mainColumn; x <= (tabColumnTracking.length - 1); x++) 			//find the next tabs to the right and bring them down one
+					{
+						if (tabColumnTracking[x].mainColumnOpen === true) 		//see if the next column is open  (masterTabArray[x].tabName !== "")
+							{
+								nextMainColumn = x;
+								newLeftColumnNumber = x - 1;
+								nextTabID = tabColumnTracking[nextMainColumn].mainColumnTabID;
+								
+								tabColumnTracking[nextMainColumn].mainColumnOpen = false;
+								tabColumnTracking[newLeftColumnNumber].mainColumnOpen = true;	
+								tabColumnTracking[newLeftColumnNumber].mainColumnName = tabColumnTracking[nextMainColumn].mainColumnName;
+								tabColumnTracking[nextMainColumn].mainColumnName = ""; 					
+								tabColumnTracking[newLeftColumnNumber].mainColumnTabID = tabColumnTracking[nextMainColumn].mainColumnTabID;
+								tabColumnTracking[nextMainColumn].mainColumnTabID = ""; 								
+								tabColumnTracking[newLeftColumnNumber].subColumnOpen = tabColumnTracking[nextMainColumn].subColumnOpen;
+								tabColumnTracking[nextMainColumn].subColumnOpen = [false,false,false,false,false,false,false,false,false,false];
+								tabColumnTracking[newLeftColumnNumber].subColumnTabID = tabColumnTracking[nextMainColumn].subColumnTabID;
+								tabColumnTracking[nextMainColumn].subColumnTabID = ["","","","","","","","","",""];
+								tabColumnTracking[newLeftColumnNumber].subColumnWebComponentName = tabColumnTracking[nextMainColumn].subColumnWebComponentName;
+								tabColumnTracking[nextMainColumn].subColumnWebComponentName = ["","","","","","","","","",""];
+								
+								var nextRightTabButton = document.getElementById("capcisMainWC_mt" + nextTabID);
+								var nextRightTabXButton = document.getElementById("capcisMainWC_mtc" + nextTabID);
+								nextRightTabButton.style.transitionProperty = "left";
+								nextRightTabButton.style.transitionDelay = "0s";
+								nextRightTabButton.style.transitionDuration = ".5s";
+								nextRightTabButton.style.left = mainColumnPosLeft[newLeftColumnNumber] + "px";
+								nextRightTabXButton.style.transitionProperty = "left";
+								nextRightTabXButton.style.transitionDelay = "0s";
+								nextRightTabXButton.style.transitionDuration = ".5s";
+								nextRightTabXButton.style.left = mainColumnPosLeftX[newLeftColumnNumber] + "px";
+							}
+					}
+			}
+		}
+		
+		/*
 		for (var myMainTabXButtonNumber = 0; myMainTabXButtonNumber <= (masterTabArray.length - 1); myMainTabXButtonNumber++) 				//for 
 		{
 			if (clickedMainTabXId === "capcisMainWC_mtc" + myMainTabXButtonNumber)
@@ -1716,7 +1789,7 @@ function constructor (id) {
 					}
 				return;				
 			}
-		}
+		} */
 	};
 	function subTabClick(clickedSubTabId)
 	{				
