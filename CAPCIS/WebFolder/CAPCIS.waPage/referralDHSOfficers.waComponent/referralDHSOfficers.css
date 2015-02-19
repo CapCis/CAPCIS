@@ -3,76 +3,1060 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}DHSOfficerEditCont {
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
+#{id}label31 {
+	 width: 21px;
+	 height: 13px;
+	 top: 166px;
+	 left: 260px;
 	
 	 position: absolute;
+	 z-index: 33;
 	 
 }
 
-#{id}container2 {
-	 z-index: 1;
-	 width: 770px;
-	 height: 18px;
-	 top: 0px;
-	 left: 0px;
+#{id}label30 {
+	 width: 98px;
+	 height: 13px;
+	 top: 257px;
+	 left: 260px;
 	
 	 position: absolute;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
+	 z-index: 32;
 	 
 }
 
-#{id}matrix1 {
-	 z-index: 1;
-	 width: 800px;
-	 height: 615px;
-	 top: 0px;
-	 left: 0px;
+#{id}label29 {
+	 width: 109px;
+	 height: 13px;
+	 top: 312px;
+	 left: 271px;
 	
 	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
+	 z-index: 31;
 	 
 }
 
-#{id}matrix1 .waf-widget.waf-clone-{id}container2 {
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
+#{id}label28 {
+	 width: 98px;
+	 height: 13px;
+	 top: 257px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 30;
 	 
 }
 
-#{id}DHSOfficerViewCont {
+#{id}label27 {
+	 width: 77px;
+	 height: 13px;
+	 top: 212px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}label26 {
+	 width: 48px;
+	 height: 13px;
+	 top: 212px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}label25 {
+	 width: 28px;
+	 height: 13px;
+	 top: 212px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}label24 {
+	 width: 79px;
+	 height: 13px;
+	 top: 167px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}label23 {
+	 width: 67px;
+	 height: 13px;
+	 top: 122px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}label22 {
+	 width: 75px;
+	 height: 13px;
+	 top: 122px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}label21 {
+	 width: 53px;
+	 height: 13px;
+	 top: 122px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}label20 {
+	 width: 70px;
+	 height: 13px;
+	 top: 122px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}label19 {
+	 width: 118px;
+	 height: 13px;
+	 top: 77px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}label18 {
+	 width: 160px;
+	 height: 13px;
+	 top: 77px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}label17 {
+	 width: 101px;
+	 height: 13px;
+	 top: 32px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 18;
+	 
+}
+
+#{id}label16 {
+	 width: 59px;
+	 height: 13px;
+	 top: 32px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}label32 {
+	 width: 170px;
+	 height: 13px;
+	 top: 267px;
+	 left: 32px;
+	
+	 position: absolute;
+	 z-index: 5;
+	 
+}
+
+#{id}label15 {
+	 width: 183px;
+	 height: 13px;
+	 top: 207px;
+	 left: 5px;
+	
+	 position: absolute;
 	 z-index: 2;
-	 width: 375px;
-	 height: 615px;
+	 
+}
+
+#{id}label14 {
+	 width: 109px;
+	 height: 13px;
+	 top: 267px;
+	 left: 271px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}label13 {
+	 width: 98px;
+	 height: 13px;
+	 top: 212px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}label12 {
+	 width: 98px;
+	 height: 13px;
+	 top: 212px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}label11 {
+	 width: 21px;
+	 height: 13px;
+	 top: 122px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}label10 {
+	 width: 77px;
+	 height: 13px;
+	 top: 167px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}label9 {
+	 width: 48px;
+	 height: 13px;
+	 top: 167px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}label8 {
+	 width: 28px;
+	 height: 13px;
+	 top: 167px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}label7 {
+	 width: 79px;
+	 height: 13px;
+	 top: 122px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}label6 {
+	 width: 67px;
+	 height: 13px;
+	 top: 77px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}label5 {
+	 width: 75px;
+	 height: 13px;
+	 top: 77px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}label4 {
+	 width: 53px;
+	 height: 13px;
+	 top: 77px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 18;
+	 
+}
+
+#{id}label3 {
+	 width: 70px;
+	 height: 13px;
+	 top: 77px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}label2 {
+	 width: 118px;
+	 height: 13px;
+	 top: 32px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 16;
+	 
+}
+
+#{id}label1 {
+	 width: 168px;
+	 height: 13px;
+	 top: 32px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 15;
+	 
+}
+
+#{id}closeAssesorPreviousButton {
+	 width: 75px;
+	 height: 35px;
+	 top: 332px;
+	 left: 261px;
+	
+	 position: absolute;
+	 z-index: 34;
+	 
+}
+
+#{id}textField27 {
+	 width: 150px;
+	 height: 22px;
+	 top: 184px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 33;
+	 
+}
+
+#{id}textField26 {
+	 width: 150px;
+	 height: 22px;
+	 top: 275px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 32;
+	 
+}
+
+#{id}checkbox2 {
+	 width: 22px;
+	 height: 22px;
+	 top: 308px;
+	 left: 385px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}textField25 {
+	 width: 250px;
+	 height: 55px;
+	 top: 275px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 30;
+	 
+}
+
+#{id}textField24 {
+	 width: 260px;
+	 height: 22px;
+	 top: 230px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}textField23 {
+	 width: 100px;
+	 height: 22px;
+	 top: 230px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}textField22 {
+	 width: 35px;
+	 height: 22px;
+	 top: 230px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}textField21 {
+	 width: 250px;
+	 height: 22px;
+	 top: 185px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}textField20 {
+	 width: 105px;
+	 height: 22px;
+	 top: 140px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}textField19 {
+	 width: 105px;
+	 height: 22px;
+	 top: 140px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}textField18 {
+	 width: 50px;
+	 height: 22px;
+	 top: 140px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}textField17 {
+	 width: 100px;
+	 height: 22px;
+	 top: 140px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}textField16 {
+	 width: 200px;
+	 height: 22px;
+	 top: 95px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}textField15 {
+	 width: 200px;
+	 height: 22px;
+	 top: 95px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}richText14 {
+	 width: 365px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 color: rgb(0, 27, 90);
+	 z-index: 19;
+	 
+}
+
+#{id}textField14 {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 8px;
+	
+	 position: absolute;
+	 color: rgb(255, 0, 0);
+	 z-index: 18;
+	 
+}
+
+#{id}textField13 {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 z-index: 17;
+	 
+}
+
+#{id}container11 {
+	 width: 498px;
+	 height: 380px;
+	 top: 243px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}button1 {
+	 width: 75px;
+	 height: 35px;
+	 top: 207px;
+	 left: 7px;
+	
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}assesorPreviousGrid {
+	 width: 405px;
+	 height: 180px;
+	 top: 25px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}richText13 {
+	 width: 405px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 color: rgb(0, 27, 90);
+	 z-index: 1;
+	 
+}
+
+#{id}container10 {
+	 width: 498px;
+	 height: 243px;
 	 top: 0px;
-	 left: 825px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}container9 {
+	 width: 498px;
+	 height: 623px;
+	 top: 0px;
+	 left: 577px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}hiddenCorrId {
+	 width: 10px;
+	 height: 10px;
+	 top: 22px;
+	 left: 133px;
+	
+	 position: absolute;
+	 z-index: 7;
+	 
+}
+
+#{id}button2 {
+	 width: 75px;
+	 height: 35px;
+	 top: 244px;
+	 left: 220px;
+	
+	 position: absolute;
+	 z-index: 6;
+	 
+}
+
+#{id}voidCorrespondanceCheck {
+	 width: 22px;
+	 height: 22px;
+	 top: 263px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 5;
+	 
+}
+
+#{id}richText12 {
+	 width: 125px;
+	 height: 22px;
+	 top: 5px;
+	 left: 130px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 text-align: right;
+	 z-index: 4;
+	 
+}
+
+#{id}richText11 {
+	 width: 125px;
+	 height: 30px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 color: rgb(255, 0, 0);
+	 z-index: 3;
+	 
+}
+
+#{id}richText8 {
+	 width: 250px;
+	 height: 200px;
+	 top: 40px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}container8 {
+	 width: 154px;
+	 height: 287px;
+	 top: 0px;
+	 left: 423px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}button5 {
+	 width: 75px;
+	 height: 35px;
+	 top: 250px;
+	 left: 335px;
+	
+	 position: absolute;
+	 z-index: 6;
+	 
+}
+
+#{id}correspondanceGrid {
+	 width: 405px;
+	 height: 165px;
+	 top: 35px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 5;
+	 
+}
+
+#{id}correspondanceActiveBox {
+	 width: 110px;
+	 height: 22px;
+	 top: 9px;
+	 left: 300px;
+	
+	 position: absolute;
+	 text-align: left;
+	 z-index: 4;
+	 
+}
+
+#{id}richText2 {
+	 width: 268px;
+	 height: 22px;
+	 top: 9px;
+	 left: 4px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 color: rgb(0, 27, 90);
+	 z-index: 3;
+	 
+}
+
+#{id}newCorrespondanceField {
+	 width: 325px;
+	 height: 60px;
+	 top: 225px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}container7 {
+	 width: 423px;
+	 height: 287px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}container6 {
+	 width: 577px;
+	 height: 287px;
+	 top: 336px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}richText1 {
+	 width: 415px;
+	 height: 22px;
+	 top: 5px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 color: rgb(0, 27, 90);
+	 z-index: 32;
+	 
+}
+
+#{id}assessorInactiveCheckBox {
+	 width: 22px;
+	 height: 22px;
+	 top: 263px;
+	 left: 385px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}previousVersionButton {
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 30;
+	 
+}
+
+#{id}closeAssesorCurrentButton {
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 335px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}submitButton {
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 250px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}assesorNotesField {
+	 width: 250px;
+	 height: 55px;
+	 top: 230px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}reportingComboBox {
+	 width: 150px;
+	 height: 22px;
+	 top: 230px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}cityComboBox {
+	 width: 150px;
+	 height: 22px;
+	 top: 140px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}assesorEmailField {
+	 width: 260px;
+	 height: 22px;
+	 top: 185px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}assesorZipField {
+	 width: 100px;
+	 height: 22px;
+	 top: 185px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}assesorStateField {
+	 width: 35px;
+	 height: 22px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}assesorAddressField {
+	 width: 250px;
+	 height: 22px;
+	 top: 140px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}assesorFaxField {
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}assesorMobileField {
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}assesorExtField {
+	 width: 50px;
+	 height: 22px;
+	 top: 95px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 18;
+	 
+}
+
+#{id}assessorPhoneField {
+	 width: 100px;
+	 height: 22px;
+	 top: 95px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}assessorFullNameField {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 16;
+	 
+}
+
+#{id}assessorNameField {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 15;
+	 
+}
+
+#{id}container5 {
+	 width: 577px;
+	 height: 336px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}container4 {
+	 width: 577px;
+	 height: 623px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}container3 {
+	 width: 1075px;
+	 height: 623px;
+	 top: 0px;
+	 left: 213px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}assessorFullList {
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	 right: -12px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}container1 {
+	 width: 213px;
+	 height: 623px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}mainAssessorCont {
+	 width: 1290px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 z-index: 10;
 	 
 }
 
