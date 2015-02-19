@@ -301,6 +301,11 @@ function constructor (id) {
 	    	 									hideCurrentVisibleMainContainer.style.display = "none";
 	    		 								hideCurrentVisibleMainContainer.style.zIndex = "0";	    	 
 			    						}
+			    						if (currentVisibleSubComponent[mainColumnFinder] !== "")
+										{
+											var hideCurrentVisibleSubComponent = document.getElementById(currentVisibleSubComponent[mainColumnFinder]);
+												hideCurrentVisibleSubComponent.style.visibility = "hidden";
+										}
 		    						var getMainTabContainer = document.getElementById("capcisMainWC_mc" + openMainTab.toString());  //set the main container visible
 										getMainTabContainer.style.display = "block";
 										getMainTabContainer.style.zIndex = "100";			
@@ -322,11 +327,7 @@ function constructor (id) {
 											id: 	'capcisMainWC_sc' + openMainTab.toString() + openSubTab.toString(), 				
 											path: 	myWCName[0].WebComponentName																				
 										});
-									if (currentVisibleSubComponent[mainColumnFinder] !== "")
-									{
-										var hideCurrentVisibleSubComponent = document.getElementById(currentVisibleSubComponent[mainColumnFinder]);
-										hideCurrentVisibleSubComponent.style.visibility = "hidden";
-									}
+									
 									
 									currentVisibleSubComponent[mainColumnFinder] = "capcisMainWC_sc" + openMainTab.toString() + openSubTab.toString();
 	    							currentVisibleMainTabNumber = openMainTab;

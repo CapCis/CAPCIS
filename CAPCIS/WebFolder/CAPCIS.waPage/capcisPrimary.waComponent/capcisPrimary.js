@@ -1906,17 +1906,17 @@ function constructor (id) {
 			mySubComponent.style.visibility = "hidden";		
 		
 	// check for open columns down the line		
-		for (loopFoundSubColumnNumbers; loopFoundSubColumnNumbers <= (masterTabArray.length -1); loopFoundSubColumnNumbers++)
+		for (loopFoundSubColumnNumbers; loopFoundSubColumnNumbers <= (tabColumnTracking.length -1); loopFoundSubColumnNumbers++)
 		{
-			if (tabColumnTracking[mainTabNumber].subColumnOpen[(loopFoundSubColumnNumbers)] === true)
+			if (tabColumnTracking[mainColumnNumber].subColumnOpen[(loopFoundSubColumnNumbers)] === true)
 			{
 			//get old tabcolumnTrackingdata
 				var nextOpenSubColumn = loopFoundSubColumnNumbers;
-				tabColumnTracking[mainTabNumber].subColumnOpen[nextOpenSubColumn] = false;
-				var oldSubColumnTabID = tabColumnTracking[mainTabNumber].subColumnTabID[nextOpenSubColumn];
-				tabColumnTracking[mainTabNumber].subColumnTabID[nextOpenSubColumn] = "";
-				var oldSubColumnWebComponentName = tabColumnTracking[mainTabNumber].subColumnWebComponentName[nextOpenSubColumn];
-				tabColumnTracking[mainTabNumber].subColumnWebComponentName[nextOpenSubColumn] = "";
+				tabColumnTracking[mainColumnNumber].subColumnOpen[nextOpenSubColumn] = false;
+				var oldSubColumnTabID = tabColumnTracking[mainColumnNumber].subColumnTabID[nextOpenSubColumn];
+				tabColumnTracking[mainColumnNumber].subColumnTabID[nextOpenSubColumn] = "";
+				var oldSubColumnWebComponentName = tabColumnTracking[mainColumnNumber].subColumnWebComponentName[nextOpenSubColumn];
+				tabColumnTracking[mainColumnNumber].subColumnWebComponentName[nextOpenSubColumn] = "";
 							
 			//set new tabColumnTracking data to the left one
 				tabColumnTracking[mainColumnNumber].subColumnOpen[(nextOpenSubColumn - 1)] = true;
