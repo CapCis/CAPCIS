@@ -1874,7 +1874,7 @@ function constructor (id) {
 				}
 			}
 		}
-		debugger;
+		
 		for (var m = 0; m <= (tabColumnTracking.length -1); m++) 					// find the main column number
 		{
 			if (tabColumnTracking[m].mainColumnTabID === mainTabNumber)
@@ -1882,7 +1882,7 @@ function constructor (id) {
 				var mainColumnNumber = m
 			}
 		}
-		debugger;
+		
 		for (var s = 0; s <= (tabColumnTracking.length -1); s++)
 		{
 			if (tabColumnTracking[mainColumnNumber].subColumnTabID[s] === subTabNumber)
@@ -1919,9 +1919,9 @@ function constructor (id) {
 				tabColumnTracking[mainTabNumber].subColumnWebComponentName[nextOpenSubColumn] = "";
 							
 			//set new tabColumnTracking data to the left one
-				tabColumnTracking[foundMainColumnNumber].subColumnOpen[(nextOpenSubColumn - 1)] = true;
-				tabColumnTracking[foundMainColumnNumber].subColumnTabID[(nextOpenSubColumn - 1)] = oldSubColumnTabID;				
-				tabColumnTracking[foundMainColumnNumber].subColumnWebComponentName[(nextOpenSubColumn - 1)] = oldSubColumnWebComponentName;
+				tabColumnTracking[mainColumnNumber].subColumnOpen[(nextOpenSubColumn - 1)] = true;
+				tabColumnTracking[mainColumnNumber].subColumnTabID[(nextOpenSubColumn - 1)] = oldSubColumnTabID;				
+				tabColumnTracking[mainColumnNumber].subColumnWebComponentName[(nextOpenSubColumn - 1)] = oldSubColumnWebComponentName;
 			
 			//move the tabs to the left one
 				var thisSubTabXButton = document.getElementById("capcisMainWC_stc" + mainTabNumber + oldSubColumnTabID);
@@ -1930,30 +1930,30 @@ function constructor (id) {
 				thisSubTabButton.style.top = subColumnPosTop[(nextOpenSubColumn - 1)] + "px";				
 			}
 		}
-		// check which tab is currently visible and determine which one to set visible
+	// check which tab is currently visible and determine which one to set visible
 		if (("capcisMainWC_sc" + mainTabNumber.toString() + subTabNumber.toString()) === currentVisibleSubComponent[mainTabNumber])
 		{
-			if (tabColumnTracking[foundMainColumnNumber].subColumnOpen[subColumnNumber] === true)
+			if (tabColumnTracking[mainColumnNumber].subColumnOpen[subColumnNumber] === true)
 			{
-				var newVisibleMasterTabArraySubTabNumber = tabColumnTracking[foundMainColumnNumber].subColumnMasterTabArraySubTabNumber[subColumnNumber];
-				var mySubTabXButton = document.getElementById("capcisMainWC_stc" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber);
+				var newVisibleSubTabNumber = tabColumnTracking[mainColumnNumber].subColumnTabID[subColumnNumber];
+				var mySubTabXButton = document.getElementById("capcisMainWC_stc" + mainTabNumber + newVisibleSubTabNumber);
 				mySubTabXButton.style.visibility = "visible";
-				var mySubTabButton = document.getElementById("capcisMainWC_st" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber);
+				var mySubTabButton = document.getElementById("capcisMainWC_st" + mainTabNumber + newVisibleSubTabNumber);
 				mySubTabButton.style.visibility = "visible";
-				var mySubComponent = document.getElementById("capcisMainWC_sc" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber);
+				var mySubComponent = document.getElementById("capcisMainWC_sc" + mainTabNumber + newVisibleSubTabNumber);
 				mySubComponent.style.visibility = "visible";
-				currentVisibleSubComponent[foundMainTabNumber] = "capcisMainWC_sc" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber
+				currentVisibleSubComponent[mainTabNumber] = "capcisMainWC_sc" + mainTabNumber + newVisibleSubTabNumber
 			}
-			else
+			else if (subColumnNumber > 0)
 			{
-				var newVisibleMasterTabArraySubTabNumber = tabColumnTracking[foundMainColumnNumber].subColumnMasterTabArraySubTabNumber[(subColumnNumber - 1)];
-				var mySubTabXButton = document.getElementById("capcisMainWC_stc" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber);
+				var newVisibleSubTabNumber = tabColumnTracking[mainColumnNumber].subColumnTabID[subColumnNumber - 1];
+				var mySubTabXButton = document.getElementById("capcisMainWC_stc" + mainTabNumber + newVisibleSubTabNumber);
 				mySubTabXButton.style.visibility = "visible";
-				var mySubTabButton = document.getElementById("capcisMainWC_st" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber);
+				var mySubTabButton = document.getElementById("capcisMainWC_st" + mainTabNumber + newVisibleSubTabNumber);
 				mySubTabButton.style.visibility = "visible";
-				var mySubComponent = document.getElementById("capcisMainWC_sc" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber);
+				var mySubComponent = document.getElementById("capcisMainWC_sc" + mainTabNumber + newVisibleSubTabNumber);
 				mySubComponent.style.visibility = "visible";
-				currentVisibleSubComponent[foundMainTabNumber] = "capcisMainWC_sc" + foundMainTabNumber + newVisibleMasterTabArraySubTabNumber
+				currentVisibleSubComponent[mainTabNumber] = "capcisMainWC_sc" + mainTabNumber + newVisibleSubTabNumber
 			}
 		}
 	};
