@@ -4,24 +4,24 @@
 */
 
 #{id}textField2 {
+	 z-index: 38;
 	 width: 130px;
 	 height: 22px;
 	 top: 25px;
 	 left: 408px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
 #{id}label5 {
+	 z-index: 38;
 	 width: 50px;
 	 height: 13px;
 	 top: 29px;
 	 left: 353px;
 	
 	 position: absolute;
-	 z-index: 38;
 	 
 }
 
@@ -615,7 +615,7 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 503px;
+	 width: 35px;
 	 height: 390px;
 	 top: 233px;
 	 left: 0px;
@@ -640,7 +640,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 503px;
+	 width: 35px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -687,10 +687,10 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 18px;
+	 width: 3px;
 	 height: 287px;
 	 top: 0px;
-	 left: 438px;
+	 left: 923px;
 	
 	 position: absolute;
 	 
@@ -723,7 +723,7 @@
 
 #{id}container25 {
 	 z-index: 1;
-	 width: 438px;
+	 width: 923px;
 	 height: 287px;
 	 top: 0px;
 	 left: 0px;
@@ -781,7 +781,7 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 456px;
+	 width: 926px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -792,7 +792,7 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 329px;
+	 width: 1285px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -826,10 +826,10 @@
 
 #{id}attPrevVersionCont {
 	 z-index: 2;
-	 width: 503px;
+	 width: -923px;
 	 height: 623px;
 	 top: 0px;
-	 left: 456px;
+	 left: 926px;
 	
 	 position: absolute;
 	 
@@ -837,10 +837,10 @@
 
 #{id}attSpecificInfoCont {
 	 z-index: 2;
-	 width: 959px;
+	 width: 3px;
 	 height: 623px;
 	 top: 0px;
-	 left: 329px;
+	 left: 1285px;
 	
 	 position: absolute;
 	 
@@ -848,7 +848,7 @@
 
 #{id}attCorrCont {
 	 z-index: 2;
-	 width: 456px;
+	 width: 926px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -1036,7 +1036,7 @@
 
 #{id}attSpecificSubCont {
 	 z-index: 1;
-	 width: 456px;
+	 width: 926px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;

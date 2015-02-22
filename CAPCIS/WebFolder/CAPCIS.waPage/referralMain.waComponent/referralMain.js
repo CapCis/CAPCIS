@@ -137,6 +137,13 @@ function constructor (id) {
 									//data that you want to send to the webcomponent
 		});
 		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent',
+		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
+									//data that you want to send to the webcomponent
+		});
+		
 	};// @lock
 
 	attorneyButton.click = function attorneyButton_click (event)// @startlock

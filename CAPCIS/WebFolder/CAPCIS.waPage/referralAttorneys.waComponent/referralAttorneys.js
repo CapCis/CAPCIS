@@ -29,7 +29,7 @@ function constructor (id) {
 		//mainAssessorCont.style.visibility = 'visible';
 		try
 		{
-			
+			debugger;
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
 			if(searchCrit == "" && searchType == 'Active')
@@ -92,7 +92,7 @@ function constructor (id) {
 		
 		function fillCorrespondance()
 		{
-			debugger;
+			
 			var currentCorrespondenceActiveSelected = $$(getHtmlId('attCorrespondanceActiveBox')).getValue();
 			var currentCorrespondanceViewVoided;
 			var currentCorrespondanceAll;
@@ -143,7 +143,7 @@ function constructor (id) {
 
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		changed = false;
 		if($$(getHtmlId("attName")).sourceAtt.getValue() != currentName)
 		{
@@ -197,7 +197,7 @@ function constructor (id) {
 		{
 			changed = true;
 		}
-		if($$(getHtmlId("attInactive")).getValue() != sources.specificAssessorList.InactiveAssessorInfo)
+		if($$(getHtmlId("attInactive")).getValue() != currentInactiveInfo)
 		{
 			changed = true;
 		}
@@ -259,6 +259,7 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
+		
 		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);
 		var date = event.data.row.cells[0].value;
 		var assessor = event.data.row.cells[1].value;
@@ -375,7 +376,7 @@ function constructor (id) {
 		
 		
 		///////////////////////////////////////////////////////////get data
-		debugger;
+		
 		currentName = name;
 		currentCity = city;
 		currentReportingMethod = reportingMethod;
@@ -392,6 +393,7 @@ function constructor (id) {
 		currentID = sources.specificAttorneyList.AttorneyInformationID;
 		currentDefender = sources.specificAttorneyList.PublicDefender;
 		currentStafInfo = sources.specificAttorneyList.AttorneyStaffInfo;
+		currentInactiveInfo = sources.specificAttorneyList.InactiveAttorneyInfo;
 		
 		if(currentName == null)
 		{
