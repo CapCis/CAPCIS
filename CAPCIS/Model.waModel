@@ -1,112 +1,130 @@
-﻿{
-	"toJSON": true,
-	"extraProperties": {
-		"version": "2",
-		"classes": {
-			"Clientpictures": {
-				"panelColor": "#76923C",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 147,
-						"Y": 56
+
+{
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"Clientpictures" : 
+			{
+				"panelColor" : "#76923C",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 147,
+						"Y" : 56
 					}
 				}
 			}
 		},
-		"model": {
-			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 0,
-			"lastScriptLocation": {
-				"Clientpictures": {
-					"method": "Clientpictures/Clientpictures-methods.js"
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0,
+			"lastScriptLocation" : 
+			{
+				"Clientpictures" : 
+				{
+					"method" : "Clientpictures/Clientpictures-methods.js"
 				}
 			}
 		}
 	},
-	"dataClasses": [
+	"dataClasses" : 
+	[
 		{
-			"name": "Clientpictures",
-			"className": "Clientpictures",
-			"collectionName": "ClientpicturesCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Clientpictures",
+			"className" : "Clientpictures",
+			"collectionName" : "ClientpicturesCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ClientPicturesID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ClientPicturesID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "ClientPictureID",
-					"kind": "storage",
-					"matchColumn": "ID",
-					"scope": "public",
-					"type": "long"
+					"name" : "ClientPictureID",
+					"kind" : "storage",
+					"matchColumn" : "ID",
+					"scope" : "public",
+					"type" : "long"
 				},
 				{
-					"name": "ClientPicture",
-					"kind": "storage",
-					"scope": "public",
-					"type": "image"
+					"name" : "ClientPicture",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "image"
 				},
 				{
-					"name": "FK_ClientInformation_CIID",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
+					"name" : "FK_ClientInformation_CIID",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				},
 				{
-					"name": "FK_UserAccountsID",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "FK_UserAccountsID",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "InvalidClientPicture",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
+					"name" : "InvalidClientPicture",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				},
 				{
-					"name": "PrimaryPicture",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
+					"name" : "PrimaryPicture",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				},
 				{
-					"name": "PictureFileName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "PictureFileName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "RandomID",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
+					"name" : "RandomID",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
 				}
 			],
-			"methods": [
+			"methods" : 
+			[
 				{
-					"name": "getclientpictures",
-					"applyTo": "dataClass",
-					"scope": "public",
-					"from": "$mainModel.Clientpictures.methods.getclientpictures",
-					"userDefined": true
+					"name" : "getclientpictures",
+					"applyTo" : "dataClass",
+					"scope" : "public",
+					"from" : "$mainModel.Clientpictures.methods.getclientpictures",
+					"userDefined" : true
 				},
 				{
-					"name": "sendFIleAsHttpRequest",
-					"applyTo": "dataClass",
-					"scope": "public",
-					"from": "$mainModel.Clientpictures.methods.sendFIleAsHttpRequest",
-					"userDefined": true
+					"name" : "sendFIleAsHttpRequest",
+					"applyTo" : "dataClass",
+					"scope" : "public",
+					"from" : "$mainModel.Clientpictures.methods.sendFIleAsHttpRequest",
+					"userDefined" : true
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ClientPicturesID"
 				}
 			]
 		}
