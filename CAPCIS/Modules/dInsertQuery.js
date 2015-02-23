@@ -43,6 +43,13 @@ exports.buildQuery = function buildQuery(myObject)
 						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
 						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'",'+myObject.data16+',"'+myObject.data17+'")';
 						break;
+				case 4: answer ='INSERT INTO capcis.bakcourtjurisdiction (CourtJurisdiction,CourtJurisdictionPhone,CourtJurisdictionEmail,CourtJurisdictionFax,CourtJurisdictionAddress, \
+						CourtJurisdictionCity,CourtJurisdictionState,CourtJurisdictionZipCode,FK_courtjurisdiction_CourtJurisdictionID,CourtJurisdictionPhoneExt,CourtJurisdictionAlternatePhone \
+						,CourtJurisdictionNotes,SearchDatabase,CourtJurisdictionPreferredReportingMethod,InactiveCourtJurisdictionInfo,FK_useraccounts_UserAccountsID,SearchFormat) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'","'+myObject.data16+'")';
+						break;
 				default: answer = null;
 			}
 			break;
