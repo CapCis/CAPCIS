@@ -28,6 +28,25 @@
  						AttPreferredReportingMethod = "'+myObject.data13+'", InactiveAttorneyInfo = '+myObject.data15+', PublicDefender = '+myObject.data16+', AttorneyStaffInfo = "'+myObject.data17+'" \
 						WHERE AttorneyInformationID="'+myObject.data14+'";';
 						break;
+				case 4: answer =  'UPDATE capcis.courtjurisdiction SET CourtJurisdiction = "'+myObject.data1+'", CourtJurisdictionPhone = "'+myObject.data2+'", \
+				 		CourtJurisdictionEmail="'+myObject.data3+'", CourtJurisdictionFax = "'+myObject.data4+'", CourtJurisdictionAddress ="'+myObject.data5+'", CourtJurisdictionCity = "'+myObject.data6+'", \
+ 						CourtJurisdictionState = "'+myObject.data7+'", CourtJurisdictionZipCode = "'+myObject.data8+'", CourtJurisdictionPhoneExt= "'+myObject.data9+'", \
+ 						CourtJurisdictionAlternatePhone = "'+myObject.data10+'", CourtJurisdictionNotes = "'+myObject.data11+'", SearchDatabase = "'+myObject.data12+'",\
+ 						CourtJurisdictionPreferredReportingMethod = "'+myObject.data13+'", InactiveCourtJurisdictionInfo = '+myObject.data15+', SearchFormat = "'+myObject.data16+'" \
+						WHERE CourtJurisdictionID="'+myObject.data14+'";';
+						break;
+				case 5: answer = 'UPDATE capcis.courtjurisdictioncorrespondence SET VoidedCourtJurisdictionCorrespondence = '+myObject.data2+' WHERE CourtJurisdictionCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 6: answer = 'UPDATE capcis.dhscorrespondence SET VoidedDhsCorrespondence = '+myObject.data2+' WHERE DhsCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 7: answer =  'UPDATE capcis.dhsinformation SET DhsName = "'+myObject.data1+'", DhsPhone = "'+myObject.data2+'", \
+				 		DhsEmail="'+myObject.data3+'", DhsFax = "'+myObject.data4+'", DhsAddress ="'+myObject.data5+'", DhsCity = "'+myObject.data6+'", \
+ 						DhsState = "'+myObject.data7+'", DhsZipCode = "'+myObject.data8+'", DhsPhoneExt= "'+myObject.data9+'", \
+ 						DhsAlternatPhone = "'+myObject.data10+'", DhsNotes = "'+myObject.data11+'", DhsFullNameDisplay = "'+myObject.data12+'",\
+ 						DhsPreferredReportingMethod = "'+myObject.data13+'", InactiveDhsInfo = '+myObject.data15+' \
+						WHERE DhsInformationID="'+myObject.data14+'";';
+						break;
+				
 				default: answer = null;	
 						break;
 			}

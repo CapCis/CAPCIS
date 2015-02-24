@@ -182,14 +182,14 @@ exports.buildQuery = function buildQuery(myObject)
 				break;
 				case 12 : answer = 'SELECT * FROM capcis.attorneyinformation';
 				break;
-				case 13 : answer = "SELECT * FROM capcis.attorneyinformation where assessorinformation.AttorneyName LIKE '%"+myObject.data1+"%' or attorneyinformation.AttorneyPhone LIKE '%"+myObject.data1+"%' \
+				case 13 : answer = "SELECT * FROM capcis.attorneyinformation where attorneyinformation.AttorneyName LIKE '%"+myObject.data1+"%' or attorneyinformation.AttorneyPhone LIKE '%"+myObject.data1+"%' \
 								OR attorneyinformation.AttorneyEmail LIKE  '%"+myObject.data1+"%' OR attorneyinformation.AttorneyFax LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyAddress LIKE '%"+myObject.data1+"%' \
 								OR attorneyinformation.AttorneyCity LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyState LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyZipCode LIKE '%"+myObject.data1+"%'  \
 								OR attorneyinformation.AttorneyInformationID LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyPhoneExt LIKE '%"+myObject.data1+"%' \
 								OR attorneyinformation.AttorneyAdditionalPhone LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyNotes LIKE '%"+myObject.data1+"%'\
 								OR attorneyinformation.AttorneyFullNameDisplay LIKE '%"+myObject.data1+"%'";
 				break;
-				case 14 : answer = "SELECT * FROM capcis.attorneyinformation where (assessorinformation.AttorneyName LIKE '%"+myObject.data1+"%' or attorneyinformation.AttorneyPhone LIKE '%"+myObject.data1+"%' \
+				case 14 : answer = "SELECT * FROM capcis.attorneyinformation where (attorneyinformation.AttorneyName LIKE '%"+myObject.data1+"%' or attorneyinformation.AttorneyPhone LIKE '%"+myObject.data1+"%' \
 								OR attorneyinformation.AttorneyEmail LIKE  '%"+myObject.data1+"%' OR attorneyinformation.AttorneyFax LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyAddress LIKE '%"+myObject.data1+"%' \
 								OR attorneyinformation.AttorneyCity LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyState LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyZipCode LIKE '%"+myObject.data1+"%'  \
 								OR attorneyinformation.AttorneyInformationID LIKE '%"+myObject.data1+"%' OR attorneyinformation.AttorneyPhoneExt LIKE '%"+myObject.data1+"%' \
@@ -226,6 +226,108 @@ exports.buildQuery = function buildQuery(myObject)
 								FROM capcis.bakattorneyinformation  \
 								LEFT JOIN capcis.fxuseraccounts on bakattorneyinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE AttorneyName = "'+myObject.data1+'" and bakattorneyinformation.CreatedDateTime = "'+myObject.data2+'" and FullName = "'+myObject.data3+'"';
+				break;
+				//////////////////////////////////////////////////////////////////////End Attorney/////////////////////////////////////////////////////////////////////////
+				////////////////////////////////////////////////////////////////Begin Court Jurisdiction//////////////////////////////////////////////////////////////////
+				case 20 : answer = 'SELECT * FROM capcis.courtjurisdiction where InactiveCourtJurisdictionInfo = '+myObject.data1;
+				break;
+				case 21 : answer = 'SELECT * FROM capcis.courtjurisdiction';
+				break;
+				case 22 : answer = "SELECT * FROM capcis.courtjurisdiction where courtjurisdiction.CourtJurisdiction LIKE '%"+myObject.data1+"%' or courtjurisdiction.CourtJurisdictionPhone LIKE '%"+myObject.data1+"%' \
+								OR courtjurisdiction.CourtJurisdictionEmail LIKE  '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionFax LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionAddress LIKE '%"+myObject.data1+"%' \
+								OR courtjurisdiction.CourtJurisdictionCity LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionState LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionZipCode LIKE '%"+myObject.data1+"%'  \
+								OR courtjurisdiction.CourtJurisdictionID LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionPhoneExt LIKE '%"+myObject.data1+"%' \
+								OR courtjurisdiction.CourtJurisdictionAlternatePhone LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionNotes LIKE '%"+myObject.data1+"%' OR courtjurisdiction.SearchDatabase LIKE '%"+myObject.data1+"%'\
+								OR courtjurisdiction.SearchFormat LIKE '%"+myObject.data1+"%'";
+				break;
+				case 23 : answer = "SELECT * FROM capcis.courtjurisdiction where (courtjurisdiction.CourtJurisdiction LIKE '%"+myObject.data1+"%' or courtjurisdiction.CourtJurisdictionPhone LIKE '%"+myObject.data1+"%' \
+								OR courtjurisdiction.CourtJurisdictionEmail LIKE  '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionFax LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionAddress LIKE '%"+myObject.data1+"%' \
+								OR courtjurisdiction.CourtJurisdictionCity LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionState LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionZipCode LIKE '%"+myObject.data1+"%'  \
+								OR courtjurisdiction.CourtJurisdictionID LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionPhoneExt LIKE '%"+myObject.data1+"%' \
+								OR courtjurisdiction.CourtJurisdictionAlternatePhone LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionNotes LIKE '%"+myObject.data1+"%' OR courtjurisdiction.SearchDatabase LIKE '%"+myObject.data1+"%'\
+								OR courtjurisdiction.SearchFormat LIKE '%"+myObject.data1+"%') AND InactiveCourtJurisdictionInfo = "+myObject.data2;
+				break;
+				case 24: answer = 'SELECT * FROM capcis.courtjurisdiction where CourtJurisdictionID = '+myObject.data1;
+				break;
+				case 25 : answer = 'SELECT courtjurisdictioncorrespondence.CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
+								fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
+								FROM capcis.courtjurisdictioncorrespondence \
+								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
+								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE courtjurisdiction.CourtJurisdiction = "'+myObject.data1+'" \
+								ORDER BY 1 DESC';
+				break;
+				case 26 : answer = 'SELECT courtjurisdictioncorrespondence.CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
+								fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
+								FROM capcis.courtjurisdictioncorrespondence \
+								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
+								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE courtjurisdiction.CourtJurisdiction = "'+myObject.data1+'" AND courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence = '+myObject.data2+' \
+								ORDER BY 1 DESC'
+				break;
+				case 27: answer = 'SELECT fxuseraccounts.FullName, bakcourtjurisdiction.CreatedDateTime, bakcourtjurisdiction.CourtJurisdiction FROM capcis.bakcourtjurisdiction \
+								LEFT JOIN capcis.fxuseraccounts on bakcourtjurisdiction.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE FK_courtjurisdiction_CourtJurisdictionID = "'+myObject.data1+'" \
+								ORDER BY 2 DESC';
+				break;
+				case 28: answer = 'SELECT fxuseraccounts.FullName, bakcourtjurisdiction.CreatedDateTime, bakcourtjurisdiction.CourtJurisdiction, bakcourtjurisdiction.SearchDatabase, \
+								 bakcourtjurisdiction.CourtJurisdictionPhone, bakcourtjurisdiction.CourtJurisdictionPhoneExt, bakcourtjurisdiction.CourtJurisdictionAlternatePhone, bakcourtjurisdiction.CourtJurisdictionFax,  \
+								bakcourtjurisdiction.CourtJurisdictionAddress, bakcourtjurisdiction.CourtJurisdictionCity, bakcourtjurisdiction.CourtJurisdictionState, bakcourtjurisdiction.CourtJurisdictionZipCode, bakcourtjurisdiction.SearchFormat, \
+								bakcourtjurisdiction.CourtJurisdictionEmail, bakcourtjurisdiction.CourtJurisdictionNotes, bakcourtjurisdiction.CourtJurisdictionPreferredReportingMethod, bakcourtjurisdiction.InactiveCourtJurisdictionInfo \
+								FROM capcis.bakcourtjurisdiction  \
+								LEFT JOIN capcis.fxuseraccounts on bakcourtjurisdiction.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE CourtJurisdiction = "'+myObject.data1+'" and bakcourtjurisdiction.CreatedDateTime = "'+myObject.data2+'" and FullName = "'+myObject.data3+'"';
+				break;
+				///////////////////////////////////////////////////////////////////////End Court Jurisdiction////////////////////////////////////////////////////////////
+				/////////////////////////////////////////////////////////////////////////////Begin DHS/////////////////////////////////////////////////////////////////////////
+				case 29 : answer = 'SELECT * FROM capcis.dhsinformation where InactiveDhsInfo = '+myObject.data1;
+				break;
+				case 30 : answer = 'SELECT * FROM capcis.dhsinformation';
+				break;
+				case 31 : answer = "SELECT * FROM capcis.dhsinformation where dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
+								OR dhsinformation.DhsEmail LIKE  '%"+myObject.data1+"%' OR dhsinformation.DhsFax LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsAddress LIKE '%"+myObject.data1+"%' \
+								OR dhsinformation.DhsCity LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsState LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsZipCode LIKE '%"+myObject.data1+"%'  \
+								OR dhsinformation.DhsInformationID LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsPhoneExt LIKE '%"+myObject.data1+"%' \
+								OR dhsinformation.DhsAlternatPhone LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsNotes LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsFullNameDisplay LIKE '%"+myObject.data1+"%'\
+								OR dhsinformation.DhsPreferredReportingMethod LIKE '%"+myObject.data1+"%'";
+				break;
+				case 32 : answer = "SELECT * FROM capcis.dhsinformation where (dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
+								OR dhsinformation.DhsEmail LIKE  '%"+myObject.data1+"%' OR dhsinformation.DhsFax LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsAddress LIKE '%"+myObject.data1+"%' \
+								OR dhsinformation.DhsCity LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsState LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsZipCode LIKE '%"+myObject.data1+"%'  \
+								OR dhsinformation.DhsInformationID LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsPhoneExt LIKE '%"+myObject.data1+"%' \
+								OR dhsinformation.DhsAlternatPhone LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsNotes LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsFullNameDisplay LIKE '%"+myObject.data1+"%'\
+								OR dhsinformation.DhsPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveDhsInfo = "+myObject.data2;
+				break;
+				case 33:  answer = 'SELECT * FROM capcis.dhsinformation where DhsInformationID = '+myObject.data1;
+				break;
+				case 34 : answer = 'SELECT dhscorrespondence.CreatedDateTime, dhscorrespondence.DhsCorrespondence, \
+								fxuseraccounts.FullName, dhscorrespondence.VoidedDhsCorrespondence, dhscorrespondence.DhsCorrespondenceID \
+								FROM capcis.dhscorrespondence \
+								LEFT JOIN capcis.dhsinformation on dhscorrespondence.FK_DhsInformationID = DhsInformationID \
+								LEFT JOIN capcis.fxuseraccounts on dhscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE dhsinformation.DhsName = "'+myObject.data1+'" \
+								ORDER BY 1 DESC';
+				break;
+				case 35 : answer = 'SELECT dhscorrespondence.CreatedDateTime, dhscorrespondence.DhsCorrespondence, \
+								fxuseraccounts.FullName, dhscorrespondence.VoidedDhsCorrespondence, dhscorrespondence.DhsCorrespondenceID \
+								FROM capcis.dhscorrespondence \
+								LEFT JOIN capcis.dhsinformation on dhscorrespondence.FK_DhsInformationID = DhsInformationID \
+								LEFT JOIN capcis.fxuseraccounts on dhscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE dhsinformation.DhsName = "'+myObject.data1+'" AND dhscorrespondence.VoidedDhsCorrespondence = '+myObject.data2+' \
+								ORDER BY 1 DESC'
+				break;
+				case 36: answer = 'SELECT * FROM capcis.bakdhsinformation \
+								LEFT JOIN capcis.fxuseraccounts on bakdhsinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE FK_dhsinformation_DhsInformationID = "'+myObject.data1+'" \
+								ORDER BY 2 DESC';
+				break;
+				case 37: answer = 'SELECT fxuseraccounts.FullName, bakdhsinformation.CreatedDateTime, bakdhsinformation.DhsName, bakdhsinformation.DhsFullNameDisplay, \
+								 bakdhsinformation.DhsPhone, bakdhsinformation.DhsExt, bakdhsinformation.DhsAltPhone, bakdhsinformation.DhsFax,  \
+								bakdhsinformation.DhsAddress, bakdhsinformation.DhsCity, bakdhsinformation.DhsState, bakdhsinformation.DhsZipCode,  \
+								bakdhsinformation.DhsEmail, bakdhsinformation.DhsNotes, bakdhsinformation.DhsPreferredReportingMethod, bakdhsinformation.InactiveDhsInfo \
+								FROM capcis.bakdhsinformation  \
+								LEFT JOIN capcis.fxuseraccounts on bakdhsinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE DhsName = "'+myObject.data1+'" and bakdhsinformation.CreatedDateTime = "'+myObject.data2+'" and FullName = "'+myObject.data3+'"';
 				break;
 				default:answer = null;
 				break;

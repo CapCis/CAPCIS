@@ -124,7 +124,7 @@ function constructor (id) {
 	    
 	    
 	//Main Tab Section
-	debugger;
+	
 	    for (var mainColumnFinder = 0; mainColumnFinder <= 9; mainColumnFinder++)                                             //find the Main Tab To Use
 	    	{
 	    		if (tabColumnTracking[mainColumnFinder].mainColumnName === myWCName[0].PrimaryHeaderOption) 			// If the tab name is found
