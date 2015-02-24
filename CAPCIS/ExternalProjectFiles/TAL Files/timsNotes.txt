@@ -6,4 +6,18 @@ HOW TO RUN A REPORT IN JASPER REPORTS
 
 HOW TO CHANGE CSS OF A WIDGET 
 
-getHtmlObj('button1').css('background-color' , 'red');
+	getHtmlObj('button1').css('background-color' , 'red');
+
+
+HOW TO RUN rpcDSelects
+
+	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};
+	myMenuButtons = rpcDSelects.getSelect(myObject);
+
+
+HOW TO OPEN A WEB COMPONENT
+
+	WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    id: 	'capcisMainSelect', 											//designate the component to load into
+	path: 	'/CAPCIS.waPage/capcisMainSelect.waComponent'				//designate the webcomponent to load
+	});
