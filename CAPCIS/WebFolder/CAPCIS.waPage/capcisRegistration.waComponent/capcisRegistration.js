@@ -28,7 +28,7 @@ function constructor (id) {
 		email:$$($comp.id + "_textField5").getValue(),
 		phone:$$($comp.id + "_textField6").getValue(),
 		organization:$$($comp.id + "_textField7").getValue(),
-		fullDiplayName:$$($comp.id + "_textField4").getValue(),
+		fullDisplayName:$$($comp.id + "_textField4").getValue(),
 		password:passHash};
 		
 		rpcDInsert(myObject);

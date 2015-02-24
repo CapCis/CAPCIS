@@ -3,102 +3,135 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}component1 {
-	 width: 1290px;
-	 height: 660px;
-	 top: 25px;
+#{id}richText4 {
+	 z-index: 1;
+	 width: 125px;
+	 height: 20px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}menuItem4 {
+	 z-index: 1;
+	 width: 125px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}menuBar2 {
 	 z-index: 2;
+	 width: 129px;
+	 height: 24px;
+	 top: 23px;
+	 left: 0px;
+	
+	 position: absolute;
 	 
 }
 
 #{id}richText3 {
+	 z-index: 1;
 	 width: 1028px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem3 {
+	 z-index: 3;
 	 width: 1028px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}richText2 {
+	 z-index: 1;
 	 width: 129px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem2 {
+	 z-index: 2;
 	 width: 130px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}richText1 {
+	 z-index: 1;
 	 width: 129px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem1 {
+	 z-index: 1;
 	 width: 130px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuBar1 {
+	 z-index: 1;
 	 width: 1290px;
 	 height: 25px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}container1 {
+	 z-index: 1;
 	 width: 1290px;
 	 height: 660px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
+	 
+}
+
+#{id}adminMainComp {
+	 z-index: 2;
+	 width: 1290px;
+	 height: 660px;
+	 top: 25px;
+	 left: 0px;
+	
+	 position: absolute;
 	 
 }
 
