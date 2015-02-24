@@ -29,7 +29,7 @@
 	 z-index: 4;
 	 width: 180px;
 	 height: 13px;
-	 top: 267px;
+	 top: 255px;
 	 left: 32px;
 	
 	 position: absolute;
@@ -572,8 +572,8 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 444px;
-	 height: 380px;
+	 width: 373px;
+	 height: 382px;
 	 top: 243px;
 	 left: 0px;
 	
@@ -598,7 +598,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 444px;
+	 width: 373px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -609,10 +609,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 444px;
-	 height: 623px;
+	 width: 373px;
+	 height: 625px;
 	 top: 0px;
-	 left: 631px;
+	 left: 581px;
 	
 	 position: absolute;
 	 
@@ -623,7 +623,7 @@
 	 width: 125px;
 	 height: 22px;
 	 top: 5px;
-	 left: 130px;
+	 left: 158px;
 	
 	 position: absolute;
 	 color: rgb(0, 0, 255);
@@ -633,8 +633,8 @@
 
 #{id}richText11 {
 	 z-index: 2;
-	 width: 125px;
-	 height: 30px;
+	 width: 150px;
+	 height: 22px;
 	 top: 5px;
 	 left: 5px;
 	
@@ -645,7 +645,7 @@
 
 #{id}richText8 {
 	 z-index: 1;
-	 width: 250px;
+	 width: 291px;
 	 height: 200px;
 	 top: 40px;
 	 left: 5px;
@@ -656,10 +656,10 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: 208px;
-	 height: 287px;
+	 width: 156px;
+	 height: 289px;
 	 top: 0px;
-	 left: 423px;
+	 left: 425px;
 	
 	 position: absolute;
 	 
@@ -693,8 +693,8 @@
 
 #{id}container7 {
 	 z-index: 1;
-	 width: 423px;
-	 height: 287px;
+	 width: 425px;
+	 height: 289px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -704,8 +704,8 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 631px;
-	 height: 287px;
+	 width: 581px;
+	 height: 289px;
 	 top: 336px;
 	 left: 0px;
 	
@@ -730,7 +730,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 631px;
+	 width: 581px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -741,8 +741,8 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 631px;
-	 height: 623px;
+	 width: 581px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -752,10 +752,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 1075px;
-	 height: 623px;
+	 width: 954px;
+	 height: 625px;
 	 top: 0px;
-	 left: 213px;
+	 left: 336px;
 	
 	 position: absolute;
 	 
@@ -763,8 +763,8 @@
 
 #{id}container2 {
 	 z-index: 1;
-	 width: 213px;
-	 height: 623px;
+	 width: 336px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -782,7 +782,7 @@
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
-	 right: -12px;
+	 right: -963px;
 	
 	 position: absolute;
 	 
@@ -1035,7 +1035,7 @@
 	 z-index: 4;
 	 width: 22px;
 	 height: 22px;
-	 top: 263px;
+	 top: 251px;
 	 left: 5px;
 	
 	 position: absolute;

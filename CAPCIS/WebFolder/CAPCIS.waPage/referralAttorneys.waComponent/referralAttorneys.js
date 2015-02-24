@@ -29,7 +29,7 @@ function constructor (id) {
 		//mainAssessorCont.style.visibility = 'visible';
 		try
 		{
-			debugger;
+			
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
 			if(searchCrit == "" && searchType == 'Active')
