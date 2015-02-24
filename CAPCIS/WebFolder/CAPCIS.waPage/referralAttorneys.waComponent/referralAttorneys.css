@@ -29,8 +29,8 @@
 	 z-index: 37;
 	 width: 50px;
 	 height: 13px;
-	 top: 25px;
-	 left: 349px;
+	 top: 257px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -73,8 +73,8 @@
 	 z-index: 34;
 	 width: 87px;
 	 height: 13px;
-	 top: 303px;
-	 left: 134px;
+	 top: 259px;
+	 left: 293px;
 	
 	 position: absolute;
 	 
@@ -282,7 +282,7 @@
 	 z-index: 31;
 	 width: 93px;
 	 height: 13px;
-	 top: 267px;
+	 top: 284px;
 	 left: 287px;
 	
 	 position: absolute;
@@ -615,7 +615,7 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 35px;
+	 width: 294px;
 	 height: 390px;
 	 top: 233px;
 	 left: 0px;
@@ -640,7 +640,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 35px;
+	 width: 294px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -688,7 +688,7 @@
 #{id}container26 {
 	 z-index: 2;
 	 width: 3px;
-	 height: 287px;
+	 height: 279px;
 	 top: 0px;
 	 left: 923px;
 	
@@ -724,7 +724,7 @@
 #{id}container25 {
 	 z-index: 1;
 	 width: 923px;
-	 height: 287px;
+	 height: 279px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -750,7 +750,7 @@
 	 z-index: 30;
 	 width: 75px;
 	 height: 35px;
-	 top: 295px;
+	 top: 305px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -761,7 +761,7 @@
 	 z-index: 29;
 	 width: 75px;
 	 height: 35px;
-	 top: 295px;
+	 top: 305px;
 	 left: 335px;
 	
 	 position: absolute;
@@ -772,7 +772,7 @@
 	 z-index: 28;
 	 width: 75px;
 	 height: 35px;
-	 top: 295px;
+	 top: 305px;
 	 left: 250px;
 	
 	 position: absolute;
@@ -826,7 +826,7 @@
 
 #{id}attPrevVersionCont {
 	 z-index: 2;
-	 width: -923px;
+	 width: -921px;
 	 height: 623px;
 	 top: 0px;
 	 left: 926px;
@@ -837,7 +837,7 @@
 
 #{id}attSpecificInfoCont {
 	 z-index: 2;
-	 width: 3px;
+	 width: 5px;
 	 height: 623px;
 	 top: 0px;
 	 left: 1285px;
@@ -849,8 +849,8 @@
 #{id}attCorrCont {
 	 z-index: 2;
 	 width: 926px;
-	 height: 287px;
-	 top: 336px;
+	 height: 279px;
+	 top: 344px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -1004,7 +1004,7 @@
 #{id}attNotes {
 	 z-index: 27;
 	 width: 250px;
-	 height: 55px;
+	 height: 22px;
 	 top: 230px;
 	 left: 5px;
 	
@@ -1016,7 +1016,7 @@
 	 z-index: 31;
 	 width: 22px;
 	 height: 22px;
-	 top: 263px;
+	 top: 280px;
 	 left: 385px;
 	
 	 position: absolute;
@@ -1037,7 +1037,7 @@
 #{id}attSpecificSubCont {
 	 z-index: 1;
 	 width: 926px;
-	 height: 336px;
+	 height: 344px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -1124,10 +1124,10 @@
 
 #{id}attPublicDef {
 	 z-index: 34;
-	 width: 16px;
-	 height: 16px;
-	 top: 302px;
-	 left: 113px;
+	 width: 22px;
+	 height: 22px;
+	 top: 255px;
+	 left: 385px;
 	
 	 position: absolute;
 	 
@@ -1135,10 +1135,10 @@
 
 #{id}attStaffInfo {
 	 z-index: 37;
-	 width: 130px;
+	 width: 250px;
 	 height: 22px;
-	 top: 21px;
-	 left: 404px;
+	 top: 275px;
+	 left: 5px;
 	
 	 position: absolute;
 	 

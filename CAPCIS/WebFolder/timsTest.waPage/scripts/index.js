@@ -79,13 +79,14 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		debugger;
 		var myResponse = ds.Clientpictures.getclientpictures(
-			{
+			{				
 				onSuccess: handleOnReturnSuccess,
 				onError: handleOnReturnError
 			});
 		
 		function handleOnReturnSuccess(event)
 			{
+				debugger;
 				if (event.result == "success") 
 				{
 					source.clientpictures.orderBy("ClientPicturesID desc");
@@ -95,9 +96,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 					alert(event.result);	
 				}
 				
-			}
+			};
 		function handleOnReturnError(event)
 			{
+				debugger;
 				var errMessage;
 				for (var x = 0;x < event.error.length;x++)
 				{

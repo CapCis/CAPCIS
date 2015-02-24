@@ -13,11 +13,23 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var menuItem4 = {};	// @menuItem
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
+	menuItem4.click = function menuItem4_click (event)// @startlock
+	{// @endlock
+		WAF.loadComponent ({											//load webcomponent into this page component1 element
+    		id: 	$comp.id + 'capcisMainSelect', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/capcisRegistrationRequestAdmin.waComponent'				//designate the webcomponent to load
+		});
+				
+		
+	};// @lock
+
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_menuItem4", "click", menuItem4.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
