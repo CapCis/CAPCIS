@@ -37,6 +37,16 @@
 						break;
 				case 5: answer = 'UPDATE capcis.courtjurisdictioncorrespondence SET VoidedCourtJurisdictionCorrespondence = '+myObject.data2+' WHERE CourtJurisdictionCorrespondenceID = "'+myObject.data3+'"';
 						break;
+				case 6: answer = 'UPDATE capcis.dhscorrespondence SET VoidedDhsCorrespondence = '+myObject.data2+' WHERE DhsCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 7: answer =  'UPDATE capcis.dhsinformation SET DhsName = "'+myObject.data1+'", DhsPhone = "'+myObject.data2+'", \
+				 		DhsEmail="'+myObject.data3+'", DhsFax = "'+myObject.data4+'", DhsAddress ="'+myObject.data5+'", DhsCity = "'+myObject.data6+'", \
+ 						DhsState = "'+myObject.data7+'", DhsZipCode = "'+myObject.data8+'", DhsPhoneExt= "'+myObject.data9+'", \
+ 						DhsAlternatPhone = "'+myObject.data10+'", DhsNotes = "'+myObject.data11+'", DhsFullNameDisplay = "'+myObject.data12+'",\
+ 						DhsPreferredReportingMethod = "'+myObject.data13+'", InactiveDhsInfo = '+myObject.data15+' \
+						WHERE DhsInformationID="'+myObject.data14+'";';
+						break;
+				
 				default: answer = null;	
 						break;
 			}
