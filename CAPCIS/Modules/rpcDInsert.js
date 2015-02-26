@@ -50,7 +50,8 @@ exports.setInsertRegistrationEmployeeInfo = function setInsert(myObject)
 		var insertStatement = dBInsertBuilder.buildQuery(myObject);
 		var connection = serverUtil.getDBConnection();
 		var returnedID = connection.execute(insertStatement);
-		
+		myObject.returnedID = returnedID;
+		myObject.minor = 5;
 		var myResults = ["suc"];
 		connection.close;
 	}
