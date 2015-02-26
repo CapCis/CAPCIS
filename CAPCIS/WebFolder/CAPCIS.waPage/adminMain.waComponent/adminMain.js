@@ -20,8 +20,9 @@ function constructor (id) {
 
 	menuItem4.click = function menuItem4_click (event)// @startlock
 	{// @endlock
+		debugger;
 		WAF.loadComponent ({											//load webcomponent into this page component1 element
-    		id: 	$comp.id + 'capcisMainSelect', 											//designate the component to load into
+    		id: 	$comp.id + '_adminMainComp', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/capcisRegistrationRequestAdmin.waComponent'				//designate the webcomponent to load
 		});
 				
