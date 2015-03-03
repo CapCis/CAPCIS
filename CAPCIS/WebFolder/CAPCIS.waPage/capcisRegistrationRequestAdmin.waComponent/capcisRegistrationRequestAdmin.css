@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button1 {
+	 z-index: 15;
+	 width: 109px;
+	 height: 34px;
+	 top: 427px;
+	 left: 149px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}textField9 {
 	 width: 130px;
 	 height: 22px;
@@ -10,7 +21,7 @@
 	 left: 144px;
 	
 	 position: absolute;
-	 z-index: 15;
+	 z-index: 14;
 	 
 }
 
@@ -21,12 +32,12 @@
 	 left: 87px;
 	
 	 position: absolute;
-	 z-index: 15;
+	 z-index: 13;
 	 
 }
 
 #{id}label10 {
-	 z-index: 13;
+	 z-index: 12;
 	 width: 70px;
 	 height: 13px;
 	 top: 266px;
@@ -37,7 +48,7 @@
 }
 
 #{id}combobox1 {
-	 z-index: 13;
+	 z-index: 12;
 	 width: 132px;
 	 height: 26px;
 	 top: 260px;
@@ -181,10 +192,10 @@
 
 #{id}container3 {
 	 z-index: 3;
-	 width: 453px;
+	 width: 324px;
 	 height: 749px;
 	 top: 0px;
-	 left: 454px;
+	 left: 583px;
 	
 	 position: absolute;
 	 
@@ -192,7 +203,7 @@
 
 #{id}container2 {
 	 z-index: 2;
-	 width: 454px;
+	 width: 583px;
 	 height: 749px;
 	 top: 0px;
 	 left: 0px;
@@ -205,8 +216,8 @@
 	 z-index: 1;
 	 width: 869px;
 	 height: 712px;
-	 top: 20px;
-	 left: 14px;
+	 top: 18px;
+	 left: 21px;
 	
 	 position: absolute;
 	 
