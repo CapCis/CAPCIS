@@ -17,20 +17,17 @@ exports.getSelect = function getSelect(myObject)
 	var tokenAnswer = connection.execute(checkToken);
 	var myResults = tokenAnswer.getAllRows();
 	connection.close;
-	if (myResults.length > 0) {
+	if (myResults.length > 0) 
+	{
 		var selectStatement = dBQueryBuilder.buildQuery(myObject);	
 		var connection = serverUtil.getDBConnection();
 		var result = connection.execute(selectStatement);
-		myResults = result.getAllRows();
+		var myResults = result.getAllRows();
 		connection.close;
 		return myResults;
 	}
-	else {		
+	else 
+	{		
 		return myResults = ["err","Invalid Token"];
-	}
-		
-	
-	
-	
-	
+	}	
 };
