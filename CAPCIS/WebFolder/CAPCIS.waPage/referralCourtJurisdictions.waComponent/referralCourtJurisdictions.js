@@ -11,9 +11,22 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		try
-		{
+		
+		debugger;
+		try {
+			searchCrit = data.userData.searchCrit;
+			searchType = data.userData.searchType;
 			
+		} catch (e) {
+			
+		}
+			fillMainTable();
+		
+		function fillMainTable()
+		{
+			try
+		{
+		
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
 			if(searchCrit == "" && searchType == 'Active')
@@ -112,7 +125,7 @@ function constructor (id) {
 		}
 		
 		
-		
+	}
 			
 			
 		 	
@@ -323,73 +336,10 @@ function constructor (id) {
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
 		
-		changed = false;
-		if($$(getHtmlId("courtJurisdictionNameField")).sourceAtt.getValue() != currentName)
-		{
-			changed = true;
-		}
 		
-		if($$(getHtmlId("courtJurisdictionPhoneField")).sourceAtt.getValue() != currentPhone)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionExtField")).sourceAtt.getValue() != currentExt)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionAlternateField")).sourceAtt.getValue() != currentMobile)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionFaxField")).sourceAtt.getValue() != currentFax)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionAddressField")).sourceAtt.getValue() != currentAddress)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionStateField")).sourceAtt.getValue() != currentState)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionZipField")).sourceAtt.getValue() != currentZip)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionEmailField")).sourceAtt.getValue() != currentEmail)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionNotesField")).sourceAtt.getValue() != currentNotes)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("cityComboBox")).getValue() != currentCity)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("reportingComboBox")).getValue() != currentReportingMethod)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionInactiveCheckBox")).getValue() != currentInactiveInfo)
-		{
-			changed = true;
-		}
-		
-		if($$(getHtmlId("courtJurisdictionDatabaseField")).sourceAtt.getValue() != currentDatabase)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionFormatField")).sourceAtt.getValue() != currentSearchFormat)
-		{
-			changed = true;
-		}
 		
 		//run update if needed
-		if(changed)
-		{
+		
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:4,
@@ -433,9 +383,18 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
-	 		
-		}
-		
+	 	
+			fillMainTable();
+			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 	};// @lock
 
 
@@ -494,119 +453,10 @@ function constructor (id) {
 		///////////////////////////////////////////////////////////get data
 		
 		currentName = name;
-		currentCity = city;
-		currentReportingMethod = reportingMethod;
-		currentPhone = sources.specificCourtJurisdictionList.CourtJurisdictionPhone;
-		currentExt = sources.specificCourtJurisdictionList.CourtJurisdictionPhoneExt;
-		currentEmail = sources.specificCourtJurisdictionList.CourtJurisdictionEmail;
-		currentFax = sources.specificCourtJurisdictionList.CourtJurisdictionFax;
-		currentMobile = sources.specificCourtJurisdictionList.CourtJurisdictionAlternatePhone;
-		currentAddress = sources.specificCourtJurisdictionList.CourtJurisdictionAddress;
-		currentState = sources.specificCourtJurisdictionList.CourtJurisdictionState;
-		currentZip = sources.specificCourtJurisdictionList.CourtJurisdictionZipCode;
-		currentNotes = sources.specificCourtJurisdictionList.CourtJurisdictionNotes;
-		currentSearchFormat = sources.specificCourtJurisdictionList.SearchFormat;
-		currentDatabase = sources.specificCourtJurisdictionList.SearchDatabase;
+		
 		currentID = ids;
-		currentInactiveInfo = sources.specificCourtJurisdictionList.InactiveCourtJurisdictionInfo;
-		
-		if(currentName == null)
-		{
-			currentName = "";
-			
-		}
-		if(currentSearchFormat == null)
-		{
-			currentSearchFormat = "";
-			
-		}
-		if(currentDatabase == null)
-		{
-			currentDatabase = "";
-			
-		}
-		if(currentCity == null || currentCity == "")
-		{
-			currentCity = "None";
-			
-		}
-		if(currentReportingMethod == null || currentReportingMethod == "")
-		{
-			currentReportingMethod = "None";
-			
-		}
-		if(currentPhone == null)
-		{
-			currentPhone = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionPhone ="";
-			
-		}
-		if(currentExt == null)
-		{
-			currentExt = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionPhoneExt = "";
-			
-		}
-		if(currentEmail == null)
-		{
-			currentEmail = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionEmail ="";
-			
-		}
-		if(currentFax == null)
-		{
-			currentFax = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionFax ="";
-			
-		}
-		if(currentMobile == null)
-		{
-			currentMobile = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionAlternatePhone ="";
-			
-		}
-		if(currentAddress == null)
-		{
-			currentAddress = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionAddress ="";
-			
-		}
-		if(currentState == null)
-		{
-			currentState = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionState ="";
-			
-		}
-		if(currentZip == null)
-		{
-			currentZip = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionZipCode ="";
-			
-		}
-		if(currentNotes == null)
-		{
-			currentNotes = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionNotes ="";
-			
-		}
-		if(currentSearchFormat == null)
-		{
-			currentSearchFormat = "";
-			sources.specificCourtJurisdictionList.SearchFormat ="";
-			
-		}
-		if(currentDatabase == null)
-		{
-			currentDatabase = "";
-			sources.specificCourtJurisdictionList.SearchDatabase ="";
-			
-		}
 		
 		
-		
-		
-				
-
 		
 		fillCorrespondance();
 		

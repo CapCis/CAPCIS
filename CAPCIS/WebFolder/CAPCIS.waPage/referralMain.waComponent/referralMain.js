@@ -126,7 +126,7 @@ function constructor (id) {
 
 	SearchReferralButton.click = function SearchReferralButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
@@ -144,8 +144,14 @@ function constructor (id) {
 									//data that you want to send to the webcomponent
 		});
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'CourtJursidictionComponent', 											//designate the component to load into
+		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',
+		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
+									//data that you want to send to the webcomponent
+		});
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
 									//data that you want to send to the webcomponent
 		});
