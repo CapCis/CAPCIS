@@ -3,70 +3,740 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}container2 {
-	 width: 770px;
-	 height: 18px;
-	 top: 0px;
+#{id}label1 {
+	 width: 130px;
+	 height: 13px;
+	 top: 250px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 7;
+	 
+}
+
+#{id}Close {
+	 width: 92px;
+	 height: 22px;
+	 top: 348px;
+	 left: 248px;
+	
+	 position: absolute;
+	 z-index: 37;
+	 
+}
+
+#{id}textField82 {
+	 width: 150px;
+	 height: 22px;
+	 top: 184px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 35;
+	 
+}
+
+#{id}textField81 {
+	 width: 150px;
+	 height: 22px;
+	 top: 275px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 34;
+	 
+}
+
+#{id}checkbox6 {
+	 width: 22px;
+	 height: 22px;
+	 top: 308px;
+	 left: 385px;
+	
+	 position: absolute;
+	 z-index: 33;
+	 
+}
+
+#{id}textField80 {
+	 width: 250px;
+	 height: 55px;
+	 top: 275px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 32;
+	 
+}
+
+#{id}textField79 {
+	 width: 260px;
+	 height: 22px;
+	 top: 230px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}textField78 {
+	 width: 100px;
+	 height: 22px;
+	 top: 230px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 30;
+	 
+}
+
+#{id}textField77 {
+	 width: 35px;
+	 height: 22px;
+	 top: 230px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}textField76 {
+	 width: 250px;
+	 height: 22px;
+	 top: 185px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}textField75 {
+	 width: 105px;
+	 height: 22px;
+	 top: 140px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}textField74 {
+	 width: 105px;
+	 height: 22px;
+	 top: 140px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}textField73 {
+	 width: 50px;
+	 height: 22px;
+	 top: 140px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}textField72 {
+	 width: 100px;
+	 height: 22px;
+	 top: 140px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}textField70 {
+	 width: 200px;
+	 height: 22px;
+	 top: 95px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}richText9 {
+	 width: 365px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 z-index: 21;
+	 
+}
+
+#{id}textField58 {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 8px;
+	
+	 position: absolute;
+	 color: rgb(255, 0, 0);
+	 z-index: 20;
+	 
+}
+
+#{id}textField57 {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 z-index: 19;
+	 
+}
+
+#{id}label102 {
+	 width: 21px;
+	 height: 13px;
+	 top: 166px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 35;
+	 
+}
+
+#{id}label101 {
+	 width: 98px;
+	 height: 13px;
+	 top: 257px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 34;
+	 
+}
+
+#{id}label100 {
+	 width: 106px;
+	 height: 13px;
+	 top: 312px;
+	 left: 274px;
+	
+	 position: absolute;
+	 z-index: 33;
+	 
+}
+
+#{id}label99 {
+	 width: 152px;
+	 height: 13px;
+	 top: 257px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 32;
+	 
+}
+
+#{id}label96 {
+	 width: 77px;
+	 height: 13px;
+	 top: 212px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}label95 {
+	 width: 48px;
+	 height: 13px;
+	 top: 212px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 30;
+	 
+}
+
+#{id}label94 {
+	 width: 28px;
+	 height: 13px;
+	 top: 212px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}label93 {
+	 width: 79px;
+	 height: 13px;
+	 top: 167px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}label92 {
+	 width: 67px;
+	 height: 13px;
+	 top: 122px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}label91 {
+	 width: 75px;
+	 height: 13px;
+	 top: 122px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}label90 {
+	 width: 53px;
+	 height: 13px;
+	 top: 122px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}label89 {
+	 width: 70px;
+	 height: 13px;
+	 top: 122px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}label87 {
+	 width: 153px;
+	 height: 13px;
+	 top: 77px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}label72 {
+	 width: 101px;
+	 height: 13px;
+	 top: 32px;
+	 left: 8px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}label71 {
+	 width: 59px;
+	 height: 13px;
+	 top: 32px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}container28 {
+	 width: 422px;
+	 height: 390px;
+	 top: 233px;
 	 left: 0px;
 	
 	 position: absolute;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 z-index: 1;
-	 
-}
-
-#{id}matrix1 {
-	 width: 800px;
-	 height: 615px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 z-index: 1;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}container2 {
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 
-}
-
-#{id}ProbationJurisdictionViewCont {
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
 	 z-index: 2;
 	 
 }
 
-#{id}ProbationJurisdictionEditCont {
+#{id}button3 {
+	 width: 92px;
+	 height: 22px;
+	 top: 203px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}dataGrid1 {
+	 width: 460px;
+	 height: 170px;
+	 top: 25px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}richText7 {
+	 width: 405px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 z-index: 1;
+	 
+}
+
+#{id}container27 {
+	 width: 422px;
+	 height: 233px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}richText5 {
+	 width: 125px;
+	 height: 22px;
+	 top: 7px;
+	 left: 199px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 text-align: right;
+	 z-index: 4;
+	 
+}
+
+#{id}richText4 {
+	 width: 193px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 color: rgb(255, 0, 0);
+	 z-index: 3;
+	 
+}
+
+#{id}richText3 {
+	 width: 319px;
+	 height: 202px;
+	 top: 40px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}container26 {
+	 width: 236px;
+	 height: 279px;
+	 top: 0px;
+	 left: 479px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}richText6 {
+	 width: 295px;
+	 height: 22px;
+	 top: 9px;
+	 left: 4px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 z-index: 4;
+	 
+}
+
+#{id}button2 {
+	 width: 75px;
+	 height: 22px;
+	 top: 250px;
+	 left: 335px;
+	
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}label103 {
+	 width: 237px;
+	 height: 13px;
+	 top: 207px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}container25 {
+	 width: 479px;
+	 height: 279px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}richText10 {
+	 width: 415px;
+	 height: 22px;
+	 top: 5px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 z-index: 34;
+	 
+}
+
+#{id}button16 {
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 32;
+	 
+}
+
+#{id}button15 {
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 335px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}button14 {
+	 width: 75px;
+	 height: 35px;
+	 top: 295px;
+	 left: 250px;
+	
+	 position: absolute;
+	 z-index: 30;
+	 
+}
+
+#{id}label86 {
+	 width: 106px;
+	 height: 13px;
+	 top: 264px;
+	 left: 274px;
+	
+	 position: absolute;
+	 z-index: 33;
+	 
+}
+
+#{id}label85 {
+	 width: 152px;
+	 height: 13px;
+	 top: 212px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}label84 {
+	 width: 98px;
+	 height: 13px;
+	 top: 212px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}label83 {
+	 width: 21px;
+	 height: 13px;
+	 top: 122px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}label82 {
+	 width: 77px;
+	 height: 13px;
+	 top: 167px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}label81 {
+	 width: 48px;
+	 height: 13px;
+	 top: 167px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}label80 {
+	 width: 28px;
+	 height: 13px;
+	 top: 167px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}label79 {
+	 width: 79px;
+	 height: 13px;
+	 top: 122px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}label78 {
+	 width: 67px;
+	 height: 13px;
+	 top: 77px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}label77 {
+	 width: 75px;
+	 height: 13px;
+	 top: 77px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}label76 {
+	 width: 53px;
+	 height: 13px;
+	 top: 77px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}label75 {
+	 width: 70px;
+	 height: 13px;
+	 top: 77px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}label73 {
+	 width: 153px;
+	 height: 13px;
+	 top: 32px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}container21 {
+	 width: 715px;
+	 height: 623px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}container19 {
+	 width: 151px;
+	 height: 623px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}ProbationJurisdictionViewCont {
+	 z-index: 2;
 	 width: 375px;
 	 height: 615px;
 	 top: 0px;
@@ -74,7 +744,295 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}ProbationJurisdictionEditCont {
 	 z-index: 3;
+	 width: 375px;
+	 height: 615px;
+	 top: 0px;
+	 left: 825px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}mainProbationJurisdictionsCont {
+	 width: 1290px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 z-index: 11;
+	 
+}
+
+#{id}pjDataGird {
+	 height: 625px;
+	 top: 2px;
+	 left: 2px;
+	 right: -887px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}pjName {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}pjSpecificSubCont {
+	 width: 715px;
+	 height: 344px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 1;
+	 
+}
+
+#{id}pjSpecificInfoCont {
+	 width: 1137px;
+	 height: 623px;
+	 top: 0px;
+	 left: 151px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}pjPhone {
+	 width: 100px;
+	 height: 22px;
+	 top: 95px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}pjExt {
+	 width: 50px;
+	 height: 22px;
+	 top: 95px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 20;
+	 
+}
+
+#{id}pjAdditional {
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}pjFax {
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 22;
+	 
+}
+
+#{id}pjAddress {
+	 width: 250px;
+	 height: 22px;
+	 top: 140px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}pjState {
+	 width: 35px;
+	 height: 22px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 24;
+	 
+}
+
+#{id}pjZip {
+	 width: 100px;
+	 height: 22px;
+	 top: 185px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}pjEmail {
+	 width: 260px;
+	 height: 22px;
+	 top: 185px;
+	 left: 150px;
+	
+	 position: absolute;
+	 z-index: 26;
+	 
+}
+
+#{id}pjCityComboBox {
+	 width: 150px;
+	 height: 22px;
+	 top: 140px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}pjReportingComboBox {
+	 width: 150px;
+	 height: 22px;
+	 top: 230px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 28;
+	 
+}
+
+#{id}pjNotes {
+	 width: 250px;
+	 height: 55px;
+	 top: 230px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}pjInactive {
+	 width: 22px;
+	 height: 22px;
+	 top: 260px;
+	 left: 385px;
+	
+	 position: absolute;
+	 z-index: 33;
+	 
+}
+
+#{id}pjCorrCont {
+	 width: 715px;
+	 height: 279px;
+	 top: 344px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}pjNewCoresspondenceField {
+	 width: 325px;
+	 height: 22px;
+	 top: 225px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}pjCorrespondanceActiveBox {
+	 width: 110px;
+	 height: 22px;
+	 top: 9px;
+	 left: 300px;
+	
+	 position: absolute;
+	 text-align: left;
+	 z-index: 5;
+	 
+}
+
+#{id}pjCorrespondanceGrid {
+	 width: 405px;
+	 height: 165px;
+	 top: 35px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 6;
+	 
+}
+
+#{id}pjCorCloseButton {
+	 width: 92px;
+	 height: 22px;
+	 top: 246px;
+	 left: 194px;
+	
+	 position: absolute;
+	 z-index: 5;
+	 
+}
+
+#{id}pjHiddenCorrId {
+	 width: 10px;
+	 height: 11px;
+	 top: 11px;
+	 left: 380px;
+	
+	 position: absolute;
+	 z-index: 6;
+	 
+}
+
+#{id}pjVoidedCorrespondanceCheck {
+	 width: 16px;
+	 height: 16px;
+	 top: 249px;
+	 left: 24px;
+	
+	 position: absolute;
+	 z-index: 7;
+	 
+}
+
+#{id}pjPrevVersionCont {
+	 width: 422px;
+	 height: 623px;
+	 top: 0px;
+	 left: 715px;
+	
+	 position: absolute;
+	 z-index: 2;
 	 
 }
 
