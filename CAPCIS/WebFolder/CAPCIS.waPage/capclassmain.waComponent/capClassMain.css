@@ -3,6 +3,352 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+.waf-combobox-list-combobox1 {
+	 
+}
+
+#{id}label14 {
+	 z-index: 21;
+	 width: 93px;
+	 height: 13px;
+	 top: 262px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox2 {
+	 z-index: 21;
+	 width: 150px;
+	 height: 22px;
+	 top: 280px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label13 {
+	 z-index: 19;
+	 width: 105px;
+	 height: 13px;
+	 top: 262px;
+	 left: 350px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox1 {
+	 z-index: 20;
+	 width: 125px;
+	 height: 22px;
+	 top: 280px;
+	 left: 350px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label12 {
+	 z-index: 18;
+	 width: 29px;
+	 height: 13px;
+	 top: 442px;
+	 left: 146px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField8 {
+	 z-index: 19;
+	 width: 85px;
+	 height: 22px;
+	 top: 438px;
+	 left: 180px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label11 {
+	 z-index: 17;
+	 width: 70px;
+	 height: 13px;
+	 top: 262px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField7 {
+	 z-index: 18;
+	 width: 100px;
+	 height: 22px;
+	 top: 280px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label10 {
+	 z-index: 16;
+	 width: 29px;
+	 height: 13px;
+	 top: 443px;
+	 left: 33px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField6 {
+	 z-index: 17;
+	 width: 82px;
+	 height: 22px;
+	 top: 439px;
+	 left: 67px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label9 {
+	 z-index: 15;
+	 width: 29px;
+	 height: 13px;
+	 top: 396px;
+	 left: 27px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField5 {
+	 z-index: 16;
+	 width: 84px;
+	 height: 22px;
+	 top: 392px;
+	 left: 61px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label8 {
+	 z-index: 14;
+	 width: 70px;
+	 height: 13px;
+	 top: 457px;
+	 left: 425px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField4 {
+	 z-index: 15;
+	 width: 100px;
+	 height: 22px;
+	 top: 453px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label7 {
+	 z-index: 13;
+	 width: 70px;
+	 height: 13px;
+	 top: 420px;
+	 left: 425px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField3 {
+	 z-index: 14;
+	 width: 100px;
+	 height: 22px;
+	 top: 416px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label4 {
+	 z-index: 12;
+	 width: 89px;
+	 height: 13px;
+	 top: 384px;
+	 left: 406px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField2 {
+	 z-index: 13;
+	 width: 100px;
+	 height: 22px;
+	 top: 380px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label3 {
+	 z-index: 11;
+	 width: 71px;
+	 height: 13px;
+	 top: 354px;
+	 left: 424px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField1 {
+	 z-index: 12;
+	 width: 100px;
+	 height: 22px;
+	 top: 350px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label2 {
+	 z-index: 10;
+	 width: 70px;
+	 height: 13px;
+	 top: 138px;
+	 left: 405px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid5 {
+	 z-index: 10;
+	 width: 200px;
+	 height: 95px;
+	 top: 156px;
+	 left: 405px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label1 {
+	 z-index: 9;
+	 width: 103px;
+	 height: 13px;
+	 top: 138px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid4 {
+	 z-index: 9;
+	 width: 200px;
+	 height: 95px;
+	 top: 156px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText13 {
+	 z-index: 7;
+	 width: 415px;
+	 height: 60px;
+	 top: 71px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText12 {
+	 z-index: 6;
+	 width: 150px;
+	 height: 35px;
+	 top: 39px;
+	 left: 312px;
+	
+	 position: absolute;
+	 color: rgb(255, 0, 0);
+	 font-weight: bold;
+	 font-size: 34px;
+	 
+}
+
+#{id}richText11 {
+	 z-index: 5;
+	 width: 100px;
+	 height: 22px;
+	 top: 10px;
+	 left: 55px;
+	
+	 position: absolute;
+	 font-size: 18px;
+	 font-weight: bold;
+	 text-align: left;
+	 
+}
+
+#{id}richText10 {
+	 z-index: 4;
+	 width: 167px;
+	 height: 22px;
+	 top: 10px;
+	 left: 190px;
+	
+	 position: absolute;
+	 font-size: 18px;
+	 font-weight: bold;
+	 text-align: left;
+	 
+}
+
+#{id}richText9 {
+	 z-index: 3;
+	 width: 40px;
+	 height: 22px;
+	 top: 10px;
+	 left: 15px;
+	
+	 position: absolute;
+	 font-size: 18px;
+	 font-weight: bold;
+	 text-align: left;
+	 
+}
+
+#{id}image1 {
+	 z-index: 2;
+	 width: 150px;
+	 height: 200px;
+	 top: 50px;
+	 left: 15px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}dataGrid1 .waf-dataGrid-row.waf-state-selected .waf-dataGrid-row.waf-widget-odd {
 	 background-color: transparent;
 	 
@@ -108,10 +454,10 @@
 
 #{id}button1 {
 	 z-index: 1;
-	 width: 92px;
-	 height: 22px;
-	 top: 94px;
-	 left: 28px;
+	 width: 93px;
+	 height: 38px;
+	 top: 553px;
+	 left: 504px;
 	
 	 position: absolute;
 	 
@@ -605,7 +951,7 @@
 
 #{id}classRosterSubCont {
 	 z-index: 1;
-	 width: 1118px;
+	 width: 504px;
 	 height: 610px;
 	 top: 0px;
 	 left: 0px;
@@ -616,12 +962,13 @@
 
 #{id}classRosterRecieptCont {
 	 z-index: 2;
-	 width: 7px;
+	 width: 621px;
 	 height: 610px;
 	 top: 0px;
-	 left: 1118px;
+	 left: 504px;
 	
 	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
 	 
 }
 

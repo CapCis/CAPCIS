@@ -27,11 +27,22 @@ function constructor (id) {
 	 	$$(getHtmlId('mainAttorneyCont')).setSplitPosition(1290);
 	 	*/
 		//mainAssessorCont.style.visibility = 'visible';
-		try
-		{
+		
+		
+		
+		try {
+			searchCrit = data.userData.searchCrit;
+			searchType = data.userData.searchType;
 			
-			var searchCrit = data.userData.searchCrit;
-			var searchType = data.userData.searchType;
+		} catch (e) {
+			
+		}
+			fillMainTable();
+		
+		function fillMainTable()
+		{
+			try
+		{
 			if(searchCrit == "" && searchType == 'Active')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -76,19 +87,8 @@ function constructor (id) {
 		 	attorneyList = rpcDSelects.getSelect(myObject);
 		 	sources.attorneyList.sync();
 		}
-	 	var myObject3 = {token:'7836140170460568' ,id:'1',major:3,minor:3}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject3);
-	 	var tempCity= city[0];
-	 	city[0] = {CityListing: "None"};
-	 	city[city.length] = tempCity;
-	 	sources.city.sync();
+	}
 	 	
-	 	var myObject4 = {token:'7836140170460568' ,id:'1',major:3,minor:4}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	reporting = rpcDSelects.getSelect(myObject4);
-	 	var tempReporting = reporting[0];
-	 	reporting[0] = {ReportingMethod: "None"};
-	 	reporting[reporting.length] = tempReporting;
-	 	sources.reporting.sync();
 		
 		function fillCorrespondance()
 		{
@@ -144,75 +144,7 @@ function constructor (id) {
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
 		
-		changed = false;
-		if($$(getHtmlId("attName")).sourceAtt.getValue() != currentName)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attFullName")).sourceAtt.getValue() != currentDisplay)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attPhone")).sourceAtt.getValue() != currentPhone)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attExt")).sourceAtt.getValue() != currentExt)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attAdditional")).sourceAtt.getValue() != currentMobile)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attFax")).sourceAtt.getValue() != currentFax)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attAddress")).sourceAtt.getValue() != currentAddress)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attState")).sourceAtt.getValue() != currentState)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attZip")).sourceAtt.getValue() != currentZip)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attEmail")).sourceAtt.getValue() != currentEmail)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attNotes")).sourceAtt.getValue() != currentNotes)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attCityComboBox")).getValue() != currentCity)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attReportingComboBox")).getValue() != currentReportingMethod)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attInactive")).getValue() != currentInactiveInfo)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attPublicDef")).getValue() != currentDefender)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attStaffInfo")).sourceAtt.getValue() != currentStafInfo)
-		{
-			changed = true;
-		}
 		
-		//run update if needed
-		if(changed)
-		{
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:3,
@@ -239,7 +171,10 @@ function constructor (id) {
 	 		assessorUpdate = rpcDUpdate.setUpdate(myObject7);
 	 		bakAssessorInsert = rpcDInsert.setInsert(myObject7);
 	 		
-		}
+		fillMainTable();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
+	 	sources.bakAttorneyInfo.sync();
 	};// @lock
 
 	button15.click = function button15_click (event)// @startlock
@@ -348,6 +283,7 @@ function constructor (id) {
 		var name = event.data.row.cells[0].value;
 		var city = event.data.row.cells[7].value;
 		var reportingMethod = event.data.row.cells[13].value;
+		var ids = event.data.row.cells[15].value;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('attCityComboBox')).setValue(city);
@@ -378,88 +314,8 @@ function constructor (id) {
 		///////////////////////////////////////////////////////////get data
 		
 		currentName = name;
-		currentCity = city;
-		currentReportingMethod = reportingMethod;
-		currentPhone = sources.specificAttorneyList.AttorneyPhone;
-		currentExt = sources.specificAttorneyList.AttorneyPhoneExt;
-		currentEmail = sources.specificAttorneyList.AttorneyEmail;
-		currentFax = sources.specificAttorneyList.AttorneyFax;
-		currentMobile = sources.specificAttorneyList.AttorneyAdditionalPhone;
-		currentAddress = sources.specificAttorneyList.AttorneyAddress;
-		currentState = sources.specificAttorneyList.AttorneyState;
-		currentZip = sources.specificAttorneyList.AttorneyZipCode;
-		currentNotes = sources.specificAttorneyList.AttorneyNotes;
-		currentDisplay = sources.specificAttorneyList.AttorneyFullNameDisplay;
-		currentID = sources.specificAttorneyList.AttorneyInformationID;
-		currentDefender = sources.specificAttorneyList.PublicDefender;
-		currentStafInfo = sources.specificAttorneyList.AttorneyStaffInfo;
-		currentInactiveInfo = sources.specificAttorneyList.InactiveAttorneyInfo;
 		
-		if(currentName == null)
-		{
-			currentName = "";
-			
-		}
-		if(currentCity == null || currentCity == "")
-		{
-			currentCity = "None";
-			
-		}
-		if(currentReportingMethod == null || currentReportingMethod == "")
-		{
-			currentReportingMethod = "None";
-			
-		}
-		if(currentPhone == null)
-		{
-			currentPhone = "";
-			
-		}
-		if(currentExt == null)
-		{
-			currentExt = "";
-			
-		}
-		if(currentEmail == null)
-		{
-			currentEmail = "";
-			
-		}
-		if(currentFax == null)
-		{
-			currentFax = "";
-			
-		}
-		if(currentMobile == null)
-		{
-			currentMobile = "";
-			
-		}
-		if(currentAddress == null)
-		{
-			currentAddress = "";
-			
-		}
-		if(currentState == null)
-		{
-			currentState = "";
-			
-		}
-		if(currentZip == null)
-		{
-			currentZip = "";
-			
-		}
-		if(currentNotes == null)
-		{
-			currentNotes = "";
-			
-		}
-		if(currentDisplay == null)
-		{
-			currentDisplay = "";
-			
-		}
+		currentID = ids;
 		
 		fillCorrespondance();
 	};// @lock

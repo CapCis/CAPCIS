@@ -35,74 +35,136 @@ function constructor (id) {
 		*/
 		
 		$$(getHtmlId('container3')).setSplitPosition(900);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(1500);
-	 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
-		
-		
-		//mainAssessorCont.style.visibility = 'visible';
-		try
-		{
-			
-			var searchCrit = data.userData.searchCrit;
-			var searchType = data.userData.searchType;
-			if(searchCrit == "" && searchType == 'Active')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		assessorList = rpcDSelects.getSelect(myObject);
-		 		sources.assessorList.sync();
-			}
-			else if(searchCrit == '' && searchType == 'Inactive')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		assessorList = rpcDSelects.getSelect(myObject);
-		 		sources.assessorList.sync();
-			}
-			else if(searchCrit == '' && searchType == 'All')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:8}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		assessorList = rpcDSelects.getSelect(myObject);
-		 		sources.assessorList.sync();
-			}
-			else if (searchCrit != '' && searchType == 'Active')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:10, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		assessorList = rpcDSelects.getSelect(myObject);
-		 		sources.assessorList.sync();
-			}
-			else if (searchCrit != '' && searchType == 'Inactive')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:10, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		assessorList = rpcDSelects.getSelect(myObject);
-		 		sources.assessorList.sync();
-			}
-			else if (searchCrit != '' && searchType == 'All')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:9, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		assessorList = rpcDSelects.getSelect(myObject);
-		 		sources.assessorList.sync();
-			}
-			
-		}
-		catch(err)
-		{
-			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:0,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 	assessorList = rpcDSelects.getSelect(myObject);
-		 	sources.assessorList.sync();
-		}
-	 	var myObject3 = {token:'7836140170460568' ,id:'1',major:3,minor:3}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject3);
-	 	var tempCity= city[0];
-	 	city[0] = {CityListing: "None"};
-	 	city[city.length] = tempCity;
-	 	sources.city.sync();
+	$$(getHtmlId('container9')).setSplitPosition(1000);
+	$$(getHtmlId('container6')).setSplitPosition(1500);
+	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+	//mainAssessorCont.style.visibility = 'visible';
+	try
+	{
+	    searchCrit = data.userData.searchCrit;
+	    searchType = data.userData.searchType;
+	}
+	catch (e)
+	{}
+	fillMainTable();
+	var myObject3 = {
+	    token: '7836140170460568',
+	    id: '1',
+	    major: 3,
+	    minor: 3
+	}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	city = rpcDSelects.getSelect(myObject3);
+	var tempCity = city[0];
+	city[0] = {
+	    CityListing: "None"
+	};
+	city[city.length] = tempCity;
+	sources.city.sync();
+	var myObject4 = {
+	    token: '7836140170460568',
+	    id: '1',
+	    major: 3,
+	    minor: 4
+	}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	reporting = rpcDSelects.getSelect(myObject4);
+var tempReporting = reporting[0];
+reporting[0] = {
+    ReportingMethod: "None"
+};
+reporting[reporting.length] = tempReporting;
+sources.reporting.sync();
+function fillMainTable()
+{
+    try
+    {
+        if (searchCrit == "" && searchType == 'Active')
+        {
+            var myObject = {
+                token: '7836140170460568',
+                id: '1',
+                major: 3,
+                minor: 0,
+                data1: false
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            assessorList = rpcDSelects.getSelect(myObject);
+            sources.assessorList.sync();
+        }
+        else if (searchCrit == '' && searchType == 'Inactive')
+        {
+            var myObject = {
+                token: '7836140170460568',
+                id: '1',
+                major: 3,
+                minor: 0,
+                data1: true
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            assessorList = rpcDSelects.getSelect(myObject);
+            sources.assessorList.sync();
+        }
+        else if (searchCrit == '' && searchType == 'All')
+        {
+            var myObject = {
+                token: '7836140170460568',
+                id: '1',
+                major: 3,
+                minor: 8
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            assessorList = rpcDSelects.getSelect(myObject);
+            sources.assessorList.sync();
+        }
+        else if (searchCrit != '' && searchType == 'Active')
+        {
+            var myObject = {
+                token: '7836140170460568',
+                id: '1',
+                major: 3,
+                minor: 10,
+                data1: searchCrit,
+                data2: false
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            assessorList = rpcDSelects.getSelect(myObject);
+            sources.assessorList.sync();
+        }
+        else if (searchCrit != '' && searchType == 'Inactive')
+        {
+            var myObject = {
+                token: '7836140170460568',
+                id: '1',
+                major: 3,
+                minor: 10,
+                data1: searchCrit,
+                data2: true
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            assessorList = rpcDSelects.getSelect(myObject);
+            sources.assessorList.sync();
+        }
+        else if (searchCrit != '' && searchType == 'All')
+        {
+            var myObject = {
+                token: '7836140170460568',
+                id: '1',
+                major: 3,
+                minor: 9,
+                data1: searchCrit
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            assessorList = rpcDSelects.getSelect(myObject);
+            sources.assessorList.sync();
+        }
+    }
+    catch (err)
+    {
+        var myObject = {
+            token: '7836140170460568',
+            id: '1',
+            major: 3,
+            minor: 0,
+            data1: false
+        }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+        assessorList = rpcDSelects.getSelect(myObject);
+        sources.assessorList.sync();
+    }
+  }
 	 	
-	 	var myObject4 = {token:'7836140170460568' ,id:'1',major:3,minor:4}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	reporting = rpcDSelects.getSelect(myObject4);
-	 	var tempReporting = reporting[0];
-	 	reporting[0] = {ReportingMethod: "None"};
-	 	reporting[reporting.length] = tempReporting;
-	 	sources.reporting.sync();
 	 	
 	 	
 	// @region namespaceDeclaration// @startlock
@@ -129,57 +191,62 @@ function constructor (id) {
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
-		
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
-		var id  = $$(getHtmlId('hiddenCorrId')).getValue();
-		var myObject8 = 
-			{
-				token:'7836140170460568' ,id:'1',major:3,minor:1,
-				data1:currentCorresondanceDate,
-				data2:status,
-				data3: id
-			}; //dontf
-		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
-		
-		
-		
-		
-		
+	var id = $$(getHtmlId('hiddenCorrId')).getValue();
+	var myObject8 = {
+	    token: '7836140170460568',
+	    id: '1',
+	    major: 3,
+	    minor: 1,
+	    data1: currentCorresondanceDate,
+	    data2: status,
+	    data3: id
+	}; //dontf
+	assessorUpdate = rpcDUpdate.setUpdate(myObject8);
 	};// @lock
 	function fillCorrespondance()
-		{
-			
-			var currentCorrespondenceActiveSelected = $$(getHtmlId('correspondanceActiveBox')).getValue();
-			var currentCorrespondanceViewVoided;
-			var currentCorrespondanceAll;
-			
-			if(currentCorrespondenceActiveSelected == 'Active')
-			{
-				currentCorrespondanceViewVoided = false;
-			}
-			else if (currentCorrespondenceActiveSelected == 'Voided')
-			{
-				currentCorrespondanceViewVoided = true;
-			}
-			else
-			{
-				currentCorrespondanceAll = true;
-			}
-		
-			if(currentCorrespondanceAll != null)
-			{
-				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:7,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.assessorCorespondance.sync();
-		
-			}
-			else
-			{
-				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.assessorCorespondance.sync();
-			}	
-		}
+{
+    var currentCorrespondenceActiveSelected = $$(getHtmlId('correspondanceActiveBox')).getValue();
+    var currentCorrespondanceViewVoided;
+    var currentCorrespondanceAll;
+    if (currentCorrespondenceActiveSelected == 'Active')
+    {
+        currentCorrespondanceViewVoided = false;
+    }
+    else if (currentCorrespondenceActiveSelected == 'Voided')
+    {
+        currentCorrespondanceViewVoided = true;
+    }
+    else
+    {
+        currentCorrespondanceAll = true;
+    }
+    if (currentCorrespondanceAll != null)
+    {
+        var myObject2 = {
+            token: '7836140170460568',
+            id: '1',
+            major: 3,
+            minor: 7,
+            data1: currentName
+        }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+        assessorCorespondance = rpcDSelects.getSelect(myObject2);
+        sources.assessorCorespondance.sync();
+    }
+    else
+    {
+        var myObject2 = {
+            token: '7836140170460568',
+            id: '1',
+            major: 3,
+            minor: 2,
+            data1: currentName,
+            data2: currentCorrespondanceViewVoided
+        }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+        assessorCorespondance = rpcDSelects.getSelect(myObject2);
+        sources.assessorCorespondance.sync();
+    }
+}
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
@@ -204,92 +271,33 @@ function constructor (id) {
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
-		debugger;
-		changed = false;
-		if($$(getHtmlId("assessorNameField")).sourceAtt.getValue() != currentName)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assessorFullNameField")).sourceAtt.getValue() != currentDisplay)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assessorPhoneField")).sourceAtt.getValue() != currentPhone)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorExtField")).sourceAtt.getValue() != currentExt)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorMobileField")).sourceAtt.getValue() != currentMobile)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorFaxField")).sourceAtt.getValue() != currentFax)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorAddressField")).sourceAtt.getValue() != currentAddress)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorStateField")).sourceAtt.getValue() != currentState)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorZipField")).sourceAtt.getValue() != currentZip)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorEmailField")).sourceAtt.getValue() != currentEmail)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assesorNotesField")).sourceAtt.getValue() != currentNotes)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("cityComboBox")).getValue() != currentCity)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("reportingComboBox")).getValue() != currentReportingMethod)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("assessorInactiveCheckBox")).getValue() == sources.specificAssessorList.InactiveAssessorInfo)
-		{
-			changed = true;
-		}
-		
-		//run update if needed
-		if(changed)
-		{
-			var myObject7 = 
-			{
-				token:'7836140170460568' ,id:'1',major:3,minor:0,
-				data1:$$(getHtmlId("assessorNameField")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("assessorPhoneField")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("assesorEmailField")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("assesorFaxField")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("assesorAddressField")).sourceAtt.getValue(),
-				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("assesorStateField")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("assesorZipField")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("assesorExtField")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("assesorMobileField")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("assesorNotesField")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("assessorFullNameField")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("reportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("assessorInactiveCheckBox")).getValue()
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		assessorUpdate = rpcDUpdate.setUpdate(myObject7);
-	 		bakAssessorInsert = rpcDInsert.setInsert(myObject7);
-	 		
-		}
-		
+		var myObject7 = {
+    token: '7836140170460568',
+    id: '1',
+    major: 3,
+    minor: 0,
+    data1: $$(getHtmlId("assessorNameField")).sourceAtt.getValue(),
+    data2: $$(getHtmlId("assessorPhoneField")).sourceAtt.getValue(),
+    data3: $$(getHtmlId("assesorEmailField")).sourceAtt.getValue(),
+    data4: $$(getHtmlId("assesorFaxField")).sourceAtt.getValue(),
+    data5: $$(getHtmlId("assesorAddressField")).sourceAtt.getValue(),
+    data6: $$(getHtmlId("cityComboBox")).getValue(),
+    data7: $$(getHtmlId("assesorStateField")).sourceAtt.getValue(),
+    data8: $$(getHtmlId("assesorZipField")).sourceAtt.getValue(),
+    data9: $$(getHtmlId("assesorExtField")).sourceAtt.getValue(),
+    data10: $$(getHtmlId("assesorMobileField")).sourceAtt.getValue(),
+    data11: $$(getHtmlId("assesorNotesField")).sourceAtt.getValue(),
+    data12: $$(getHtmlId("assessorFullNameField")).sourceAtt.getValue(),
+    data13: $$(getHtmlId("reportingComboBox")).getValue(),
+    data14: currentID,
+    data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
+}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+assessorUpdate = rpcDUpdate.setUpdate(myObject7);
+bakAssessorInsert = rpcDInsert.setInsert(myObject7);
+fillMainTable();
+var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	bakAssessorInfo = rpcDSelects.getSelect(myObject5);
+	 	sources.bakAssessorInfo.sync();
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
@@ -312,11 +320,11 @@ function constructor (id) {
 
 	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
-
+		debugger;
 		$$(getHtmlId('container9')).setSplitPosition(250);
 		var date = event.data.row.cells[0].value;
-		var assessor = event.data.row.cells[1].value;
-		var employee = event.data.row.cells[2].value;
+		var assessor = event.data.row.cells[2].value;
+		var employee = event.data.row.cells[1].value;
 		
 		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:6,data1:assessor, data2:date, data3:employee}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	specificBakAssessorList = rpcDSelects.getSelect(myObject6);
@@ -361,6 +369,7 @@ function constructor (id) {
 		var name = event.data.row.cells[0].value;
 		var city = event.data.row.cells[8].value;
 		var reportingMethod = event.data.row.cells[6].value;
+		var ids = event.data.row.cells[14].value;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('cityComboBox')).setValue(city);
@@ -391,85 +400,9 @@ function constructor (id) {
 		///////////////////////////////////////////////////////////get data
 		
 		currentName = name;
-		currentCity = city;
-		currentReportingMethod = reportingMethod;
-		currentPhone = sources.specificAssessorList.AssessorPhone;
-		currentExt = sources.specificAssessorList.AssessorPhoneExt;
-		currentEmail = sources.specificAssessorList.AssessorEmail;
-		currentFax = sources.specificAssessorList.AssessorFax;
-		currentMobile = sources.specificAssessorList.AssessorMobilePhone;
-		currentAddress = sources.specificAssessorList.AssessorAddress;
-		currentState = sources.specificAssessorList.AssessorState;
-		currentZip = sources.specificAssessorList.AssessorZipCode;
-		currentNotes = sources.specificAssessorList.AssessorNotes;
-		currentDisplay = sources.specificAssessorList.AssessorFullNameDisplay;
-		currentID = sources.specificAssessorList.AssessorInformationID;
 		
-		if(currentName == null)
-		{
-			currentName = "";
-			
-		}
-		if(currentCity == null || currentCity == "")
-		{
-			currentCity = "None";
-			
-		}
-		if(currentReportingMethod == null || currentReportingMethod == "")
-		{
-			currentReportingMethod = "None";
-			
-		}
-		if(currentPhone == null)
-		{
-			currentPhone = "";
-			
-		}
-		if(currentExt == null)
-		{
-			currentExt = "";
-			
-		}
-		if(currentEmail == null)
-		{
-			currentEmail = "";
-			
-		}
-		if(currentFax == null)
-		{
-			currentFax = "";
-			
-		}
-		if(currentMobile == null)
-		{
-			currentMobile = "";
-			
-		}
-		if(currentAddress == null)
-		{
-			currentAddress = "";
-			
-		}
-		if(currentState == null)
-		{
-			currentState = "";
-			
-		}
-		if(currentZip == null)
-		{
-			currentZip = "";
-			
-		}
-		if(currentNotes == null)
-		{
-			currentNotes = "";
-			
-		}
-		if(currentDisplay == null)
-		{
-			currentDisplay = "";
-			
-		}
+		currentID = ids;
+		
 		
 		fillCorrespondance();
 		
