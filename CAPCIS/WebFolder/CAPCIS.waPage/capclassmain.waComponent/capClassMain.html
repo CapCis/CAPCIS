@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><section data-group="[['tabView1','menuBar2','container2','container3']]" class="capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis waf-widget waf-document capcis capcis capcis capcis capcis capcis waf-theme capcis">
+﻿<!DOCTYPE html><section data-group="[['tabView1','menuBar2','container2','container3']]" class="capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis capcis waf-widget waf-document capcis capcis capcis capcis capcis capcis capcis capcis waf-theme capcis">
     <meta name="generator" content="Wakanda GUIDesigner"/>
     <meta name="WAF.catalog" content=""/>
     <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="array" data-source="myMURosterList" data-scope="global" data-lib="WAF" data-id="myMURosterList" data-dataType="string" data-autoLoad="true" data-attributes="ClientFullNameReverse:string,ClientLastName:string,ClientFirstName:string,ClientMiddleName:string,ClientNameSuffix:string,ClientRequirementsID:number,ClientStatus:string,Class:string,Program:string,ReportingStatus:string,EnrollementDate:date,StartDate:date,ReviewDate:date,DischargeDate:date,ClassesRequired:number,ClassesCredited:number,TwelveStepMeetingRequired:number,TwelveStepMeetingCredited:number,TwelveStepMeetingAttended:number,ClientInformation_CIID:string,AmtPd:number,TotalAmountPaid:number,AmtChrgd:number,TotalAmountCharged:number,CurrBal:number,CurrentBalence:number,AttendedCounter:number,CoalescedName:string,TwelveStepMeetingView:string,MUClass:string,MUDate:date,RecurringMU:number,Flag:number,Alert:number,Flag_TT_TestingTypeID:number,TestingFlagID:number,PC_PriceCategoryID:string,ItemPriceListID:string,ItemPrice:number,IsClass:number,ItemDescription:string,Item:string,ClassItemPrice:number,ClassItemDesc:string,ClassIsClass:string,ClassItem:string,ClassIPLID:number,FlagTestType:string,FK_MonitoringCategoryID:string" content="myMURosterList"/>
@@ -67,7 +67,36 @@
  	 	 	 	 	</div>
  	 	 	 	 		<div id="{id}classRosterRecieptCont" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-container waf-split-container waf-container-level-2 waf-level-2">
 	 	 	 	 	 	 	<button id="{id}button1" data-type="button" data-text="close" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-action="simple" class="waf-widget waf-button"></button>
- 	 	 	 	 	 	</div>
+ 	 	 	 	 	 		<div id="{id}image1" data-type="image" data-target="_blank" data-lib="WAF" data-label-position="left" data-label="" data-fit="0" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-image"></div>
+ 	 	 	 	 		<div id="{id}richText9" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">CID:</div>
+ 	 	 	 	 		<div id="{id}richText10" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">Client Full Name</div>
+ 	 	 	 	 	<div id="{id}richText11" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">CID</div>	<div id="{id}richText12" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">FLAGGED</div>
+ 	 	 	 	 		<div id="{id}richText13" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Vertical" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText">Flag Information</div>
+ 	 	 	 	 				<div id="{id}dataGrid4" data-type="dataGrid" data-selection-mode="single" data-resizable="true" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="Items for Purchase" data-header-hide="true" data-footer-text="item(s)" data-footer-hide="true" data-draggable="true" data-display-error="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-column="[]" class="waf-widget waf-dataGrid"></div>
+ 	 	 	 	 		<label id="{id}label1" for="{id}dataGrid4" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-datagrid">Items for Purchase</label>
+ 	 	 	 	 		<div id="{id}dataGrid5" data-type="dataGrid" data-selection-mode="single" data-resizable="true" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="Items in Cart" data-header-hide="true" data-footer-text="item(s)" data-footer-hide="true" data-draggable="true" data-display-error="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-column="[]" class="waf-widget waf-dataGrid"></div>
+ 	 	 	 	 		<label id="{id}label2" for="{id}dataGrid5" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-datagrid">Items in Cart</label>
+ 	 	 	 	 		<input type="text" id="{id}textField1" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Back Balance" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label3" for="{id}textField1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Back Balance</label>
+ 	 	 	 	 		<input type="text" id="{id}textField2" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Current Charges" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label4" for="{id}textField2" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Current Charges</label>
+ 	 	 	 	 		<input type="text" id="{id}textField3" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Amount Paid" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label7" for="{id}textField3" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Amount Paid</label>
+ 	 	 	 	 		<input type="text" id="{id}textField4" data-type="textField" data-readOnly="true" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="New Balance" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label8" for="{id}textField4" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">New Balance</label>
+ 	 	 	 	 		<input type="text" id="{id}textField5" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Label" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label9" for="{id}textField5" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Label</label>
+ 	 	 	 	 		<input type="text" id="{id}textField6" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Label" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label10" for="{id}textField6" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Label</label>
+ 	 	 	 	 		<input type="text" id="{id}textField7" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="top" data-label="Amount Paid" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label11" for="{id}textField7" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Amount Paid</label>
+ 	 	 	 	 		<input type="text" id="{id}textField8" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Label" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-textField"/>
+ 	 	 	 	 		<label id="{id}label12" for="{id}textField8" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textfield">Label</label>
+ 	 	 	 	 		<div id="{id}combobox1" data-type="combobox" data-limit="20" data-lib="WAF" data-label-position="top" data-label="Select Amount Paid" data-editable="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoDispatch="true" class="waf-widget waf-combobox"><select><option value="1" selected="selected">0.00</option><option value="2">5.00</option><option value="3">10.00</option><option value="4">15.00</option><option value="5">20.00</option><option value="6">25.00</option><option value="7">30.00</option><option value="8">35.00</option><option value="9">40.00</option><option value="10">45.00</option><option value="11">50.00</option><option value="12">55.00</option><option value="13">60.00</option><option value="14">65.00</option><option value="15">70.00</option><option value="16">75.00</option><option value="17">80.00</option><option value="18">85.00</option><option value="19">90.00</option><option value="20">95.00</option><option value="21">100.00</option></select></div>
+ 	 	 	 	 		<label id="{id}label13" for="{id}combobox1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-combobox">Select Amount Paid</label>
+ 	 	 	 	 		<div id="{id}combobox2" data-type="combobox" data-limit="20" data-lib="WAF" data-label-position="top" data-label="Payment Method" data-editable="true" data-constraint-right="false" data-constraint-bottom="false" data-autoDispatch="true" class="waf-widget waf-combobox"><select><option value="1" selected="selected">Cash</option><option value="2">Money Order</option></select></div>
+ 	 	 	 	 		<label id="{id}label14" for="{id}combobox2" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-combobox">Payment Method</label>
+ 	 	 	 	 	</div>
  	 	 	 	 	
  	 	 	 	</div>
  	 	 	 	</div>
@@ -80,4 +109,33 @@
  	 	 	 	 	 	</div>
  	 	 	 	 	</div>
  	 	 	 	</div>
- 	 		</div></section>
+ 	 		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</section>
