@@ -34,7 +34,7 @@ exports.setInsert = function setInsert(myObject)
 
 
 
-exports.setInsertRegistrationEmployeeInfo = function setInsert(myObject)
+exports.setInsertWReturn = function setInsert(myObject)
 {
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
@@ -51,8 +51,11 @@ exports.setInsertRegistrationEmployeeInfo = function setInsert(myObject)
 		var connection = serverUtil.getDBConnection();
 		var returnedID = connection.execute(insertStatement);
 		myObject.returnedID = returnedID;
-		myObject.minor = 5;
-		var myResults = ["suc"];
+		myObject.major = myObject.major2;
+		myObject.minor = myObject.minor2;
+		var insertStatement = dBInsertBuilder.buildQuery(myObject);
+		var myResults = connection.execute(insertStatement);	
+		myResults = ["suc"];
 		connection.close;
 	}
 	else
