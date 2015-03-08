@@ -12,11 +12,22 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		try
-		{
+		debugger;
+		try {
+			searchCrit = data.userData.searchCrit;
+			searchType = data.userData.searchType;
 			
-			var searchCrit = data.userData.searchCrit;
-			var searchType = data.userData.searchType;
+		} catch (e) {
+			
+		}
+			fillMainTable();
+		
+		function fillMainTable()
+		{
+			try
+		{
+			debugger;
+			
 			if(searchCrit == "" && searchType == 'Active')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:29,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -111,9 +122,7 @@ function constructor (id) {
 				});
 			
 		}
-		
-		
-		
+		}
 			
 			
 		 	
@@ -188,7 +197,7 @@ function constructor (id) {
 
 	dhsFullNameField.change = function dhsFullNameField_change (event)// @startlock
 	{// @endlock
-		alert("change");
+	
 	};// @lock
 
 	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
@@ -203,7 +212,8 @@ function constructor (id) {
 
 	dhsPreviousGrid.onRowClick = function dhsPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
-
+		debugger;
+		this.getSelectedRows();
 		$$(getHtmlId('container9')).setSplitPosition(250);
 		var date = event.data.row.cells[0].value;
 		var assessor = event.data.row.cells[1].value;
@@ -323,66 +333,7 @@ function constructor (id) {
 	{// @endlock
 		debugger;
 		changed = false;
-		if($$(getHtmlId("dhsNameField")).sourceAtt.getValue() != currentName)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsFullNameField")).sourceAtt.getValue() != currentDisplay)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsPhoneField")).sourceAtt.getValue() != currentPhone)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsExtField")).sourceAtt.getValue() != currentExt)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsMobileField")).sourceAtt.getValue() != currentMobile)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsFaxField")).sourceAtt.getValue() != currentFax)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsAddressField")).sourceAtt.getValue() != currentAddress)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsStateField")).sourceAtt.getValue() != currentState)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsZipField")).sourceAtt.getValue() != currentZip)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsEmailField")).sourceAtt.getValue() != currentEmail)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsNotesField")).sourceAtt.getValue() != currentNotes)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("cityComboBox")).getValue() != currentCity)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("reportingComboBox")).getValue() != currentReportingMethod)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("dhsInactiveCheckBox")).getValue() != sources.specificAssessorList.InactiveAssessorInfo)
-		{
-			changed = true;
-		}
 		
-		//run update if needed
-		if(changed)
-		{
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:7,
@@ -421,8 +372,20 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
+				
+				
+	 		fillMainTable();
 	 		
-		}
+			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:36,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 		
 	};// @lock
 
@@ -478,99 +441,9 @@ function constructor (id) {
 	 
 		///////////////////////////////////////////////////////////get data
 		
+		
 		currentName = name;
-		currentCity = city;
-		currentReportingMethod = reportingMethod;
-		currentPhone = sources.specificDhsList.DhsPhone;
-		currentExt = sources.specificDhsList.DhsPhoneExt;
-		currentEmail = sources.specificDhsList.DhsEmail;
-		currentFax = sources.specificDhsList.DhsFax;
-		currentMobile = sources.specificDhsList.DhsAlternatPhone;
-		currentAddress = sources.specificDhsList.DhsAddress;
-		currentState = sources.specificDhsList.DhsState;
-		currentZip = sources.specificDhsList.DhsZipCode;
-		currentNotes = sources.specificDhsList.DhsNotes;
 		currentID = ids;
-		currentInactiveInfo = sources.specificDhsList.InactiveDhsInfo;
-		currentDisplay = sources.specificDhsList.DhsFullNameDisplay;
-		
-		if(currentName == null)
-		{
-			currentName = "";
-			$$(getHtmlId("dhsNameField")).sourceAtt.setValue("");
-			
-		}
-		
-		if(currentCity == null || currentCity == "")
-		{
-			currentCity = "None";
-			
-		}
-		if(currentReportingMethod == null || currentReportingMethod == "")
-		{
-			currentReportingMethod = "None";
-			
-		}
-		if(currentPhone == null)
-		{
-			currentPhone = "";
-			$$(getHtmlId("dhsPhoneField")).sourceAtt.setValue("");
-			
-		}
-		if(currentExt == null)
-		{
-			currentExt = "";
-			$$(getHtmlId("dhsExtField")).sourceAtt.setValue("");
-			
-		}
-		if(currentEmail == null)
-		{
-			currentEmail = "";
-			$$(getHtmlId("dhsEmailField")).sourceAtt.setValue("");
-			
-		}
-		if(currentFax == null)
-		{
-			currentFax = "";
-			$$(getHtmlId("dhsFaxField")).sourceAtt.setValue("");
-			
-		}
-		if(currentMobile == null)
-		{
-			currentMobile = "";
-			$$(getHtmlId("dhsMobileField")).sourceAtt.setValue("");
-			
-		}
-		if(currentAddress == null)
-		{
-			currentAddress = "";
-			$$(getHtmlId("dhsAddressField")).sourceAtt.setValue("");
-			
-		}
-		if(currentState == null)
-		{
-			currentState = "";
-			$$(getHtmlId("dhsStateField")).sourceAtt.setValue("");
-			
-		}
-		if(currentZip == null)
-		{
-			currentZip = "";
-			$$(getHtmlId("dhsZipField")).sourceAtt.setValue("");
-			
-		}
-		if(currentNotes == null)
-		{
-			currentNotes = "";
-			$$(getHtmlId("dhsNotesField")).sourceAtt.setValue("");
-			
-		}
-		if(currentDisplay == null)
-		{
-			currentDisplay = "";
-			$$(getHtmlId("dhsFullNameField")).sourceAtt.setValue("");
-			
-		}
 
 		fillCorrespondance();
 		
