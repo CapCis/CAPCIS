@@ -12,7 +12,8 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		debugger;
+		
+		
 		try {
 			searchCrit = data.userData.searchCrit;
 			searchType = data.userData.searchType;
@@ -213,11 +214,10 @@ function constructor (id) {
 	{// @endlock
 
 		$$(getHtmlId('container9')).setSplitPosition(250);
-		var date = event.data.row.cells[0].value;
-		var assessor = event.data.row.cells[1].value;
-		var employee = event.data.row.cells[2].value;
+		var id = sources.bakCourtJurisdictionInfo.BAKCourtJurisdictionID;
 		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:28,data1:assessor, data2:date, data3:employee}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		
+		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:28,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -414,10 +414,10 @@ function constructor (id) {
 		
 		
 		
-		var name = event.data.row.cells[0].value;
-		var city = event.data.row.cells[5].value;
-		var reportingMethod = event.data.row.cells[8].value;
-		var ids = event.data.row.cells[11].value;
+		var name = sources.courtJurisdictionList.CourtJurisdiction;
+		var city = sources.courtJurisdictionList.CourtJurisdictionCity;
+		var reportingMethod = sources.courtJurisdictionList.CourtJurisdictionPreferredReportingMethod;
+		var ids = sources.courtJurisdictionList.CourtJurisdictionID;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('cityComboBox')).setValue(city);

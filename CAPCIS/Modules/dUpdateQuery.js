@@ -46,7 +46,15 @@
  						DhsPreferredReportingMethod = "'+myObject.data13+'", InactiveDhsInfo = '+myObject.data15+' \
 						WHERE DhsInformationID="'+myObject.data14+'";';
 						break;
-				
+				case 8: answer = 'UPDATE capcis.judgecorrespondence SET VoidedJudgeCorrespondence = '+myObject.data2+' WHERE JudgeCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 9: answer =  'UPDATE capcis.judges SET Judge = "'+myObject.data1+'", JudgeOfficePhone = "'+myObject.data2+'", \
+				 		JudgeEmail="'+myObject.data3+'", JudgeFax = "'+myObject.data4+'", JudgeAddress ="'+myObject.data5+'", JudgeCity = "'+myObject.data6+'", \
+ 						JudgeState = "'+myObject.data7+'", JudgeZipCode = "'+myObject.data8+'", JudgeOfficePhoneExt= "'+myObject.data9+'", JudgeJurisdiction= "'+myObject.data16+'", \
+ 						JudgeMobilePhone = "'+myObject.data10+'", JudgeNotes = "'+myObject.data11+'", JudgeFullNameDisplay = "'+myObject.data12+'",\
+ 						JPreferredReportingMethod = "'+myObject.data13+'", InactiveJudge = '+myObject.data15+' \
+						WHERE JudgesID="'+myObject.data14+'";';
+						break;
 				default: answer = null;	
 						break;
 			}

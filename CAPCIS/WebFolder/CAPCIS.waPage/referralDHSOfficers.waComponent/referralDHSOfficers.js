@@ -12,7 +12,7 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		debugger;
+		
 		try {
 			searchCrit = data.userData.searchCrit;
 			searchType = data.userData.searchType;
@@ -26,7 +26,7 @@ function constructor (id) {
 		{
 			try
 		{
-			debugger;
+			
 			
 			if(searchCrit == "" && searchType == 'Active')
 			{
@@ -212,14 +212,14 @@ function constructor (id) {
 
 	dhsPreviousGrid.onRowClick = function dhsPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
-		this.getSelectedRows();
-		$$(getHtmlId('container9')).setSplitPosition(250);
-		var date = event.data.row.cells[0].value;
-		var assessor = event.data.row.cells[1].value;
-		var employee = event.data.row.cells[2].value;
 		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:37,data1:assessor, data2:date, data3:employee}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		
+		$$(getHtmlId('container9')).setSplitPosition(250);
+		var id = sources.bakDhsInfo.BAKDhsInformationID;
+		
+	
+		
+		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:37,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -241,7 +241,7 @@ function constructor (id) {
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
 		var id = sources.dhsCorespondance.DhsCorrespondenceID;
 		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
@@ -331,7 +331,7 @@ function constructor (id) {
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+
 		changed = false;
 		
 			var myObject7 = 
@@ -392,7 +392,7 @@ function constructor (id) {
 	dhsFullList.onRowClick = function dhsFullList_onRowClick (event)// @startlock
 	{// @endlock
 		
-		debugger;
+		
 		
 		
 		
@@ -403,10 +403,10 @@ function constructor (id) {
 		
 		
 		
-		var name = event.data.row.cells[0].value;
-		var city = event.data.row.cells[8].value;
-		var reportingMethod = event.data.row.cells[6].value;
-		var ids = event.data.row.cells[13].value;
+		var name = sources.dhsList.DhsName;
+		var city = sources.dhsList.DhsCity;
+		var reportingMethod = sources.dhsList.DhsPreferredReportingMethod;
+		var ids = sources.dhsList.DhsInformationID;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('cityComboBox')).setValue(city);
