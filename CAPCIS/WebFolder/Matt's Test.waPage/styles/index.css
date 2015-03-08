@@ -3,3 +3,79 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#matrix1 .waf-widget.waf-clone-richText5 {
+	 position: absolute;
+	 
+}
+
+#richText5 {
+	 z-index: 3;
+	 width: 375px;
+	 height: 32px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#matrix1 .waf-widget.waf-clone-richText4 {
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 text-align: right;
+	 
+}
+
+#richText4 {
+	 z-index: 2;
+	 width: 150px;
+	 height: 18px;
+	 top: 0px;
+	 left: 225px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 text-align: right;
+	 
+}
+
+#matrix1 .waf-widget.waf-clone-richText3 {
+	 position: absolute;
+	 color: rgb(191, 0, 0);
+	 
+}
+
+#richText3 {
+	 z-index: 1;
+	 width: 200px;
+	 height: 18px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 color: rgb(191, 0, 0);
+	 
+}
+
+#container1 {
+	 z-index: 1;
+	 width: 375px;
+	 height: 50px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#matrix1 {
+	 z-index: 1;
+	 width: 415px;
+	 height: 60px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
