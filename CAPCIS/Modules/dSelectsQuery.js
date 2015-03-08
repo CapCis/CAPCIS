@@ -141,7 +141,7 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 4: answer = 'SELECT ReportingMethod FROM capcis.reportingmethods';
 						break;
-				case 5: answer = 'SELECT fxuseraccounts.FullName, bakassessorinformation.CreatedDateTime, bakassessorinformation.AssessorName FROM capcis.bakassessorinformation \
+				case 5: answer = 'SELECT * FROM capcis.bakassessorinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakassessorinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_assessorinformation_AssessorInformationID = "'+myObject.data1+'" \
 								ORDER BY 2 DESC';
@@ -216,7 +216,7 @@ exports.buildQuery = function buildQuery(myObject)
 								WHERE attorneyinformation.AttorneyName = "'+myObject.data1+'" AND attorneycorrespondence.VoidedAttorneyCorrespondence = '+myObject.data2+' \
 								ORDER BY 1 DESC';
 						break;
-				case 18: answer = 'SELECT fxuseraccounts.FullName, bakattorneyinformation.CreatedDateTime, bakattorneyinformation.AttorneyName FROM capcis.bakattorneyinformation \
+				case 18: answer = 'SELECT * FROM capcis.bakattorneyinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakattorneyinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_attorneyinformation_AttorneyInformationID = "'+myObject.data1+'" \
 								ORDER BY 2 DESC';
@@ -267,7 +267,7 @@ exports.buildQuery = function buildQuery(myObject)
 								WHERE courtjurisdiction.CourtJurisdiction = "'+myObject.data1+'" AND courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence = '+myObject.data2+' \
 								ORDER BY 1 DESC'
 						break;
-				case 27: answer = 'SELECT fxuseraccounts.FullName, bakcourtjurisdiction.CreatedDateTime, bakcourtjurisdiction.CourtJurisdiction FROM capcis.bakcourtjurisdiction \
+				case 27: answer = 'SELECT * FROM capcis.bakcourtjurisdiction \
 								LEFT JOIN capcis.fxuseraccounts on bakcourtjurisdiction.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_courtjurisdiction_CourtJurisdictionID = "'+myObject.data1+'" \
 								ORDER BY 2 DESC';
