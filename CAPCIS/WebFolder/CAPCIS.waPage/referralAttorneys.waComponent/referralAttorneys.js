@@ -46,46 +46,97 @@ function constructor (id) {
 			if(searchCrit == "" && searchType == 'Active')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+		 		
+		 		
 			}
 			else if(searchCrit == '' && searchType == 'Inactive')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if(searchCrit == '' && searchType == 'All')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:12}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if (searchCrit != '' && searchType == 'Active')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:14, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if (searchCrit != '' && searchType == 'Inactive')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:14, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if (searchCrit != '' && searchType == 'All')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:13, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			
 		}
 		catch(err)
 		{
 			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 	attorneyList = rpcDSelects.getSelect(myObject);
-		 	sources.attorneyList.sync();
+		 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 		}
 	}
 	 	
@@ -113,15 +164,30 @@ function constructor (id) {
 			if(currentCorrespondanceAll != null)
 			{
 				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:16,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			attorneyCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.attorneyCorespondance.sync();
+	 			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						corrListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+	 			
 		
 			}
 			else
 			{
 				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:17,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			attorneyCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.attorneyCorespondance.sync();
+	 			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						corrListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
 			}	
 		}
 	// @region namespaceDeclaration// @startlock
@@ -168,13 +234,40 @@ function constructor (id) {
 				
 				
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		assessorUpdate = rpcDUpdate.setUpdate(myObject7);
-	 		bakAssessorInsert = rpcDInsert.setInsert(myObject7);
+	 		
+	 		rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+				
+	 		rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
 	 		
 		fillMainTable();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
 	 	sources.bakAttorneyInfo.sync();
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 	};// @lock
 
 	button15.click = function button15_click (event)// @startlock
@@ -196,13 +289,20 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);
-		var date = event.data.row.cells[0].value;
-		var assessor = event.data.row.cells[1].value;
-		var employee = event.data.row.cells[2].value;
+		var id = sources.bakAttorneyInfo.BAKAttorneyInformationID;
 		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:19,data1:assessor, data2:date, data3:employee}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	specificBakAttorneyList = rpcDSelects.getSelect(myObject6);
-	 	sources.specificBakAttorneyList.sync();
+		
+		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:19,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						specificBakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject6]
+				});
 	};// @lock
 
 	button16.click = function button16_click (event)// @startlock
@@ -210,8 +310,16 @@ function constructor (id) {
 		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
 		//var name = $$(getHtmlId('assessorNameField')).getValue();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
-	 	sources.bakAttorneyInfo.sync();
+	 	
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 	};// @lock
 
 	attVoidedCorrespondanceCheck.change = function attVoidedCorrespondanceCheck_change (event)// @startlock
@@ -225,7 +333,15 @@ function constructor (id) {
 				data2:status,
 				data3: id
 			}; //dontf
-		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
+		rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
 		
 		
 	};// @lock
@@ -239,7 +355,15 @@ function constructor (id) {
 				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
 				data2:currentID
 			}; //dontf
-			var update = rpcDInsert.setInsert(myObject8);
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
 			fillCorrespondance();
 			x.setValue("");
 			/*
@@ -280,10 +404,10 @@ function constructor (id) {
 		
 		
 		
-		var name = event.data.row.cells[0].value;
-		var city = event.data.row.cells[7].value;
-		var reportingMethod = event.data.row.cells[13].value;
-		var ids = event.data.row.cells[15].value;
+		var name = sources.attorneyList.AttorneyName;
+		var city = sources.attorneyList.AttorneyCity;
+		var reportingMethod = sources.attorneyList.AttPreferredReportingMethod;
+		var ids = sources.attorneyList.AttorneyInformationID;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('attCityComboBox')).setValue(city);
@@ -305,9 +429,17 @@ function constructor (id) {
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:15,data1:name}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	specificAttorneyList = rpcDSelects.getSelect(myObject);
-	 	sources.specificAttorneyList.sync();
+		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:15,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						specificListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 		
 		
 		
@@ -319,6 +451,83 @@ function constructor (id) {
 		
 		fillCorrespondance();
 	};// @lock
+	
+	function mainListSuccess(result)
+	{
+		
+		attorneyList = result;
+		sources.attorneyList.sync();
+	}
+	function mainListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function specificListSuccess(result)
+	{
+		
+		specificAttorneyList = result;
+		sources.specificAttorneyList.sync();
+	}
+	function specificListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function corrListSuccess(result)
+	{
+		
+		attorneyCorespondance = result;
+		sources.attorneyCorespondance.sync();
+	}
+	function corrListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	
+	function bakListSuccess(result)
+	{
+		
+		bakAttorneyInfo = result;
+		sources.bakAttorneyInfo.sync();
+	}
+	function bakListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function specificBakListSuccess(result)
+	{
+		
+		specificBakAttorneyList = result;
+		sources.specificBakAttorneyList.sync();
+	}
+	function specificBakListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
 
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");

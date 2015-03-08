@@ -69,7 +69,16 @@ exports.buildQuery = function buildQuery(myObject)
 						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
 						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
 						break;
-				
+				case 8: answer = 'INSERT into capcis.judgecorrespondence(JudgeCorrespondence, FK_useraccounts_UserAccountsID, \
+				 				FK_JudgeInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
+						break;
+				case 9: answer ='INSERT INTO capcis.bakjudges (JudgeName,JudgeOfficePhone,JudgeEmail,JudgeFax,JudgeAddress, \
+						JudgeCity,JudgeState,JudgeZipCode,FK_judges_JudgesID,JudgeOfficePhoneExt,JudgeMobilePhone \
+						,JudgeNotes,JudgeFullNameDisplay,JPreferredReportingMethod,OLDJudgeJurisdiction,InactiveJudge,FK_useraccounts_UserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
 				default: answer = null;
 			}
 			break;
