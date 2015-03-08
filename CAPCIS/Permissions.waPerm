@@ -6,4 +6,5 @@
 	<allow type="module" resource="rpcDUpdate" action="executeFromClient"/>
 	<allow type="module" resource="rpcDInsert" action="executeFromClient"/>
 	<allow type="module" resource="rpcBlobUploadUtilities" action="executeFromClient"/>
+	<allow type="module" resource="rpcGetReports" action="executeFromClient"/>
 </permissions>
