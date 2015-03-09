@@ -16,7 +16,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
 		debugger;
-		var myResponse = rpcGetReports.getReport()
+		var myResponse = rpcGetReports.getReport();
+		//var myAwsomeURL = URL.createObjectURL(myResponse);
+		URL.createObjectURL(myResponse);
+		debugger;
 	};// @lock
 
 	button12.click = function button12_click (event)// @startlock
