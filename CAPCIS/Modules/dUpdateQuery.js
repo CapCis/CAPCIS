@@ -55,6 +55,15 @@
  						JPreferredReportingMethod = "'+myObject.data13+'", InactiveJudge = '+myObject.data15+' \
 						WHERE JudgesID="'+myObject.data14+'";';
 						break;
+				case 10: answer = 'UPDATE capcis.othermonitorscorrespondence SET VoidedOtherMonitorsCorrespondence = '+myObject.data2+' WHERE OtherMonitorsCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 11: answer =  'UPDATE capcis.othermonitors SET OtherMonitors = "'+myObject.data1+'", OtherMonitorsOfficePhone = "'+myObject.data2+'", \
+				 		OtherMonitorsEmail="'+myObject.data3+'", OtherMonitorsFax = "'+myObject.data4+'", OtherMonitorsAddress ="'+myObject.data5+'", OtherMonitorsCity = "'+myObject.data6+'", \
+ 						OtherMonitorsState = "'+myObject.data7+'", OtherMonitorsZipCode = "'+myObject.data8+'", OtherMonitorsOfficePhoneExt= "'+myObject.data9+'", OtherMonitorsJurisdiction= "'+myObject.data16+'", \
+ 						OtherMonitorsMobilePhone = "'+myObject.data10+'", OtherMonitorsNotes = "'+myObject.data11+'", OtherMonitorsFullNameDisplay = "'+myObject.data12+'",\
+ 						OMPreferredReportingMethod = "'+myObject.data13+'", InactiveOtherMonitors = '+myObject.data15+' \
+						WHERE OtherMonitorsID="'+myObject.data14+'";';
+						break;
 				default: answer = null;	
 						break;
 			}

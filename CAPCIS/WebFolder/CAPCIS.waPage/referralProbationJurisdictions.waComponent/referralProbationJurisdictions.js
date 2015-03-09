@@ -31,18 +31,18 @@ function constructor (id) {
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(625);
+		$$(getHtmlId('ProbationJurisdictionPrevVersionCont')).setSplitPosition(625);
 	};// @lock
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(900);
+		$$(getHtmlId('ProbationJurisdictionSpecificInfoCont')).setSplitPosition(900);
 	};// @lock
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
 		
-		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);
+		$$(getHtmlId('ProbationJurisdictionPrevVersionCont')).setSplitPosition(250);
 		var date = event.data.row.cells[0].value;
 		var assessor = event.data.row.cells[1].value;
 		var employee = event.data.row.cells[2].value;
@@ -54,7 +54,7 @@ function constructor (id) {
 
 	pjVoidedCorrespondanceCheck.change = function pjVoidedCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
-		var status = $$(getHtmlId("attVoidedCorrespondanceCheck")).getValue();
+		var status = $$(getHtmlId("pjVoidedCorrespondanceCheck")).getValue();
 		var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
 		var myObject8 = 
 			{
@@ -71,13 +71,13 @@ function constructor (id) {
 	pjCorCloseButton.click = function pjCorCloseButton_click (event)// @startlock
 	{// @endlock
 		fillCorrespondance();
-		$$(getHtmlId('attCorrCont')).setSplitPosition(1290);
+		$$(getHtmlId('ProbationJurisdictionCorrCont')).setSplitPosition(1290);
 	};// @lock
 
 	pjCorrespondanceGrid.onRowClick = function pjCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('attCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(900);
+		$$(getHtmlId('ProbationJurisdictionCorrCont')).setSplitPosition(420);
+		$$(getHtmlId('ProbationJurisdictionSpecificInfoCont')).setSplitPosition(900);
 		currentCorresondanceDate = event.data.row.cells[0].value;
 	};// @lock
 
@@ -88,11 +88,11 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var x = $$(getHtmlId("attNewCoresspondenceField"));
+		var x = $$(getHtmlId("pjNewCoresspondenceField"));
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:2,
-				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
+				data1:$$(getHtmlId("pjNewCoresspondenceField")).getValue(),
 				data2:currentID
 			}; //dontf
 			var update = rpcDInsert.setInsert(myObject8);
@@ -107,7 +107,7 @@ function constructor (id) {
 
 	button16.click = function button16_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
+		$$(getHtmlId('ProbationJurisdictionSpecificInfoCont')).setSplitPosition(420);
 		//var name = $$(getHtmlId('assessorNameField')).getValue();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
@@ -116,7 +116,7 @@ function constructor (id) {
 
 	button15.click = function button15_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(1290);
+		$$(getHtmlId('mainProbationJurisdictionCont')).setSplitPosition(1290);
 	};// @lock
 
 	button14.click = function button14_click (event)// @startlock
@@ -126,23 +126,23 @@ function constructor (id) {
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:3,
-				data1:$$(getHtmlId("attName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("attPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("attEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("attFax")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("attAddress")).sourceAtt.getValue(),
-				data6:$$(getHtmlId("attCityComboBox")).getValue(),
-				data7:$$(getHtmlId("attState")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("attZip")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("attExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("attAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("attNotes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("attFullName")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
+				data1:$$(getHtmlId("pjName")).sourceAtt.getValue(),
+				data2:$$(getHtmlId("pjPhone")).sourceAtt.getValue(),
+				data3:$$(getHtmlId("pjEmail")).sourceAtt.getValue(),
+				data4:$$(getHtmlId("pjFax")).sourceAtt.getValue(),
+				data5:$$(getHtmlId("pjAddress")).sourceAtt.getValue(),
+				data6:$$(getHtmlId("pjCityComboBox")).getValue(),
+				data7:$$(getHtmlId("pjState")).sourceAtt.getValue(),
+				data8:$$(getHtmlId("pjZip")).sourceAtt.getValue(),
+				data9:$$(getHtmlId("pjExt")).sourceAtt.getValue(),
+				data10:$$(getHtmlId("pjAdditional")).sourceAtt.getValue(),
+				data11:$$(getHtmlId("pjNotes")).sourceAtt.getValue(),
+				data12:$$(getHtmlId("pjFullName")).sourceAtt.getValue(),
+				data13:$$(getHtmlId("pjReportingComboBox")).getValue(),
 				data14:currentID,
-				data15:$$(getHtmlId("attInactive")).getValue(),
-				data16:$$(getHtmlId("attPublicDef")).getValue(),
-				data17:$$(getHtmlId("attStaffInfo")).getValue()
+				data15:$$(getHtmlId("pjInactive")).getValue(),
+				data16:$$(getHtmlId("pjPublicDef")).getValue(),
+				data17:$$(getHtmlId("pjStaffInfo")).getValue()
 				
 				
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -161,10 +161,10 @@ function constructor (id) {
 		
 		
 		
-		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(400);
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(2000);
-	 	$$(getHtmlId('attPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('attCorrCont')).setSplitPosition(1500);
+		$$(getHtmlId('mainProbationJurisdictionCont')).setSplitPosition(400);
+		$$(getHtmlId('ProbationJurisdictionSpecificInfoCont')).setSplitPosition(2000);
+	 	$$(getHtmlId('ProbationJurisdictionPrevVersionCont')).setSplitPosition(1000);
+	 	$$(getHtmlId('ProbationJurisdictionCorrCont')).setSplitPosition(1500);
 		
 		
 		
@@ -174,11 +174,11 @@ function constructor (id) {
 		var ids = event.data.row.cells[15].value;
 		if(city != "" && city != null)
 		{
-			$$(getHtmlId('attCityComboBox')).setValue(city);
+			$$(getHtmlId('pjCityComboBox')).setValue(city);
 		}
 		else
 		{
-			$$(getHtmlId('attCityComboBox')).setValue("None");
+			$$(getHtmlId('pjCityComboBox')).setValue("None");
 		}
 		
 		if(reportingMethod != "" && reportingMethod != null)

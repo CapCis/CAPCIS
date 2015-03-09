@@ -379,6 +379,54 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.fxuseraccounts on bakjudges.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE BAKJudgesID = '+myObject.data1;
 						break;
+					//////////////////////////////////////////////////////////////////End Judges//////////////////////////////////////////////
+					/////////////////////////////////////////////////////////////////Start Other Monitors/////////////////////////////////////
+				case 47 : answer = 'SELECT * FROM capcis.othermonitors where InactiveOtherMonitors = '+myObject.data1;
+						break;
+				case 48 : answer = 'SELECT * FROM capcis.othermonitors';
+						break;
+				case 49 : answer = "SELECT * FROM capcis.othermonitors where othermonitors.OtherMonitors LIKE '%"+myObject.data1+"%' or othermonitors.OtherMonitorsOfficePhone LIKE '%"+myObject.data1+"%' \
+								OR othermonitors.OtherMonitorsEmail LIKE  '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsFax LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsAddress LIKE '%"+myObject.data1+"%' \
+								OR othermonitors.OtherMonitorsCity LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsState LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsZipCode LIKE '%"+myObject.data1+"%'  \
+								OR othermonitors.OtherMonitorsID LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsOfficePhoneExt LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsJurisdiction LIKE '%"+myObject.data1+"%' \
+								OR othermonitors.OtherMonitorsMobilePhone LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsNotes LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsFullNameDisplay LIKE '%"+myObject.data1+"%'\
+								OR othermonitors.OMPreferredReportingMethod LIKE '%"+myObject.data1+"%'";
+						break;
+				case 50 : answer = "SELECT * FROM capcis.othermonitors where (othermonitors.OtherMonitors LIKE '%"+myObject.data1+"%' or othermonitors.OtherMonitorsOfficePhone LIKE '%"+myObject.data1+"%' \
+								OR othermonitors.OtherMonitorsEmail LIKE  '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsFax LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsAddress LIKE '%"+myObject.data1+"%' \
+								OR othermonitors.OtherMonitorsCity LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsState LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsZipCode LIKE '%"+myObject.data1+"%'  \
+								OR othermonitors.OtherMonitorsID LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsOfficePhoneExt LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsJurisdiction LIKE '%"+myObject.data1+"%' \
+								OR othermonitors.OtherMonitorsMobilePhone LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsNotes LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsFullNameDisplay LIKE '%"+myObject.data1+"%'\
+								OR othermonitors.OMPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveOtherMonitors = "+myObject.data2;
+						break;	
+				case 51 : answer = 'SELECT DATE_FORMAT(othermonitorscorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, othermonitorscorrespondence.OtherMonitorsCorrespondence, \
+								fxuseraccounts.FullName, othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence, othermonitorscorrespondence.OtherMonitorsCorrespondenceID \
+								FROM capcis.othermonitorscorrespondence \
+								LEFT JOIN capcis.othermonitors on othermonitorscorrespondence.FK_OtherMonitorsInformationID = OtherMonitorsID \
+								LEFT JOIN capcis.fxuseraccounts on othermonitorscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE othermonitors.OtherMonitors = "'+myObject.data1+'" \
+								ORDER BY 1 DESC';
+						break;
+				case 52 : answer = "SELECT DATE_FORMAT(othermonitorscorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, othermonitorscorrespondence.OtherMonitorsCorrespondence, \
+								fxuseraccounts.FullName, othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence, othermonitorscorrespondence.OtherMonitorsCorrespondenceID \
+								FROM capcis.othermonitorscorrespondence \
+								LEFT JOIN capcis.othermonitors on othermonitorscorrespondence.FK_OtherMonitorsInformationID = OtherMonitorsID \
+								LEFT JOIN capcis.fxuseraccounts on othermonitorscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE othermonitors.OtherMonitors = '"+myObject.data1+"' AND othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence = "+myObject.data2+" \
+								ORDER BY 1 DESC"
+						break;
+				case 53:  answer = 'SELECT * FROM capcis.othermonitors where OtherMonitorsID = '+myObject.data1;
+						break;
+				case 54: answer = 'SELECT *,DATE_FORMAT( bakothermonitors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakothermonitors \
+								LEFT JOIN capcis.fxuseraccounts on bakothermonitors.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE FK_othermonitors_OtherMonitorsID = "'+myObject.data1+'" \
+								ORDER BY 1 DESC';
+						break;
+				case 55: answer = 'SELECT *,DATE_FORMAT( bakothermonitors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime \
+								FROM capcis.bakothermonitors  \
+								LEFT JOIN capcis.fxuseraccounts on bakothermonitors.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE BAKOtherMonitorsID = '+myObject.data1;
+						break;
 				default:answer = null;
 						break;
 			}

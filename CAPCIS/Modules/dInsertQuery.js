@@ -81,6 +81,16 @@ exports.buildQuery = function buildQuery(myObject)
 						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
 						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
 						break;
+				case 10: answer = 'INSERT into capcis.othermonitorscorrespondence(OtherMonitorsCorrespondence, FK_useraccounts_UserAccountsID, \
+				 				FK_OtherMonitorsInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
+						break;
+				case 11: answer ='INSERT INTO capcis.bakothermonitors (OtherMonitors,OtherMonitorsOfficePhone,OtherMonitorsEmail,OtherMonitorsFax,OtherMonitorsAddress, \
+						OtherMonitorsCity,OtherMonitorsState,OtherMonitorsZipCode,FK_othermonitors_OtherMonitorsID,OtherMonitorsOfficePhoneExt,OtherMonitorsMobilePhone \
+						,OtherMonitorsNotes,OtherMonitorsFullNameDisplay,OMPreferredReportingMethod,OtherMonitorsJurisdiction,InactiveOtherMonitors,FK_useraccounts_UserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
 				default: answer = null;
 			}
 			break;
