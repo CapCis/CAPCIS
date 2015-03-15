@@ -968,3 +968,31 @@ border-top-right-radius: 25px;
 border-top-left-radius: 4px;
 }
 
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar .datepickerInMonth span {
+	color: rgb(0, 27, 90);
+}
+
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar .datepickerWeek span {
+	color: rgb(255, 127, 0);
+}
+
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar .datepickerHeader span {
+	color: rgb(0, 27, 90);
+}
+
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar .datepickerDoW span {
+	color: rgb(255, 127, 0);
+}
+
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar .datepickerNotInMonth span {
+	color: rgb(127, 127, 127);
+}
+
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar .datepickerSelected {
+	background-color: rgba(240, 240, 255, 0.898438);
+}
+
+.waf-theme.default .waf-calendar.waf-role-CAPCISCalendar {
+	background-color: rgb(170, 212, 255);
+}
+
