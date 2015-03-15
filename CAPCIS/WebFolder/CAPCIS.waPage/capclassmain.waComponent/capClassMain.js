@@ -24,7 +24,22 @@ function constructor (id) {
 	 	sources.myPrograms.sync();
 	 	
 	 	
+	 	var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:7}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						recieptPurposeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+	 	
 	// @region namespaceDeclaration// @startlock
+	var comboBoxTextInput = {};	// @textField
+	var comboboxGrid = {};	// @dataGrid
+	var comboboxButton = {};	// @button
 	var button2 = {};	// @button
 	var muClassRosterDG = {};	// @dataGrid
 	var button1 = {};	// @button
@@ -37,6 +52,58 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	comboBoxTextInput.keyup = function comboBoxTextInput_keyup (event)// @startlock
+	{// @endlock
+		
+		if(event.keyCode ===13)
+		{
+			
+			$$($comp.id+'_comboBoxTextInput').setValue(sources.receiptPurpose.ReceiptPurpose);
+			var grid = document.getElementById($comp.id+'_comboboxGrid');
+			grid.style.display = 'none';
+		}
+		else
+		{
+			receiptPurpose=tempStore;
+			sources.receiptPurpose.sync();
+
+			var grid = document.getElementById($comp.id+'_comboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_comboBoxTextInput').getValue();//textInput.value;
+			sources.receiptPurpose.query('ReceiptPurpose = :1 order by ReceiptPurpose', { params: [currentInput + "*"]});
+		}
+		
+		
+		
+		
+	};// @lock
+
+	comboboxGrid.onRowClick = function comboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		debugger;
+		var grid = document.getElementById(getHtmlId('comboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('comboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('comboBoxTextInput')).setValue(recValue);
+	};// @lock
+
+	comboboxButton.click = function comboboxButton_click (event)// @startlock
+	{// @endlock
+		
+		var grid = document.getElementById(getHtmlId('comboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+		
+	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
@@ -442,8 +509,27 @@ function constructor (id) {
 		}
 		
 	};
+	
+	function recieptPurposeSuccess(result)
+	{
+		receiptPurpose= result;
+		tempStore= result;
+		sources.receiptPurpose.sync();
+	}
+	function recieptPurposeError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_comboBoxTextInput", "keyup", comboBoxTextInput.keyup, "WAF");
+	WAF.addListener(this.id + "_comboboxGrid", "onRowClick", comboboxGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_comboboxButton", "click", comboboxButton.click, "WAF");
 	WAF.addListener(this.id + "_muClassRosterDG", "onRowDraw", muClassRosterDG.onRowDraw, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowDraw", dataGrid1.onRowDraw, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");

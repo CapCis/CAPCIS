@@ -118,6 +118,11 @@ exports.buildQuery = function buildQuery(myObject)
 								HAVING (MUClass = "'+myObject.data1 +'" AND (activeschedulemuclassesq.MUDate between "'+myObject.weekStartDate+'" and "'+myObject.weekEndDate+'") AND RecurringMU != 1 AND activeclientrequirementsq.FK_MonitoringCategoryID =1) OR \
 								(MUClass = "'+myObject.data1 +'" AND RecurringMU =1 AND activeclientrequirementsq.FK_MonitoringCategoryID=1) \
 								ORDER BY ClientFullNameReverse ASC';
+						break;
+						
+				case 7: answer = 'SELECT ReceiptPurpose FROM capcis.receiptpurpose';
+						break;
+				case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
 						break;		
 				default:
 						answer = null;

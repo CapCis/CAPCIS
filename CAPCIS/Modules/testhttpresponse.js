@@ -1,9 +1,9 @@
 ﻿function getMyReport (request, response) {        
-	//debugger;
+	debugger;
 	var xhr, headers, result, resultObj, URLText, URLJson;
 	URLText = "http://localhost:8888/jasperserver/rest_v2/reports/reports/dickReport2.pdf?whereFilter=9"; // connect to an HTTP server
  	var headersObj = {};
-   
+    
  	xhr = new XMLHttpRequest(); // instanciate the xhr object
        
  	xhr.onreadystatechange = function() 
@@ -21,7 +21,7 @@
    	  	var result = this.response; 	  	
      	
  	};
- 	    
+ 	  
  	xhr.open('GET', URLText); // to connect to a Web site / xhr.open('GET', URLJson) to send a REST query to a Wakanda server
     
     var myString = 'jasperadmin:jasperadmin';
@@ -30,9 +30,8 @@
     authstr = 'Basic ' + myCreds;//'jasperadmin:jasperadmin'.toString('base64'); 	
     xhr.setRequestHeader('Authorization',authstr);
     xhr.responseType = 'blob'; //'blob';
- 	xhr.send(); // send the request	
-    debugger;
-    response.headers['content-disposition'] = 'attachement; filename=testPDF.pdf';
+ 	xhr.send(); // send the request	    
+    //response.headers['content-disposition'] = 'attachement; filename=testPDF.pdf';   //Forces Browser Download
     response.contentType = "application/pdf";  //response to send back to the client from this function
     return(xhr.response);
     
