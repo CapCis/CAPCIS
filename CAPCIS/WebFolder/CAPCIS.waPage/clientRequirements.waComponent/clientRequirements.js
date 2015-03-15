@@ -7,7 +7,7 @@ function constructor (id) {
 
 	// @region beginComponentDeclaration// @startlock
 	var $comp = this;
-	this.name = 'clientInformation';
+	this.name = 'clientRequirements';
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
