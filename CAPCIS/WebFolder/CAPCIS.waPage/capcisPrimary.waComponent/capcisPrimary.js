@@ -1566,7 +1566,7 @@ function constructor (id) {
 	{	
 	for (var myMasterTabButtonNumber = 0; myMasterTabButtonNumber <= (masterTabArray.length - 1); myMasterTabButtonNumber++)
 	{
-		debugger;
+		
 		if (clickedMainTabId === "capcisMainWC_mt" + myMasterTabButtonNumber)
 		{
 			if (clickedMainTabId !== "capcisMainWC_mt" + currentVisibleMainTabNumber)
@@ -1598,7 +1598,7 @@ function constructor (id) {
 				clickedTabID = x
 			}
 		}
-		debugger;		
+				
 		for (var mainColumn = 0; mainColumn <= (tabColumnTracking.length - 1); mainColumn++)
 		{
 			if (tabColumnTracking[mainColumn].mainColumnTabID === clickedTabID)
@@ -1724,7 +1724,7 @@ function constructor (id) {
 				tabColumnTracking[myMainTabButtonColumn].subColumnButtonID = ["","","","","","","","","",""];
 				tabColumnTracking[myMainTabButtonColumn].subColumnMasterTabArraySubTabNumber = ["","","","","","","","","",""];
 				currentVisibleSubComponent[myMainTabButtonColumn] = "";
-				debugger;
+				
 					for (var subTabLoop = 0;subTabLoop <= (tabColumnTracking.length - 1); subTabLoop++) 	//set all subContainers and Buttons Invisible
 					{						
 						var hideSubContainer = document.getElementById("capcisMainWC_sc" + myMainTabXButtonNumber.toString() + subTabLoop.toString());
