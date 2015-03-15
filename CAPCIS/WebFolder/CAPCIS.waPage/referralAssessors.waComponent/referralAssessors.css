@@ -80,9 +80,9 @@
 #{id}button1 {
 	 z-index: 3;
 	 width: 75px;
-	 height: 35px;
-	 top: 207px;
-	 left: 7px;
+	 height: 25px;
+	 top: 210px;
+	 left: 335px;
 	
 	 position: absolute;
 	 
@@ -635,8 +635,8 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 570px;
-	 height: 375px;
+	 width: 744px;
+	 height: 373px;
 	 top: 250px;
 	 left: 0px;
 	
@@ -661,7 +661,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 570px;
+	 width: 744px;
 	 height: 250px;
 	 top: 0px;
 	 left: 0px;
@@ -672,8 +672,8 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 570px;
-	 height: 625px;
+	 width: 744px;
+	 height: 623px;
 	 top: 0px;
 	 left: 436px;
 	
@@ -720,7 +720,7 @@
 #{id}container8 {
 	 z-index: 2;
 	 width: 4px;
-	 height: 289px;
+	 height: 287px;
 	 top: 0px;
 	 left: 432px;
 	
@@ -746,8 +746,8 @@
 #{id}button5 {
 	 z-index: 6;
 	 width: 75px;
-	 height: 35px;
-	 top: 250px;
+	 height: 25px;
+	 top: 260px;
 	 left: 335px;
 	
 	 position: absolute;
@@ -757,7 +757,7 @@
 #{id}container7 {
 	 z-index: 1;
 	 width: 432px;
-	 height: 289px;
+	 height: 287px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -768,7 +768,7 @@
 #{id}container6 {
 	 z-index: 2;
 	 width: 436px;
-	 height: 289px;
+	 height: 287px;
 	 top: 336px;
 	 left: 0px;
 	
@@ -805,7 +805,7 @@
 #{id}container4 {
 	 z-index: 1;
 	 width: 436px;
-	 height: 625px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -815,10 +815,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 1006px;
-	 height: 625px;
+	 width: 1180px;
+	 height: 623px;
 	 top: 0px;
-	 left: 284px;
+	 left: 108px;
 	
 	 position: absolute;
 	 
@@ -826,8 +826,8 @@
 
 #{id}container2 {
 	 z-index: 1;
-	 width: 284px;
-	 height: 625px;
+	 width: 108px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -909,8 +909,8 @@
 
 #{id}previousVersionButton {
 	 z-index: 28;
-	 width: 75px;
-	 height: 35px;
+	 width: 125px;
+	 height: 25px;
 	 top: 295px;
 	 left: 5px;
 	
@@ -921,7 +921,7 @@
 #{id}submitButton {
 	 z-index: 26;
 	 width: 75px;
-	 height: 35px;
+	 height: 25px;
 	 top: 295px;
 	 left: 250px;
 	
@@ -932,7 +932,7 @@
 #{id}closeAssesorCurrentButton {
 	 z-index: 27;
 	 width: 75px;
-	 height: 35px;
+	 height: 25px;
 	 top: 295px;
 	 left: 335px;
 	
@@ -943,9 +943,9 @@
 #{id}closeAssesorPreviousButton {
 	 z-index: 34;
 	 width: 75px;
-	 height: 35px;
-	 top: 332px;
-	 left: 330px;
+	 height: 25px;
+	 top: 335px;
+	 left: 335px;
 	
 	 position: absolute;
 	 

@@ -692,6 +692,10 @@
 	 left: 0px;
 	
 	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
 	 
 }
 
@@ -700,11 +704,15 @@
 	 width: 100px;
 	 height: 35px;
 	 top: 0px;
-	 left: 972px;
+	 left: 971px;
 	
 	 position: absolute;
 	 background-color: rgb(0, 27, 90);
 	 color: rgba(240, 240, 255, 0.898438);
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
 	 
 }
 

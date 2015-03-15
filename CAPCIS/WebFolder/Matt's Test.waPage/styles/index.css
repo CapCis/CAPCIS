@@ -11,9 +11,9 @@
 #dataGrid1 {
 	 z-index: 3;
 	 width: 125px;
-	 height: 141px;
-	 top: 240px;
-	 left: 0px;
+	 height: 136px;
+	 top: 279px;
+	 left: 27px;
 	
 	 position: absolute;
 	 background-color: rgb(255, 127, 0);
@@ -42,9 +42,9 @@
 
 #label1 {
 	 z-index: 1;
-	 width: 29px;
-	 height: 13px;
-	 top: 0px;
+	 width: 26px;
+	 height: 16px;
+	 top: -3px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -70,8 +70,8 @@
 	 z-index: 2;
 	 width: 150px;
 	 height: 41px;
-	 top: 200px;
-	 left: 0px;
+	 top: 239px;
+	 left: 27px;
 	
 	 position: absolute;
 	 
