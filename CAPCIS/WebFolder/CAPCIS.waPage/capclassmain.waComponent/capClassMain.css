@@ -17,10 +17,10 @@
 
 #{id}label36 {
 	 z-index: 4;
-	 width: 29px;
-	 height: 13px;
-	 top: 22px;
-	 left: -34px;
+	 width: 26px;
+	 height: 16px;
+	 top: 21px;
+	 left: -31px;
 	
 	 position: absolute;
 	 
@@ -88,18 +88,6 @@
 	 
 }
 
-#{id}dataGrid6 {
-	 z-index: 32;
-	 width: 160px;
-	 height: 68px;
-	 top: 542px;
-	 left: 15px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
 #{id}label35 {
 	 z-index: 4;
 	 width: 29px;
@@ -122,52 +110,12 @@
 	 
 }
 
-#{id}button6 {
-	 z-index: 2;
-	 width: 25px;
-	 height: 22px;
-	 top: 18px;
-	 left: 160px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 border-bottom-left-radius: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	 border-top-left-radius: 0px;
-	-moz-border-radius-topleft: 0px;
-	 line-height: 22px;
-	 font-family: WebSymbolsRegular;
-	 font-size: 14px;
-	 color: rgb(153, 153, 153);
-	 
-}
-
-#{id}button6.waf-state-hover {
-	 color: rgb(51, 51, 51);
-	 
-}
-
-#{id}textField59 {
-	 z-index: 4;
-	 width: 160px;
-	 height: 22px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
-	 
-}
-
 #{id}container10 {
-	 z-index: 31;
+	 z-index: 30;
 	 width: 185px;
 	 height: 40px;
-	 top: 502px;
-	 left: 15px;
+	 top: 497px;
+	 left: 16px;
 	
 	 position: absolute;
 	 
@@ -197,9 +145,9 @@
 
 #{id}label34 {
 	 z-index: 33;
-	 width: 93px;
-	 height: 13px;
-	 top: 327px;
+	 width: 85px;
+	 height: 16px;
+	 top: 324px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -219,9 +167,9 @@
 
 #{id}label33 {
 	 z-index: 32;
-	 width: 70px;
-	 height: 13px;
-	 top: 327px;
+	 width: 64px;
+	 height: 16px;
+	 top: 324px;
 	 left: 500px;
 	
 	 position: absolute;
@@ -241,10 +189,10 @@
 
 #{id}label31 {
 	 z-index: 30;
-	 width: 51px;
-	 height: 13px;
-	 top: 479px;
-	 left: 19px;
+	 width: 52px;
+	 height: 16px;
+	 top: 478px;
+	 left: 18px;
 	
 	 position: absolute;
 	 
@@ -263,10 +211,10 @@
 
 #{id}label30 {
 	 z-index: 29;
-	 width: 59px;
-	 height: 13px;
-	 top: 444px;
-	 left: 11px;
+	 width: 55px;
+	 height: 16px;
+	 top: 443px;
+	 left: 15px;
 	
 	 position: absolute;
 	 
@@ -285,10 +233,10 @@
 
 #{id}label29 {
 	 z-index: 27;
-	 width: 34px;
-	 height: 13px;
-	 top: 384px;
-	 left: 36px;
+	 width: 30px;
+	 height: 16px;
+	 top: 383px;
+	 left: 40px;
 	
 	 position: absolute;
 	 
@@ -307,10 +255,10 @@
 
 #{id}label28 {
 	 z-index: 25;
-	 width: 91px;
-	 height: 13px;
-	 top: 414px;
-	 left: 82px;
+	 width: 84px;
+	 height: 16px;
+	 top: 413px;
+	 left: 89px;
 	
 	 position: absolute;
 	 
@@ -329,9 +277,9 @@
 
 #{id}label27 {
 	 z-index: 23;
-	 width: 75px;
-	 height: 13px;
-	 top: 427px;
+	 width: 69px;
+	 height: 16px;
+	 top: 424px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -2951,10 +2899,10 @@
 
 #{id}label26 {
 	 z-index: 18;
-	 width: 57px;
-	 height: 13px;
-	 top: 349px;
-	 left: 13px;
+	 width: 54px;
+	 height: 16px;
+	 top: 348px;
+	 left: 16px;
 	
 	 position: absolute;
 	 
@@ -2973,10 +2921,10 @@
 
 #{id}label25 {
 	 z-index: 15;
-	 width: 259px;
-	 height: 13px;
-	 top: 533px;
-	 left: 236px;
+	 width: 247px;
+	 height: 16px;
+	 top: 532px;
+	 left: 248px;
 	
 	 position: absolute;
 	 
@@ -2995,10 +2943,10 @@
 
 #{id}label24 {
 	 z-index: 14;
-	 width: 70px;
-	 height: 13px;
-	 top: 508px;
-	 left: 425px;
+	 width: 63px;
+	 height: 16px;
+	 top: 507px;
+	 left: 432px;
 	
 	 position: absolute;
 	 
@@ -3017,10 +2965,10 @@
 
 #{id}label23 {
 	 z-index: 13;
-	 width: 70px;
-	 height: 13px;
-	 top: 483px;
-	 left: 425px;
+	 width: 64px;
+	 height: 16px;
+	 top: 482px;
+	 left: 431px;
 	
 	 position: absolute;
 	 
@@ -3039,10 +2987,10 @@
 
 #{id}label22 {
 	 z-index: 12;
-	 width: 89px;
-	 height: 13px;
-	 top: 458px;
-	 left: 406px;
+	 width: 78px;
+	 height: 16px;
+	 top: 457px;
+	 left: 417px;
 	
 	 position: absolute;
 	 
@@ -3061,10 +3009,10 @@
 
 #{id}label15 {
 	 z-index: 11;
-	 width: 71px;
-	 height: 13px;
-	 top: 433px;
-	 left: 424px;
+	 width: 64px;
+	 height: 16px;
+	 top: 432px;
+	 left: 431px;
 	
 	 position: absolute;
 	 
@@ -3083,9 +3031,9 @@
 
 #{id}label13 {
 	 z-index: 10;
-	 width: 70px;
-	 height: 13px;
-	 top: 182px;
+	 width: 63px;
+	 height: 16px;
+	 top: 179px;
 	 left: 405px;
 	
 	 position: absolute;
@@ -3105,9 +3053,9 @@
 
 #{id}label12 {
 	 z-index: 8;
-	 width: 103px;
-	 height: 13px;
-	 top: 182px;
+	 width: 90px;
+	 height: 16px;
+	 top: 179px;
 	 left: 190px;
 	
 	 position: absolute;
@@ -3206,10 +3154,10 @@
 
 #{id}label20 {
 	 z-index: 29;
-	 width: 51px;
-	 height: 13px;
-	 top: 479px;
-	 left: 19px;
+	 width: 52px;
+	 height: 16px;
+	 top: 478px;
+	 left: 18px;
 	
 	 position: absolute;
 	 
@@ -3228,10 +3176,10 @@
 
 #{id}label19 {
 	 z-index: 28;
-	 width: 59px;
-	 height: 13px;
-	 top: 444px;
-	 left: 11px;
+	 width: 55px;
+	 height: 16px;
+	 top: 443px;
+	 left: 15px;
 	
 	 position: absolute;
 	 
@@ -3250,10 +3198,10 @@
 
 #{id}label18 {
 	 z-index: 27;
-	 width: 34px;
-	 height: 13px;
-	 top: 384px;
-	 left: 36px;
+	 width: 30px;
+	 height: 16px;
+	 top: 383px;
+	 left: 40px;
 	
 	 position: absolute;
 	 
@@ -3272,10 +3220,10 @@
 
 #{id}label17 {
 	 z-index: 26;
-	 width: 91px;
-	 height: 13px;
-	 top: 414px;
-	 left: 82px;
+	 width: 84px;
+	 height: 16px;
+	 top: 413px;
+	 left: 89px;
 	
 	 position: absolute;
 	 
@@ -3305,9 +3253,9 @@
 
 #{id}label16 {
 	 z-index: 25;
-	 width: 75px;
-	 height: 13px;
-	 top: 427px;
+	 width: 69px;
+	 height: 16px;
+	 top: 424px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -5952,9 +5900,9 @@
 
 #{id}label14 {
 	 z-index: 19;
-	 width: 93px;
-	 height: 13px;
-	 top: 327px;
+	 width: 85px;
+	 height: 16px;
+	 top: 324px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -5974,9 +5922,9 @@
 
 #{id}label11 {
 	 z-index: 16;
-	 width: 70px;
-	 height: 13px;
-	 top: 327px;
+	 width: 64px;
+	 height: 16px;
+	 top: 324px;
 	 left: 500px;
 	
 	 position: absolute;
@@ -5996,10 +5944,10 @@
 
 #{id}label10 {
 	 z-index: 15;
-	 width: 57px;
-	 height: 13px;
-	 top: 349px;
-	 left: 13px;
+	 width: 54px;
+	 height: 16px;
+	 top: 348px;
+	 left: 16px;
 	
 	 position: absolute;
 	 
@@ -6018,10 +5966,10 @@
 
 #{id}label9 {
 	 z-index: 14;
-	 width: 259px;
-	 height: 13px;
-	 top: 529px;
-	 left: 236px;
+	 width: 247px;
+	 height: 16px;
+	 top: 528px;
+	 left: 248px;
 	
 	 position: absolute;
 	 
@@ -6040,10 +5988,10 @@
 
 #{id}label8 {
 	 z-index: 13;
-	 width: 70px;
-	 height: 13px;
-	 top: 504px;
-	 left: 425px;
+	 width: 63px;
+	 height: 16px;
+	 top: 503px;
+	 left: 432px;
 	
 	 position: absolute;
 	 
@@ -6062,10 +6010,10 @@
 
 #{id}label7 {
 	 z-index: 12;
-	 width: 70px;
-	 height: 13px;
-	 top: 479px;
-	 left: 425px;
+	 width: 64px;
+	 height: 16px;
+	 top: 478px;
+	 left: 431px;
 	
 	 position: absolute;
 	 
@@ -6084,10 +6032,10 @@
 
 #{id}label4 {
 	 z-index: 11;
-	 width: 89px;
-	 height: 13px;
-	 top: 454px;
-	 left: 406px;
+	 width: 78px;
+	 height: 16px;
+	 top: 453px;
+	 left: 417px;
 	
 	 position: absolute;
 	 
@@ -6106,10 +6054,10 @@
 
 #{id}label3 {
 	 z-index: 10;
-	 width: 71px;
-	 height: 13px;
-	 top: 429px;
-	 left: 424px;
+	 width: 64px;
+	 height: 16px;
+	 top: 428px;
+	 left: 431px;
 	
 	 position: absolute;
 	 
@@ -6128,9 +6076,9 @@
 
 #{id}label2 {
 	 z-index: 9;
-	 width: 70px;
-	 height: 13px;
-	 top: 182px;
+	 width: 63px;
+	 height: 16px;
+	 top: 179px;
 	 left: 405px;
 	
 	 position: absolute;
@@ -6150,9 +6098,9 @@
 
 #{id}label1 {
 	 z-index: 8;
-	 width: 103px;
-	 height: 13px;
-	 top: 182px;
+	 width: 90px;
+	 height: 16px;
+	 top: 179px;
 	 left: 190px;
 	
 	 position: absolute;
@@ -6428,8 +6376,8 @@
 #{id}label6 {
 	 z-index: 4;
 	 width: 21px;
-	 height: 13px;
-	 top: 52px;
+	 height: 16px;
+	 top: 49px;
 	 left: 10px;
 	
 	 position: absolute;
@@ -6438,9 +6386,9 @@
 
 #{id}label5 {
 	 z-index: 3;
-	 width: 47px;
-	 height: 13px;
-	 top: 3px;
+	 width: 40px;
+	 height: 16px;
+	 top: 0px;
 	 left: 10px;
 	
 	 position: absolute;
@@ -6862,8 +6810,8 @@
 
 #{id}classRosterSubCont {
 	 z-index: 1;
-	 width: 1120px;
-	 height: 610px;
+	 width: 627px;
+	 height: 608px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -6873,10 +6821,10 @@
 
 #{id}classRosterRecieptCont {
 	 z-index: 2;
-	 width: 5px;
-	 height: 610px;
+	 width: 496px;
+	 height: 608px;
 	 top: 0px;
-	 left: 472px;
+	 left: 627px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -6933,6 +6881,58 @@
 	 right: 3px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}comboboxButton {
+	 z-index: 2;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 160px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}comboboxButton.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}comboboxGrid {
+	 z-index: 31;
+	 width: 158px;
+	 height: 69px;
+	 top: 537px;
+	 left: 19px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}comboBoxTextInput {
+	 z-index: 4;
+	 width: 160px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
 	 
 }
 
