@@ -3,12 +3,86 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid1 {
+	 z-index: 32;
+	 width: 125px;
+	 height: 134px;
+	 top: 162px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}label33 {
+	 z-index: 2;
+	 width: 21px;
+	 height: 13px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button3 {
+	 z-index: 3;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 125px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}button3.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}textField1 {
+	 z-index: 2;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}container1 {
+	 z-index: 31;
+	 width: 150px;
+	 height: 41px;
+	 top: 122px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}button1 {
 	 z-index: 3;
 	 width: 75px;
-	 height: 35px;
-	 top: 207px;
-	 left: 7px;
+	 height: 25px;
+	 top: 210px;
+	 left: 335px;
 	
 	 position: absolute;
 	 
@@ -224,7 +298,7 @@
 }
 
 #{id}label14 {
-	 z-index: 31;
+	 z-index: 29;
 	 width: 93px;
 	 height: 13px;
 	 top: 267px;
@@ -235,7 +309,7 @@
 }
 
 #{id}label13 {
-	 z-index: 27;
+	 z-index: 25;
 	 width: 82px;
 	 height: 13px;
 	 top: 212px;
@@ -246,7 +320,7 @@
 }
 
 #{id}label12 {
-	 z-index: 26;
+	 z-index: 24;
 	 width: 98px;
 	 height: 13px;
 	 top: 212px;
@@ -256,19 +330,8 @@
 	 
 }
 
-#{id}label11 {
-	 z-index: 25;
-	 width: 21px;
-	 height: 13px;
-	 top: 122px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label10 {
-	 z-index: 24;
+	 z-index: 22;
 	 width: 77px;
 	 height: 13px;
 	 top: 167px;
@@ -279,7 +342,7 @@
 }
 
 #{id}label9 {
-	 z-index: 23;
+	 z-index: 21;
 	 width: 48px;
 	 height: 13px;
 	 top: 167px;
@@ -290,7 +353,7 @@
 }
 
 #{id}label8 {
-	 z-index: 22;
+	 z-index: 20;
 	 width: 28px;
 	 height: 13px;
 	 top: 167px;
@@ -301,7 +364,7 @@
 }
 
 #{id}label7 {
-	 z-index: 21;
+	 z-index: 19;
 	 width: 79px;
 	 height: 13px;
 	 top: 122px;
@@ -312,7 +375,7 @@
 }
 
 #{id}label6 {
-	 z-index: 20;
+	 z-index: 18;
 	 width: 67px;
 	 height: 13px;
 	 top: 77px;
@@ -323,7 +386,7 @@
 }
 
 #{id}label5 {
-	 z-index: 19;
+	 z-index: 17;
 	 width: 75px;
 	 height: 13px;
 	 top: 77px;
@@ -334,7 +397,7 @@
 }
 
 #{id}label4 {
-	 z-index: 18;
+	 z-index: 16;
 	 width: 53px;
 	 height: 13px;
 	 top: 77px;
@@ -345,7 +408,7 @@
 }
 
 #{id}label3 {
-	 z-index: 17;
+	 z-index: 15;
 	 width: 70px;
 	 height: 13px;
 	 top: 77px;
@@ -356,7 +419,7 @@
 }
 
 #{id}label2 {
-	 z-index: 16;
+	 z-index: 14;
 	 width: 118px;
 	 height: 13px;
 	 top: 32px;
@@ -367,7 +430,7 @@
 }
 
 #{id}label1 {
-	 z-index: 15;
+	 z-index: 13;
 	 width: 144px;
 	 height: 13px;
 	 top: 32px;
@@ -572,9 +635,9 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 373px;
-	 height: 382px;
-	 top: 243px;
+	 width: 744px;
+	 height: 373px;
+	 top: 250px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -598,8 +661,8 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 373px;
-	 height: 243px;
+	 width: 744px;
+	 height: 250px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -609,10 +672,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 373px;
-	 height: 625px;
+	 width: 744px;
+	 height: 623px;
 	 top: 0px;
-	 left: 581px;
+	 left: 436px;
 	
 	 position: absolute;
 	 
@@ -656,10 +719,10 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: 156px;
-	 height: 289px;
+	 width: 4px;
+	 height: 287px;
 	 top: 0px;
-	 left: 425px;
+	 left: 432px;
 	
 	 position: absolute;
 	 
@@ -683,8 +746,8 @@
 #{id}button5 {
 	 z-index: 6;
 	 width: 75px;
-	 height: 35px;
-	 top: 250px;
+	 height: 25px;
+	 top: 260px;
 	 left: 335px;
 	
 	 position: absolute;
@@ -693,8 +756,8 @@
 
 #{id}container7 {
 	 z-index: 1;
-	 width: 425px;
-	 height: 289px;
+	 width: 432px;
+	 height: 287px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -704,8 +767,8 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 581px;
-	 height: 289px;
+	 width: 436px;
+	 height: 287px;
 	 top: 336px;
 	 left: 0px;
 	
@@ -714,7 +777,7 @@
 }
 
 #{id}richText1 {
-	 z-index: 32;
+	 z-index: 30;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -730,7 +793,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 581px;
+	 width: 436px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -741,8 +804,8 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 581px;
-	 height: 625px;
+	 width: 436px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -752,10 +815,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 954px;
-	 height: 625px;
+	 width: 1180px;
+	 height: 623px;
 	 top: 0px;
-	 left: 336px;
+	 left: 108px;
 	
 	 position: absolute;
 	 
@@ -763,8 +826,8 @@
 
 #{id}container2 {
 	 z-index: 1;
-	 width: 336px;
-	 height: 625px;
+	 width: 108px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -801,7 +864,7 @@
 }
 
 #{id}assessorNameField {
-	 z-index: 15;
+	 z-index: 13;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -812,7 +875,7 @@
 }
 
 #{id}assessorFullNameField {
-	 z-index: 16;
+	 z-index: 14;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -833,19 +896,8 @@
 	 
 }
 
-#{id}cityComboBox {
-	 z-index: 25;
-	 width: 150px;
-	 height: 22px;
-	 top: 140px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}reportingComboBox {
-	 z-index: 26;
+	 z-index: 24;
 	 width: 150px;
 	 height: 22px;
 	 top: 230px;
@@ -856,9 +908,9 @@
 }
 
 #{id}previousVersionButton {
-	 z-index: 30;
-	 width: 75px;
-	 height: 35px;
+	 z-index: 28;
+	 width: 125px;
+	 height: 25px;
 	 top: 295px;
 	 left: 5px;
 	
@@ -867,9 +919,9 @@
 }
 
 #{id}submitButton {
-	 z-index: 28;
+	 z-index: 26;
 	 width: 75px;
-	 height: 35px;
+	 height: 25px;
 	 top: 295px;
 	 left: 250px;
 	
@@ -878,9 +930,9 @@
 }
 
 #{id}closeAssesorCurrentButton {
-	 z-index: 29;
+	 z-index: 27;
 	 width: 75px;
-	 height: 35px;
+	 height: 25px;
 	 top: 295px;
 	 left: 335px;
 	
@@ -891,9 +943,9 @@
 #{id}closeAssesorPreviousButton {
 	 z-index: 34;
 	 width: 75px;
-	 height: 35px;
-	 top: 332px;
-	 left: 261px;
+	 height: 25px;
+	 top: 335px;
+	 left: 335px;
 	
 	 position: absolute;
 	 
@@ -911,7 +963,7 @@
 }
 
 #{id}assessorPhoneField {
-	 z-index: 17;
+	 z-index: 15;
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
@@ -922,7 +974,7 @@
 }
 
 #{id}assesorExtField {
-	 z-index: 18;
+	 z-index: 16;
 	 width: 50px;
 	 height: 22px;
 	 top: 95px;
@@ -933,7 +985,7 @@
 }
 
 #{id}assesorMobileField {
-	 z-index: 19;
+	 z-index: 17;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -944,7 +996,7 @@
 }
 
 #{id}assesorFaxField {
-	 z-index: 20;
+	 z-index: 18;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -955,7 +1007,7 @@
 }
 
 #{id}assesorAddressField {
-	 z-index: 21;
+	 z-index: 19;
 	 width: 250px;
 	 height: 22px;
 	 top: 140px;
@@ -966,7 +1018,7 @@
 }
 
 #{id}assesorStateField {
-	 z-index: 22;
+	 z-index: 20;
 	 width: 35px;
 	 height: 22px;
 	 top: 185px;
@@ -977,7 +1029,7 @@
 }
 
 #{id}assesorZipField {
-	 z-index: 23;
+	 z-index: 21;
 	 width: 100px;
 	 height: 22px;
 	 top: 185px;
@@ -988,7 +1040,7 @@
 }
 
 #{id}assesorEmailField {
-	 z-index: 24;
+	 z-index: 22;
 	 width: 260px;
 	 height: 22px;
 	 top: 185px;
@@ -999,7 +1051,7 @@
 }
 
 #{id}assesorNotesField {
-	 z-index: 27;
+	 z-index: 25;
 	 width: 250px;
 	 height: 55px;
 	 top: 230px;
@@ -1010,7 +1062,7 @@
 }
 
 #{id}assessorInactiveCheckBox {
-	 z-index: 31;
+	 z-index: 29;
 	 width: 22px;
 	 height: 22px;
 	 top: 263px;
