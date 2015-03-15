@@ -7,7 +7,7 @@ function constructor (id) {
 
 	// @region beginComponentDeclaration// @startlock
 	var $comp = this;
-	this.name = 'clientInformationBAK';
+	this.name = 'clientReferralInformation';
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
