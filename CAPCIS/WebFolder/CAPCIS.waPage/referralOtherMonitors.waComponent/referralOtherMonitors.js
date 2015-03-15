@@ -291,7 +291,7 @@ function constructor (id) {
 
 	button16.click = function button16_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(420);
 		
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -340,7 +340,7 @@ function constructor (id) {
 						
 					},
 					'onError': function(error){
-						console.log(error);
+						console.log(error);vo
 					},
 					'params': [myObject7]
 				});

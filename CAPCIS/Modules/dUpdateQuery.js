@@ -64,6 +64,32 @@
  						OMPreferredReportingMethod = "'+myObject.data13+'", InactiveOtherMonitors = '+myObject.data15+' \
 						WHERE OtherMonitorsID="'+myObject.data14+'";';
 						break;
+				case 12: answer = 'UPDATE capcis.pojurisdictioncorrespondance SET VoidedPOJurisdictionCorrespondence = '+myObject.data2+' WHERE POJurisdictionCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 13: answer =  'UPDATE capcis.pojurisdiction SET JurisdictionName = "'+myObject.data1+'", JurisdictionPhone = "'+myObject.data2+'", \
+				 		JurisdictionFax = "'+myObject.data4+'", JurisdictionAddress ="'+myObject.data5+'", JurisdictionCity = "'+myObject.data6+'", \
+ 						JurisdictionState = "'+myObject.data7+'", JurisdictionZipCode = "'+myObject.data8+'", \
+ 						JurisdictionNotes = "'+myObject.data11+'",\
+ 						InactivePOJurisdiction = '+myObject.data15+' \
+						WHERE POJurisdictionID="'+myObject.data14+'";';
+						break;
+				case 14: answer = 'UPDATE capcis.pocorrespondance SET VoidedPOCorrespondence = '+myObject.data2+' WHERE POCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 15: answer =  'UPDATE capcis.poinformation SET POName = "'+myObject.data1+'", POPhone = "'+myObject.data2+'", \
+				 		POEmail="'+myObject.data3+'", POFax = "'+myObject.data4+'", POPhoneExtension= "'+myObject.data9+'",  \
+ 						POMobilePhone = "'+myObject.data10+'", PONotes = "'+myObject.data11+'", POFullNameDisplay = "'+myObject.data12+'",\
+ 						POPreferredReportingMethod = "'+myObject.data13+'", InactivePO = '+myObject.data15+' \
+						WHERE POInformationID="'+myObject.data14+'";';
+						break;
+				case 16: answer = 'UPDATE capcis.prosecutorcorrespondance SET VoidedProsecutorCorrespondence = '+myObject.data2+' WHERE ProsecutorCorrespondenceID = "'+myObject.data3+'"';
+						break;
+				case 17: answer =  'UPDATE capcis.prosecutors SET Prosecutor = "'+myObject.data1+'", ProsecutorOfficePhone = "'+myObject.data2+'", \
+				 		ProsecutorEmail="'+myObject.data3+'", ProsecutorFax = "'+myObject.data4+'", ProsecutorAddress ="'+myObject.data5+'", ProsecutorCity = "'+myObject.data6+'", \
+ 						ProsecutorState = "'+myObject.data7+'", ProsecutorZipCode = "'+myObject.data8+'", ProsecutorOfficePhoneExt= "'+myObject.data9+'", ProsecutorJurisdiction= "'+myObject.data16+'", \
+ 						ProsecutorMobilePhone = "'+myObject.data10+'", ProsecutorNotes = "'+myObject.data11+'", ProsecutorFullNameDisplay = "'+myObject.data12+'",\
+ 						ProsPreferredReportingMethod = "'+myObject.data13+'", InactiveProsecutor = '+myObject.data15+' \
+						WHERE ProsecutorsID="'+myObject.data14+'";';
+						break;
 				default: answer = null;	
 						break;
 			}
