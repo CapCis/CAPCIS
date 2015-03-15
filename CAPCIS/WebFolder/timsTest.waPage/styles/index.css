@@ -3,6 +3,28 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#image3 {
+	 z-index: 32;
+	 width: 249px;
+	 height: 360px;
+	 top: 661px;
+	 left: 2012px;
+	
+	 position: absolute;
+	 
+}
+
+#button6 {
+	 z-index: 31;
+	 width: 105px;
+	 height: 36px;
+	 top: 754px;
+	 left: 1872px;
+	
+	 position: absolute;
+	 
+}
+
 #button5 {
 	 z-index: 30;
 	 width: 111px;
@@ -27,10 +49,10 @@
 
 #label2 {
 	 z-index: 1;
-	 top: 18px;
+	 top: 15px;
 	 bottom: 510px;
 	 left: 14px;
-	 right: 560px;
+	 right: 563px;
 	
 	 position: absolute;
 	 
@@ -141,10 +163,10 @@
 
 #label3 {
 	 z-index: 13;
-	 width: 29px;
-	 height: 13px;
-	 top: 402px;
-	 left: 887px;
+	 width: 26px;
+	 height: 16px;
+	 top: 401px;
+	 left: 890px;
 	
 	 position: absolute;
 	 
@@ -177,10 +199,10 @@
 
 #label1 {
 	 z-index: 3;
-	 width: 29px;
-	 height: 13px;
-	 top: 13px;
-	 left: 246px;
+	 width: 26px;
+	 height: 16px;
+	 top: 12px;
+	 left: 249px;
 	
 	 position: absolute;
 	 
