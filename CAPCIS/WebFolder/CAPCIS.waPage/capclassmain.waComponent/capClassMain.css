@@ -3,205 +3,354 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}dataGrid7 {
+	 z-index: 37;
+	 width: 160px;
+	 height: 68px;
+	 top: 542px;
+	 left: 15px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}label36 {
+	 z-index: 4;
+	 width: 29px;
+	 height: 13px;
+	 top: 22px;
+	 left: -34px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField60 {
+	 z-index: 4;
+	 width: 160px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}richText26 {
+	 z-index: 3;
+	 width: 125px;
+	 height: 18px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button9.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}button9 {
+	 z-index: 2;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 160px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}container11 {
+	 z-index: 36;
+	 width: 185px;
+	 height: 40px;
+	 top: 502px;
+	 left: 15px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid6 {
+	 z-index: 32;
+	 width: 160px;
+	 height: 68px;
+	 top: 542px;
+	 left: 15px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}label35 {
+	 z-index: 4;
+	 width: 29px;
+	 height: 13px;
+	 top: 22px;
+	 left: -34px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText25 {
+	 z-index: 3;
+	 width: 125px;
+	 height: 18px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button6 {
+	 z-index: 2;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 160px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}button6.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}textField59 {
+	 z-index: 4;
+	 width: 160px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}container10 {
+	 z-index: 31;
+	 width: 185px;
+	 height: 40px;
+	 top: 502px;
+	 left: 15px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}button8 {
+	 z-index: 35;
 	 width: 140px;
 	 height: 25px;
 	 top: 343px;
 	 left: 350px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}combobox12 {
+	 z-index: 34;
 	 width: 125px;
 	 height: 22px;
 	 top: 345px;
 	 left: 215px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}label34 {
+	 z-index: 33;
 	 width: 93px;
 	 height: 13px;
 	 top: 327px;
 	 left: 215px;
 	
 	 position: absolute;
-	 z-index: 33;
 	 
 }
 
 #{id}textField58 {
+	 z-index: 32;
 	 width: 100px;
 	 height: 22px;
 	 top: 345px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}label33 {
+	 z-index: 32;
 	 width: 70px;
 	 height: 13px;
 	 top: 327px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 32;
-	 
-}
-
-#{id}combobox11 {
-	 width: 185px;
-	 height: 22px;
-	 top: 525px;
-	 left: 15px;
-	
-	 position: absolute;
-	 z-index: 31;
-	 
-}
-
-#{id}label32 {
-	 width: 88px;
-	 height: 13px;
-	 top: 507px;
-	 left: 15px;
-	
-	 position: absolute;
-	 z-index: 31;
 	 
 }
 
 #{id}combobox10 {
+	 z-index: 30;
 	 width: 125px;
 	 height: 22px;
 	 top: 475px;
 	 left: 75px;
 	
 	 position: absolute;
-	 z-index: 30;
 	 
 }
 
 #{id}label31 {
+	 z-index: 30;
 	 width: 51px;
 	 height: 13px;
 	 top: 479px;
 	 left: 19px;
 	
 	 position: absolute;
-	 z-index: 30;
 	 
 }
 
 #{id}combobox9 {
+	 z-index: 29;
 	 width: 125px;
 	 height: 22px;
 	 top: 440px;
 	 left: 75px;
 	
 	 position: absolute;
-	 z-index: 29;
 	 
 }
 
 #{id}label30 {
+	 z-index: 29;
 	 width: 59px;
 	 height: 13px;
 	 top: 444px;
 	 left: 11px;
 	
 	 position: absolute;
-	 z-index: 29;
 	 
 }
 
 #{id}combobox1 {
+	 z-index: 27;
 	 width: 125px;
 	 height: 22px;
 	 top: 380px;
 	 left: 75px;
 	
 	 position: absolute;
-	 z-index: 27;
 	 
 }
 
 #{id}label29 {
+	 z-index: 27;
 	 width: 34px;
 	 height: 13px;
 	 top: 384px;
 	 left: 36px;
 	
 	 position: absolute;
-	 z-index: 27;
 	 
 }
 
 #{id}checkbox2 {
+	 z-index: 25;
 	 width: 22px;
 	 height: 22px;
 	 top: 410px;
 	 left: 178px;
 	
 	 position: absolute;
-	 z-index: 25;
 	 
 }
 
 #{id}label28 {
+	 z-index: 25;
 	 width: 91px;
 	 height: 13px;
 	 top: 414px;
 	 left: 82px;
 	
 	 position: absolute;
-	 z-index: 25;
 	 
 }
 
 #{id}textField57 {
+	 z-index: 23;
 	 width: 175px;
 	 height: 75px;
 	 top: 445px;
 	 left: 215px;
 	
 	 position: absolute;
-	 z-index: 23;
 	 
 }
 
 #{id}label27 {
+	 z-index: 23;
 	 width: 75px;
 	 height: 13px;
 	 top: 427px;
 	 left: 215px;
 	
 	 position: absolute;
-	 z-index: 23;
 	 
 }
 
 #{id}richText24 {
+	 z-index: 3;
 	 width: 375px;
 	 height: 65px;
 	 top: 18px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}richText23 {
+	 z-index: 2;
 	 width: 150px;
 	 height: 18px;
 	 top: 0px;
@@ -210,11 +359,11 @@
 	 position: absolute;
 	 color: rgb(0, 0, 255);
 	 text-align: right;
-	 z-index: 2;
 	 
 }
 
 #{id}richText22 {
+	 z-index: 1;
 	 width: 200px;
 	 height: 18px;
 	 top: 0px;
@@ -222,54 +371,54 @@
 	
 	 position: absolute;
 	 color: rgb(191, 0, 0);
-	 z-index: 1;
 	 
 }
 
 #{id}container8 {
+	 z-index: 1;
 	 width: 375px;
 	 height: 85px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}richText24 {
-	 position: absolute;
 	 z-index: 3;
+	 position: absolute;
 	 
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}richText23 {
+	 z-index: 2;
 	 position: absolute;
 	 color: rgb(0, 0, 255);
 	 text-align: right;
-	 z-index: 2;
 	 
 }
 
 #{id}matrix1 .waf-widget.waf-clone-{id}richText22 {
+	 z-index: 1;
 	 position: absolute;
 	 color: rgb(191, 0, 0);
-	 z-index: 1;
 	 
 }
 
 #{id}matrix1 {
+	 z-index: 21;
 	 width: 415px;
 	 height: 70px;
 	 top: 105px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 21;
 	 
 }
 
 #{id}textField56 {
+	 z-index: 21;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -310,7 +459,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 21;
 	 
 }
 
@@ -389,6 +537,7 @@
 }
 
 #{id}textField55 {
+	 z-index: 20;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -429,7 +578,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 20;
 	 
 }
 
@@ -582,6 +730,7 @@
 }
 
 #{id}textField54 {
+	 z-index: 19;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -622,7 +771,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 19;
 	 
 }
 
@@ -701,6 +849,7 @@
 }
 
 #{id}textField53 {
+	 z-index: 18;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -741,11 +890,11 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 18;
 	 
 }
 
 #{id}textField52 {
+	 z-index: 17;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -786,7 +935,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 17;
 	 
 }
 
@@ -939,6 +1087,7 @@
 }
 
 #{id}textField51 {
+	 z-index: 16;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -979,11 +1128,11 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 16;
 	 
 }
 
 #{id}textField50 {
+	 z-index: 15;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -1024,7 +1173,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 15;
 	 
 }
 
@@ -1177,6 +1325,7 @@
 }
 
 #{id}textField49 {
+	 z-index: 14;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -1217,7 +1366,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 14;
 	 
 }
 
@@ -1296,6 +1444,7 @@
 }
 
 #{id}textField48 {
+	 z-index: 13;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -1336,7 +1485,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 13;
 	 
 }
 
@@ -1415,6 +1563,7 @@
 }
 
 #{id}textField47 {
+	 z-index: 12;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -1455,7 +1604,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 12;
 	 
 }
 
@@ -1534,6 +1682,7 @@
 }
 
 #{id}textField46 {
+	 z-index: 11;
 	 width: 55px;
 	 height: 15px;
 	 top: 30px;
@@ -1574,11 +1723,11 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 11;
 	 
 }
 
 #{id}textField45 {
+	 z-index: 10;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -1619,7 +1768,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 10;
 	 
 }
 
@@ -1698,6 +1846,7 @@
 }
 
 #{id}textField44 {
+	 z-index: 9;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -1738,7 +1887,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 9;
 	 
 }
 
@@ -1817,6 +1965,7 @@
 }
 
 #{id}textField43 {
+	 z-index: 8;
 	 width: 55px;
 	 height: 15px;
 	 top: 15px;
@@ -1857,7 +2006,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 8;
 	 
 }
 
@@ -1936,6 +2084,7 @@
 }
 
 #{id}textField42 {
+	 z-index: 7;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -1976,7 +2125,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 7;
 	 
 }
 
@@ -2129,6 +2277,7 @@
 }
 
 #{id}textField41 {
+	 z-index: 6;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -2169,7 +2318,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 6;
 	 
 }
 
@@ -2248,6 +2396,7 @@
 }
 
 #{id}textField40 {
+	 z-index: 5;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -2288,7 +2437,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 5;
 	 
 }
 
@@ -2367,6 +2515,7 @@
 }
 
 #{id}textField39 {
+	 z-index: 4;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -2407,7 +2556,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 4;
 	 
 }
 
@@ -2486,6 +2634,7 @@
 }
 
 #{id}textField38 {
+	 z-index: 3;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -2526,7 +2675,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 3;
 	 
 }
 
@@ -2605,6 +2753,7 @@
 }
 
 #{id}textField37 {
+	 z-index: 2;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -2645,7 +2794,6 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 2;
 	 
 }
 
@@ -2724,6 +2872,7 @@
 }
 
 #{id}textField36 {
+	 z-index: 1;
 	 width: 55px;
 	 height: 15px;
 	 top: 0px;
@@ -2764,220 +2913,220 @@
 	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 1;
 	 
 }
 
 #{id}container7 {
+	 z-index: 20;
 	 width: 390px;
 	 height: 50px;
 	 top: 379px;
 	 left: 215px;
 	
 	 position: absolute;
-	 z-index: 20;
 	 
 }
 
 #{id}button7 {
+	 z-index: 19;
 	 width: 75px;
 	 height: 35px;
 	 top: 565px;
 	 left: 525px;
 	
 	 position: absolute;
-	 z-index: 19;
 	 
 }
 
 #{id}textField35 {
+	 z-index: 18;
 	 width: 125px;
 	 height: 22px;
 	 top: 345px;
 	 left: 75px;
 	
 	 position: absolute;
-	 z-index: 18;
 	 
 }
 
 #{id}label26 {
+	 z-index: 18;
 	 width: 57px;
 	 height: 13px;
 	 top: 349px;
 	 left: 13px;
 	
 	 position: absolute;
-	 z-index: 18;
 	 
 }
 
 #{id}textField34 {
+	 z-index: 16;
 	 width: 100px;
 	 height: 22px;
 	 top: 529px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 16;
 	 
 }
 
 #{id}label25 {
+	 z-index: 15;
 	 width: 259px;
 	 height: 13px;
 	 top: 533px;
 	 left: 236px;
 	
 	 position: absolute;
-	 z-index: 15;
 	 
 }
 
 #{id}textField33 {
+	 z-index: 14;
 	 width: 100px;
 	 height: 22px;
 	 top: 504px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 14;
 	 
 }
 
 #{id}label24 {
+	 z-index: 14;
 	 width: 70px;
 	 height: 13px;
 	 top: 508px;
 	 left: 425px;
 	
 	 position: absolute;
-	 z-index: 14;
 	 
 }
 
 #{id}textField21 {
+	 z-index: 13;
 	 width: 100px;
 	 height: 22px;
 	 top: 479px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 13;
 	 
 }
 
 #{id}label23 {
+	 z-index: 13;
 	 width: 70px;
 	 height: 13px;
 	 top: 483px;
 	 left: 425px;
 	
 	 position: absolute;
-	 z-index: 13;
 	 
 }
 
 #{id}textField10 {
+	 z-index: 12;
 	 width: 100px;
 	 height: 22px;
 	 top: 454px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 12;
 	 
 }
 
 #{id}label22 {
+	 z-index: 12;
 	 width: 89px;
 	 height: 13px;
 	 top: 458px;
 	 left: 406px;
 	
 	 position: absolute;
-	 z-index: 12;
 	 
 }
 
 #{id}textField8 {
+	 z-index: 11;
 	 width: 100px;
 	 height: 22px;
 	 top: 429px;
 	 left: 500px;
 	
 	 position: absolute;
-	 z-index: 11;
 	 
 }
 
 #{id}label15 {
+	 z-index: 11;
 	 width: 71px;
 	 height: 13px;
 	 top: 433px;
 	 left: 424px;
 	
 	 position: absolute;
-	 z-index: 11;
 	 
 }
 
 #{id}dataGrid3 {
+	 z-index: 10;
 	 width: 200px;
 	 height: 95px;
 	 top: 200px;
 	 left: 405px;
 	
 	 position: absolute;
-	 z-index: 10;
 	 
 }
 
 #{id}label13 {
+	 z-index: 10;
 	 width: 70px;
 	 height: 13px;
 	 top: 182px;
 	 left: 405px;
 	
 	 position: absolute;
-	 z-index: 10;
 	 
 }
 
 #{id}dataGrid2 {
+	 z-index: 9;
 	 width: 200px;
 	 height: 95px;
 	 top: 200px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 9;
 	 
 }
 
 #{id}label12 {
+	 z-index: 8;
 	 width: 103px;
 	 height: 13px;
 	 top: 182px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 8;
 	 
 }
 
 #{id}richText21 {
+	 z-index: 7;
 	 width: 415px;
 	 height: 44px;
 	 top: 56px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 7;
 	 
 }
 
 #{id}richText20 {
+	 z-index: 7;
 	 width: 150px;
 	 height: 35px;
 	 top: 55px;
@@ -2987,11 +3136,11 @@
 	 color: rgb(255, 0, 0);
 	 font-weight: bold;
 	 font-size: 34px;
-	 z-index: 7;
 	 
 }
 
 #{id}richText16 {
+	 z-index: 6;
 	 width: 100px;
 	 height: 22px;
 	 top: 5px;
@@ -3001,11 +3150,11 @@
 	 font-size: 18px;
 	 font-weight: bold;
 	 text-align: left;
-	 z-index: 6;
 	 
 }
 
 #{id}richText15 {
+	 z-index: 5;
 	 width: 439px;
 	 height: 22px;
 	 top: 30px;
@@ -3015,11 +3164,11 @@
 	 font-size: 18px;
 	 font-weight: bold;
 	 text-align: left;
-	 z-index: 5;
 	 
 }
 
 #{id}richText14 {
+	 z-index: 4;
 	 width: 40px;
 	 height: 22px;
 	 top: 5px;
@@ -3029,11 +3178,11 @@
 	 font-size: 18px;
 	 font-weight: bold;
 	 text-align: left;
-	 z-index: 4;
 	 
 }
 
 #{id}image2 {
+	 z-index: 3;
 	 width: 150px;
 	 height: 200px;
 	 top: 95px;
@@ -3052,34 +3201,11 @@
 	 border-right-width: 3px;
 	 border-bottom-style: solid;
 	 border-bottom-width: 3px;
-	 z-index: 3;
-	 
-}
-
-#{id}label21 {
-	 z-index: 32;
-	 width: 88px;
-	 height: 13px;
-	 top: 505px;
-	 left: 15px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox8 {
-	 z-index: 32;
-	 width: 185px;
-	 height: 22px;
-	 top: 523px;
-	 left: 15px;
-	
-	 position: absolute;
 	 
 }
 
 #{id}label20 {
-	 z-index: 31;
+	 z-index: 29;
 	 width: 51px;
 	 height: 13px;
 	 top: 479px;
@@ -3090,7 +3216,7 @@
 }
 
 #{id}combobox7 {
-	 z-index: 31;
+	 z-index: 29;
 	 width: 125px;
 	 height: 22px;
 	 top: 475px;
@@ -3101,7 +3227,7 @@
 }
 
 #{id}label19 {
-	 z-index: 30;
+	 z-index: 28;
 	 width: 59px;
 	 height: 13px;
 	 top: 444px;
@@ -3112,7 +3238,7 @@
 }
 
 #{id}combobox4 {
-	 z-index: 30;
+	 z-index: 28;
 	 width: 125px;
 	 height: 22px;
 	 top: 440px;
@@ -3123,7 +3249,7 @@
 }
 
 #{id}label18 {
-	 z-index: 29;
+	 z-index: 27;
 	 width: 34px;
 	 height: 13px;
 	 top: 384px;
@@ -3134,7 +3260,7 @@
 }
 
 #{id}combobox3 {
-	 z-index: 29;
+	 z-index: 27;
 	 width: 125px;
 	 height: 22px;
 	 top: 380px;
@@ -3145,7 +3271,7 @@
 }
 
 #{id}label17 {
-	 z-index: 28;
+	 z-index: 26;
 	 width: 91px;
 	 height: 13px;
 	 top: 414px;
@@ -3156,7 +3282,7 @@
 }
 
 #{id}checkbox1 {
-	 z-index: 28;
+	 z-index: 26;
 	 width: 22px;
 	 height: 22px;
 	 top: 410px;
@@ -3167,7 +3293,7 @@
 }
 
 #{id}textField11 {
-	 z-index: 27;
+	 z-index: 25;
 	 width: 175px;
 	 height: 75px;
 	 top: 445px;
@@ -3178,7 +3304,7 @@
 }
 
 #{id}label16 {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 75px;
 	 height: 13px;
 	 top: 427px;
@@ -3257,7 +3383,7 @@
 }
 
 #{id}matrix2 {
-	 z-index: 24;
+	 z-index: 23;
 	 width: 415px;
 	 height: 70px;
 	 top: 105px;
@@ -3289,7 +3415,7 @@
 }
 
 #{id}button5 {
-	 z-index: 23;
+	 z-index: 22;
 	 width: 140px;
 	 height: 25px;
 	 top: 343px;
@@ -5799,7 +5925,7 @@
 }
 
 #{id}container5 {
-	 z-index: 22;
+	 z-index: 21;
 	 width: 390px;
 	 height: 50px;
 	 top: 375px;
@@ -5810,7 +5936,7 @@
 }
 
 #{id}button3 {
-	 z-index: 21;
+	 z-index: 20;
 	 width: 75px;
 	 height: 35px;
 	 top: 565px;
@@ -5825,7 +5951,7 @@
 }
 
 #{id}label14 {
-	 z-index: 20;
+	 z-index: 19;
 	 width: 93px;
 	 height: 13px;
 	 top: 327px;
@@ -5836,7 +5962,7 @@
 }
 
 #{id}combobox2 {
-	 z-index: 20;
+	 z-index: 19;
 	 width: 125px;
 	 height: 22px;
 	 top: 345px;
@@ -6253,7 +6379,7 @@
 	 height: 610px;
 	 top: 0px;
 	 left: 0px;
-	 right: 3px;
+	 right: 1px;
 	
 	 position: absolute;
 	 
@@ -6736,7 +6862,7 @@
 
 #{id}classRosterSubCont {
 	 z-index: 1;
-	 width: 1119px;
+	 width: 1120px;
 	 height: 610px;
 	 top: 0px;
 	 left: 0px;
@@ -6747,10 +6873,10 @@
 
 #{id}classRosterRecieptCont {
 	 z-index: 2;
-	 width: 6px;
+	 width: 5px;
 	 height: 610px;
 	 top: 0px;
-	 left: 1119px;
+	 left: 472px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -6778,7 +6904,7 @@
 
 #{id}muClassRosterSubCont {
 	 z-index: 1;
-	 width: 1121px;
+	 width: 1122px;
 	 height: 610px;
 	 top: 0px;
 	 left: 0px;
@@ -6789,10 +6915,10 @@
 
 #{id}muClassRecieptCont {
 	 z-index: 2;
-	 width: 19px;
+	 width: 18px;
 	 height: 610px;
 	 top: 0px;
-	 left: 1121px;
+	 left: 1122px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
