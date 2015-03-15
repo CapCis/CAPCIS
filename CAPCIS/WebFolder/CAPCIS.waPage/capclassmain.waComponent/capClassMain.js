@@ -27,6 +27,7 @@ function constructor (id) {
 	 	var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:7}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
+		 				
 						recieptPurposeSuccess(result);
 					},
 					'onError': function(error){
@@ -52,9 +53,31 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
-	comboBoxTextInput.change = function comboBoxTextInput_change (event)// @startlock
+	comboBoxTextInput.keyup = function comboBoxTextInput_keyup (event)// @startlock
 	{// @endlock
-		currentInput = $$(getHtmlId('comboBoxTextInput')).sourceAtt.getValue();
+		
+		if(event.keyCode ===13)
+		{
+			
+			$$($comp.id+'_comboBoxTextInput').setValue(sources.receiptPurpose.ReceiptPurpose);
+			var grid = document.getElementById($comp.id+'_comboboxGrid');
+			grid.style.display = 'none';
+		}
+		else
+		{
+			receiptPurpose=tempStore;
+			sources.receiptPurpose.sync();
+
+			var grid = document.getElementById($comp.id+'_comboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_comboBoxTextInput').getValue();//textInput.value;
+			sources.receiptPurpose.query('ReceiptPurpose = :1 order by ReceiptPurpose', { params: [currentInput + "*"]});
+		}
+		
+		
+		
+		
 	};// @lock
 
 	comboboxGrid.onRowClick = function comboboxGrid_onRowClick (event)// @startlock
@@ -69,8 +92,17 @@ function constructor (id) {
 
 	comboboxButton.click = function comboboxButton_click (event)// @startlock
 	{// @endlock
+		
 		var grid = document.getElementById(getHtmlId('comboboxGrid'));
-		grid.style.display = 'block';
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+		
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -480,8 +512,8 @@ function constructor (id) {
 	
 	function recieptPurposeSuccess(result)
 	{
-		
-		receiptPurpose = result;
+		receiptPurpose= result;
+		tempStore= result;
 		sources.receiptPurpose.sync();
 	}
 	function recieptPurposeError(event)
@@ -495,7 +527,7 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_comboBoxTextInput", "change", comboBoxTextInput.change, "WAF");
+	WAF.addListener(this.id + "_comboBoxTextInput", "keyup", comboBoxTextInput.keyup, "WAF");
 	WAF.addListener(this.id + "_comboboxGrid", "onRowClick", comboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_comboboxButton", "click", comboboxButton.click, "WAF");
 	WAF.addListener(this.id + "_muClassRosterDG", "onRowDraw", muClassRosterDG.onRowDraw, "WAF");
