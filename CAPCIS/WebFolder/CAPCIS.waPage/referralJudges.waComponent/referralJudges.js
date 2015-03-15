@@ -204,12 +204,10 @@ function constructor (id) {
 
 	judgePreviousGrid.onRowClick = function judgePreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		$$(getHtmlId('container9')).setSplitPosition(250);
 		var id = sources.bakJudgeInfo.BAKJudgesID;
-		
-	
-		
+
 		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:46,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
 	 	rpcDSelects.getSelectAsync({
@@ -232,7 +230,7 @@ function constructor (id) {
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
 		var id = sources.judgeCorespondance.JudgeCorrespondenceID;
 		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
@@ -254,10 +252,7 @@ function constructor (id) {
 					},
 					'params': [myObject8]
 				});
-		
-		
-		
-		
+
 	};// @lock
 
 	button5.click = function button5_click (event)// @startlock
@@ -318,13 +313,12 @@ function constructor (id) {
 
 	closeJudgeCurrentButton.click = function closeJudgeCurrentButton_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+		$$(getHtmlId('mainJudgeCont')).setSplitPosition(1290);
 	};// @lock
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
-		changed = false;
-		debugger;
+		
 			var myObject7 = 
 			{
 				

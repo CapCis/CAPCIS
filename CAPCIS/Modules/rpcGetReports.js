@@ -9,7 +9,7 @@ exports.getReport = function getReport ()
    var xhr, headers, result, resultObj, URLText, URLJson;
   
  	//URLJson = "http://127.0.0.1:8081/rest/$catalog"; // REST query to a Wakanda server
- 	URLText = "http://localhost:8888/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9"; // connect to an HTTP server
+ 	URLText = "http://localhost:8888/jasperserver/rest_v2/reports/reports/dickReport2.pdf?whereFilter=9"; // connect to an HTTP server
  	var headersObj = {};
    
  	xhr = new XMLHttpRequest(); // instanciate the xhr object
@@ -17,13 +17,7 @@ exports.getReport = function getReport ()
    
  	xhr.onreadystatechange = function() 
 	{ // event handler
-	    var state = this.readyState;
-	    //if (state == 1) 
-		//{ // while the status event is not Done we continue
-    	    	
-    	//    return;
-    	//}
-     	
+	    var state = this.readyState;  
      	if (state !== 4) 
 		{ // while the status event is not Done we continue
     	    //authstr = 'Basic ' + ("jasperadmin:jasperadmin").toString("base64"); 	
@@ -32,9 +26,10 @@ exports.getReport = function getReport ()
     	}
     	
     	var headers = this.getAllResponseHeaders(); //get the headers of the response
-   	  	var result = this.responseText;  //get the contents of the response
-   	  	var resultAll = this.response;
-     	var headersArray = headers.split('\n'); // split and format the headers string in an array
+   	  	//var result = this.responseText;  //get the contents of the response
+   	  	var result = this.response;
+   	  	
+     	/*var headersArray = headers.split('\n'); // split and format the headers string in an array
      	headersArray.forEach(function(header, index, headersArray) 
      	{
         	var name, indexSeparator, value;
@@ -63,8 +58,9 @@ exports.getReport = function getReport ()
 		{ // not JSON, return text
          	resultTxt = result;
      	}
+     	*/
  		};
- 	
+ 	    
  	xhr.open('GET', URLText); // to connect to a Web site
    	// or xhr.open('GET', URLJson) to send a REST query to a Wakanda server
     //authstr = 'Basic ' + btoa('jasperadmin:jasperadmin'); 	
@@ -74,11 +70,64 @@ exports.getReport = function getReport ()
     var myCreds = myBuffer.toString('base64');
     authstr = 'Basic ' + myCreds;//'jasperadmin:jasperadmin'.toString('base64'); 	
     xhr.setRequestHeader('Authorization',authstr);
+    xhr.responseType = 'blob';
  	xhr.send(); // send the request
 
 
-
-
-	return ('Hello world');
+    
+	var myPDFBuffer = xhr.response.toBuffer();
+	var myPDFString = myPDFBuffer.toString('utf8');
+	//var myAwsomeFile = File("c:/temp/awsomefile.txt");
+	var myAwsomeFile = new TextStream("c:/Temp/awsomefile.txt","Overwrite",7);
+	myAwsomeFile.write(myPDFString);	
+    myAwsomeFile.close();
+    
+	//myAwsomeFile.create();	
+	
+	create(myAwsomeFile);
+	return (xhr.response);
 	
 };
+
+function getMyReport(request, response) 
+{        
+	debugger;
+	var xhr, headers, result, resultObj, URLText, URLJson;
+	URLText = "http://localhost:8888/jasperserver/rest_v2/reports/reports/dickReport2.pdf?whereFilter=9"; // connect to an HTTP server
+ 	var headersObj = {};
+   
+ 	xhr = new XMLHttpRequest(); // instanciate the xhr object
+       
+ 	xhr.onreadystatechange = function() 
+	{ // event handler
+	    var state = this.readyState;  
+     	if (state !== 4) 
+		{ // while the status event is not Done we continue
+    	    //authstr = 'Basic ' + ("jasperadmin:jasperadmin").toString("base64"); 	
+    		//xhr.setRequestHeader('Authorization',authstr);
+    	    return;
+    	}
+    	
+    	var headers = this.getAllResponseHeaders(); //get the headers of the response
+   	  	//var result = this.responseText;  //get the contents of the response
+   	  	var result = this.response; 	  	
+     	
+ 	};
+ 	    
+ 	xhr.open('GET', URLText); // to connect to a Web site / xhr.open('GET', URLJson) to send a REST query to a Wakanda server
+    
+    var myString = 'jasperadmin:jasperadmin';
+    var myBuffer = new Buffer(myString);
+    var myCreds = myBuffer.toString('base64');
+    authstr = 'Basic ' + myCreds;//'jasperadmin:jasperadmin'.toString('base64'); 	
+    xhr.setRequestHeader('Authorization',authstr);
+    xhr.responseType = 'blob';
+ 	xhr.send(); // send the request    
+	var myPDFBuffer = xhr.response.toBuffer();  // get the response and set it to a buffer
+	var myPDFString = myPDFBuffer.toString('base64');
+	//var myAwsomeFile = File("c:/temp/awsomefile.txt");
+	var myAwsomeFile = new TextStream("c:/Temp/awsomefile.txt","Overwrite",7);
+	myAwsomeFile.write(myPDFString);	
+    myAwsomeFile.close();
+    return("hello")
+}
