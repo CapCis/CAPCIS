@@ -19,6 +19,8 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
 		debugger;
+		//window.open("http://localhost:8082/getPicture");
+		$$('image3').value = ("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
 		
 	};// @lock
 
@@ -55,10 +57,12 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		$$('frame1').setValue("http://localhost:8082/makeMyReportBitch");		
 		//window.open("http://localhost:8082/makeMyReportBitch");
 		
-		
-		xhr = new XMLHttpRequest();
-		
-		
+		//-----------------------------how to send a xmlhttprequest with body string !!!!!
+		//xhr = new XMLHttpRequest();
+		//URLText = "http://localhost:8082/makeMyReportBitch?myquery";
+		//xhr.open("POST",URLText,true);		
+		//xhr.setRequestHeader("Content-type","text/plain");
+		//xhr.send("my test data");
 	};// @lock
 
 	button12.click = function button12_click (event)// @startlock
