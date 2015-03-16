@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var button7 = {};	// @button
 	var button6 = {};	// @button
 	var button5 = {};	// @button
 	var frame1 = {};	// @frame
@@ -15,6 +16,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	button7.click = function button7_click (event)// @startlock
+	{// @endlock
+		debugger;
+		
+		var myIFrame = document.getElementById("frame1");
+		myIFrame.addChild($$('button5'));
+		
+	};// @lock
 
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
@@ -164,6 +174,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("button7", "click", button7.click, "WAF");
 	WAF.addListener("button6", "click", button6.click, "WAF");
 	WAF.addListener("button5", "click", button5.click, "WAF");
 	WAF.addListener("frame1", "onLoad", frame1.onLoad, "WAF");
