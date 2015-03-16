@@ -555,6 +555,8 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.fxuseraccounts on bakprosecutors.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE BAKProsecutorsID = '+myObject.data1;
 						break;
+				case 83: answer = "SELECT * FROM capcis.citylistings WHERE CityListing = '"+myObject.data1+"'";
+						break;
 				default:answer = null;
 						break;
 			}
