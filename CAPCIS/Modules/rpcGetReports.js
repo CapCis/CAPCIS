@@ -84,7 +84,7 @@ exports.getReport = function getReport ()
     
 	//myAwsomeFile.create();	
 	
-	create(myAwsomeFile);
+	//create(myAwsomeFile);
 	return (xhr.response);
 	
 };
