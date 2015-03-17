@@ -86,10 +86,10 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 11: answer ='INSERT INTO capcis.bakothermonitors (OtherMonitors,OtherMonitorsOfficePhone,OtherMonitorsEmail,OtherMonitorsFax,OtherMonitorsAddress, \
 						OtherMonitorsCity,OtherMonitorsState,OtherMonitorsZipCode,FK_othermonitors_OtherMonitorsID,OtherMonitorsOfficePhoneExt,OtherMonitorsMobilePhone \
-						,OtherMonitorsNotes,OtherMonitorsFullNameDisplay,OMPreferredReportingMethod,OtherMonitorsJurisdiction,InactiveOtherMonitors,FK_useraccounts_UserAccountsID) \
+						,OtherMonitorsNotes,OtherMonitorsFullNameDisplay,OMPreferredReportingMethod,InactiveOtherMonitors,FK_useraccounts_UserAccountsID) \
 						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
 						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
-						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
 						break;
 				case 12: answer = 'INSERT into capcis.pojurisdictioncorrespondance(POJurisdictionCorrespondence, FK_useraccounts_UserAccountsID, \
 				 				FK_POJurisdictionInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
@@ -106,9 +106,9 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 15: answer ='INSERT INTO capcis.bakpoinformation (POName,POPhone,POEmail,POFax, \
 						FK_poinformation_POInformationID,POPhoneExtension,POMobilePhone \
-						,PONotes,POFullNameDisplay,POPreferredReportingMethod,InactivePO,FK_useraccounts_UserAccountsID) \
+						,PONotes,POFullNameDisplay,POPreferredReportingMethod,InactivePO,FK_useraccounts_UserAccountsID,FK_pojurisdiction_POJurisdictionID) \
 						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data14+'","'+myObject.data9+'", \
-						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'",'+myObject.data8+')';
 						break;
 				case 16: answer = 'INSERT into capcis.prosecutorcorrespondance(ProsecutorCorrespondence, FK_useraccounts_UserAccountsID, \
 				 				FK_prosecutors_ProsecutorsID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';

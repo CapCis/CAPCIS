@@ -13,7 +13,7 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 	
 		
-		$$(getHtmlId('container3')).setSplitPosition(900);
+	$$(getHtmlId('container3')).setSplitPosition(900);
 	$$(getHtmlId('container9')).setSplitPosition(1000);
 	$$(getHtmlId('container6')).setSplitPosition(1500);
 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
