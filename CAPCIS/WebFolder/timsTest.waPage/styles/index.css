@@ -3,78 +3,87 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button15 {
+	 z-index: 34;
+	 width: 91px;
+	 height: 25px;
+	 top: 172px;
+	 left: 21px;
+	
+	 position: absolute;
+	 
+}
+
+#label4 {
+	 z-index: 2;
+	 width: 29px;
+	 height: 13px;
+	 top: 18px;
+	 left: 33px;
+	
+	 position: absolute;
+	 
+}
+
+#button13 {
+	 width: 128px;
+	 height: 27px;
+	 top: 446px;
+	 left: 432px;
+	
+	 
+}
+
 #button7 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 107px;
-	 height: 41px;
-	 top: 875px;
-	 left: 930px;
+	 height: 33px;
+	 top: 880px;
+	 left: 929px;
 	
 	 position: absolute;
 	 
 }
 
 #image3 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 249px;
 	 height: 360px;
-	 top: 810px;
-	 left: 1800px;
+	 top: 737px;
+	 left: 1793px;
 	
 	 position: absolute;
 	 
 }
 
 #button6 {
-	 z-index: 31;
+	 z-index: 30;
 	 width: 105px;
 	 height: 36px;
-	 top: 754px;
-	 left: 1872px;
+	 top: 668px;
+	 left: 1864px;
 	
 	 position: absolute;
 	 
 }
 
 #button5 {
-	 z-index: 30;
+	 z-index: 29;
 	 width: 111px;
 	 height: 39px;
-	 top: 811px;
-	 left: 926px;
+	 top: 809px;
+	 left: 925px;
 	
 	 position: absolute;
 	 
 }
 
 #container4 {
-	 z-index: 29;
+	 z-index: 28;
 	 width: 605px;
 	 height: 543px;
 	 top: 669px;
 	 left: 1097px;
-	
-	 position: absolute;
-	 
-}
-
-#label2 {
-	 z-index: 1;
-	 top: 18px;
-	 bottom: 510px;
-	 left: 14px;
-	 right: 560px;
-	
-	 position: absolute;
-	 
-}
-
-#frame1 {
-	 z-index: 1;
-	 top: 36px;
-	 bottom: 25px;
-	 left: 14px;
-	 right: 27px;
 	
 	 position: absolute;
 	 
@@ -334,6 +343,17 @@
 	 height: 48px;
 	 top: 8px;
 	 left: 1244px;
+	
+	 position: absolute;
+	 
+}
+
+#frame1 {
+	 z-index: 2;
+	 width: 515px;
+	 height: 411px;
+	 top: 36px;
+	 left: 33px;
 	
 	 position: absolute;
 	 
