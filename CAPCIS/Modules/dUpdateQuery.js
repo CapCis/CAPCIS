@@ -59,7 +59,7 @@
 						break;
 				case 11: answer =  'UPDATE capcis.othermonitors SET OtherMonitors = "'+myObject.data1+'", OtherMonitorsOfficePhone = "'+myObject.data2+'", \
 				 		OtherMonitorsEmail="'+myObject.data3+'", OtherMonitorsFax = "'+myObject.data4+'", OtherMonitorsAddress ="'+myObject.data5+'", OtherMonitorsCity = "'+myObject.data6+'", \
- 						OtherMonitorsState = "'+myObject.data7+'", OtherMonitorsZipCode = "'+myObject.data8+'", OtherMonitorsOfficePhoneExt= "'+myObject.data9+'", OtherMonitorsJurisdiction= "'+myObject.data16+'", \
+ 						OtherMonitorsState = "'+myObject.data7+'", OtherMonitorsZipCode = "'+myObject.data8+'", OtherMonitorsOfficePhoneExt= "'+myObject.data9+'",  \
  						OtherMonitorsMobilePhone = "'+myObject.data10+'", OtherMonitorsNotes = "'+myObject.data11+'", OtherMonitorsFullNameDisplay = "'+myObject.data12+'",\
  						OMPreferredReportingMethod = "'+myObject.data13+'", InactiveOtherMonitors = '+myObject.data15+' \
 						WHERE OtherMonitorsID="'+myObject.data14+'";';
@@ -76,7 +76,7 @@
 				case 14: answer = 'UPDATE capcis.pocorrespondance SET VoidedPOCorrespondence = '+myObject.data2+' WHERE POCorrespondenceID = "'+myObject.data3+'"';
 						break;
 				case 15: answer =  'UPDATE capcis.poinformation SET POName = "'+myObject.data1+'", POPhone = "'+myObject.data2+'", \
-				 		POEmail="'+myObject.data3+'", POFax = "'+myObject.data4+'", POPhoneExtension= "'+myObject.data9+'",  \
+				 		POEmail="'+myObject.data3+'", POFax = "'+myObject.data4+'", POPhoneExtension= "'+myObject.data9+'", FK_pojurisdiction_POJurisdictionID= "'+myObject.data8+'", \
  						POMobilePhone = "'+myObject.data10+'", PONotes = "'+myObject.data11+'", POFullNameDisplay = "'+myObject.data12+'",\
  						POPreferredReportingMethod = "'+myObject.data13+'", InactivePO = '+myObject.data15+' \
 						WHERE POInformationID="'+myObject.data14+'";';

@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		tempStore= city;
 		try {
 			searchCrit = data.userData.searchCrit;
 			searchType = data.userData.searchType;
@@ -176,6 +177,9 @@ function constructor (id) {
 		}
 
 	// @region namespaceDeclaration// @startlock
+	var button1 = {};	// @button
+	var omCityComboBox = {};	// @textField
+	var cityComboboxGrid = {};	// @dataGrid
 	var Close = {};	// @button
 	var button3 = {};	// @button
 	var dataGrid1 = {};	// @dataGrid
@@ -191,6 +195,58 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	omCityComboBox.keyup = function omCityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_omCityComboBox').getValue();
+			$$($comp.id+'_omCityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_omCityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	omCityComboBox.blur = function omCityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('omCityComboBox')).setValue(recValue);
+	};// @lock
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
@@ -313,7 +369,24 @@ function constructor (id) {
 
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
+		var currentCity = $$($comp.id + "_omCityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
 		
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+		}
 			var myObject7 = 
 			{
 				
@@ -332,8 +405,7 @@ function constructor (id) {
 				data12:$$(getHtmlId("omFullName")).sourceAtt.getValue(),
 				data13:$$(getHtmlId("omReportingComboBox")).getValue(),
 				data14:currentID,
-				data15:$$(getHtmlId("omInactive")).getValue(),
-				data16:$$(getHtmlId("omJurisdiction")).getValue()
+				data15:$$(getHtmlId("omInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
@@ -372,10 +444,10 @@ function constructor (id) {
 
 	otherMonitorsDataGird.onRowClick = function otherMonitorsDataGird_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainOtherMonitorsCont')).setSplitPosition(400);
+		$$(getHtmlId('mainOtherMonitorsCont')).setSplitPosition(450);
 		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(2000);
 	 	$$(getHtmlId('omPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('omCorrCont')).setSplitPosition(1500);
+	 	$$(getHtmlId('omCorrCont')).setSplitPosition(420);
 		
 		
 		
@@ -502,6 +574,10 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
+	WAF.addListener(this.id + "_omCityComboBox", "keyup", omCityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_omCityComboBox", "blur", omCityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_Close", "click", Close.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");

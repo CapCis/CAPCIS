@@ -11,6 +11,16 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:85}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						jurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 		try {
 			searchCrit = data.userData.searchCrit;
 			searchType = data.userData.searchType;
@@ -176,6 +186,9 @@ function constructor (id) {
 		}
 
 	// @region namespaceDeclaration// @startlock
+	var button1 = {};	// @button
+	var judgeJurisdictionGrid = {};	// @dataGrid
+	var judgeJurisdiction = {};	// @textField
 	var Close = {};	// @button
 	var button3 = {};	// @button
 	var dataGrid1 = {};	// @dataGrid
@@ -191,6 +204,61 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	judgeJurisdictionGrid.onRowClick = function judgeJurisdictionGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('judgeJurisdictionGrid')).sourceAtt.getValue();
+		$$(getHtmlId('judgeJurisdiction')).setValue(recValue);
+	};// @lock
+
+	judgeJurisdiction.keyup = function judgeJurisdiction_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();
+			$$($comp.id+'_judgeJurisdiction').setValue(sources.poJurisdiction.JurisdictionName);
+			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			poJurisdiction=tempStore2;
+			sources.poJurisdiction.sync();
+
+			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();//textInput.value;
+			sources.poJurisdiction.query('JurisdictionName = :1 order by JurisdictionName', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	judgeJurisdiction.blur = function judgeJurisdiction_blur (event)// @startlock
+	{// @endlock
+		var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();
+			$$($comp.id+'_judgeJurisdiction').setValue(sources.poJurisdiction.JurisdictionName);
+			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
+			grid.style.display = 'none';
+		
+	};// @lock
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
@@ -311,7 +379,7 @@ function constructor (id) {
 
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
-		
+			debugger;
 var myObject7 = 
 			{
 				
@@ -320,11 +388,12 @@ var myObject7 =
 				data2:$$(getHtmlId("poPhone")).sourceAtt.getValue(),
 				data3:$$(getHtmlId("poEmail")).sourceAtt.getValue(),
 				data4:$$(getHtmlId("poFax")).sourceAtt.getValue(),
+				data8:sources.poJurisdiction.POJurisdictionID,
 				data9:$$(getHtmlId("poExt")).sourceAtt.getValue(),
 				data10:$$(getHtmlId("poAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("poNotes")).sourceAtt.getValue(),
+				data11:$$(getHtmlId("notes")).sourceAtt.getValue(),
 				data12:$$(getHtmlId("poFullName")).sourceAtt.getValue(),
-				data13:'None',
+				data13:$$(getHtmlId("poReportingComboBox")).sourceAtt.getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("poInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -365,23 +434,33 @@ var myObject7 =
 
 	probationOfficerDataGird.onRowClick = function probationOfficerDataGird_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainProbationOfficerCont')).setSplitPosition(400);
+		
+		tempStore2 =  poJurisdiction;
+		$$(getHtmlId('mainProbationOfficerCont')).setSplitPosition(450);
 		$$(getHtmlId('poSpecificInfoCont')).setSplitPosition(2000);
 	 	$$(getHtmlId('poPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('poCorrCont')).setSplitPosition(1500);
-		
-		
-		
+	 	$$(getHtmlId('poCorrCont')).setSplitPosition(420);
+				
 		var name = sources.probationOfficerList.POName;
 		var reportingMethod = sources.probationOfficerList.POPreferredReportingMethod;
 		var ids = sources.probationOfficerList.POInformationID;
+		var juri = sources.probationOfficerList.JurisdictionName;
 		
+		if(juri != "" && juri != null)
+		{
+			$$(getHtmlId('judgeJurisdiction')).setValue(juri);
+		}
+		else
+		{
+			$$(getHtmlId('judgeJurisdiction')).setValue("None");
+		}
 		
 		if(reportingMethod != "" && reportingMethod != null)
 		{
 				
 			$$(getHtmlId('poReportingComboBox')).setValue(reportingMethod);
 		}
+		
 		else
 		{
 				
@@ -475,6 +554,17 @@ var myObject7 =
 		specificBakProbationOfficerList = result;
 		sources.specificBakProbationOfficerList.sync();
 	}
+	function jurisdictionSuccess(result)
+	{
+		var tempCity = result[0];
+		result[0] = {
+	    	JurisdictionName: "None"
+		};
+		result[result.length] = tempCity;
+		
+		poJurisdiction = result;
+		sources.poJurisdiction.sync();
+	}
 	function specificBakListError(event)
 	{
 		var errMessage;
@@ -486,6 +576,10 @@ var myObject7 =
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdictionGrid", "onRowClick", judgeJurisdictionGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdiction", "keyup", judgeJurisdiction.keyup, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdiction", "blur", judgeJurisdiction.blur, "WAF");
 	WAF.addListener(this.id + "_Close", "click", Close.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
