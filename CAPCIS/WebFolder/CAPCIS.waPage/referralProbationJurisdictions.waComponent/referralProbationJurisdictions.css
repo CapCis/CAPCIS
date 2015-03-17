@@ -4,6 +4,7 @@
 */
 
 #{id}dataGrid2 {
+	 z-index: 36;
 	 width: 205px;
 	 height: 130px;
 	 top: 162px;
@@ -11,22 +12,22 @@
 	
 	 position: absolute;
 	 background-color: rgb(255, 127, 0);
-	 z-index: 36;
 	 
 }
 
 #{id}label6 {
+	 z-index: 2;
 	 width: 21px;
 	 height: 13px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}button1 {
+	 z-index: 3;
 	 width: 25px;
 	 height: 22px;
 	 top: 18px;
@@ -42,7 +43,6 @@
 	 font-family: WebSymbolsRegular;
 	 font-size: 14px;
 	 color: rgb(153, 153, 153);
-	 z-index: 3;
 	 
 }
 
@@ -52,6 +52,7 @@
 }
 
 #{id}textField1 {
+	 z-index: 2;
 	 width: 205px;
 	 height: 22px;
 	 top: 18px;
@@ -62,18 +63,17 @@
 	-moz-border-radius-topright: 0px;
 	 border-bottom-right-radius: 0px;
 	-moz-border-radius-bottomright: 0px;
-	 z-index: 2;
 	 
 }
 
 #{id}container2 {
+	 z-index: 35;
 	 width: 231px;
 	 height: 41px;
 	 top: 122px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
@@ -691,7 +691,7 @@
 }
 
 #{id}mainProbationJurisdictionsCont {
-	 z-index: 11;
+	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
 	 top: 0px;
@@ -703,11 +703,11 @@
 }
 
 #{id}pjDataGird {
-	 z-index: 1;
+	 z-index: 11;
 	 height: 625px;
-	 top: 2px;
-	 left: 2px;
-	 right: -1557px;
+	 top: -33056px;
+	 left: -326px;
+	 right: 20px;
 	
 	 position: absolute;
 	 

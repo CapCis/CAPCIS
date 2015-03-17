@@ -11,24 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		/*
-		$$(getHtmlId('container3')).setSplitPosition(900);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(1500);
-	 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
-		*/
-		
-		
-		
-	 	/*
-	 	$$(getHtmlId('attCorrCont')).setSplitPosition(900);
-	 	$$(getHtmlId('attPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(1500);
-	 	$$(getHtmlId('mainAttorneyCont')).setSplitPosition(1290);
-	 	*/
-		//mainAssessorCont.style.visibility = 'visible';
-		
-		
+
 		
 		try {
 			searchCrit = data.userData.searchCrit;
@@ -191,6 +174,9 @@ function constructor (id) {
 			}	
 		}
 	// @region namespaceDeclaration// @startlock
+	var button4 = {};	// @button
+	var attCityComboBox = {};	// @textField
+	var cityComboboxGrid = {};	// @dataGrid
 	var button14 = {};	// @button
 	var button15 = {};	// @button
 	var button3 = {};	// @button
@@ -207,9 +193,79 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	button4.click = function button4_click (event)// @startlock
+	{// @endlock
+		debugger;
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	attCityComboBox.keyup = function attCityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_attCityComboBox').getValue();
+			$$($comp.id+'_attCityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_attCityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	attCityComboBox.blur = function attCityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('attCityComboBox')).setValue(recValue);
+	};// @lock
+
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
+			var currentCity = $$($comp.id + "_attCityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
 		
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+		}
 		
 			var myObject7 = 
 			{
@@ -397,10 +453,10 @@ function constructor (id) {
 		
 		
 		
-		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(400);
+		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(450);
 		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(2000);
 	 	$$(getHtmlId('attPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('attCorrCont')).setSplitPosition(1500);
+	 	$$(getHtmlId('attCorrCont')).setSplitPosition(420);
 		
 		
 		
@@ -530,6 +586,10 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
+	WAF.addListener(this.id + "_attCityComboBox", "keyup", attCityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_attCityComboBox", "blur", attCityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");
 	WAF.addListener(this.id + "_button15", "click", button15.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
