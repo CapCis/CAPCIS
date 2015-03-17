@@ -3,8 +3,55 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}label2 {
+	 z-index: 2;
+	 width: 21px;
+	 height: 13px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button1 {
+	 z-index: 3;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 125px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}button1.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}container2 {
+	 z-index: 33;
+	 width: 150px;
+	 height: 41px;
+	 top: 122px;
+	 left: 263px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label102 {
-	 z-index: 35;
+	 z-index: 28;
 	 width: 21px;
 	 height: 13px;
 	 top: 166px;
@@ -15,7 +62,7 @@
 }
 
 #{id}label101 {
-	 z-index: 34;
+	 z-index: 27;
 	 width: 98px;
 	 height: 13px;
 	 top: 257px;
@@ -26,18 +73,18 @@
 }
 
 #{id}label100 {
-	 z-index: 33;
+	 z-index: 26;
 	 width: 124px;
 	 height: 13px;
 	 top: 312px;
-	 left: 256px;
+	 left: 259px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}label99 {
-	 z-index: 32;
+	 z-index: 25;
 	 width: 113px;
 	 height: 13px;
 	 top: 257px;
@@ -48,7 +95,7 @@
 }
 
 #{id}label96 {
-	 z-index: 31;
+	 z-index: 24;
 	 width: 77px;
 	 height: 13px;
 	 top: 212px;
@@ -59,7 +106,7 @@
 }
 
 #{id}label95 {
-	 z-index: 30;
+	 z-index: 23;
 	 width: 48px;
 	 height: 13px;
 	 top: 212px;
@@ -70,7 +117,7 @@
 }
 
 #{id}label94 {
-	 z-index: 29;
+	 z-index: 22;
 	 width: 28px;
 	 height: 13px;
 	 top: 212px;
@@ -92,7 +139,7 @@
 }
 
 #{id}label92 {
-	 z-index: 27;
+	 z-index: 30;
 	 width: 67px;
 	 height: 13px;
 	 top: 122px;
@@ -103,7 +150,7 @@
 }
 
 #{id}label91 {
-	 z-index: 26;
+	 z-index: 31;
 	 width: 75px;
 	 height: 13px;
 	 top: 122px;
@@ -114,7 +161,7 @@
 }
 
 #{id}label90 {
-	 z-index: 25;
+	 z-index: 32;
 	 width: 53px;
 	 height: 13px;
 	 top: 122px;
@@ -125,7 +172,7 @@
 }
 
 #{id}label89 {
-	 z-index: 24;
+	 z-index: 33;
 	 width: 70px;
 	 height: 13px;
 	 top: 122px;
@@ -136,7 +183,7 @@
 }
 
 #{id}label88 {
-	 z-index: 23;
+	 z-index: 34;
 	 width: 118px;
 	 height: 13px;
 	 top: 77px;
@@ -147,7 +194,7 @@
 }
 
 #{id}label87 {
-	 z-index: 22;
+	 z-index: 35;
 	 width: 175px;
 	 height: 13px;
 	 top: 77px;
@@ -158,7 +205,7 @@
 }
 
 #{id}label72 {
-	 z-index: 20;
+	 z-index: 36;
 	 width: 101px;
 	 height: 13px;
 	 top: 32px;
@@ -169,7 +216,7 @@
 }
 
 #{id}label71 {
-	 z-index: 19;
+	 z-index: 38;
 	 width: 59px;
 	 height: 13px;
 	 top: 32px;
@@ -202,18 +249,18 @@
 }
 
 #{id}label86 {
-	 z-index: 33;
+	 z-index: 20;
 	 width: 124px;
 	 height: 13px;
-	 top: 264px;
-	 left: 256px;
+	 top: 267px;
+	 left: 259px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}label85 {
-	 z-index: 29;
+	 z-index: 21;
 	 width: 113px;
 	 height: 13px;
 	 top: 212px;
@@ -224,7 +271,7 @@
 }
 
 #{id}label84 {
-	 z-index: 28;
+	 z-index: 16;
 	 width: 98px;
 	 height: 13px;
 	 top: 212px;
@@ -234,19 +281,8 @@
 	 
 }
 
-#{id}label83 {
-	 z-index: 27;
-	 width: 21px;
-	 height: 13px;
-	 top: 122px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label82 {
-	 z-index: 26;
+	 z-index: 22;
 	 width: 77px;
 	 height: 13px;
 	 top: 167px;
@@ -257,7 +293,7 @@
 }
 
 #{id}label81 {
-	 z-index: 25;
+	 z-index: 23;
 	 width: 48px;
 	 height: 13px;
 	 top: 167px;
@@ -279,7 +315,7 @@
 }
 
 #{id}label79 {
-	 z-index: 23;
+	 z-index: 25;
 	 width: 79px;
 	 height: 13px;
 	 top: 122px;
@@ -290,7 +326,7 @@
 }
 
 #{id}label78 {
-	 z-index: 22;
+	 z-index: 26;
 	 width: 67px;
 	 height: 13px;
 	 top: 77px;
@@ -301,7 +337,7 @@
 }
 
 #{id}label77 {
-	 z-index: 21;
+	 z-index: 27;
 	 width: 75px;
 	 height: 13px;
 	 top: 77px;
@@ -312,7 +348,7 @@
 }
 
 #{id}label76 {
-	 z-index: 20;
+	 z-index: 28;
 	 width: 53px;
 	 height: 13px;
 	 top: 77px;
@@ -323,7 +359,7 @@
 }
 
 #{id}label75 {
-	 z-index: 19;
+	 z-index: 29;
 	 width: 70px;
 	 height: 13px;
 	 top: 77px;
@@ -334,7 +370,7 @@
 }
 
 #{id}label74 {
-	 z-index: 18;
+	 z-index: 30;
 	 width: 118px;
 	 height: 13px;
 	 top: 32px;
@@ -345,7 +381,7 @@
 }
 
 #{id}label73 {
-	 z-index: 17;
+	 z-index: 31;
 	 width: 140px;
 	 height: 13px;
 	 top: 32px;
@@ -356,18 +392,18 @@
 }
 
 #{id}Close {
-	 z-index: 37;
-	 width: 92px;
-	 height: 22px;
-	 top: 348px;
-	 left: 248px;
+	 z-index: 29;
+	 width: 75px;
+	 height: 25px;
+	 top: 335px;
+	 left: 335px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}textField82 {
-	 z-index: 35;
+	 z-index: 28;
 	 width: 150px;
 	 height: 22px;
 	 top: 184px;
@@ -378,7 +414,7 @@
 }
 
 #{id}textField81 {
-	 z-index: 34;
+	 z-index: 27;
 	 width: 150px;
 	 height: 22px;
 	 top: 275px;
@@ -389,19 +425,19 @@
 }
 
 #{id}checkbox6 {
-	 z-index: 33;
+	 z-index: 26;
 	 width: 22px;
 	 height: 22px;
 	 top: 308px;
-	 left: 385px;
+	 left: 388px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}textField80 {
-	 z-index: 32;
-	 width: 250px;
+	 z-index: 25;
+	 width: 240px;
 	 height: 55px;
 	 top: 275px;
 	 left: 8px;
@@ -411,7 +447,7 @@
 }
 
 #{id}textField79 {
-	 z-index: 31;
+	 z-index: 24;
 	 width: 260px;
 	 height: 22px;
 	 top: 230px;
@@ -422,7 +458,7 @@
 }
 
 #{id}textField78 {
-	 z-index: 30;
+	 z-index: 23;
 	 width: 100px;
 	 height: 22px;
 	 top: 230px;
@@ -433,7 +469,7 @@
 }
 
 #{id}textField77 {
-	 z-index: 29;
+	 z-index: 22;
 	 width: 35px;
 	 height: 22px;
 	 top: 230px;
@@ -444,7 +480,7 @@
 }
 
 #{id}textField76 {
-	 z-index: 28;
+	 z-index: 30;
 	 width: 250px;
 	 height: 22px;
 	 top: 185px;
@@ -455,7 +491,7 @@
 }
 
 #{id}textField75 {
-	 z-index: 27;
+	 z-index: 31;
 	 width: 105px;
 	 height: 22px;
 	 top: 140px;
@@ -466,7 +502,7 @@
 }
 
 #{id}textField74 {
-	 z-index: 26;
+	 z-index: 32;
 	 width: 105px;
 	 height: 22px;
 	 top: 140px;
@@ -477,7 +513,7 @@
 }
 
 #{id}textField73 {
-	 z-index: 25;
+	 z-index: 33;
 	 width: 50px;
 	 height: 22px;
 	 top: 140px;
@@ -488,7 +524,7 @@
 }
 
 #{id}textField72 {
-	 z-index: 24;
+	 z-index: 34;
 	 width: 100px;
 	 height: 22px;
 	 top: 140px;
@@ -499,7 +535,7 @@
 }
 
 #{id}textField71 {
-	 z-index: 23;
+	 z-index: 35;
 	 width: 200px;
 	 height: 22px;
 	 top: 95px;
@@ -510,7 +546,7 @@
 }
 
 #{id}textField70 {
-	 z-index: 22;
+	 z-index: 36;
 	 width: 200px;
 	 height: 22px;
 	 top: 95px;
@@ -535,7 +571,7 @@
 }
 
 #{id}textField58 {
-	 z-index: 20;
+	 z-index: 37;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -547,7 +583,7 @@
 }
 
 #{id}textField57 {
-	 z-index: 19;
+	 z-index: 38;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -560,9 +596,9 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 653px;
+	 width: 468px;
 	 height: 390px;
-	 top: 233px;
+	 top: 235px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -571,10 +607,10 @@
 
 #{id}button3 {
 	 z-index: 3;
-	 width: 92px;
-	 height: 22px;
+	 width: 75px;
+	 height: 25px;
 	 top: 203px;
-	 left: 45px;
+	 left: 335px;
 	
 	 position: absolute;
 	 
@@ -582,7 +618,7 @@
 
 #{id}dataGrid1 {
 	 z-index: 2;
-	 width: 460px;
+	 width: 405px;
 	 height: 170px;
 	 top: 25px;
 	 left: 5px;
@@ -607,8 +643,8 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 653px;
-	 height: 233px;
+	 width: 468px;
+	 height: 235px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -654,10 +690,10 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 294px;
-	 height: 287px;
+	 width: 71px;
+	 height: 289px;
 	 top: 0px;
-	 left: 919px;
+	 left: 450px;
 	
 	 position: absolute;
 	 
@@ -680,7 +716,7 @@
 #{id}button2 {
 	 z-index: 3;
 	 width: 75px;
-	 height: 22px;
+	 height: 25px;
 	 top: 250px;
 	 left: 335px;
 	
@@ -690,8 +726,8 @@
 
 #{id}container25 {
 	 z-index: 1;
-	 width: 919px;
-	 height: 287px;
+	 width: 450px;
+	 height: 289px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -700,7 +736,7 @@
 }
 
 #{id}richText10 {
-	 z-index: 34;
+	 z-index: 21;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -714,20 +750,21 @@
 }
 
 #{id}button16 {
-	 z-index: 32;
-	 width: 75px;
-	 height: 35px;
+	 z-index: 19;
+	 width: 125px;
+	 height: 25px;
 	 top: 290px;
 	 left: 5px;
 	
 	 position: absolute;
+	 font-size: 14px;
 	 
 }
 
 #{id}button15 {
-	 z-index: 31;
+	 z-index: 18;
 	 width: 75px;
-	 height: 35px;
+	 height: 25px;
 	 top: 290px;
 	 left: 335px;
 	
@@ -736,9 +773,9 @@
 }
 
 #{id}button14 {
-	 z-index: 30;
+	 z-index: 17;
 	 width: 75px;
-	 height: 35px;
+	 height: 25px;
 	 top: 290px;
 	 left: 250px;
 	
@@ -748,8 +785,8 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 488px;
-	 height: 623px;
+	 width: 521px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -759,8 +796,8 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 147px;
-	 height: 623px;
+	 width: 301px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -792,7 +829,7 @@
 }
 
 #{id}omName {
-	 z-index: 17;
+	 z-index: 32;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -803,7 +840,7 @@
 }
 
 #{id}omFullName {
-	 z-index: 18;
+	 z-index: 31;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -814,7 +851,7 @@
 }
 
 #{id}omPhone {
-	 z-index: 19;
+	 z-index: 30;
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
@@ -825,7 +862,7 @@
 }
 
 #{id}omExt {
-	 z-index: 20;
+	 z-index: 29;
 	 width: 50px;
 	 height: 22px;
 	 top: 95px;
@@ -836,7 +873,7 @@
 }
 
 #{id}omAdditional {
-	 z-index: 21;
+	 z-index: 28;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -847,7 +884,7 @@
 }
 
 #{id}omFax {
-	 z-index: 22;
+	 z-index: 27;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -858,7 +895,7 @@
 }
 
 #{id}omAddress {
-	 z-index: 23;
+	 z-index: 26;
 	 width: 250px;
 	 height: 22px;
 	 top: 140px;
@@ -868,19 +905,8 @@
 	 
 }
 
-#{id}omCityComboBox {
-	 z-index: 27;
-	 width: 150px;
-	 height: 22px;
-	 top: 140px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}omState {
-	 z-index: 24;
+	 z-index: 25;
 	 width: 35px;
 	 height: 22px;
 	 top: 185px;
@@ -891,7 +917,7 @@
 }
 
 #{id}omZip {
-	 z-index: 25;
+	 z-index: 24;
 	 width: 100px;
 	 height: 22px;
 	 top: 185px;
@@ -902,7 +928,7 @@
 }
 
 #{id}omEmail {
-	 z-index: 26;
+	 z-index: 23;
 	 width: 260px;
 	 height: 22px;
 	 top: 185px;
@@ -913,9 +939,9 @@
 }
 
 #{id}omNotes {
-	 z-index: 29;
+	 z-index: 22;
 	 width: 250px;
-	 height: 22px;
+	 height: 50px;
 	 top: 230px;
 	 left: 5px;
 	
@@ -924,7 +950,7 @@
 }
 
 #{id}omReportingComboBox {
-	 z-index: 28;
+	 z-index: 16;
 	 width: 150px;
 	 height: 22px;
 	 top: 230px;
@@ -935,11 +961,11 @@
 }
 
 #{id}omInactive {
-	 z-index: 33;
+	 z-index: 20;
 	 width: 22px;
 	 height: 22px;
-	 top: 260px;
-	 left: 385px;
+	 top: 263px;
+	 left: 388px;
 	
 	 position: absolute;
 	 
@@ -968,17 +994,6 @@
 	 
 }
 
-#{id}omHiddenCorrId {
-	 z-index: 6;
-	 width: 10px;
-	 height: 11px;
-	 top: 11px;
-	 left: 380px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}omVoidedCorrespondanceCheck {
 	 z-index: 7;
 	 width: 16px;
@@ -992,10 +1007,10 @@
 
 #{id}omCorCloseButton {
 	 z-index: 5;
-	 width: 92px;
-	 height: 22px;
-	 top: 246px;
-	 left: 194px;
+	 width: 75px;
+	 height: 25px;
+	 top: 245px;
+	 left: 250px;
 	
 	 position: absolute;
 	 
@@ -1003,7 +1018,7 @@
 
 #{id}omSpecificSubCont {
 	 z-index: 1;
-	 width: 488px;
+	 width: 521px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -1014,10 +1029,10 @@
 
 #{id}omSpecificInfoCont {
 	 z-index: 2;
-	 width: 1141px;
-	 height: 623px;
+	 width: 989px;
+	 height: 625px;
 	 top: 0px;
-	 left: 147px;
+	 left: 301px;
 	
 	 position: absolute;
 	 
@@ -1025,10 +1040,10 @@
 
 #{id}omPrevVersionCont {
 	 z-index: 2;
-	 width: 653px;
-	 height: 623px;
+	 width: 468px;
+	 height: 625px;
 	 top: 0px;
-	 left: 488px;
+	 left: 521px;
 	
 	 position: absolute;
 	 
@@ -1036,8 +1051,8 @@
 
 #{id}omCorrCont {
 	 z-index: 2;
-	 width: 488px;
-	 height: 287px;
+	 width: 521px;
+	 height: 289px;
 	 top: 336px;
 	 left: 0px;
 	
@@ -1048,11 +1063,38 @@
 #{id}omNewCoresspondenceField {
 	 z-index: 2;
 	 width: 325px;
-	 height: 22px;
+	 height: 50px;
 	 top: 225px;
 	 left: 5px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}omCityComboBox {
+	 z-index: 2;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}cityComboboxGrid {
+	 z-index: 34;
+	 width: 125px;
+	 height: 130px;
+	 top: 161px;
+	 left: 263px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
 	 
 }
 

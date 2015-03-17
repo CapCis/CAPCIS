@@ -45,3 +45,21 @@
 	//myAwsomeFile.write(myPDFString);	
     //myAwsomeFile.close();
 }
+
+function getPic (request, response)
+{
+	debugger;
+	var serverUtil = require('serverUtilities');
+	var dBQueryBuilder = require('dSelectsQuery');
+	//add code to check token recievd from body of xhr request
+	//add code to get the CIID from the body of xhr request
+	var selectStatement = 'SELECT ClientPicture FROM clientpicture WHERE ClientPictureID = 1'; 		//build query for client pictures
+	var connection = serverUtil.getDBConnection();
+	var result = connection.execute(selectStatement);
+	var myResults = result.getAllRows();
+	var myPicBlob = myResults[0].ClientPicture;
+	connection.close;
+	response.contentType = "image/jpeg";
+	return(myPicBlob);
+	
+}

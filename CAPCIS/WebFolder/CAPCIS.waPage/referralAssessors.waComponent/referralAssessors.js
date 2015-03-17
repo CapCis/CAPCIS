@@ -11,30 +11,9 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+	
 		
-		
-	 	/*
-		mainAssessorCont = document.getElementById(getHtmlId('container3'));
-		mainAssessorCont.style.transitionProperty = "all";
-		mainAssessorCont.style.transitionDelay = "0s";
-		mainAssessorCont.style.transitionDuration = ".5s";
-		
-		bakAssessorCont = document.getElementById(getHtmlId('container10'));
-		bakAssessorCont.style.transitionProperty = "all";
-		bakAssessorCont.style.transitionDelay = "0s";
-		bakAssessorCont.style.transitionDuration = "1s";
-		bakAssessorSpecific = document.getElementById(getHtmlId("container11"));
-		bakAssessorSpecific.style.transitionProperty = "all";
-		bakAssessorSpecific.style.transitionDelay = "0s";
-		bakAssessorSpecific.style.transitionDuration = "1s";
-		
-		assessorCorespondanceCont = document.getElementById(getHtmlId('container8'));
-		assessorCorespondanceCont.style.transitionProperty = "all";
-		assessorCorespondanceCont.style.transitionDelay = "0s";
-		assessorCorespondanceCont.style.transitionDuration = "1s";
-		*/
-		
-		$$(getHtmlId('container3')).setSplitPosition(900);
+	$$(getHtmlId('container3')).setSplitPosition(900);
 	$$(getHtmlId('container9')).setSplitPosition(1000);
 	$$(getHtmlId('container6')).setSplitPosition(1500);
 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
@@ -59,6 +38,7 @@ function constructor (id) {
 	    CityListing: "None"
 	};
 	city[city.length] = tempCity;
+	tempStore= city;
 	sources.city.sync();
 	var myObject4 = {
 	    token: '7836140170460568',
@@ -218,6 +198,9 @@ function fillMainTable()
 	 	
 	 	
 	// @region namespaceDeclaration// @startlock
+	var cityComboBox = {};	// @textField
+	var cityComboboxGrid = {};	// @dataGrid
+	var button3 = {};	// @button
 	var correspondanceActiveBox = {};	// @combobox
 	var voidCorrespondanceCheck = {};	// @checkbox
 	var button5 = {};	// @button
@@ -233,6 +216,59 @@ function fillMainTable()
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	cityComboBox.blur = function cityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	cityComboBox.keyup = function cityComboBox_keyup (event)// @startlock
+	{// @endlock
+		
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();
+			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('cityComboBox')).setValue(recValue);
+	};// @lock
+
+	button3.click = function button3_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
 
 	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
 	{// @endlock
@@ -336,6 +372,25 @@ function fillMainTable()
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
+		var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
+		
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+		}
+		
 		var myObject7 = {
     token: '7836140170460568',
     id: '1',
@@ -465,15 +520,11 @@ var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentI
 
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
-		
-		
-		
-		
-		
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(400);
+
+		$$(getHtmlId('mainAssessorCont')).setSplitPosition(450);
 		$$(getHtmlId('container3')).setSplitPosition(2000);
 	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(1500);
+	 	$$(getHtmlId('container6')).setSplitPosition(420);
 		
 		
 		
@@ -481,7 +532,7 @@ var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentI
 		var city = sources.assessorList.AssessorCity;
 		var reportingMethod = sources.assessorList.AssPreferredReportingMethod;
 		var ids = sources.assessorList.AssessorInformationID;
-		if(city != "" && city != null)
+		if(city != "" && city != null && city != "null")
 		{
 			$$(getHtmlId('cityComboBox')).setValue(city);
 		}
@@ -607,6 +658,10 @@ var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentI
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_correspondanceActiveBox", "change", correspondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");

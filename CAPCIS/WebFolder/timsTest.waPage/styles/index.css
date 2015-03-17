@@ -3,12 +3,56 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button7 {
+	 z-index: 33;
+	 width: 107px;
+	 height: 41px;
+	 top: 875px;
+	 left: 930px;
+	
+	 position: absolute;
+	 
+}
+
+#image3 {
+	 z-index: 32;
+	 width: 249px;
+	 height: 360px;
+	 top: 810px;
+	 left: 1800px;
+	
+	 position: absolute;
+	 
+}
+
+#button6 {
+	 z-index: 31;
+	 width: 105px;
+	 height: 36px;
+	 top: 754px;
+	 left: 1872px;
+	
+	 position: absolute;
+	 
+}
+
+#button5 {
+	 z-index: 30;
+	 width: 111px;
+	 height: 39px;
+	 top: 811px;
+	 left: 926px;
+	
+	 position: absolute;
+	 
+}
+
 #container4 {
 	 z-index: 29;
 	 width: 605px;
 	 height: 543px;
-	 top: 627px;
-	 left: 1293px;
+	 top: 669px;
+	 left: 1097px;
 	
 	 position: absolute;
 	 

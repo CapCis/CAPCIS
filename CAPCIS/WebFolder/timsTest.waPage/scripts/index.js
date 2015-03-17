@@ -2,6 +2,10 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var button7 = {};	// @button
+	var button6 = {};	// @button
+	var button5 = {};	// @button
+	var frame1 = {};	// @frame
 	var button4 = {};	// @button
 	var button12 = {};	// @button
 	var fileUpload2 = {};	// @fileUpload
@@ -13,14 +17,62 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
+	button7.click = function button7_click (event)// @startlock
+	{// @endlock
+		debugger;
+		
+		var myIFrame = document.getElementById("frame1");
+		myIFrame.addChild($$('button5'));
+		
+	};// @lock
+
+	button6.click = function button6_click (event)// @startlock
+	{// @endlock
+		debugger;
+		//window.open("http://localhost:8082/getPicture");
+		$$('image3').value = ("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
+		
+	};// @lock
+
+	button5.click = function button5_click (event)// @startlock
+	{// @endlock
+		debugger;
+		//$$('frame1').print();
+		var myFrame = document.getElementById("frame1");
+		//console.dir(myFrame);
+		//myFrame = window.frames['frame1'].print();
+		myFrame.focus();
+		print();
+		
+		
+		
+		
+		
+		
+	};// @lock
+
+	frame1.onLoad = function frame1_onLoad (event)// @startlock
+	{// @endlock
+		    debugger;
+			print();
+		
+	};// @lock
+
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
 		debugger;
 		//var myResponse = rpcGetReports.getReport();
 		//var myAwsomeURL = URL.createObjectURL(myResponse);
 		//URL.createObjectURL(myResponse);
-		$$('frame1').setValue("http://192.168.2.234:8082/makeMyReportBitch");
-		window.open("http://192.168.2.234:8082/makeMyReportBitch");
+		$$('frame1').setValue("http://localhost:8082/makeMyReportBitch");		
+		//window.open("http://localhost:8082/makeMyReportBitch");
+		
+		//-----------------------------how to send a xmlhttprequest with body string !!!!!
+		//xhr = new XMLHttpRequest();
+		//URLText = "http://localhost:8082/makeMyReportBitch?myquery";
+		//xhr.open("POST",URLText,true);		
+		//xhr.setRequestHeader("Content-type","text/plain");
+		//xhr.send("my test data");
 	};// @lock
 
 	button12.click = function button12_click (event)// @startlock
@@ -122,6 +174,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("button7", "click", button7.click, "WAF");
+	WAF.addListener("button6", "click", button6.click, "WAF");
+	WAF.addListener("button5", "click", button5.click, "WAF");
+	WAF.addListener("frame1", "onLoad", frame1.onLoad, "WAF");
 	WAF.addListener("button4", "click", button4.click, "WAF");
 	WAF.addListener("button12", "click", button12.click, "WAF");
 	WAF.addListener("fileUpload2", "filesUploaded", fileUpload2.filesUploaded, "WAF");
