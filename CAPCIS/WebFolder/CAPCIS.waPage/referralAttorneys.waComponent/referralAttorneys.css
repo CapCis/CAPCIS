@@ -3,18 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}dataGrid3 {
-	 z-index: 38;
-	 width: 125px;
-	 height: 134px;
-	 top: 162px;
-	 left: 260px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
 #{id}label6 {
 	 z-index: 2;
 	 width: 21px;
@@ -48,21 +36,6 @@
 	 font-family: WebSymbolsRegular;
 	 font-size: 14px;
 	 color: rgb(153, 153, 153);
-	 
-}
-
-#{id}textField3 {
-	 z-index: 2;
-	 width: 125px;
-	 height: 22px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
 	 
 }
 
@@ -1193,6 +1166,33 @@
 	 left: 5px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}attCityComboBox {
+	 z-index: 2;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}cityComboboxGrid {
+	 z-index: 38;
+	 width: 125px;
+	 height: 134px;
+	 top: 162px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
 	 
 }
 

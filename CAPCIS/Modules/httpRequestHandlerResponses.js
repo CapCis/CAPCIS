@@ -5,11 +5,11 @@
  	var headersObj = {};
     
  	xhr = new XMLHttpRequest(); // instanciate the xhr object
-       
- 	xhr.onreadystatechange = function() 
+ 	
+ 	xhr.onreadystatechange = function()
 	{ // event handler
-	    var state = this.readyState;  
-     	if (state !== 4) 
+	    var state = this.readyState;
+     	if (state !== 4)
 		{ // while the status event is not Done we continue
     	    //authstr = 'Basic ' + ("jasperadmin:jasperadmin").toString("base64"); 	
     		//xhr.setRequestHeader('Authorization',authstr);

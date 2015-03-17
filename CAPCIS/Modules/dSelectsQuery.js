@@ -264,7 +264,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE courtjurisdiction.CourtJurisdiction = '"+myObject.data1+"' AND courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence = '"+myObject.data2+"' \
-								ORDER BY bakpojurisdiction.CreatedDateTime ASC"
+								ORDER BY courtjurisdictioncorrespondence.CreatedDateTime DESC"
 						break;
 				case 27: answer = 'SELECT *, DATE_FORMAT(bakcourtjurisdiction.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakcourtjurisdiction \
 								LEFT JOIN capcis.fxuseraccounts on bakcourtjurisdiction.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
@@ -465,17 +465,17 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 					//////////////////////////////////////////////////////////End PO jurisdiction///////////////////////////////////////////////////////////////
 					//////////////////////////////////////////////////////////////Start PO//////////////////////////////////////////////////////////////////////
-				case 65 : answer = 'SELECT * FROM capcis.poinformation where InactivePO = '+myObject.data1;
+				case 65 : answer = 'SELECT * FROM capcis.poinformation LEFT JOIN pojurisdiction on FK_pojurisdiction_POJurisdictionID = POJurisdictionID where InactivePO = '+myObject.data1;
 						break;
-				case 66 : answer = 'SELECT * FROM capcis.poinformation';
+				case 66 : answer = 'SELECT * FROM capcis.poinformation LEFT JOIN pojurisdiction on FK_pojurisdiction_POJurisdictionID = POJurisdictionID';
 						break;
-				case 67 : answer = "SELECT * FROM capcis.poinformation where poinformation.POName LIKE '%"+myObject.data1+"%' or poinformation.POPhone LIKE '%"+myObject.data1+"%' \
+				case 67 : answer = "SELECT * FROM capcis.poinformation LEFT JOIN pojurisdiction on FK_pojurisdiction_POJurisdictionID = POJurisdictionID where poinformation.POName LIKE '%"+myObject.data1+"%' or poinformation.POPhone LIKE '%"+myObject.data1+"%' \
 								OR poinformation.POEmail LIKE  '%"+myObject.data1+"%' OR poinformation.POFax LIKE '%"+myObject.data1+"%' \
 								OR poinformation.POInformationID LIKE '%"+myObject.data1+"%' OR poinformation.POPhoneExtension LIKE '%"+myObject.data1+"%'  \
 								OR poinformation.POMobilePhone LIKE '%"+myObject.data1+"%' OR poinformation.PONotes LIKE '%"+myObject.data1+"%' OR poinformation.POFullNameDisplay LIKE '%"+myObject.data1+"%'\
 								OR poinformation.POPreferredReportingMethod LIKE '%"+myObject.data1+"%'";
 						break;
-				case 68 : answer = "SELECT * FROM capcis.poinformation where (poinformation.POName LIKE '%"+myObject.data1+"%' or poinformation.POPhone LIKE '%"+myObject.data1+"%' \
+				case 68 : answer = "SELECT * FROM capcis.poinformation LEFT JOIN pojurisdiction on FK_pojurisdiction_POJurisdictionID = POJurisdictionID where (poinformation.POName LIKE '%"+myObject.data1+"%' or poinformation.POPhone LIKE '%"+myObject.data1+"%' \
 								OR poinformation.POEmail LIKE  '%"+myObject.data1+"%' OR poinformation.POFax LIKE '%"+myObject.data1+"%' \
 								OR poinformation.POInformationID LIKE '%"+myObject.data1+"%' OR poinformation.POPhoneExtension LIKE '%"+myObject.data1+"%'  \
 								OR poinformation.POMobilePhone LIKE '%"+myObject.data1+"%' OR poinformation.PONotes LIKE '%"+myObject.data1+"%' OR poinformation.POFullNameDisplay LIKE '%"+myObject.data1+"%'\
@@ -505,7 +505,7 @@ exports.buildQuery = function buildQuery(myObject)
 								ORDER BY bakpoinformation.CreatedDateTime DESC';
 						break;
 				case 73: answer = 'SELECT *,DATE_FORMAT( bakpoinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime \
-								FROM capcis.bakpoinformation  \
+								FROM capcis.bakpoinformation LEFT JOIN pojurisdiction on  POJurisdictionID = FK_pojurisdiction_POJurisdictionID\
 								LEFT JOIN capcis.fxuseraccounts on bakpoinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE BAKPOInformationID = '+myObject.data1;
 						break;
@@ -556,6 +556,10 @@ exports.buildQuery = function buildQuery(myObject)
 								WHERE BAKProsecutorsID = '+myObject.data1;
 						break;
 				case 83: answer = "SELECT * FROM capcis.citylistings WHERE CityListing = '"+myObject.data1+"'";
+						break;
+				case 84: answer = "SELECT CourtJurisdiction FROM capcis.courtjurisdiction";
+						break;
+				case 85: answer = "SELECT * FROM capcis.pojurisdiction";
 						break;
 				default:answer = null;
 						break;

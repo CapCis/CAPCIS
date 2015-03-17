@@ -2,10 +2,10 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var button15 = {};	// @button
 	var button7 = {};	// @button
 	var button6 = {};	// @button
 	var button5 = {};	// @button
-	var frame1 = {};	// @frame
 	var button4 = {};	// @button
 	var button12 = {};	// @button
 	var fileUpload2 = {};	// @fileUpload
@@ -17,20 +17,29 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
+	button15.click = function button15_click (event)// @startlock
+	{// @endlock
+		debugger;
+		this;
+	};// @lock
+
 	button7.click = function button7_click (event)// @startlock
 	{// @endlock
 		debugger;
 		
 		var myIFrame = document.getElementById("frame1");
-		myIFrame.addChild($$('button5'));
-		
+		//var myTest = $$('button15');
+		//var myChildren = $$('frame1').getChildren();
+		//$$('frame1').addChild($$('button15'));
+		//var myChildren = $$('frame1').getChildren();
+		//myIFrame.addChild($$('button5'));
 	};// @lock
 
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
 		debugger;
 		//window.open("http://localhost:8082/getPicture");
-		$$('image3').value = ("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
+		$$('image3').setValue("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
 		
 	};// @lock
 
@@ -48,13 +57,6 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 		
 		
-		
-	};// @lock
-
-	frame1.onLoad = function frame1_onLoad (event)// @startlock
-	{// @endlock
-		    debugger;
-			print();
 		
 	};// @lock
 
@@ -174,10 +176,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("button15", "click", button15.click, "WAF");
 	WAF.addListener("button7", "click", button7.click, "WAF");
 	WAF.addListener("button6", "click", button6.click, "WAF");
 	WAF.addListener("button5", "click", button5.click, "WAF");
-	WAF.addListener("frame1", "onLoad", frame1.onLoad, "WAF");
 	WAF.addListener("button4", "click", button4.click, "WAF");
 	WAF.addListener("button12", "click", button12.click, "WAF");
 	WAF.addListener("fileUpload2", "filesUploaded", fileUpload2.filesUploaded, "WAF");
