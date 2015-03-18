@@ -268,7 +268,7 @@ function constructor (id) {
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
-		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
 		if(grid.style.display == 'none')
 		{
 			grid.style.display = 'block';
