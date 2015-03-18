@@ -82,7 +82,7 @@ function constructor (id) {
 
 	comboboxGrid.onRowClick = function comboboxGrid_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var grid = document.getElementById(getHtmlId('comboboxGrid'));
 		grid.style.display = 'none';
 		
@@ -158,7 +158,7 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		//var reciept = document.getElementById(getHtmlId('classRosterRecieptCont'));
 		//reciept.style.left = '150px';
 		$$(getHtmlId('classRosterMainCont')).setSplitPosition(600);
@@ -184,7 +184,7 @@ function constructor (id) {
 
 	filterButton.click = function filterButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var filter = document.getElementById(getHtmlId('classFilterViewCont'));
 		var full = document.getElementById(getHtmlId('classFullViewCont'));
 		var ifHidden = filter.style.visibility.toString();
@@ -201,7 +201,7 @@ function constructor (id) {
 
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var full = document.getElementById(getHtmlId('classFullViewCont'));
 		var filter = document.getElementById(getHtmlId('classFilterViewCont'));
 		filterMatrix.style.display = 'block';
@@ -249,7 +249,7 @@ function constructor (id) {
 
 	fullButton.click = function fullButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var full = document.getElementById(getHtmlId('classFullViewCont'));
 		var filter = document.getElementById(getHtmlId('classFilterViewCont'));
 		var ifHidden = full.style.visibility;
@@ -278,7 +278,7 @@ function constructor (id) {
 	 function pageOpener (id) 
 	{
 	
-		debugger;	
+			
 		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:id.id.toString()}; //dont forget to change token and id
 	 	myRosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myRosterList.sync();
