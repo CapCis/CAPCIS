@@ -388,7 +388,7 @@ var myObject7 =
 				data2:$$(getHtmlId("poPhone")).sourceAtt.getValue(),
 				data3:$$(getHtmlId("poEmail")).sourceAtt.getValue(),
 				data4:$$(getHtmlId("poFax")).sourceAtt.getValue(),
-				data8:sources.poJurisdiction.POJurisdictionID,
+				data8:$$(getHtmlId("")).sourceAtt.getValue(),
 				data9:$$(getHtmlId("poExt")).sourceAtt.getValue(),
 				data10:$$(getHtmlId("poAdditional")).sourceAtt.getValue(),
 				data11:$$(getHtmlId("notes")).sourceAtt.getValue(),
