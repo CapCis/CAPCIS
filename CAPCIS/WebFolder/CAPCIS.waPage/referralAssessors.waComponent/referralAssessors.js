@@ -12,7 +12,7 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 	
-		
+				
 	$$(getHtmlId('container3')).setSplitPosition(900);
 	$$(getHtmlId('container9')).setSplitPosition(1000);
 	$$(getHtmlId('container6')).setSplitPosition(1500);
@@ -26,33 +26,10 @@ function constructor (id) {
 	catch (e)
 	{}
 	fillMainTable();
-	var myObject3 = {
-	    token: '7836140170460568',
-	    id: '1',
-	    major: 3,
-	    minor: 3
-	}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	city = rpcDSelects.getSelect(myObject3);
-	var tempCity = city[0];
-	city[0] = {
-	    CityListing: "None"
-	};
-	city[city.length] = tempCity;
+	
 	tempStore= city;
-	sources.city.sync();
-	var myObject4 = {
-	    token: '7836140170460568',
-	    id: '1',
-	    major: 3,
-	    minor: 4
-	}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	reporting = rpcDSelects.getSelect(myObject4);
-var tempReporting = reporting[0];
-reporting[0] = {
-    ReportingMethod: "None"
-};
-reporting[reporting.length] = tempReporting;
-sources.reporting.sync();
+	
+
 function fillMainTable()
 {
     try
@@ -656,6 +633,7 @@ var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentI
 				}
 				alert(errMessage);
 	}
+	
 
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
