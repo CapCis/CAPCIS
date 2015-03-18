@@ -62,8 +62,40 @@ function constructor (id) {
 		ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionContainer'));
 		court = document.getElementById(getHtmlId('CourtJursidictionContainer'));
 		
+		var myObject3 = {
+	    token: '7836140170460568',
+	    id: '1',
+	    major: 3,
+	    minor: 3
+		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						citySuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject3]
+				});
 		
+		var myObject4 = {
+		    token: '7836140170460568',
+		    id: '1',
+		    major: 3,
+		    minor: 4
+		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						reportingSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject4]
+				});
+	
+	
 		getTotals();
 		
 		
@@ -352,7 +384,7 @@ function constructor (id) {
 	function totalSuccess(result)
 	{
 		
-		for(var x = 0 ; x < 1 ; x++) //9
+		for(var x = 0 ; x < 9 ; x++) //9
 		{
 			if(result[x].source == 'assesor')
 			{
@@ -425,6 +457,49 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
+	function citySuccess(result)
+	{
+		var tempCity = result[0];
+		
+		result[0] = {
+		    CityListing: "None"
+		};
+		
+		result[result.length] = tempCity;
+		city = result;
+		tempStore= city;
+		sources.city.sync();
+	}
+	function cityError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function reportingSuccess(result)
+	{
+		var tempReporting = result[0];
+		result[0] = {
+   		 ReportingMethod: "None"
+		};
+		result[result.length] = tempReporting;
+		
+		resporting = result;
+		sources.reporting.sync();
+	}
+	function reportingError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	
 
 
 }// @startlock

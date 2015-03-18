@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+
 		try {
 			searchCrit = data.userData.searchCrit;
 			searchType = data.userData.searchType;
@@ -176,6 +177,9 @@ function constructor (id) {
 		}
 
 	// @region namespaceDeclaration// @startlock
+	var button1 = {};	// @button
+	var cityComboboxGrid = {};	// @dataGrid
+	var pjCityComboBox = {};	// @textField
 	var Close = {};	// @button
 	var button3 = {};	// @button
 	var dataGrid1 = {};	// @dataGrid
@@ -191,6 +195,58 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button1.click = function button1_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('pjCityComboBox')).setValue(recValue);
+	};// @lock
+
+	pjCityComboBox.keyup = function pjCityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_pjCityComboBox').getValue();
+			$$($comp.id+'_pjCityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_pjCityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	pjCityComboBox.blur = function pjCityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
@@ -309,6 +365,24 @@ function constructor (id) {
 
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
+		var currentCity = $$($comp.id + "_pjCityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
+		
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+		}
 var myObject7 = 
 			{
 				
@@ -362,10 +436,10 @@ var myObject7 =
 	pjDataGird.onRowClick = function pjDataGird_onRowClick (event)// @startlock
 	{// @endlock
 		
-		$$(getHtmlId('mainProbationJurisdictionsCont')).setSplitPosition(400);
+		$$(getHtmlId('mainProbationJurisdictionsCont')).setSplitPosition(450);
 		$$(getHtmlId('pjSpecificInfoCont')).setSplitPosition(2000);
 	 	$$(getHtmlId('pjPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('pjCorrCont')).setSplitPosition(1500);
+	 	$$(getHtmlId('pjCorrCont')).setSplitPosition(420);
 		
 		
 		
@@ -477,8 +551,14 @@ var myObject7 =
 				}
 				alert(errMessage);
 	}
+	
+	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_pjCityComboBox", "keyup", pjCityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_pjCityComboBox", "blur", pjCityComboBox.blur, "WAF");
 	WAF.addListener(this.id + "_Close", "click", Close.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
