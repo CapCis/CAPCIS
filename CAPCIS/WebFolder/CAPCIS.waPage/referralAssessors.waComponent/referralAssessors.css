@@ -608,8 +608,8 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 388px;
-	 height: 373px;
+	 width: 3px;
+	 height: 375px;
 	 top: 250px;
 	 left: 0px;
 	
@@ -634,7 +634,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 388px;
+	 width: 3px;
 	 height: 250px;
 	 top: 0px;
 	 left: 0px;
@@ -645,10 +645,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 388px;
-	 height: 623px;
+	 width: 3px;
+	 height: 625px;
 	 top: 0px;
-	 left: 436px;
+	 left: 7px;
 	
 	 position: absolute;
 	 
@@ -692,8 +692,8 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: 4px;
-	 height: 287px;
+	 width: -425px;
+	 height: 289px;
 	 top: 0px;
 	 left: 432px;
 	
@@ -730,7 +730,7 @@
 #{id}container7 {
 	 z-index: 1;
 	 width: 432px;
-	 height: 287px;
+	 height: 289px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -740,8 +740,8 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 436px;
-	 height: 287px;
+	 width: 7px;
+	 height: 289px;
 	 top: 336px;
 	 left: 0px;
 	
@@ -766,7 +766,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 436px;
+	 width: 7px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -777,8 +777,8 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 436px;
-	 height: 623px;
+	 width: 7px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -788,10 +788,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 824px;
-	 height: 623px;
+	 width: 10px;
+	 height: 625px;
 	 top: 0px;
-	 left: 464px;
+	 left: 1280px;
 	
 	 position: absolute;
 	 
@@ -799,8 +799,8 @@
 
 #{id}container2 {
 	 z-index: 1;
-	 width: 464px;
-	 height: 623px;
+	 width: 1280px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -833,6 +833,18 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 
@@ -860,10 +872,10 @@
 
 #{id}correspondanceGrid {
 	 z-index: 5;
-	 width: 405px;
 	 height: 165px;
 	 top: 35px;
 	 left: 5px;
+	 right: 22px;
 	
 	 position: absolute;
 	 
@@ -926,10 +938,10 @@
 
 #{id}assesorPreviousGrid {
 	 z-index: 2;
-	 width: 405px;
 	 height: 180px;
 	 top: 25px;
 	 left: 5px;
+	 right: 15px;
 	
 	 position: absolute;
 	 

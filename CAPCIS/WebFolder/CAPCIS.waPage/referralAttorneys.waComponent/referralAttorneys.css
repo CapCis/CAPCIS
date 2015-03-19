@@ -4,7 +4,6 @@
 */
 
 #{id}label6 {
-	 z-index: 2;
 	 width: 21px;
 	 height: 13px;
 	 top: 0px;
@@ -651,8 +650,8 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 637px;
-	 height: 390px;
+	 width: 4px;
+	 height: 392px;
 	 top: 233px;
 	 left: 0px;
 	
@@ -676,7 +675,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 637px;
+	 width: 4px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -723,10 +722,10 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 294px;
-	 height: 279px;
+	 width: -415px;
+	 height: 281px;
 	 top: 0px;
-	 left: 923px;
+	 left: 421px;
 	
 	 position: absolute;
 	 
@@ -759,8 +758,8 @@
 
 #{id}container25 {
 	 z-index: 1;
-	 width: 923px;
-	 height: 279px;
+	 width: 421px;
+	 height: 281px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -817,8 +816,8 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 477px;
-	 height: 623px;
+	 width: 6px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -828,8 +827,8 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 174px;
-	 height: 623px;
+	 width: 1278px;
+	 height: 625px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -857,15 +856,27 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 
 #{id}attPrevVersionCont {
 	 z-index: 2;
-	 width: 637px;
-	 height: 623px;
+	 width: 4px;
+	 height: 625px;
 	 top: 0px;
-	 left: 477px;
+	 left: 6px;
 	
 	 position: absolute;
 	 
@@ -873,10 +884,10 @@
 
 #{id}attSpecificInfoCont {
 	 z-index: 2;
-	 width: 1114px;
-	 height: 623px;
+	 width: 10px;
+	 height: 625px;
 	 top: 0px;
-	 left: 174px;
+	 left: 1278px;
 	
 	 position: absolute;
 	 
@@ -884,8 +895,8 @@
 
 #{id}attCorrCont {
 	 z-index: 2;
-	 width: 477px;
-	 height: 279px;
+	 width: 6px;
+	 height: 281px;
 	 top: 344px;
 	 left: 0px;
 	
@@ -1050,10 +1061,10 @@
 
 #{id}attCorrespondanceGrid {
 	 z-index: 5;
-	 width: 405px;
 	 height: 165px;
 	 top: 35px;
 	 left: 5px;
+	 right: 11px;
 	
 	 position: absolute;
 	 
@@ -1061,7 +1072,7 @@
 
 #{id}attSpecificSubCont {
 	 z-index: 1;
-	 width: 477px;
+	 width: 6px;
 	 height: 344px;
 	 top: 0px;
 	 left: 0px;
