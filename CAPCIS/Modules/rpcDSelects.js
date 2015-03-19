@@ -43,16 +43,19 @@ exports.getReferralCount = function getSelect(myObject)
 	var myResults = tokenAnswer.getAllRows();	
 	if (myResults.length > 0) 
 	{
-		var myResults = [];
+		var myResults2 = [];
+		var myResults3 = [];
 		for (var x = 0; x < 9; x++)
 		{
 			var selectStatement = dBQueryBuilder.buildQuery(myObject);
 			var result = connection.execute(selectStatement);
-			myResults[x] = result.getAllRows();
+			myResults2[x] = result.getAllRows();
+			
+			myResults3[x]=myResults2[x][0];
 			myObject.minor += 2;
 		}
 		connection.close;
-		return myResults;
+		return myResults3;
 	}
 	else 
 	{	
