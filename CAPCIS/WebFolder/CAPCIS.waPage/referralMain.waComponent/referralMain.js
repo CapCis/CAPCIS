@@ -61,6 +61,15 @@ function constructor (id) {
 		probationO = document.getElementById(getHtmlId('ProbationOfficerContainer'));
 		ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionContainer'));
 		court = document.getElementById(getHtmlId('CourtJursidictionContainer'));
+		newAssessor = document.getElementById(getHtmlId('newAssesorComponent'));
+		newAttorney = document.getElementById(getHtmlId('newAttorneyComponent'));
+		newDHS = document.getElementById(getHtmlId('newDHSOfficerComponent'));
+		newJudges = document.getElementById(getHtmlId('newJudgeComponent'));
+		newOther = document.getElementById(getHtmlId('newOtherMoniterComponent'));
+		newProsecutor = document.getElementById(getHtmlId('newProsecutorsComponent'));
+		newPO = document.getElementById(getHtmlId('newPOComponent'));
+		newPJ = document.getElementById(getHtmlId('newProbationJurisdictionComponent'));
+		newCJ = document.getElementById(getHtmlId('newCourtJurisdictionComponent'));
 		
 		var myObject3 = {
 	    token: '7836140170460568',
@@ -101,6 +110,15 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var newProbJ = {};	// @menuItem
+	var newCourtJ = {};	// @menuItem
+	var newOtherM = {};	// @menuItem
+	var newPros = {};	// @menuItem
+	var newPOfficer = {};	// @menuItem
+	var newJudge = {};	// @menuItem
+	var newDHSO = {};	// @menuItem
+	var newAtt = {};	// @menuItem
+	var newAss = {};	// @menuItem
 	var courtJurisdictionButton = {};	// @menuItem
 	var probationJurisdictionButton = {};	// @menuItem
 	var probationOfficerButton = {};	// @menuItem
@@ -114,6 +132,89 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	newProbJ.click = function newProbJ_click (event)// @startlock
+	{// @endlock
+		newPJ.style.zIndex = '10';
+		newPJ.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newProbationJurisdictionComponent', 											
+		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent'});
+	};// @lock
+
+	newCourtJ.click = function newCourtJ_click (event)// @startlock
+	{// @endlock
+		newCJ.style.zIndex = '10';
+		newCJ.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newCourtJurisdictionComponent', 											
+		path: 	'/CAPCIS.waPage/referralNewCourtJurisdictions.waComponent'});
+	};// @lock
+
+	newOtherM.click = function newOtherM_click (event)// @startlock
+	{// @endlock
+		newOther.style.zIndex = '10';
+		newOther.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newOtherMoniterComponent', 											
+		path: 	'/CAPCIS.waPage/referralNewOtherMonitors.waComponent'});
+	};// @lock
+
+	newPros.click = function newPros_click (event)// @startlock
+	{// @endlock
+		newProsecutor.style.zIndex = '10';
+		newProsecutor.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newProsecutorsComponent', 											
+		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent'});
+	};// @lock
+
+	newPOfficer.click = function newPOfficer_click (event)// @startlock
+	{// @endlock
+		newPO.style.zIndex = '10';
+		newPO.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newPOComponent', 											
+		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent'});
+	};// @lock
+
+	newJudge.click = function newJudge_click (event)// @startlock
+	{// @endlock
+		newJudges.style.zIndex = '10';
+		newJudges.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newJudgeComponent', 											
+		path: 	'/CAPCIS.waPage/referralNewJudges.waComponent'});
+	
+	};// @lock
+
+	newDHSO.click = function newDHSO_click (event)// @startlock
+	{// @endlock
+		newDHS.style.zIndex = '10';
+		newDHS.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newDHSOfficerComponent', 											
+		path: 	'/CAPCIS.waPage/referralNewDHSOfficers.waComponent'});
+	};// @lock
+
+	newAtt.click = function newAtt_click (event)// @startlock
+	{// @endlock
+		newAttorney.style.zIndex = '10';
+		newAttorney.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newAttorneyComponent', 											
+		path: 	'/CAPCIS.waPage/referralNewAttorneys.waComponent'});
+	};// @lock
+
+	newAss.click = function newAss_click (event)// @startlock
+	{// @endlock
+		
+		newAssessor.style.zIndex = '10';
+		newAssessor.style.visibility = 'visible';
+		WAF.loadComponent ( {											
+		id: 	$comp.id+'_newAssesorComponent', 											
+		path: 	'/CAPCIS.waPage/referralNewAssessors.waComponent'});
+	};// @lock
 
 	courtJurisdictionButton.click = function courtJurisdictionButton_click (event)// @startlock
 	{// @endlock
@@ -232,7 +333,7 @@ function constructor (id) {
 
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
-	
+		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
@@ -248,6 +349,15 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_newProbJ", "click", newProbJ.click, "WAF");
+	WAF.addListener(this.id + "_newCourtJ", "click", newCourtJ.click, "WAF");
+	WAF.addListener(this.id + "_newOtherM", "click", newOtherM.click, "WAF");
+	WAF.addListener(this.id + "_newPros", "click", newPros.click, "WAF");
+	WAF.addListener(this.id + "_newPOfficer", "click", newPOfficer.click, "WAF");
+	WAF.addListener(this.id + "_newJudge", "click", newJudge.click, "WAF");
+	WAF.addListener(this.id + "_newDHSO", "click", newDHSO.click, "WAF");
+	WAF.addListener(this.id + "_newAtt", "click", newAtt.click, "WAF");
+	WAF.addListener(this.id + "_newAss", "click", newAss.click, "WAF");
 	WAF.addListener(this.id + "_courtJurisdictionButton", "click", courtJurisdictionButton.click, "WAF");
 	WAF.addListener(this.id + "_probationJurisdictionButton", "click", probationJurisdictionButton.click, "WAF");
 	WAF.addListener(this.id + "_probationOfficerButton", "click", probationOfficerButton.click, "WAF");
@@ -281,7 +391,7 @@ function constructor (id) {
 		{
 			
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:86,data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDSelects.getSelectAsync({
+	 		rpcDSelects.getReferralCountAsync({
 		 			'onSuccess': function(result){
 						totalSuccess(result);
 					},
@@ -294,7 +404,7 @@ function constructor (id) {
 		else
 		{
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:87,data1:searchCrit,data2:searchBool}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDSelects.getSelectAsync({
+	 		rpcDSelects.getReferralCountAsync({
 		 			'onSuccess': function(result){
 						totalSuccess(result);
 					},
@@ -320,6 +430,15 @@ function constructor (id) {
 		probationO.style.visibility = 'hidden';
 		ProbationJ.style.visibility = 'hidden';
 		court.style.visibility = 'hidden';
+		newAssessor.style.visibility = 'hidden';
+		newAttorney.style.visibility = 'hidden';
+		newDHS.style.visibility = 'hidden';
+		newJudges.style.visibility = 'hidden';
+		newOther.style.visibility = 'hidden';
+		newProsecutor.style.visibility = 'hidden';
+		newPO.style.visibility = 'hidden';
+		newPJ.style.visibility = 'hidden';
+		newCJ.style.visibility = 'hidden';
 		
 		assessor.style.zIndex = '8';
 		attorney.style.zIndex = '7';
@@ -330,6 +449,15 @@ function constructor (id) {
 		probationO.style.zIndex = '2';
 		ProbationJ.style.zIndex = '1';
 		court.style.zIndex = '0';
+		newAssessor.style.zIndex = '0';
+		newAttorney.style.zIndex = '0';
+		newDHS.style.zIndex = '0';
+		newJudges.style.zIndex = '0';
+		newOther.style.zIndex = '0';
+		newProsecutor.style.zIndex = '0';
+		newPO.style.zIndex = '0';
+		newPJ.style.zIndex = '0';
+		newCJ.style.zIndex = '0';
 		
 		
 		if(id == 'Assessors')
@@ -388,57 +516,57 @@ function constructor (id) {
 		{
 			if(result[x].source == 'assesor')
 			{
-				var currentLabel = $$($comp.id+"_assessorButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total + ')';
+				
+				currentLabel= "Assessors" + '\n(' + result[x].total + ')';
 				$$($comp.id+"_assessorButton").domNode.innerText = currentLabel;
 				
 			}
 			else if(result[x].source == 'attorney')
 			{
-				var currentLabel = $$($comp.id+"_attorneyButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Attorneys" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_attorneyButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'court')
 			{
-				var currentLabel = $$($comp.id+"_courtJurisdictionButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Court Jurisdictions" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_courtJurisdictionButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'dhs')
 			{
-				var currentLabel = $$($comp.id+"_dhsButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "DHS Officers" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_dhsButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'judge')
 			{
-				var currentLabel = $$($comp.id+"_judgesButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Judges" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_judgesButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'other')
 			{
-				var currentLabel = $$($comp.id+"_otherButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Other Monitors" + '\n(' + result[x].total.toString() + ')';
 				var currentLabel = $$($comp.id+"_otherButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'pojurisdiction')
 			{
-				var currentLabel = $$($comp.id+"_probationJurisdictionButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Probation Jurisdictions" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_probationJurisdictionButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'po')
 			{
-				var currentLabel = $$($comp.id+"_probationOfficerButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Probation Officers" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_probationOfficerButton").domNode.innerText = currentLabel;
 			}
 			else if(result[x].source == 'prosecutor')
 			{
-				var currentLabel = $$($comp.id+"_prosecutorsButton").domNode.innerText;
-				currentLabel= currentLabel + '\n(' + result[x].total.toString() + ')';
+				
+				currentLabel= "Prosecutors" + '\n(' + result[x].total.toString() + ')';
 				$$($comp.id+"_prosecutorsButton").domNode.innerText = currentLabel;
 			}
 			
