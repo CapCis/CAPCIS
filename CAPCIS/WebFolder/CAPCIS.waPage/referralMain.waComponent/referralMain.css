@@ -205,30 +205,8 @@
 	 
 }
 
-#{id}menuItem16 {
-	 z-index: 9;
-	 width: 145px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText16 {
 	 z-index: 1;
-	 width: 145px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem15 {
-	 z-index: 8;
 	 width: 145px;
 	 height: 22px;
 	 top: 0px;
@@ -249,32 +227,10 @@
 	 
 }
 
-#{id}menuItem14 {
-	 z-index: 7;
-	 width: 145px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText14 {
 	 z-index: 1;
 	 width: 145px;
 	 height: 21px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem13 {
-	 z-index: 6;
-	 width: 145px;
-	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -293,32 +249,10 @@
 	 
 }
 
-#{id}menuItem12 {
-	 z-index: 5;
-	 width: 145px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText12 {
 	 z-index: 1;
 	 width: 145px;
 	 height: 21px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem11 {
-	 z-index: 4;
-	 width: 145px;
-	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -337,17 +271,6 @@
 	 
 }
 
-#{id}menuItem10 {
-	 z-index: 3;
-	 width: 145px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText10 {
 	 z-index: 1;
 	 width: 145px;
@@ -359,32 +282,10 @@
 	 
 }
 
-#{id}menuItem9 {
-	 z-index: 2;
-	 width: 145px;
-	 height: 22px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText9 {
 	 z-index: 1;
 	 width: 145px;
 	 height: 21px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem7 {
-	 z-index: 1;
-	 width: 145px;
-	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -819,6 +720,204 @@
 	 border-bottom-left-radius: 0px;
 	-moz-border-radius-bottomleft: 0px;
 	 text-align: center;
+	 
+}
+
+#{id}newAssesorComponent {
+	 z-index: 5;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newAttorneyComponent {
+	 z-index: 6;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newDHSOfficerComponent {
+	 z-index: 7;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newJudgeComponent {
+	 z-index: 8;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newOtherMoniterComponent {
+	 z-index: 9;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newProsecutorsComponent {
+	 z-index: 10;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newPOComponent {
+	 z-index: 11;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newCourtJurisdictionComponent {
+	 z-index: 13;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newProbationJurisdictionComponent {
+	 z-index: 12;
+	 width: 420px;
+	 height: 350px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newJudge {
+	 z-index: 4;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newPros {
+	 z-index: 6;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newOtherM {
+	 z-index: 7;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newCourtJ {
+	 z-index: 8;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newProbJ {
+	 z-index: 9;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newAss {
+	 z-index: 1;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newAtt {
+	 z-index: 2;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newDHSO {
+	 z-index: 3;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newPOfficer {
+	 z-index: 5;
+	 width: 145px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
 	 
 }
 

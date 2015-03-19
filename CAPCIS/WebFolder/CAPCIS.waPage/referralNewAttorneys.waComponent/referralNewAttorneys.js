@@ -13,30 +13,107 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var button15 = {};	// @button
+	var button4 = {};	// @button
+	var cityComboboxGrid = {};	// @dataGrid
+	var cityComboBox = {};	// @textField
+	var close = {};	// @button
 	var button14 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	button15.click = function button15_click (event)// @startlock
+	button4.click = function button4_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(1290);
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('cityComboBox')).setValue(recValue);
+	};// @lock
+
+	cityComboBox.keyup = function cityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();
+			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	cityComboBox.blur = function cityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	close.click = function close_click (event)// @startlock
+	{// @endlock
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	};// @lock
 
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
+		var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
 		
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+		}
 		
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:3,
+				major2: 3,
+    			minor2: 20,
 				data1:$$(getHtmlId("attName")).sourceAtt.getValue(),
 				data2:$$(getHtmlId("attPhone")).sourceAtt.getValue(),
 				data3:$$(getHtmlId("attEmail")).sourceAtt.getValue(),
 				data4:$$(getHtmlId("attFax")).sourceAtt.getValue(),
 				data5:$$(getHtmlId("attAddress")).sourceAtt.getValue(),
-				data6:$$(getHtmlId("attCityComboBox")).getValue(),
+				data6:$$(getHtmlId("cityComboBox")).getValue(),
 				data7:$$(getHtmlId("attState")).sourceAtt.getValue(),
 				data8:$$(getHtmlId("attZip")).sourceAtt.getValue(),
 				data9:$$(getHtmlId("attExt")).sourceAtt.getValue(),
@@ -51,18 +128,9 @@ function constructor (id) {
 				
 				
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
+	 	
 				
-	 		rpcDInsert.setInsertAsync({
+	 		rpcDInsert.setInsertWReturnAsync({
 		 			'onSuccess': function(result){
 						
 					},
@@ -72,23 +140,15 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 	 		
-		fillMainTable();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
-	 	sources.bakAttorneyInfo.sync();
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
+		
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_button15", "click", button15.click, "WAF");
+	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_close", "click", close.click, "WAF");
 	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");
 	// @endregion// @endlock
 
