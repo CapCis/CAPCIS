@@ -11,9 +11,23 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		try
-		{
+		
+		tempStore= city;
+		
+		try {
+			searchCrit = data.userData.searchCrit;
+			searchType = data.userData.searchType;
 			
+		} catch (e) {
+			
+		}
+			fillMainTable();
+		
+		function fillMainTable()
+		{
+			try
+		{
+		
 			var searchCrit = data.userData.searchCrit;
 			var searchType = data.userData.searchType;
 			if(searchCrit == "" && searchType == 'Active')
@@ -112,12 +126,13 @@ function constructor (id) {
 		}
 		
 		
-		
+	}
 			
 			
 		 	
 		 	function fillCorrespondance()
 		{
+			debugger;
 			
 			var currentCorrespondenceActiveSelected = $$(getHtmlId('correspondanceActiveBox')).getValue();
 			var currentCorrespondanceViewVoided;
@@ -170,6 +185,9 @@ function constructor (id) {
 
 
 	// @region namespaceDeclaration// @startlock
+	var button3 = {};	// @button
+	var cityComboBox = {};	// @textField
+	var cityComboboxGrid = {};	// @dataGrid
 	var closeCourtJurisdictionPreviousButton = {};	// @button
 	var button1 = {};	// @button
 	var courtJurisdictionPreviousGrid = {};	// @dataGrid
@@ -186,6 +204,58 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	button3.click = function button3_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	cityComboBox.keyup = function cityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();
+			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	cityComboBox.blur = function cityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('cityComboBox')).setValue(recValue);
+	};// @lock
+
 	closeCourtJurisdictionPreviousButton.click = function closeCourtJurisdictionPreviousButton_click (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('container9')).setSplitPosition(625);
@@ -200,11 +270,10 @@ function constructor (id) {
 	{// @endlock
 
 		$$(getHtmlId('container9')).setSplitPosition(250);
-		var date = event.data.row.cells[0].value;
-		var assessor = event.data.row.cells[1].value;
-		var employee = event.data.row.cells[2].value;
+		var id = sources.bakCourtJurisdictionInfo.BAKCourtJurisdictionID;
 		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:28,data1:assessor, data2:date, data3:employee}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		
+		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:28,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -277,7 +346,7 @@ function constructor (id) {
 					'onError': function(error){
 						console.log(error);
 					},
-					'params': [myObject7]
+					'params': [myObject8]
 				});
 			$$(getHtmlId('newCorrespondanceField')).setValue("");
 			fillCorrespondance();
@@ -322,74 +391,28 @@ function constructor (id) {
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
+		var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
 		
-		changed = false;
-		if($$(getHtmlId("courtJurisdictionNameField")).sourceAtt.getValue() != currentName)
+		if( city.length ===0)
 		{
-			changed = true;
-		}
-		
-		if($$(getHtmlId("courtJurisdictionPhoneField")).sourceAtt.getValue() != currentPhone)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionExtField")).sourceAtt.getValue() != currentExt)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionAlternateField")).sourceAtt.getValue() != currentMobile)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionFaxField")).sourceAtt.getValue() != currentFax)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionAddressField")).sourceAtt.getValue() != currentAddress)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionStateField")).sourceAtt.getValue() != currentState)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionZipField")).sourceAtt.getValue() != currentZip)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionEmailField")).sourceAtt.getValue() != currentEmail)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionNotesField")).sourceAtt.getValue() != currentNotes)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("cityComboBox")).getValue() != currentCity)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("reportingComboBox")).getValue() != currentReportingMethod)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionInactiveCheckBox")).getValue() != currentInactiveInfo)
-		{
-			changed = true;
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
 		}
 		
-		if($$(getHtmlId("courtJurisdictionDatabaseField")).sourceAtt.getValue() != currentDatabase)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("courtJurisdictionFormatField")).sourceAtt.getValue() != currentSearchFormat)
-		{
-			changed = true;
-		}
 		
 		//run update if needed
-		if(changed)
-		{
+		
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:4,
@@ -433,9 +456,18 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
-	 		
-		}
-		
+	 	
+			fillMainTable();
+			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 	};// @lock
 
 
@@ -448,17 +480,17 @@ function constructor (id) {
 		
 		
 		
-		$$(getHtmlId('mainCourtJurisdictionCont')).setSplitPosition(400);
+		$$(getHtmlId('mainCourtJurisdictionCont')).setSplitPosition(450);
 		$$(getHtmlId('container3')).setSplitPosition(2000);
 	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(1500);
+	 	$$(getHtmlId('container6')).setSplitPosition(420);
 		
 		
 		
-		var name = event.data.row.cells[0].value;
-		var city = event.data.row.cells[5].value;
-		var reportingMethod = event.data.row.cells[8].value;
-		var ids = event.data.row.cells[11].value;
+		var name = sources.courtJurisdictionList.CourtJurisdiction;
+		var city = sources.courtJurisdictionList.CourtJurisdictionCity;
+		var reportingMethod = sources.courtJurisdictionList.CourtJurisdictionPreferredReportingMethod;
+		var ids = sources.courtJurisdictionList.CourtJurisdictionID;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('cityComboBox')).setValue(city);
@@ -494,119 +526,10 @@ function constructor (id) {
 		///////////////////////////////////////////////////////////get data
 		
 		currentName = name;
-		currentCity = city;
-		currentReportingMethod = reportingMethod;
-		currentPhone = sources.specificCourtJurisdictionList.CourtJurisdictionPhone;
-		currentExt = sources.specificCourtJurisdictionList.CourtJurisdictionPhoneExt;
-		currentEmail = sources.specificCourtJurisdictionList.CourtJurisdictionEmail;
-		currentFax = sources.specificCourtJurisdictionList.CourtJurisdictionFax;
-		currentMobile = sources.specificCourtJurisdictionList.CourtJurisdictionAlternatePhone;
-		currentAddress = sources.specificCourtJurisdictionList.CourtJurisdictionAddress;
-		currentState = sources.specificCourtJurisdictionList.CourtJurisdictionState;
-		currentZip = sources.specificCourtJurisdictionList.CourtJurisdictionZipCode;
-		currentNotes = sources.specificCourtJurisdictionList.CourtJurisdictionNotes;
-		currentSearchFormat = sources.specificCourtJurisdictionList.SearchFormat;
-		currentDatabase = sources.specificCourtJurisdictionList.SearchDatabase;
+		
 		currentID = ids;
-		currentInactiveInfo = sources.specificCourtJurisdictionList.InactiveCourtJurisdictionInfo;
-		
-		if(currentName == null)
-		{
-			currentName = "";
-			
-		}
-		if(currentSearchFormat == null)
-		{
-			currentSearchFormat = "";
-			
-		}
-		if(currentDatabase == null)
-		{
-			currentDatabase = "";
-			
-		}
-		if(currentCity == null || currentCity == "")
-		{
-			currentCity = "None";
-			
-		}
-		if(currentReportingMethod == null || currentReportingMethod == "")
-		{
-			currentReportingMethod = "None";
-			
-		}
-		if(currentPhone == null)
-		{
-			currentPhone = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionPhone ="";
-			
-		}
-		if(currentExt == null)
-		{
-			currentExt = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionPhoneExt = "";
-			
-		}
-		if(currentEmail == null)
-		{
-			currentEmail = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionEmail ="";
-			
-		}
-		if(currentFax == null)
-		{
-			currentFax = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionFax ="";
-			
-		}
-		if(currentMobile == null)
-		{
-			currentMobile = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionAlternatePhone ="";
-			
-		}
-		if(currentAddress == null)
-		{
-			currentAddress = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionAddress ="";
-			
-		}
-		if(currentState == null)
-		{
-			currentState = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionState ="";
-			
-		}
-		if(currentZip == null)
-		{
-			currentZip = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionZipCode ="";
-			
-		}
-		if(currentNotes == null)
-		{
-			currentNotes = "";
-			sources.specificCourtJurisdictionList.CourtJurisdictionNotes ="";
-			
-		}
-		if(currentSearchFormat == null)
-		{
-			currentSearchFormat = "";
-			sources.specificCourtJurisdictionList.SearchFormat ="";
-			
-		}
-		if(currentDatabase == null)
-		{
-			currentDatabase = "";
-			sources.specificCourtJurisdictionList.SearchDatabase ="";
-			
-		}
 		
 		
-		
-		
-				
-
 		
 		fillCorrespondance();
 		
@@ -694,6 +617,10 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_closeCourtJurisdictionPreviousButton", "click", closeCourtJurisdictionPreviousButton.click, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_courtJurisdictionPreviousGrid", "onRowClick", courtJurisdictionPreviousGrid.onRowClick, "WAF");

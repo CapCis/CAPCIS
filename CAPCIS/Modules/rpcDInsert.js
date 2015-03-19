@@ -20,13 +20,48 @@ exports.setInsert = function setInsert(myObject)
 		var insertStatement = dBInsertBuilder.buildQuery(myObject);
 		var connection = serverUtil.getDBConnection();
 		connection.execute(insertStatement);
-		myResults = ["suc"];
+		var myResults = ["suc"];
+		connection.close;
 	}
 	else
 	{
-		myResults = ["err", "Invalid Token"];
+		var myResults = ["err", "Invalid Token"];
 	}
 	
 	return myResults;
 	
 };
+
+
+
+exports.setInsertWReturn = function setInsert(myObject)
+{
+	var serverUtil = require('serverUtilities');
+	var dBQueryBuilder = require('dSelectsQuery');
+	var dBInsertBuilder = require('dInsertQuery');
+	var tokenArray = {token:myObject.token,major:0,minor:1};
+	var selectStatement = dBQueryBuilder.buildQuery(tokenArray);
+	var connection = serverUtil.getDBConnection();
+	var result = connection.execute(selectStatement);
+	var myResults = result.getAllRows();
+	connection.close;
+	if(myResults.length > 0)
+	{
+		var insertStatement = dBInsertBuilder.buildQuery(myObject);
+		var connection = serverUtil.getDBConnection();
+		var returnedID = connection.execute(insertStatement);
+		myObject.returnedID = returnedID;
+		myObject.major = myObject.major2;
+		myObject.minor = myObject.minor2;
+		var insertStatement = dBInsertBuilder.buildQuery(myObject);
+		var myResults = connection.execute(insertStatement);	
+		myResults = ["suc"];
+		connection.close;
+	}
+	else
+	{
+		var myResults = ["err", "Invalid Token"];
+	}
+	
+	return myResults;
+}

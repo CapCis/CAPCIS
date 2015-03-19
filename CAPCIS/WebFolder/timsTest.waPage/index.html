@@ -22,6 +22,7 @@
 		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="array" data-source="matrixarray" data-lib="WAF" data-id="matrixarray" data-dataType="string" data-autoLoad="true" data-attributes="WebComponentName:string,PrimaryHeaderOption:string" content="matrixarray"/>
 		<meta name="WAF.config.rpc.file" content="/rpc-proxy/rpcUtilities?namespace=rpcUtilities"/>
 <meta name="WAF.config.rpc.file" content="/rpc-proxy/rpcBlobUploadUtilities?namespace=rpcBlobUploadUtilities"/>
+<meta name="WAF.config.rpc.file" content="/rpc-proxy/rpcGetReports?namespace=rpcGetReports"/>
 </head>
     <body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-title="index" data-theme="default" data-platform="desktop" data-lib="WAF" data-group="[['fileUpload2','button8','button9','button10','button11','container3']]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:NaNpx;right:NaNpx;visibility:hidden;">
     
@@ -50,8 +51,18 @@
 			
 	
 		
-		<button id="button12" data-type="button" data-lib="WAF" class="waf-widget waf-button" data-action="simple" data-target="_blank" data-text="getHttpRequest File"></button>
-		<div id="image2" data-type="image" data-lib="WAF" class="waf-widget waf-image" data-target="_blank" data-label="" data-label-position="left" data-fit="0" data-constraint-left="true" data-constraint-top="true"></div>
+		<button id="button12" data-type="button" data-text="getHttpRequest File" data-target="_blank" data-lib="WAF" data-action="simple" class="waf-widget waf-button"></button>
+		<div id="image2" data-type="image" data-target="_blank" data-lib="WAF" data-label-position="left" data-label="" data-fit="0" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-image"></div>
+		<button id="button4" data-type="button" data-text="Retrieve Report" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button"></button>
+		<div id="container4" data-type="container" data-resizable="true" data-lib="WAF" data-label-position="top" data-label="" data-draggable="true" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-container waf-container-level-0 waf-level-0">
+ 	 		<div id="frame1" data-type="frame" data-lib="WAF" data-label="Label" data-label-position="top" class="waf-widget waf-frame" data-constraint-bottom="false" data-constraint-right="false" data-constraint-left="true" data-constraint-top="true"></div>
+ 	 		<label id="label4" data-type="label" data-lib="WAF" for="frame1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-frame" data-constraint-left="true" data-constraint-top="true">Label</label>
+ 	 		</div>
+		<button id="button5" data-type="button" data-text="Print iFrame" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button"></button>
+		<button id="button6" data-type="button" data-text="Retrieve Image" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-action="simple" class="waf-widget waf-button"></button>
+		<div id="image3" data-type="image" data-target="_blank" data-lib="WAF" data-label-position="left" data-label="" data-fit="0" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-image"></div>
+		<button id="button7" data-type="button" data-lib="WAF" class="waf-widget waf-button" data-action="simple" data-target="_blank" data-text="Add Widget to iFrame"></button>
+			<button id="button15" data-type="button" data-lib="WAF" class="waf-widget waf-button" data-action="simple" data-target="_blank" data-constraint-bottom="false" data-constraint-right="false" data-constraint-left="true" data-constraint-top="true" data-text="Send to iFrame"></button>
 		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
 	</body>
 </html>

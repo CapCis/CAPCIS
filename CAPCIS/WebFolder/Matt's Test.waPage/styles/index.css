@@ -3,3 +3,153 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button1.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#dataGrid1 {
+	 z-index: 3;
+	 width: 125px;
+	 height: 136px;
+	 top: 279px;
+	 left: 27px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#button1 {
+	 z-index: 2;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 125px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#label1 {
+	 z-index: 1;
+	 width: 29px;
+	 height: 13px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#textField1 {
+	 z-index: 1;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#container2 {
+	 z-index: 2;
+	 width: 150px;
+	 height: 41px;
+	 top: 239px;
+	 left: 27px;
+	
+	 position: absolute;
+	 
+}
+
+#matrix1 .waf-widget.waf-clone-richText5 {
+	 position: absolute;
+	 
+}
+
+#richText5 {
+	 z-index: 3;
+	 width: 375px;
+	 height: 32px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#matrix1 .waf-widget.waf-clone-richText4 {
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 text-align: right;
+	 
+}
+
+#richText4 {
+	 z-index: 2;
+	 width: 150px;
+	 height: 18px;
+	 top: 0px;
+	 left: 225px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 text-align: right;
+	 
+}
+
+#matrix1 .waf-widget.waf-clone-richText3 {
+	 position: absolute;
+	 color: rgb(191, 0, 0);
+	 
+}
+
+#richText3 {
+	 z-index: 1;
+	 width: 200px;
+	 height: 18px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 color: rgb(191, 0, 0);
+	 
+}
+
+#container1 {
+	 z-index: 1;
+	 width: 375px;
+	 height: 50px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#matrix1 {
+	 z-index: 1;
+	 width: 415px;
+	 height: 60px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+

@@ -7,12 +7,11 @@ HOW TO RUN A REPORT IN JASPER REPORTS
 HOW TO CHANGE CSS OF A WIDGET 
 
 	getHtmlObj('button1').css('background-color' , 'red');
+	
+						OR
+	var mywidget = document.getElementById("parentWC_widgetName")
+	mywidget.style.top = "25px"
 
-
-HOW TO RUN rpcDSelects
-
-	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};
-	myMenuButtons = rpcDSelects.getSelect(myObject);
 
 
 HOW TO OPEN A WEB COMPONENT
@@ -21,3 +20,74 @@ HOW TO OPEN A WEB COMPONENT
     id: 	'capcisMainSelect', 											//designate the component to load into
 	path: 	'/CAPCIS.waPage/capcisMainSelect.waComponent'				//designate the webcomponent to load
 	});
+
+
+
+RPCDSELECTS
+
+	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};	
+	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+	});
+
+	function mainListSuccess(result)
+	{
+		
+		courtJurisdictionList = result;
+		sources.courtJurisdictionList.sync();
+	}
+
+	function mainListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+
+
+
+RPCDINSERT
+
+	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,
+		myObjectName:$$($comp.id + "_textField1").getValue()
+		};
+		
+	rpcDInsert.setInsert({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+	});
+
+	function mainListSuccess(result)
+	{
+		
+		courtJurisdictionList = result;
+		sources.courtJurisdictionList.sync();
+	}
+
+	function mainListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+
+
+
+

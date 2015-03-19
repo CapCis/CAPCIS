@@ -11,84 +11,118 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		/*
-		$$(getHtmlId('container3')).setSplitPosition(900);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(1500);
-	 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
-		*/
+
 		
-		
-		
-	 	/*
-	 	$$(getHtmlId('attCorrCont')).setSplitPosition(900);
-	 	$$(getHtmlId('attPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(1500);
-	 	$$(getHtmlId('mainAttorneyCont')).setSplitPosition(1290);
-	 	*/
-		//mainAssessorCont.style.visibility = 'visible';
-		try
-		{
+		try {
+			searchCrit = data.userData.searchCrit;
+			searchType = data.userData.searchType;
 			
-			var searchCrit = data.userData.searchCrit;
-			var searchType = data.userData.searchType;
+		} catch (e) {
+			
+		}
+			fillMainTable();
+		
+		function fillMainTable()
+		{
+			try
+		{
 			if(searchCrit == "" && searchType == 'Active')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+		 		
+		 		
 			}
 			else if(searchCrit == '' && searchType == 'Inactive')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if(searchCrit == '' && searchType == 'All')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:12}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if (searchCrit != '' && searchType == 'Active')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:14, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if (searchCrit != '' && searchType == 'Inactive')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:14, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			else if (searchCrit != '' && searchType == 'All')
 			{
 				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:13, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		attorneyList = rpcDSelects.getSelect(myObject);
-		 		sources.attorneyList.sync();
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 			}
 			
 		}
 		catch(err)
 		{
 			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 	attorneyList = rpcDSelects.getSelect(myObject);
-		 	sources.attorneyList.sync();
+		 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						mainListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 		}
-	 	var myObject3 = {token:'7836140170460568' ,id:'1',major:3,minor:3}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject3);
-	 	var tempCity= city[0];
-	 	city[0] = {CityListing: "None"};
-	 	city[city.length] = tempCity;
-	 	sources.city.sync();
+	}
 	 	
-	 	var myObject4 = {token:'7836140170460568' ,id:'1',major:3,minor:4}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	reporting = rpcDSelects.getSelect(myObject4);
-	 	var tempReporting = reporting[0];
-	 	reporting[0] = {ReportingMethod: "None"};
-	 	reporting[reporting.length] = tempReporting;
-	 	sources.reporting.sync();
 		
 		function fillCorrespondance()
 		{
@@ -113,18 +147,36 @@ function constructor (id) {
 			if(currentCorrespondanceAll != null)
 			{
 				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:16,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			attorneyCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.attorneyCorespondance.sync();
+	 			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						corrListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+	 			
 		
 			}
 			else
 			{
 				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:17,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			attorneyCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.attorneyCorespondance.sync();
+	 			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						corrListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
 			}	
 		}
 	// @region namespaceDeclaration// @startlock
+	var button4 = {};	// @button
+	var attCityComboBox = {};	// @textField
+	var cityComboboxGrid = {};	// @dataGrid
 	var button14 = {};	// @button
 	var button15 = {};	// @button
 	var button3 = {};	// @button
@@ -141,78 +193,80 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	button4.click = function button4_click (event)// @startlock
+	{// @endlock
+		debugger;
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	attCityComboBox.keyup = function attCityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_attCityComboBox').getValue();
+			$$($comp.id+'_attCityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_attCityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	attCityComboBox.blur = function attCityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('attCityComboBox')).setValue(recValue);
+	};// @lock
+
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
+			var currentCity = $$($comp.id + "_attCityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
 		
-		changed = false;
-		if($$(getHtmlId("attName")).sourceAtt.getValue() != currentName)
+		if( city.length ===0)
 		{
-			changed = true;
-		}
-		if($$(getHtmlId("attFullName")).sourceAtt.getValue() != currentDisplay)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attPhone")).sourceAtt.getValue() != currentPhone)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attExt")).sourceAtt.getValue() != currentExt)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attAdditional")).sourceAtt.getValue() != currentMobile)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attFax")).sourceAtt.getValue() != currentFax)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attAddress")).sourceAtt.getValue() != currentAddress)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attState")).sourceAtt.getValue() != currentState)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attZip")).sourceAtt.getValue() != currentZip)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attEmail")).sourceAtt.getValue() != currentEmail)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attNotes")).sourceAtt.getValue() != currentNotes)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attCityComboBox")).getValue() != currentCity)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attReportingComboBox")).getValue() != currentReportingMethod)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attInactive")).getValue() != currentInactiveInfo)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attPublicDef")).getValue() != currentDefender)
-		{
-			changed = true;
-		}
-		if($$(getHtmlId("attStaffInfo")).sourceAtt.getValue() != currentStafInfo)
-		{
-			changed = true;
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
 		}
 		
-		//run update if needed
-		if(changed)
-		{
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:3,
@@ -236,10 +290,40 @@ function constructor (id) {
 				
 				
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		assessorUpdate = rpcDUpdate.setUpdate(myObject7);
-	 		bakAssessorInsert = rpcDInsert.setInsert(myObject7);
 	 		
-		}
+	 		rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+				
+	 		rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+	 		
+		fillMainTable();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
+	 	sources.bakAttorneyInfo.sync();
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 	};// @lock
 
 	button15.click = function button15_click (event)// @startlock
@@ -261,13 +345,20 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);
-		var date = event.data.row.cells[0].value;
-		var assessor = event.data.row.cells[1].value;
-		var employee = event.data.row.cells[2].value;
+		var id = sources.bakAttorneyInfo.BAKAttorneyInformationID;
 		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:19,data1:assessor, data2:date, data3:employee}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	specificBakAttorneyList = rpcDSelects.getSelect(myObject6);
-	 	sources.specificBakAttorneyList.sync();
+		
+		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:19,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						specificBakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject6]
+				});
 	};// @lock
 
 	button16.click = function button16_click (event)// @startlock
@@ -275,8 +366,16 @@ function constructor (id) {
 		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
 		//var name = $$(getHtmlId('assessorNameField')).getValue();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
-	 	sources.bakAttorneyInfo.sync();
+	 	
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 	};// @lock
 
 	attVoidedCorrespondanceCheck.change = function attVoidedCorrespondanceCheck_change (event)// @startlock
@@ -290,7 +389,15 @@ function constructor (id) {
 				data2:status,
 				data3: id
 			}; //dontf
-		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
+		rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
 		
 		
 	};// @lock
@@ -304,7 +411,15 @@ function constructor (id) {
 				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
 				data2:currentID
 			}; //dontf
-			var update = rpcDInsert.setInsert(myObject8);
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
 			fillCorrespondance();
 			x.setValue("");
 			/*
@@ -338,16 +453,17 @@ function constructor (id) {
 		
 		
 		
-		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(400);
+		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(450);
 		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(2000);
 	 	$$(getHtmlId('attPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('attCorrCont')).setSplitPosition(1500);
+	 	$$(getHtmlId('attCorrCont')).setSplitPosition(420);
 		
 		
 		
-		var name = event.data.row.cells[0].value;
-		var city = event.data.row.cells[7].value;
-		var reportingMethod = event.data.row.cells[13].value;
+		var name = sources.attorneyList.AttorneyName;
+		var city = sources.attorneyList.AttorneyCity;
+		var reportingMethod = sources.attorneyList.AttPreferredReportingMethod;
+		var ids = sources.attorneyList.AttorneyInformationID;
 		if(city != "" && city != null)
 		{
 			$$(getHtmlId('attCityComboBox')).setValue(city);
@@ -369,102 +485,111 @@ function constructor (id) {
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:15,data1:name}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	specificAttorneyList = rpcDSelects.getSelect(myObject);
-	 	sources.specificAttorneyList.sync();
+		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:15,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						specificListSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 		
 		
 		
 		///////////////////////////////////////////////////////////get data
 		
 		currentName = name;
-		currentCity = city;
-		currentReportingMethod = reportingMethod;
-		currentPhone = sources.specificAttorneyList.AttorneyPhone;
-		currentExt = sources.specificAttorneyList.AttorneyPhoneExt;
-		currentEmail = sources.specificAttorneyList.AttorneyEmail;
-		currentFax = sources.specificAttorneyList.AttorneyFax;
-		currentMobile = sources.specificAttorneyList.AttorneyAdditionalPhone;
-		currentAddress = sources.specificAttorneyList.AttorneyAddress;
-		currentState = sources.specificAttorneyList.AttorneyState;
-		currentZip = sources.specificAttorneyList.AttorneyZipCode;
-		currentNotes = sources.specificAttorneyList.AttorneyNotes;
-		currentDisplay = sources.specificAttorneyList.AttorneyFullNameDisplay;
-		currentID = sources.specificAttorneyList.AttorneyInformationID;
-		currentDefender = sources.specificAttorneyList.PublicDefender;
-		currentStafInfo = sources.specificAttorneyList.AttorneyStaffInfo;
-		currentInactiveInfo = sources.specificAttorneyList.InactiveAttorneyInfo;
 		
-		if(currentName == null)
-		{
-			currentName = "";
-			
-		}
-		if(currentCity == null || currentCity == "")
-		{
-			currentCity = "None";
-			
-		}
-		if(currentReportingMethod == null || currentReportingMethod == "")
-		{
-			currentReportingMethod = "None";
-			
-		}
-		if(currentPhone == null)
-		{
-			currentPhone = "";
-			
-		}
-		if(currentExt == null)
-		{
-			currentExt = "";
-			
-		}
-		if(currentEmail == null)
-		{
-			currentEmail = "";
-			
-		}
-		if(currentFax == null)
-		{
-			currentFax = "";
-			
-		}
-		if(currentMobile == null)
-		{
-			currentMobile = "";
-			
-		}
-		if(currentAddress == null)
-		{
-			currentAddress = "";
-			
-		}
-		if(currentState == null)
-		{
-			currentState = "";
-			
-		}
-		if(currentZip == null)
-		{
-			currentZip = "";
-			
-		}
-		if(currentNotes == null)
-		{
-			currentNotes = "";
-			
-		}
-		if(currentDisplay == null)
-		{
-			currentDisplay = "";
-			
-		}
+		currentID = ids;
 		
 		fillCorrespondance();
 	};// @lock
+	
+	function mainListSuccess(result)
+	{
+		
+		attorneyList = result;
+		sources.attorneyList.sync();
+	}
+	function mainListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function specificListSuccess(result)
+	{
+		
+		specificAttorneyList = result;
+		sources.specificAttorneyList.sync();
+	}
+	function specificListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function corrListSuccess(result)
+	{
+		
+		attorneyCorespondance = result;
+		sources.attorneyCorespondance.sync();
+	}
+	function corrListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	
+	function bakListSuccess(result)
+	{
+		
+		bakAttorneyInfo = result;
+		sources.bakAttorneyInfo.sync();
+	}
+	function bakListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function specificBakListSuccess(result)
+	{
+		
+		specificBakAttorneyList = result;
+		sources.specificBakAttorneyList.sync();
+	}
+	function specificBakListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
+	WAF.addListener(this.id + "_attCityComboBox", "keyup", attCityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_attCityComboBox", "blur", attCityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");
 	WAF.addListener(this.id + "_button15", "click", button15.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
