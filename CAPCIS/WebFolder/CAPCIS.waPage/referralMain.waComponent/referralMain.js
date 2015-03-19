@@ -70,7 +70,7 @@ function constructor (id) {
 		newPO = document.getElementById(getHtmlId('newPOComponent'));
 		newPJ = document.getElementById(getHtmlId('newProbationJurisdictionComponent'));
 		newCJ = document.getElementById(getHtmlId('newCourtJurisdictionComponent'));
-		debugger;
+		
 		var myObject3 = {
 	    token: '7836140170460568',
 	    id: '1',
@@ -208,7 +208,7 @@ function constructor (id) {
 
 	newAss.click = function newAss_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		newAssessor.style.zIndex = '10';
 		newAssessor.style.visibility = 'visible';
 		WAF.loadComponent ( {											
@@ -333,7 +333,7 @@ function constructor (id) {
 
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
@@ -419,7 +419,7 @@ function constructor (id) {
 	function changeWindow(id)
 	{
 		
-		debugger;
+		
 		
 		assessor.style.visibility = 'hidden';
 		attorney.style.visibility = 'hidden';

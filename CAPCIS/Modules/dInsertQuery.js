@@ -122,6 +122,20 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 18: answer = 'INSERT into capcis.citylistings(CityListing) VALUES ("'+myObject.data1+'")';
 						break;
+				case 0: answer ='INSERT INTO capcis.assessorinformation (AssessorName,AssessorPhone,AssessorEmail,AssessorFax,AssessorAddress, \
+						AssessorCity,AssessorState,AssessorZipCode,AssessorPhoneExt,AssessorMobilePhone \
+						,AssessorNotes,AssessorFullNameDisplay,AssPreferredReportingMethod,InactiveAssessorInfo) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+')';
+						break;
+				case 0: answer ='INSERT INTO capcis.bakassessorinformation (AssessorName,AssessorPhone,AssessorEmail,AssessorFax,AssessorAddress, \
+						AssessorCity,AssessorState,AssessorZipCode,FK_assessorinformation_AssessorInformationID,AssessorPhoneExt,AssessorMobilePhone \
+						,AssessorNotes,AssessorFullNameDisplay,AssPreferredReportingMethod,InactiveAssessorInfo,FK_useraccounts_UserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.returnedID+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
 				default: answer = null;
 			}
 			break;

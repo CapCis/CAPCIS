@@ -22,7 +22,10 @@ function constructor (id) {
 
 	closeAssesorCurrentButton.click = function closeAssesorCurrentButton_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	};// @lock
 
 	submitButton.click = function submitButton_click (event)// @startlock
