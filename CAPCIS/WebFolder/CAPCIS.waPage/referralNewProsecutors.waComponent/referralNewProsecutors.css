@@ -3,19 +3,47 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}label16 {
-	 z-index: 2;
+#{id}judgeJurisdictionGrid {
+	 width: 220px;
+	 height: 80px;
+	 top: 250px;
+	 left: 5px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 z-index: 39;
+	 
+}
+
+#{id}cityComboboxGrid {
+	 width: 125px;
+	 height: 134px;
+	 top: 166px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 z-index: 37;
+	 
+}
+
+#{id}label14 {
 	 width: 21px;
 	 height: 13px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}button4.waf-state-hover {
+	 color: rgb(51, 51, 51);
 	 
 }
 
 #{id}button4 {
-	 z-index: 3;
 	 width: 25px;
 	 height: 22px;
 	 top: 18px;
@@ -31,71 +59,37 @@
 	 font-family: WebSymbolsRegular;
 	 font-size: 14px;
 	 color: rgb(153, 153, 153);
+	 z-index: 3;
 	 
 }
 
-#{id}button4.waf-state-hover {
-	 color: rgb(51, 51, 51);
+#{id}prosCityComboBox {
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 z-index: 2;
 	 
 }
 
 #{id}container2 {
-	 z-index: 34;
 	 width: 150px;
 	 height: 41px;
-	 top: 122px;
+	 top: 126px;
 	 left: 260px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}attStaffInfo {
-	 z-index: 33;
-	 width: 250px;
-	 height: 22px;
-	 top: 275px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label15 {
-	 z-index: 33;
-	 width: 50px;
-	 height: 13px;
-	 top: 257px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attPublicDef {
-	 z-index: 31;
-	 width: 22px;
-	 height: 22px;
-	 top: 255px;
-	 left: 385px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label14 {
-	 z-index: 31;
-	 width: 87px;
-	 height: 13px;
-	 top: 259px;
-	 left: 293px;
-	
-	 position: absolute;
+	 z-index: 36;
 	 
 }
 
 #{id}richText10 {
-	 z-index: 29;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -105,307 +99,319 @@
 	 font-weight: bold;
 	 text-align: center;
 	 font-size: 16px;
+	 z-index: 35;
 	 
 }
 
-#{id}attInactive {
-	 z-index: 28;
+#{id}prosInactive {
 	 width: 22px;
 	 height: 22px;
-	 top: 280px;
+	 top: 265px;
 	 left: 385px;
 	
 	 position: absolute;
+	 z-index: 34;
 	 
 }
 
 #{id}label13 {
-	 z-index: 28;
-	 width: 93px;
+	 width: 105px;
 	 height: 13px;
-	 top: 284px;
-	 left: 287px;
+	 top: 269px;
+	 left: 275px;
 	
 	 position: absolute;
+	 z-index: 34;
+	 
+}
+
+#{id}button15 {
+	 width: 75px;
+	 height: 35px;
+	 top: 300px;
+	 left: 335px;
+	
+	 position: absolute;
+	 z-index: 32;
 	 
 }
 
 #{id}button14 {
-	 z-index: 25;
 	 width: 75px;
-	 height: 25px;
-	 top: 305px;
+	 height: 35px;
+	 top: 300px;
 	 left: 250px;
 	
 	 position: absolute;
+	 z-index: 31;
 	 
 }
 
-#{id}attNotes {
-	 z-index: 24;
+#{id}prosNotes {
 	 width: 250px;
 	 height: 22px;
-	 top: 230px;
+	 top: 275px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 30;
 	 
 }
 
 #{id}label12 {
-	 z-index: 24;
-	 width: 82px;
+	 width: 94px;
 	 height: 13px;
-	 top: 212px;
+	 top: 257px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 30;
 	 
 }
 
-#{id}attReportingComboBox {
-	 z-index: 22;
+#{id}prosReportingComboBox {
 	 width: 150px;
 	 height: 22px;
 	 top: 230px;
 	 left: 260px;
 	
 	 position: absolute;
+	 z-index: 28;
 	 
 }
 
 #{id}label11 {
-	 z-index: 22;
 	 width: 98px;
 	 height: 13px;
 	 top: 212px;
 	 left: 260px;
 	
 	 position: absolute;
+	 z-index: 28;
 	 
 }
 
-#{id}attEmail {
-	 z-index: 20;
+#{id}prosEmail {
 	 width: 260px;
 	 height: 22px;
 	 top: 185px;
 	 left: 150px;
 	
 	 position: absolute;
+	 z-index: 27;
 	 
 }
 
 #{id}label10 {
-	 z-index: 20;
 	 width: 77px;
 	 height: 13px;
 	 top: 167px;
 	 left: 150px;
 	
 	 position: absolute;
+	 z-index: 27;
 	 
 }
 
-#{id}attZip {
-	 z-index: 18;
+#{id}prosZip {
 	 width: 100px;
 	 height: 22px;
 	 top: 185px;
 	 left: 45px;
 	
 	 position: absolute;
+	 z-index: 25;
 	 
 }
 
 #{id}label9 {
-	 z-index: 18;
 	 width: 48px;
 	 height: 13px;
 	 top: 167px;
 	 left: 45px;
 	
 	 position: absolute;
+	 z-index: 25;
 	 
 }
 
-#{id}attState {
-	 z-index: 16;
+#{id}prosState {
 	 width: 35px;
 	 height: 22px;
 	 top: 185px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 23;
 	 
 }
 
 #{id}label8 {
-	 z-index: 16;
 	 width: 28px;
 	 height: 13px;
 	 top: 167px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 23;
 	 
 }
 
-#{id}attAddress {
-	 z-index: 14;
+#{id}prosAddress {
 	 width: 250px;
 	 height: 22px;
 	 top: 140px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 21;
 	 
 }
 
 #{id}label7 {
-	 z-index: 14;
 	 width: 79px;
 	 height: 13px;
 	 top: 122px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 21;
 	 
 }
 
-#{id}attFax {
-	 z-index: 12;
+#{id}prosFax {
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
 	 left: 305px;
 	
 	 position: absolute;
+	 z-index: 19;
 	 
 }
 
 #{id}label6 {
-	 z-index: 12;
 	 width: 67px;
 	 height: 13px;
 	 top: 77px;
 	 left: 305px;
 	
 	 position: absolute;
+	 z-index: 19;
 	 
 }
 
-#{id}attAdditional {
-	 z-index: 10;
+#{id}prosAdditional {
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
 	 left: 190px;
 	
 	 position: absolute;
+	 z-index: 17;
 	 
 }
 
 #{id}label5 {
-	 z-index: 10;
 	 width: 75px;
 	 height: 13px;
 	 top: 77px;
 	 left: 190px;
 	
 	 position: absolute;
+	 z-index: 17;
 	 
 }
 
-#{id}attExt {
-	 z-index: 8;
+#{id}prosExt {
 	 width: 50px;
 	 height: 22px;
 	 top: 95px;
 	 left: 115px;
 	
 	 position: absolute;
+	 z-index: 15;
 	 
 }
 
 #{id}label4 {
-	 z-index: 8;
 	 width: 53px;
 	 height: 13px;
 	 top: 77px;
 	 left: 115px;
 	
 	 position: absolute;
+	 z-index: 15;
 	 
 }
 
-#{id}attPhone {
-	 z-index: 6;
+#{id}prosPhone {
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 13;
 	 
 }
 
 #{id}label3 {
-	 z-index: 6;
 	 width: 70px;
 	 height: 13px;
 	 top: 77px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 13;
 	 
 }
 
-#{id}attFullName {
-	 z-index: 4;
+#{id}prosFullName {
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
 	 left: 210px;
 	
 	 position: absolute;
+	 z-index: 11;
 	 
 }
 
 #{id}label2 {
-	 z-index: 4;
 	 width: 118px;
 	 height: 13px;
 	 top: 32px;
 	 left: 210px;
 	
 	 position: absolute;
+	 z-index: 11;
 	 
 }
 
-#{id}attName {
-	 z-index: 2;
+#{id}prosName {
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 9;
 	 
 }
 
 #{id}label1 {
-	 z-index: 2;
-	 width: 144px;
+	 width: 156px;
 	 height: 13px;
 	 top: 32px;
 	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 9;
 	 
 }
 
-#{id}container1 {
+#{id}component1 {
 	 z-index: 1;
 	 width: 420px;
 	 height: 350px;
@@ -417,34 +423,32 @@
 	 
 }
 
-#{id}close {
-	 z-index: 26;
-	 width: 75px;
-	 height: 25px;
-	 top: 305px;
-	 left: 335px;
+#{id}container12 {
+	 width: 245px;
+	 height: 41px;
+	 top: 212px;
+	 left: 5px;
 	
 	 position: absolute;
+	 z-index: 38;
 	 
 }
 
-#{id}cityComboboxGrid {
-	 z-index: 35;
-	 width: 125px;
-	 height: 134px;
-	 top: 162px;
-	 left: 260px;
+#{id}label36 {
+	 width: 94px;
+	 height: 13px;
+	 top: -1px;
+	 left: 0px;
 	
 	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
-#{id}cityComboBox {
 	 z-index: 2;
-	 width: 125px;
+	 
+}
+
+#{id}prosJurisdiction {
+	 width: 221px;
 	 height: 22px;
-	 top: 18px;
+	 top: 17px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -452,6 +456,32 @@
 	-moz-border-radius-topright: 0px;
 	 border-bottom-right-radius: 0px;
 	-moz-border-radius-bottomright: 0px;
+	 z-index: 2;
+	 
+}
+
+#{id}button1 {
+	 width: 25px;
+	 height: 22px;
+	 top: 17px;
+	 left: 220px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 z-index: 3;
+	 
+}
+
+#{id}button1.waf-state-hover {
+	 color: rgb(51, 51, 51);
 	 
 }
 

@@ -432,7 +432,7 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 59 : answer = "SELECT * FROM capcis.pojurisdiction where (pojurisdiction.JurisdictionName LIKE '%"+myObject.data1+"%' or pojurisdiction.JurisdictionPhone LIKE '%"+myObject.data1+"%' \
 								OR pojurisdiction.JurisdictionFax LIKE '%"+myObject.data1+"%' OR pojurisdiction.POJurisdictionID LIKE '%"+myObject.data1+"%' \
-								OR pojurisdiction.JurisdictionNotes LIKE '%"+myObject.data1+"%' \
+								OR pojurisdiction.JurisdictionNotes LIKE '%"+myObject.data1+"%') \
 								 AND InactivePOJurisdiction = "+myObject.data2;
 						break;	
 				case 60 : answer = 'SELECT DATE_FORMAT(pojurisdictioncorrespondance.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, pojurisdictioncorrespondance.POJurisdictionCorrespondence, \
@@ -597,19 +597,19 @@ exports.buildQuery = function buildQuery(myObject)
 								OR courtjurisdiction.CourtJurisdictionAlternatePhone LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionNotes LIKE '%"+myObject.data1+"%' OR courtjurisdiction.SearchDatabase LIKE '%"+myObject.data1+"%'\
 								OR courtjurisdiction.SearchFormat LIKE '%"+myObject.data1+"%') AND InactiveCourtJurisdictionInfo = "+myObject.data2;
 						break;
-				case 92 : answer = "SELECT SELECT count(*) as total,'dhs' as source  FROM capcis.dhsinformation where dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
+				case 92 : answer = "SELECT count(*) as total,'dhs' as source  FROM capcis.dhsinformation where dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsEmail LIKE  '%"+myObject.data1+"%' OR dhsinformation.DhsFax LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsInformationID LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsPhoneExt LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsAlternatPhone LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsNotes LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsFullNameDisplay LIKE '%"+myObject.data1+"%'\
 								OR dhsinformation.DhsPreferredReportingMethod LIKE '%"+myObject.data1+"%'";
 						break;
-				case 93 : answer = "SELECT SELECT count(*) as total,'dhs' as source  FROM capcis.dhsinformation where (dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
+				case 93 : answer = "SELECT count(*) as total,'dhs' as source  FROM capcis.dhsinformation where (dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsEmail LIKE  '%"+myObject.data1+"%' OR dhsinformation.DhsFax LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsInformationID LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsPhoneExt LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsAlternatPhone LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsNotes LIKE '%"+myObject.data1+"%' OR dhsinformation.DhsFullNameDisplay LIKE '%"+myObject.data1+"%'\
 								OR dhsinformation.DhsPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveDhsInfo = "+myObject.data2;
 						break;
-				case 96 : answer = "SELECT count(*) as total,'judge' as source FROM capcis.judges where judges.Judge LIKE '%"+myObject.data1+"%' or judges.JudgeOfficePhone LIKE '%"+myObject.data1+"%' \
+				case 94 : answer = "SELECT count(*) as total,'judge' as source FROM capcis.judges where judges.Judge LIKE '%"+myObject.data1+"%' or judges.JudgeOfficePhone LIKE '%"+myObject.data1+"%' \
 								OR judges.JudgeEmail LIKE  '%"+myObject.data1+"%' OR judges.JudgeFax LIKE '%"+myObject.data1+"%' \
 								OR judges.JudgesID LIKE '%"+myObject.data1+"%' OR judges.JudgeOfficePhoneExt LIKE '%"+myObject.data1+"%' OR judges.JudgeJurisdiction LIKE '%"+myObject.data1+"%' \
 								OR judges.JudgeMobilePhone LIKE '%"+myObject.data1+"%' OR judges.JudgeNotes LIKE '%"+myObject.data1+"%' OR judges.JudgeFullNameDisplay LIKE '%"+myObject.data1+"%'\
@@ -639,7 +639,7 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 99 : answer = "SELECT count(*) as total,'pojurisdiction' as source FROM capcis.pojurisdiction where (pojurisdiction.JurisdictionName LIKE '%"+myObject.data1+"%' or pojurisdiction.JurisdictionPhone LIKE '%"+myObject.data1+"%' \
 								OR pojurisdiction.JurisdictionFax LIKE '%"+myObject.data1+"%' OR pojurisdiction.POJurisdictionID LIKE '%"+myObject.data1+"%' \
-								OR pojurisdiction.JurisdictionNotes LIKE '%"+myObject.data1+"%' \
+								OR pojurisdiction.JurisdictionNotes LIKE '%"+myObject.data1+"%') \
 								 AND InactivePOJurisdiction = "+myObject.data2;
 						break;
 				case 100 : answer = "SELECT count(*) as total,'po' as source FROM capcis.poinformation LEFT JOIN pojurisdiction on FK_pojurisdiction_POJurisdictionID = POJurisdictionID where poinformation.POName LIKE '%"+myObject.data1+"%' or poinformation.POPhone LIKE '%"+myObject.data1+"%' \

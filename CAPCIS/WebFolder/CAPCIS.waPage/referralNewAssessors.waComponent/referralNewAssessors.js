@@ -13,16 +13,16 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var dataGrid1 = {};	// @dataGrid
+	var cityComboboxGrid = {};	// @dataGrid
 	var button4 = {};	// @button
-	var textField12 = {};	// @textField
-	var button2 = {};	// @button
-	var button1 = {};	// @button
+	var cityComboBox = {};	// @textField
+	var close = {};	// @button
+	var submit = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
 	{// @endlock
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
 		grid.style.display = 'none';
@@ -44,7 +44,7 @@ function constructor (id) {
 		}
 	};// @lock
 
-	textField12.keyup = function textField12_keyup (event)// @startlock
+	cityComboBox.keyup = function cityComboBox_keyup (event)// @startlock
 	{// @endlock
 		
 		if(event.keyCode ===13)
@@ -69,18 +69,23 @@ function constructor (id) {
 		}
 	};// @lock
 
-	textField12.blur = function textField12_blur (event)// @startlock
+	cityComboBox.blur = function cityComboBox_blur (event)// @startlock
 	{// @endlock
 		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
 			grid.style.display = 'none';
 	};// @lock
 
-	button2.click = function button2_click (event)// @startlock
+	close.click = function close_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+		
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
+		
 	};// @lock
 
-	button1.click = function button1_click (event)// @startlock
+	submit.click = function submit_click (event)// @startlock
 	{// @endlock
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -105,7 +110,9 @@ function constructor (id) {
     token: '7836140170460568',
     id: '1',
     major: 3,
-    minor: 0,
+    minor: 19,
+    major2: 3,
+    minor2: 20,
     data1: $$(getHtmlId("assessorNameField")).sourceAtt.getValue(),
     data2: $$(getHtmlId("assessorPhoneField")).sourceAtt.getValue(),
     data3: $$(getHtmlId("assesorEmailField")).sourceAtt.getValue(),
@@ -122,18 +129,8 @@ function constructor (id) {
     data14: currentID,
     data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
 }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-
-	rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
 				
-	 		rpcDInsert.setInsertAsync({
+	 		rpcDInsert.setInsertWReturnAsync({
 		 			'onSuccess': function(result){
 						
 					},
@@ -143,30 +140,21 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 
-fillMainTable();
 
 
-var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
+
+
 	 	
 	 	
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
-	WAF.addListener(this.id + "_textField12", "keyup", textField12.keyup, "WAF");
-	WAF.addListener(this.id + "_textField12", "blur", textField12.blur, "WAF");
-	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_close", "click", close.click, "WAF");
+	WAF.addListener(this.id + "_submit", "click", submit.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
