@@ -77,7 +77,8 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+		$comp.removeComponent();
+		
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
