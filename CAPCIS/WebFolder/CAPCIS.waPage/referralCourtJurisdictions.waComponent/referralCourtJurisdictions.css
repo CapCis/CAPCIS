@@ -151,7 +151,7 @@
 
 #{id}label22 {
 	 z-index: 24;
-	 width: 88px;
+	 width: 66px;
 	 height: 13px;
 	 top: 122px;
 	 left: 190px;
@@ -327,7 +327,7 @@
 
 #{id}label5 {
 	 z-index: 19;
-	 width: 88px;
+	 width: 66px;
 	 height: 13px;
 	 top: 77px;
 	 left: 190px;
@@ -553,7 +553,7 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 746px;
+	 width: 5px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -590,7 +590,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 746px;
+	 width: 5px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -601,10 +601,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 746px;
+	 width: 5px;
 	 height: 623px;
 	 top: 0px;
-	 left: 433px;
+	 left: 6px;
 	
 	 position: absolute;
 	 
@@ -681,7 +681,7 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: 8px;
+	 width: -419px;
 	 height: 287px;
 	 top: 0px;
 	 left: 425px;
@@ -703,10 +703,10 @@
 
 #{id}correspondanceGrid {
 	 z-index: 5;
-	 width: 405px;
 	 height: 165px;
 	 top: 35px;
 	 left: 5px;
+	 right: 15px;
 	
 	 position: absolute;
 	 
@@ -763,7 +763,7 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 433px;
+	 width: 6px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -822,7 +822,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 433px;
+	 width: 6px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -833,7 +833,7 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 433px;
+	 width: 6px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -844,10 +844,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 1179px;
+	 width: 11px;
 	 height: 623px;
 	 top: 0px;
-	 left: 109px;
+	 left: 1277px;
 	
 	 position: absolute;
 	 
@@ -855,7 +855,7 @@
 
 #{id}container1 {
 	 z-index: 1;
-	 width: 109px;
+	 width: 1277px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -873,6 +873,18 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 
@@ -1021,10 +1033,10 @@
 
 #{id}courtJurisdictionPreviousGrid {
 	 z-index: 2;
-	 width: 405px;
 	 height: 180px;
 	 top: 25px;
 	 left: 5px;
+	 right: 336px;
 	
 	 position: absolute;
 	 

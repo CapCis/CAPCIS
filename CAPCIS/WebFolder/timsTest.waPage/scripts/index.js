@@ -20,7 +20,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	button15.click = function button15_click (event)// @startlock
 	{// @endlock
 		debugger;
-		this;
+		
 	};// @lock
 
 	button7.click = function button7_click (event)// @startlock

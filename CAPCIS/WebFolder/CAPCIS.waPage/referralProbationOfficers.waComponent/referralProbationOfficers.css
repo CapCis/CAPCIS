@@ -4,13 +4,13 @@
 */
 
 #{id}label12 {
+	 z-index: 26;
 	 width: 128px;
 	 height: 13px;
 	 top: 167px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 26;
 	 
 }
 
@@ -239,7 +239,7 @@
 
 #{id}container3 {
 	 z-index: 34;
-	 width: 195px;
+	 width: -429px;
 	 height: 322px;
 	 top: 0px;
 	 left: 435px;
@@ -517,7 +517,7 @@
 
 #{id}label77 {
 	 z-index: 13;
-	 width: 75px;
+	 width: 66px;
 	 height: 13px;
 	 top: 77px;
 	 left: 190px;
@@ -731,7 +731,7 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 459px;
+	 width: 4px;
 	 height: 381px;
 	 top: 242px;
 	 left: 0px;
@@ -753,10 +753,10 @@
 
 #{id}dataGrid1 {
 	 z-index: 2;
-	 width: 405px;
 	 height: 170px;
 	 top: 25px;
 	 left: 5px;
+	 right: 49px;
 	
 	 position: absolute;
 	 
@@ -778,7 +778,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 459px;
+	 width: 4px;
 	 height: 242px;
 	 top: 0px;
 	 left: 0px;
@@ -825,7 +825,7 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 194px;
+	 width: -430px;
 	 height: 301px;
 	 top: 0px;
 	 left: 436px;
@@ -919,7 +919,7 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 630px;
+	 width: 6px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -930,7 +930,7 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 199px;
+	 width: 1278px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -972,6 +972,18 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 
@@ -988,10 +1000,10 @@
 
 #{id}poSpecificInfoCont {
 	 z-index: 2;
-	 width: 1089px;
+	 width: 10px;
 	 height: 623px;
 	 top: 0px;
-	 left: 199px;
+	 left: 1278px;
 	
 	 position: absolute;
 	 
@@ -999,7 +1011,7 @@
 
 #{id}poSpecificSubCont {
 	 z-index: 1;
-	 width: 630px;
+	 width: 6px;
 	 height: 322px;
 	 top: 0px;
 	 left: 0px;
@@ -1098,7 +1110,7 @@
 
 #{id}poCorrCont {
 	 z-index: 2;
-	 width: 630px;
+	 width: 6px;
 	 height: 301px;
 	 top: 322px;
 	 left: 0px;
@@ -1132,10 +1144,10 @@
 
 #{id}poCorrespondanceGrid {
 	 z-index: 6;
-	 width: 405px;
 	 height: 165px;
 	 top: 35px;
 	 left: 5px;
+	 right: 26px;
 	
 	 position: absolute;
 	 
@@ -1165,10 +1177,10 @@
 
 #{id}poPrevVersionCont {
 	 z-index: 2;
-	 width: 459px;
+	 width: 4px;
 	 height: 623px;
 	 top: 0px;
-	 left: 630px;
+	 left: 6px;
 	
 	 position: absolute;
 	 
@@ -1213,12 +1225,13 @@
 }
 
 #{id}pjNotes {
-	 position: absolute;
 	 z-index: 16;
 	 width: 320px;
 	 height: 55px;
 	 top: 185px;
 	 left: 5px;
+	
+	 position: absolute;
 	 
 }
 
@@ -1234,13 +1247,13 @@
 }
 
 #{id}notes {
+	 z-index: 26;
 	 width: 213px;
 	 height: 52px;
 	 top: 185px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 26;
 	 
 }
 
