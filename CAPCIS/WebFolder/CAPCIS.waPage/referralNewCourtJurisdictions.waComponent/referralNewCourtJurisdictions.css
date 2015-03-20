@@ -3,7 +3,10 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 #{id}dataGrid1 {
+	 z-index: 29;
 	 width: 125px;
 	 height: 136px;
 	 top: 160px;
@@ -11,18 +14,21 @@
 	
 	 position: absolute;
 	 background-color: rgb(255, 127, 0);
-	 z-index: 29;
 	 
 }
 
+=======
+>>>>>>> DRCAPCIS
+=======
+>>>>>>> DRCAPCIS
 #{id}label33 {
+	 z-index: 2;
 	 width: 21px;
 	 height: 13px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
@@ -32,6 +38,7 @@
 }
 
 #{id}button3 {
+	 z-index: 3;
 	 width: 25px;
 	 height: 22px;
 	 top: 18px;
@@ -47,11 +54,13 @@
 	 font-family: WebSymbolsRegular;
 	 font-size: 14px;
 	 color: rgb(153, 153, 153);
-	 z-index: 3;
+<<<<<<< HEAD
+<<<<<<< HEAD
 	 
 }
 
 #{id}textField1 {
+	 z-index: 2;
 	 width: 125px;
 	 height: 22px;
 	 top: 18px;
@@ -62,22 +71,26 @@
 	-moz-border-radius-topright: 0px;
 	 border-bottom-right-radius: 0px;
 	-moz-border-radius-bottomright: 0px;
-	 z-index: 2;
+=======
+>>>>>>> DRCAPCIS
+=======
+>>>>>>> DRCAPCIS
 	 
 }
 
 #{id}container2 {
+	 z-index: 28;
 	 width: 150px;
 	 height: 41px;
 	 top: 120px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 28;
 	 
 }
 
 #{id}richText1 {
+	 z-index: 27;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -88,293 +101,299 @@
 	 text-align: center;
 	 font-size: 16px;
 	 color: rgb(0, 27, 90);
-	 z-index: 27;
 	 
 }
 
 #{id}courtJurisdictionInactiveCheckBox {
+	 z-index: 26;
 	 width: 22px;
 	 height: 22px;
 	 top: 263px;
 	 left: 388px;
 	
 	 position: absolute;
-	 z-index: 26;
 	 
 }
 
 #{id}label12 {
+	 z-index: 26;
 	 width: 106px;
 	 height: 13px;
 	 top: 267px;
 	 left: 277px;
 	
 	 position: absolute;
-	 z-index: 26;
 	 
 }
 
 #{id}closeCourtJurisdictionCurrentButton {
+	 z-index: 24;
 	 width: 75px;
 	 height: 25px;
 	 top: 295px;
 	 left: 335px;
 	
 	 position: absolute;
-	 z-index: 24;
 	 
 }
 
 #{id}submitButton {
+	 z-index: 23;
 	 width: 75px;
 	 height: 25px;
 	 top: 295px;
 	 left: 250px;
 	
 	 position: absolute;
-	 z-index: 23;
 	 
 }
 
 #{id}courtJurisdictionNotesField {
+	 z-index: 22;
 	 width: 250px;
 	 height: 55px;
 	 top: 230px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 22;
 	 
 }
 
 #{id}label11 {
+	 z-index: 22;
 	 width: 129px;
 	 height: 13px;
 	 top: 212px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 22;
 	 
 }
 
 #{id}reportingComboBox {
+	 z-index: 20;
 	 width: 150px;
 	 height: 22px;
 	 top: 230px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 20;
 	 
 }
 
 #{id}label10 {
+	 z-index: 20;
 	 width: 98px;
 	 height: 13px;
 	 top: 212px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 20;
 	 
 }
 
 #{id}courtJurisdictionEmailField {
+	 z-index: 18;
 	 width: 260px;
 	 height: 22px;
 	 top: 185px;
 	 left: 150px;
 	
 	 position: absolute;
-	 z-index: 18;
 	 
 }
 
 #{id}label9 {
+	 z-index: 18;
 	 width: 77px;
 	 height: 13px;
 	 top: 167px;
 	 left: 150px;
 	
 	 position: absolute;
-	 z-index: 18;
 	 
 }
 
 #{id}courtJurisdictionZipField {
+	 z-index: 16;
 	 width: 100px;
 	 height: 22px;
 	 top: 185px;
 	 left: 45px;
 	
 	 position: absolute;
-	 z-index: 16;
 	 
 }
 
 #{id}label8 {
+	 z-index: 16;
 	 width: 48px;
 	 height: 13px;
 	 top: 167px;
 	 left: 45px;
 	
 	 position: absolute;
-	 z-index: 16;
 	 
 }
 
 #{id}courtJurisdictionStateField {
+	 z-index: 14;
 	 width: 35px;
 	 height: 22px;
 	 top: 185px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 14;
 	 
 }
 
 #{id}label7 {
+	 z-index: 14;
 	 width: 28px;
 	 height: 13px;
 	 top: 167px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 14;
 	 
 }
 
 #{id}courtJurisdictionAddressField {
+	 z-index: 12;
 	 width: 250px;
 	 height: 22px;
 	 top: 140px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 12;
 	 
 }
 
 #{id}label6 {
+	 z-index: 12;
 	 width: 79px;
 	 height: 13px;
 	 top: 122px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 12;
 	 
 }
 
 #{id}courtJurisdictionFaxField {
+	 z-index: 10;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
 	 left: 305px;
 	
 	 position: absolute;
-	 z-index: 10;
 	 
 }
 
 #{id}label5 {
+	 z-index: 10;
 	 width: 67px;
 	 height: 13px;
 	 top: 77px;
 	 left: 305px;
 	
 	 position: absolute;
-	 z-index: 10;
 	 
 }
 
 #{id}courtJurisdictionAlternateField {
+	 z-index: 8;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 8;
 	 
 }
 
 #{id}label4 {
+	 z-index: 8;
+<<<<<<< HEAD
+<<<<<<< HEAD
+	 width: 66px;
+=======
+=======
+>>>>>>> DRCAPCIS
 	 width: 88px;
+>>>>>>> DRCAPCIS
 	 height: 13px;
 	 top: 77px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 8;
 	 
 }
 
 #{id}courtJurisdictionExtField {
+	 z-index: 6;
 	 width: 50px;
 	 height: 22px;
 	 top: 95px;
 	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 6;
 	 
 }
 
 #{id}label3 {
+	 z-index: 6;
 	 width: 53px;
 	 height: 13px;
 	 top: 77px;
 	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 6;
 	 
 }
 
 #{id}courtJurisdictionPhoneField {
+	 z-index: 4;
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 4;
 	 
 }
 
 #{id}label2 {
+	 z-index: 4;
 	 width: 65px;
 	 height: 13px;
 	 top: 77px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 4;
 	 
 }
 
 #{id}courtJurisdictionNameField {
+	 z-index: 2;
 	 width: 405px;
 	 height: 22px;
 	 top: 50px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}label1 {
+	 z-index: 2;
 	 width: 130px;
 	 height: 13px;
 	 top: 32px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
@@ -387,6 +406,33 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}cityComboboxGrid {
+	 z-index: 29;
+	 width: 125px;
+	 height: 136px;
+	 top: 160px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}cityComboBox {
+	 z-index: 2;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
 	 
 }
 

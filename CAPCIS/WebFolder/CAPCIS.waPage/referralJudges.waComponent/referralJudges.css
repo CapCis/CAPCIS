@@ -655,7 +655,7 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 702px;
+	 width: 5px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -692,7 +692,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 702px;
+	 width: 5px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -703,10 +703,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 702px;
+	 width: 5px;
 	 height: 623px;
 	 top: 0px;
-	 left: 435px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -772,7 +772,7 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: 12px;
+	 width: -419px;
 	 height: 287px;
 	 top: 0px;
 	 left: 423px;
@@ -794,10 +794,10 @@
 
 #{id}correspondanceGrid {
 	 z-index: 5;
-	 width: 405px;
 	 height: 165px;
 	 top: 35px;
 	 left: 5px;
+	 right: 13px;
 	
 	 position: absolute;
 	 
@@ -854,7 +854,7 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 435px;
+	 width: 4px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -913,7 +913,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 435px;
+	 width: 4px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -924,7 +924,7 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 435px;
+	 width: 4px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -935,10 +935,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 1137px;
+	 width: 9px;
 	 height: 623px;
 	 top: 0px;
-	 left: 151px;
+	 left: 1279px;
 	
 	 position: absolute;
 	 
@@ -946,7 +946,7 @@
 
 #{id}container1 {
 	 z-index: 1;
-	 width: 151px;
+	 width: 1279px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -1135,10 +1135,10 @@
 
 #{id}judgePreviousGrid {
 	 z-index: 2;
-	 width: 405px;
 	 height: 180px;
 	 top: 25px;
 	 left: 5px;
+	 right: 572px;
 	
 	 position: absolute;
 	 
@@ -1164,6 +1164,18 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 

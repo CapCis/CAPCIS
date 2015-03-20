@@ -151,7 +151,7 @@
 
 #{id}label91 {
 	 z-index: 31;
-	 width: 75px;
+	 width: 66px;
 	 height: 13px;
 	 top: 122px;
 	 left: 190px;
@@ -338,7 +338,7 @@
 
 #{id}label77 {
 	 z-index: 27;
-	 width: 75px;
+	 width: 66px;
 	 height: 13px;
 	 top: 77px;
 	 left: 190px;
@@ -596,8 +596,8 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 468px;
-	 height: 390px;
+	 width: 4px;
+	 height: 388px;
 	 top: 235px;
 	 left: 0px;
 	
@@ -618,10 +618,10 @@
 
 #{id}dataGrid1 {
 	 z-index: 2;
-	 width: 405px;
 	 height: 170px;
 	 top: 25px;
 	 left: 5px;
+	 right: 56px;
 	
 	 position: absolute;
 	 
@@ -643,7 +643,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 468px;
+	 width: 4px;
 	 height: 235px;
 	 top: 0px;
 	 left: 0px;
@@ -690,8 +690,8 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 71px;
-	 height: 289px;
+	 width: 294px;
+	 height: 287px;
 	 top: 0px;
 	 left: 450px;
 	
@@ -727,7 +727,7 @@
 #{id}container25 {
 	 z-index: 1;
 	 width: 450px;
-	 height: 289px;
+	 height: 287px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -785,8 +785,8 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 521px;
-	 height: 625px;
+	 width: 5px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -796,8 +796,8 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 301px;
-	 height: 625px;
+	 width: 1279px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -814,6 +814,18 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 
@@ -985,10 +997,10 @@
 
 #{id}omCorrespondanceGrid {
 	 z-index: 6;
-	 width: 405px;
 	 height: 165px;
 	 top: 35px;
 	 left: 5px;
+	 right: 40px;
 	
 	 position: absolute;
 	 
@@ -1018,7 +1030,7 @@
 
 #{id}omSpecificSubCont {
 	 z-index: 1;
-	 width: 521px;
+	 width: 5px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -1029,10 +1041,10 @@
 
 #{id}omSpecificInfoCont {
 	 z-index: 2;
-	 width: 989px;
-	 height: 625px;
+	 width: 9px;
+	 height: 623px;
 	 top: 0px;
-	 left: 301px;
+	 left: 1279px;
 	
 	 position: absolute;
 	 
@@ -1040,10 +1052,10 @@
 
 #{id}omPrevVersionCont {
 	 z-index: 2;
-	 width: 468px;
-	 height: 625px;
+	 width: 4px;
+	 height: 623px;
 	 top: 0px;
-	 left: 521px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -1051,8 +1063,8 @@
 
 #{id}omCorrCont {
 	 z-index: 2;
-	 width: 521px;
-	 height: 289px;
+	 width: 5px;
+	 height: 287px;
 	 top: 336px;
 	 left: 0px;
 	

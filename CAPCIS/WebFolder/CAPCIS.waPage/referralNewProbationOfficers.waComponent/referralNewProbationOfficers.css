@@ -3,9 +3,43 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}label16 {
-	 z-index: 2;
-	 width: 21px;
+#{id}notes {
+	 z-index: 25;
+	 width: 213px;
+	 height: 52px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label11 {
+	 z-index: 25;
+	 width: 128px;
+	 height: 13px;
+	 top: 167px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}judgeJurisdictionGrid {
+	 z-index: 23;
+	 width: 125px;
+	 height: 115px;
+	 top: 162px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}label10 {
+	 z-index: 3;
+	 width: 61px;
 	 height: 13px;
 	 top: 0px;
 	 left: 0px;
@@ -14,8 +48,28 @@
 	 
 }
 
-#{id}button4 {
+#{id}judgeJurisdiction {
 	 z-index: 3;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}button1.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}button1 {
+	 z-index: 2;
 	 width: 25px;
 	 height: 22px;
 	 top: 18px;
@@ -34,13 +88,8 @@
 	 
 }
 
-#{id}button4.waf-state-hover {
-	 color: rgb(51, 51, 51);
-	 
-}
-
 #{id}container2 {
-	 z-index: 34;
+	 z-index: 22;
 	 width: 150px;
 	 height: 41px;
 	 top: 122px;
@@ -50,52 +99,52 @@
 	 
 }
 
-#{id}attStaffInfo {
-	 z-index: 33;
-	 width: 250px;
-	 height: 22px;
-	 top: 275px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label15 {
-	 z-index: 33;
-	 width: 50px;
-	 height: 13px;
-	 top: 257px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attPublicDef {
-	 z-index: 31;
+#{id}poInactive {
+	 z-index: 21;
 	 width: 22px;
 	 height: 22px;
-	 top: 255px;
-	 left: 385px;
+	 top: 228px;
+	 left: 388px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label14 {
-	 z-index: 31;
-	 width: 87px;
+#{id}label9 {
+	 z-index: 21;
+	 width: 83px;
 	 height: 13px;
-	 top: 259px;
-	 left: 293px;
+	 top: 232px;
+	 left: 300px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}poEmail {
+	 z-index: 19;
+	 width: 240px;
+	 height: 22px;
+	 top: 140px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label8 {
+	 z-index: 19;
+	 width: 77px;
+	 height: 13px;
+	 top: 122px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}richText10 {
-	 z-index: 29;
+	 z-index: 17;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -108,155 +157,34 @@
 	 
 }
 
-#{id}attInactive {
-	 z-index: 28;
-	 width: 22px;
-	 height: 22px;
+#{id}button15 {
+	 z-index: 16;
+	 width: 75px;
+	 height: 25px;
 	 top: 280px;
-	 left: 385px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label13 {
-	 z-index: 28;
-	 width: 93px;
-	 height: 13px;
-	 top: 284px;
-	 left: 287px;
+	 left: 335px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}button14 {
-	 z-index: 25;
+	 z-index: 15;
 	 width: 75px;
 	 height: 25px;
-	 top: 305px;
+	 top: 280px;
 	 left: 250px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}attNotes {
-	 z-index: 24;
-	 width: 250px;
-	 height: 22px;
-	 top: 230px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label12 {
-	 z-index: 24;
-	 width: 82px;
-	 height: 13px;
-	 top: 212px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attReportingComboBox {
-	 z-index: 22;
+#{id}poReportingComboBox {
+	 z-index: 14;
 	 width: 150px;
 	 height: 22px;
-	 top: 230px;
+	 top: 185px;
 	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label11 {
-	 z-index: 22;
-	 width: 98px;
-	 height: 13px;
-	 top: 212px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attEmail {
-	 z-index: 20;
-	 width: 260px;
-	 height: 22px;
-	 top: 185px;
-	 left: 150px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label10 {
-	 z-index: 20;
-	 width: 77px;
-	 height: 13px;
-	 top: 167px;
-	 left: 150px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attZip {
-	 z-index: 18;
-	 width: 100px;
-	 height: 22px;
-	 top: 185px;
-	 left: 45px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label9 {
-	 z-index: 18;
-	 width: 48px;
-	 height: 13px;
-	 top: 167px;
-	 left: 45px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attState {
-	 z-index: 16;
-	 width: 35px;
-	 height: 22px;
-	 top: 185px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label8 {
-	 z-index: 16;
-	 width: 28px;
-	 height: 13px;
-	 top: 167px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}attAddress {
-	 z-index: 14;
-	 width: 250px;
-	 height: 22px;
-	 top: 140px;
-	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -264,16 +192,16 @@
 
 #{id}label7 {
 	 z-index: 14;
-	 width: 79px;
+	 width: 98px;
 	 height: 13px;
-	 top: 122px;
-	 left: 5px;
+	 top: 167px;
+	 left: 260px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}attFax {
+#{id}poFax {
 	 z-index: 12;
 	 width: 105px;
 	 height: 22px;
@@ -295,7 +223,7 @@
 	 
 }
 
-#{id}attAdditional {
+#{id}poAdditional {
 	 z-index: 10;
 	 width: 105px;
 	 height: 22px;
@@ -317,7 +245,7 @@
 	 
 }
 
-#{id}attExt {
+#{id}poExt {
 	 z-index: 8;
 	 width: 50px;
 	 height: 22px;
@@ -339,7 +267,7 @@
 	 
 }
 
-#{id}attPhone {
+#{id}poPhone {
 	 z-index: 6;
 	 width: 100px;
 	 height: 22px;
@@ -361,7 +289,7 @@
 	 
 }
 
-#{id}attFullName {
+#{id}poFullName {
 	 z-index: 4;
 	 width: 200px;
 	 height: 22px;
@@ -383,7 +311,7 @@
 	 
 }
 
-#{id}attName {
+#{id}poName {
 	 z-index: 2;
 	 width: 200px;
 	 height: 22px;
@@ -396,7 +324,7 @@
 
 #{id}label1 {
 	 z-index: 2;
-	 width: 144px;
+	 width: 190px;
 	 height: 13px;
 	 top: 32px;
 	 left: 5px;
@@ -414,44 +342,6 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}close {
-	 z-index: 26;
-	 width: 75px;
-	 height: 25px;
-	 top: 305px;
-	 left: 335px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}cityComboboxGrid {
-	 z-index: 35;
-	 width: 125px;
-	 height: 134px;
-	 top: 162px;
-	 left: 260px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
-#{id}cityComboBox {
-	 z-index: 2;
-	 width: 125px;
-	 height: 22px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
 	 
 }
 
