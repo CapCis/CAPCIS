@@ -254,6 +254,149 @@
 	 
 }
 
+#{id}assessorInactiveCheckBox {
+	 z-index: 28;
+	 width: 22px;
+	 height: 22px;
+	 top: 262px;
+	 left: 388px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assessorNameField2 {
+	 z-index: 2;
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assessorFullNameField2 {
+	 z-index: 4;
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assessorPhoneField2 {
+	 z-index: 6;
+	 width: 100px;
+	 height: 22px;
+	 top: 95px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorExtField2 {
+	 z-index: 8;
+	 width: 50px;
+	 height: 22px;
+	 top: 95px;
+	 left: 119px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorMobileField2 {
+	 z-index: 10;
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorFaxField2 {
+	 z-index: 12;
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 305px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorAddressField2 {
+	 z-index: 14;
+	 width: 250px;
+	 height: 22px;
+	 top: 140px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorStateField2 {
+	 z-index: 16;
+	 width: 35px;
+	 height: 22px;
+	 top: 189px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorZipField2 {
+	 z-index: 18;
+	 width: 100px;
+	 height: 22px;
+	 top: 189px;
+	 left: 45px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorEmailField2 {
+	 z-index: 20;
+	 width: 260px;
+	 height: 22px;
+	 top: 189px;
+	 left: 150px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}assesorNotesField2 {
+	 z-index: 24;
+	 width: 250px;
+	 height: 55px;
+	 top: 230px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}reportingComboBox2 {
+	 z-index: 22;
+	 width: 150px;
+	 height: 22px;
+	 top: 230px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}cityComboBox {
 	 z-index: 2;
 	 width: 125px;
@@ -266,149 +409,6 @@
 	-moz-border-radius-topright: 0px;
 	 border-bottom-right-radius: 0px;
 	-moz-border-radius-bottomright: 0px;
-	 
-}
-
-#{id}assessorNameField {
-	 z-index: 2;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorPhoneField {
-	 z-index: 6;
-	 width: 100px;
-	 height: 22px;
-	 top: 95px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorEmailField {
-	 z-index: 20;
-	 width: 260px;
-	 height: 22px;
-	 top: 189px;
-	 left: 150px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorFaxField {
-	 z-index: 12;
-	 width: 105px;
-	 height: 22px;
-	 top: 95px;
-	 left: 305px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorAddressField {
-	 z-index: 14;
-	 width: 250px;
-	 height: 22px;
-	 top: 140px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorStateField {
-	 z-index: 16;
-	 width: 35px;
-	 height: 22px;
-	 top: 189px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorZipField {
-	 z-index: 18;
-	 width: 100px;
-	 height: 22px;
-	 top: 189px;
-	 left: 45px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorExtField {
-	 z-index: 8;
-	 width: 50px;
-	 height: 22px;
-	 top: 95px;
-	 left: 119px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorMobileField {
-	 z-index: 10;
-	 width: 105px;
-	 height: 22px;
-	 top: 95px;
-	 left: 190px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorNotesField {
-	 z-index: 24;
-	 width: 250px;
-	 height: 55px;
-	 top: 230px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorFullNameField {
-	 z-index: 4;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 210px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}reportingComboBox {
-	 z-index: 22;
-	 width: 150px;
-	 height: 22px;
-	 top: 230px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorInactiveCheckBox {
-	 z-index: 28;
-	 width: 22px;
-	 height: 22px;
-	 top: 262px;
-	 left: 388px;
-	
-	 position: absolute;
 	 
 }
 

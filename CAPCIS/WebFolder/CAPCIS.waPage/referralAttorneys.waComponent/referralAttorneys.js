@@ -28,7 +28,7 @@ function constructor (id) {
 		{
 			if(searchCrit == "" && searchType == 'Active')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -43,7 +43,7 @@ function constructor (id) {
 			}
 			else if(searchCrit == '' && searchType == 'Inactive')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -56,7 +56,7 @@ function constructor (id) {
 			}
 			else if(searchCrit == '' && searchType == 'All')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:12}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:12}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -69,7 +69,7 @@ function constructor (id) {
 			}
 			else if (searchCrit != '' && searchType == 'Active')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:14, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:14, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -82,7 +82,7 @@ function constructor (id) {
 			}
 			else if (searchCrit != '' && searchType == 'Inactive')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:14, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:14, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -95,7 +95,7 @@ function constructor (id) {
 			}
 			else if (searchCrit != '' && searchType == 'All')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:13, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:13, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -110,7 +110,7 @@ function constructor (id) {
 		}
 		catch(err)
 		{
-			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -146,7 +146,7 @@ function constructor (id) {
 		
 			if(currentCorrespondanceAll != null)
 			{
-				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:16,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject2 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:16,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						corrListSuccess(result);
@@ -161,7 +161,7 @@ function constructor (id) {
 			}
 			else
 			{
-				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:17,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject2 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:17,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						corrListSuccess(result);
@@ -249,13 +249,13 @@ function constructor (id) {
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
 			var currentCity = $$($comp.id + "_attCityComboBox").getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject5);
 		
 		if( city.length ===0)
 		{
 			
-			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 						
@@ -269,19 +269,19 @@ function constructor (id) {
 		
 			var myObject7 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:3,
-				data1:$$(getHtmlId("attName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("attPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("attEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("attFax")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("attAddress")).sourceAtt.getValue(),
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:3,
+				data1:$$(getHtmlId("attName")).getValue(),
+				data2:$$(getHtmlId("attPhone")).getValue(),
+				data3:$$(getHtmlId("attEmail")).getValue(),
+				data4:$$(getHtmlId("attFax")).getValue(),
+				data5:$$(getHtmlId("attAddress")).getValue(),
 				data6:$$(getHtmlId("attCityComboBox")).getValue(),
-				data7:$$(getHtmlId("attState")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("attZip")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("attExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("attAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("attNotes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("attFullName")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("attState")).getValue(),
+				data8:$$(getHtmlId("attZip")).getValue(),
+				data9:$$(getHtmlId("attExt")).getValue(),
+				data10:$$(getHtmlId("attAdditional")).getValue(),
+				data11:$$(getHtmlId("attNotes")).getValue(),
+				data12:$$(getHtmlId("attFullName")).getValue(),
 				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("attInactive")).getValue(),
@@ -300,21 +300,8 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
-				
-	 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-	 		
-		fillMainTable();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	bakAttorneyInfo = rpcDSelects.getSelect(myObject5);
-	 	sources.bakAttorneyInfo.sync();
+
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakListSuccess(result);
@@ -343,29 +330,13 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
-		
-		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);
-		var id = sources.bakAttorneyInfo.BAKAttorneyInformationID;
-		
-		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:19,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
+		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);	
 	};// @lock
 
 	button16.click = function button16_click (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
-		//var name = $$(getHtmlId('assessorNameField')).getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -381,11 +352,10 @@ function constructor (id) {
 	attVoidedCorrespondanceCheck.change = function attVoidedCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
 		var status = $$(getHtmlId("attVoidedCorrespondanceCheck")).getValue();
-		var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
+		var id  = sources.attorneyCorespondance.AttorneyCorrespondenceID;
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:2,
-				data1:currentCorresondanceDate,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:2,
 				data2:status,
 				data3: id
 			}; //dontf
@@ -407,7 +377,7 @@ function constructor (id) {
 		var x = $$(getHtmlId("attNewCoresspondenceField"));
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:2,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:2,
 				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
 				data2:currentID
 			}; //dontf
@@ -421,12 +391,7 @@ function constructor (id) {
 					'params': [myObject8]
 				});
 			fillCorrespondance();
-			x.setValue("");
-			/*
-			var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:2,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 			assessorCorespondance = rpcDSelects.getSelect(myObject2);
-	 			sources.assessorCorespondance.sync();
-	 			*/
+			
 	};// @lock
 
 	attCorCloseButton.click = function attCorCloseButton_click (event)// @startlock
@@ -439,7 +404,7 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('attCorrCont')).setSplitPosition(420);
 		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
+		
 	};// @lock
 
 	attCorrespondanceActiveBox.change = function attCorrespondanceActiveBox_change (event)// @startlock
@@ -485,17 +450,7 @@ function constructor (id) {
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:15,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
+		
 		
 		
 		
@@ -523,21 +478,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificListSuccess(result)
-	{
-		
-		specificAttorneyList = result;
-		sources.specificAttorneyList.sync();
-	}
-	function specificListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 	function corrListSuccess(result)
 	{
 		
@@ -569,21 +510,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
-		
-		specificBakAttorneyList = result;
-		sources.specificBakAttorneyList.sync();
-	}
-	function specificBakListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
