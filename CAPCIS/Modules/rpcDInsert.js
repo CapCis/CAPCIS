@@ -44,17 +44,23 @@ exports.setInsertWReturn = function setInsert(myObject)
 	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
 	var myResults = result.getAllRows();
-	connection.close;
+	//connection.close;
 	if(myResults.length > 0)
 	{
 		var insertStatement = dBInsertBuilder.buildQuery(myObject);
-		var connection = serverUtil.getDBConnection();
-		var returnedID = connection.execute(insertStatement);
-		myObject.returnedID = returnedID;
+		//var connection = serverUtil.getDBConnection();
+		connection.execute(insertStatement);
+		//myObject.returnedID = returnedID;
+		
 		myObject.major = myObject.major2;
 		myObject.minor = myObject.minor2;
-		var insertStatement = dBInsertBuilder.buildQuery(myObject);
-		var myResults = connection.execute(insertStatement);	
+		var selectStatement2 = dBQueryBuilder.buildQuery(myObject);
+		var myResults2 = connection.execute(selectStatement2);
+		myResults2.returnedID = myResults2[0];
+		myObject.major = myObject.major3;
+		myObject.minor = myObject.minor3;
+		var insertStatement2 = dBInsertBuilder.buildQuery(myObject);
+		connection.execute(insertStatement2);
 		myResults = ["suc"];
 		connection.close;
 	}
