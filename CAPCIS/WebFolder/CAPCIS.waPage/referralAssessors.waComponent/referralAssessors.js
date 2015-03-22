@@ -474,7 +474,7 @@ var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,m
 
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		sources.reporting;
 
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(450);
