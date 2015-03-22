@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		tempStore = city;
 
 	// @region namespaceDeclaration// @startlock
 	var button3 = {};	// @button
@@ -105,12 +106,11 @@ function constructor (id) {
 		var phone = $$(getHtmlId("courtJurisdictionPhoneField")).getValue();
 		var fax = $$(getHtmlId("courtJurisdictionFaxField")).getValue();
 		var mobile = $$(getHtmlId("courtJurisdictionAlternateField")).getValue();
-		
-		if(phone.length !== 13)
+		if(phone.length !== 14)
 		{
-			if(phone.length !== 5 )
+			if(phone.length !== 5  && phone.length !== 0)
 			{
-				Alert("Please correct phone number");
+				alert("Please correct phone number");
 				return;
 			}
 			else
@@ -119,11 +119,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(fax.length !== 13)
+		else
 		{
-			if(fax.length !== 5 )
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
 			{
-				Alert("Please correct fax number");
+				alert("Please correct fax number");
 				return;
 			}
 			else
@@ -133,11 +137,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(mobile.length !== 13)
+		else
 		{
-			if(mobile.length !== 5 )
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
 			{
-				Alert("Please correct mobile number");
+				alert("Please correct mobile number");
 				return;
 			}
 			else
@@ -146,14 +154,18 @@ function constructor (id) {
 			}
 			
 		}
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
 		
 		//run update if needed
 		
 			var myObject7 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:4,
-				major2: 3,
-    			minor2: 20,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,
+				major: 3,
+    			minor: 21,
 				data1:$$(getHtmlId("courtJurisdictionNameField")).getValue(),
 				data2:phone,
 				data3:$$(getHtmlId("courtJurisdictionEmailField")).getValue(),
@@ -165,18 +177,28 @@ function constructor (id) {
 				data9:$$(getHtmlId("courtJurisdictionExtField")).getValue(),
 				data10:mobile,
 				data11:$$(getHtmlId("courtJurisdictionNotesField")).getValue(),
-				data12:$$(getHtmlId("courtJurisdictionDatabaseField")).getValue(),
 				data13:$$(getHtmlId("reportingComboBox")).getValue(),
-				data14:currentID,
 				data15:$$(getHtmlId("courtJurisdictionInactiveCheckBox")).getValue()
 				//dont forget to remove formatting with  the sql call
 				
 				
 				
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+			}; //dontforget to add this to token   
 	 		
+	 		rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
 	 		
-				
+			newAssessor = document.getElementById($comp.id);
+			$comp.removeComponent();
+			newAssessor.style.visibility = 'hidden';
+			newAssessor.style.zIndex = '0';	
 	 		
 	 	
 			

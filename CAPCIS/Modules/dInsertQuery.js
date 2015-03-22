@@ -71,20 +71,40 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 19: answer ='INSERT INTO capcis.assessorinformation (AssessorName,AssessorPhone,AssessorEmail,AssessorFax,AssessorAddress, \
 						AssessorCity,AssessorState,AssessorZipCode,AssessorPhoneExt,AssessorMobilePhone \
-						,AssessorNotes,AssessorFullNameDisplay,AssPreferredReportingMethod,InactiveAssessorInfo,randID) \
+						,AssessorNotes,AssessorFullNameDisplay,AssPreferredReportingMethod,InactiveAssessorInfo,FK_fxuseraccounts_FxUserAccountsID) \
 						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
 						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
-						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+',"'+myObject.randID+'") ';
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+','+myObject.id+') ';
 						break;
 				
-				case 21: answer ='INSERT INTO capcis.attorneyinformation (AttorneyName,AttorneyPhone,AttorneyEmail,AttorneyFax,AttorneyAddress, \
-						AttorneyCity,AttorneyState,AttorneyZipCode,FK_attorneyinformation_AttorneyInformationID,AttorneyPhoneExt,AttorneyAdditionalPhone \
-						,AttorneyNotes,AttorneyFullNameDisplay,AttPreferredReportingMethod,InactiveAttorneyInfo,FK_useraccounts_UserAccountsID,PublicDefender,AttorneyStaffInfo) \
+				case 20: answer ='INSERT INTO capcis.attorneyinformation (AttorneyName,AttorneyPhone,AttorneyEmail,AttorneyFax,AttorneyAddress, \
+						AttorneyCity,AttorneyState,AttorneyZipCode,AttorneyPhoneExt,AttorneyAdditionalPhone \
+						,AttorneyNotes,AttorneyFullNameDisplay,AttPreferredReportingMethod,InactiveAttorneyInfo,FK_fxuseraccounts_FxUserAccountsID,PublicDefender,AttorneyStaffInfo) \
 						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
-						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
 						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'",'+myObject.data16+',"'+myObject.data17+'")';
 						break;
-				
+				case 21: answer ='INSERT INTO capcis.courtjurisdiction (CourtJurisdiction,CourtJurisdictionPhone,CourtJurisdictionEmail,CourtJurisdictionFax,CourtJurisdictionAddress, \
+						CourtJurisdictionCity,CourtJurisdictionState,CourtJurisdictionZipCode,CourtJurisdictionPhoneExt,CourtJurisdictionAlternatePhone \
+						,CourtJurisdictionNotes,CourtJurisdictionPreferredReportingMethod,InactiveCourtJurisdictionInfo,FK_fxuseraccounts_FxUserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
+				case 22: answer ='INSERT INTO capcis.dhsinformation (DhsName,DhsPhone,DhsEmail,DhsFax,DhsAddress, \
+						DhsCity,DhsState,DhsZipCode,DhsPhoneExt,DhsAlternatPhone \
+						,DhsNotes,DhsFullNameDisplay,DhsPreferredReportingMethod,InactiveDhsInfo,FK_fxuseraccounts_FXUserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
+				case 23: answer ='INSERT INTO capcis.judges (Judge,JudgeOfficePhone,JudgeEmail,JudgeFax,JudgeAddress, \
+						JudgeCity,JudgeState,JudgeZipCode,JudgeOfficePhoneExt,JudgeMobilePhone \
+						,JudgeFullNameDisplay,JPreferredReportingMethod,JudgeJurisdiction,InactiveJudge,FK_fxuseraccounts_FXUserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
 				default: answer = null;
 			}
 			break;
