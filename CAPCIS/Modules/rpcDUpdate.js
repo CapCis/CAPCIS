@@ -31,3 +31,36 @@ exports.setUpdate = function setUpdate(myObject)
 	return myResults;
 	
 };
+
+exports.setUpdateWReturn = function setUpdate(myObject)
+{
+	var serverUtil = require('serverUtilities');
+	var dBQueryBuilder = require('dSelectsQuery');
+	var dBUpdateBuilder = require('dUpdateQuery');
+	var tokenArray = {token:myObject.token,major:0,minor:1};
+	var selectStatement = dBQueryBuilder.buildQuery(tokenArray);
+	var connection = serverUtil.getDBConnection();
+	var result = connection.execute(selectStatement);
+	var myResults = result.getAllRows();
+	connection.close;
+	if(myResults.length > 0)
+	{
+		var updateStatement = dBUpdateBuilder.buildQuery(myObject);
+		var connection = serverUtil.getDBConnection();
+		var returnedID = connection.execute(updateStatement);
+		//myObject.returnedID = returnedID;
+		myObject.major = myObject.major2;
+		myObject.minor = myObject.minor2;
+		var updateStatement2 = dBUpdateBuilder.buildQuery(myObject);
+		var myResults = connection.execute(updateStatement2);
+		connection.close;
+		myResults = ["suc"];
+	}
+	else
+	{
+		myResults = ["err", "Invalid Token"];
+	}
+	
+	return myResults;
+	
+};

@@ -103,23 +103,72 @@ function constructor (id) {
 				});
 		}
 		
+		var phone = $$(getHtmlId("attPhone")).getValue();
+		var fax = $$(getHtmlId("attFax")).getValue();
+		var mobile = $$(getHtmlId("attAdditional")).getValue();
+		
+		if(phone.length !== 13)
+		{
+			if(phone.length !== 5 )
+			{
+				Alert("Please correct phone number");
+				return;
+			}
+			else
+			{
+				phone = "";
+			}
+			
+		}
+		if(fax.length !== 13)
+		{
+			if(fax.length !== 5 )
+			{
+				Alert("Please correct fax number");
+				return;
+			}
+			else
+			{
+				
+				fax = "";
+			}
+			
+		}
+		if(mobile.length !== 13)
+		{
+			if(mobile.length !== 5 )
+			{
+				Alert("Please correct mobile number");
+				return;
+			}
+			else
+			{
+				mobile = "";	
+			}
+			
+		}
+		
 			var myObject7 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:3,
-				major2: 3,
-    			minor2: 20,
-				data1:$$(getHtmlId("attName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("attPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("attEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("attFax")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("attAddress")).sourceAtt.getValue(),
+				major: 3,
+    			minor: 21,
+    			major2: 3,
+    			minor2: 105,
+    			major3: 3,
+    			minor3: 22,
+				data1:$$(getHtmlId("attName")).getValue(),
+				data2:phone,
+				data3:$$(getHtmlId("attEmail")).getValue(),
+				data4:fax,
+				data5:$$(getHtmlId("attAddress")).getValue(),
 				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("attState")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("attZip")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("attExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("attAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("attNotes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("attFullName")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("attState")).getValue(),
+				data8:$$(getHtmlId("attZip")).getValue(),
+				data9:$$(getHtmlId("attExt")).getValue(),
+				data10:mobile,
+				data11:$$(getHtmlId("attNotes")).getValue(),
+				data12:$$(getHtmlId("attFullName")).getValue(),
 				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("attInactive")).getValue(),

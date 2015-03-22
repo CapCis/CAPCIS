@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:85}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:85}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						jurisdictionSuccess(result);
@@ -274,19 +274,6 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('poPrevVersionCont')).setSplitPosition(250);
-		var id = sources.bakProbationOfficerInfo.BAKPOInformationID;
-
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:73,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
 	};// @lock
 
 	poVoidedCorrespondanceCheck.change = function poVoidedCorrespondanceCheck_change (event)// @startlock
@@ -297,7 +284,6 @@ function constructor (id) {
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:14,
-				data1:currentCorresondanceDate,
 				data2:status,
 				data3: id
 			}; //dontf
@@ -324,8 +310,7 @@ function constructor (id) {
 	poCorrespondanceGrid.onRowClick = function poCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('poCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('poSpecificInfoCont')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
+		$$(getHtmlId('poSpecificInfoCont')).setSplitPosition(900);		
 	};// @lock
 
 	poCorrespondanceActiveBox.change = function poCorrespondanceActiveBox_change (event)// @startlock
@@ -384,16 +369,16 @@ var myObject7 =
 			{
 				
 				token:'7836140170460568' ,id:'1',major:3,minor: 15,
-				data1:$$(getHtmlId("poName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("poPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("poEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("poFax")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("poExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("poAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("notes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("poFullName")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("poReportingComboBox")).sourceAtt.getValue(),
+				data1:$$(getHtmlId("poName")).getValue(),
+				data2:$$(getHtmlId("poPhone")).getValue(),
+				data3:$$(getHtmlId("poEmail")).getValue(),
+				data4:$$(getHtmlId("poFax")).getValue(),
+				data8:$$(getHtmlId("")).getValue(),
+				data9:$$(getHtmlId("poExt")).getValue(),
+				data10:$$(getHtmlId("poAdditional")).getValue(),
+				data11:$$(getHtmlId("notes")).getValue(),
+				data12:$$(getHtmlId("poFullName")).getValue(),
+				data13:$$(getHtmlId("poReportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("poInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -407,18 +392,7 @@ var myObject7 =
 					'params': [myObject7]
 				});
 				
-	 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-				
-				
-	 		fillMainTable();
+	 		
 	 		
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:72,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
@@ -468,16 +442,7 @@ var myObject7 =
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:71,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
+		
 	 
 		///////////////////////////////////////////////////////////get data
 		
@@ -548,12 +513,7 @@ var myObject7 =
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
-		
-		specificBakProbationOfficerList = result;
-		sources.specificBakProbationOfficerList.sync();
-	}
+	
 	function jurisdictionSuccess(result)
 	{
 		var tempCity = result[0];

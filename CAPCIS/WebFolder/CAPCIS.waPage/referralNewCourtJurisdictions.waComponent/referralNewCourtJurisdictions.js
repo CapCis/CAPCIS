@@ -102,7 +102,50 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 		}
+		var phone = $$(getHtmlId("courtJurisdictionPhoneField")).getValue();
+		var fax = $$(getHtmlId("courtJurisdictionFaxField")).getValue();
+		var mobile = $$(getHtmlId("courtJurisdictionAlternateField")).getValue();
 		
+		if(phone.length !== 13)
+		{
+			if(phone.length !== 5 )
+			{
+				Alert("Please correct phone number");
+				return;
+			}
+			else
+			{
+				phone = "";
+			}
+			
+		}
+		if(fax.length !== 13)
+		{
+			if(fax.length !== 5 )
+			{
+				Alert("Please correct fax number");
+				return;
+			}
+			else
+			{
+				
+				fax = "";
+			}
+			
+		}
+		if(mobile.length !== 13)
+		{
+			if(mobile.length !== 5 )
+			{
+				Alert("Please correct mobile number");
+				return;
+			}
+			else
+			{
+				mobile = "";	
+			}
+			
+		}
 		
 		//run update if needed
 		
@@ -111,18 +154,18 @@ function constructor (id) {
 				token:'7836140170460568' ,id:'1',major:3,minor:4,
 				major2: 3,
     			minor2: 20,
-				data1:$$(getHtmlId("courtJurisdictionNameField")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("courtJurisdictionPhoneField")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("courtJurisdictionEmailField")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("courtJurisdictionFaxField")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("courtJurisdictionAddressField")).sourceAtt.getValue(),
+				data1:$$(getHtmlId("courtJurisdictionNameField")).getValue(),
+				data2:phone,
+				data3:$$(getHtmlId("courtJurisdictionEmailField")).getValue(),
+				data4:fax,
+				data5:$$(getHtmlId("courtJurisdictionAddressField")).getValue(),
 				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("courtJurisdictionStateField")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("courtJurisdictionZipField")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("courtJurisdictionExtField")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("courtJurisdictionAlternateField")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("courtJurisdictionNotesField")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("courtJurisdictionDatabaseField")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("courtJurisdictionStateField")).getValue(),
+				data8:$$(getHtmlId("courtJurisdictionZipField")).getValue(),
+				data9:$$(getHtmlId("courtJurisdictionExtField")).getValue(),
+				data10:mobile,
+				data11:$$(getHtmlId("courtJurisdictionNotesField")).getValue(),
+				data12:$$(getHtmlId("courtJurisdictionDatabaseField")).getValue(),
 				data13:$$(getHtmlId("reportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("courtJurisdictionInactiveCheckBox")).getValue()

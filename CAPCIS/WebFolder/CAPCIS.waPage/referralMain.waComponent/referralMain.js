@@ -609,14 +609,16 @@ function constructor (id) {
 	}
 	function reportingSuccess(result)
 	{
+		debugger;
 		var tempReporting = result[0];
 		result[0] = {
    		 ReportingMethod: "None"
 		};
 		result[result.length] = tempReporting;
 		
-		resporting = result;
+		reporting = result;
 		sources.reporting.sync();
+		var x=0;
 	}
 	function reportingError(event)
 	{
