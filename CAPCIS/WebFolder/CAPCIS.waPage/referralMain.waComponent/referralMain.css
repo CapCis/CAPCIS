@@ -383,7 +383,7 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 19;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -394,7 +394,7 @@
 }
 
 #{id}AttorneyContainer {
-	 z-index: 11;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -416,7 +416,7 @@
 }
 
 #{id}DHSOfficerContainer {
-	 z-index: 12;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -438,7 +438,7 @@
 }
 
 #{id}JudgeContainer {
-	 z-index: 13;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -460,7 +460,7 @@
 }
 
 #{id}OtherMonitorContainer {
-	 z-index: 14;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -482,7 +482,7 @@
 }
 
 #{id}ProsecutorContainer {
-	 z-index: 15;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -504,7 +504,7 @@
 }
 
 #{id}ProbationOfficerContainer {
-	 z-index: 16;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -526,7 +526,7 @@
 }
 
 #{id}ProbationJursidictionContainer {
-	 z-index: 17;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -548,7 +548,7 @@
 }
 
 #{id}CourtJursidictionContainer {
-	 z-index: 18;
+	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -779,7 +779,7 @@
 }
 
 #{id}newProsecutorsComponent {
-	 z-index: 10;
+	 z-index: 0;
 	 width: 420px;
 	 height: 350px;
 	 top: 45px;
@@ -790,7 +790,7 @@
 }
 
 #{id}newPOComponent {
-	 z-index: 11;
+	 z-index: 0;
 	 width: 420px;
 	 height: 350px;
 	 top: 45px;
@@ -801,7 +801,7 @@
 }
 
 #{id}newCourtJurisdictionComponent {
-	 z-index: 13;
+	 z-index: 0;
 	 width: 420px;
 	 height: 350px;
 	 top: 45px;
@@ -812,7 +812,7 @@
 }
 
 #{id}newProbationJurisdictionComponent {
-	 z-index: 12;
+	 z-index: 0;
 	 width: 420px;
 	 height: 350px;
 	 top: 45px;
