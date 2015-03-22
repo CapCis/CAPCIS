@@ -262,19 +262,7 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('pjPrevVersionCont')).setSplitPosition(250);
-		var id = sources.bakProbationJurisdictionInfo.BAKPOJurisdictionID;
-
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:64,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
+		
 	};// @lock
 
 	pjVoidedCorrespondanceCheck.change = function pjVoidedCorrespondanceCheck_change (event)// @startlock
@@ -284,7 +272,6 @@ function constructor (id) {
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:12,
-				data1:currentCorresondanceDate,
 				data2:status,
 				data3: id
 			}; //dontf
@@ -312,7 +299,7 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('pjCorrCont')).setSplitPosition(420);
 		$$(getHtmlId('pjSpecificInfoCont')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
+		
 	};// @lock
 
 	pjCorrespondanceActiveBox.change = function pjCorrespondanceActiveBox_change (event)// @startlock
@@ -387,26 +374,18 @@ var myObject7 =
 			{
 				
 				token:'7836140170460568' ,id:'1',major:3,minor: 13,
-				data1:$$(getHtmlId("pjName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("pjPhone")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("pjFax")).sourceAtt.getValue(),
+				data1:$$(getHtmlId("pjName")).getValue(),
+				data2:$$(getHtmlId("pjPhone")).getValue(),
+				data4:$$(getHtmlId("pjFax")).getValue(),
 				data5:$$(getHtmlId("pjAddress")).getValue(),
 				data6:$$(getHtmlId("pjCityComboBox")).getValue(),
-				data7:$$(getHtmlId("pjState")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("pjZip")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("pjNotes")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("pjState")).getValue(),
+				data8:$$(getHtmlId("pjZip")).getValue(),
+				data11:$$(getHtmlId("pjNotes")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("pjInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
+	 		
 				
 	 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -419,8 +398,7 @@ var myObject7 =
 				});
 				
 				
-	 		fillMainTable();
-	 		
+	 			 		
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:63,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -456,17 +434,7 @@ var myObject7 =
 		}
 		
 
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:62,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-	 
+			 
 		///////////////////////////////////////////////////////////get data
 		
 		
@@ -490,21 +458,7 @@ var myObject7 =
 				}
 				alert(errMessage);
 	}
-	function specificListSuccess(result)
-	{
-		
-		specificProbationJurisdictionList = result;
-		sources.specificProbationJurisdictionList.sync();
-	}
-	function specificListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 	function corrListSuccess(result)
 	{
 		
@@ -536,21 +490,8 @@ var myObject7 =
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
-		
-		specificBakProbationJurisdictionList = result;
-		sources.specificBakProbationJurisdictionList.sync();
-	}
-	function specificBakListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
+	
 	
 	
 

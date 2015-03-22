@@ -52,15 +52,18 @@ function constructor (id) {
 		});
 		
 		*/
-		assessor = document.getElementById(getHtmlId('AssessorContainer'));
-		attorney = document.getElementById(getHtmlId('AttorneyContainer'));
-		dhs = document.getElementById(getHtmlId('DHSOfficerContainer'));
-		judge = document.getElementById(getHtmlId('JudgeContainer'));
-		other = document.getElementById(getHtmlId('OtherMonitorContainer'));
-		prosecutor = document.getElementById(getHtmlId('ProsecutorContainer'));
-		probationO = document.getElementById(getHtmlId('ProbationOfficerContainer'));
-		ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionContainer'));
-		court = document.getElementById(getHtmlId('CourtJursidictionContainer'));
+		
+		oldVisContainer = "";
+		oldVisComponent = "";
+		//assessor = document.getElementById(getHtmlId('AssessorContainer'));
+		//attorney = document.getElementById(getHtmlId('AttorneyContainer'));
+		//dhs = document.getElementById(getHtmlId('DHSOfficerContainer'));
+		//judge = document.getElementById(getHtmlId('JudgeContainer'));
+		//other = document.getElementById(getHtmlId('OtherMonitorContainer'));
+		//prosecutor = document.getElementById(getHtmlId('ProsecutorContainer'));
+		//probationO = document.getElementById(getHtmlId('ProbationOfficerContainer'));
+		//ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionContainer'));
+		//court = document.getElementById(getHtmlId('CourtJursidictionContainer'));
 		newAssessor = document.getElementById(getHtmlId('newAssesorComponent'));
 		newAttorney = document.getElementById(getHtmlId('newAttorneyComponent'));
 		newDHS = document.getElementById(getHtmlId('newDHSOfficerComponent'));
@@ -220,91 +223,117 @@ function constructor (id) {
 	{// @endlock
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("CourtJursidictionContainer","CourtJursidictionComponent");	
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
-									//data that you want to send to the webcomponent
+		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',		
+		userData: 	{searchCrit: searchCrit, searchType: searchType},					//data that you want to send to the webcomponent
+		onSuccess: function () {}
+									
 		});
+		//var test = $$(getHtmlId("CourtJursidictionContainer"));
+		//test.domNode.style.visibility = "visible";
+		//$$(getHtmlId("CourtJursidictionContainer")).domNode.style.visibility = "visible";
+		//$$(getHtmlId("CourtJursidictionContainer")).domNode.style.zIndex = "10";
+		//$$(getHtmlId(oldRefVis)).domNode.style.visibility = "hidden";
+		//$$(getHtmlId(oldRefVis)).domNode.style.zIndex = "0";
+		//oldRefVis = id;
 		
-		changeWindow(event.target.firstChild.data);
 	};// @lock
 
 	probationJurisdictionButton.click = function probationJurisdictionButton_click (event)// @startlock
 	{// @endlock
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("ProbationJursidictionContainer","ProbationJursidictionComponent");
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_ProbationJursidictionComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}			//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},			//data that you want to send to the webcomponent
+		onSuccess: function () {}
 		});
-		changeWindow(event.target.firstChild.data);
+		
+		
+		
+		
 	};// @lock
 
 	probationOfficerButton.click = function probationOfficerButton_click (event)// @startlock
 	{// @endlock
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("ProbationOfficerContainer","ProbationOfficerComponent");
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_ProbationOfficerComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent',	
-		userData: 	{searchCrit: searchCrit, searchType: searchType}				//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
+		onSuccess: function () {}
 		});
-		changeWindow(event.target.firstChild.data);
+		
 	};// @lock
 
 	prosecutorsButton.click = function prosecutorsButton_click (event)// @startlock
 	{// @endlock
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("ProsecutorContainer","ProsecutorComponent");
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_ProsecutorComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}				//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
+		onSuccess: function () {}
 		});
-		changeWindow(event.target.firstChild.data);
+		
 	};// @lock
 
 	otherButton.click = function otherButton_click (event)// @startlock
 	{// @endlock
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("OtherMonitorContainer","OtherMonitorComponent");
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_OtherMonitorComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralOtherMonitors.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}				//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
+		onSuccess: function () {}
 		});
-		changeWindow(event.target.firstChild.data);
+		
 	};// @lock
 
 	judgesButton.click = function judgesButton_click (event)// @startlock
 	{// @endlock
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("JudgeContainer","JudgeComponent");
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_JudgeComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralJudges.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}			//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},			//data that you want to send to the webcomponent
+		onSuccess: function () {}
 		});
-		changeWindow(event.target.firstChild.data);
+		
 	};// @lock
 
 	dhsButton.click = function dhsButton_click (event)// @startlock
 	{// @endlock
-		
+				
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("DHSOfficerContainer","DHSOfficerComponent");
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
-									//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
+		onSuccess: function () {}							//data that you want to send to the webcomponent
 		});
 		
-		changeWindow(event.target.firstChild.data);
+		
 	};// @lock
 
 	assessorButton.click = function assessorButton_click (event)// @startlock
@@ -312,15 +341,16 @@ function constructor (id) {
 		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("AssessorContainer","AssessorComponent");
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_AssessorComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralAssessors.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
-									//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
+		onSuccess: function () {}							//data that you want to send to the webcomponent
 		});
 
-		changeWindow(event.target.firstChild.data);
+		
 
 	};// @lock
 
@@ -334,17 +364,19 @@ function constructor (id) {
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
 		
+		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		changeWindow("AttorneyContainer","AttorneyComponent");
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType}					//designate the webcomponent to load
-									//data that you want to send to the webcomponent
+		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
+		onSuccess: function () {}							//data that you want to send to the webcomponent
 		});
 		
-		changeWindow(event.target.firstChild.data);
+		
 		
 	};// @lock
 
@@ -416,11 +448,34 @@ function constructor (id) {
 		}
 	}
 	
-	function changeWindow(id)
+	function changeWindow(containerid,componentid)
 	{
+		debugger;
+		//var mytest1 = $$($comp.id+id).domNode.style.visibility;
+		if (oldVisContainer != "")
+		{
+			myOldPage = document.getElementById(getHtmlId(oldVisContainer));
+			myOldPage.style.visibility = "hidden";
+			myOldPage.style.zIndex = "0";
+		}
+		if (oldVisComponent != "")
+		{
+			$$($comp.id + "_" + oldVisComponent).removeComponent;
+		}
+		var myPage = document.getElementById(getHtmlId(containerid));
+		myPage.style.visibility = "visible";
+		myPage.style.zIndex = "10";
 		
+		oldVisContainer = containerid;
+		oldVisComponent = componentid;
+		//document.getElementById(getHtmlId(oldRefVis);//document.getElementById($comp.id + "_" + id);// = "visible";
 		
+		//document.getElementById(getHtmlId(id)).style.zIndex = "10";
+		//document.getElementById(getHtmlId(oldRefVis)).style.visibility = "hidden";
+		//document.getElementById(getHtmlId(oldRefVis)).style.zIndex = "0";
+		//oldRefVis = id;
 		
+		/*
 		assessor.style.visibility = 'hidden';
 		attorney.style.visibility = 'hidden';
 		dhs.style.visibility = 'hidden';
@@ -505,7 +560,7 @@ function constructor (id) {
 			court.style.zIndex = '9';
 			court.style.visibility = 'visible';
 		}
-		
+		*/
 		
 		
 	}
@@ -609,7 +664,7 @@ function constructor (id) {
 	}
 	function reportingSuccess(result)
 	{
-		debugger;
+		
 		var tempReporting = result[0];
 		result[0] = {
    		 ReportingMethod: "None"

@@ -262,19 +262,7 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('omPrevVersionCont')).setSplitPosition(250);
-		var id = sources.bakOtherMonitorInfo.BAKOtherMonitorsID;
-
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:55,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
+		
 	};// @lock
 
 	omVoidedCorrespondanceCheck.change = function omVoidedCorrespondanceCheck_change (event)// @startlock
@@ -285,7 +273,6 @@ function constructor (id) {
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:10,
-				data1:currentCorresondanceDate,
 				data2:status,
 				data3: id
 			}; //dontf
@@ -313,7 +300,7 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('omCorrCont')).setSplitPosition(420);
 		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
+		
 	};// @lock
 
 	omCorrespondanceActiveBox.change = function omCorrespondanceActiveBox_change (event)// @startlock
@@ -391,18 +378,18 @@ function constructor (id) {
 			{
 				
 				token:'7836140170460568' ,id:'1',major:3,minor: 11,
-				data1:$$(getHtmlId("omName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("omPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("omEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("omFax")).sourceAtt.getValue(),
+				data1:$$(getHtmlId("omName")).getValue(),
+				data2:$$(getHtmlId("omPhone")).getValue(),
+				data3:$$(getHtmlId("omEmail")).getValue(),
+				data4:$$(getHtmlId("omFax")).getValue(),
 				data5:$$(getHtmlId("omAddress")).getValue(),
 				data6:$$(getHtmlId("omCityComboBox")).getValue(),
-				data7:$$(getHtmlId("omState")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("omZip")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("omExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("omAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("omNotes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("omFullName")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("omState")).getValue(),
+				data8:$$(getHtmlId("omZip")).getValue(),
+				data9:$$(getHtmlId("omExt")).getValue(),
+				data10:$$(getHtmlId("omAdditional")).getValue(),
+				data11:$$(getHtmlId("omNotes")).getValue(),
+				data12:$$(getHtmlId("omFullName")).getValue(),
 				data13:$$(getHtmlId("omReportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("omInactive")).getValue()
@@ -417,18 +404,10 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 				
-	 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
+	 		
 				
 				
-	 		fillMainTable();
+	 		
 	 		
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
@@ -476,16 +455,7 @@ function constructor (id) {
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:53,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
+		
 	 
 		///////////////////////////////////////////////////////////get data
 		
@@ -511,21 +481,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificListSuccess(result)
-	{
-		
-		specificOtherMonitorList = result;
-		sources.specificOtherMonitorList.sync();
-	}
-	function specificListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 	function corrListSuccess(result)
 	{
 		
@@ -557,21 +513,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
-		
-		specificBakOtherMonitorList = result;
-		sources.specificBakOtherMonitorList.sync();
-	}
-	function specificBakListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
