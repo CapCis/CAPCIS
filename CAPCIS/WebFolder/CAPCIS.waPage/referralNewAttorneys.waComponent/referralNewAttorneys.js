@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		tempStore = city;
 
 	// @region namespaceDeclaration// @startlock
 	var button4 = {};	// @button
@@ -107,11 +108,11 @@ function constructor (id) {
 		var fax = $$(getHtmlId("attFax")).getValue();
 		var mobile = $$(getHtmlId("attAdditional")).getValue();
 		
-		if(phone.length !== 13)
+		if(phone.length !== 14)
 		{
-			if(phone.length !== 5 )
+			if(phone.length !== 5  && phone.length !== 0)
 			{
-				Alert("Please correct phone number");
+				alert("Please correct phone number");
 				return;
 			}
 			else
@@ -120,11 +121,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(fax.length !== 13)
+		else
 		{
-			if(fax.length !== 5 )
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
 			{
-				Alert("Please correct fax number");
+				alert("Please correct fax number");
 				return;
 			}
 			else
@@ -134,11 +139,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(mobile.length !== 13)
+		else
 		{
-			if(mobile.length !== 5 )
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
 			{
-				Alert("Please correct mobile number");
+				alert("Please correct mobile number");
 				return;
 			}
 			else
@@ -147,16 +156,16 @@ function constructor (id) {
 			}
 			
 		}
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
 		
 			var myObject7 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:3,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:3,
 				major: 3,
-    			minor: 21,
-    			major2: 3,
-    			minor2: 105,
-    			major3: 3,
-    			minor3: 22,
+    			minor: 20,
 				data1:$$(getHtmlId("attName")).getValue(),
 				data2:phone,
 				data3:$$(getHtmlId("attEmail")).getValue(),
@@ -170,16 +179,15 @@ function constructor (id) {
 				data11:$$(getHtmlId("attNotes")).getValue(),
 				data12:$$(getHtmlId("attFullName")).getValue(),
 				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
-				data14:currentID,
 				data15:$$(getHtmlId("attInactive")).getValue(),
 				data16:$$(getHtmlId("attPublicDef")).getValue(),
 				data17:$$(getHtmlId("attStaffInfo")).getValue()
 				
 				
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+			}; 
 	 	
 				
-	 		rpcDInsert.setInsertWReturnAsync({
+	 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 						
 					},
@@ -188,6 +196,11 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
+				
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	 		
 		
 	};// @lock

@@ -3,18 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}dataGrid2 {
-	 z-index: 31;
-	 width: 215px;
-	 height: 80px;
-	 top: 251px;
-	 left: 5px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
 #{id}label36 {
 	 z-index: 2;
 	 width: 94px;
@@ -51,21 +39,6 @@
 	 
 }
 
-#{id}textField3 {
-	 z-index: 2;
-	 width: 220px;
-	 height: 22px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
-	 
-}
-
 #{id}container12 {
 	 z-index: 30;
 	 width: 245px;
@@ -74,18 +47,6 @@
 	 left: 5px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}dataGrid1 {
-	 z-index: 29;
-	 width: 125px;
-	 height: 135px;
-	 top: 160px;
-	 left: 260px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
 	 
 }
 
@@ -122,21 +83,6 @@
 	 font-family: WebSymbolsRegular;
 	 font-size: 14px;
 	 color: rgb(153, 153, 153);
-	 
-}
-
-#{id}textField1 {
-	 z-index: 2;
-	 width: 125px;
-	 height: 22px;
-	 top: 17px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
 	 
 }
 
@@ -461,6 +407,60 @@
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}cityComboBox {
+	 z-index: 2;
+	 width: 125px;
+	 height: 22px;
+	 top: 17px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}judgeJurisdiction {
+	 z-index: 2;
+	 width: 220px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}cityComboboxGrid {
+	 z-index: 29;
+	 width: 125px;
+	 height: 135px;
+	 top: 160px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}judgeJurisdictionGrid {
+	 z-index: 31;
+	 width: 215px;
+	 height: 80px;
+	 top: 251px;
+	 left: 5px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
 	 
 }
 

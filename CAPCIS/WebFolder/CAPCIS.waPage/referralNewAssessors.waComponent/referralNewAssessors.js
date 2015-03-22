@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		tempStore = city;
 
 	// @region namespaceDeclaration// @startlock
 	var cityComboboxGrid = {};	// @dataGrid
@@ -111,11 +112,11 @@ function constructor (id) {
 		var fax = $$(getHtmlId("assesorFaxField2")).getValue();
 		var mobile = $$(getHtmlId("assesorMobileField2")).getValue();
 		
-		if(phone.length !== 13)
+		if(phone.length !== 14)
 		{
-			if(phone.length !== 5 )
+			if(phone.length !== 5  && phone.length !== 0)
 			{
-				Alert("Please correct phone number");
+				alert("Please correct phone number");
 				return;
 			}
 			else
@@ -124,11 +125,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(fax.length !== 13)
+		else
 		{
-			if(fax.length !== 5 )
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
 			{
-				Alert("Please correct fax number");
+				alert("Please correct fax number");
 				return;
 			}
 			else
@@ -138,11 +143,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(mobile.length !== 13)
+		else
 		{
-			if(mobile.length !== 5 )
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
 			{
-				Alert("Please correct mobile number");
+				alert("Please correct mobile number");
 				return;
 			}
 			else
@@ -151,18 +160,18 @@ function constructor (id) {
 			}
 			
 		}
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
 		
 		
 		
 		var myObject7 = {
-    token: '7836140170460568',
-    id: '1',
+    token: userConfigObj.secToken,
+    id: userConfigObj.userID,
     major: 3,
     minor: 19,
-    major2: 3,
-    minor2: 104,
-    major3: 3,
-    minor3: 20,
     data1: $$(getHtmlId("assessorNameField2")).getValue(),
     data2: phone,
     data3: $$(getHtmlId("assesorEmailField2")).getValue(),
@@ -177,9 +186,9 @@ function constructor (id) {
     data12: $$(getHtmlId("assessorFullNameField2")).getValue(),
     data13: $$(getHtmlId("reportingComboBox2")).getValue(),
     data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
-}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+};   
 				
-	 		rpcDInsert.setInsertWReturnAsync({
+	 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 						
 					},
@@ -189,11 +198,10 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 
-
-
-
-
-	 	
+	newAssessor = document.getElementById($comp.id);
+	$comp.removeComponent();
+	newAssessor.style.visibility = 'hidden';
+	newAssessor.style.zIndex = '0';
 	 	
 	};// @lock
 

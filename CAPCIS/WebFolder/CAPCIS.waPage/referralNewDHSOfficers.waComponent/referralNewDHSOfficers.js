@@ -11,6 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		tempStore = city;
 
 	// @region namespaceDeclaration// @startlock
 	var button3 = {};	// @button
@@ -108,11 +109,11 @@ function constructor (id) {
 		var fax = $$(getHtmlId("dhsFaxField")).getValue();
 		var mobile = $$(getHtmlId("dhsMobileField")).getValue();
 		
-		if(phone.length !== 13)
+			if(phone.length !== 14)
 		{
-			if(phone.length !== 5 )
+			if(phone.length !== 5  && phone.length !== 0)
 			{
-				Alert("Please correct phone number");
+				alert("Please correct phone number");
 				return;
 			}
 			else
@@ -121,11 +122,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(fax.length !== 13)
+		else
 		{
-			if(fax.length !== 5 )
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
 			{
-				Alert("Please correct fax number");
+				alert("Please correct fax number");
 				return;
 			}
 			else
@@ -135,11 +140,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(mobile.length !== 13)
+		else
 		{
-			if(mobile.length !== 5 )
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
 			{
-				Alert("Please correct mobile number");
+				alert("Please correct mobile number");
 				return;
 			}
 			else
@@ -148,12 +157,15 @@ function constructor (id) {
 			}
 			
 		}
-		
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
 		
 		
 			var myObject7 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:7,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:22,
 				data1:$$(getHtmlId("dhsNameField")).getValue(),
 				data2:phone,
 				data3:$$(getHtmlId("dhsEmailField")).getValue(),
@@ -167,9 +179,8 @@ function constructor (id) {
 				data11:$$(getHtmlId("dhsNotesField")).getValue(),
 				data12:$$(getHtmlId("dhsFullNameField")).getValue(),
 				data13:$$(getHtmlId("reportingComboBox")).getValue(),
-				data14:currentID,
 				data15:$$(getHtmlId("dhsInactiveCheckBox")).getValue()
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+			}; //dontforget to add this to token   
 	 		
 				
 	 		rpcDInsert.setInsertAsync({
@@ -181,7 +192,11 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
-				
+
+	newAssessor = document.getElementById($comp.id);
+	$comp.removeComponent();
+	newAssessor.style.visibility = 'hidden';
+	newAssessor.style.zIndex = '0';
 				
 	 		
 		

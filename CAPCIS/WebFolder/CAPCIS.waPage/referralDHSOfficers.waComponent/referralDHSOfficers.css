@@ -597,7 +597,7 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 2px;
+	 width: 1px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -634,7 +634,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 1px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -645,10 +645,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 2px;
+	 width: -1px;
 	 height: 623px;
 	 top: 0px;
-	 left: 6px;
+	 left: 4px;
 	
 	 position: absolute;
 	 
@@ -714,7 +714,7 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: -417px;
+	 width: -419px;
 	 height: 287px;
 	 top: 0px;
 	 left: 423px;
@@ -796,7 +796,7 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 6px;
+	 width: 4px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -866,7 +866,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 6px;
+	 width: 4px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -877,7 +877,7 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 6px;
+	 width: 4px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -888,10 +888,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 8px;
+	 width: 3px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1280px;
+	 left: 1285px;
 	
 	 position: absolute;
 	 
@@ -899,7 +899,7 @@
 
 #{id}container1 {
 	 z-index: 1;
-	 width: 1280px;
+	 width: 1285px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
