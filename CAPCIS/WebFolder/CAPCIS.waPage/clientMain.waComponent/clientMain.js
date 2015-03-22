@@ -11,7 +11,8 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-
+	
+	//$$('combobox1').setErrorMessage({message:"Use combo box to select search properties.",tooltip:true})
 	// @region namespaceDeclaration// @startlock
 	// @endregion// @endlock
 
