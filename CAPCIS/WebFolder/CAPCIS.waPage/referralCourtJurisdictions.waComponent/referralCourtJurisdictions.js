@@ -12,6 +12,7 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
+		
 		tempStore= city;
 		
 		try {

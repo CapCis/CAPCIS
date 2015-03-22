@@ -6,7 +6,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 testGlobal = "init";
 // eventHandlers// @lock
-
+userConfigObj = {secToken:'7836140170460568' ,userID:'1',major:2,minor:1};
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
 		
