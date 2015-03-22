@@ -13,12 +13,67 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var button3 = {};	// @button
+	var cityComboBox = {};	// @textField
+	var cityComboboxGrid = {};	// @dataGrid
 	var closeAssesorCurrentButton = {};	// @button
 	var submitButton = {};	// @button
 	var dhsFullNameField = {};	// @textField
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button3.click = function button3_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	cityComboBox.keyup = function cityComboBox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();
+			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	cityComboBox.blur = function cityComboBox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
+		$$(getHtmlId('cityComboBox')).setValue(recValue);
+	};// @lock
 
 	closeAssesorCurrentButton.click = function closeAssesorCurrentButton_click (event)// @startlock
 	{// @endlock
@@ -30,29 +85,15 @@ function constructor (id) {
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
-
-		changed = false;
+		var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
 		
-			var myObject7 = 
-			{
-				token:'7836140170460568' ,id:'1',major:3,minor:7,
-				data1:$$(getHtmlId("dhsNameField")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("dhsPhoneField")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("dhsEmailField")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("dhsFaxField")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("dhsAddressField")).sourceAtt.getValue(),
-				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("dhsStateField")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("dhsZipField")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("dhsExtField")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("dhsMobileField")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("dhsNotesField")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("dhsFullNameField")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("reportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("dhsInactiveCheckBox")).getValue()
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 						
 					},
@@ -61,6 +102,75 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
+		}
+		
+		var phone = $$(getHtmlId("dhsPhoneField")).getValue();
+		var fax = $$(getHtmlId("dhsFaxField")).getValue();
+		var mobile = $$(getHtmlId("dhsMobileField")).getValue();
+		
+		if(phone.length !== 13)
+		{
+			if(phone.length !== 5 )
+			{
+				Alert("Please correct phone number");
+				return;
+			}
+			else
+			{
+				phone = "";
+			}
+			
+		}
+		if(fax.length !== 13)
+		{
+			if(fax.length !== 5 )
+			{
+				Alert("Please correct fax number");
+				return;
+			}
+			else
+			{
+				
+				fax = "";
+			}
+			
+		}
+		if(mobile.length !== 13)
+		{
+			if(mobile.length !== 5 )
+			{
+				Alert("Please correct mobile number");
+				return;
+			}
+			else
+			{
+				mobile = "";	
+			}
+			
+		}
+		
+		
+		
+			var myObject7 = 
+			{
+				token:'7836140170460568' ,id:'1',major:3,minor:7,
+				data1:$$(getHtmlId("dhsNameField")).getValue(),
+				data2:phone,
+				data3:$$(getHtmlId("dhsEmailField")).getValue(),
+				data4:fax,
+				data5:$$(getHtmlId("dhsAddressField")).getValue(),
+				data6:$$(getHtmlId("cityComboBox")).getValue(),
+				data7:$$(getHtmlId("dhsStateField")).getValue(),
+				data8:$$(getHtmlId("dhsZipField")).getValue(),
+				data9:$$(getHtmlId("dhsExtField")).getValue(),
+				data10:mobile,
+				data11:$$(getHtmlId("dhsNotesField")).getValue(),
+				data12:$$(getHtmlId("dhsFullNameField")).getValue(),
+				data13:$$(getHtmlId("reportingComboBox")).getValue(),
+				data14:currentID,
+				data15:$$(getHtmlId("dhsInactiveCheckBox")).getValue()
+			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 		
 				
 	 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -73,18 +183,7 @@ function constructor (id) {
 				});
 				
 				
-	 		fillMainTable();
 	 		
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:36,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
 		
 	};// @lock
 
@@ -94,6 +193,10 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
+	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_closeAssesorCurrentButton", "click", closeAssesorCurrentButton.click, "WAF");
 	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
 	WAF.addListener(this.id + "_dhsFullNameField", "change", dhsFullNameField.change, "WAF");
