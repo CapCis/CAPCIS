@@ -332,20 +332,7 @@ function constructor (id) {
 	{// @endlock
 		
 		$$(getHtmlId('container9')).setSplitPosition(250);
-		var id = sources.bakJudgeInfo.BAKJudgesID;
-
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:46,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
-		
+				
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -363,7 +350,6 @@ function constructor (id) {
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:8,
-				data1:currentCorresondanceDate,
 				data2:status,
 				data3: id
 			}; //dontf
@@ -386,7 +372,7 @@ function constructor (id) {
 		
 		
 			var x = $$(getHtmlId("newCorrespondanceField"));
-		var myObject8 = 
+			var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:8,
 				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
@@ -411,7 +397,7 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('container6')).setSplitPosition(420);
 		$$(getHtmlId('container3')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
+		;
 	};// @lock
 
 	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
@@ -493,18 +479,7 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 				
-	 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-				
-				
-	 		fillMainTable();
+	 		
 	 		
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:45,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
@@ -563,16 +538,7 @@ function constructor (id) {
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:44,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
+		
 	 
 		///////////////////////////////////////////////////////////get data
 		
@@ -597,21 +563,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificListSuccess(result)
-	{
-		
-		specificJudgeList = result;
-		sources.specificJudgeList.sync();
-	}
-	function specificListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 	function corrListSuccess(result)
 	{
 		
@@ -643,22 +595,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
 		
-		specificBakJudgeList = result;
-		sources.specificBakJudgeList.sync();
-	}
-	function specificBakListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
-	
 	function jurisdictionSuccess(result)
 	{
 		var tempCity = result[0];
