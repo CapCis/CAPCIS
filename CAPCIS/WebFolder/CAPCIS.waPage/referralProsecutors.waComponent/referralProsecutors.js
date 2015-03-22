@@ -13,7 +13,7 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 		tempStore= city;
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:84}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:84}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						jurisdictionSuccess(result);
@@ -138,7 +138,7 @@ function constructor (id) {
 			
 			
 		 	
-		 	function fillCorrespondance()
+		function fillCorrespondance()
 		{
 			
 			var currentCorrespondenceActiveSelected = $$(getHtmlId('prosCorrespondanceActiveBox')).getValue();
@@ -334,19 +334,6 @@ function constructor (id) {
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('prosPrevVersionCont')).setSplitPosition(250);
-		var id = sources.bakProsecutorInfo.BAKProsecutorsID;
-
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:82,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
 	};// @lock
 
 	prosVoidedCorrespondanceCheck.change = function prosVoidedCorrespondanceCheck_change (event)// @startlock
@@ -356,8 +343,7 @@ function constructor (id) {
 		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:16,
-				data1:currentCorresondanceDate,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:16,
 				data2:status,
 				data3: id
 			}; //dontf
@@ -385,7 +371,6 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('prosCorrCont')).setSplitPosition(420);
 		$$(getHtmlId('prosSpecificInfoCont')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
 	};// @lock
 
 	prosCorrespondanceActiveBox.change = function prosCorrespondanceActiveBox_change (event)// @startlock
@@ -461,18 +446,18 @@ function constructor (id) {
 			{
 				
 				token:'7836140170460568' ,id:'1',major:3,minor: 17,
-				data1:$$(getHtmlId("prosName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("prosPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("prosEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("prosFax")).sourceAtt.getValue(),
+				data1:$$(getHtmlId("prosName")).getValue(),
+				data2:$$(getHtmlId("prosPhone")).getValue(),
+				data3:$$(getHtmlId("prosEmail")).getValue(),
+				data4:$$(getHtmlId("prosFax")).getValue(),
 				data5:$$(getHtmlId("prosAddress")).getValue(),
 				data6:$$(getHtmlId("prosCityComboBox")).getValue(),
-				data7:$$(getHtmlId("prosState")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("prosZip")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("prosExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("prosAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("prosNotes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("prosFullName")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("prosState")).getValue(),
+				data8:$$(getHtmlId("prosZip")).getValue(),
+				data9:$$(getHtmlId("prosExt")).getValue(),
+				data10:$$(getHtmlId("prosAdditional")).getValue(),
+				data11:$$(getHtmlId("prosNotes")).getValue(),
+				data12:$$(getHtmlId("prosFullName")).getValue(),
 				data13:$$(getHtmlId("prosReportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("prosInactive")).getValue(),
@@ -488,18 +473,6 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 				
-	 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-				
-				
-	 		fillMainTable();
 	 		
 			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:81,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
@@ -555,19 +528,6 @@ function constructor (id) {
 				
 			$$(getHtmlId('prosReportingComboBox')).setValue("None");
 		}
-		
-		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:80,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-	 
 		///////////////////////////////////////////////////////////get data
 		
 		
@@ -590,22 +550,7 @@ function constructor (id) {
 					errMessage += (event.error[x].message + ",");
 				}
 				alert(errMessage);
-	}
-	function specificListSuccess(result)
-	{
-		
-		specificProsecutorList = result;
-		sources.specificProsecutorList.sync();
-	}
-	function specificListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	}	
 	function corrListSuccess(result)
 	{
 		
@@ -637,21 +582,8 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
-		
-		specificBakProsecutorList = result;
-		sources.specificBakProsecutorList.sync();
-	}
-	function specificBakListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
+	
 	function jurisdictionSuccess(result)
 	{
 		var tempCity = result[0];
