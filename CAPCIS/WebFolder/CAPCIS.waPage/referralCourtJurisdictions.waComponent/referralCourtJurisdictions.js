@@ -32,7 +32,7 @@ function constructor (id) {
 			var searchType = data.userData.searchType;
 			if(searchCrit == "" && searchType == 'Active')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:20,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:20,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -45,7 +45,7 @@ function constructor (id) {
 			}
 			else if(searchCrit == '' && searchType == 'Inactive')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:20,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:20,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -58,7 +58,7 @@ function constructor (id) {
 			}
 			else if(searchCrit == '' && searchType == 'All')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:21}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:21}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -71,7 +71,7 @@ function constructor (id) {
 			}
 			else if (searchCrit != '' && searchType == 'Active')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:23, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:23, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -84,7 +84,7 @@ function constructor (id) {
 			}
 			else if (searchCrit != '' && searchType == 'Inactive')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:23, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:23, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -97,7 +97,7 @@ function constructor (id) {
 			}
 			else if (searchCrit != '' && searchType == 'All')
 			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:22, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:22, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -112,7 +112,7 @@ function constructor (id) {
 		}
 		catch(err)
 		{
-			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:20,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:20,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						mainListSuccess(result);
@@ -153,7 +153,7 @@ function constructor (id) {
 			
 			if(currentCorrespondanceAll != null)
 			{
-				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:25,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject2 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:25,data1:currentName}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						corrListSuccess(result);
@@ -168,7 +168,7 @@ function constructor (id) {
 			}
 			else
 			{
-				var myObject2 = {token:'7836140170460568' ,id:'1',major:3,minor:26,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				var myObject2 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:26,data1:currentName,data2:currentCorrespondanceViewVoided}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						corrListSuccess(result);
@@ -270,21 +270,6 @@ function constructor (id) {
 	{// @endlock
 
 		$$(getHtmlId('container9')).setSplitPosition(250);
-		var id = sources.bakCourtJurisdictionInfo.BAKCourtJurisdictionID;
-		
-		
-		var myObject6 = {token:'7836140170460568' ,id:'1',major:3,minor:28,data1:id}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	//specificBakCourtJurisdictionList = rpcDSelects.getSelect(myObject6);
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificBakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject6]
-				});
-	 	
 		
 	};// @lock
 
@@ -302,8 +287,8 @@ function constructor (id) {
 		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:5,
-				data1:currentCorresondanceDate,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
+				
 				data2:status,
 				data3: id
 			}; //dontf
@@ -333,7 +318,7 @@ function constructor (id) {
 			var x = $$(getHtmlId("newCorrespondanceField"));
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:5,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
 				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
 				data2:currentID
 			}; //dontf
@@ -357,7 +342,7 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('container6')).setSplitPosition(420);
 		$$(getHtmlId('container3')).setSplitPosition(900);
-		currentCorresondanceDate = event.data.row.cells[0].value;
+		
 	};// @lock
 
 	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
@@ -368,10 +353,10 @@ function constructor (id) {
 	previousVersionButton.click = function previousVersionButton_click (event)// @startlock
 	{// @endlock
 		
-		var x = sources.courtJurisdictionList;
+		
 		$$(getHtmlId('container3')).setSplitPosition(420);
-		var name = $$(getHtmlId('courtJurisdictionNameField')).getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakListSuccess(result);
@@ -392,13 +377,13 @@ function constructor (id) {
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject5);
 		
 		if( city.length ===0)
 		{
 			
-			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
+			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 						
@@ -415,19 +400,19 @@ function constructor (id) {
 		
 			var myObject7 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:4,
-				data1:$$(getHtmlId("courtJurisdictionNameField")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("courtJurisdictionPhoneField")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("courtJurisdictionEmailField")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("courtJurisdictionFaxField")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("courtJurisdictionAddressField")).sourceAtt.getValue(),
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:4,
+				data1:$$(getHtmlId("courtJurisdictionNameField")).getValue(),
+				data2:$$(getHtmlId("courtJurisdictionPhoneField")).getValue(),
+				data3:$$(getHtmlId("courtJurisdictionEmailField")).getValue(),
+				data4:$$(getHtmlId("courtJurisdictionFaxField")).getValue(),
+				data5:$$(getHtmlId("courtJurisdictionAddressField")).getValue(),
 				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("courtJurisdictionStateField")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("courtJurisdictionZipField")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("courtJurisdictionExtField")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("courtJurisdictionAlternateField")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("courtJurisdictionNotesField")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("courtJurisdictionDatabaseField")).sourceAtt.getValue(),
+				data7:$$(getHtmlId("courtJurisdictionStateField")).getValue(),
+				data8:$$(getHtmlId("courtJurisdictionZipField")).getValue(),
+				data9:$$(getHtmlId("courtJurisdictionExtField")).getValue(),
+				data10:$$(getHtmlId("courtJurisdictionAlternateField")).getValue(),
+				data11:$$(getHtmlId("courtJurisdictionNotesField")).getValue(),
+				data12:$$(getHtmlId("courtJurisdictionDatabaseField")).getValue(),
 				data13:$$(getHtmlId("reportingComboBox")).getValue(),
 				data14:currentID,
 				data15:$$(getHtmlId("courtJurisdictionInactiveCheckBox")).getValue(),
@@ -447,18 +432,8 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 				
-	 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-	 	
-			fillMainTable();
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 		
+			var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakListSuccess(result);
@@ -512,16 +487,7 @@ function constructor (id) {
 		}
 		
 		
-		var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:24,data1:ids}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						specificListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
+		
 	 
 		///////////////////////////////////////////////////////////get data
 		
@@ -554,21 +520,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificListSuccess(result)
-	{
-		
-		specificCourtJurisdictionList = result;
-		sources.specificCourtJurisdictionList.sync();
-	}
-	function specificListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 	function corrListSuccess(result)
 	{
 		
@@ -600,21 +552,7 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
-	function specificBakListSuccess(result)
-	{
-		
-		specificBakCourtJurisdictionList = result;
-		sources.specificBakCourtJurisdictionList.sync();
-	}
-	function specificBakListError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
 
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");

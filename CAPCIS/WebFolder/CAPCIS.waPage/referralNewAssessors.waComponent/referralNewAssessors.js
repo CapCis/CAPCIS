@@ -87,6 +87,7 @@ function constructor (id) {
 
 	submit.click = function submit_click (event)// @startlock
 	{// @endlock
+		debugger;
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
 		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject5);
@@ -106,27 +107,75 @@ function constructor (id) {
 				});
 		}
 		
+		var phone = $$(getHtmlId("assessorPhoneField2")).getValue();
+		var fax = $$(getHtmlId("assesorFaxField2")).getValue();
+		var mobile = $$(getHtmlId("assesorMobileField2")).getValue();
+		
+		if(phone.length !== 13)
+		{
+			if(phone.length !== 5 )
+			{
+				Alert("Please correct phone number");
+				return;
+			}
+			else
+			{
+				phone = "";
+			}
+			
+		}
+		if(fax.length !== 13)
+		{
+			if(fax.length !== 5 )
+			{
+				Alert("Please correct fax number");
+				return;
+			}
+			else
+			{
+				
+				fax = "";
+			}
+			
+		}
+		if(mobile.length !== 13)
+		{
+			if(mobile.length !== 5 )
+			{
+				Alert("Please correct mobile number");
+				return;
+			}
+			else
+			{
+				mobile = "";	
+			}
+			
+		}
+		
+		
+		
 		var myObject7 = {
     token: '7836140170460568',
     id: '1',
     major: 3,
     minor: 19,
     major2: 3,
-    minor2: 20,
-    data1: $$(getHtmlId("assessorNameField")).sourceAtt.getValue(),
-    data2: $$(getHtmlId("assessorPhoneField")).sourceAtt.getValue(),
-    data3: $$(getHtmlId("assesorEmailField")).sourceAtt.getValue(),
-    data4: $$(getHtmlId("assesorFaxField")).sourceAtt.getValue(),
-    data5: $$(getHtmlId("assesorAddressField")).sourceAtt.getValue(),
+    minor2: 104,
+    major3: 3,
+    minor3: 20,
+    data1: $$(getHtmlId("assessorNameField2")).getValue(),
+    data2: phone,
+    data3: $$(getHtmlId("assesorEmailField2")).getValue(),
+    data4: fax,
+    data5: $$(getHtmlId("assesorAddressField2")).getValue(),
     data6: $$(getHtmlId("cityComboBox")).getValue(),
-    data7: $$(getHtmlId("assesorStateField")).sourceAtt.getValue(),
-    data8: $$(getHtmlId("assesorZipField")).sourceAtt.getValue(),
-    data9: $$(getHtmlId("assesorExtField")).sourceAtt.getValue(),
-    data10: $$(getHtmlId("assesorMobileField")).sourceAtt.getValue(),
-    data11: $$(getHtmlId("assesorNotesField")).sourceAtt.getValue(),
-    data12: $$(getHtmlId("assessorFullNameField")).sourceAtt.getValue(),
-    data13: $$(getHtmlId("reportingComboBox")).getValue(),
-    data14: currentID,
+    data7: $$(getHtmlId("assesorStateField2")).getValue(),
+    data8: $$(getHtmlId("assesorZipField2")).getValue(),
+    data9: $$(getHtmlId("assesorExtField2")).getValue(),
+    data10: mobile,
+    data11: $$(getHtmlId("assesorNotesField2")).getValue(),
+    data12: $$(getHtmlId("assessorFullNameField2")).getValue(),
+    data13: $$(getHtmlId("reportingComboBox2")).getValue(),
     data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
 }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 				
