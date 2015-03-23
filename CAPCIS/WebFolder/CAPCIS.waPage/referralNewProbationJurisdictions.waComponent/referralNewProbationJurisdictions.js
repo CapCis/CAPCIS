@@ -76,7 +76,10 @@ function constructor (id) {
 
 	button15.click = function button15_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainProbationJurisdictionCont')).setSplitPosition(1290);
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	};// @lock
 
 	button14.click = function button14_click (event)// @startlock
@@ -99,30 +102,78 @@ function constructor (id) {
 					'params': [myObject7]
 				});
 		}
+		var phone = $$(getHtmlId("pjPhone")).getValue();
+		var fax = $$(getHtmlId("pjFax")).getValue();
+		
+		
+		if(phone.length !== 14)
+		{
+			if(phone.length !== 5  && phone.length !== 0)
+			{
+				alert("Please correct phone number");
+				return;
+			}
+			else
+			{
+				phone = "";
+			}
+			
+		}
+		else
+		{
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
+			{
+				alert("Please correct fax number");
+				return;
+			}
+			else
+			{
+				
+				fax = "";
+			}
+			
+		}
+		else
+		{
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
+			{
+				alert("Please correct mobile number");
+				return;
+			}
+			else
+			{
+				mobile = "";	
+			}
+			
+		}
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
+		
 var myObject7 = 
 			{
 				
-				token:'7836140170460568' ,id:'1',major:3,minor: 13,
+				token:'7836140170460568' ,id:'1',major:3,minor: 25,
 				data1:$$(getHtmlId("pjName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("pjPhone")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("pjFax")).sourceAtt.getValue(),
+				data2:phone,
+				data4:fax,
 				data5:$$(getHtmlId("pjAddress")).getValue(),
 				data6:$$(getHtmlId("pjCityComboBox")).getValue(),
 				data7:$$(getHtmlId("pjState")).sourceAtt.getValue(),
 				data8:$$(getHtmlId("pjZip")).sourceAtt.getValue(),
 				data11:$$(getHtmlId("pjNotes")).sourceAtt.getValue(),
-				data14:currentID,
 				data15:$$(getHtmlId("pjInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
+	 	
 				
 	 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -134,19 +185,10 @@ var myObject7 =
 					'params': [myObject7]
 				});
 				
-				
-	 		fillMainTable();
-	 		
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:63,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	};// @lock
 
 	// @region eventManager// @startlock
