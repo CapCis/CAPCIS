@@ -11,47 +11,31 @@ function constructor (id) {
 	// @endregion// @endlock
 		
 	this.load = function (data) {// @lock
-		/*
-		var parentContainer = $comp.id;
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_AssessorComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralAssessors.waComponent'				//designate the webcomponent to load
-									//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent'							//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent'							//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_JudgeComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralJudges.waComponent'						//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_OtherMonitorComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralOtherMonitors.waComponent'						//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_ProsecutorComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent'						//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_ProbationOfficerComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent'					//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_ProbationJursidictionComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent'					//data that you want to send to the webcomponent
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent'					//data that you want to send to the webcomponent
-		});
 		
-		*/
+		debugger;
+		
+		setTimeout(callAssessor,0);	
+		
+		setTimeout(callAttorney,0);			
+		
+		setTimeout(callDHS,0);
+		
+		setTimeout(callJudge,0);
+		
+		setTimeout(callOtherMonitor,0);
+		
+		setTimeout(callProsecutor,0);
+		
+		setTimeout(callProbationOfficer,0);
+		
+		setTimeout(callProbationJurisdiction,0);
+		
+		setTimeout(callCourtJurisdiction,0);
+		
+		
+		refreshData();
+		
+		
 		
 		oldVisContainer = "";
 		oldVisComponent = "";
@@ -64,6 +48,8 @@ function constructor (id) {
 		//probationO = document.getElementById(getHtmlId('ProbationOfficerContainer'));
 		//ProbationJ = document.getElementById(getHtmlId('ProbationJursidictionContainer'));
 		//court = document.getElementById(getHtmlId('CourtJursidictionContainer'));
+		
+		
 		newAssessor = document.getElementById(getHtmlId('newAssesorComponent'));
 		newAttorney = document.getElementById(getHtmlId('newAttorneyComponent'));
 		newDHS = document.getElementById(getHtmlId('newDHSOfficerComponent'));
@@ -219,19 +205,67 @@ function constructor (id) {
 		path: 	'/CAPCIS.waPage/referralNewAssessors.waComponent'});
 	};// @lock
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	courtJurisdictionButton.click = function courtJurisdictionButton_click (event)// @startlock
 	{// @endlock
+		changeWindow("CourtJursidictionContainer","CourtJursidictionComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("CourtJursidictionContainer","CourtJursidictionComponent");	
 		
+		
+		/*
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',		
 		userData: 	{searchCrit: searchCrit, searchType: searchType},					//data that you want to send to the webcomponent
-		onSuccess: function () {}
-									
+		onSuccess: function () {}	
 		});
+		*/
 		//var test = $$(getHtmlId("CourtJursidictionContainer"));
 		//test.domNode.style.visibility = "visible";
 		//$$(getHtmlId("CourtJursidictionContainer")).domNode.style.visibility = "visible";
@@ -244,17 +278,18 @@ function constructor (id) {
 
 	probationJurisdictionButton.click = function probationJurisdictionButton_click (event)// @startlock
 	{// @endlock
+		changeWindow("ProbationJursidictionContainer","ProbationJursidictionComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("ProbationJursidictionContainer","ProbationJursidictionComponent");
 		
+		/*
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_ProbationJursidictionComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},			//data that you want to send to the webcomponent
 		onSuccess: function () {}
 		});
-		
+		*/
 		
 		
 		
@@ -262,95 +297,100 @@ function constructor (id) {
 
 	probationOfficerButton.click = function probationOfficerButton_click (event)// @startlock
 	{// @endlock
+		changeWindow("ProbationOfficerContainer","ProbationOfficerComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("ProbationOfficerContainer","ProbationOfficerComponent");
+		
+		/*
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_ProbationOfficerComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent',	
 		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
 		onSuccess: function () {}
 		});
-		
+		*/
 	};// @lock
 
 	prosecutorsButton.click = function prosecutorsButton_click (event)// @startlock
 	{// @endlock
+		changeWindow("ProsecutorContainer","ProsecutorComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("ProsecutorContainer","ProsecutorComponent");
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		
+		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_ProsecutorComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
 		onSuccess: function () {}
 		});
-		
+		*/
 	};// @lock
 
 	otherButton.click = function otherButton_click (event)// @startlock
 	{// @endlock
+		changeWindow("OtherMonitorContainer","OtherMonitorComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("OtherMonitorContainer","OtherMonitorComponent");
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		
+		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_OtherMonitorComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralOtherMonitors.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
 		onSuccess: function () {}
 		});
-		
+		*/
 	};// @lock
 
 	judgesButton.click = function judgesButton_click (event)// @startlock
 	{// @endlock
+		changeWindow("JudgeContainer","JudgeComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("JudgeContainer","JudgeComponent");
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		
+		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_JudgeComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralJudges.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},			//data that you want to send to the webcomponent
 		onSuccess: function () {}
 		});
-		
+		*/
 	};// @lock
 
 	dhsButton.click = function dhsButton_click (event)// @startlock
 	{// @endlock
-				
+		changeWindow("DHSOfficerContainer","DHSOfficerComponent");		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("DHSOfficerContainer","DHSOfficerComponent");
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		
+		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
 		onSuccess: function () {}							//data that you want to send to the webcomponent
 		});
-		
+		*/
 		
 	};// @lock
 
 	assessorButton.click = function assessorButton_click (event)// @startlock
 	{// @endlock
-		
+		changeWindow("AssessorContainer","AssessorComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("AssessorContainer","AssessorComponent");
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		
+		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_AssessorComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralAssessors.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
 		onSuccess: function () {}							//data that you want to send to the webcomponent
 		});
-
 		
+		*/
 
 	};// @lock
 
@@ -358,24 +398,25 @@ function constructor (id) {
 	{// @endlock
 		
 		getTotals();
+		refreshData();
 
 	};// @lock
 
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
 		
-		
+		changeWindow("AttorneyContainer","AttorneyComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		changeWindow("AttorneyContainer","AttorneyComponent");
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		
+		/*WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
 		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent',
 		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
 		onSuccess: function () {}							//data that you want to send to the webcomponent
 		});
-		
+		*/
 		
 		
 	};// @lock
@@ -448,26 +489,631 @@ function constructor (id) {
 		}
 	}
 	
+	function refreshData()
+	{
+		var searchCrit = $$(getHtmlId('searchField')).getValue();
+		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		
+		if (searchCrit == "" && searchType == 'Active')
+        {
+            var myObject = {
+                token: userConfigObj.secToken,
+                id: userConfigObj.userID,
+                major: 3,
+                minor: 0,
+                data1: false
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 	rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					attorneySuccess(result);
+				},
+				'onError': function(error){
+					console.log(error);
+				},
+				'params': [myObject]
+			});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:20,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						courtJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:29,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						dhsSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:38,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:47,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:56,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:65,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationOfficerSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:74,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						prosecutorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+        }
+        else if (searchCrit == '' && searchType == 'Inactive')
+        {
+            var myObject = {
+                token: userConfigObj.secToken,
+                id: userConfigObj.userID,
+                major: 3,
+                minor: 0,
+                data1: true
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken, 
+				id:userConfigObj.userID,
+				major:3,
+				minor:11,
+				data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 	rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					attorneySuccess(result);
+				},
+				'onError': function(error){
+					console.log(error);
+				},
+				'params': [myObject]
+			});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:20,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						courtJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:29,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						dhsSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:38,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:47,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:56,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:65,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationOfficerSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:74,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						prosecutorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+        }
+        else if (searchCrit == '' && searchType == 'All')
+        {
+            var myObject = {
+                token: userConfigObj.secToken,
+                id: userConfigObj.userID,
+                major: 3,
+                minor: 8
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:12}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 	rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					attorneySuccess(result);
+				},
+				'onError': function(error){
+					console.log(error);
+				},
+				'params': [myObject]
+			});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:21}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						courtJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:30}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						dhsSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:39}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:48}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:57}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:66}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationOfficerSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:75}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						prosecutorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});	
+        }
+        else if (searchCrit != '' && searchType == 'Active')
+        {
+            var myObject = {
+                token: userConfigObj.secToken,
+                id: userConfigObj.userID,
+                major: 3,
+                minor: 10,
+                data1: searchCrit,
+                data2: false
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:14, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						attorneySuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:23, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						courtJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:32, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						dhsSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:41, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:50, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:59, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:68, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationOfficerSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:77, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						prosecutorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});	
+        }
+        else if (searchCrit != '' && searchType == 'Inactive')
+        {
+            var myObject = {
+                token: userConfigObj.secToken,
+                id: userConfigObj.userID,
+                major: 3,
+                minor: 10,
+                data1: searchCrit,
+                data2: true
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:14, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						attorneySuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:23, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						courtJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:32, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						dhsSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:41, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:50, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:59, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:68, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationOfficerSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:77, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						prosecutorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});	
+        }
+        else if (searchCrit != '' && searchType == 'All')
+        {
+            var myObject = {
+                token: userConfigObj.secToken,
+                id: userConfigObj.userID,
+                major: 3,
+                minor: 9,
+                data1: searchCrit
+            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:13, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						attorneySuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:22, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						courtJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+			});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:31, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						dhsSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:40, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:49, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:58, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationJurisdictionSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:67, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						probationOfficerSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:76, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						prosecutorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});	
+		}
+	
+	}
 	function changeWindow(containerid,componentid)
 	{
-		debugger;
+		
 		//var mytest1 = $$($comp.id+id).domNode.style.visibility;
+		debugger;
 		if (oldVisContainer != "")
 		{
 			myOldPage = document.getElementById(getHtmlId(oldVisContainer));
 			myOldPage.style.visibility = "hidden";
 			myOldPage.style.zIndex = "0";
 		}
-		if (oldVisComponent != "")
-		{
-			$$($comp.id + "_" + oldVisComponent).removeComponent;
-		}
+		
 		var myPage = document.getElementById(getHtmlId(containerid));
 		myPage.style.visibility = "visible";
 		myPage.style.zIndex = "10";
 		
 		oldVisContainer = containerid;
-		oldVisComponent = componentid;
+		
 		//document.getElementById(getHtmlId(oldRefVis);//document.getElementById($comp.id + "_" + id);// = "visible";
 		
 		//document.getElementById(getHtmlId(id)).style.zIndex = "10";
@@ -626,9 +1272,7 @@ function constructor (id) {
 			}
 			
 		}
-		
-		
-		
+
 		
 	}
 	function totalError(event)
@@ -685,8 +1329,221 @@ function constructor (id) {
 				alert(errMessage);
 	}
 	
-
-
+	function assessorSuccess(result)
+	{
+		assessorList = result;
+		sources.assessorList.sync();
+		
+	}
+	function assessorError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function attorneySuccess(result)
+	{
+		attorneyList = result;
+		sources.attorneyList.sync();
+		
+	}
+	function attorneyError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function courtJurisdictionSuccess(result)
+	{
+		courtJurisdictionList = result;
+		sources.courtJurisdictionList.sync();
+		
+	}
+	function courtJurisdictionError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function dhsSuccess(result)
+	{
+		dhsList = result;
+		sources.dhsList.sync();
+		
+	}
+	function dhsError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function judgeSuccess(result)
+	{
+		judgeList = result;
+		sources.judgeList.sync();
+		
+	}
+	function judgeError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function otherMonitorSuccess(result)
+	{
+		otherMonitorList = result;
+		sources.otherMonitorList.sync();
+		
+	}
+	function otherMonitorError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function probationJurisdictionSuccess(result)
+	{
+		probationJurisdictionList = result;
+		sources.probationJurisdictionList.sync();
+		
+	}
+	function probationJurisdictionError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function probationOfficerSuccess(result)
+	{
+		probationOfficerList = result;
+		sources.probationOfficerList.sync();
+		
+	}
+	function probationOfficerError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function prosecutorSuccess(result)
+	{
+		
+		prosecutorList = result;
+		sources.prosecutorList.sync();
+		
+		
+	}
+	function prosecutorError(event)
+	{
+		var errMessage;
+		for (var x = 0;x < event.error.length;x++)
+		{
+			errMessage += (event.error[x].message + ",");
+		}
+		alert(errMessage);
+	}
+	function testAsyncFunc(event)
+	{
+		
+	}
+	
+	function callAssessor()
+	{
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_AssessorComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralAssessors.waComponent',							//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callAttorney()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent',							//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callDHS ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent',							//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callJudge ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_JudgeComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralJudges.waComponent',					//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callOtherMonitor ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_OtherMonitorComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralOtherMonitors.waComponent',						//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callProsecutor()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_ProsecutorComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent',						//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callProbationOfficer ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_ProbationOfficerComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent',				//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callProbationJurisdiction ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_ProbationJursidictionComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent',					//data that you want to send to the webcomponent
+		onSuccess: function (result) {}
+		})
+	}
+	function callCourtJurisdiction()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',					//data that you want to send to the webcomponent
+		onSuccess: function (result) {testAsyncFunc(result)}
+		})
+	}
 }// @startlock
 return constructor;
 })();// @endlock
