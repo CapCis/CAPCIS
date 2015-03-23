@@ -13,103 +13,12 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 		
-		try {
-			searchCrit = data.userData.searchCrit;
-			searchType = data.userData.searchType;
-			
-		} catch (e) {
-			
-		}
+		
 			fillMainTable();
 		
 		function fillMainTable()
 		{
-			try
-		{
-			if(searchCrit == "" && searchType == 'Active')
-			{
-				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-		 		
-		 		
-			}
-			else if(searchCrit == '' && searchType == 'Inactive')
-			{
-				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if(searchCrit == '' && searchType == 'All')
-			{
-				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:12}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if (searchCrit != '' && searchType == 'Active')
-			{
-				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:14, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if (searchCrit != '' && searchType == 'Inactive')
-			{
-				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:14, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if (searchCrit != '' && searchType == 'All')
-			{
-				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:13, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
 			
-		}
-		catch(err)
-		{
 			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:11,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -120,7 +29,7 @@ function constructor (id) {
 					},
 					'params': [myObject]
 				});
-		}
+		
 	}
 	 	
 		
@@ -424,7 +333,7 @@ function constructor (id) {
 	 	$$(getHtmlId('attCorrCont')).setSplitPosition(420);
 		
 		
-		
+		/*
 		var name = sources.attorneyList.AttorneyName;
 		var city = sources.attorneyList.AttorneyCity;
 		var reportingMethod = sources.attorneyList.AttPreferredReportingMethod;
@@ -461,6 +370,7 @@ function constructor (id) {
 		currentID = ids;
 		
 		fillCorrespondance();
+		*/
 	};// @lock
 	
 	function mainListSuccess(result)

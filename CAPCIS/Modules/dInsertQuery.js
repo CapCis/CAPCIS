@@ -105,6 +105,33 @@ exports.buildQuery = function buildQuery(myObject)
 						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
 						"'+myObject.data10+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
 						break;
+				case 24: answer ='INSERT INTO capcis.othermonitors (OtherMonitors,OtherMonitorsOfficePhone,OtherMonitorsEmail,OtherMonitorsFax,OtherMonitorsAddress, \
+						OtherMonitorsCity,OtherMonitorsState,OtherMonitorsZipCode,OtherMonitorsOfficePhoneExt,OtherMonitorsMobilePhone \
+						,OtherMonitorsNotes,OtherMonitorsFullNameDisplay,OMPreferredReportingMethod,InactiveOtherMonitors,FK_fxuseraccounts_FXUserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
+				case 25: answer ='INSERT INTO capcis.pojurisdiction (JurisdictionName,JurisdictionPhone,JurisdictionFax,JurisdictionAddress, \
+						JurisdictionCity,JurisdictionState,JurisdictionZipCode, \
+						,JurisdictionNotes,InactivePOJurisdiction,FK_useraccounts_UserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'", \
+						"'+myObject.data11+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
+				case 26: answer ='INSERT INTO capcis.poinformation (POName,POPhone,POEmail,POFax, \
+						POPhoneExtension,POMobilePhone \
+						,PONotes,POFullNameDisplay,POPreferredReportingMethod,InactivePO,FK_useraccounts_UserAccountsID,FK_pojurisdiction_POJurisdictionID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'",'+myObject.data15+', "'+myObject.id+'",'+myObject.data8+')';
+						break;
+				case 27: answer ='INSERT INTO capcis.prosecutors (Prosecutor,ProsecutorOfficePhone,ProsecutorEmail,ProsecutorFax,ProsecutorAddress, \
+						ProsecutorCity,ProsecutorState,ProsecutorZipCode,ProsecutorOfficePhoneExt,ProsecutorMobilePhone \
+						,ProsecutorNotes,ProsecutorFullNameDisplay,ProsPreferredReportingMethod,ProsecutorJurisdiction,InactiveProsecutor,FK_useraccounts_UserAccountsID) \
+						VALUES ("'+myObject.data1+'","'+myObject.data2+'","'+myObject.data3+'","'+myObject.data4+'","'+myObject.data5+'", \
+						"'+myObject.data6+'","'+myObject.data7+'","'+myObject.data8+'","'+myObject.data14+'","'+myObject.data9+'", \
+						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
+						break;
 				default: answer = null;
 			}
 			break;
