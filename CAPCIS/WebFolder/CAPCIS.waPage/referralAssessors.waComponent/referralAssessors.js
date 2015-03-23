@@ -18,141 +18,16 @@ function constructor (id) {
 	$$(getHtmlId('container6')).setSplitPosition(1500);
 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 	//mainAssessorCont.style.visibility = 'visible';
-	try
-	{
-	    searchCrit = data.userData.searchCrit;
-	    searchType = data.userData.searchType;
-	}
-	catch (e)
-	{}
-	fillMainTable();
+	
+	//fillMainTable();
 	
 	tempStore= city;
 	
 
 function fillMainTable()
 {
-    try
-    {
-        if (searchCrit == "" && searchType == 'Active')
-        {
-            var myObject = {
-                token: userConfigObj.secToken,
-                id: userConfigObj.userID,
-                major: 3,
-                minor: 0,
-                data1: false
-            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-            rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-        }
-        else if (searchCrit == '' && searchType == 'Inactive')
-        {
-            var myObject = {
-                token: userConfigObj.secToken,
-                id: userConfigObj.userID,
-                major: 3,
-                minor: 0,
-                data1: true
-            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-            
-            rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-        }
-        else if (searchCrit == '' && searchType == 'All')
-        {
-            var myObject = {
-                token: userConfigObj.secToken,
-                id: userConfigObj.userID,
-                major: 3,
-                minor: 8
-            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-            rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-        }
-        else if (searchCrit != '' && searchType == 'Active')
-        {
-            var myObject = {
-                token: userConfigObj.secToken,
-                id: userConfigObj.userID,
-                major: 3,
-                minor: 10,
-                data1: searchCrit,
-                data2: false
-            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-            rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-        }
-        else if (searchCrit != '' && searchType == 'Inactive')
-        {
-            var myObject = {
-                token: userConfigObj.secToken,
-                id: userConfigObj.userID,
-                major: 3,
-                minor: 10,
-                data1: searchCrit,
-                data2: true
-            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-            rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-        }
-        else if (searchCrit != '' && searchType == 'All')
-        {
-            var myObject = {
-                token: userConfigObj.secToken,
-                id: userConfigObj.userID,
-                major: 3,
-                minor: 9,
-                data1: searchCrit
-            }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-            rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-        }
-    }
-    catch (err)
-    {
+    
+    
         var myObject = {
             token: userConfigObj.secToken,
             id: userConfigObj.userID,
@@ -169,7 +44,7 @@ function fillMainTable()
 					},
 					'params': [myObject]
 				});
-    }
+    
   }
 	 	
 	 	
