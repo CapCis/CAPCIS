@@ -12,14 +12,14 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 	
-				
+	/*			
 	$$(getHtmlId('container3')).setSplitPosition(900);
 	$$(getHtmlId('container9')).setSplitPosition(1000);
 	$$(getHtmlId('container6')).setSplitPosition(1500);
 	$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 	//mainAssessorCont.style.visibility = 'visible';
 	
-	//fillMainTable();
+	fillMainTable();
 	
 	tempStore= city;
 	
@@ -446,7 +446,7 @@ var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,m
 				alert(errMessage);
 	}
 	
-	
+	*/
 
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");

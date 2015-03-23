@@ -12,8 +12,8 @@ function constructor (id) {
 		
 	this.load = function (data) {// @lock
 		
-		//debugger;
-		/*
+		debugger;
+		
 		setTimeout(callAssessor,0);	
 		
 		setTimeout(callAttorney,0);			
@@ -32,7 +32,7 @@ function constructor (id) {
 		
 		setTimeout(callCourtJurisdiction,0);
 		
-		*/
+		
 		refreshData();
 		
 		
@@ -253,22 +253,11 @@ function constructor (id) {
 
 	courtJurisdictionButton.click = function courtJurisdictionButton_click (event)// @startlock
 	{// @endlock
-		//changeWindow("CourtJursidictionContainer","CourtJursidictionComponent");
+		changeWindow("CourtJursidictionContainer","CourtJursidictionComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
-		if (oldVisContainer != "")
-		{
-			myOldPage = document.getElementById(getHtmlId(oldVisContainer));
-			//myOldPage.style.visibility = "hidden";
-			myOldPage.style.zIndex = "0";
-		}
 		
-		var myPage = document.getElementById(getHtmlId("CourtJursidictionContainer"));
-		//myPage.style.visibility = "visible";
-		myPage.style.zIndex = "10";
-		
-		oldVisContainer = "CourtJursidictionContainer";	
 		/*
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
 		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
@@ -1111,16 +1100,16 @@ function constructor (id) {
 	{
 		
 		//var mytest1 = $$($comp.id+id).domNode.style.visibility;
-		
+		debugger;
 		if (oldVisContainer != "")
 		{
 			myOldPage = document.getElementById(getHtmlId(oldVisContainer));
-			//myOldPage.style.visibility = "hidden";
+			myOldPage.style.visibility = "hidden";
 			myOldPage.style.zIndex = "0";
 		}
 		
 		var myPage = document.getElementById(getHtmlId(containerid));
-		//myPage.style.visibility = "visible";
+		myPage.style.visibility = "visible";
 		myPage.style.zIndex = "10";
 		
 		oldVisContainer = containerid;
