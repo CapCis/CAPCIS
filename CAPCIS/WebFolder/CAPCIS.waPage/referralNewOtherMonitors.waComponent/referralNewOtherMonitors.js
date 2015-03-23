@@ -106,12 +106,11 @@ function constructor (id) {
 		var phone = $$(getHtmlId("omPhone")).getValue();
 		var fax = $$(getHtmlId("omFax")).getValue();
 		var mobile = $$(getHtmlId("omAdditional")).getValue();
-		
-		if(phone.length !== 13)
+		if(phone.length !== 14)
 		{
-			if(phone.length !== 5 )
+			if(phone.length !== 5  && phone.length !== 0)
 			{
-				Alert("Please correct phone number");
+				alert("Please correct phone number");
 				return;
 			}
 			else
@@ -120,11 +119,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(fax.length !== 13)
+		else
 		{
-			if(fax.length !== 5 )
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
 			{
-				Alert("Please correct fax number");
+				alert("Please correct fax number");
 				return;
 			}
 			else
@@ -134,11 +137,15 @@ function constructor (id) {
 			}
 			
 		}
-		if(mobile.length !== 13)
+		else
 		{
-			if(mobile.length !== 5 )
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
 			{
-				Alert("Please correct mobile number");
+				alert("Please correct mobile number");
 				return;
 			}
 			else
@@ -147,11 +154,15 @@ function constructor (id) {
 			}
 			
 		}
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
 		
 			var myObject7 = 
 			{
 				
-				token:'7836140170460568' ,id:'1',major:3,minor: 11,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor: 24,
 				data1:$$(getHtmlId("omName")).getValue(),
 				data2:phone,
 				data3:$$(getHtmlId("omEmail")).getValue(),
@@ -165,9 +176,7 @@ function constructor (id) {
 				data11:$$(getHtmlId("omNotes")).getValue(),
 				data12:$$(getHtmlId("omFullName")).getValue(),
 				data13:$$(getHtmlId("omReportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("omInactive")).getValue(),
-				data16:$$(getHtmlId("omJurisdiction")).getValue()
+				data15:$$(getHtmlId("omInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 		
 				
@@ -180,6 +189,10 @@ function constructor (id) {
 					},
 					'params': [myObject7]
 				});
+			newAssessor = document.getElementById($comp.id);
+			$comp.removeComponent();
+			newAssessor.style.visibility = 'hidden';
+			newAssessor.style.zIndex = '0';
 	};// @lock
 
 	// @region eventManager// @startlock
