@@ -14,7 +14,7 @@ function constructor (id) {
 
 		
 		
-			//fillMainTable();
+			fillMainTable();
 		
 		function fillMainTable()
 		{
@@ -333,7 +333,7 @@ function constructor (id) {
 	 	$$(getHtmlId('attCorrCont')).setSplitPosition(420);
 		
 		
-		
+		/*
 		var name = sources.attorneyList.AttorneyName;
 		var city = sources.attorneyList.AttorneyCity;
 		var reportingMethod = sources.attorneyList.AttPreferredReportingMethod;
@@ -370,6 +370,7 @@ function constructor (id) {
 		currentID = ids;
 		
 		fillCorrespondance();
+		*/
 	};// @lock
 	
 	function mainListSuccess(result)
