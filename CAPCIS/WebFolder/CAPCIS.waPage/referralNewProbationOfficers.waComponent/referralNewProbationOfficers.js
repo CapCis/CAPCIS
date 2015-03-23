@@ -79,38 +79,89 @@ function constructor (id) {
 
 	button15.click = function button15_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('mainProbationOfficerCont')).setSplitPosition(1290);
+		newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	};// @lock
 
 	button14.click = function button14_click (event)// @startlock
 	{// @endlock
-			debugger;
-var myObject7 = 
+		var phone = $$(getHtmlId("poPhone")).getValue();
+		var fax = $$(getHtmlId("poFax")).getValue();
+		var mobile = $$(getHtmlId("poAdditional")).getValue();
+		
+		if(phone.length !== 14)
+		{
+			if(phone.length !== 5  && phone.length !== 0)
+			{
+				alert("Please correct phone number");
+				return;
+			}
+			else
+			{
+				phone = "";
+			}
+			
+		}
+		else
+		{
+			phone = phone.substring(1,4)+phone.substring(6,9)+phone.substring(10,15);
+		}
+		if(fax.length !== 14)
+		{
+			if(fax.length !== 5 && fax.length !== 0)
+			{
+				alert("Please correct fax number");
+				return;
+			}
+			else
+			{
+				
+				fax = "";
+			}
+			
+		}
+		else
+		{
+			fax = fax.substring(1,4)+fax.substring(6,9)+fax.substring(10,15);
+		}
+		if(mobile.length !== 14)
+		{
+			if(mobile.length !== 5 && mobile.length !== 0)
+			{
+				alert("Please correct mobile number");
+				return;
+			}
+			else
+			{
+				mobile = "";	
+			}
+			
+		}
+		else
+		{
+			mobile = mobile.substring(1,4)+mobile.substring(6,9)+mobile.substring(10,15);
+		}
+		
+			
+			var myObject7 = 
 			{
 				
 				token:'7836140170460568' ,id:'1',major:3,minor: 15,
-				data1:$$(getHtmlId("poName")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("poPhone")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("poEmail")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("poFax")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("poExt")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("poAdditional")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("notes")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("poFullName")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("poReportingComboBox")).sourceAtt.getValue(),
-				data14:currentID,
+				data1:$$(getHtmlId("poName")).getValue(),
+				data2:phone,
+				data3:$$(getHtmlId("poEmail")).getValue(),
+				data4:fax,
+				data8:sources.poJurisdiction.POJurisdictionID,
+				data9:$$(getHtmlId("poExt")).getValue(),
+				data10:mobile,
+				data11:$$(getHtmlId("notes")).getValue(),
+				data12:$$(getHtmlId("poFullName")).getValue(),
+				data13:$$(getHtmlId("poReportingComboBox")).getValue(),
 				data15:$$(getHtmlId("poInactive")).getValue()
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);vo
-					},
-					'params': [myObject7]
-				});
+	 		
 				
 	 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -121,20 +172,10 @@ var myObject7 =
 					},
 					'params': [myObject7]
 				});
-				
-				
-	 		fillMainTable();
-	 		
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:72,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
+			newAssessor = document.getElementById($comp.id);
+		$comp.removeComponent();
+		newAssessor.style.visibility = 'hidden';
+		newAssessor.style.zIndex = '0';
 	};// @lock
 
 	// @region eventManager// @startlock

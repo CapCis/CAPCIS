@@ -368,7 +368,7 @@ function constructor (id) {
 var myObject7 = 
 			{
 				
-				token:'7836140170460568' ,id:'1',major:3,minor: 15,
+				token:userConfigObj.secToken ,id: userConfigObj.userID,major:3,minor: 15,
 				data1:$$(getHtmlId("poName")).getValue(),
 				data2:$$(getHtmlId("poPhone")).getValue(),
 				data3:$$(getHtmlId("poEmail")).getValue(),
