@@ -348,7 +348,7 @@
 }
 
 #{id}menuBar1 {
-	 z-index: 20;
+	 z-index: 11;
 	 width: 1972px;
 	 height: 45px;
 	 top: 0px;
@@ -624,7 +624,7 @@
 }
 
 #{id}SearchReferralButton {
-	 z-index: 22;
+	 z-index: 13;
 	 width: 75px;
 	 height: 44px;
 	 top: 0px;
@@ -636,7 +636,7 @@
 }
 
 #{id}searchField {
-	 z-index: 21;
+	 z-index: 12;
 	 width: 134px;
 	 height: 23px;
 	 top: 11px;
@@ -706,7 +706,7 @@
 }
 
 #{id}searchOptionsBox {
-	 z-index: 23;
+	 z-index: 14;
 	 width: 100px;
 	 height: 44px;
 	 top: 0px;
