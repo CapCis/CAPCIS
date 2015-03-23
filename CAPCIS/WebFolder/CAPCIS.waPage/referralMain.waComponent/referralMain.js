@@ -13,7 +13,7 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 		
 		//debugger;
-		/*
+		
 		setTimeout(callAssessor,0);	
 		
 		setTimeout(callAttorney,0);			
@@ -32,7 +32,7 @@ function constructor (id) {
 		
 		setTimeout(callCourtJurisdiction,0);
 		
-		*/
+		
 		refreshData();
 		
 		
