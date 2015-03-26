@@ -131,7 +131,7 @@ exports.buildQuery = function buildQuery(myObject)
 		case 3: //referalls
 			switch(myObject.minor){
 				case 0: answer = 'SELECT * FROM capcis.assessorinformation where InactiveAssessorInfo = '+myObject.data1;
-				break;
+						break;
 				case 2: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
 								fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID \
 								FROM capcis.assessorcorrespondence \
@@ -139,7 +139,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE assessorinformation.AssessorName = '"+myObject.data1+"' AND assessorcorrespondence.VoidedAssessorCorrespondence = "+myObject.data2+" \
 								ORDER BY 1 DESC";
-				break;
+						break;
 				case 3: answer = 'SELECT CityListing FROM capcis.citylistings';
 						break;
 				case 4: answer = 'SELECT ReportingMethod FROM capcis.reportingmethods';
@@ -616,6 +616,10 @@ exports.buildQuery = function buildQuery(myObject)
 			}
 			break;
 		case 4:
+			switch(myObject.minor){
+				case 0 : answer = ""
+						break;
+			}
 			break;
 		case 5:
 			break;

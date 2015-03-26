@@ -22,7 +22,15 @@ HOW TO OPEN A WEB COMPONENT
 	});
 
 
+HOW TO WORK WITH DATETIME PICKER
 
+	var myTime = $$(getHtmlId("jQDateTime1"));
+	var myDate = myTime.getDate();
+	alert(myTime.getValue());
+	alert(myDate.getHours());
+	alert(myDate.getMinutes());
+	alert(myDate.getDay());
+	
 RPCDSELECTS
 
 	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};	
