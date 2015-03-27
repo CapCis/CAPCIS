@@ -236,18 +236,6 @@
 	 
 }
 
-#{id}label28 {
-	 z-index: 24;
-	 width: 31px;
-	 height: 13px;
-	 top: 243px;
-	 left: 414px;
-	
-	 position: absolute;
-	 color: rgb(0, 27, 90);
-	 
-}
-
 #{id}label27 {
 	 z-index: 21;
 	 width: 58px;
@@ -313,17 +301,6 @@
 	 width: 100px;
 	 height: 20px;
 	 top: 45px;
-	 left: 450px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox1 {
-	 z-index: 24;
-	 width: 100px;
-	 height: 20px;
-	 top: 240px;
 	 left: 450px;
 	
 	 position: absolute;

@@ -153,13 +153,8 @@ function constructor (id) {
 	var button15 = {};	// @button
 	var button14 = {};	// @button
 	var attorneyDataGird = {};	// @dataGrid
-	var cityComboboxGrid = {};	// @dataGrid
 	var button3 = {};	// @button
 	var cityComboBox = {};	// @textField
-	var previousVersionButton = {};	// @button
-	var closeAssesorCurrentButton = {};	// @button
-	var submitButton = {};	// @button
-	var assessorFullList = {};	// @dataGrid
 	var newProbJ = {};	// @menuItem
 	var newCourtJ = {};	// @menuItem
 	var newOtherM = {};	// @menuItem
@@ -1764,15 +1759,6 @@ function constructor (id) {
 		*/
 	};// @lock
 
-	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('cityComboBox')).setValue(recValue);
-	};// @lock
-
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
@@ -1815,155 +1801,6 @@ function constructor (id) {
 	{// @endlock
 		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
 			grid.style.display = 'none';
-	};// @lock
-
-	previousVersionButton.click = function previousVersionButton_click (event)// @startlock
-	{// @endlock
-			 
-		$$(getHtmlId('container3')).setSplitPosition(420);
-		//var name = $$(getHtmlId('assessorNameField')).getValue();
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	 	
-	};// @lock
-
-	closeAssesorCurrentButton.click = function closeAssesorCurrentButton_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
-	};// @lock
-
-	submitButton.click = function submitButton_click (event)// @startlock
-	{// @endlock
-		debugger;
-		var currentCity = $$($comp.id + "_cityComboBox").getValue();
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
-		
-		if( city.length ===0)
-		{
-			
-			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-		}
-		var phone = $$(getHtmlId("assessorPhoneField")).getValue();
-		var fax = $$(getHtmlId("assesorFaxField")).getValue();
-		var mobile = $$(getHtmlId("assesorMobileField")).getValue();
-		
-		
-		var myObject7 = {
-    token: userConfigObj.secToken,
-    id: userConfigObj.userID,
-    major: 3,
-    minor: 0,
-    data1: $$(getHtmlId("assessorNameField")).getValue(),
-    data2: phone,
-    data3: $$(getHtmlId("assesorEmailField")).getValue(),
-    data4: fax,
-    data5: $$(getHtmlId("assesorAddressField")).getValue(),
-    data6: $$(getHtmlId("cityComboBox")).getValue(),
-    data7: $$(getHtmlId("assesorStateField")).getValue(),
-    data8: $$(getHtmlId("assesorZipField")).getValue(),
-    data9: $$(getHtmlId("assesorExtField")).getValue(),
-    data10: mobile,
-    data11: $$(getHtmlId("assesorNotesField")).getValue(),
-    data12: $$(getHtmlId("assessorFullNameField")).getValue(),
-    data13: $$(getHtmlId("reportingComboBox")).getValue(),
-    data14: currentID,
-    data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
-}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-
-	rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-
-
-
-var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	 	
-	 	
-	};// @lock
-
-	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
-	{// @endlock
-		
-		sources.reporting;
-
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(450);
-		$$(getHtmlId('container3')).setSplitPosition(2000);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.assessorList.AssessorName;
-		var city = sources.assessorList.AssessorCity;
-		var reportingMethod = sources.assessorList.AssPreferredReportingMethod;
-		var ids = sources.assessorList.AssessorInformationID;
-		if(city != "" && city != null && city != "null")
-		{
-			$$(getHtmlId('cityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('cityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue("None");
-		}
-		
-		
-		///////////////////////////////////////////////////////////get data
-		
-		currentName = name;
-		
-		currentID = ids;
-		
-		
-		fillCorrespondance();
-		
-		
-		
-		
 	};// @lock
 
 	newProbJ.click = function newProbJ_click (event)// @startlock
@@ -2337,14 +2174,9 @@ var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,m
 	WAF.addListener(this.id + "_button15", "click", button15.click, "WAF");
 	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");
 	WAF.addListener(this.id + "_attorneyDataGird", "onRowClick", attorneyDataGird.onRowClick, "WAF");
-	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
 	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
-	WAF.addListener(this.id + "_previousVersionButton", "click", previousVersionButton.click, "WAF");
-	WAF.addListener(this.id + "_closeAssesorCurrentButton", "click", closeAssesorCurrentButton.click, "WAF");
-	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
-	WAF.addListener(this.id + "_assessorFullList", "onRowClick", assessorFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_newProbJ", "click", newProbJ.click, "WAF");
 	WAF.addListener(this.id + "_newCourtJ", "click", newCourtJ.click, "WAF");
 	WAF.addListener(this.id + "_newOtherM", "click", newOtherM.click, "WAF");

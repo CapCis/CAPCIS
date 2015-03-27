@@ -608,16 +608,65 @@ exports.buildQuery = function buildQuery(myObject)
 								OR prosecutors.ProsecutorMobilePhone LIKE '%"+myObject.data1+"%' OR prosecutors.ProsecutorNotes LIKE '%"+myObject.data1+"%' OR prosecutors.ProsecutorFullNameDisplay LIKE '%"+myObject.data1+"%'\
 								OR prosecutors.ProsPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveProsecutor = "+myObject.data2;
 						break;
-				case 104 : answer = "SELECT AssessorInformationID from capcis.assessorinformation where randID = '"+myObject.randID+"'";
+				case 104 : answer = "SELECT AssessorInformationID FROM capcis.assessorinformation where randID = '"+myObject.randID+"'";
 						break;				
 				
 				default:answer = null;
 						break;
 			}
 			break;
-		case 4:
+		case 4:		
 			switch(myObject.minor){
-				case 0 : answer = ""
+				case 0 : 	
+							var myLastInit = ""
+							var myFirstInit = ""
+							debugger;
+							if (myObject.postFirstName != "")
+							{
+								myFirstInit = myObject.postFirstName.charAt(0);
+							}
+							if (myObject.postLastName != "")
+							{
+								myLastInit = myObject.postLastName.charAt(0);
+							}
+							
+							if (myObject.postDate == ""){myObject.postDate = "l33t"}
+							if (myObject.postSSN == ""){myObject.postSSN = "l33t"}
+							if (myObject.postAlias == ""){myObject.postAlias = "l33t"}
+							if (myObject.postFirstName == "")
+							{
+								if(myObject.postMiddleName == "")
+								{
+									if(myObject.postLastName == "")
+									{
+										if (myObject.postSuffix == "")
+										{
+											myObject.postFirstName = "l33t";
+											myObject.postMiddleName = "l33t";
+											myObject.postLastName = "l33t";
+											myObject.postSuffix == "l33t";
+										}
+									}
+								}	
+							}
+							if (myObject.postFirstName == "")
+							{
+								if (myObject.postLastName == "")
+								{
+									myFirstInit = "l33t";
+									myLastInit = "l33t";	
+								}	
+							}
+							
+							answer = "SELECT * FROM capcis.clientinformation WHERE (INSTR(ClientBirthdate,'"+myObject.postDate+"') OR INSTR(ClientSSN,'"+myObject.postSSN+"')) \
+										OR (INSTR(ClientFirstName,'"+myObject.postFirstName+"') AND INSTR(ClientMiddleName,'"+myObject.postMiddleName+"') AND INSTR(ClientLastName, \
+										'"+myObject.postLastName+"') AND INSTR(ClientNameSuffix,'"+myObject.postSuffix+"')) OR (INSTR(ClientAliases,'"+myObject.postAlias+"')) \
+										OR (INSTR(ClientFirstName,'"+myFirstInit+"') AND INSTR(ClientLastName,'"+myObject.postLastName+"')) OR (INSTR(ClientLastName,'"+myLastInit+"')\
+										AND INSTR(ClientFirstName,'"+myObject.postFirstName+"'))";
+							
+						break;
+						
+				default:answer = null;
 						break;
 			}
 			break;
