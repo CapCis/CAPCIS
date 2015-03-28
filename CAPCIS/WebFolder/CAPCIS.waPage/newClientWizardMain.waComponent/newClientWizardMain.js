@@ -36,7 +36,12 @@ function constructor (id) {
 		if (myTime.getValue() != "")
 		{
 			var myDate = myTime.getDate();
-			myDateFormated = (myDate.getFullYear() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getDate());
+			var myMonth = (myDate.getMonth() + 1).toString();
+			//var myMonth = myDate.getMonth().toString();
+			var myDay = myDate.getDate().toString();
+			if (myDay.length == 1){myDay = "0" + myDay}
+			if (myMonth.length == 1){myMonth = "0" + myMonth}
+			myDateFormated = (myDate.getFullYear() + "-" + myMonth + "-" + myDay);
 		}
 		/*		
 		if (mySSN == "")
