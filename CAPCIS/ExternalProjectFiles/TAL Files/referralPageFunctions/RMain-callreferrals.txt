@@ -1,0 +1,73 @@
+function callAssessor()
+	{
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_AssessorComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralAssessors.waComponent',							//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callAttorney()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent',							//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callDHS ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent',							//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callJudge ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_JudgeComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralJudges.waComponent',					//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callOtherMonitor ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_OtherMonitorComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralOtherMonitors.waComponent',						//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callProsecutor()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_ProsecutorComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent',						//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callProbationOfficer ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_ProbationOfficerComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent',				//data that you want to send to the webcomponent
+		"onSuccess": function (result){}
+		})
+	}
+	function callProbationJurisdiction ()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_ProbationJursidictionComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent',					//data that you want to send to the webcomponent
+		"onSuccess": function (result) {}
+		})
+	}
+	function callCourtJurisdiction()
+	{
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
+		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',					//data that you want to send to the webcomponent
+		"onSuccess": function (result) {}
+		})
+	}

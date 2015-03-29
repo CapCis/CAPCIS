@@ -11,6 +11,8 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
+		
+		debugger;
 		tempStore= city;
 		
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:84}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
