@@ -3,15 +3,38 @@ HOW TO RUN A REPORT IN JASPER REPORTS
 	http://localhost:8080/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9
 													  direcotry/reportname   	? report parameter
 
+MOST USED COMMANDS
 
-HOW TO CHANGE CSS OF A WIDGET 
+	$$(getHtmlId("widgetName")).getValue();
+
+	$$(getHtmlId('widgetName')).setValue("stringValue");
+
+	$$(getHtmlId('container3')).setSplitPosition(420);
+
+	var mywidget = document.getElementById("parentWC_widgetName");
+	mywidget.style.top = "25px";
+
+
+
+HOW TO EDIT CSS OF A WIDGET
 
 	getHtmlObj('button1').css('background-color' , 'red');
 	
-						OR
-	var mywidget = document.getElementById("parentWC_widgetName")
-	mywidget.style.top = "25px"
 
+HOW TO FORMAT A DATE FOR MYSQL
+
+	myDate = datetimepicker
+	var myDateFormated = (myDate.getFullYear() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getDate());
+
+
+HOW TO WORK WITH DATETIME PICKER
+
+	var myTime = $$(getHtmlId("jQDateTime1"));
+	var myDate = myTime.getDate();
+	alert(myTime.getValue());
+	alert(myDate.getHours());
+	alert(myDate.getMinutes());
+	alert(myDate.getDay());
 
 
 HOW TO OPEN A WEB COMPONENT
@@ -23,6 +46,7 @@ HOW TO OPEN A WEB COMPONENT
 
 
 
+	
 RPCDSELECTS
 
 	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};	

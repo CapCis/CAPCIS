@@ -7,7 +7,7 @@
 
 exports.getToken = function getToken(array)
 {
-	//var address = getToken.remoteAddress;
+	
 	var serverUtil = require('serverUtilities'); 					//include serverUtilities Module
 	var dBQueryBuilder1 = require('dSelectsQuery'); 					//include dSelectsQuery Module
 	var dBQueryBuilder2 = require('dInsertQuery');
