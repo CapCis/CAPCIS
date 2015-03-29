@@ -168,9 +168,9 @@
 
 #{id}label1 {
 	 z-index: 34;
-	 width: 52px;
-	 height: 18px;
-	 top: 402px;
+	 width: 39px;
+	 height: 13px;
+	 top: 407px;
 	 left: 30px;
 	
 	 position: absolute;
@@ -230,18 +230,6 @@
 	 height: 13px;
 	 top: 318px;
 	 left: 363px;
-	
-	 position: absolute;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}label28 {
-	 z-index: 24;
-	 width: 31px;
-	 height: 13px;
-	 top: 243px;
-	 left: 414px;
 	
 	 position: absolute;
 	 color: rgb(0, 27, 90);
@@ -313,17 +301,6 @@
 	 width: 100px;
 	 height: 20px;
 	 top: 45px;
-	 left: 450px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox1 {
-	 z-index: 24;
-	 width: 100px;
-	 height: 20px;
-	 top: 240px;
 	 left: 450px;
 	
 	 position: absolute;
@@ -411,9 +388,9 @@
 
 #{id}label13 {
 	 z-index: 15;
-	 width: 52px;
-	 height: 18px;
-	 top: 292px;
+	 width: 39px;
+	 height: 13px;
+	 top: 297px;
 	 left: 30px;
 	
 	 position: absolute;
@@ -436,9 +413,9 @@
 
 #{id}label12 {
 	 z-index: 14;
-	 width: 52px;
-	 height: 18px;
-	 top: 127px;
+	 width: 39px;
+	 height: 13px;
+	 top: 132px;
 	 left: 30px;
 	
 	 position: absolute;
@@ -460,9 +437,9 @@
 
 #{id}label2 {
 	 z-index: 5;
-	 width: 52px;
-	 height: 18px;
-	 top: 22px;
+	 width: 39px;
+	 height: 13px;
+	 top: 27px;
 	 left: 30px;
 	
 	 position: absolute;
