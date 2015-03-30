@@ -17,63 +17,56 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
+	
+	$$(getHtmlId("textField1")).focus();
+	
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var passHash = CryptoJS.SHA3($$($comp.id + "_textField8").getValue()).toString();
-		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,
+		debugger;
+		myPassword = $$($comp.id + "_textField8").getValue();		
+		var passHash = CryptoJS.SHA3(myPassword).toString();
+		var myObject = {major:0,minor:3,
 		firstName:$$($comp.id + "_textField1").getValue(),
 		middleName:$$($comp.id + "_textField3").getValue(),
 		lastName:$$($comp.id + "_textField2").getValue(),
 		email:$$($comp.id + "_textField5").getValue(),
 		phone:$$($comp.id + "_textField6").getValue(),
-		organization:$$($comp.id + "_textField7").getValue(),
+		organization:$$($comp.id + "_combobox1").getValue(),
 		fullDisplayName:$$($comp.id + "_textField4").getValue(),
 		password:passHash};
 		
-		rpcDInsert.setInsert({
+		rpcDInsert.setRegistrationAsync({
 		 			'onSuccess': function(result){
-						mainListSuccess(result);
+		 				debugger;
+						//mainListSuccess(result);
+						myContainer1 = $$(getHtmlId("container2"));
+						myContainer1.domNode.style.visibility = "hidden";
+						mySubmitButton = $$(getHtmlId("button2"));
+						mySubmitButton.domNode.style.visibility = "hidden";
+						$$($comp.id + "_richText1").setValue("Registration Has Been Sent");
 					},
 					'onError': function(error){
-						console.log(error);
+						//console.log(error);
+						debugger;
+						var errMessage;
+						for (var x = 0;x < event.error.length;x++)
+						{
+							errMessage += (event.error[x].message + ",");
+						}
+						alert(errMessage);
 					},
 					'params': [myObject]
 		});
 
-		function mainListSuccess(result)
-		{
-			tf1 = document.getElementById($comp.id + "_textField1");
-			tf1.style.visibility = "hidden";
-			tf3 = document.getElementById($comp.id + "_textField3");
-			tf3.style.visibility = "hidden";
-			tf2 = document.getElementById($comp.id + "_textField2");
-			tf2.style.visibility = "hidden";
-			tf5 = document.getElementById($comp.id + "_textField5");
-			tf5.style.visibility = "hidden";
-			tf6 = document.getElementById($comp.id + "_textField6");
-			tf6.style.visibility = "hidden";
-			tf7 = document.getElementById($comp.id + "_textField7");
-			tf7.style.visibility = "hidden";
-			tf4 = document.getElementById($comp.id + "_textField4");
-			tf4.style.visibility = "hidden";
-			tf8 = document.getElementById($comp.id + "_textField8");
-			tf8.style.visibility = "hidden";
-			b2 = document.getElementById($comp.id + "_button2");
-			b2.style.visibility = "hidden";
-		
-			$$($comp.id + "_richText1").setValue("Registration Has Been Sent");
-		}
+		//function mainListSuccess(result)
+		//{
+			
+		//}
 
-		function mainListError(event)
-		{
-			var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-		}		
+		//function mainListError(event)
+		//{
+				
+		//}		
 		
 		
 	};// @lock

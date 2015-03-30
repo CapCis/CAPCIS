@@ -67,6 +67,25 @@ exports.setInsertWReturn = function setInsert(myObject)
 	{
 		var myResults = ["err", "Invalid Token"];
 	}
-	
 	return myResults;
-}
+};
+
+
+exports.setRegistration = function setInsert(myObject)
+{
+	try
+	{
+		var serverUtil = require('serverUtilities');
+		var dBInsertBuilder = require('dInsertQuery');
+		var insertStatement = dBInsertBuilder.buildQuery(myObject);
+		var connection = serverUtil.getDBConnection();
+		console.log(myObject);
+		connection.execute(insertStatement);
+		connection.close;
+		return;
+	}
+	catch(err)
+	{
+		return err;	
+	}
+};

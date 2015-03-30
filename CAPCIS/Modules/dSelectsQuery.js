@@ -23,6 +23,8 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 5: answer = 'SELECT * FROM fxcapcisregistrations WHERE RegistrationComplete = 0 ORDER BY CreatedDateTime asc';
 						break;
+				case 6: answer = 'SELECT * FROM divisioninformation ORDER BY DivisionInformationID asc';
+						break;
 				default:
 						answer = null;			
 			}

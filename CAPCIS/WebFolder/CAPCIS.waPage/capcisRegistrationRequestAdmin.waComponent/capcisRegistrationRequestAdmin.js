@@ -26,6 +26,19 @@ function constructor (id) {
 					'params': [myObject]
 	});	
 	
+	var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:6};
+	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+		 				dsInitRegOrgCombo = result;
+		 				sources.dsInitRegOrgCombo.sync();
+					},
+					'onError': function(error){
+						alert(error);
+					},
+					'params': [myComboObject]
+	});	
+	
 	// @region namespaceDeclaration// @startlock
 	var button1 = {};	// @button
 	// @endregion// @endlock
@@ -44,7 +57,7 @@ function constructor (id) {
 		fullDisplayName:$$($comp.id + "_textField4").getValue(),
 		password:passHash};
 		
-		rpcDInsert.setInsertMultiple({
+		rpcDInsert.setInsertWReturn({
 		 			'onSuccess': function(result){
 						alert("capcisRegistrationRequestAdmin Account Created Success");
 					},

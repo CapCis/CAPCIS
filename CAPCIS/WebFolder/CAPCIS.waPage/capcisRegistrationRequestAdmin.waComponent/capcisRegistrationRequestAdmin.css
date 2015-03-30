@@ -47,28 +47,6 @@
 	 
 }
 
-#{id}label10 {
-	 z-index: 12;
-	 width: 70px;
-	 height: 13px;
-	 top: 266px;
-	 left: 70px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox1 {
-	 z-index: 12;
-	 width: 132px;
-	 height: 26px;
-	 top: 260px;
-	 left: 145px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label8 {
 	 z-index: 10;
 	 width: 35px;
@@ -229,6 +207,28 @@
 	 height: 751px;
 	 top: 13px;
 	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label10 {
+	 z-index: 12;
+	 width: 70px;
+	 height: 13px;
+	 top: 266px;
+	 left: 70px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox1 {
+	 z-index: 12;
+	 width: 132px;
+	 height: 26px;
+	 top: 260px;
+	 left: 145px;
 	
 	 position: absolute;
 	 

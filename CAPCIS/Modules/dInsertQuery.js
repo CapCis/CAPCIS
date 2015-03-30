@@ -18,7 +18,7 @@ exports.buildQuery = function buildQuery(myObject)
 				case 2: answer = 'INSERT INTO fxlogintracking (UsernameAttempted,LoginAuthenticated) VALUES("'+myObject.data1+'","'+myObject.data2+'")';
 						break;
 				case 3: answer = 'INSERT INTO fxcapcisregistrations (FirstName,MiddleName,LastName,Email,Phone,Organiztion,FullDisplayName,Password) VALUES("'+myObject.firstName+'","'+myObject.middleName+'", \
-									"'+myObject.MiddleName+'","'+myObject.lastName+'","'+myObject.email+'","'+myObject.phone+'","'+myObject.organization+'","'+myObject.fullDisplayName+'","'+myObject.password+'")';
+									"'+myObject.lastName+'","'+myObject.email+'","'+myObject.phone+'","'+myObject.organization+'","'+myObject.fullDisplayName+'","'+myObject.password+'")';
 						break;
 				case 4: answer = 'INSERT INTO fxuseraccounts (UserName,UserPassword,FullName) VALUES("'+myObject.email+'","'+myObject.password+'","'+myObject.fullDisplayName+'") RETURNING FxUserAccountsID';
 						break;
