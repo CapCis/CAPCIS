@@ -6,6 +6,8 @@
 */
 exports.setInsert = function setInsert(myObject)
 {
+	try
+	{
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	var dBInsertBuilder = require('dInsertQuery');
@@ -14,22 +16,28 @@ exports.setInsert = function setInsert(myObject)
 	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
 	var myResults = result.getAllRows();
-	connection.close;
 	if(myResults.length > 0)
 	{
 		var insertStatement = dBInsertBuilder.buildQuery(myObject);
-		var connection = serverUtil.getDBConnection();
 		connection.execute(insertStatement);
+		console.log(myReturnedID);		
 		var myResults = ["suc"];
 		connection.close;
+		return myResults;
 	}
 	else
 	{
 		var myResults = ["err", "Invalid Token"];
+		connection.close;
+		return myResults;
+	}	
+	
 	}
-	
-	return myResults;
-	
+	catch(err)
+	{
+		connection.close;
+		return err;
+	}
 };
 
 
@@ -48,20 +56,11 @@ exports.setInsertWReturn = function setInsert(myObject)
 	if(myResults.length > 0)
 	{
 		var insertStatement = dBInsertBuilder.buildQuery(myObject);
-		//var connection = serverUtil.getDBConnection();
 		connection.execute(insertStatement);
-		//myObject.returnedID = returnedID;
-		
-		myObject.major = myObject.major2;
-		myObject.minor = myObject.minor2;
-		var selectStatement2 = dBQueryBuilder.buildQuery(myObject);
-		var myResults2 = connection.execute(selectStatement2);
-		myResults2.returnedID = myResults2[0];
-		myObject.major = myObject.major3;
-		myObject.minor = myObject.minor3;
-		var insertStatement2 = dBInsertBuilder.buildQuery(myObject);
-		connection.execute(insertStatement2);
-		myResults = ["suc"];
+		selectStatement = "SELECT LAST_INSERT_ID()";
+		var myReturnedID = connection.execute(selectStatement);
+		myReturnedID = myReturnedID.getAllRows();
+		myResults = myReturnedID;
 		connection.close;
 	}
 	else

@@ -135,6 +135,28 @@ exports.buildQuery = function buildQuery(myObject)
 				default: answer = null;
 			}
 			break;
+		case 4:  //Client Wizard
+			switch(myObject.minor)
+			{
+				case 0: 
+						if (myObject.postMiddleName !== "")
+						{
+							var fullName = myObject.postFirstName + " " + myObject.postMiddleName + " " + myObject.postLastName;
+							var reverseName = myObject.postLastName + ", " + myObject.postFirstName + "" + myObject.postMiddleName		
+						}
+						else
+						{
+							var fullName = myObject.postFirstName + " " + myObject.postLastName;
+							var reverseName = myObject.postLastName + ", " + myObject.postFirstName
+						}
+						
+						answer = 'INSERT INTO capcis.clientinformation (ClientFirstName,ClientMiddleName,ClientLastName,ClientNameSuffix \
+						,ClientSSN,ClientAliases,ClientNotes,ClientBirthdate,ClientFullName,ClientFullNameReverse) VALUES \
+						("'+myObject.postFirstName+'","'+myObject.postMiddleName+'","'+myObject.postLastName+'","'+myObject.postSuffix+'" \
+						,"'+myObject.postSSN+'","'+myObject.postAlias+'","'+myObject.postNotes+'","'+myObject.postDate+'","'+fullName+'" \
+						,"'+reverseName+'")';
+			}
+			break;
 	}
 		return answer;
 };

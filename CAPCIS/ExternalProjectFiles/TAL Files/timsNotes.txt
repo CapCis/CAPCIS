@@ -15,6 +15,11 @@ MOST USED COMMANDS
 	mywidget.style.top = "25px";
 
 
+HOW TO SYNC A DATA SOURCE
+    
+	cwmClientInfo = resultoffunction;  //must be global var
+	sources.cwmClientInfo.sync();
+
 
 HOW TO EDIT CSS OF A WIDGET
 
