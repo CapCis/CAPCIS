@@ -9,6 +9,9 @@
 
 exports.getSelect = function getSelect(myObject)
 {
+	
+	try
+	{
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	var token = {token:myObject.token,major:0,minor:1};
@@ -30,6 +33,11 @@ exports.getSelect = function getSelect(myObject)
 	{		
 		return myResults = ["err","Invalid Token"];
 	}	
+	}
+	catch(err)
+	{
+		return err.message;
+	}
 };
 
 exports.getReferralCount = function getSelect(myObject)

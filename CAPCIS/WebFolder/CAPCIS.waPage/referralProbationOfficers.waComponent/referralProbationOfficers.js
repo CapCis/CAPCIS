@@ -21,103 +21,12 @@ function constructor (id) {
 					},
 					'params': [myObject]
 				});
-		try {
-			searchCrit = data.userData.searchCrit;
-			searchType = data.userData.searchType;
-			
-		} catch (e) {
-			
-		}
-			fillMainTable();
+		
+			//fillMainTable();
 		
 		function fillMainTable()
 		{
-			try
-		{
 			
-			
-			if(searchCrit == "" && searchType == 'Active')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:65,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if(searchCrit == '' && searchType == 'Inactive')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:65,data1:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if(searchCrit == '' && searchType == 'All')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:66}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if (searchCrit != '' && searchType == 'Active')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:68, data1:searchCrit,data2:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if (searchCrit != '' && searchType == 'Inactive')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:68, data1:searchCrit,data2:true}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			else if (searchCrit != '' && searchType == 'All')
-			{
-				var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:67, data1:searchCrit}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						mainListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
-			}
-			
-		}
-		catch(err)
-		{
 			var myObject = {token:'7836140170460568' ,id:'1',major:3,minor:65,data1:false}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -129,7 +38,7 @@ function constructor (id) {
 					'params': [myObject]
 				});
 			
-		}
+		
 		}
 			
 			
