@@ -8,6 +8,7 @@
 exports.getToken = function getToken(array)
 {
 	
+	console.log(array);
 	var serverUtil = require('serverUtilities'); 					//include serverUtilities Module
 	var dBQueryBuilder1 = require('dSelectsQuery'); 					//include dSelectsQuery Module
 	var dBQueryBuilder2 = require('dInsertQuery');
@@ -51,6 +52,6 @@ exports.getToken = function getToken(array)
 	catch(err)
 	{
 		var returnData = [{myToken:"err", UserAccpuntsID:"Invalid Attempt",verified:false}]; //["err", "Invalid Attempt"];
-		return returnData;
+		return err;
 	}
 };

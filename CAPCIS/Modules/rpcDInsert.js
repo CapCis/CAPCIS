@@ -44,6 +44,7 @@ exports.setInsert = function setInsert(myObject)
 
 exports.setInsertWReturn = function setInsert(myObject)
 {
+	debugger;
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	var dBInsertBuilder = require('dInsertQuery');

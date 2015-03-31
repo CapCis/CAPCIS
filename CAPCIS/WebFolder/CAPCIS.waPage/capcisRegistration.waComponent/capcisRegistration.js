@@ -68,7 +68,6 @@ function constructor (id) {
 				
 		//}		
 		
-		
 	};// @lock
 
 	// @region eventManager// @startlock
