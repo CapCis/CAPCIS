@@ -3,12 +3,45 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}richText1 {
-	 z-index: 55;
-	 width: 50px;
+#{id}button3 {
+	 z-index: 61;
+	 width: 112px;
+	 height: 29px;
+	 top: 234px;
+	 left: 861px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button2 {
+	 z-index: 60;
+	 width: 95px;
+	 height: 28px;
+	 top: 76px;
+	 left: 1058px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText2 {
+	 z-index: 58;
+	 width: 64px;
 	 height: 16px;
-	 top: 125px;
-	 left: 845px;
+	 top: 9px;
+	 left: 990px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox1 {
+	 z-index: 57;
+	 width: 168px;
+	 height: 25px;
+	 top: 26px;
+	 left: 987px;
 	
 	 position: absolute;
 	 
@@ -18,7 +51,7 @@
 	 z-index: 54;
 	 width: 92px;
 	 height: 35px;
-	 top: 866px;
+	 top: 849px;
 	 left: 976px;
 	
 	 position: absolute;
@@ -29,8 +62,8 @@
 	 z-index: 53;
 	 width: 166px;
 	 height: 198px;
-	 top: 145px;
-	 left: 843px;
+	 top: 22px;
+	 left: 808px;
 	
 	 position: absolute;
 	 
@@ -526,6 +559,17 @@
 	 height: 323px;
 	 top: 20px;
 	 left: 20px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText1 {
+	 z-index: 55;
+	 width: 115px;
+	 height: 17px;
+	 top: 7px;
+	 left: 807px;
 	
 	 position: absolute;
 	 
