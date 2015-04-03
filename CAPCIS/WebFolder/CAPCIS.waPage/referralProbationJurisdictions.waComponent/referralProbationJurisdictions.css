@@ -639,30 +639,6 @@
 	 
 }
 
-#{id}ProbationJurisdictionViewCont {
-	 z-index: 2;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}ProbationJurisdictionEditCont {
-	 z-index: 3;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
 #{id}mainProbationJurisdictionsCont {
 	 z-index: 10;
 	 width: 1290px;
