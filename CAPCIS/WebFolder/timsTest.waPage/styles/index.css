@@ -3,8 +3,34 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#container9 {
+	 z-index: 1;
+	 width: 255px;
+	 height: 155px;
+	 top: 61px;
+	 left: 93px;
+	
+	 position: absolute;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
+#container8 {
+	 z-index: 35;
+	 width: 629px;
+	 height: 440px;
+	 top: 1467px;
+	 right: 100px;
+	
+	 position: absolute;
+	 
+}
+
 #button15 {
-	 z-index: 34;
+	 z-index: 33;
 	 width: 91px;
 	 height: 25px;
 	 top: 172px;
@@ -16,21 +42,12 @@
 
 #label4 {
 	 z-index: 2;
-	 width: 29px;
-	 height: 13px;
-	 top: 18px;
+	 width: 26px;
+	 height: 16px;
+	 top: 15px;
 	 left: 33px;
 	
 	 position: absolute;
-	 
-}
-
-#button13 {
-	 width: 128px;
-	 height: 27px;
-	 top: 446px;
-	 left: 432px;
-	
 	 
 }
 
@@ -183,10 +200,10 @@
 
 #label3 {
 	 z-index: 13;
-	 width: 29px;
-	 height: 13px;
-	 top: 402px;
-	 left: 887px;
+	 width: 26px;
+	 height: 16px;
+	 top: 401px;
+	 left: 890px;
 	
 	 position: absolute;
 	 
@@ -219,10 +236,10 @@
 
 #label1 {
 	 z-index: 3;
-	 width: 29px;
-	 height: 13px;
-	 top: 13px;
-	 left: 246px;
+	 width: 26px;
+	 height: 16px;
+	 top: 12px;
+	 left: 249px;
 	
 	 position: absolute;
 	 

@@ -26,6 +26,19 @@ function constructor (id) {
 					'params': [myObject]
 	});	
 	
+	var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:6};
+	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+		 				dsInitRegOrgCombo = result;
+		 				sources.dsInitRegOrgCombo.sync();
+					},
+					'onError': function(error){
+						alert(error);
+					},
+					'params': [myComboObject]
+	});	
+	
 	// @region namespaceDeclaration// @startlock
 	var button1 = {};	// @button
 	// @endregion// @endlock
@@ -34,21 +47,26 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:4,major2:0,minor2:5,
-		firstName:$$($comp.id + "_textField1").getValue(),
-		middleName:$$($comp.id + "_textField3").getValue(),
-		lastName:$$($comp.id + "_textField2").getValue(),
-		email:$$($comp.id + "_textField5").getValue(),
-		phone:$$($comp.id + "_textField6").getValue(),
-		organization:$$($comp.id + "_textField7").getValue(),
-		fullDisplayName:$$($comp.id + "_textField4").getValue(),
-		password:passHash};
+		debugger;
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:4, //major2:0,minor2:5,
+		firstName:$$($comp.id + "_textField3").getValue(),
+		middleName:$$($comp.id + "_textField4").getValue(),
+		lastName:$$($comp.id + "_textField5").getValue(),
+		email:$$($comp.id + "_textField1").getValue(),
+		username:$$($comp.id + "_textField1").getValue(),
+		phone:$$($comp.id + "_textField7").getValue(),
+		organization:$$($comp.id + "_combobox1").getValue(),
+		fullDisplayName:$$($comp.id + "_textField2").getValue(),
+		password:$$($comp.id + "_textField9").getValue()};
 		
-		rpcDInsert.setInsertMultiple({
+		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
+		 				debugger;
 						alert("capcisRegistrationRequestAdmin Account Created Success");
+						
 					},
 					'onError': function(error){
+						debugger;
 						alert(error);
 					},
 					'params': [myObject]
