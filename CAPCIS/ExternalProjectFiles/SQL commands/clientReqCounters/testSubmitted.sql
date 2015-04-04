@@ -1,4 +1,4 @@
-update capcis.testclientreq as req
+update capcis.clientrequirements as req
 join 
 	( 	select FK_clientrequirements_ClientRequirementsID,
 		count(*) as totalCount

@@ -1,3 +1,3 @@
-update capcis.testclientreq as req 
+update capcis.clientrequirements as req 
 set req.ConsecUnexcusedAbsences = consective_unexcused(ClientRequirementsID) 
 
