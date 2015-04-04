@@ -23,6 +23,8 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 				case 5: answer = 'SELECT * FROM fxcapcisregistrations WHERE RegistrationComplete = 0 ORDER BY CreatedDateTime asc';
 						break;
+				case 6: answer = 'SELECT * FROM divisioninformation ORDER BY DivisionInformationID asc';
+						break;
 				default:
 						answer = null;			
 			}
@@ -615,12 +617,16 @@ exports.buildQuery = function buildQuery(myObject)
 						break;
 			}
 			break;
-		case 4:		
+		case 4: // Wizard	
 			switch(myObject.minor){
 				case 0 : 	
+							
 							var myLastInit = ""
 							var myFirstInit = ""
-							debugger;
+							var myGen = ""							
+							var myGenAlias = ""
+							
+							//first last initial search
 							if (myObject.postFirstName != "")
 							{
 								myFirstInit = myObject.postFirstName.charAt(0);
@@ -629,6 +635,32 @@ exports.buildQuery = function buildQuery(myObject)
 							{
 								myLastInit = myObject.postLastName.charAt(0);
 							}
+							if (myObject.postFirstName == "")
+							{
+								if (myObject.postLastName == "")
+								{
+									myFirstInit = "l33t";
+									myLastInit = "l33t";	
+								}	
+							}
+							//General Search Prep
+							if (myObject.postGeneral != "")
+							{
+								myGen = myObject.postGeneral;
+							}
+							else
+							{
+								myGen = "l33t"
+							}
+							if (myObject.postAlias != "")
+							{
+								myGenAlias = myObject.postAlias;
+							}
+							else
+							{
+								myGenAlias = "l33t"
+							}
+							
 							
 							if (myObject.postDate == ""){myObject.postDate = "l33t"}
 							if (myObject.postSSN == ""){myObject.postSSN = "l33t"}
@@ -639,7 +671,7 @@ exports.buildQuery = function buildQuery(myObject)
 								{
 									if(myObject.postLastName == "")
 									{
-										if (myObject.postSuffix == "")
+										if (myObject.postSuffix == "None")
 										{
 											myObject.postFirstName = "l33t";
 											myObject.postMiddleName = "l33t";
@@ -649,20 +681,24 @@ exports.buildQuery = function buildQuery(myObject)
 									}
 								}	
 							}
-							if (myObject.postFirstName == "")
-							{
-								if (myObject.postLastName == "")
-								{
-									myFirstInit = "l33t";
-									myLastInit = "l33t";	
-								}	
-							}
 							
-							answer = "SELECT * FROM capcis.clientinformation WHERE (INSTR(ClientBirthdate,'"+myObject.postDate+"') OR INSTR(ClientSSN,'"+myObject.postSSN+"')) \
+							answer = "SELECT *, DATE_FORMAT( clientinformation.ClientBirthdate, '%m/%d/%Y') as ClientBirthdate FROM capcis.clientinformation \
+										WHERE (INSTR(ClientBirthdate,'"+myObject.postDate+"') OR INSTR(ClientSSN,'"+myObject.postSSN+"')) \
 										OR (INSTR(ClientFirstName,'"+myObject.postFirstName+"') AND INSTR(ClientMiddleName,'"+myObject.postMiddleName+"') AND INSTR(ClientLastName, \
 										'"+myObject.postLastName+"') AND INSTR(ClientNameSuffix,'"+myObject.postSuffix+"')) OR (INSTR(ClientAliases,'"+myObject.postAlias+"')) \
-										OR (INSTR(ClientFirstName,'"+myFirstInit+"') AND INSTR(ClientLastName,'"+myObject.postLastName+"')) OR (INSTR(ClientLastName,'"+myLastInit+"')\
-										AND INSTR(ClientFirstName,'"+myObject.postFirstName+"'))";
+										OR (ClientFirstName LIKE '"+myFirstInit+"%' AND ClientLastName LIKE '%"+myObject.postLastName+"&')\
+										OR (ClientLastName LIKE '"+myLastInit+"%' AND ClientFirstName LIKE '%"+myObject.postFirstName+"%')\
+										OR (ClientBirthdate LIKE '%"+myGen+"%')\
+										OR (ClientSSN LIKE '%"+myGen+"%')\
+										OR (ClientFirstName LIKE '%"+myGen+"%')\
+										OR (ClientMiddleName LIKE '%"+myGen+"%')\
+										OR (ClientLastName LIKE '%"+myGen+"%')\
+										OR (ClientNameSuffix LIKE '%"+myGen+"%')\
+										OR (ClientAliases LIKE '%"+myGen+"%')\
+										OR (ClientFirstName LIKE '%"+myGen+"%')\
+										OR (ClientMiddleName LIKE '%"+myGenAlias+"%')\
+										OR (ClientLastName LIKE '%"+myGenAlias+"%')";
+										
 							
 						break;
 						

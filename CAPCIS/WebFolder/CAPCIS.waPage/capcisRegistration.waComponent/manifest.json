@@ -1,1 +1,1 @@
-﻿{"name":"capcisRegistration","html":"capcisRegistration.html","scripts":["capcisRegistration.js"],"styles":["capcisRegistration.css"]}
+﻿{"name":"capcisRegistration","html":"capcisRegistration.html","scripts":["capcisRegistration.js","scripts/sha3.js"],"styles":["capcisRegistration.css"]}

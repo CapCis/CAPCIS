@@ -18,9 +18,11 @@ exports.buildQuery = function buildQuery(myObject)
 				case 2: answer = 'INSERT INTO fxlogintracking (UsernameAttempted,LoginAuthenticated) VALUES("'+myObject.data1+'","'+myObject.data2+'")';
 						break;
 				case 3: answer = 'INSERT INTO fxcapcisregistrations (FirstName,MiddleName,LastName,Email,Phone,Organiztion,FullDisplayName,Password) VALUES("'+myObject.firstName+'","'+myObject.middleName+'", \
-									"'+myObject.MiddleName+'","'+myObject.lastName+'","'+myObject.email+'","'+myObject.phone+'","'+myObject.organization+'","'+myObject.fullDisplayName+'","'+myObject.password+'")';
+									"'+myObject.lastName+'","'+myObject.email+'","'+myObject.phone+'","'+myObject.organization+'","'+myObject.fullDisplayName+'","'+myObject.password+'")';
 						break;
-				case 4: answer = 'INSERT INTO fxuseraccounts (UserName,UserPassword,FullName) VALUES("'+myObject.email+'","'+myObject.password+'","'+myObject.fullDisplayName+'") RETURNING FxUserAccountsID';
+				case 4: answer = 'CALL insert_useraccount_userinformation("'+myObject.firstName+'","'+myObject.middleName+'","'+myObject.lastName+'","'+myObject.email+'" \
+									,"'+myObject.username+'","'+myObject.phone+'","'+myObject.organization+'","'+myObject.fullDisplayName+'","'+myObject.password+'")';
+								//'INSERT INTO fxuseraccounts (UserName,UserPassword,FullName) VALUES("'+myObject.email+'","'+myObject.password+'","'+myObject.fullDisplayName+'") RETURNING FxUserAccountsID';
 						break;
 				case 5: answer = 'INSERT INTO employeeinformation (EmployeeFirstName,EmployeeMiddleName,EmployeeLastName,EmployeeEmail,EmployeeHomePhone,DI_DivisionInformationID,EmployeeFullNameDisplay) VALUES("'+myObject.firstName+'", \
 									"'+myObject.middleName+'","'+myObject.lastName+'","'+myObject.email+'","'+myObject.phone+'","'+myObject.organization+'","'+myObject.fullDisplayName+'")';
@@ -133,6 +135,28 @@ exports.buildQuery = function buildQuery(myObject)
 						"'+myObject.data10+'","'+myObject.data11+'","'+myObject.data12+'","'+myObject.data13+'","'+myObject.data16+'",'+myObject.data15+', "'+myObject.id+'")';
 						break;
 				default: answer = null;
+			}
+			break;
+		case 4:  //Client Wizard
+			switch(myObject.minor)
+			{
+				case 0: 
+						if (myObject.postMiddleName !== "")
+						{
+							var fullName = myObject.postFirstName + " " + myObject.postMiddleName + " " + myObject.postLastName;
+							var reverseName = myObject.postLastName + ", " + myObject.postFirstName + "" + myObject.postMiddleName		
+						}
+						else
+						{
+							var fullName = myObject.postFirstName + " " + myObject.postLastName;
+							var reverseName = myObject.postLastName + ", " + myObject.postFirstName
+						}
+						
+						answer = 'INSERT INTO capcis.clientinformation (ClientFirstName,ClientMiddleName,ClientLastName,ClientNameSuffix \
+						,ClientSSN,ClientAliases,ClientNotes,ClientBirthdate,ClientFullName,ClientFullNameReverse) VALUES \
+						("'+myObject.postFirstName+'","'+myObject.postMiddleName+'","'+myObject.postLastName+'","'+myObject.postSuffix+'" \
+						,"'+myObject.postSSN+'","'+myObject.postAlias+'","'+myObject.postNotes+'","'+myObject.postDate+'","'+fullName+'" \
+						,"'+reverseName+'")';
 			}
 			break;
 	}

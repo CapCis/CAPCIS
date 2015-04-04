@@ -1,3 +1,6 @@
+
+
+
 HOW TO RUN A REPORT IN JASPER REPORTS
 
 	http://localhost:8080/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9
@@ -13,7 +16,18 @@ MOST USED COMMANDS
 
 	var mywidget = document.getElementById("parentWC_widgetName");
 	mywidget.style.top = "25px";
+	
 
+
+HOW TO SET FOCUS
+
+$$(getHtmlId("widget")).focus();
+
+
+HOW TO SYNC A DATA SOURCE
+    
+	cwmClientInfo = resultoffunction;  //must be global var
+	sources.cwmClientInfo.sync();
 
 
 HOW TO EDIT CSS OF A WIDGET
@@ -113,5 +127,7 @@ RPCDINSERT
 	}
 
 
+HOW TO SEE PREVIOUS QUERIES IN MYSQL
 
+	SELECT * FROM mysql.general_log ORDER BY event_time desc
 

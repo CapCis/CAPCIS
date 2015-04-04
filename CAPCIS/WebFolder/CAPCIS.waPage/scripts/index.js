@@ -2,11 +2,20 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var capcisRegisterButton = {};	// @button
 	var capcisSignInOut = {};	// @button
 	var documentEvent = {};	// @document
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	capcisRegisterButton.click = function capcisRegisterButton_click (event)// @startlock
+	{// @endlock
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+			id: 	'capcisMainWC', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/capcisRegistration.waComponent' 				//designate the webcomponent to load
+			});
+	};// @lock
 
 	capcisSignInOut.click = function capcisSignInOut_click (event)// @startlock
 	{// @endlock
@@ -140,7 +149,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			}
 			];
 			
-				
+	/*			
 		masterTabArray = [																			//array to track data for open tabs
 		tabObj = {
 			tabName:"",
@@ -203,24 +212,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			subTab:[[false],[false],[false],[false],[false],[false],[false],[false],[false],[false]]
 			}
 			];
-			
-			
-			
-		
-		//WAF.loadComponent ( {									//load webcomponent into this pages component1 element
-		//id:   	'component1',
-		//path: 	'/CAPCIS.waPage/capcisLogin.waComponent',
-		//onSuccess: function () {
-		//	$$('textField1').setValue("my username")            //do something but only in my scope			
-		//}
-		//});
-								
-		//$$('component1').loadComponent({path:'/CAPCIS.waPage/capcisLogin.waComponent',userData: {myData: 'mysentdata'}}); 		//loads webComponent with data, same as below
-		
-		
+	*/	
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("capcisRegisterButton", "click", capcisRegisterButton.click, "WAF");
 	WAF.addListener("capcisSignInOut", "click", capcisSignInOut.click, "WAF");
 	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
 // @endregion

@@ -3,40 +3,237 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}richText8 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
+#{id}container80 {
+	 z-index: 1;
+	 width: 415px;
+	 height: 268px;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label259 {
-	 width: 75px;
-	 height: 22px;
-	 top: auto;
-	 left: auto;
+#{id}component6 {
+	 z-index: 2;
+	 width: 300px;
+	 height: 290px;
+	 top: 0px;
+	 left: 415px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label272 {
-	 z-index: 18;
-	 width: 106px;
+#{id}component5 {
+	 z-index: 1;
+	 width: 410px;
+	 height: 290px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container79 {
+	 z-index: 3;
+	 width: 415px;
+	 height: 620px;
+	 top: 0px;
+	 left: 720px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 0px;
+	 border-left-width: 5px;
+	 border-top-width: 0px;
+	 border-right-width: 0px;
+	 
+}
+
+#{id}container78 {
+	 z-index: 1;
+	 width: 415px;
+	 height: 290px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 0px;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 5px;
+	 
+}
+
+#{id}container77 {
+	 z-index: 1;
+	 width: 720px;
+	 height: 295px;
+	 top: 325px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-left-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
+#{id}container75 {
+	 z-index: 3;
+	 width: 1140px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 
+}
+
+#{id}label24 {
+	 z-index: 13;
+	 width: 53px;
 	 height: 13px;
-	 top: 256px;
-	 left: 192px;
+	 top: 27px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label271 {
-	 z-index: 17;
-	 width: 128px;
+#{id}label23 {
+	 z-index: 7;
+	 width: 53px;
+	 height: 13px;
+	 top: -18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}component9 {
+	 width: 300px;
+	 height: 290px;
+	 top: auto;
+	 left: auto;
+	
+	 position: absolute;
+	 
+}
+
+#{id}component8 {
+	 z-index: 1;
+	 width: 427px;
+	 height: 291px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container76 {
+	 z-index: 2;
+	 width: 415px;
+	 height: 290px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 
+}
+
+#{id}component4 {
+	 z-index: 1;
+	 width: 35px;
+	 height: 68px;
+	 top: 22px;
+	 left: 872px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}component3 {
+	 z-index: 1;
+	 width: 46px;
+	 height: 71px;
+	 top: 12px;
+	 left: 7px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}component2 {
+	 z-index: 1;
+	 width: 96px;
+	 height: 118px;
+	 top: 12px;
+	 left: 13px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}component1 {
+	 z-index: -1;
+	 height: 290px;
+	 top: 0px;
+	 left: 0px;
+	 right: 85px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label29 {
+	 z-index: 22;
+	 width: 152px;
 	 height: 13px;
 	 top: 167px;
 	 left: 5px;
@@ -45,31 +242,75 @@
 	 
 }
 
-#{id}label270 {
-	 z-index: 16;
+#{id}label63 {
+	 z-index: 2;
+	 width: 21px;
+	 height: 13px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label30 {
+	 z-index: 18;
+	 width: 106px;
+	 height: 13px;
+	 top: 256px;
+	 left: 274px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label28 {
+	 z-index: 14;
 	 width: 48px;
 	 height: 13px;
 	 top: 122px;
-	 left: 225px;
+	 left: 300px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label269 {
-	 z-index: 15;
+#{id}label27 {
+	 z-index: 13;
 	 width: 28px;
 	 height: 13px;
 	 top: 122px;
-	 left: 185px;
+	 left: 250px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label268 {
-	 z-index: 14;
+#{id}label26 {
+	 z-index: 12;
 	 width: 79px;
+	 height: 13px;
+	 top: 77px;
+	 left: 220px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label32 {
+	 z-index: 11;
+	 width: 67px;
+	 height: 13px;
+	 top: 77px;
+	 left: 110px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label31 {
+	 z-index: 10;
+	 width: 70px;
 	 height: 13px;
 	 top: 77px;
 	 left: 5px;
@@ -78,30 +319,8 @@
 	 
 }
 
-#{id}label267 {
-	 z-index: 13;
-	 width: 67px;
-	 height: 13px;
-	 top: 77px;
-	 left: 225px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label266 {
-	 z-index: 12;
-	 width: 70px;
-	 height: 13px;
-	 top: 32px;
-	 left: 225px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label265 {
-	 z-index: 11;
+#{id}label25 {
+	 z-index: 9;
 	 width: 153px;
 	 height: 13px;
 	 top: 32px;
@@ -111,32 +330,21 @@
 	 
 }
 
-#{id}label264 {
-	 z-index: 10;
-	 width: 21px;
-	 height: 13px;
-	 top: 122px;
-	 left: 5px;
+#{id}container74 {
+	 z-index: 2;
+	 width: 31px;
+	 height: 390px;
+	 top: 233px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label263 {
-	 z-index: 27;
-	 width: 128px;
-	 height: 13px;
-	 top: 167px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label262 {
-	 z-index: 3;
-	 width: 61px;
-	 height: 13px;
+#{id}container73 {
+	 z-index: 1;
+	 width: 31px;
+	 height: 233px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -144,120 +352,252 @@
 	 
 }
 
-#{id}label261 {
-	 z-index: 24;
-	 width: 83px;
-	 height: 13px;
-	 top: 232px;
+#{id}pjPrevVersionCont {
+	 z-index: 2;
+	 width: 31px;
+	 height: 623px;
+	 top: 0px;
+	 left: 612px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container72 {
+	 z-index: 2;
+	 width: 184px;
+	 height: 295px;
+	 top: 0px;
+	 left: 428px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container71 {
+	 z-index: 1;
+	 width: 428px;
+	 height: 295px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}pjCorrCont {
+	 z-index: 2;
+	 width: 612px;
+	 height: 295px;
+	 top: 328px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField22 {
+	 z-index: 22;
+	 width: 405px;
+	 height: 55px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid6 {
+	 z-index: 21;
+	 width: 205px;
+	 height: 130px;
+	 top: 162px;
+	 left: 5px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}button30.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}button30 {
+	 z-index: 3;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 205px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}pjCityComboBox {
+	 z-index: 2;
+	 width: 205px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}container70 {
+	 z-index: 20;
+	 width: 231px;
+	 height: 41px;
+	 top: 122px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText31 {
+	 z-index: 19;
+	 width: 415px;
+	 height: 22px;
+	 top: 5px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 
+}
+
+#{id}checkbox2 {
+	 z-index: 18;
+	 width: 22px;
+	 height: 22px;
+	 top: 252px;
+	 left: 385px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button29 {
+	 z-index: 17;
+	 width: 125px;
+	 height: 25px;
+	 top: 290px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button28 {
+	 z-index: 16;
+	 width: 75px;
+	 height: 25px;
+	 top: 290px;
+	 left: 335px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button23 {
+	 z-index: 15;
+	 width: 75px;
+	 height: 25px;
+	 top: 290px;
+	 left: 250px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField21 {
+	 z-index: 14;
+	 width: 110px;
+	 height: 22px;
+	 top: 140px;
 	 left: 300px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label260 {
-	 z-index: 23;
-	 width: 77px;
-	 height: 13px;
-	 top: 122px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label258 {
-	 z-index: 18;
-	 width: 98px;
-	 height: 13px;
-	 top: 167px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label257 {
-	 z-index: 17;
-	 width: 67px;
-	 height: 13px;
-	 top: 77px;
-	 left: 305px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label256 {
-	 z-index: 16;
-	 width: 66px;
-	 height: 13px;
-	 top: 77px;
-	 left: 190px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label255 {
-	 z-index: 15;
-	 width: 53px;
-	 height: 13px;
-	 top: 77px;
-	 left: 115px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label254 {
-	 z-index: 14;
-	 width: 70px;
-	 height: 13px;
-	 top: 77px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label253 {
+#{id}textField20 {
 	 z-index: 13;
-	 width: 118px;
-	 height: 13px;
-	 top: 32px;
-	 left: 210px;
+	 width: 40px;
+	 height: 22px;
+	 top: 140px;
+	 left: 250px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label252 {
+#{id}textField19 {
 	 z-index: 12;
 	 width: 190px;
-	 height: 13px;
-	 top: 32px;
+	 height: 22px;
+	 top: 95px;
+	 left: 220px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField18 {
+	 z-index: 11;
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 110px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField17 {
+	 z-index: 10;
+	 width: 100px;
+	 height: 22px;
+	 top: 95px;
 	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}container83 {
-	 z-index: 2;
-	 width: 4px;
-	 height: 381px;
-	 top: 242px;
-	 left: 0px;
+#{id}textField16 {
+	 z-index: 9;
+	 width: 405px;
+	 height: 22px;
+	 top: 50px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}container82 {
+#{id}pjSpecificSubCont {
 	 z-index: 1;
-	 width: 4px;
-	 height: 242px;
+	 width: 612px;
+	 height: 328px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -265,32 +605,43 @@
 	 
 }
 
-#{id}poPrevVersionCont {
-	 z-index: 2;
-	 width: 4px;
+#{id}container69 {
+	 z-index: 1;
+	 width: 612px;
 	 height: 623px;
 	 top: 0px;
-	 left: 6px;
+	 left: 0px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}container81 {
+#{id}pjSpecificInfoCont {
 	 z-index: 2;
-	 width: 294px;
-	 height: 301px;
+	 width: 643px;
+	 height: 623px;
 	 top: 0px;
-	 left: 436px;
+	 left: 645px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}container80 {
+#{id}pjDataGird {
 	 z-index: 1;
-	 width: 436px;
-	 height: 301px;
+	 height: 645px;
+	 top: 0px;
+	 left: 0px;
+	 right: -765px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container68 {
+	 z-index: 1;
+	 width: 645px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -298,19 +649,32 @@
 	 
 }
 
-#{id}poCorrCont {
-	 z-index: 2;
-	 width: 6px;
-	 height: 301px;
-	 top: 322px;
+#{id}mainProbationJurisdictionsCont {
+	 z-index: 1;
+	 width: 1290px;
+	 height: 625px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
 	 
 }
 
-#{id}richText77 {
-	 z-index: 19;
+#{id}richText30 {
+	 z-index: 20;
 	 width: 320px;
 	 height: 22px;
 	 top: 5px;
@@ -323,7 +687,307 @@
 	 
 }
 
-#{id}checkbox13 {
+#{id}richText29 {
+	 z-index: 28;
+	 width: 415px;
+	 height: 22px;
+	 top: 5px;
+	 left: 0px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 
+}
+
+#{id}label22 {
+	 z-index: 18;
+	 width: 106px;
+	 height: 13px;
+	 top: 256px;
+	 left: 192px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label21 {
+	 z-index: 17;
+	 width: 128px;
+	 height: 13px;
+	 top: 167px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label20 {
+	 z-index: 16;
+	 width: 48px;
+	 height: 13px;
+	 top: 122px;
+	 left: 225px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label19 {
+	 z-index: 15;
+	 width: 28px;
+	 height: 13px;
+	 top: 122px;
+	 left: 185px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label18 {
+	 z-index: 14;
+	 width: 79px;
+	 height: 13px;
+	 top: 77px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label17 {
+	 z-index: 13;
+	 width: 67px;
+	 height: 13px;
+	 top: 77px;
+	 left: 225px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label16 {
+	 z-index: 12;
+	 width: 70px;
+	 height: 13px;
+	 top: 32px;
+	 left: 225px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label15 {
+	 z-index: 11;
+	 width: 153px;
+	 height: 13px;
+	 top: 32px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label14 {
+	 z-index: 10;
+	 width: 21px;
+	 height: 13px;
+	 top: 122px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label13 {
+	 z-index: 27;
+	 width: 128px;
+	 height: 13px;
+	 top: 167px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label12 {
+	 z-index: 3;
+	 width: 61px;
+	 height: 13px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label10 {
+	 z-index: 24;
+	 width: 83px;
+	 height: 13px;
+	 top: 232px;
+	 left: 300px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label9 {
+	 z-index: 23;
+	 width: 77px;
+	 height: 13px;
+	 top: 122px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label7 {
+	 z-index: 18;
+	 width: 98px;
+	 height: 13px;
+	 top: 167px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label6 {
+	 z-index: 17;
+	 width: 67px;
+	 height: 13px;
+	 top: 77px;
+	 left: 305px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label5 {
+	 z-index: 16;
+	 width: 66px;
+	 height: 13px;
+	 top: 77px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label4 {
+	 z-index: 15;
+	 width: 53px;
+	 height: 13px;
+	 top: 77px;
+	 left: 115px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label3 {
+	 z-index: 14;
+	 width: 70px;
+	 height: 13px;
+	 top: 77px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label2 {
+	 z-index: 13;
+	 width: 118px;
+	 height: 13px;
+	 top: 32px;
+	 left: 210px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label1 {
+	 z-index: 12;
+	 width: 190px;
+	 height: 13px;
+	 top: 32px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container11 {
+	 z-index: 2;
+	 width: 104px;
+	 height: 381px;
+	 top: 242px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container10 {
+	 z-index: 1;
+	 width: 104px;
+	 height: 242px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}poPrevVersionCont {
+	 z-index: 2;
+	 width: 104px;
+	 height: 623px;
+	 top: 0px;
+	 left: 857px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container9 {
+	 z-index: 2;
+	 width: 421px;
+	 height: 301px;
+	 top: 0px;
+	 left: 436px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container8 {
+	 z-index: 1;
+	 width: 436px;
+	 height: 301px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}poCorrCont {
+	 z-index: 2;
+	 width: 857px;
+	 height: 301px;
+	 top: 322px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}pjInactive {
 	 z-index: 18;
 	 width: 22px;
 	 height: 22px;
@@ -334,7 +998,7 @@
 	 
 }
 
-#{id}textField131 {
+#{id}pjNotes {
 	 z-index: 17;
 	 width: 320px;
 	 height: 55px;
@@ -345,7 +1009,7 @@
 	 
 }
 
-#{id}textField130 {
+#{id}pjZip {
 	 z-index: 16;
 	 width: 100px;
 	 height: 22px;
@@ -356,7 +1020,7 @@
 	 
 }
 
-#{id}textField129 {
+#{id}pjState {
 	 z-index: 15;
 	 width: 35px;
 	 height: 22px;
@@ -367,7 +1031,7 @@
 	 
 }
 
-#{id}textField128 {
+#{id}pjAddress {
 	 z-index: 14;
 	 width: 215px;
 	 height: 22px;
@@ -378,7 +1042,7 @@
 	 
 }
 
-#{id}textField127 {
+#{id}pjFax {
 	 z-index: 13;
 	 width: 100px;
 	 height: 22px;
@@ -389,7 +1053,7 @@
 	 
 }
 
-#{id}textField126 {
+#{id}pjPhone {
 	 z-index: 12;
 	 width: 100px;
 	 height: 22px;
@@ -400,7 +1064,7 @@
 	 
 }
 
-#{id}textField125 {
+#{id}pjName {
 	 z-index: 11;
 	 width: 215px;
 	 height: 22px;
@@ -411,23 +1075,12 @@
 	 
 }
 
-#{id}textField124 {
+#{id}textField14 {
 	 z-index: 10;
 	 width: 175px;
 	 height: 22px;
 	 top: 140px;
 	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container79 {
-	 z-index: 2;
-	 width: 294px;
-	 height: 322px;
-	 top: 0px;
-	 left: 435px;
 	
 	 position: absolute;
 	 
@@ -444,19 +1097,7 @@
 	 
 }
 
-#{id}dataGrid16 {
-	 z-index: 26;
-	 width: 125px;
-	 height: 115px;
-	 top: 162px;
-	 left: 260px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
-#{id}textField123 {
+#{id}textField13 {
 	 z-index: 3;
 	 width: 125px;
 	 height: 22px;
@@ -471,12 +1112,12 @@
 	 
 }
 
-#{id}button56.waf-state-hover {
+#{id}button20.waf-state-hover {
 	 color: rgb(51, 51, 51);
 	 
 }
 
-#{id}button56 {
+#{id}button20 {
 	 z-index: 2;
 	 width: 25px;
 	 height: 22px;
@@ -496,7 +1137,7 @@
 	 
 }
 
-#{id}container78 {
+#{id}container6 {
 	 z-index: 25;
 	 width: 150px;
 	 height: 41px;
@@ -529,21 +1170,7 @@
 	 
 }
 
-#{id}richText76 {
-	 z-index: 22;
-	 width: 415px;
-	 height: 22px;
-	 top: 5px;
-	 left: 0px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 text-align: center;
-	 font-size: 16px;
-	 
-}
-
-#{id}button55 {
+#{id}button5 {
 	 z-index: 21;
 	 width: 125px;
 	 height: 25px;
@@ -554,23 +1181,12 @@
 	 
 }
 
-#{id}button54 {
+#{id}button4 {
 	 z-index: 20;
 	 width: 75px;
 	 height: 25px;
 	 top: 280px;
 	 left: 335px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button53 {
-	 z-index: 19;
-	 width: 75px;
-	 height: 25px;
-	 top: 280px;
-	 left: 250px;
 	
 	 position: absolute;
 	 
@@ -653,7 +1269,7 @@
 	 
 }
 
-#{id}container77 {
+#{id}container5 {
 	 z-index: 1;
 	 width: 435px;
 	 height: 322px;
@@ -666,7 +1282,7 @@
 
 #{id}poSpecificSubCont {
 	 z-index: 1;
-	 width: 6px;
+	 width: 857px;
 	 height: 322px;
 	 top: 0px;
 	 left: 0px;
@@ -675,9 +1291,9 @@
 	 
 }
 
-#{id}container76 {
+#{id}container4 {
 	 z-index: 1;
-	 width: 6px;
+	 width: 857px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -688,10 +1304,10 @@
 
 #{id}poSpecificInfoCont {
 	 z-index: 2;
-	 width: 10px;
+	 width: 961px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1278px;
+	 left: 327px;
 	
 	 position: absolute;
 	 
@@ -699,32 +1315,32 @@
 
 #{id}probationOfficerDataGird {
 	 z-index: 1;
+	 width: 1392px;
 	 height: 625px;
 	 top: 2px;
 	 left: 2px;
-	 right: -887px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}container75 {
-	 z-index: 1;
-	 width: 1278px;
-	 height: 623px;
+#{id}container7 {
+	 z-index: 2;
+	 width: 422px;
+	 height: 322px;
 	 top: 0px;
-	 left: 0px;
+	 left: 435px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}mainProbationOfficerCont {
-	 z-index: 4;
-	 width: 1290px;
+	 z-index: 1;
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
+	 right: 0px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -743,42 +1359,29 @@
 	 
 }
 
-#{id}ProbationOfficerEditCont {
-	 z-index: 3;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}ProbationOfficerViewCont {
-	 z-index: 2;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}label234 {
-	 z-index: 22;
-	 width: 152px;
-	 height: 13px;
-	 top: 167px;
-	 left: 5px;
+#{id}cityComboboxGridAtt {
+	 width: 300px;
+	 height: 300px;
+	 top: auto;
+	 left: auto;
 	
 	 position: absolute;
 	 
 }
 
-#{id}label238 {
+#{id}cityComboboxGrid {
+	 z-index: 5;
+	 width: 125px;
+	 height: 134px;
+	 top: 162px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}label33 {
 	 z-index: 2;
 	 width: 21px;
 	 height: 13px;
@@ -789,183 +1392,17 @@
 	 
 }
 
-#{id}label235 {
-	 z-index: 18;
-	 width: 106px;
-	 height: 13px;
-	 top: 256px;
-	 left: 274px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label233 {
-	 z-index: 14;
-	 width: 48px;
-	 height: 13px;
-	 top: 122px;
-	 left: 300px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label232 {
-	 z-index: 13;
-	 width: 28px;
-	 height: 13px;
-	 top: 122px;
-	 left: 250px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label231 {
-	 z-index: 12;
-	 width: 79px;
-	 height: 13px;
-	 top: 77px;
-	 left: 220px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label237 {
-	 z-index: 11;
-	 width: 67px;
-	 height: 13px;
-	 top: 77px;
-	 left: 110px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label236 {
-	 z-index: 10;
-	 width: 70px;
-	 height: 13px;
-	 top: 77px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label230 {
-	 z-index: 9;
-	 width: 153px;
-	 height: 13px;
-	 top: 32px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container74 {
-	 z-index: 2;
-	 width: 4px;
-	 height: 390px;
-	 top: 233px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container73 {
-	 z-index: 1;
-	 width: 4px;
-	 height: 233px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}pjPrevVersionCont {
-	 z-index: 2;
-	 width: 4px;
-	 height: 623px;
-	 top: 0px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container72 {
-	 z-index: 2;
-	 width: 294px;
-	 height: 295px;
-	 top: 0px;
-	 left: 424px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container71 {
-	 z-index: 1;
-	 width: 424px;
-	 height: 295px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}pjCorrCont {
-	 z-index: 2;
-	 width: 5px;
-	 height: 295px;
-	 top: 328px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}pjNotes {
-	 z-index: 22;
-	 width: 405px;
-	 height: 55px;
-	 top: 185px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}dataGrid14 {
-	 z-index: 21;
-	 width: 205px;
-	 height: 130px;
-	 top: 162px;
-	 left: 5px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
-#{id}button49.waf-state-hover {
+#{id}button1.waf-state-hover {
 	 color: rgb(51, 51, 51);
 	 
 }
 
-#{id}button49 {
+#{id}button1 {
 	 z-index: 3;
 	 width: 25px;
 	 height: 22px;
 	 top: 18px;
-	 left: 205px;
+	 left: 125px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -980,9 +1417,9 @@
 	 
 }
 
-#{id}pjCityComboBox {
+#{id}cityComboBox {
 	 z-index: 2;
-	 width: 205px;
+	 width: 125px;
 	 height: 22px;
 	 top: 18px;
 	 left: 0px;
@@ -995,10 +1432,118 @@
 	 
 }
 
-#{id}container70 {
-	 z-index: 20;
-	 width: 231px;
+#{id}container2 {
+	 z-index: 4;
+	 width: 150px;
 	 height: 41px;
+	 top: 122px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button3 {
+	 z-index: 3;
+	 width: 25px;
+	 height: 22px;
+	 top: 17px;
+	 left: 125px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}label62 {
+	 z-index: 2;
+	 width: 21px;
+	 height: 13px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label61 {
+	 z-index: 29;
+	 width: 93px;
+	 height: 13px;
+	 top: 267px;
+	 left: 287px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label60 {
+	 z-index: 25;
+	 width: 82px;
+	 height: 13px;
+	 top: 212px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label59 {
+	 z-index: 24;
+	 width: 98px;
+	 height: 13px;
+	 top: 212px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label58 {
+	 z-index: 23;
+	 width: 77px;
+	 height: 13px;
+	 top: 167px;
+	 left: 150px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label57 {
+	 z-index: 22;
+	 width: 48px;
+	 height: 13px;
+	 top: 167px;
+	 left: 45px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label56 {
+	 z-index: 21;
+	 width: 28px;
+	 height: 13px;
+	 top: 167px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label55 {
+	 z-index: 20;
+	 width: 79px;
+	 height: 13px;
 	 top: 122px;
 	 left: 5px;
 	
@@ -1006,8 +1551,203 @@
 	 
 }
 
-#{id}richText69 {
+#{id}label54 {
 	 z-index: 19;
+	 width: 67px;
+	 height: 13px;
+	 top: 77px;
+	 left: 305px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label53 {
+	 z-index: 18;
+	 width: 75px;
+	 height: 13px;
+	 top: 77px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label52 {
+	 z-index: 17;
+	 width: 53px;
+	 height: 13px;
+	 top: 77px;
+	 left: 115px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label38 {
+	 z-index: 16;
+	 width: 70px;
+	 height: 13px;
+	 top: 77px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label37 {
+	 z-index: 15;
+	 width: 118px;
+	 height: 13px;
+	 top: 32px;
+	 left: 210px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label36 {
+	 z-index: 14;
+	 width: 144px;
+	 height: 13px;
+	 top: 32px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container95 {
+	 z-index: 2;
+	 width: 466px;
+	 height: 373px;
+	 top: 250px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container94 {
+	 z-index: 1;
+	 width: 466px;
+	 height: 250px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container93 {
+	 z-index: 2;
+	 width: 466px;
+	 height: 623px;
+	 top: 0px;
+	 left: 432px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container92 {
+	 z-index: 2;
+	 width: 0px;
+	 height: 293px;
+	 top: 0px;
+	 left: 432px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container91 {
+	 z-index: 1;
+	 width: 432px;
+	 height: 293px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container90 {
+	 z-index: 2;
+	 width: 432px;
+	 height: 293px;
+	 top: 330px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid4 {
+	 z-index: 32;
+	 width: 125px;
+	 height: 134px;
+	 top: 162px;
+	 left: 260px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}button12.waf-state-hover {
+	 color: rgb(51, 51, 51);
+	 
+}
+
+#{id}button12 {
+	 z-index: 3;
+	 width: 25px;
+	 height: 22px;
+	 top: 18px;
+	 left: 125px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 line-height: 22px;
+	 font-family: WebSymbolsRegular;
+	 font-size: 14px;
+	 color: rgb(153, 153, 153);
+	 
+}
+
+#{id}textField28 {
+	 z-index: 2;
+	 width: 125px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}container89 {
+	 z-index: 31;
+	 width: 150px;
+	 height: 41px;
+	 top: 122px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText27 {
+	 z-index: 30;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -1017,99 +1757,155 @@
 	 font-weight: bold;
 	 text-align: center;
 	 font-size: 16px;
+	 color: rgb(0, 27, 90);
 	 
 }
 
-#{id}pjInactive {
-	 z-index: 18;
+#{id}checkbox1 {
+	 z-index: 29;
 	 width: 22px;
 	 height: 22px;
-	 top: 252px;
+	 top: 263px;
 	 left: 385px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}button48 {
-	 z-index: 17;
+#{id}button11 {
+	 z-index: 28;
 	 width: 125px;
 	 height: 25px;
-	 top: 290px;
+	 top: 295px;
 	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}button47 {
-	 z-index: 16;
+#{id}button10 {
+	 z-index: 27;
 	 width: 75px;
 	 height: 25px;
-	 top: 290px;
+	 top: 295px;
 	 left: 335px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}button46 {
-	 z-index: 15;
+#{id}button6 {
+	 z-index: 26;
 	 width: 75px;
 	 height: 25px;
-	 top: 290px;
+	 top: 295px;
 	 left: 250px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}pjZip {
-	 z-index: 14;
-	 width: 110px;
+#{id}textField12 {
+	 z-index: 25;
+	 width: 250px;
+	 height: 55px;
+	 top: 230px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox2 {
+	 z-index: 24;
+	 width: 150px;
+	 height: 22px;
+	 top: 230px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField11 {
+	 z-index: 23;
+	 width: 260px;
+	 height: 22px;
+	 top: 185px;
+	 left: 150px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField10 {
+	 z-index: 22;
+	 width: 100px;
+	 height: 22px;
+	 top: 185px;
+	 left: 45px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField9 {
+	 z-index: 21;
+	 width: 35px;
+	 height: 22px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField8 {
+	 z-index: 20;
+	 width: 250px;
 	 height: 22px;
 	 top: 140px;
-	 left: 300px;
+	 left: 5px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}pjState {
-	 z-index: 13;
-	 width: 40px;
-	 height: 22px;
-	 top: 140px;
-	 left: 250px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}pjAddress {
-	 z-index: 12;
-	 width: 190px;
-	 height: 22px;
-	 top: 95px;
-	 left: 220px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}pjFax {
-	 z-index: 11;
+#{id}textField7 {
+	 z-index: 19;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
-	 left: 110px;
+	 left: 305px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}pjPhone {
-	 z-index: 10;
+#{id}textField6 {
+	 z-index: 18;
+	 width: 105px;
+	 height: 22px;
+	 top: 95px;
+	 left: 190px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField5 {
+	 z-index: 17;
+	 width: 50px;
+	 height: 22px;
+	 top: 95px;
+	 left: 115px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField4 {
+	 z-index: 16;
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
@@ -1119,9 +1915,20 @@
 	 
 }
 
-#{id}pjName {
-	 z-index: 9;
-	 width: 405px;
+#{id}textField3 {
+	 z-index: 15;
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField2 {
+	 z-index: 14;
+	 width: 200px;
 	 height: 22px;
 	 top: 50px;
 	 left: 5px;
@@ -1130,10 +1937,10 @@
 	 
 }
 
-#{id}pjSpecificSubCont {
+#{id}container88 {
 	 z-index: 1;
-	 width: 5px;
-	 height: 328px;
+	 width: 432px;
+	 height: 330px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -1141,9 +1948,9 @@
 	 
 }
 
-#{id}container69 {
+#{id}container87 {
 	 z-index: 1;
-	 width: 5px;
+	 width: 432px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -1152,84 +1959,25 @@
 	 
 }
 
-#{id}pjSpecificInfoCont {
+#{id}container86 {
 	 z-index: 2;
-	 width: 9px;
+	 width: 898px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1279px;
+	 left: 390px;
 	
 	 position: absolute;
 	 
 }
 
-#{id}pjDataGird {
+#{id}container85 {
 	 z-index: 1;
-	 height: 645px;
-	 top: 0px;
-	 left: 0px;
-	 right: -765px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container68 {
-	 z-index: 1;
-	 width: 1279px;
+	 width: 390px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}mainProbationJurisdictionsCont {
-	 z-index: 4;
-	 width: 1290px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 
-}
-
-#{id}ProbationJurisdictionEditCont {
-	 z-index: 3;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}ProbationJurisdictionViewCont {
-	 z-index: 2;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
 	 
 }
 
@@ -1400,7 +2148,7 @@
 
 #{id}container67 {
 	 z-index: 2;
-	 width: 1px;
+	 width: 42px;
 	 height: 390px;
 	 top: 233px;
 	 left: 0px;
@@ -1411,7 +2159,7 @@
 
 #{id}container66 {
 	 z-index: 1;
-	 width: 1px;
+	 width: 42px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -1422,10 +2170,10 @@
 
 #{id}prosPrevVersionCont {
 	 z-index: 2;
-	 width: 1px;
+	 width: 42px;
 	 height: 623px;
 	 top: 0px;
-	 left: 2px;
+	 left: 763px;
 	
 	 position: absolute;
 	 
@@ -1433,7 +2181,7 @@
 
 #{id}container65 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 333px;
 	 height: 279px;
 	 top: 0px;
 	 left: 430px;
@@ -1455,7 +2203,7 @@
 
 #{id}prosCorrCont {
 	 z-index: 2;
-	 width: 2px;
+	 width: 763px;
 	 height: 279px;
 	 top: 344px;
 	 left: 0px;
@@ -1782,7 +2530,7 @@
 
 #{id}prosSpecificSubCont {
 	 z-index: 1;
-	 width: 2px;
+	 width: 763px;
 	 height: 344px;
 	 top: 0px;
 	 left: 0px;
@@ -1793,7 +2541,7 @@
 
 #{id}container61 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 763px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -1804,17 +2552,17 @@
 
 #{id}prosSpecificInfoCont {
 	 z-index: 2;
-	 width: 3px;
+	 width: 805px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1285px;
+	 left: 483px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}prosecutorDataGird {
-	 z-index: 1;
+	 z-index: -1;
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
@@ -1826,7 +2574,7 @@
 
 #{id}container60 {
 	 z-index: 1;
-	 width: 1285px;
+	 width: 483px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -1859,30 +2607,6 @@
 	 
 }
 
-#{id}ProsecutorEditCont {
-	 z-index: 3;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}ProsecutorViewCont {
-	 z-index: 2;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
 #{id}label178 {
 	 z-index: 2;
 	 width: 21px;
@@ -1895,7 +2619,7 @@
 }
 
 #{id}label177 {
-	 z-index: 30;
+	 z-index: 32;
 	 width: 140px;
 	 height: 13px;
 	 top: 32px;
@@ -1906,7 +2630,7 @@
 }
 
 #{id}label176 {
-	 z-index: 29;
+	 z-index: 31;
 	 width: 118px;
 	 height: 13px;
 	 top: 32px;
@@ -1917,7 +2641,7 @@
 }
 
 #{id}label175 {
-	 z-index: 28;
+	 z-index: 30;
 	 width: 70px;
 	 height: 13px;
 	 top: 77px;
@@ -1928,7 +2652,7 @@
 }
 
 #{id}label174 {
-	 z-index: 27;
+	 z-index: 29;
 	 width: 53px;
 	 height: 13px;
 	 top: 77px;
@@ -1939,7 +2663,7 @@
 }
 
 #{id}label173 {
-	 z-index: 26;
+	 z-index: 28;
 	 width: 66px;
 	 height: 13px;
 	 top: 77px;
@@ -1950,7 +2674,7 @@
 }
 
 #{id}label172 {
-	 z-index: 25;
+	 z-index: 27;
 	 width: 67px;
 	 height: 13px;
 	 top: 77px;
@@ -1961,7 +2685,7 @@
 }
 
 #{id}label171 {
-	 z-index: 24;
+	 z-index: 26;
 	 width: 79px;
 	 height: 13px;
 	 top: 122px;
@@ -1972,7 +2696,7 @@
 }
 
 #{id}label170 {
-	 z-index: 23;
+	 z-index: 25;
 	 width: 28px;
 	 height: 13px;
 	 top: 167px;
@@ -1983,7 +2707,7 @@
 }
 
 #{id}label169 {
-	 z-index: 22;
+	 z-index: 24;
 	 width: 48px;
 	 height: 13px;
 	 top: 167px;
@@ -1994,7 +2718,7 @@
 }
 
 #{id}label168 {
-	 z-index: 21;
+	 z-index: 23;
 	 width: 77px;
 	 height: 13px;
 	 top: 167px;
@@ -2005,7 +2729,7 @@
 }
 
 #{id}label166 {
-	 z-index: 19;
+	 z-index: 21;
 	 width: 124px;
 	 height: 13px;
 	 top: 267px;
@@ -2016,7 +2740,7 @@
 }
 
 #{id}label167 {
-	 z-index: 15;
+	 z-index: 17;
 	 width: 113px;
 	 height: 13px;
 	 top: 212px;
@@ -2027,7 +2751,7 @@
 }
 
 #{id}label165 {
-	 z-index: 14;
+	 z-index: 16;
 	 width: 98px;
 	 height: 13px;
 	 top: 212px;
@@ -2039,7 +2763,7 @@
 
 #{id}container59 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 66px;
 	 height: 388px;
 	 top: 235px;
 	 left: 0px;
@@ -2050,7 +2774,7 @@
 
 #{id}container58 {
 	 z-index: 1;
-	 width: 4px;
+	 width: 66px;
 	 height: 235px;
 	 top: 0px;
 	 left: 0px;
@@ -2061,10 +2785,10 @@
 
 #{id}omPrevVersionCont {
 	 z-index: 2;
-	 width: 4px;
+	 width: 66px;
 	 height: 623px;
 	 top: 0px;
-	 left: 5px;
+	 left: 700px;
 	
 	 position: absolute;
 	 
@@ -2072,7 +2796,7 @@
 
 #{id}container57 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 250px;
 	 height: 287px;
 	 top: 0px;
 	 left: 450px;
@@ -2094,7 +2818,7 @@
 
 #{id}omCorrCont {
 	 z-index: 2;
-	 width: 5px;
+	 width: 700px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -2104,7 +2828,7 @@
 }
 
 #{id}dataGrid9 {
-	 z-index: 32;
+	 z-index: 14;
 	 width: 125px;
 	 height: 130px;
 	 top: 161px;
@@ -2156,7 +2880,7 @@
 }
 
 #{id}container55 {
-	 z-index: 31;
+	 z-index: 32;
 	 width: 150px;
 	 height: 41px;
 	 top: 122px;
@@ -2167,7 +2891,7 @@
 }
 
 #{id}omName {
-	 z-index: 30;
+	 z-index: 31;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -2178,7 +2902,7 @@
 }
 
 #{id}omFullName {
-	 z-index: 29;
+	 z-index: 30;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -2189,7 +2913,7 @@
 }
 
 #{id}omPhone {
-	 z-index: 28;
+	 z-index: 29;
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
@@ -2200,7 +2924,7 @@
 }
 
 #{id}omExt {
-	 z-index: 27;
+	 z-index: 28;
 	 width: 50px;
 	 height: 22px;
 	 top: 95px;
@@ -2211,7 +2935,7 @@
 }
 
 #{id}omAdditional {
-	 z-index: 26;
+	 z-index: 27;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -2222,7 +2946,7 @@
 }
 
 #{id}omFax {
-	 z-index: 25;
+	 z-index: 26;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -2233,7 +2957,7 @@
 }
 
 #{id}omAddress {
-	 z-index: 24;
+	 z-index: 25;
 	 width: 250px;
 	 height: 22px;
 	 top: 140px;
@@ -2244,7 +2968,7 @@
 }
 
 #{id}omState {
-	 z-index: 23;
+	 z-index: 24;
 	 width: 35px;
 	 height: 22px;
 	 top: 185px;
@@ -2255,7 +2979,7 @@
 }
 
 #{id}omZip {
-	 z-index: 22;
+	 z-index: 23;
 	 width: 100px;
 	 height: 22px;
 	 top: 185px;
@@ -2266,7 +2990,7 @@
 }
 
 #{id}omEmail {
-	 z-index: 21;
+	 z-index: 22;
 	 width: 260px;
 	 height: 22px;
 	 top: 185px;
@@ -2277,7 +3001,7 @@
 }
 
 #{id}richText55 {
-	 z-index: 20;
+	 z-index: 21;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -2291,7 +3015,7 @@
 }
 
 #{id}omInactive {
-	 z-index: 19;
+	 z-index: 20;
 	 width: 22px;
 	 height: 22px;
 	 top: 263px;
@@ -2302,7 +3026,7 @@
 }
 
 #{id}button33 {
-	 z-index: 18;
+	 z-index: 19;
 	 width: 125px;
 	 height: 25px;
 	 top: 290px;
@@ -2314,7 +3038,7 @@
 }
 
 #{id}button32 {
-	 z-index: 17;
+	 z-index: 18;
 	 width: 75px;
 	 height: 25px;
 	 top: 290px;
@@ -2325,7 +3049,7 @@
 }
 
 #{id}button31 {
-	 z-index: 16;
+	 z-index: 17;
 	 width: 75px;
 	 height: 25px;
 	 top: 290px;
@@ -2336,7 +3060,7 @@
 }
 
 #{id}omNotes {
-	 z-index: 15;
+	 z-index: 16;
 	 width: 250px;
 	 height: 50px;
 	 top: 230px;
@@ -2347,7 +3071,7 @@
 }
 
 #{id}omReportingComboBox {
-	 z-index: 14;
+	 z-index: 15;
 	 width: 150px;
 	 height: 22px;
 	 top: 230px;
@@ -2359,7 +3083,7 @@
 
 #{id}omSpecificSubCont {
 	 z-index: 1;
-	 width: 5px;
+	 width: 700px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -2370,7 +3094,7 @@
 
 #{id}container54 {
 	 z-index: 1;
-	 width: 5px;
+	 width: 700px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -2381,10 +3105,10 @@
 
 #{id}omSpecificInfoCont {
 	 z-index: 2;
-	 width: 9px;
+	 width: 766px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1279px;
+	 left: 522px;
 	
 	 position: absolute;
 	 
@@ -2403,7 +3127,7 @@
 
 #{id}container53 {
 	 z-index: 1;
-	 width: 1279px;
+	 width: 522px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -2591,7 +3315,7 @@
 }
 
 #{id}label131 {
-	 z-index: 14;
+	 z-index: 13;
 	 width: 127px;
 	 height: 13px;
 	 top: 32px;
@@ -2603,7 +3327,7 @@
 
 #{id}container52 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 245px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -2614,7 +3338,7 @@
 
 #{id}container51 {
 	 z-index: 1;
-	 width: 4px;
+	 width: 245px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -2625,10 +3349,10 @@
 
 #{id}container50 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 245px;
 	 height: 623px;
 	 top: 0px;
-	 left: 2px;
+	 left: 542px;
 	
 	 position: absolute;
 	 
@@ -2636,7 +3360,7 @@
 
 #{id}container49 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 119px;
 	 height: 287px;
 	 top: 0px;
 	 left: 423px;
@@ -2658,7 +3382,7 @@
 
 #{id}container47 {
 	 z-index: 2;
-	 width: 2px;
+	 width: 542px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -2974,7 +3698,7 @@
 }
 
 #{id}judgeNameField {
-	 z-index: 14;
+	 z-index: 13;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -2986,7 +3710,7 @@
 
 #{id}container44 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 542px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -2997,7 +3721,7 @@
 
 #{id}container43 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 542px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -3008,10 +3732,10 @@
 
 #{id}container42 {
 	 z-index: 2;
-	 width: 6px;
+	 width: 787px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1282px;
+	 left: 501px;
 	
 	 position: absolute;
 	 
@@ -3030,7 +3754,7 @@
 
 #{id}container41 {
 	 z-index: 1;
-	 width: 1282px;
+	 width: 501px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -3060,30 +3784,6 @@
 	 border-bottom-color: rgb(0, 27, 90);
 	 border-bottom-style: solid;
 	 border-bottom-width: 1px;
-	 
-}
-
-#{id}JudgeEditCont {
-	 z-index: 2;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
-#{id}JudgeViewCont {
-	 z-index: 4;
-	 width: 375px;
-	 height: 615px;
-	 top: 0px;
-	 left: 825px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
 	 
 }
 
@@ -3243,7 +3943,7 @@
 
 #{id}container40 {
 	 z-index: 2;
-	 width: 1px;
+	 width: 35px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -3254,7 +3954,7 @@
 
 #{id}container39 {
 	 z-index: 1;
-	 width: 1px;
+	 width: 35px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -3265,10 +3965,10 @@
 
 #{id}container38 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 35px;
 	 height: 623px;
 	 top: 0px;
-	 left: 4px;
+	 left: 531px;
 	
 	 position: absolute;
 	 
@@ -3276,10 +3976,10 @@
 
 #{id}container37 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 279px;
 	 height: 287px;
 	 top: 0px;
-	 left: 423px;
+	 left: 252px;
 	
 	 position: absolute;
 	 
@@ -3287,7 +3987,7 @@
 
 #{id}container36 {
 	 z-index: 1;
-	 width: 423px;
+	 width: 252px;
 	 height: 287px;
 	 top: 0px;
 	 left: 0px;
@@ -3298,7 +3998,7 @@
 
 #{id}container35 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 531px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -3563,7 +4263,7 @@
 
 #{id}container33 {
 	 z-index: 1;
-	 width: 4px;
+	 width: 531px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -3574,7 +4274,7 @@
 
 #{id}container32 {
 	 z-index: 1;
-	 width: 4px;
+	 width: 531px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -3585,17 +4285,17 @@
 
 #{id}container31 {
 	 z-index: 2;
-	 width: 3px;
+	 width: 566px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1285px;
+	 left: 722px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}dhsFullList {
-	 z-index: 1;
+	 z-index: -1;
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
@@ -3607,7 +4307,7 @@
 
 #{id}container30 {
 	 z-index: 1;
-	 width: 1285px;
+	 width: 722px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -3785,7 +4485,7 @@
 
 #{id}container29 {
 	 z-index: 2;
-	 width: 2px;
+	 width: 60px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -3796,7 +4496,7 @@
 
 #{id}container24 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 60px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -3807,10 +4507,10 @@
 
 #{id}container23 {
 	 z-index: 2;
-	 width: 2px;
+	 width: 60px;
 	 height: 623px;
 	 top: 0px;
-	 left: 2px;
+	 left: 575px;
 	
 	 position: absolute;
 	 
@@ -3818,8 +4518,8 @@
 
 #{id}container22 {
 	 z-index: 2;
-	 width: 294px;
-	 height: 287px;
+	 width: 150px;
+	 height: 293px;
 	 top: 0px;
 	 left: 425px;
 	
@@ -3830,7 +4530,7 @@
 #{id}container20 {
 	 z-index: 1;
 	 width: 425px;
-	 height: 287px;
+	 height: 293px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -3840,9 +4540,9 @@
 
 #{id}container18 {
 	 z-index: 2;
-	 width: 2px;
-	 height: 287px;
-	 top: 336px;
+	 width: 575px;
+	 height: 293px;
+	 top: 330px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -4094,8 +4794,8 @@
 
 #{id}container16 {
 	 z-index: 1;
-	 width: 2px;
-	 height: 336px;
+	 width: 575px;
+	 height: 330px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -4105,7 +4805,7 @@
 
 #{id}container15 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 575px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -4116,10 +4816,10 @@
 
 #{id}container14 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 635px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1284px;
+	 left: 653px;
 	
 	 position: absolute;
 	 
@@ -4138,7 +4838,7 @@
 
 #{id}container13 {
 	 z-index: 1;
-	 width: 1284px;
+	 width: 653px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -4148,7 +4848,7 @@
 }
 
 #{id}mainCourtJurisdictionCont {
-	 z-index: 2;
+	 z-index: -1;
 	 width: 1290px;
 	 height: 625px;
 	 top: 0px;
@@ -4175,7 +4875,7 @@
 	 z-index: 2;
 	 width: 21px;
 	 height: 13px;
-	 top: 0px;
+	 top: -1px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -4183,7 +4883,7 @@
 }
 
 #{id}label34 {
-	 z-index: 34;
+	 z-index: 33;
 	 width: 50px;
 	 height: 13px;
 	 top: 257px;
@@ -4194,7 +4894,7 @@
 }
 
 #{id}label11 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 87px;
 	 height: 13px;
 	 top: 259px;
@@ -4205,7 +4905,7 @@
 }
 
 #{id}label86 {
-	 z-index: 31;
+	 z-index: 14;
 	 width: 93px;
 	 height: 13px;
 	 top: 284px;
@@ -4216,7 +4916,7 @@
 }
 
 #{id}label85 {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 82px;
 	 height: 13px;
 	 top: 212px;
@@ -4227,7 +4927,7 @@
 }
 
 #{id}label84 {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 98px;
 	 height: 13px;
 	 top: 212px;
@@ -4238,7 +4938,7 @@
 }
 
 #{id}label82 {
-	 z-index: 25;
+	 z-index: 24;
 	 width: 77px;
 	 height: 13px;
 	 top: 167px;
@@ -4249,7 +4949,7 @@
 }
 
 #{id}label81 {
-	 z-index: 24;
+	 z-index: 23;
 	 width: 48px;
 	 height: 13px;
 	 top: 167px;
@@ -4260,7 +4960,7 @@
 }
 
 #{id}label80 {
-	 z-index: 23;
+	 z-index: 22;
 	 width: 28px;
 	 height: 13px;
 	 top: 167px;
@@ -4271,7 +4971,7 @@
 }
 
 #{id}label79 {
-	 z-index: 22;
+	 z-index: 21;
 	 width: 79px;
 	 height: 13px;
 	 top: 122px;
@@ -4282,7 +4982,7 @@
 }
 
 #{id}label78 {
-	 z-index: 21;
+	 z-index: 20;
 	 width: 67px;
 	 height: 13px;
 	 top: 77px;
@@ -4293,7 +4993,7 @@
 }
 
 #{id}label77 {
-	 z-index: 20;
+	 z-index: 19;
 	 width: 75px;
 	 height: 13px;
 	 top: 77px;
@@ -4304,7 +5004,7 @@
 }
 
 #{id}label76 {
-	 z-index: 19;
+	 z-index: 18;
 	 width: 53px;
 	 height: 13px;
 	 top: 77px;
@@ -4315,7 +5015,7 @@
 }
 
 #{id}label75 {
-	 z-index: 18;
+	 z-index: 17;
 	 width: 70px;
 	 height: 13px;
 	 top: 77px;
@@ -4326,7 +5026,7 @@
 }
 
 #{id}label74 {
-	 z-index: 17;
+	 z-index: 16;
 	 width: 118px;
 	 height: 13px;
 	 top: 32px;
@@ -4337,7 +5037,7 @@
 }
 
 #{id}label73 {
-	 z-index: 16;
+	 z-index: 15;
 	 width: 144px;
 	 height: 13px;
 	 top: 32px;
@@ -4349,8 +5049,8 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 3px;
-	 height: 392px;
+	 width: 360px;
+	 height: 390px;
 	 top: 233px;
 	 left: 0px;
 	
@@ -4360,7 +5060,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 3px;
+	 width: 360px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -4371,10 +5071,10 @@
 
 #{id}attPrevVersionCont {
 	 z-index: 2;
-	 width: 3px;
-	 height: 625px;
+	 width: 360px;
+	 height: 623px;
 	 top: 0px;
-	 left: 2px;
+	 left: 474px;
 	
 	 position: absolute;
 	 
@@ -4382,8 +5082,8 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 294px;
-	 height: 281px;
+	 width: 53px;
+	 height: 279px;
 	 top: 0px;
 	 left: 421px;
 	
@@ -4394,7 +5094,7 @@
 #{id}container25 {
 	 z-index: 1;
 	 width: 421px;
-	 height: 281px;
+	 height: 279px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -4404,8 +5104,8 @@
 
 #{id}attCorrCont {
 	 z-index: 2;
-	 width: 2px;
-	 height: 281px;
+	 width: 474px;
+	 height: 279px;
 	 top: 344px;
 	 left: 0px;
 	
@@ -4417,7 +5117,7 @@
 	 z-index: 2;
 	 width: 125px;
 	 height: 22px;
-	 top: 18px;
+	 top: 17px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -4429,7 +5129,7 @@
 }
 
 #{id}container12 {
-	 z-index: 35;
+	 z-index: 34;
 	 width: 150px;
 	 height: 41px;
 	 top: 122px;
@@ -4440,7 +5140,7 @@
 }
 
 #{id}attStaffInfo {
-	 z-index: 34;
+	 z-index: 33;
 	 width: 250px;
 	 height: 22px;
 	 top: 275px;
@@ -4451,7 +5151,7 @@
 }
 
 #{id}attPublicDef {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 22px;
 	 height: 22px;
 	 top: 255px;
@@ -4462,7 +5162,7 @@
 }
 
 #{id}richText26 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -4476,7 +5176,7 @@
 }
 
 #{id}attInactive {
-	 z-index: 31;
+	 z-index: 14;
 	 width: 22px;
 	 height: 22px;
 	 top: 280px;
@@ -4487,7 +5187,7 @@
 }
 
 #{id}button16 {
-	 z-index: 30;
+	 z-index: 29;
 	 width: 125px;
 	 height: 25px;
 	 top: 305px;
@@ -4498,7 +5198,7 @@
 }
 
 #{id}button15 {
-	 z-index: 29;
+	 z-index: 28;
 	 width: 75px;
 	 height: 25px;
 	 top: 305px;
@@ -4509,7 +5209,7 @@
 }
 
 #{id}button14 {
-	 z-index: 28;
+	 z-index: 27;
 	 width: 75px;
 	 height: 25px;
 	 top: 305px;
@@ -4520,7 +5220,7 @@
 }
 
 #{id}attNotes {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 250px;
 	 height: 22px;
 	 top: 230px;
@@ -4531,7 +5231,7 @@
 }
 
 #{id}attReportingComboBox {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 150px;
 	 height: 22px;
 	 top: 230px;
@@ -4542,7 +5242,7 @@
 }
 
 #{id}attEmail {
-	 z-index: 25;
+	 z-index: 24;
 	 width: 260px;
 	 height: 22px;
 	 top: 185px;
@@ -4553,7 +5253,7 @@
 }
 
 #{id}attZip {
-	 z-index: 24;
+	 z-index: 23;
 	 width: 100px;
 	 height: 22px;
 	 top: 185px;
@@ -4564,7 +5264,7 @@
 }
 
 #{id}attState {
-	 z-index: 23;
+	 z-index: 22;
 	 width: 35px;
 	 height: 22px;
 	 top: 185px;
@@ -4575,7 +5275,7 @@
 }
 
 #{id}attAddress {
-	 z-index: 22;
+	 z-index: 21;
 	 width: 250px;
 	 height: 22px;
 	 top: 140px;
@@ -4586,7 +5286,7 @@
 }
 
 #{id}attFax {
-	 z-index: 21;
+	 z-index: 20;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -4597,7 +5297,7 @@
 }
 
 #{id}attAdditional {
-	 z-index: 20;
+	 z-index: 19;
 	 width: 105px;
 	 height: 22px;
 	 top: 95px;
@@ -4608,7 +5308,7 @@
 }
 
 #{id}attExt {
-	 z-index: 19;
+	 z-index: 18;
 	 width: 50px;
 	 height: 22px;
 	 top: 95px;
@@ -4619,7 +5319,7 @@
 }
 
 #{id}attPhone {
-	 z-index: 18;
+	 z-index: 17;
 	 width: 100px;
 	 height: 22px;
 	 top: 95px;
@@ -4630,7 +5330,7 @@
 }
 
 #{id}attFullName {
-	 z-index: 17;
+	 z-index: 16;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -4641,7 +5341,7 @@
 }
 
 #{id}attName {
-	 z-index: 16;
+	 z-index: 15;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -4653,7 +5353,7 @@
 
 #{id}attSpecificSubCont {
 	 z-index: 1;
-	 width: 2px;
+	 width: 474px;
 	 height: 344px;
 	 top: 0px;
 	 left: 0px;
@@ -4664,8 +5364,8 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 2px;
-	 height: 625px;
+	 width: 474px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -4675,10 +5375,10 @@
 
 #{id}attSpecificInfoCont {
 	 z-index: 2;
-	 width: 5px;
-	 height: 625px;
+	 width: 834px;
+	 height: 623px;
 	 top: 0px;
-	 left: 1283px;
+	 left: 454px;
 	
 	 position: absolute;
 	 
@@ -4697,8 +5397,8 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 1283px;
-	 height: 625px;
+	 width: 454px;
+	 height: 623px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -4730,545 +5430,8 @@
 	 
 }
 
-#{id}label33 {
-	 z-index: 8;
-	 width: 21px;
-	 height: 13px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label14 {
-	 z-index: 29;
-	 width: 93px;
-	 height: 13px;
-	 top: 267px;
-	 left: 287px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label13 {
-	 z-index: 25;
-	 width: 82px;
-	 height: 13px;
-	 top: 212px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label12 {
-	 z-index: 24;
-	 width: 98px;
-	 height: 13px;
-	 top: 212px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label10 {
-	 z-index: 23;
-	 width: 77px;
-	 height: 13px;
-	 top: 167px;
-	 left: 150px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label9 {
-	 z-index: 22;
-	 width: 48px;
-	 height: 13px;
-	 top: 167px;
-	 left: 45px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label8 {
-	 z-index: 21;
-	 width: 28px;
-	 height: 13px;
-	 top: 167px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label7 {
-	 z-index: 20;
-	 width: 79px;
-	 height: 13px;
-	 top: 122px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label6 {
-	 z-index: 19;
-	 width: 67px;
-	 height: 13px;
-	 top: 77px;
-	 left: 305px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label5 {
-	 z-index: 18;
-	 width: 75px;
-	 height: 13px;
-	 top: 77px;
-	 left: 190px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label4 {
-	 z-index: 17;
-	 width: 53px;
-	 height: 13px;
-	 top: 77px;
-	 left: 115px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label3 {
-	 z-index: 16;
-	 width: 70px;
-	 height: 13px;
-	 top: 77px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label2 {
-	 z-index: 15;
-	 width: 118px;
-	 height: 13px;
-	 top: 32px;
-	 left: 210px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label1 {
-	 z-index: 14;
-	 width: 144px;
-	 height: 13px;
-	 top: 32px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container11 {
-	 z-index: 2;
-	 width: 3px;
-	 height: 373px;
-	 top: 250px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container10 {
-	 z-index: 1;
-	 width: 3px;
-	 height: 250px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container9 {
-	 z-index: 2;
-	 width: 3px;
-	 height: 623px;
-	 top: 0px;
-	 left: 2px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container8 {
-	 z-index: 2;
-	 width: 294px;
-	 height: 287px;
-	 top: 0px;
-	 left: 432px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container7 {
-	 z-index: 1;
-	 width: 432px;
-	 height: 287px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container6 {
-	 z-index: 2;
-	 width: 2px;
-	 height: 287px;
-	 top: 336px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}cityComboboxGrid {
-	 z-index: 31;
-	 width: 125px;
-	 height: 134px;
-	 top: 162px;
-	 left: 260px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
 #{id}button3.waf-state-hover {
 	 color: rgb(51, 51, 51);
-	 
-}
-
-#{id}button3 {
-	 z-index: 7;
-	 width: 25px;
-	 height: 22px;
-	 top: 18px;
-	 left: 125px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 border-bottom-left-radius: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	 border-top-left-radius: 0px;
-	-moz-border-radius-topleft: 0px;
-	 line-height: 22px;
-	 font-family: WebSymbolsRegular;
-	 font-size: 14px;
-	 color: rgb(153, 153, 153);
-	 
-}
-
-#{id}cityComboBox {
-	 z-index: 7;
-	 width: 125px;
-	 height: 22px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
-	 
-}
-
-#{id}richText4 {
-	 z-index: 30;
-	 width: 415px;
-	 height: 22px;
-	 top: 5px;
-	 left: 0px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 text-align: center;
-	 font-size: 16px;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}assessorInactiveCheckBox {
-	 z-index: 29;
-	 width: 22px;
-	 height: 22px;
-	 top: 263px;
-	 left: 385px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}previousVersionButton {
-	 z-index: 28;
-	 width: 125px;
-	 height: 25px;
-	 top: 295px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}closeAssesorCurrentButton {
-	 z-index: 27;
-	 width: 75px;
-	 height: 25px;
-	 top: 295px;
-	 left: 335px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}submitButton {
-	 z-index: 26;
-	 width: 75px;
-	 height: 25px;
-	 top: 295px;
-	 left: 250px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorNotesField {
-	 z-index: 25;
-	 width: 250px;
-	 height: 55px;
-	 top: 230px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}reportingComboBox {
-	 z-index: 24;
-	 width: 150px;
-	 height: 22px;
-	 top: 230px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorEmailField {
-	 z-index: 23;
-	 width: 260px;
-	 height: 22px;
-	 top: 185px;
-	 left: 150px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorZipField {
-	 z-index: 22;
-	 width: 100px;
-	 height: 22px;
-	 top: 185px;
-	 left: 45px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorStateField {
-	 z-index: 21;
-	 width: 35px;
-	 height: 22px;
-	 top: 185px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorAddressField {
-	 z-index: 20;
-	 width: 250px;
-	 height: 22px;
-	 top: 140px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorFaxField {
-	 z-index: 19;
-	 width: 105px;
-	 height: 22px;
-	 top: 95px;
-	 left: 305px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorMobileField {
-	 z-index: 18;
-	 width: 105px;
-	 height: 22px;
-	 top: 95px;
-	 left: 190px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assesorExtField {
-	 z-index: 17;
-	 width: 50px;
-	 height: 22px;
-	 top: 95px;
-	 left: 115px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorPhoneField {
-	 z-index: 16;
-	 width: 100px;
-	 height: 22px;
-	 top: 95px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorFullNameField {
-	 z-index: 15;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 210px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorNameField {
-	 z-index: 14;
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container5 {
-	 z-index: 1;
-	 width: 2px;
-	 height: 336px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container4 {
-	 z-index: 1;
-	 width: 2px;
-	 height: 623px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container3 {
-	 z-index: 2;
-	 width: 5px;
-	 height: 623px;
-	 top: 0px;
-	 left: 1283px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}assessorFullList {
-	 z-index: 1;
-	 height: 611px;
-	 top: 1px;
-	 left: 5px;
-	 right: -3215px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container2 {
-	 z-index: 31;
-	 width: 150px;
-	 height: 41px;
-	 top: 122px;
-	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}mainAssessorCont {
-	 z-index: 11;
-	 width: 1290px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
 	 
 }
 
@@ -5617,7 +5780,7 @@
 }
 
 #{id}menuBar1 {
-	 z-index: 10;
+	 z-index: 8;
 	 width: 1972px;
 	 height: 45px;
 	 top: 0px;
@@ -5632,7 +5795,7 @@
 #{id}container1 {
 	 z-index: 6;
 	 width: 1290px;
-	 height: 670px;
+	 height: 2000px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -5641,9 +5804,9 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 14;
+	 z-index: 12;
 	 width: 1290px;
-	 height: 625px;
+	 height: 1400px;
 	 top: 45px;
 	 left: 0px;
 	
@@ -5652,10 +5815,10 @@
 }
 
 #{id}AttorneyContainer {
-	 z-index: 0;
+	 z-index: 7;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5663,10 +5826,10 @@
 }
 
 #{id}DHSOfficerContainer {
-	 z-index: 0;
+	 z-index: 6;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5674,10 +5837,10 @@
 }
 
 #{id}JudgeContainer {
-	 z-index: 0;
+	 z-index: 5;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5685,10 +5848,10 @@
 }
 
 #{id}OtherMonitorContainer {
-	 z-index: 0;
+	 z-index: 4;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5696,10 +5859,10 @@
 }
 
 #{id}ProsecutorContainer {
-	 z-index: 0;
+	 z-index: 3;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5707,10 +5870,10 @@
 }
 
 #{id}ProbationOfficerContainer {
-	 z-index: 0;
+	 z-index: 2;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5718,10 +5881,10 @@
 }
 
 #{id}ProbationJursidictionContainer {
-	 z-index: 0;
+	 z-index: 1;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5729,10 +5892,9 @@
 }
 
 #{id}CourtJursidictionContainer {
-	 z-index: 0;
 	 width: 1290px;
 	 height: 625px;
-	 top: 45px;
+	 top: 1400px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5794,7 +5956,7 @@
 }
 
 #{id}SearchReferralButton {
-	 z-index: 12;
+	 z-index: 10;
 	 width: 75px;
 	 height: 44px;
 	 top: 0px;
@@ -5806,7 +5968,7 @@
 }
 
 #{id}searchField {
-	 z-index: 11;
+	 z-index: 9;
 	 width: 134px;
 	 height: 23px;
 	 top: 11px;
@@ -5876,7 +6038,7 @@
 }
 
 #{id}searchOptionsBox {
-	 z-index: 13;
+	 z-index: 11;
 	 width: 100px;
 	 height: 44px;
 	 top: 0px;
@@ -6090,4 +6252,38 @@
 	 
 }
 
+#{id}mainAssessorCont {
+	 z-index: 1;
+	 width: 1290px;
+	 height: 625px;
+	 top: 700px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgba(240, 240, 255, 0.898438);
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-bottom-width: 1px;
+	 
+}
+
+#{id}assessorFullList {
+	 z-index: 2;
+	 width: 1260px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
 
