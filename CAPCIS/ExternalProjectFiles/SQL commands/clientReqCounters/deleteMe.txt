@@ -1,0 +1,157 @@
+CREATE DEFINER=`teamcapcis2`@`%` TRIGGER `capcis`.`clientmonitoringdata_AFTER_INSERT` AFTER INSERT ON `clientmonitoringdata` FOR EACH ROW
+    begin
+		update capcis.clientrequirements 
+		set ClassesCompleted = ClassesCredited + AttendedClass
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements 
+		set ClassesRemaining = remainingClasses(ClassesRequired, ClassesCompleted)
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements 
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			sum(AmountPaid) as totalCount
+			from capcis.clientmonitoringdata
+			where VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set IDEntryAmountPaid = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			sum(AmountCharged) as totalCount
+			from capcis.clientmonitoringdata
+			where VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		)as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set IDEntryAmountCharged = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		set ConsecUnexcusedAbsences = consective_unexcused(ClientRequirementsID)
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where TestingStatus = "Alert"
+			and VoidEntry = false
+			and (TestingResults is null 
+			or TestingResults = "")
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set PendingTests = totalCount
+		where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where TestingResults  like "%Pos%"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set PositiveTests = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where TestingResults = "Negative"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		)as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set NegativeTests = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where TestingResults = "Failure To Submit"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		)as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set FailureToSubmits = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where TestingStatus = "Alert"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set SubmittedTests = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where Absence = "Fin Suspen"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set FinancialSuspensions = totalCount
+		where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where Absence = "Unexcused"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on clientrequirements.ClientRequirementsID = mon.FK_clientrequirements_ClientRequirementsID
+		set clientrequirements.TotalUnexcusedAbsences = mon.totalCount
+        where clientrequirements.ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where Absence = "Excused"
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set ExcusedAbsences = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        
+        update capcis.clientrequirements
+		join 
+		( 	select FK_clientrequirements_ClientRequirementsID,
+			count(*) as totalCount
+			from capcis.clientmonitoringdata
+			where AttendedClass = true
+			and VoidEntry = false
+			group by FK_clientrequirements_ClientRequirementsID
+		) as mon
+		on ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID
+		set AttendedClass = totalCount
+        where ClientRequirementsID = new.FK_clientrequirements_ClientRequirementsID;
+        end
