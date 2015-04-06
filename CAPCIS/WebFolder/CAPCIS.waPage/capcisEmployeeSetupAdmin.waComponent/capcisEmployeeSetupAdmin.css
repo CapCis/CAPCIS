@@ -3,6 +3,50 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}label26 {
+	 z-index: 68;
+	 width: 46px;
+	 height: 13px;
+	 top: 601px;
+	 left: 36px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}jQDateTime3 {
+	 z-index: 68;
+	 width: 136px;
+	 height: 23px;
+	 top: 596px;
+	 left: 87px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label13 {
+	 z-index: 64;
+	 width: 59px;
+	 height: 13px;
+	 top: 123px;
+	 left: 1000px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField7 {
+	 z-index: 64;
+	 width: 130px;
+	 height: 22px;
+	 top: 119px;
+	 left: 1064px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}button3 {
 	 z-index: 61;
 	 width: 112px;
@@ -372,28 +416,6 @@
 	 height: 22px;
 	 top: 498px;
 	 left: 599px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label9 {
-	 z-index: 20;
-	 width: 46px;
-	 height: 13px;
-	 top: 596px;
-	 left: 40px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField9 {
-	 z-index: 20;
-	 width: 130px;
-	 height: 22px;
-	 top: 592px;
-	 left: 91px;
 	
 	 position: absolute;
 	 
