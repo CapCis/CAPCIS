@@ -23,16 +23,77 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		var myBirthday
-		var myHireDate
-		var myTerminationDate
+		var myBirthday = $$(getHtmlId("jQDateTime3"));
+		var myBirthdayFormated = "";
+		var myHireDate = $$(getHtmlId("jQDateTime1"));
+		var myHireDateFormated = "";
+		var myTerminationDate = $$(getHtmlId("jQDateTime2"));
+		var myTerminationDateFormated = "";
 		
-		var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:6,
+		try
+		{
+			if (myBirthday.getValue() != "" && myBirthday.getValue != "undefined")
+			{
+				var myBirthdayDate = myBirthday.getDate();
+				var myBirthDayMonth = (myBirthdayDate.getMonth() + 1).toString();
+				//var myMonth = myDate.getMonth().toString();
+				var myBirthDayDay = myBirthdayDate.getDate().toString();
+				if (myBirthDayDay.length == 1){myBirthDayDay = "0" + myBirthDayDay}
+				if (myBirthDayMonth.length == 1){myBirthDayMonth = "0" + myBirthDayMonth}
+				myBirthdayFormated = (myBirthdayDate.getFullYear() + "-" + myBirthDayMonth + "-" + myBirthDayDay);
+			}
+		}
+		catch(err)
+		{
+			alert("Incorrect Birthday");
+			return;
+		}
+		
+		try
+		{
+			if (myHireDate.getValue() != "" && myHireDate.getValue != "undefined")
+			{
+				var myHDate = myHireDate.getDate();
+				var myHireMonth = (myHDate.getMonth() + 1).toString();
+				//var myMonth = myDate.getMonth().toString();
+				var myHireDay = myHDate.getDate().toString();
+				if (myHireDay.length == 1){myHireDay = "0" + myHireDay}
+				if (myHireMonth.length == 1){myHireMonth = "0" + myHireMonth}
+				myHireDateFormated = (myHDate.getFullYear() + "-" + myHireMonth + "-" + myHireDay);
+			}
+		}
+		catch(err)
+		{
+			alert("Incorrect Hire Date");
+			return;
+		}
+		
+		try
+		{
+			if (myTerminationDate.getValue() != "" && myTerminationDate.getValue != "undefined")
+			{
+				var myTDate = myTerminationDate.getDate();
+				var myTerminationMonth = (myTDate.getMonth() + 1).toString();
+				//var myMonth = myDate.getMonth().toString();
+				var myTerminationDay = myTDate.getDate().toString();
+				if (myTerminationDay.length == 1){myTerminationDay = "0" + myTerminationDay}
+				if (myTerminationMonth.length == 1){myTerminationMonth = "0" + myTerminationMonth}
+				myTerminationDateFormated = (myTDate.getFullYear() + "-" + myTerminationMonth + "-" + myTerminationDay);
+			}
+		}
+		catch(err)
+		{
+			alert("Incorrect Termination Date");
+			return;
+		}
+		
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:6,
 			displayName:$$($comp.id + "_textField2").getValue(),
 			email:$$($comp.id + "_textField11").getValue(),
 			firstName:$$($comp.id + "_textField3").getValue(),
 			middleName:$$($comp.id + "_textField4").getValue(),
-			birthday:myBirthday,
+			lastName:$$($comp.id + "_textField5").getValue(),
+			birthday:myBirthdayFormated,
 			hireDate:myHireDate,
 			initials:$$($comp.id + "_textField18").getValue(),
 			ssn:$$($comp.id + "_textField20").getValue(),
@@ -47,8 +108,19 @@ function constructor (id) {
 			emergencyContactRelation:$$($comp.id + "_textField16").getValue(),
 			emergencyContactPhone:$$($comp.id + "_textField15").getValue(),
 			emergencyContactNotes:$$($comp.id + "_textField14").getValue(),
-			clientNotes:$$($comp.id + "_textField19").getValue(),};
+			clientNotes:$$($comp.id + "_textField19").getValue()};
 		
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+		 				adminDivCombo = result;
+		 				sources.employeeSetupDivisions.sync();
+					},
+					'onError': function(error){
+						alert(error);
+					},
+					'params': [myObject]
+		});	
 	};// @lock
 
 	button3.click = function button3_click (event)// @startlock

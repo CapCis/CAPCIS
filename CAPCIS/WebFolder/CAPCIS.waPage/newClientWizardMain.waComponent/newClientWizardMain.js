@@ -38,7 +38,7 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		
+		debugger;
 		var myTime = $$(getHtmlId("jQDateTime1"));
 		var mySSN = $$(getHtmlId("textField14")).getValue();
 		var myFirstName = $$(getHtmlId("textField15")).getValue();
@@ -49,15 +49,23 @@ function constructor (id) {
 		var myAlias = $$(getHtmlId("textField19")).getValue();
 		var myNotes = $$(getHtmlId("textField3")).getValue();
 		var myDateFormated = "";
-		if (myTime.getValue() != "" && myTime.getValue != "undefined")
+		
+		try
 		{
-			var myDate = myTime.getDate();
-			var myMonth = (myDate.getMonth() + 1).toString();
-			//var myMonth = myDate.getMonth().toString();
-			var myDay = myDate.getDate().toString();
-			if (myDay.length == 1){myDay = "0" + myDay}
-			if (myMonth.length == 1){myMonth = "0" + myMonth}
-			myDateFormated = (myDate.getFullYear() + "-" + myMonth + "-" + myDay);
+			if (myTime.getValue() != "" && myTime.getValue != "undefined")
+			{
+				var myDate = myTime.getDate();
+				var myMonth = (myDate.getMonth() + 1).toString();
+				//var myMonth = myDate.getMonth().toString();
+				var myDay = myDate.getDate().toString();
+				if (myDay.length == 1){myDay = "0" + myDay};
+				if (myMonth.length == 1){myMonth = "0" + myMonth};
+				myDateFormated = (myDate.getFullYear() + "-" + myMonth + "-" + myDay);
+			}
+		}	
+		catch(err)
+		{
+			alert("incorect birthday");
 		}
 		
 		if (mySSN == "" || mySSN.length < 4)

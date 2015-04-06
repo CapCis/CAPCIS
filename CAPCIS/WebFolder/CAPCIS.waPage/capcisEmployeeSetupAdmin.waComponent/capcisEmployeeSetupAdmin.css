@@ -3,6 +3,39 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}richText5 {
+	 width: 83px;
+	 height: 16px;
+	 top: 627px;
+	 left: 359px;
+	
+	 position: absolute;
+	 z-index: 71;
+	 
+}
+
+#{id}richText4 {
+	 width: 83px;
+	 height: 16px;
+	 top: 627px;
+	 left: 94px;
+	
+	 position: absolute;
+	 z-index: 70;
+	 
+}
+
+#{id}richText3 {
+	 z-index: 69;
+	 width: 83px;
+	 height: 16px;
+	 top: 583px;
+	 left: 90px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}label26 {
 	 z-index: 68;
 	 width: 46px;

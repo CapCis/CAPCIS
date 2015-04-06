@@ -94,6 +94,15 @@
 						break;
 			}
 			break;
+			
+		case 5: //Admin Pages
+			switch(myObject.minor){
+				case 0: answer = "";
+						break;
+				
+				default: answer = null;	
+			break;	
+			}
 		default: answer = null;
 			break;
 		
