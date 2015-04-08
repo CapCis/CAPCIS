@@ -7,6 +7,8 @@
 
 exports.setUpdate = function setUpdate(myObject)
 {
+	try
+	{
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	var dBUpdateBuilder = require('dUpdateQuery');
@@ -15,20 +17,26 @@ exports.setUpdate = function setUpdate(myObject)
 	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
 	var myResults = result.getAllRows();
-	connection.close;
+	//connection.close;
 	if(myResults.length > 0)
 	{
 		var updateStatement = dBUpdateBuilder.buildQuery(myObject);
-		var connection = serverUtil.getDBConnection();
+		//var connection = serverUtil.getDBConnection();
 		connection.execute(updateStatement);
 		myResults = ["suc"];
+		return myResults;
 	}
 	else
 	{
+		connection.close;
 		myResults = ["err", "Invalid Token"];
+	}	
 	}
-	
-	return myResults;
+	catch(err)
+	{
+		connection.close;
+		return err;
+	}
 	
 };
 

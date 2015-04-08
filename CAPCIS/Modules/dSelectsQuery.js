@@ -286,7 +286,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.dhsinformation on dhscorrespondence.FK_DhsInformationID = DhsInformationID \
 								LEFT JOIN capcis.fxuseraccounts on dhscorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE dhsinformation.DhsName = '"+myObject.data1+"' AND dhscorrespondence.VoidedDhsCorrespondence = '"+myObject.data2+"' \
-								ORDER BY 1 DESC"
+								ORDER BY 1 DESC";
 						return answer;
 				case 36: answer = 'SELECT *,DATE_FORMAT( bakdhsinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakdhsinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakdhsinformation.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
@@ -326,7 +326,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.judges on judgecorrespondence.FK_JudgeInformationID = JudgesID \
 								LEFT JOIN capcis.fxuseraccounts on judgecorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE judges.Judge = '"+myObject.data1+"' AND judgecorrespondence.VoidedJudgeCorrespondence = "+myObject.data2+" \
-								ORDER BY 1 DESC"
+								ORDER BY 1 DESC";
 						return answer;
 				
 				case 45: answer = 'SELECT *,DATE_FORMAT( bakjudges.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakjudges \
@@ -367,7 +367,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.othermonitors on othermonitorscorrespondence.FK_OtherMonitorsInformationID = OtherMonitorsID \
 								LEFT JOIN capcis.fxuseraccounts on othermonitorscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE othermonitors.OtherMonitors = '"+myObject.data1+"' AND othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence = "+myObject.data2+" \
-								ORDER BY 1 DESC"
+								ORDER BY 1 DESC";
 						return answer;
 				
 				case 54: answer = 'SELECT *,DATE_FORMAT( bakothermonitors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakothermonitors \
@@ -446,7 +446,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.poinformation on pocorrespondance.FK_POInformationID = POInformationID \
 								LEFT JOIN capcis.fxuseraccounts on pocorrespondance.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE poinformation.POInformationID = '"+myObject.data1+"' AND pocorrespondance.VoidedPOCorrespondence = "+myObject.data2+" \
-								ORDER BY 1 DESC"
+								ORDER BY 1 DESC";
 						return answer;		
 				
 				case 72: answer = 'SELECT *,DATE_FORMAT( bakpoinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakpoinformation \
@@ -487,7 +487,7 @@ exports.buildQuery = function buildQuery(myObject)
 								LEFT JOIN capcis.prosecutors on prosecutorcorrespondance.FK_prosecutors_ProsecutorsID = ProsecutorsID \
 								LEFT JOIN capcis.fxuseraccounts on prosecutorcorrespondance.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE prosecutors.ProsecutorsID = '"+myObject.data1+"' AND prosecutorcorrespondance.VoidedProsecutorCorrespondence = "+myObject.data2+" \
-								ORDER BY 1 DESC"
+								ORDER BY 1 DESC";
 						return answer;
 				
 				case 81: answer = 'SELECT *,DATE_FORMAT( bakprosecutors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakprosecutors \
@@ -618,10 +618,10 @@ exports.buildQuery = function buildQuery(myObject)
 			switch(myObject.minor){
 				case 0 : 	
 							
-							var myLastInit = ""
-							var myFirstInit = ""
-							var myGen = ""							
-							var myGenAlias = ""
+							var myLastInit = "";
+							var myFirstInit = "";
+							var myGen = "";							
+							var myGenAlias = "";
 							
 							//first last initial search
 							if (myObject.postFirstName != "")
@@ -647,7 +647,7 @@ exports.buildQuery = function buildQuery(myObject)
 							}
 							else
 							{
-								myGen = "l33t"
+								myGen = "l33t";
 							}
 							if (myObject.postAlias != "")
 							{
@@ -655,7 +655,7 @@ exports.buildQuery = function buildQuery(myObject)
 							}
 							else
 							{
-								myGenAlias = "l33t"
+								myGenAlias = "l33t";
 							}
 							
 							
@@ -705,12 +705,14 @@ exports.buildQuery = function buildQuery(myObject)
 			return answer;
 		case 5: //admin
 			switch(myObject.minor){
-				case 0 : answer = "select DivisionInformationID, DivisionAbbreviation, FK_FxUserAccountsID, FXUserDivisionLinkage_ID \
+				case 0 : answer = "SELECT DivisionInformationID, DivisionAbbreviation, FK_FxUserAccountsID, FXUserDivisionLinkage_ID \
 							from fxuserdivisionlinkage left join divisioninformation on FK_DivisionInformationID = DivisionInformationID \
-							where FK_FxUserAccountsID = '"+myObject.data1+"';"
-				return answer;
+							where FK_FxUserAccountsID = '"+myObject.data1+"'";
+						return answer;
+				case 1 : answer = "SELECT * FROM employeeinformation ORDER BY EmployeeInformationID ASC";
+						return answer;
 		
-			default:answer = null;
+				default:answer = null;
 						return answer;
 			}
 			return answer;

@@ -110,11 +110,10 @@ function constructor (id) {
 			emergencyContactNotes:$$($comp.id + "_textField14").getValue(),
 			clientNotes:$$($comp.id + "_textField19").getValue()};
 		
-		rpcDSelects.getSelectAsync({
+		rpcDUpdate.setUpdate({
 		 			'onSuccess': function(result){
 		 				debugger;
-		 				adminDivCombo = result;
-		 				sources.employeeSetupDivisions.sync();
+		 				alert("Record Updated");
 					},
 					'onError': function(error){
 						alert(error);
@@ -131,12 +130,12 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
-		var myUserId = sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID;
-		var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:myUserId};
+		var selectedUserId = sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID;
+		var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:selectedUserId};
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
-		 				adminDivCombo = result;
+		 				employeeSetupDivisions = result;
 		 				sources.employeeSetupDivisions.sync();
 					},
 					'onError': function(error){
@@ -154,11 +153,11 @@ function constructor (id) {
 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
-		 				var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:1,data1:myUserId};
+		 				var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:myUserId};
 						rpcDSelects.getSelectAsync({
 		 				'onSuccess': function(comboResult){
 		 						debugger;
-		 						adminDivCombo = comboResult;
+		 						employeeSetupDivisions = comboResult;
 		 						sources.employeeSetupDivisions.sync();
 							},
 							'onError': function(error){
@@ -190,11 +189,11 @@ function constructor (id) {
 	
 	
 	
-	var myEmployeeInfoObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:7};
+	var myEmployeeInfoObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:1};
 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
-		 				adminDivCombo = result;
+		 				employeeSetupEmployeeInfo = result;
 		 				sources.employeeSetupEmployeeInfo.sync();
 					},
 					'onError': function(error){

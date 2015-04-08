@@ -4,24 +4,24 @@
 */
 
 #{id}richText5 {
+	 z-index: 71;
 	 width: 83px;
 	 height: 16px;
 	 top: 627px;
 	 left: 359px;
 	
 	 position: absolute;
-	 z-index: 71;
 	 
 }
 
 #{id}richText4 {
+	 z-index: 70;
 	 width: 83px;
 	 height: 16px;
 	 top: 627px;
 	 left: 94px;
 	
 	 position: absolute;
-	 z-index: 70;
 	 
 }
 
@@ -38,10 +38,10 @@
 
 #{id}label26 {
 	 z-index: 68;
-	 width: 46px;
-	 height: 13px;
-	 top: 601px;
-	 left: 36px;
+	 width: 43px;
+	 height: 16px;
+	 top: 599px;
+	 left: 39px;
 	
 	 position: absolute;
 	 
@@ -61,8 +61,8 @@
 #{id}label13 {
 	 z-index: 64;
 	 width: 59px;
-	 height: 13px;
-	 top: 123px;
+	 height: 16px;
+	 top: 122px;
 	 left: 1000px;
 	
 	 position: absolute;
@@ -148,10 +148,10 @@
 
 #{id}label25 {
 	 z-index: 52;
-	 width: 95px;
-	 height: 13px;
-	 top: 645px;
-	 left: 256px;
+	 width: 85px;
+	 height: 16px;
+	 top: 643px;
+	 left: 266px;
 	
 	 position: absolute;
 	 
@@ -170,10 +170,10 @@
 
 #{id}label24 {
 	 z-index: 50;
-	 width: 51px;
-	 height: 13px;
-	 top: 645px;
-	 left: 34px;
+	 width: 47px;
+	 height: 16px;
+	 top: 643px;
+	 left: 38px;
 	
 	 position: absolute;
 	 
@@ -192,10 +192,10 @@
 
 #{id}label22 {
 	 z-index: 46;
-	 width: 17px;
-	 height: 13px;
-	 top: 594px;
-	 left: 578px;
+	 width: 18px;
+	 height: 16px;
+	 top: 593px;
+	 left: 577px;
 	
 	 position: absolute;
 	 
@@ -214,10 +214,10 @@
 
 #{id}label21 {
 	 z-index: 44;
-	 width: 28px;
-	 height: 13px;
-	 top: 549px;
-	 left: 566px;
+	 width: 24px;
+	 height: 16px;
+	 top: 548px;
+	 left: 570px;
 	
 	 position: absolute;
 	 
@@ -236,10 +236,10 @@
 
 #{id}label20 {
 	 z-index: 42;
-	 width: 22px;
-	 height: 13px;
-	 top: 498px;
-	 left: 328px;
+	 width: 21px;
+	 height: 16px;
+	 top: 497px;
+	 left: 329px;
 	
 	 position: absolute;
 	 
@@ -258,10 +258,10 @@
 
 #{id}label19 {
 	 z-index: 40;
-	 width: 32px;
-	 height: 13px;
-	 top: 757px;
-	 left: 35px;
+	 width: 29px;
+	 height: 16px;
+	 top: 756px;
+	 left: 38px;
 	
 	 position: absolute;
 	 
@@ -280,10 +280,10 @@
 
 #{id}label18 {
 	 z-index: 38;
-	 width: 37px;
-	 height: 13px;
-	 top: 455px;
-	 left: 311px;
+	 width: 33px;
+	 height: 16px;
+	 top: 454px;
+	 left: 315px;
 	
 	 position: absolute;
 	 
@@ -302,10 +302,10 @@
 
 #{id}label17 {
 	 z-index: 36;
-	 width: 71px;
-	 height: 13px;
-	 top: 550px;
-	 left: 281px;
+	 width: 62px;
+	 height: 16px;
+	 top: 549px;
+	 left: 290px;
 	
 	 position: absolute;
 	 
@@ -324,10 +324,10 @@
 
 #{id}label16 {
 	 z-index: 34;
-	 width: 152px;
-	 height: 13px;
-	 top: 504px;
-	 left: 780px;
+	 width: 137px;
+	 height: 16px;
+	 top: 503px;
+	 left: 795px;
 	
 	 position: absolute;
 	 
@@ -346,10 +346,10 @@
 
 #{id}label15 {
 	 z-index: 32;
-	 width: 142px;
-	 height: 13px;
-	 top: 555px;
-	 left: 790px;
+	 width: 127px;
+	 height: 16px;
+	 top: 554px;
+	 left: 805px;
 	
 	 position: absolute;
 	 
@@ -368,10 +368,10 @@
 
 #{id}label14 {
 	 z-index: 30;
-	 width: 139px;
-	 height: 13px;
-	 top: 640px;
-	 left: 790px;
+	 width: 126px;
+	 height: 16px;
+	 top: 638px;
+	 left: 803px;
 	
 	 position: absolute;
 	 
@@ -390,10 +390,10 @@
 
 #{id}label12 {
 	 z-index: 26;
-	 width: 140px;
-	 height: 13px;
-	 top: 457px;
-	 left: 791px;
+	 width: 125px;
+	 height: 16px;
+	 top: 456px;
+	 left: 806px;
 	
 	 position: absolute;
 	 
@@ -412,10 +412,10 @@
 
 #{id}label11 {
 	 z-index: 24;
-	 width: 30px;
-	 height: 13px;
-	 top: 394px;
-	 left: 583px;
+	 width: 27px;
+	 height: 16px;
+	 top: 393px;
+	 left: 586px;
 	
 	 position: absolute;
 	 
@@ -434,10 +434,10 @@
 
 #{id}label10 {
 	 z-index: 22;
-	 width: 21px;
-	 height: 13px;
-	 top: 502px;
-	 left: 573px;
+	 width: 22px;
+	 height: 16px;
+	 top: 501px;
+	 left: 572px;
 	
 	 position: absolute;
 	 
@@ -456,10 +456,10 @@
 
 #{id}label8 {
 	 z-index: 18;
-	 width: 44px;
-	 height: 13px;
-	 top: 456px;
-	 left: 549px;
+	 width: 40px;
+	 height: 16px;
+	 top: 455px;
+	 left: 553px;
 	
 	 position: absolute;
 	 
@@ -478,10 +478,10 @@
 
 #{id}label6 {
 	 z-index: 14;
-	 width: 93px;
-	 height: 13px;
-	 top: 595px;
-	 left: 258px;
+	 width: 84px;
+	 height: 16px;
+	 top: 594px;
+	 left: 267px;
 	
 	 position: absolute;
 	 
@@ -500,10 +500,10 @@
 
 #{id}label5 {
 	 z-index: 12;
-	 width: 58px;
-	 height: 13px;
-	 top: 547px;
-	 left: 29px;
+	 width: 52px;
+	 height: 16px;
+	 top: 546px;
+	 left: 35px;
 	
 	 position: absolute;
 	 
@@ -522,10 +522,10 @@
 
 #{id}label4 {
 	 z-index: 10;
-	 width: 73px;
-	 height: 13px;
-	 top: 498px;
-	 left: 13px;
+	 width: 66px;
+	 height: 16px;
+	 top: 497px;
+	 left: 20px;
 	
 	 position: absolute;
 	 
@@ -544,10 +544,10 @@
 
 #{id}label3 {
 	 z-index: 8;
-	 width: 59px;
-	 height: 13px;
-	 top: 456px;
-	 left: 27px;
+	 width: 54px;
+	 height: 16px;
+	 top: 455px;
+	 left: 32px;
 	
 	 position: absolute;
 	 
@@ -566,10 +566,10 @@
 
 #{id}label2 {
 	 z-index: 6;
-	 width: 75px;
-	 height: 13px;
-	 top: 393px;
-	 left: 178px;
+	 width: 70px;
+	 height: 16px;
+	 top: 392px;
+	 left: 183px;
 	
 	 position: absolute;
 	 
@@ -589,8 +589,8 @@
 #{id}label1 {
 	 z-index: 4;
 	 width: 59px;
-	 height: 13px;
-	 top: 394px;
+	 height: 16px;
+	 top: 393px;
 	 left: 26px;
 	
 	 position: absolute;
