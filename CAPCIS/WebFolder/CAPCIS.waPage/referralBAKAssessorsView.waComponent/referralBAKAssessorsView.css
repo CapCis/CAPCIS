@@ -4,325 +4,326 @@
 */
 
 #{id}closeAssesorPreviousButton {
+	 z-index: 35;
 	 width: 75px;
 	 height: 25px;
 	 top: 335px;
 	 left: 335px;
 	
 	 position: absolute;
-	 z-index: 35;
 	 
 }
 
 #{id}textField27 {
+	 z-index: 34;
 	 width: 150px;
 	 height: 22px;
 	 top: 184px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}label16 {
+	 z-index: 34;
 	 width: 21px;
 	 height: 13px;
 	 top: 166px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 34;
 	 
 }
 
 #{id}textField26 {
+	 z-index: 32;
 	 width: 150px;
 	 height: 22px;
 	 top: 275px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}label15 {
+	 z-index: 32;
 	 width: 98px;
 	 height: 13px;
 	 top: 257px;
 	 left: 260px;
 	
 	 position: absolute;
-	 z-index: 32;
 	 
 }
 
 #{id}checkbox2 {
+	 z-index: 30;
 	 width: 22px;
 	 height: 22px;
 	 top: 308px;
 	 left: 385px;
 	
 	 position: absolute;
-	 z-index: 30;
 	 
 }
 
 #{id}label14 {
+	 z-index: 30;
 	 width: 93px;
 	 height: 13px;
 	 top: 312px;
 	 left: 287px;
 	
 	 position: absolute;
-	 z-index: 30;
 	 
 }
 
 #{id}textField25 {
+	 z-index: 28;
 	 width: 250px;
 	 height: 55px;
 	 top: 275px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 28;
 	 
 }
 
 #{id}label13 {
+	 z-index: 28;
 	 width: 82px;
 	 height: 13px;
 	 top: 257px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 28;
 	 
 }
 
 #{id}textField24 {
+	 z-index: 26;
 	 width: 260px;
 	 height: 22px;
 	 top: 230px;
 	 left: 150px;
 	
 	 position: absolute;
-	 z-index: 26;
 	 
 }
 
 #{id}label12 {
+	 z-index: 26;
 	 width: 77px;
 	 height: 13px;
 	 top: 212px;
 	 left: 150px;
 	
 	 position: absolute;
-	 z-index: 26;
 	 
 }
 
 #{id}textField23 {
+	 z-index: 24;
 	 width: 100px;
 	 height: 22px;
 	 top: 230px;
 	 left: 45px;
 	
 	 position: absolute;
-	 z-index: 24;
 	 
 }
 
 #{id}label11 {
+	 z-index: 24;
 	 width: 48px;
 	 height: 13px;
 	 top: 212px;
 	 left: 45px;
 	
 	 position: absolute;
-	 z-index: 24;
 	 
 }
 
 #{id}textField22 {
+	 z-index: 22;
 	 width: 35px;
 	 height: 22px;
 	 top: 230px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 22;
 	 
 }
 
 #{id}label10 {
+	 z-index: 22;
 	 width: 28px;
 	 height: 13px;
 	 top: 212px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 22;
 	 
 }
 
 #{id}textField21 {
+	 z-index: 20;
 	 width: 250px;
 	 height: 22px;
 	 top: 185px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 20;
 	 
 }
 
 #{id}label9 {
+	 z-index: 20;
 	 width: 79px;
 	 height: 13px;
 	 top: 167px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 20;
 	 
 }
 
 #{id}textField20 {
+	 z-index: 18;
 	 width: 105px;
 	 height: 22px;
 	 top: 140px;
 	 left: 305px;
 	
 	 position: absolute;
-	 z-index: 18;
 	 
 }
 
 #{id}label8 {
+	 z-index: 18;
 	 width: 67px;
 	 height: 13px;
 	 top: 122px;
 	 left: 305px;
 	
 	 position: absolute;
-	 z-index: 18;
 	 
 }
 
 #{id}textField19 {
+	 z-index: 16;
 	 width: 105px;
 	 height: 22px;
 	 top: 140px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 16;
 	 
 }
 
 #{id}label7 {
+	 z-index: 16;
 	 width: 75px;
 	 height: 13px;
 	 top: 122px;
 	 left: 190px;
 	
 	 position: absolute;
-	 z-index: 16;
 	 
 }
 
 #{id}textField18 {
+	 z-index: 14;
 	 width: 50px;
 	 height: 22px;
 	 top: 140px;
 	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 14;
 	 
 }
 
 #{id}label6 {
+	 z-index: 14;
 	 width: 53px;
 	 height: 13px;
 	 top: 122px;
 	 left: 115px;
 	
 	 position: absolute;
-	 z-index: 14;
 	 
 }
 
 #{id}textField17 {
+	 z-index: 12;
 	 width: 100px;
 	 height: 22px;
 	 top: 140px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 12;
 	 
 }
 
 #{id}label5 {
+	 z-index: 12;
 	 width: 70px;
 	 height: 13px;
 	 top: 122px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 12;
 	 
 }
 
 #{id}textField16 {
+	 z-index: 10;
 	 width: 200px;
 	 height: 22px;
 	 top: 95px;
 	 left: 210px;
 	
 	 position: absolute;
-	 z-index: 10;
 	 
 }
 
 #{id}label4 {
+	 z-index: 10;
 	 width: 118px;
 	 height: 13px;
 	 top: 77px;
 	 left: 210px;
 	
 	 position: absolute;
-	 z-index: 10;
 	 
 }
 
 #{id}textField15 {
+	 z-index: 8;
 	 width: 200px;
 	 height: 22px;
 	 top: 95px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 8;
 	 
 }
 
 #{id}label3 {
+	 z-index: 8;
 	 width: 144px;
 	 height: 13px;
 	 top: 77px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 8;
 	 
 }
 
 #{id}richText14 {
+	 z-index: 6;
 	 width: 365px;
 	 height: 22px;
 	 top: 5px;
@@ -333,11 +334,11 @@
 	 text-align: center;
 	 font-size: 16px;
 	 color: rgb(0, 27, 90);
-	 z-index: 6;
 	 
 }
 
 #{id}textField14 {
+	 z-index: 5;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -345,22 +346,22 @@
 	
 	 position: absolute;
 	 color: rgb(255, 0, 0);
-	 z-index: 5;
 	 
 }
 
 #{id}label2 {
+	 z-index: 5;
 	 width: 101px;
 	 height: 13px;
 	 top: 32px;
 	 left: 8px;
 	
 	 position: absolute;
-	 z-index: 5;
 	 
 }
 
 #{id}textField13 {
+	 z-index: 3;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -368,18 +369,17 @@
 	
 	 position: absolute;
 	 color: rgb(0, 0, 255);
-	 z-index: 3;
 	 
 }
 
 #{id}label1 {
+	 z-index: 3;
 	 width: 59px;
 	 height: 13px;
 	 top: 32px;
 	 left: 210px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
