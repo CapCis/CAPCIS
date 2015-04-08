@@ -4,7 +4,7 @@
 */
 
 #{id}label22 {
-	 z-index: 25;
+	 z-index: 22;
 	 width: 19px;
 	 height: 13px;
 	 top: 122px;
@@ -15,7 +15,7 @@
 }
 
 #{id}label20 {
-	 z-index: 24;
+	 z-index: 21;
 	 width: 75px;
 	 height: 13px;
 	 top: 122px;
@@ -26,7 +26,7 @@
 }
 
 #{id}label11 {
-	 z-index: 22;
+	 z-index: 30;
 	 width: 70px;
 	 height: 13px;
 	 top: 122px;
@@ -164,7 +164,7 @@
 }
 
 #{id}textField2 {
-	 z-index: 36;
+	 z-index: 30;
 	 width: 240px;
 	 height: 22px;
 	 top: 275px;
@@ -175,7 +175,7 @@
 }
 
 #{id}label34 {
-	 z-index: 36;
+	 z-index: 30;
 	 width: 61px;
 	 height: 13px;
 	 top: 257px;
@@ -186,7 +186,7 @@
 }
 
 #{id}label31 {
-	 z-index: 33;
+	 z-index: 30;
 	 width: 21px;
 	 height: 13px;
 	 top: 166px;
@@ -197,7 +197,7 @@
 }
 
 #{id}label30 {
-	 z-index: 32;
+	 z-index: 29;
 	 width: 98px;
 	 height: 13px;
 	 top: 257px;
@@ -208,7 +208,7 @@
 }
 
 #{id}label29 {
-	 z-index: 31;
+	 z-index: 28;
 	 width: 76px;
 	 height: 13px;
 	 top: 312px;
@@ -219,7 +219,7 @@
 }
 
 #{id}label28 {
-	 z-index: 30;
+	 z-index: 27;
 	 width: 65px;
 	 height: 13px;
 	 top: 302px;
@@ -230,7 +230,7 @@
 }
 
 #{id}label27 {
-	 z-index: 29;
+	 z-index: 26;
 	 width: 77px;
 	 height: 13px;
 	 top: 212px;
@@ -241,7 +241,7 @@
 }
 
 #{id}label26 {
-	 z-index: 28;
+	 z-index: 25;
 	 width: 48px;
 	 height: 13px;
 	 top: 212px;
@@ -252,7 +252,7 @@
 }
 
 #{id}label25 {
-	 z-index: 27;
+	 z-index: 24;
 	 width: 28px;
 	 height: 13px;
 	 top: 212px;
@@ -263,7 +263,7 @@
 }
 
 #{id}label24 {
-	 z-index: 26;
+	 z-index: 23;
 	 width: 79px;
 	 height: 13px;
 	 top: 167px;
@@ -274,7 +274,7 @@
 }
 
 #{id}label21 {
-	 z-index: 23;
+	 z-index: 20;
 	 width: 53px;
 	 height: 13px;
 	 top: 122px;
@@ -285,7 +285,7 @@
 }
 
 #{id}label19 {
-	 z-index: 21;
+	 z-index: 31;
 	 width: 118px;
 	 height: 13px;
 	 top: 77px;
@@ -296,7 +296,7 @@
 }
 
 #{id}label18 {
-	 z-index: 20;
+	 z-index: 32;
 	 width: 127px;
 	 height: 13px;
 	 top: 77px;
@@ -307,7 +307,7 @@
 }
 
 #{id}label17 {
-	 z-index: 18;
+	 z-index: 34;
 	 width: 101px;
 	 height: 13px;
 	 top: 32px;
@@ -318,7 +318,7 @@
 }
 
 #{id}label16 {
-	 z-index: 17;
+	 z-index: 36;
 	 width: 59px;
 	 height: 13px;
 	 top: 32px;
@@ -461,7 +461,7 @@
 }
 
 #{id}textField27 {
-	 z-index: 33;
+	 z-index: 30;
 	 width: 150px;
 	 height: 22px;
 	 top: 184px;
@@ -472,7 +472,7 @@
 }
 
 #{id}textField26 {
-	 z-index: 32;
+	 z-index: 29;
 	 width: 150px;
 	 height: 22px;
 	 top: 275px;
@@ -483,7 +483,7 @@
 }
 
 #{id}checkbox2 {
-	 z-index: 31;
+	 z-index: 28;
 	 width: 22px;
 	 height: 22px;
 	 top: 308px;
@@ -494,7 +494,7 @@
 }
 
 #{id}textField25 {
-	 z-index: 30;
+	 z-index: 27;
 	 width: 240px;
 	 height: 40px;
 	 top: 320px;
@@ -505,7 +505,7 @@
 }
 
 #{id}textField24 {
-	 z-index: 29;
+	 z-index: 26;
 	 width: 260px;
 	 height: 22px;
 	 top: 230px;
@@ -516,7 +516,7 @@
 }
 
 #{id}textField23 {
-	 z-index: 28;
+	 z-index: 25;
 	 width: 100px;
 	 height: 22px;
 	 top: 230px;
@@ -527,7 +527,7 @@
 }
 
 #{id}textField22 {
-	 z-index: 27;
+	 z-index: 24;
 	 width: 35px;
 	 height: 22px;
 	 top: 230px;
@@ -538,7 +538,7 @@
 }
 
 #{id}textField21 {
-	 z-index: 26;
+	 z-index: 23;
 	 width: 250px;
 	 height: 22px;
 	 top: 185px;
@@ -549,7 +549,7 @@
 }
 
 #{id}textField20 {
-	 z-index: 25;
+	 z-index: 22;
 	 width: 105px;
 	 height: 22px;
 	 top: 140px;
@@ -560,7 +560,7 @@
 }
 
 #{id}textField19 {
-	 z-index: 24;
+	 z-index: 21;
 	 width: 105px;
 	 height: 22px;
 	 top: 140px;
@@ -571,7 +571,7 @@
 }
 
 #{id}textField18 {
-	 z-index: 23;
+	 z-index: 20;
 	 width: 50px;
 	 height: 22px;
 	 top: 140px;
@@ -582,7 +582,7 @@
 }
 
 #{id}textField17 {
-	 z-index: 22;
+	 z-index: 31;
 	 width: 100px;
 	 height: 22px;
 	 top: 140px;
@@ -593,7 +593,7 @@
 }
 
 #{id}textField16 {
-	 z-index: 21;
+	 z-index: 32;
 	 width: 200px;
 	 height: 22px;
 	 top: 95px;
@@ -604,7 +604,7 @@
 }
 
 #{id}textField15 {
-	 z-index: 20;
+	 z-index: 33;
 	 width: 200px;
 	 height: 22px;
 	 top: 95px;
@@ -615,7 +615,7 @@
 }
 
 #{id}richText14 {
-	 z-index: 19;
+	 z-index: 34;
 	 width: 365px;
 	 height: 22px;
 	 top: 5px;
@@ -630,7 +630,7 @@
 }
 
 #{id}textField14 {
-	 z-index: 18;
+	 z-index: 35;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -642,7 +642,7 @@
 }
 
 #{id}textField13 {
-	 z-index: 17;
+	 z-index: 36;
 	 width: 200px;
 	 height: 22px;
 	 top: 50px;
@@ -655,7 +655,7 @@
 
 #{id}container11 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 3px;
 	 height: 380px;
 	 top: 243px;
 	 left: 0px;
@@ -692,7 +692,7 @@
 
 #{id}container10 {
 	 z-index: 1;
-	 width: 4px;
+	 width: 3px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -703,10 +703,10 @@
 
 #{id}container9 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 3px;
 	 height: 623px;
 	 top: 0px;
-	 left: 2px;
+	 left: 726px;
 	
 	 position: absolute;
 	 
@@ -772,7 +772,7 @@
 
 #{id}container8 {
 	 z-index: 2;
-	 width: -421px;
+	 width: 303px;
 	 height: 287px;
 	 top: 0px;
 	 left: 423px;
@@ -854,7 +854,7 @@
 
 #{id}container6 {
 	 z-index: 2;
-	 width: 2px;
+	 width: 726px;
 	 height: 287px;
 	 top: 336px;
 	 left: 0px;
@@ -913,7 +913,7 @@
 
 #{id}container5 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 726px;
 	 height: 336px;
 	 top: 0px;
 	 left: 0px;
@@ -924,7 +924,7 @@
 
 #{id}container4 {
 	 z-index: 1;
-	 width: 2px;
+	 width: 726px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -935,10 +935,10 @@
 
 #{id}container3 {
 	 z-index: 2;
-	 width: 6px;
+	 width: 729px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1282px;
+	 left: 559px;
 	
 	 position: absolute;
 	 
@@ -946,7 +946,7 @@
 
 #{id}container1 {
 	 z-index: 1;
-	 width: 1282px;
+	 width: 559px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -1145,7 +1145,7 @@
 }
 
 #{id}closeJudgePreviousButton {
-	 z-index: 34;
+	 z-index: 30;
 	 width: 75px;
 	 height: 25px;
 	 top: 335px;

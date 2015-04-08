@@ -651,7 +651,7 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 3px;
+	 width: 615px;
 	 height: 392px;
 	 top: 233px;
 	 left: 0px;
@@ -676,7 +676,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 3px;
+	 width: 615px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -828,7 +828,7 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 1283px;
+	 width: 671px;
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
@@ -874,7 +874,7 @@
 
 #{id}attPrevVersionCont {
 	 z-index: 2;
-	 width: 3px;
+	 width: 615px;
 	 height: 625px;
 	 top: 0px;
 	 left: 2px;
@@ -885,10 +885,10 @@
 
 #{id}attSpecificInfoCont {
 	 z-index: 2;
-	 width: 5px;
+	 width: 617px;
 	 height: 625px;
 	 top: 0px;
-	 left: 1283px;
+	 left: 671px;
 	
 	 position: absolute;
 	 
