@@ -23,12 +23,13 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+		
 		var myBirthday = $$(getHtmlId("jQDateTime3"));
-		var myBirthdayFormated = "";
+		var myBirthdayFormated = 'NULL';
 		var myHireDate = $$(getHtmlId("jQDateTime1"));
-		var myHireDateFormated = "";
+		var myHireDateFormated = 'NULL';
 		var myTerminationDate = $$(getHtmlId("jQDateTime2"));
-		var myTerminationDateFormated = "";
+		var myTerminationDateFormated = 'NULL';
 		
 		try
 		{
@@ -40,7 +41,7 @@ function constructor (id) {
 				var myBirthDayDay = myBirthdayDate.getDate().toString();
 				if (myBirthDayDay.length == 1){myBirthDayDay = "0" + myBirthDayDay}
 				if (myBirthDayMonth.length == 1){myBirthDayMonth = "0" + myBirthDayMonth}
-				myBirthdayFormated = (myBirthdayDate.getFullYear() + "-" + myBirthDayMonth + "-" + myBirthDayDay);
+				myBirthdayFormated = ("'" +myBirthdayDate.getFullYear() + "-" + myBirthDayMonth + "-" + myBirthDayDay + "'");
 			}
 		}
 		catch(err)
@@ -59,7 +60,7 @@ function constructor (id) {
 				var myHireDay = myHDate.getDate().toString();
 				if (myHireDay.length == 1){myHireDay = "0" + myHireDay}
 				if (myHireMonth.length == 1){myHireMonth = "0" + myHireMonth}
-				myHireDateFormated = (myHDate.getFullYear() + "-" + myHireMonth + "-" + myHireDay);
+				myHireDateFormated = ("'" + myHDate.getFullYear() + "-" + myHireMonth + "-" + myHireDay + "'");
 			}
 		}
 		catch(err)
@@ -78,7 +79,7 @@ function constructor (id) {
 				var myTerminationDay = myTDate.getDate().toString();
 				if (myTerminationDay.length == 1){myTerminationDay = "0" + myTerminationDay}
 				if (myTerminationMonth.length == 1){myTerminationMonth = "0" + myTerminationMonth}
-				myTerminationDateFormated = (myTDate.getFullYear() + "-" + myTerminationMonth + "-" + myTerminationDay);
+				myTerminationDateFormated = ("'" + myTDate.getFullYear() + "-" + myTerminationMonth + "-" + myTerminationDay + "'");
 			}
 		}
 		catch(err)
@@ -87,19 +88,19 @@ function constructor (id) {
 			return;
 		}
 		
-		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:6,
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,
 			displayName:$$($comp.id + "_textField2").getValue(),
 			email:$$($comp.id + "_textField11").getValue(),
 			firstName:$$($comp.id + "_textField3").getValue(),
-			middleName:$$($comp.id + "_textField4").getValue(),
+			middleName:$$($comp.id + "_textField9").getValue(),
 			lastName:$$($comp.id + "_textField5").getValue(),
 			birthday:myBirthdayFormated,
-			hireDate:myHireDate,
+			hireDate:myHireDateFormated,
 			initials:$$($comp.id + "_textField18").getValue(),
 			ssn:$$($comp.id + "_textField20").getValue(),
 			homePhone:$$($comp.id + "_textField17").getValue(),
 			additionalPhone:$$($comp.id + "_textField6").getValue(),
-			terminationDate:myTerminationDate,
+			terminationDate:myTerminationDateFormated,
 			address:$$($comp.id + "_textField8").getValue(),
 			city:$$($comp.id + "_textField10").getValue(),
 			state:$$($comp.id + "_textField21").getValue(),
@@ -108,9 +109,11 @@ function constructor (id) {
 			emergencyContactRelation:$$($comp.id + "_textField16").getValue(),
 			emergencyContactPhone:$$($comp.id + "_textField15").getValue(),
 			emergencyContactNotes:$$($comp.id + "_textField14").getValue(),
-			clientNotes:$$($comp.id + "_textField19").getValue()};
-		
-		rpcDUpdate.setUpdate({
+			clientNotes:$$($comp.id + "_textField19").getValue(),
+			employeeInfoId:sources.employeeSetupEmployeeInfo.EmployeeInformationID};
+			
+		debugger;
+		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
 		 				alert("Record Updated");
@@ -124,7 +127,18 @@ function constructor (id) {
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
-		var selectedID = sources.employeeSetupDivisions.FXUserDivisionLinkage_ID
+		debugger;		
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,divID:sources.employeeSetupDivisions.FXUserDivisionLinkage_ID};		
+		rpcDDelete.setDeleteAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+		 				alert("Record Updated");
+					},
+					'onError': function(error){
+						alert(error);
+					},
+					'params': [myObject]
+		});	
 		//rpcDDelete this selectedID
 	};// @lock
 
@@ -137,6 +151,9 @@ function constructor (id) {
 		 				debugger;
 		 				employeeSetupDivisions = result;
 		 				sources.employeeSetupDivisions.sync();
+		 				$$(getHtmlId("jQDateTime1")).setValue(sources.employeeSetupEmployeeInfo.HireDate);
+		 				$$(getHtmlId("jQDateTime2")).setValue(sources.employeeSetupEmployeeInfo.TerminationDate);
+		 				$$(getHtmlId("jQDateTime3")).setValue(sources.employeeSetupEmployeeInfo.EmployeeBirtdate);
 					},
 					'onError': function(error){
 						alert(error);
@@ -149,7 +166,8 @@ function constructor (id) {
 	{// @endlock
 		var selectedDivisionID = $$($comp.id + "_textField7").getValue();
 		var myUserID = $$($comp.id + "_textField1").getValue();
-		var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:6,myUserID:myUserID,mySelectedDivisionID:selectedDivisionID};
+		var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,myUserID:myUserID,mySelectedDivisionID:selectedDivisionID,
+							mySelectedEmpID:sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID};
 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 		 				debugger;

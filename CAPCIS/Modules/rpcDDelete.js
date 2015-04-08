@@ -8,9 +8,10 @@ exports.setDelete = function setDelete (myObject)
 {
 	try
 	{
+		debugger;
 		var serverUtil = require('serverUtilities');
 		var dBQueryBuilder = require('dSelectsQuery');
-		var dBUpdateBuilder = require('dUpdateQuery');
+		var dBUpdateBuilder = require('dDeleteQuery');
 		var tokenArray = {token:myObject.token,major:0,minor:1};
 		var selectStatement = dBQueryBuilder.buildQuery(tokenArray);
 		var connection = serverUtil.getDBConnection();
@@ -18,9 +19,9 @@ exports.setDelete = function setDelete (myObject)
 		var myResults = result.getAllRows();
 		if(myResults.length > 0)
 		{
-			var insertStatement = dBInsertBuilder.buildQuery(myObject);
-			connection.execute(insertStatement);
-			console.log(myReturnedID);		
+			var deleteStatement = dBUpdateBuilder.buildQuery(myObject);
+			connection.execute(deleteStatement);
+			//console.log(myReturnedID);		
 			var myResults = ["suc"];
 			connection.close;
 			return myResults;

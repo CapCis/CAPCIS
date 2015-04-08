@@ -709,7 +709,7 @@ exports.buildQuery = function buildQuery(myObject)
 							from fxuserdivisionlinkage left join divisioninformation on FK_DivisionInformationID = DivisionInformationID \
 							where FK_FxUserAccountsID = '"+myObject.data1+"'";
 						return answer;
-				case 1 : answer = "SELECT * FROM employeeinformation ORDER BY EmployeeInformationID ASC";
+				case 1 : answer = "SELECT *, DATE_FORMAT(employeeinformation.HireDate, '%m-%d-%Y') AS HireDate, DATE_FORMAT(employeeinformation.TerminationDate, '%m-%d-%Y') AS TerminationDate FROM employeeinformation ORDER BY EmployeeInformationID ASC";
 						return answer;
 		
 				default:answer = null;
