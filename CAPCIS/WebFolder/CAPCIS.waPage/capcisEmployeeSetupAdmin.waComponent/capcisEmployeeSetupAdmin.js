@@ -131,8 +131,18 @@ function constructor (id) {
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,divID:sources.employeeSetupDivisions.FXUserDivisionLinkage_ID};		
 		rpcDDelete.setDeleteAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
-		 				alert("Record Updated");
+		 				var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID};
+						rpcDSelects.getSelectAsync({
+		 				'onSuccess': function(comboResult){
+		 						
+		 						employeeSetupDivisions = comboResult;
+		 						sources.employeeSetupDivisions.sync();
+							},
+							'onError': function(error){
+								alert(error);
+							},
+							'params': [myEmployeeDivisionObject]
+						});
 					},
 					'onError': function(error){
 						alert(error);
@@ -150,31 +160,31 @@ function constructor (id) {
 		 			'onSuccess': function(result){
 		 				debugger;
 		 				employeeSetupDivisions = result;
-		 				sources.employeeSetupDivisions.sync();
-		 				$$(getHtmlId("jQDateTime1")).setValue(sources.employeeSetupEmployeeInfo.HireDate);
-		 				$$(getHtmlId("jQDateTime2")).setValue(sources.employeeSetupEmployeeInfo.TerminationDate);
-		 				$$(getHtmlId("jQDateTime3")).setValue(sources.employeeSetupEmployeeInfo.EmployeeBirtdate);
+		 				sources.employeeSetupDivisions.sync();		 				
 					},
 					'onError': function(error){
 						alert(error);
 					},
 					'params': [myEmployeeDivisionObject]
-	});	
+		});
+		$$(getHtmlId("jQDateTime1")).setValue(sources.employeeSetupEmployeeInfo.HireDate);
+		$$(getHtmlId("jQDateTime2")).setValue(sources.employeeSetupEmployeeInfo.TerminationDate);
+		$$(getHtmlId("jQDateTime3")).setValue(sources.employeeSetupEmployeeInfo.EmployeeBirtdate);
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var selectedDivisionID = $$($comp.id + "_textField7").getValue();
-		var myUserID = $$($comp.id + "_textField1").getValue();
-		var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,myUserID:myUserID,mySelectedDivisionID:selectedDivisionID,
+		//var selectedDivisionID = $$($comp.id + "_textField7").getValue();
+		//var myUserID = $$($comp.id + "_textField1").getValue();
+		var myComboObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,
+							mySelectedDivisionID:sources.adminDivCombo.DivisionInformationID,
 							mySelectedEmpID:sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID};
 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-		 				debugger;
-		 				var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:myUserId};
+		 			'onSuccess': function(result){		 				
+		 				var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID};
 						rpcDSelects.getSelectAsync({
 		 				'onSuccess': function(comboResult){
-		 						debugger;
+		 						
 		 						employeeSetupDivisions = comboResult;
 		 						sources.employeeSetupDivisions.sync();
 							},
@@ -213,12 +223,31 @@ function constructor (id) {
 		 				debugger;
 		 				employeeSetupEmployeeInfo = result;
 		 				sources.employeeSetupEmployeeInfo.sync();
+		 				var selectedUserId = sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID;
+						var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:selectedUserId};
+						$$(getHtmlId("jQDateTime1")).setValue(sources.employeeSetupEmployeeInfo.HireDate);
+						$$(getHtmlId("jQDateTime2")).setValue(sources.employeeSetupEmployeeInfo.TerminationDate);
+						$$(getHtmlId("jQDateTime3")).setValue(sources.employeeSetupEmployeeInfo.EmployeeBirtdate);
+						rpcDSelects.getSelectAsync({
+		 					'onSuccess': function(result){
+		 						debugger;
+		 						employeeSetupDivisions = result;
+		 						sources.employeeSetupDivisions.sync();	 						
+							},
+							'onError': function(error){
+								alert(error);
+							},
+							'params': [myEmployeeDivisionObject]
+						});	
 					},
 					'onError': function(error){
 						alert(error);
 					},
 					'params': [myEmployeeInfoObject]
-	});	
+	});
+	
+	
+		
 	
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");

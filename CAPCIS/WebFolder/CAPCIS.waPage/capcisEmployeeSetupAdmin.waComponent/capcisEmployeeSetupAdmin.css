@@ -80,28 +80,6 @@
 	 
 }
 
-#{id}label13 {
-	 z-index: 64;
-	 width: 59px;
-	 height: 13px;
-	 top: 123px;
-	 left: 1000px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField7 {
-	 z-index: 64;
-	 width: 130px;
-	 height: 22px;
-	 top: 119px;
-	 left: 1064px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}button3 {
 	 z-index: 61;
 	 width: 112px;

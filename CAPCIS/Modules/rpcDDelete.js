@@ -8,7 +8,7 @@ exports.setDelete = function setDelete (myObject)
 {
 	try
 	{
-		debugger;
+		
 		var serverUtil = require('serverUtilities');
 		var dBQueryBuilder = require('dSelectsQuery');
 		var dBUpdateBuilder = require('dDeleteQuery');
