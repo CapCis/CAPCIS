@@ -1588,7 +1588,7 @@ function constructor (id) {
 	};
 	function mainTabXClick(clickedMainTabXId)
 	{		
-		masterTabArray;
+		//masterTabArray;
 		tabColumnTracking;
 		
 		for (x = 0; x <= (tabColumnTracking.length - 1); x++)

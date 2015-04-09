@@ -157,6 +157,15 @@ exports.buildQuery = function buildQuery(myObject)
 						("'+myObject.postFirstName+'","'+myObject.postMiddleName+'","'+myObject.postLastName+'","'+myObject.postSuffix+'" \
 						,"'+myObject.postSSN+'","'+myObject.postAlias+'","'+myObject.postNotes+'","'+myObject.postDate+'","'+fullName+'" \
 						,"'+reverseName+'")';
+						
+						return answer;				
+			}
+		case 5:  //Admin
+			switch(myObject.minor)
+			{
+				case 0: answer = 'INSERT INTO capcis.fxuserdivisionlinkage (FK_DivisionInformationID,FK_FxUserAccountsID) \
+								 VALUES ("'+myObject.mySelectedDivisionID+'","'+myObject.mySelectedEmpID+'")';
+					return answer; 
 			}
 			break;
 	}

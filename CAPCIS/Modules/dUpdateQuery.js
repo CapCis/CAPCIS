@@ -94,10 +94,31 @@
 						break;
 			}
 			break;
-		default: answer = null;
-			break;
+			
+		case 5: //Admin Pages
+			switch(myObject.minor){
+				case 0: answer = 'UPDATE capcis.employeeinformation SET EmployeeInitials = "'+myObject.initials+'", EmployeeFirstName = "'+myObject.firstName+'", \
+						EmployeeMiddleName = "'+myObject.middleName+'", \
+						EmployeeLastName = "'+myObject.lastName+'", EmployeeSSN = "'+myObject.ssn+'", EmployeeBirthdate = '+myObject.birthday+', \
+						EmployeeHomePhone = "'+myObject.homePhone+'", \
+						EmployeeAdditionalPhone = "'+myObject.additionalPhone+'", \
+						EmployeeEmail = "'+myObject.email+'", EmployeeAddress = "'+myObject.address+'", EmployeeCity = "'+myObject.city+'", \
+						EmployeeState = "'+myObject.state+'", \
+						EmployeeZipCode = "'+myObject.zip+'", \
+						EmployeeEmergContName = "'+myObject.emergencyContactName+'", EmployeeEmergContRelation = "'+myObject.emergencyContactRelation+'", \
+						EmployeeEmergContPhone = "'+myObject.emergencyContactPhone+'", HireDate = '+myObject.hireDate+', \
+						TerminationDate = '+myObject.terminationDate+', EmployeeNotes = "'+myObject.clientNotes+'", EmployeeFullNameDisplay = "'+myObject.displayName+'", \
+						EmployeeEmergContNotes = "'+myObject.emergencyContactNotes+'" WHERE EmployeeInformationID = "'+myObject.employeeInfoId+'"';
+						return answer;
+				
+				default: answer = null;	
+						break;
+			break;	
+			}
+	default: answer = null;
+	break;
 		
 	
 }
-		return answer;
+	return answer;
 };
