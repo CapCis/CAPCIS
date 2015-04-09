@@ -1,6 +1,1 @@
-{
-    "name"    : "referralCourtJurisdictionsCorrespondenceView",    
-    "html"    : "referralCourtJurisdictionsCorrespondenceView.html",
-    "styles"  : [],
-    "scripts" : ["referralCourtJurisdictionsCorrespondenceView.js"]
-}
+﻿{"name":"referralCourtJurisdictionsCorrespondenceView","html":"referralCourtJurisdictionsCorrespondenceView.html","scripts":["referralCourtJurisdictionsCorrespondenceView.js"],"styles":["referralCourtJurisdictionsCorrespondenceView.css"]}

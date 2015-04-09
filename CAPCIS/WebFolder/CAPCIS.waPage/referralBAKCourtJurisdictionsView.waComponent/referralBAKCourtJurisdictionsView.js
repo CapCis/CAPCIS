@@ -13,11 +13,18 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var closeCourtJurisdictionPreviousButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
+	closeCourtJurisdictionPreviousButton.click = function closeCourtJurisdictionPreviousButton_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('container9')).setSplitPosition(625);
+	};// @lock
+
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_closeCourtJurisdictionPreviousButton", "click", closeCourtJurisdictionPreviousButton.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
