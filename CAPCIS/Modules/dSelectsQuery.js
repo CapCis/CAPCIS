@@ -711,6 +711,12 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 1 : answer = "SELECT *, DATE_FORMAT(employeeinformation.HireDate, '%m-%d-%Y') AS HireDate, DATE_FORMAT(employeeinformation.TerminationDate, '%m-%d-%Y') AS TerminationDate FROM employeeinformation ORDER BY EmployeeInformationID ASC";
 						return answer;
+				case 2 : answer = "SELECT `fxuserpageaccess`.`FK_UserAccountsID`, `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID`, \
+								  `fxmainselectwebcomponentnames`.`PrimaryHeaderOption`, `fxmainselectwebcomponentnames`.`SubHeaderOption`, \
+								  `fxmainselectwebcomponentnames`.`WebComponentSort`, `fxmainselectwebcomponentnames`.`WebComponentName` FROM \
+								  `capcis`.`fxuserpageaccess` AS `fxuserpageaccess`, `capcis`.`fxmainselectwebcomponentnames` AS `fxmainselectwebcomponentnames` WHERE \
+								  `fxuserpageaccess`.`FK_FxMainSelectWebComponentNamesID` = `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` AND \
+								  `fxuserpageaccess`.`FK_UserAccountsID` = '"+myObject.UserAccountsID+"'"
 		
 				default:answer = null;
 						return answer;

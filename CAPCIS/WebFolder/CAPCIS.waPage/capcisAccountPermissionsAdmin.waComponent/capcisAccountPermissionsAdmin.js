@@ -21,22 +21,24 @@ function constructor (id) {
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
 		var selectedUserId = sources.employeeSetupEmployeeInfo.EmployeesUA_UserAccountsID;
-		var myEmployeeDivisionObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:0,data1:selectedUserId};
+		var myEmployeePagesObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:2,UserAccountsID:selectedUserId};
+		
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
-		 				employeeSetupDivisions = result;
-		 				sources.employeeSetupDivisions.sync();		 				
+		 				employeePages = result;
+		 				sources.employeePages.sync();
 					},
 					'onError': function(error){
 						alert(error);
 					},
-					'params': [myEmployeeDivisionObject]
+					'params': [myEmployeePagesObject]
 		});
 	};// @lock
 	
 	
 	var myEmployeeInfoObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:5,minor:1};
+		
 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
