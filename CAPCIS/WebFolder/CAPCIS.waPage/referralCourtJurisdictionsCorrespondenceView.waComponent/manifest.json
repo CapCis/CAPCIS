@@ -1,0 +1,6 @@
+{
+    "name"    : "referralCourtJurisdictionsCorrespondenceView",    
+    "html"    : "referralCourtJurisdictionsCorrespondenceView.html",
+    "styles"  : [],
+    "scripts" : ["referralCourtJurisdictionsCorrespondenceView.js"]
+}
