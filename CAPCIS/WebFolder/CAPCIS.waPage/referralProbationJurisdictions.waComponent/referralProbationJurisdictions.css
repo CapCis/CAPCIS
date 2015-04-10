@@ -354,7 +354,7 @@
 
 #{id}container28 {
 	 z-index: 2;
-	 width: 4px;
+	 width: 3px;
 	 height: 390px;
 	 top: 233px;
 	 left: 0px;
@@ -401,7 +401,7 @@
 
 #{id}container27 {
 	 z-index: 1;
-	 width: 4px;
+	 width: 3px;
 	 height: 233px;
 	 top: 0px;
 	 left: 0px;
@@ -448,7 +448,7 @@
 
 #{id}container26 {
 	 z-index: 2;
-	 width: 294px;
+	 width: 297px;
 	 height: 295px;
 	 top: 0px;
 	 left: 424px;
@@ -619,7 +619,7 @@
 
 #{id}container21 {
 	 z-index: 1;
-	 width: 5px;
+	 width: 721px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -630,7 +630,7 @@
 
 #{id}container19 {
 	 z-index: 1;
-	 width: 1279px;
+	 width: 564px;
 	 height: 623px;
 	 top: 0px;
 	 left: 0px;
@@ -687,7 +687,7 @@
 
 #{id}pjSpecificSubCont {
 	 z-index: 1;
-	 width: 5px;
+	 width: 721px;
 	 height: 328px;
 	 top: 0px;
 	 left: 0px;
@@ -698,10 +698,10 @@
 
 #{id}pjSpecificInfoCont {
 	 z-index: 2;
-	 width: 9px;
+	 width: 724px;
 	 height: 623px;
 	 top: 0px;
-	 left: 1279px;
+	 left: 564px;
 	
 	 position: absolute;
 	 
@@ -786,7 +786,7 @@
 
 #{id}pjCorrCont {
 	 z-index: 2;
-	 width: 5px;
+	 width: 721px;
 	 height: 295px;
 	 top: 328px;
 	 left: 0px;
@@ -853,10 +853,10 @@
 
 #{id}pjPrevVersionCont {
 	 z-index: 2;
-	 width: 4px;
+	 width: 3px;
 	 height: 623px;
 	 top: 0px;
-	 left: 5px;
+	 left: 721px;
 	
 	 position: absolute;
 	 
