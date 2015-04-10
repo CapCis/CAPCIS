@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#component1 {
+	 z-index: 36;
+	 width: 733px;
+	 height: 501px;
+	 top: 1417px;
+	 left: 1301px;
+	
+	 position: absolute;
+	 
+}
+
 #container9 {
 	 z-index: 1;
 	 width: 255px;
@@ -42,9 +53,9 @@
 
 #label4 {
 	 z-index: 2;
-	 width: 26px;
-	 height: 16px;
-	 top: 15px;
+	 width: 29px;
+	 height: 13px;
+	 top: 18px;
 	 left: 33px;
 	
 	 position: absolute;
@@ -200,10 +211,10 @@
 
 #label3 {
 	 z-index: 13;
-	 width: 26px;
-	 height: 16px;
-	 top: 401px;
-	 left: 890px;
+	 width: 29px;
+	 height: 13px;
+	 top: 402px;
+	 left: 887px;
 	
 	 position: absolute;
 	 
@@ -236,10 +247,10 @@
 
 #label1 {
 	 z-index: 3;
-	 width: 26px;
-	 height: 16px;
-	 top: 12px;
-	 left: 249px;
+	 width: 29px;
+	 height: 13px;
+	 top: 13px;
+	 left: 246px;
 	
 	 position: absolute;
 	 
