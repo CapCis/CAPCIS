@@ -718,8 +718,8 @@ exports.buildQuery = function buildQuery(myObject)
 								  `fxmainselectwebcomponentnames`.`WebComponentSort`, `fxmainselectwebcomponentnames`.`WebComponentName` FROM \
 								  `capcis`.`fxuserpageaccess` AS `fxuserpageaccess`, `capcis`.`fxmainselectwebcomponentnames` AS `fxmainselectwebcomponentnames` WHERE \
 								  `fxuserpageaccess`.`FK_FxMainSelectWebComponentNamesID` = `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` AND \
-								  `fxuserpageaccess`.`FK_UserAccountsID` = '"+myObject.UserAccountsID+"'"
-		
+								  `fxuserpageaccess`.`FK_UserAccountsID` = '"+myObject.UserAccountsID+"' ORDER BY `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` ASC"
+						return answer;
 				default:answer = null;
 						return answer;
 			}
