@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button2 {
+	 z-index: 4;
+	 width: 97px;
+	 height: 36px;
+	 top: 157px;
+	 left: 384px;
+	
+	 position: absolute;
+	 
+}
+
 #button1.waf-state-hover {
 	 color: rgb(51, 51, 51);
 	 
