@@ -122,7 +122,9 @@ exports.buildQuery = function buildQuery(myObject)
 				case 7: answer = 'SELECT ReceiptPurpose FROM capcis.receiptpurpose';
 						return answer;
 				case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
-						return answer;		
+						return answer;	
+				case 9: answer = 'SELECT * FROM capcis.itempricelist where ItemDiscontinued = false';
+						return answer;	
 				default:
 						answer = null;
 					}
