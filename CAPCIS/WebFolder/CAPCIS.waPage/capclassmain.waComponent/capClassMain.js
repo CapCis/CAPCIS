@@ -12,7 +12,7 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 		
-		
+		currentCharges = 0.0;
 		var whatsVisible = 'full';
 		fillFullView();
 		$$(getHtmlId('classFullViewCont')).$domNode.css('overflow','auto');
@@ -24,7 +24,7 @@ function constructor (id) {
 	 	sources.myPrograms.sync();
 	 	
 	 	
-	 	var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:7}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:7}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				
@@ -35,8 +35,59 @@ function constructor (id) {
 					},
 					'params': [myObject]
 				});
+				
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:9}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						itemListeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+				
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+
+		if(dd<10) {
+	    dd='0'+dd;
+		} 
+
+		if(mm<10) {
+	    mm='0'+mm;
+		} 
+
+		today = mm+'/'+dd+'/'+yyyy;
+		$$(getHtmlId('receiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var field100 = {};	// @textField
+	var field95 = {};	// @textField
+	var field90 = {};	// @textField
+	var field85 = {};	// @textField
+	var field80 = {};	// @textField
+	var field75 = {};	// @textField
+	var field70 = {};	// @textField
+	var field65 = {};	// @textField
+	var field60 = {};	// @textField
+	var field55 = {};	// @textField
+	var field50 = {};	// @textField
+	var field45 = {};	// @textField
+	var field40 = {};	// @textField
+	var field35 = {};	// @textField
+	var field30 = {};	// @textField
+	var field25 = {};	// @textField
+	var field20 = {};	// @textField
+	var field15 = {};	// @textField
+	var field10 = {};	// @textField
+	var field5 = {};	// @textField
+	var field0 = {};	// @textField
+	var dataGrid5 = {};	// @dataGrid
+	var dataGrid4 = {};	// @dataGrid
 	var comboBoxTextInput = {};	// @textField
 	var comboboxGrid = {};	// @dataGrid
 	var comboboxButton = {};	// @button
@@ -52,6 +103,172 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	field100.click = function field100_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field100")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field95.click = function field95_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field95")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field90.click = function field90_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field90")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field85.click = function field85_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field85")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field80.click = function field80_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field80")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field75.click = function field75_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field75")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field70.click = function field70_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field70")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field65.click = function field65_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field65")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field60.click = function field60_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field60")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field55.click = function field55_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field55")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field50.click = function field50_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field50")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field45.click = function field45_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field45")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field40.click = function field40_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field40")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field35.click = function field35_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field35")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field30.click = function field30_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field30")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field25.click = function field25_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field25")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field20.click = function field20_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field20")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field15.click = function field15_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field15")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field10.click = function field10_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field10")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field5.click = function field5_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field5")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	field0.click = function field0_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field0")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
+
+	dataGrid5.onRowClick = function dataGrid5_onRowClick (event)// @startlock
+	{// @endlock
+		currentCharges = (Number(currentCharges) - Number(sources.cart.ItemPrice));
+		currentCharges = currentCharges.toFixed(2);
+		$$(getHtmlId("currentChargesField")).setValue(currentCharges);
+		sources.cart.removeCurrent();
+	};// @lock
+
+	dataGrid4.onRowClick = function dataGrid4_onRowClick (event)// @startlock
+	{// @endlock
+		debugger;
+		var notInArray = true;
+		
+		for(var x = 0; x < cart.length ; x++)
+		{
+			if(cart[x].ItemPriceListID === sources.itemList.ItemPriceListID)
+			{
+				notInArray = false;
+			}
+		}
+		
+		if(notInArray)
+		{
+			cart.push({
+				Item: sources.itemList.Item,
+				ItemPriceListID: sources.itemList.ItemPriceListID,
+				ItemPrice: sources.itemList.ItemPrice,
+				ItemDescription: sources.itemList.ItemDescription,
+				TT_TestingTypeID: sources.itemList.TT_TestingTypeID,
+				IsClass: sources.itemList.IsClass
+			});
+			sources.cart.sync();
+			
+			currentCharges = (Number(currentCharges) + Number(sources.itemList.ItemPrice));
+			currentCharges = currentCharges.toFixed(2);
+			$$(getHtmlId("currentChargesField")).setValue(currentCharges);
+		}
+		
+	};// @lock
 
 	comboBoxTextInput.keyup = function comboBoxTextInput_keyup (event)// @startlock
 	{// @endlock
@@ -162,7 +379,7 @@ function constructor (id) {
 		//var reciept = document.getElementById(getHtmlId('classRosterRecieptCont'));
 		//reciept.style.left = '150px';
 		$$(getHtmlId('classRosterMainCont')).setSplitPosition(600);
-		var x = event.data.cell.value;
+		
 		
 	};// @lock
 
@@ -525,8 +742,47 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
+	
+	function itemListeSuccess(result)
+	{
+		itemList= result;
+		tempStore= result;
+		sources.itemList.sync();
+	}
+	function itemListError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_field100", "click", field100.click, "WAF");
+	WAF.addListener(this.id + "_field95", "click", field95.click, "WAF");
+	WAF.addListener(this.id + "_field90", "click", field90.click, "WAF");
+	WAF.addListener(this.id + "_field85", "click", field85.click, "WAF");
+	WAF.addListener(this.id + "_field80", "click", field80.click, "WAF");
+	WAF.addListener(this.id + "_field75", "click", field75.click, "WAF");
+	WAF.addListener(this.id + "_field70", "click", field70.click, "WAF");
+	WAF.addListener(this.id + "_field65", "click", field65.click, "WAF");
+	WAF.addListener(this.id + "_field60", "click", field60.click, "WAF");
+	WAF.addListener(this.id + "_field55", "click", field55.click, "WAF");
+	WAF.addListener(this.id + "_field50", "click", field50.click, "WAF");
+	WAF.addListener(this.id + "_field45", "click", field45.click, "WAF");
+	WAF.addListener(this.id + "_field40", "click", field40.click, "WAF");
+	WAF.addListener(this.id + "_field35", "click", field35.click, "WAF");
+	WAF.addListener(this.id + "_field30", "click", field30.click, "WAF");
+	WAF.addListener(this.id + "_field25", "click", field25.click, "WAF");
+	WAF.addListener(this.id + "_field20", "click", field20.click, "WAF");
+	WAF.addListener(this.id + "_field15", "click", field15.click, "WAF");
+	WAF.addListener(this.id + "_field10", "click", field10.click, "WAF");
+	WAF.addListener(this.id + "_field5", "click", field5.click, "WAF");
+	WAF.addListener(this.id + "_field0", "click", field0.click, "WAF");
+	WAF.addListener(this.id + "_dataGrid5", "onRowClick", dataGrid5.onRowClick, "WAF");
+	WAF.addListener(this.id + "_dataGrid4", "onRowClick", dataGrid4.onRowClick, "WAF");
 	WAF.addListener(this.id + "_comboBoxTextInput", "keyup", comboBoxTextInput.keyup, "WAF");
 	WAF.addListener(this.id + "_comboboxGrid", "onRowClick", comboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_comboboxButton", "click", comboboxButton.click, "WAF");

@@ -122,7 +122,9 @@ exports.buildQuery = function buildQuery(myObject)
 				case 7: answer = 'SELECT ReceiptPurpose FROM capcis.receiptpurpose';
 						return answer;
 				case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
-						return answer;		
+						return answer;	
+				case 9: answer = 'SELECT * FROM capcis.itempricelist where ItemDiscontinued = false';
+						return answer;	
 				default:
 						answer = null;
 					}
@@ -711,6 +713,12 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 1 : answer = "SELECT *, DATE_FORMAT(employeeinformation.HireDate, '%m-%d-%Y') AS HireDate, DATE_FORMAT(employeeinformation.TerminationDate, '%m-%d-%Y') AS TerminationDate FROM employeeinformation ORDER BY EmployeeInformationID ASC";
 						return answer;
+				case 2 : answer = "SELECT `fxuserpageaccess`.`FK_UserAccountsID`, `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID`, \
+								  `fxmainselectwebcomponentnames`.`PrimaryHeaderOption`, `fxmainselectwebcomponentnames`.`SubHeaderOption`, \
+								  `fxmainselectwebcomponentnames`.`WebComponentSort`, `fxmainselectwebcomponentnames`.`WebComponentName` FROM \
+								  `capcis`.`fxuserpageaccess` AS `fxuserpageaccess`, `capcis`.`fxmainselectwebcomponentnames` AS `fxmainselectwebcomponentnames` WHERE \
+								  `fxuserpageaccess`.`FK_FxMainSelectWebComponentNamesID` = `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` AND \
+								  `fxuserpageaccess`.`FK_UserAccountsID` = '"+myObject.UserAccountsID+"'"
 		
 				default:answer = null;
 						return answer;
