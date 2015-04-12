@@ -21,23 +21,23 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		fillCorrespondance();  //refresh grid data on correspondencelist box page
 		$$(getHtmlId('container6')).setSplitPosition(1290);
 	};// @lock
 
 	checkbox1.change = function checkbox1_change (event)// @startlock
 	{// @endlock
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
-	var id = sources.assessorCorespondance.AssessorCorrespondenceID;
-	var myObject8 = {
-	    token: userConfigObj.secToken,
-	    id: userConfigObj.userID,
-	    major: 3,
-	    minor: 1,
-	    data2: status,
-	    data3: id
-	}; //dontf
-	assessorUpdate = rpcDUpdate.setUpdate(myObject8);
+		var id = sources.assessorCorespondance.AssessorCorrespondenceID;
+		var myObject8 = {
+	    	token: userConfigObj.secToken,
+	    	id: userConfigObj.userID,
+	    	major: 3,
+	    	minor: 1,
+	    	data2: status,
+	    	data3: id
+		}; //dontf
+		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
 	};// @lock
 
 	// @region eventManager// @startlock
