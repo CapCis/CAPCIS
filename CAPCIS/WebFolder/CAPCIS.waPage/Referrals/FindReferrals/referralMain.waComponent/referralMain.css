@@ -4,7 +4,7 @@
 */
 
 #{id}dataGrid19 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 125px;
 	 height: 134px;
 	 top: 162px;
@@ -67,7 +67,7 @@
 }
 
 #{id}container64 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 150px;
 	 height: 41px;
 	 top: 122px;
@@ -78,7 +78,7 @@
 }
 
 #{id}richText29 {
-	 z-index: 31;
+	 z-index: 30;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -93,7 +93,7 @@
 }
 
 #{id}assessorInactiveCheckBox {
-	 z-index: 30;
+	 z-index: 29;
 	 width: 22px;
 	 height: 22px;
 	 top: 263px;
@@ -104,7 +104,7 @@
 }
 
 #{id}label144 {
-	 z-index: 29;
+	 z-index: 28;
 	 width: 93px;
 	 height: 13px;
 	 top: 267px;
@@ -114,19 +114,8 @@
 	 
 }
 
-#{id}button30 {
-	 z-index: 28;
-	 width: 125px;
-	 height: 25px;
-	 top: 295px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}closeAssesorCurrentButton {
-	 z-index: 28;
+	 z-index: 27;
 	 width: 75px;
 	 height: 25px;
 	 top: 295px;
@@ -136,19 +125,8 @@
 	 
 }
 
-#{id}button29 {
-	 z-index: 27;
-	 width: 75px;
-	 height: 25px;
-	 top: 295px;
-	 left: 250px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}assesorNotesField {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 250px;
 	 height: 55px;
 	 top: 230px;
@@ -159,7 +137,7 @@
 }
 
 #{id}label143 {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 82px;
 	 height: 13px;
 	 top: 212px;
@@ -2815,7 +2793,7 @@
 }
 
 #{id}combobox4 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 150px;
 	 height: 22px;
 	 top: 234px;
@@ -2826,7 +2804,7 @@
 }
 
 #{id}label89 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 98px;
 	 height: 13px;
 	 top: 216px;
@@ -3151,18 +3129,6 @@
 	 left: 263px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}button22 {
-	 z-index: 8;
-	 width: 125px;
-	 height: 25px;
-	 top: 294px;
-	 left: 9px;
-	
-	 position: absolute;
-	 font-size: 14px;
 	 
 }
 
@@ -5981,50 +5947,6 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 5;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}AttorneyContainer {
-	 z-index: 6;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}DHSOfficerContainer {
-	 z-index: 7;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}JudgeContainer {
-	 z-index: 8;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}OtherMonitorContainer {
 	 z-index: 13;
 	 width: 1290px;
 	 height: 625px;
@@ -6035,8 +5957,52 @@
 	 
 }
 
+#{id}AttorneyContainer {
+	 z-index: 5;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}DHSOfficerContainer {
+	 z-index: 6;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}JudgeContainer {
+	 z-index: 7;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}OtherMonitorContainer {
+	 z-index: 12;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}ProsecutorContainer {
-	 z-index: 9;
+	 z-index: 8;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6047,7 +6013,7 @@
 }
 
 #{id}ProbationOfficerContainer {
-	 z-index: 10;
+	 z-index: 9;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6058,7 +6024,7 @@
 }
 
 #{id}ProbationJursidictionContainer {
-	 z-index: 11;
+	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6069,7 +6035,7 @@
 }
 
 #{id}CourtJursidictionContainer {
-	 z-index: 12;
+	 z-index: 11;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6436,6 +6402,51 @@
 	 height: 625px;
 	 top: 0px;
 	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadBAKOtherMonitors {
+	 z-index: 8;
+	 width: 125px;
+	 height: 25px;
+	 top: 294px;
+	 left: 9px;
+	
+	 position: absolute;
+	 font-size: 14px;
+	 
+}
+
+#{id}loadAssessorCorrespondence {
+	 z-index: 33;
+	 width: 92px;
+	 height: 22px;
+	 top: 297px;
+	 left: 146px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadBAKAssessorVersions {
+	 z-index: 27;
+	 width: 125px;
+	 height: 25px;
+	 top: 295px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}submitAssessorCurrentInformation {
+	 z-index: 26;
+	 width: 75px;
+	 height: 25px;
+	 top: 295px;
+	 left: 250px;
 	
 	 position: absolute;
 	 
