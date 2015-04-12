@@ -21,6 +21,7 @@ function constructor (id) {
 	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('container9')).setSplitPosition(625);
+		//close me hide me  
 	};// @lock
 
 	// @region eventManager// @startlock
