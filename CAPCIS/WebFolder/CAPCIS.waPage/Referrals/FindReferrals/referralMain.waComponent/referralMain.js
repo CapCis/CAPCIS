@@ -12,36 +12,11 @@ function constructor (id) {
 		
 	this.load = function (data) {// @lock
 		
-		//debugger;
-		
-		/*
-		setTimeout(callAssessor,0);	
-		
-		setTimeout(callAttorney,0);			
-		
-		setTimeout(callDHS,0);
-		
-		setTimeout(callJudge,0);
-		
-		setTimeout(callOtherMonitor,0);
-		
-		setTimeout(callProsecutor,0);
-		
-		setTimeout(callProbationOfficer,0);
-		
-		setTimeout(callProbationJurisdiction,0);
-		
-		setTimeout(callCourtJurisdiction,0);
-		
-		*/
-		refreshData();
-		
-		
 		
 		oldVisContainer = "";
 		oldVisComponent = "";
 		
-		
+		refreshData();
 		
 		newAssessor = document.getElementById(getHtmlId('newAssesorComponent'));
 		newAttorney = document.getElementById(getHtmlId('newAttorneyComponent'));
@@ -52,6 +27,20 @@ function constructor (id) {
 		newPO = document.getElementById(getHtmlId('newPOComponent'));
 		newPJ = document.getElementById(getHtmlId('newProbationJurisdictionComponent'));
 		newCJ = document.getElementById(getHtmlId('newCourtJurisdictionComponent'));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		var myObject3 = {
 	    token: '7836140170460568',
@@ -65,7 +54,7 @@ function constructor (id) {
 						citySuccess(result);
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject3]
 				});
@@ -81,7 +70,7 @@ function constructor (id) {
 						reportingSuccess(result);
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject4]
 				});
@@ -95,9 +84,9 @@ function constructor (id) {
 	var dataGrid19 = {};	// @dataGrid
 	var button39 = {};	// @button
 	var textField101 = {};	// @textField
-	var button30 = {};	// @button
+	var loadBAKAssessorVersions = {};	// @button
 	var closeAssesorCurrentButton = {};	// @button
-	var button29 = {};	// @button
+	var submitAssessorCurrentInformation = {};	// @button
 	var cityComboboxGrid = {};	// @dataGrid
 	var button28 = {};	// @button
 	var cityComboBox = {};	// @textField
@@ -132,7 +121,7 @@ function constructor (id) {
 	var dataGrid7 = {};	// @dataGrid
 	var button24 = {};	// @button
 	var textField61 = {};	// @textField
-	var button22 = {};	// @button
+	var loadBAKOtherMonitors = {};	// @button
 	var button21 = {};	// @button
 	var button19 = {};	// @button
 	var dataGrid16 = {};	// @dataGrid
@@ -241,11 +230,14 @@ function constructor (id) {
 			grid.style.display = 'none';
 	};// @lock
 
-	button30.click = function button30_click (event)// @startlock
+	loadBAKAssessorVersions.click = function loadBAKAssessorVersions_click (event)// @startlock
 	{// @endlock
 			 
 		$$(getHtmlId('container3')).setSplitPosition(420);
 		//var name = $$(getHtmlId('assessorNameField')).getValue();
+		
+		//load referralBAKAssessorsList Page to the toprightbox
+		
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	
 	 	rpcDSelects.getSelectAsync({
@@ -265,7 +257,7 @@ function constructor (id) {
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 	};// @lock
 
-	button29.click = function button29_click (event)// @startlock
+	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
 		debugger;
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
@@ -1208,7 +1200,7 @@ var myObject7 =
 			grid.style.display = 'none';
 	};// @lock
 
-	button22.click = function button22_click (event)// @startlock
+	loadBAKOtherMonitors.click = function loadBAKOtherMonitors_click (event)// @startlock
 	{// @endlock
 		
 		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(420);
@@ -2363,9 +2355,9 @@ var myObject7 =
 	WAF.addListener(this.id + "_button39", "click", button39.click, "WAF");
 	WAF.addListener(this.id + "_textField101", "keyup", textField101.keyup, "WAF");
 	WAF.addListener(this.id + "_textField101", "blur", textField101.blur, "WAF");
-	WAF.addListener(this.id + "_button30", "click", button30.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKAssessorVersions", "click", loadBAKAssessorVersions.click, "WAF");
 	WAF.addListener(this.id + "_closeAssesorCurrentButton", "click", closeAssesorCurrentButton.click, "WAF");
-	WAF.addListener(this.id + "_button29", "click", button29.click, "WAF");
+	WAF.addListener(this.id + "_submitAssessorCurrentInformation", "click", submitAssessorCurrentInformation.click, "WAF");
 	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button28", "click", button28.click, "WAF");
 	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
@@ -2406,7 +2398,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_button24", "click", button24.click, "WAF");
 	WAF.addListener(this.id + "_textField61", "keyup", textField61.keyup, "WAF");
 	WAF.addListener(this.id + "_textField61", "blur", textField61.blur, "WAF");
-	WAF.addListener(this.id + "_button22", "click", button22.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKOtherMonitors", "click", loadBAKOtherMonitors.click, "WAF");
 	WAF.addListener(this.id + "_button21", "click", button21.click, "WAF");
 	WAF.addListener(this.id + "_button19", "click", button19.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid16", "onRowClick", dataGrid16.onRowClick, "WAF");

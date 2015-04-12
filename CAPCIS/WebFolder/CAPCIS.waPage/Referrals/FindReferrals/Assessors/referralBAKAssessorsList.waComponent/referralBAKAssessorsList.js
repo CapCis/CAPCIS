@@ -22,13 +22,14 @@ function constructor (id) {
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
 		$$(getHtmlId('container3')).setSplitPosition(900);
+		//close me or hide me and the bottom below me
 	};// @lock
 
 	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
 		
 		$$(getHtmlId('container9')).setSplitPosition(250);
-		
+		//load referalBAKAssessorView Page lower right box
 		
 		
 	};// @lock
