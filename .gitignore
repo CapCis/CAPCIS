@@ -27,3 +27,5 @@ sessionID.json
 # Wakanda Remote Model Cache
 *.waRemoteModel
 
+
+/CAPCIS/WebFolder/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralJudges.waComponent/referralJudges.package.json
