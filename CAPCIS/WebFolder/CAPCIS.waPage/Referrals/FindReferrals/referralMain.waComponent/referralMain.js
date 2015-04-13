@@ -12,11 +12,12 @@ function constructor (id) {
 		
 	this.load = function (data) {// @lock
 		
-		debugger;
+		
 		oldVisContainer = "";
 		oldVisComponent = "";
 		
 		refreshData();
+		getTotals();
 		
 		newAssessor = document.getElementById(getHtmlId('newAssesorComponent'));
 		newAttorney = document.getElementById(getHtmlId('newAttorneyComponent'));
@@ -27,14 +28,6 @@ function constructor (id) {
 		newPO = document.getElementById(getHtmlId('newPOComponent'));
 		newPJ = document.getElementById(getHtmlId('newProbationJurisdictionComponent'));
 		newCJ = document.getElementById(getHtmlId('newCourtJurisdictionComponent'));
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
@@ -87,11 +80,19 @@ function constructor (id) {
 				});
 	
 	
-		getTotals();
+		
 		
 		
 
 	// @region namespaceDeclaration// @startlock
+	var otherMonitorFullList = {};	// @dataGrid
+	var courtJurisdictionFullList = {};	// @dataGrid
+	var probationJurisdictionFullList = {};	// @dataGrid
+	var probationOfficerFullList = {};	// @dataGrid
+	var prosecutorFullList = {};	// @dataGrid
+	var judgeFullList = {};	// @dataGrid
+	var dhsOfficerFullList = {};	// @dataGrid
+	var attorneyFullList = {};	// @dataGrid
 	var dataGrid19 = {};	// @dataGrid
 	var button39 = {};	// @button
 	var textField101 = {};	// @textField
@@ -188,6 +189,14 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	
+
+	
+
+	
+
+	
+
 	dataGrid19.onRowClick = function dataGrid19_onRowClick (event)// @startlock
 	{// @endlock
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
@@ -272,7 +281,7 @@ function constructor (id) {
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject5);
@@ -297,28 +306,28 @@ function constructor (id) {
 		
 		
 		var myObject7 = {
-    token: userConfigObj.secToken,
-    id: userConfigObj.userID,
-    major: 3,
-    minor: 0,
-    data1: $$(getHtmlId("assessorNameField")).getValue(),
-    data2: phone,
-    data3: $$(getHtmlId("assesorEmailField")).getValue(),
-    data4: fax,
-    data5: $$(getHtmlId("assesorAddressField")).getValue(),
-    data6: $$(getHtmlId("cityComboBox")).getValue(),
-    data7: $$(getHtmlId("assesorStateField")).getValue(),
-    data8: $$(getHtmlId("assesorZipField")).getValue(),
-    data9: $$(getHtmlId("assesorExtField")).getValue(),
-    data10: mobile,
-    data11: $$(getHtmlId("assesorNotesField")).getValue(),
-    data12: $$(getHtmlId("assessorFullNameField")).getValue(),
-    data13: $$(getHtmlId("reportingComboBox")).getValue(),
-    data14: currentID,
-    data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
-}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+    		token: userConfigObj.secToken,
+    		id: userConfigObj.userID,
+    		major: 3,
+    		minor: 0,
+    		data1: $$(getHtmlId("assessorNameField")).getValue(),
+    		data2: phone,
+    		data3: $$(getHtmlId("assesorEmailField")).getValue(),
+    		data4: fax,
+    		data5: $$(getHtmlId("assesorAddressField")).getValue(),
+    		data6: $$(getHtmlId("cityComboBox")).getValue(),
+    		data7: $$(getHtmlId("assesorStateField")).getValue(),
+    		data8: $$(getHtmlId("assesorZipField")).getValue(),
+    		data9: $$(getHtmlId("assesorExtField")).getValue(),
+    		data10: mobile,
+    		data11: $$(getHtmlId("assesorNotesField")).getValue(),
+    		data12: $$(getHtmlId("assessorFullNameField")).getValue(),
+    		data13: $$(getHtmlId("reportingComboBox")).getValue(),
+    		data14: currentID,
+    		data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
+		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 
-	rpcDUpdate.setUpdateAsync({
+		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
 						
 					},
@@ -330,7 +339,7 @@ function constructor (id) {
 
 
 
-var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakListSuccess(result);
@@ -513,61 +522,7 @@ var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,m
 
 
 
-	dataGrid6.onRowClick = function dataGrid6_onRowClick (event)// @startlock
-	{// @endlock
-		
-		
-		
-		
-		
-		$$(getHtmlId('mainCourtJurisdictionCont')).setSplitPosition(450);
-		$$(getHtmlId('container3')).setSplitPosition(2000);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.courtJurisdictionList.CourtJurisdiction;
-		var city = sources.courtJurisdictionList.CourtJurisdictionCity;
-		var reportingMethod = sources.courtJurisdictionList.CourtJurisdictionPreferredReportingMethod;
-		var ids = sources.courtJurisdictionList.CourtJurisdictionID;
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('cityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('cityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue("None");
-		}
-		
-		
-		
-	 
-		///////////////////////////////////////////////////////////get data
-		
-		currentName = name;
-		
-		currentID = ids;
-		
-		
-		
-		fillCorrespondance();
-		
-		
-		
-		
-	};// @lock
+	
 
 	dataGrid18.onRowClick = function dataGrid18_onRowClick (event)// @startlock
 	{// @endlock
@@ -702,43 +657,12 @@ var myObject7 =
 				});
 	};// @lock
 
-	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
-	{// @endlock
-		
-		$$(getHtmlId('mainProbationJurisdictionsCont')).setSplitPosition(450);
-		$$(getHtmlId('pjSpecificInfoCont')).setSplitPosition(2000);
-	 	$$(getHtmlId('pjPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('pjCorrCont')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.probationJurisdictionList.JurisdictionName;
-		var city = sources.probationJurisdictionList.JurisdictionCity;
-		var ids = sources.probationJurisdictionList.POJurisdictionID;
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('pjCityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('pjCityComboBox')).setValue("None");
-		}
-		
-
-			 
-		///////////////////////////////////////////////////////////get data
-		
-		
-		currentName = name;
-		currentID = ids;
-
-		fillCorrespondance();
-	};// @lock
+	
 
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
-			debugger;
-var myObject7 = 
+			
+	var myObject7 = 
 			{
 				
 				token:userConfigObj.secToken ,id: userConfigObj.userID,major:3,minor: 15,
@@ -855,58 +779,13 @@ var myObject7 =
 		$$(getHtmlId('mainProbationOfficerCont')).setSplitPosition(1290);
 	};// @lock
 
-	dataGrid11.onRowClick = function dataGrid11_onRowClick (event)// @startlock
-	{// @endlock
-		
-		tempStore2 =  poJurisdiction;
-		$$(getHtmlId('mainProbationOfficerCont')).setSplitPosition(450);
-		$$(getHtmlId('poSpecificInfoCont')).setSplitPosition(2000);
-	 	$$(getHtmlId('poPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('poCorrCont')).setSplitPosition(420);
-				
-		var name = sources.probationOfficerList.POName;
-		var reportingMethod = sources.probationOfficerList.POPreferredReportingMethod;
-		var ids = sources.probationOfficerList.POInformationID;
-		var juri = sources.probationOfficerList.JurisdictionName;
-		
-		if(juri != "" && juri != null)
-		{
-			$$(getHtmlId('judgeJurisdiction')).setValue(juri);
-		}
-		else
-		{
-			$$(getHtmlId('judgeJurisdiction')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('poReportingComboBox')).setValue(reportingMethod);
-		}
-		
-		else
-		{
-				
-			$$(getHtmlId('poReportingComboBox')).setValue("None");
-		}
-		
-		
-		
-	 
-		///////////////////////////////////////////////////////////get data
-		
-		
-		currentName = name;
-		currentID = ids;
-
-		fillCorrespondance();
-	};// @lock
+	
 
 	textField73.keyup = function textField73_keyup (event)// @startlock
 	{// @endlock
 		if(event.keyCode ===13)
 		{
-			debugger;
+			
 			var currentInput = $$($comp.id+'_prosJurisdiction').getValue();
 			$$($comp.id+'_prosJurisdiction').setValue(sources.jurisdiction.CourtJurisdiction);
 			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
@@ -999,7 +878,7 @@ var myObject7 =
 
 	button31.click = function button31_click (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -1096,101 +975,9 @@ var myObject7 =
 				});
 	};// @lock
 
-	dataGrid9.onRowClick = function dataGrid9_onRowClick (event)// @startlock
-	{// @endlock
-		tempStore2 =  jurisdiction;
-		$$(getHtmlId('mainProsecutorCont')).setSplitPosition(450);
-		$$(getHtmlId('prosSpecificInfoCont')).setSplitPosition(2000);
-	 	$$(getHtmlId('prosPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('prosCorrCont')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.prosecutorList.Prosecutor;
-		var city = sources.prosecutorList.ProsecutorCity;
-		var reportingMethod = sources.prosecutorList.ProsPreferredReportingMethod;
-		var ids = sources.prosecutorList.ProsecutorsID;
-		var juri = sources.prosecutorList.ProsecutorJurisdiction;
-		if(juri != "" && juri != null)
-		{
-			$$(getHtmlId('prosJurisdiction')).setValue(juri);
-		}
-		else
-		{
-			$$(getHtmlId('prosJurisdiction')).setValue("None");
-		}
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('prosCityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('prosCityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('prosReportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('prosReportingComboBox')).setValue("None");
-		}
-		///////////////////////////////////////////////////////////get data
-		
-		
-		currentName = name;
-		currentID = ids;
-		fillCorrespondance();
-		
-	};// @lock
+	
 
-	dataGrid7.onRowClick = function dataGrid7_onRowClick (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('mainOtherMonitorsCont')).setSplitPosition(450);
-		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(2000);
-	 	$$(getHtmlId('omPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('omCorrCont')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.otherMonitorList.OtherMonitors;
-		var city = sources.otherMonitorList.OtherMonitorsCity;
-		var reportingMethod = sources.otherMonitorList.OMPreferredReportingMethod;
-		var ids = sources.otherMonitorList.OtherMonitorsID;
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('omCityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('omCityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('omReportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('omReportingComboBox')).setValue("None");
-		}
-		
-		
-		
-	 
-		///////////////////////////////////////////////////////////get data
-		
-		
-		currentName = name;
-		currentID = ids;
-
-		fillCorrespondance();
-	};// @lock
+	
 
 	button24.click = function button24_click (event)// @startlock
 	{// @endlock
@@ -1528,61 +1315,7 @@ var myObject7 =
 				});
 	};// @lock
 
-	dataGrid5.onRowClick = function dataGrid5_onRowClick (event)// @startlock
-	{// @endlock
-		tempStore2 =  jurisdiction;
-		$$(getHtmlId('mainJudgeCont')).setSplitPosition(450);
-		$$(getHtmlId('container3')).setSplitPosition(2000);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.judgeList.Judge;
-		var city = sources.judgeList.JudgeCity;
-		var reportingMethod = sources.judgeList.JPreferredReportingMethod;
-		var ids = sources.judgeList.JudgesID;
-		var juri = sources.judgeList.JudgeJurisdiction;
-		if(juri != "" && juri != null)
-		{
-			$$(getHtmlId('judgeJurisdiction')).setValue(juri);
-		}
-		else
-		{
-			$$(getHtmlId('judgeJurisdiction')).setValue("None");
-		}
-		
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('cityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('cityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue("None");
-		}
-		
-		
-		
-	 
-		///////////////////////////////////////////////////////////get data
-		
-		
-		currentName = name;
-		currentID = ids;
-
-		fillCorrespondance();
-	};// @lock
+	
 
 	dataGrid10.onRowClick = function dataGrid10_onRowClick (event)// @startlock
 	{// @endlock
@@ -1725,54 +1458,7 @@ var myObject7 =
 		
 	};// @lock
 
-	dataGrid8.onRowClick = function dataGrid8_onRowClick (event)// @startlock
-	{// @endlock
-		
-		
-		
-		
-		
-		$$(getHtmlId('mainDhsCont')).setSplitPosition(450);
-		$$(getHtmlId('container3')).setSplitPosition(2000);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(420);
-		
-		
-		
-		var name = sources.dhsList.DhsName;
-		var city = sources.dhsList.DhsCity;
-		var reportingMethod = sources.dhsList.DhsPreferredReportingMethod;
-		var ids = sources.dhsList.DhsInformationID;
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('cityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('cityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('reportingComboBox')).setValue("None");
-		}
-		
-		
-		
-		
-		currentName = name;
-		currentID = ids;
-
-		fillCorrespondance();
-		
-		
-	};// @lock
+	
 
 	dataGrid4.onRowClick = function dataGrid4_onRowClick (event)// @startlock
 	{// @endlock
@@ -1985,109 +1671,139 @@ var myObject7 =
 
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var myWidget = document.getElementById($comp.id +"_AssessorMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
-		//$$(getHtmlId('AssessorMainContainer')).left = '450'
-		//$$(getHtmlId('container3')).setSplitPosition(2000);
-	 	//$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	//$$(getHtmlId('container6')).setSplitPosition(420);
-		
-		
-		
-		//var name = sources.assessorList.AssessorName;
-		//var city = sources.assessorList.AssessorCity;
-		//var reportingMethod = sources.assessorList.AssPreferredReportingMethod;
-		//var ids = sources.assessorList.AssessorInformationID;
-		//if(city != "" && city != null && city != "null")
-		//{
-		//	$$(getHtmlId('cityComboBox')).setValue(city);
-		//}
-		//else
-		//{
-		//	$$(getHtmlId('cityComboBox')).setValue("None");
-		//}
-		
-		//if(reportingMethod != "" && reportingMethod != null)
-		//{
-				
-		//	$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
-		//}
-		//else
-		//{
-				
-		//	$$(getHtmlId('reportingComboBox')).setValue("None");
-		//}
-		
-		
-		///////////////////////////////////////////////////////////get data
-		
-		//currentName = name;
-		
-		//currentID = ids;
-		
 		
 		//fillCorrespondance();
+	};// @lock
+	
+	attorneyFullList.onRowClick = function attorneyFullList_onRowClick (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_AttorneyMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
 		
+		//fillCorrespondance();
+	};// @lock
+	
+	
+	dhsOfficerFullList.onRowClick = function dhsOfficerFullList_onRowClick (event)// @startlock
+	{// @endlock		
+		var myWidget = document.getElementById($comp.id +"_dhsOfficerMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
 		
+		//fillCorrespondance();
+	};// @endlock
+
+	
+	judgeFullList.onRowClick = function judgeFullList_onRowClick (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_judgeMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
 		
+		//fillCorrespondance();
+	};// @lock
+	
+	
+	prosecutorFullList.onRowClick = function prosecutorFullList_onRowClick (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_prosecutorMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
 		
+		//fillCorrespondance();
+	};// @lock
+	
+	
+	otherMonitorFullList.onRowClick = function otherMonitorFullList_onRowClick (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_otherMonitorMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
+		
+		//fillCorrespondance();
 	};// @lock
 
-	attorneyDataGird.onRowClick = function attorneyDataGird_onRowClick (event)// @startlock
+
+	courtJurisdictionFullList.onRowClick = function courtJurisdictionFullList_onRowClick (event)// @startlock
 	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
 		
-		
-		
-		
-		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(450);
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(2000);
-	 	$$(getHtmlId('attPrevVersionCont')).setSplitPosition(1000);
-	 	$$(getHtmlId('attCorrCont')).setSplitPosition(420);
-		
-		
-		/*
-		var name = sources.attorneyList.AttorneyName;
-		var city = sources.attorneyList.AttorneyCity;
-		var reportingMethod = sources.attorneyList.AttPreferredReportingMethod;
-		var ids = sources.attorneyList.AttorneyInformationID;
-		if(city != "" && city != null)
-		{
-			$$(getHtmlId('attCityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('attCityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
-				
-			$$(getHtmlId('attReportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
-				
-			$$(getHtmlId('attReportingComboBox')).setValue("None");
-		}
-		
-		
-		
-		
-		
-		
-		///////////////////////////////////////////////////////////get data
-		
-		currentName = name;
-		
-		currentID = ids;
-		
-		fillCorrespondance();
-		*/
+		//fillCorrespondance();
 	};// @lock
+
+
+	probationJurisdictionFullList.onRowClick = function probationJurisdictionFullList_onRowClick (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_probationJurisdictionMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
+		
+		//fillCorrespondance();
+	};// @lock
+
+
+	probationOfficerFullList.onRowClick = function probationOfficerFullList_onRowClick (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_probationOfficerMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
+		
+		//fillCorrespondance();
+	};// @lock
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	newProbJ.click = function newProbJ_click (event)// @startlock
 	{// @endlock
@@ -2349,26 +2065,8 @@ var myObject7 =
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
-		
-		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_AssessorComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralAssessors.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
-		onSuccess: function () {}							//data that you want to send to the webcomponent
-		});
-		
-		*/
-
 	};// @lock
-
-	SearchReferralButton.click = function SearchReferralButton_click (event)// @startlock
-	{// @endlock
-		
-		getTotals();
-		refreshData();
-
-	};// @lock
-
+	
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
 	{// @endlock
 		
@@ -2377,18 +2075,28 @@ var myObject7 =
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
 		
-		/*WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_AttorneyComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralAttorneys.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
-		onSuccess: function () {}							//data that you want to send to the webcomponent
-		});
-		*/
-		
 		
 	};// @lock
+	
+	SearchReferralButton.click = function SearchReferralButton_click (event)// @startlock
+	{// @endlock
+		
+		getTotals();
+		refreshData();
+
+	};// @lock
+
+	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_otherMonitorFullList", "onRowClick", otherMonitorFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_courtJurisdictionFullList", "onRowClick", courtJurisdictionFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_probationJurisdictionFullList", "onRowClick", probationJurisdictionFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_probationOfficerFullList", "onRowClick", probationOfficerFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_prosecutorFullList", "onRowClick", prosecutorFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_judgeFullList", "onRowClick", judgeFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_dhsOfficerFullList", "onRowClick", dhsOfficerFullList.onRowClick, "WAF");
+	WAF.addListener(this.id + "_attorneyFullList", "onRowClick", attorneyFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dataGrid19", "onRowClick", dataGrid19.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button39", "click", button39.click, "WAF");
 	WAF.addListener(this.id + "_textField101", "keyup", textField101.keyup, "WAF");
@@ -2543,6 +2251,7 @@ var myObject7 =
 	
 	function refreshData()
 	{
+			
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
 		
@@ -2557,6 +2266,7 @@ var myObject7 =
             }; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
             rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
+		 				
 						assessorSuccess(result);
 					},
 					'onError': function(error){
@@ -3163,7 +2873,7 @@ var myObject7 =
 		var myPage = document.getElementById(getHtmlId(containerid));
 		//myPage.style.visibility = "visible";
 		myPage.style.display = "block";
-		myPage.style.zIndex = "10";
+		myPage.style.zIndex = "100";
 		
 		oldVisContainer = containerid;
 		
@@ -3243,7 +2953,6 @@ var myObject7 =
 	{
 		assessorList = result;
 		sources.assessorList.sync();
-		
 	}
 	
 	function attorneySuccess(result)

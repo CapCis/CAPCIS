@@ -905,42 +905,6 @@
 	 
 }
 
-#{id}container9 {
-	 z-index: 1;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
-	 
-}
-
-#{id}dataGrid6 {
-	 z-index: 1;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	 right: -12px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}textField97 {
 	 z-index: 24;
 	 width: 405px;
@@ -1365,42 +1329,6 @@
 	 border-bottom-style: ridge;
 	 border-left-width: 0px;
 	 border-bottom-width: 0px;
-	 
-}
-
-#{id}container3 {
-	 z-index: 3;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
-	 
-}
-
-#{id}dataGrid1 {
-	 z-index: 2;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	 right: -765px;
-	
-	 position: absolute;
 	 
 }
 
@@ -2098,42 +2026,6 @@
 	 
 }
 
-#{id}container54 {
-	 z-index: 3;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
-	 
-}
-
-#{id}dataGrid11 {
-	 z-index: 2;
-	 width: 1392px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}textField74 {
 	 z-index: 36;
 	 width: 200px;
@@ -2745,53 +2637,6 @@
 	 
 }
 
-#{id}container47 {
-	 z-index: 2;
-	 width: 1150px;
-	 height: 617px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
-	 
-}
-
-#{id}dataGrid9 {
-	 z-index: 1;
-	 width: 2175px;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}dataGrid7 {
-	 z-index: 2;
-	 height: 625px;
-	 top: 0px;
-	 left: 0px;
-	 right: -1428px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}combobox4 {
 	 z-index: 32;
 	 width: 150px;
@@ -3315,31 +3160,6 @@
 	 border-bottom-style: ridge;
 	 border-left-width: 0px;
 	 border-bottom-width: 0px;
-	 
-}
-
-#{id}container41 {
-	 z-index: 3;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
 	 
 }
 
@@ -3955,42 +3775,6 @@
 	 
 }
 
-#{id}container27 {
-	 z-index: 4;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
-	 
-}
-
-#{id}dataGrid5 {
-	 z-index: 3;
-	 height: 623px;
-	 top: 0px;
-	 left: 0px;
-	 right: -672px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}dataGrid10 {
 	 z-index: 33;
 	 width: 125px;
@@ -4399,17 +4183,6 @@
 	 
 }
 
-#{id}dataGrid8 {
-	 z-index: 2;
-	 height: 623px;
-	 top: 0px;
-	 left: 0px;
-	 right: -12px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}component16 {
 	 z-index: 2;
 	 width: 415px;
@@ -4537,37 +4310,6 @@
 	 border-bottom-style: ridge;
 	 border-left-width: 0px;
 	 border-bottom-width: 0px;
-	 
-}
-
-#{id}container2 {
-	 z-index: 3;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-color: rgb(240, 240, 255);
-	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
-	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(255, 255, 255, 0)),color-stop(1, rgba(255, 255, 255, 0)));
-	 background-image:-webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:-moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:-ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:-o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
 	 
 }
 
@@ -5236,37 +4978,6 @@
 	 
 }
 
-#{id}container81 {
-	 z-index: 4;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-color: rgb(240, 240, 255);
-	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwLjg5ODQzOCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjZjBmMGZmIiBvZmZzZXQ9IjAlIiBzdG9wLW9wYWNpdHk9IjAuODk4NDM4IiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwLjg5ODQzOCIgLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjd2FmLWllLWdyYWRpZW50KSIgLz48L3N2Zz4=");
-	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(240, 240, 255, 0.898438)),color-stop(0, rgba(240, 240, 255, 0.898438)),color-stop(1, rgba(240, 240, 255, 0.898438)));
-	 background-image:-webkit-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
-	 background-image:-moz-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
-	 background-image:-ms-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
-	 background-image:-o-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
-	 background-image:linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
-	 
-}
-
 #{id}component10 {
 	 z-index: 2;
 	 width: 415px;
@@ -5402,151 +5113,6 @@
 	 width: 53px;
 	 height: 13px;
 	 top: -18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container40 {
-	 z-index: 2;
-	 width: 603px;
-	 height: 380px;
-	 top: 243px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container39 {
-	 z-index: 1;
-	 width: 603px;
-	 height: 243px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container38 {
-	 z-index: 2;
-	 width: 603px;
-	 height: 623px;
-	 top: 0px;
-	 left: 619px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container37 {
-	 z-index: 2;
-	 width: 367px;
-	 height: 287px;
-	 top: 0px;
-	 left: 252px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container36 {
-	 z-index: 1;
-	 width: 252px;
-	 height: 287px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container35 {
-	 z-index: 2;
-	 width: 619px;
-	 height: 287px;
-	 top: 336px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container33 {
-	 z-index: 1;
-	 width: 619px;
-	 height: 336px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container32 {
-	 z-index: 1;
-	 width: 619px;
-	 height: 623px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container31 {
-	 z-index: 2;
-	 width: 1222px;
-	 height: 623px;
-	 top: 0px;
-	 left: 66px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container30 {
-	 z-index: 1;
-	 width: 66px;
-	 height: 623px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}mainDhsCont {
-	 z-index: 1;
-	 width: 1290px;
-	 height: 625px;
-	 top: 900px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 
-}
-
-#{id}attorneyDataGird {
-	 z-index: 3;
-	 width: 1260px;
-	 height: 625px;
-	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
@@ -5944,28 +5510,6 @@
 }
 
 #{id}DHSOfficerContainer {
-	 z-index: 6;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}JudgeContainer {
-	 z-index: 7;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}OtherMonitorContainer {
 	 z-index: 12;
 	 width: 1290px;
 	 height: 625px;
@@ -5976,8 +5520,30 @@
 	 
 }
 
+#{id}JudgeContainer {
+	 z-index: 6;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}OtherMonitorContainer {
+	 z-index: 11;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}ProsecutorContainer {
-	 z-index: 8;
+	 z-index: 7;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5988,7 +5554,7 @@
 }
 
 #{id}ProbationOfficerContainer {
-	 z-index: 9;
+	 z-index: 8;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5999,7 +5565,7 @@
 }
 
 #{id}ProbationJursidictionContainer {
-	 z-index: 10;
+	 z-index: 9;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6010,7 +5576,7 @@
 }
 
 #{id}CourtJursidictionContainer {
-	 z-index: 11;
+	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6372,7 +5938,7 @@
 }
 
 #{id}assessorFullList {
-	 z-index: 2;
+	 z-index: 3;
 	 width: 1260px;
 	 height: 625px;
 	 top: 0px;
@@ -6428,6 +5994,306 @@
 }
 
 #{id}AssessorMainContainer {
+	 z-index: 4;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
+	 
+}
+
+#{id}attorneyFullList {
+	 z-index: 3;
+	 width: 1260px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}judgeFullList {
+	 z-index: 3;
+	 height: 623px;
+	 top: 0px;
+	 left: 0px;
+	 right: -672px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dhsOfficerFullList {
+	 z-index: 3;
+	 height: 623px;
+	 top: 0px;
+	 left: 0px;
+	 right: -12px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}prosecutorFullList {
+	 z-index: 1;
+	 width: 2175px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}probationOfficerFullList {
+	 z-index: 2;
+	 width: 1392px;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}probationJurisdictionFullList {
+	 z-index: 2;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	 right: -765px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}courtJurisdictionFullList {
+	 z-index: 1;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	 right: -12px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}otherMonitorFullList {
+	 z-index: 2;
+	 height: 625px;
+	 top: 0px;
+	 left: 0px;
+	 right: -1428px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}AttorneyMainContainer {
+	 z-index: 4;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwLjg5ODQzOCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjZjBmMGZmIiBvZmZzZXQ9IjAlIiBzdG9wLW9wYWNpdHk9IjAuODk4NDM4IiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwLjg5ODQzOCIgLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjd2FmLWllLWdyYWRpZW50KSIgLz48L3N2Zz4=");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(240, 240, 255, 0.898438)),color-stop(0, rgba(240, 240, 255, 0.898438)),color-stop(1, rgba(240, 240, 255, 0.898438)));
+	 background-image:-webkit-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
+	 background-image:-moz-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
+	 background-image:-ms-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
+	 background-image:-o-linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
+	 background-image:linear-gradient(left, rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 0%,rgba(240, 240, 255, 0.898438) 100%);
+	 
+}
+
+#{id}dhsOfficerMainContainer {
+	 z-index: 2;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(255, 255, 255, 0)),color-stop(1, rgba(255, 255, 255, 0)));
+	 background-image:-webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:-o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 background-image:linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%);
+	 
+}
+
+#{id}judgeMainContainer {
+	 z-index: 4;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
+	 
+}
+
+#{id}prosecutorMainContainer {
+	 z-index: 2;
+	 width: 1150px;
+	 height: 617px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
+	 
+}
+
+#{id}probationOfficerMainContainer {
+	 z-index: 3;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
+	 
+}
+
+#{id}probationJurisdictionMainContainer {
+	 z-index: 3;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
+	 
+}
+
+#{id}courtJurisdictionMainContainer {
+	 z-index: 1;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
+	 
+}
+
+#{id}otherMonitorMainContainer {
 	 z-index: 3;
 	 width: 1150px;
 	 height: 625px;
