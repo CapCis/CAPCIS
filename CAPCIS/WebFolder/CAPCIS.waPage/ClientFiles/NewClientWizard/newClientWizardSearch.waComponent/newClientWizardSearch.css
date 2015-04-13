@@ -3,14 +3,45 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}dataGrid1 {
-	 z-index: 4;
-	 width: 734px;
-	 height: 611px;
-	 top: 1px;
+#{id}container1 {
+	 z-index: 5;
+	 width: 575px;
+	 height: 550px;
+	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
+	 border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 border-top-color: rgb(0, 27, 90);
+	 border-left-color: rgb(0, 27, 90);
+	 border-right-color: rgb(0, 27, 90);
+	 border-bottom-color: rgb(0, 27, 90);
+	 
+}
+
+#{id}dataGrid1 {
+	 z-index: 1;
+	 height: 550px;
+	 top: 0px;
+	 left: 0px;
+	 right: -2px;
+	
+	 position: absolute;
+	 border-top-style: none;
+	 border-top-width: 0px;
+	 border-left-style: none;
+	 border-left-width: 0px;
+	 border-right-style: none;
+	 border-right-width: 0px;
+	 border-bottom-style: none;
+	 border-bottom-width: 0px;
 	 
 }
 
