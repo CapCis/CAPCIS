@@ -12,7 +12,7 @@ function constructor (id) {
 		
 	this.load = function (data) {// @lock
 		
-		
+		debugger;
 		oldVisContainer = "";
 		oldVisComponent = "";
 		
@@ -43,15 +43,22 @@ function constructor (id) {
 		
 		
 		var myObject3 = {
-	    token: '7836140170460568',
-	    id: '1',
+	    token: userConfigObj.secToken,
+	    id: userConfigObj.userID,
 	    major: 3,
 	    minor: 3
 		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-						citySuccess(result);
+						var tempCity = result[0];
+		
+						result[0] = {CityListing: "None"};
+		
+						result[result.length] = tempCity;
+						city = result;
+						tempStore= city;
+						sources.city.sync();
 					},
 					'onError': function(error){
 						alert(error);
@@ -60,14 +67,18 @@ function constructor (id) {
 				});
 		
 		var myObject4 = {
-		    token: '7836140170460568',
-		    id: '1',
+		    token: userConfigObj.secToken,
+		    id: userConfigObj.userID,
 		    major: 3,
 		    minor: 4
 		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-						reportingSuccess(result);
+						var tempReporting = result[0];
+						result[0] = {ReportingMethod: "None"};
+						result[result.length] = tempReporting;
+						reporting = result;
+						sources.reporting.sync();
 					},
 					'onError': function(error){
 						alert(error);
@@ -230,7 +241,12 @@ function constructor (id) {
 			grid.style.display = 'none';
 	};// @lock
 
-	loadBAKAssessorVersions.click = function loadBAKAssessorVersions_click (event)// @startlock
+
+	closeAssesorCurrentButton.click = function closeAssesorCurrentButton_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
+	};// @startlock
+	loadBAKAssessorVersions.click = function loadBAKAssessorVersions_click (event)
 	{// @endlock
 			 
 		$$(getHtmlId('container3')).setSplitPosition(420);
@@ -252,10 +268,7 @@ function constructor (id) {
 	 	
 	};// @lock
 
-	closeAssesorCurrentButton.click = function closeAssesorCurrentButton_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
-	};// @lock
+	
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
@@ -477,6 +490,28 @@ var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,m
 					'params': [myObject5]
 				});
 	};// @lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	dataGrid6.onRowClick = function dataGrid6_onRowClick (event)// @startlock
 	{// @endlock
@@ -1496,7 +1531,7 @@ var myObject7 =
 	dataGrid5.onRowClick = function dataGrid5_onRowClick (event)// @startlock
 	{// @endlock
 		tempStore2 =  jurisdiction;
-	$$(getHtmlId('mainJudgeCont')).setSplitPosition(450);
+		$$(getHtmlId('mainJudgeCont')).setSplitPosition(450);
 		$$(getHtmlId('container3')).setSplitPosition(2000);
 	 	$$(getHtmlId('container9')).setSplitPosition(1000);
 	 	$$(getHtmlId('container6')).setSplitPosition(420);
@@ -1950,49 +1985,52 @@ var myObject7 =
 
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
+		debugger;
+		var myWidget = document.getElementById($comp.id +"_AssessorMainContainer");
+		myWidget.style.transitionProperty = "left";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.left = "560px";
+		//$$(getHtmlId('AssessorMainContainer')).left = '450'
+		//$$(getHtmlId('container3')).setSplitPosition(2000);
+	 	//$$(getHtmlId('container9')).setSplitPosition(1000);
+	 	//$$(getHtmlId('container6')).setSplitPosition(420);
 		
-		sources.reporting;
-
-		$$(getHtmlId('mainAssessorCont')).setSplitPosition(450);
-		$$(getHtmlId('container3')).setSplitPosition(2000);
-	 	$$(getHtmlId('container9')).setSplitPosition(1000);
-	 	$$(getHtmlId('container6')).setSplitPosition(420);
 		
 		
+		//var name = sources.assessorList.AssessorName;
+		//var city = sources.assessorList.AssessorCity;
+		//var reportingMethod = sources.assessorList.AssPreferredReportingMethod;
+		//var ids = sources.assessorList.AssessorInformationID;
+		//if(city != "" && city != null && city != "null")
+		//{
+		//	$$(getHtmlId('cityComboBox')).setValue(city);
+		//}
+		//else
+		//{
+		//	$$(getHtmlId('cityComboBox')).setValue("None");
+		//}
 		
-		var name = sources.assessorList.AssessorName;
-		var city = sources.assessorList.AssessorCity;
-		var reportingMethod = sources.assessorList.AssPreferredReportingMethod;
-		var ids = sources.assessorList.AssessorInformationID;
-		if(city != "" && city != null && city != "null")
-		{
-			$$(getHtmlId('cityComboBox')).setValue(city);
-		}
-		else
-		{
-			$$(getHtmlId('cityComboBox')).setValue("None");
-		}
-		
-		if(reportingMethod != "" && reportingMethod != null)
-		{
+		//if(reportingMethod != "" && reportingMethod != null)
+		//{
 				
-			$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
-		}
-		else
-		{
+		//	$$(getHtmlId('reportingComboBox')).setValue(reportingMethod);
+		//}
+		//else
+		//{
 				
-			$$(getHtmlId('reportingComboBox')).setValue("None");
-		}
+		//	$$(getHtmlId('reportingComboBox')).setValue("None");
+		//}
 		
 		
 		///////////////////////////////////////////////////////////get data
 		
-		currentName = name;
+		//currentName = name;
 		
-		currentID = ids;
+		//currentID = ids;
 		
 		
-		fillCorrespondance();
+		//fillCorrespondance();
 		
 		
 		
@@ -3196,59 +3234,10 @@ var myObject7 =
 
 		
 	}
-	function totalError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
-	function citySuccess(result)
-	{
-		var tempCity = result[0];
 		
-		result[0] = {
-		    CityListing: "None"
-		};
-		
-		result[result.length] = tempCity;
-		city = result;
-		tempStore= city;
-		sources.city.sync();
-	}
-	function cityError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
-	function reportingSuccess(result)
-	{
-		
-		var tempReporting = result[0];
-		result[0] = {
-   		 ReportingMethod: "None"
-		};
-		result[result.length] = tempReporting;
-		
-		reporting = result;
-		sources.reporting.sync();
-		var x=0;
-	}
-	function reportingError(event)
-	{
-		var errMessage;
-				for (var x = 0;x < event.error.length;x++)
-				{
-					errMessage += (event.error[x].message + ",");
-				}
-				alert(errMessage);
-	}
+	
+	
+	
 	
 	function assessorSuccess(result)
 	{
@@ -3256,90 +3245,42 @@ var myObject7 =
 		sources.assessorList.sync();
 		
 	}
-	function assessorError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function attorneySuccess(result)
 	{
 		attorneyList = result;
 		sources.attorneyList.sync();
 		
 	}
-	function attorneyError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function courtJurisdictionSuccess(result)
 	{
 		courtJurisdictionList = result;
 		sources.courtJurisdictionList.sync();
 		
 	}
-	function courtJurisdictionError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function dhsSuccess(result)
 	{
 		dhsList = result;
 		sources.dhsList.sync();
 		
 	}
-	function dhsError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function judgeSuccess(result)
 	{
 		judgeList = result;
 		sources.judgeList.sync();
 		
 	}
-	function judgeError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function otherMonitorSuccess(result)
 	{
 		otherMonitorList = result;
 		sources.otherMonitorList.sync();
 		
 	}
-	function otherMonitorError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function probationJurisdictionSuccess(result)
 	{
 		probationJurisdictionList = result;
@@ -3361,15 +3302,7 @@ var myObject7 =
 		sources.probationOfficerList.sync();
 		
 	}
-	function probationOfficerError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
+	
 	function prosecutorSuccess(result)
 	{
 		
@@ -3378,19 +3311,8 @@ var myObject7 =
 		
 		
 	}
-	function prosecutorError(event)
-	{
-		var errMessage;
-		for (var x = 0;x < event.error.length;x++)
-		{
-			errMessage += (event.error[x].message + ",");
-		}
-		alert(errMessage);
-	}
-	function testAsyncFunc(event)
-	{
-		
-	}
+	
+	
 	
 	
 }

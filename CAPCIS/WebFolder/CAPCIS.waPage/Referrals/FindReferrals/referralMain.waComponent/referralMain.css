@@ -5397,31 +5397,6 @@
 	 
 }
 
-#{id}container75 {
-	 z-index: 3;
-	 width: 1150px;
-	 height: 625px;
-	 top: 0px;
-	 left: 140px;
-	
-	 position: absolute;
-	 border-top-color: rgb(229, 229, 229);
-	 border-top-style: ridge;
-	 border-top-width: 5px;
-	 border-left-color: rgb(229, 229, 229);
-	 border-left-style: ridge;
-	 border-left-width: 5px;
-	 border-right-color: rgb(229, 229, 229);
-	 border-right-style: ridge;
-	 border-right-width: 5px;
-	 border-bottom-color: rgb(229, 229, 229);
-	 border-bottom-style: ridge;
-	 border-bottom-width: 5px;
-	 background-image: none;
-	 background-color: rgb(240, 240, 255);
-	 
-}
-
 #{id}label23 {
 	 z-index: 7;
 	 width: 53px;
@@ -6449,6 +6424,31 @@
 	 left: 250px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}AssessorMainContainer {
+	 z-index: 3;
+	 width: 1150px;
+	 height: 625px;
+	 top: 0px;
+	 left: 140px;
+	
+	 position: absolute;
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-top-width: 5px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-left-width: 5px;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 5px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 5px;
+	 background-image: none;
+	 background-color: rgb(240, 240, 255);
 	 
 }
 
