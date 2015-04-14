@@ -18,6 +18,7 @@ function constructor (id) {
 		
 		refreshData();
 		getTotals();
+		currentID = "";     //variable to hold an id for any clicked main grid on this page
 		
 		newAssessor = document.getElementById(getHtmlId('newAssesorComponent'));
 		newAttorney = document.getElementById(getHtmlId('newAttorneyComponent'));
@@ -85,6 +86,7 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var loadBakAttorneyVersions = {};	// @button
 	var otherMonitorFullList = {};	// @dataGrid
 	var courtJurisdictionFullList = {};	// @dataGrid
 	var probationJurisdictionFullList = {};	// @dataGrid
@@ -96,7 +98,7 @@ function constructor (id) {
 	var dataGrid19 = {};	// @dataGrid
 	var button39 = {};	// @button
 	var textField101 = {};	// @textField
-	var loadBAKAssessorVersions = {};	// @button
+	var loadBakAssessorVersions = {};	// @button
 	var closeAssesorCurrentButton = {};	// @button
 	var submitAssessorCurrentInformation = {};	// @button
 	var cityComboboxGrid = {};	// @dataGrid
@@ -197,6 +199,8 @@ function constructor (id) {
 
 	
 
+	
+
 	dataGrid19.onRowClick = function dataGrid19_onRowClick (event)// @startlock
 	{// @endlock
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
@@ -255,19 +259,30 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 	};// @startlock
-	loadBAKAssessorVersions.click = function loadBAKAssessorVersions_click (event)
+	
+	
+	
+	
+	
+	loadBakAssessorVersions.click = function loadBakAssessorVersions_click (event)
 	{// @endlock
 			 
-		$$(getHtmlId('container3')).setSplitPosition(420);
-		//var name = $$(getHtmlId('assessorNameField')).getValue();
+		var myWidget = document.getElementById($comp.id +"_AssessorMainContainer");
+		myWidget.style.left = "150px";
 		
-		//load referralBAKAssessorsList Page to the toprightbox
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component7', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralBAKAssessorsList.waComponent'				//designate the webcomponent to load
+		});
 		
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-						bakListSuccess(result);
+		 				
+		 				bakAssessorInfo = result;
+		 				sources.bakAssessorInfo.sync();
+						//bakListSuccess(result);
 					},
 					'onError': function(error){
 						console.log(error);
@@ -276,7 +291,39 @@ function constructor (id) {
 				});
 	 	
 	};// @lock
+	
+	loadBakAttorneyVersions.click = function loadBakAttorneyVersions_click (event)// @startlock
+	{// @endlock
+		
+		
+		var myWidget = document.getElementById($comp.id +"_AttorneyMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component13', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Attorneys/referralBAKAttorneysList.waComponent'				//designate the webcomponent to load
+		});
 
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						bakAttorneyInfo = result;
+		 				sources.bakAttorneyInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+	
+	
+	
+	
+	
+	
+	
 	
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
@@ -1581,21 +1628,7 @@ var myObject7 =
 				});
 	};// @lock
 
-	button43.click = function button43_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button37.click = function button37_click (event)// @startlock
 	{// @endlock
@@ -1669,8 +1702,23 @@ var myObject7 =
 				});
 	};// @lock
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	assessorFullList.onRowClick = function assessorFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.assessorList.AssessorInformationID;
 		
 		var myWidget = document.getElementById($comp.id +"_AssessorMainContainer");
 		myWidget.style.transitionProperty = "left";
@@ -1683,6 +1731,9 @@ var myObject7 =
 	
 	attorneyFullList.onRowClick = function attorneyFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.attorneyList.AttorneyInformationID;
+		
 		var myWidget = document.getElementById($comp.id +"_AttorneyMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -2089,6 +2140,7 @@ var myObject7 =
 	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_loadBakAttorneyVersions", "click", loadBakAttorneyVersions.click, "WAF");
 	WAF.addListener(this.id + "_otherMonitorFullList", "onRowClick", otherMonitorFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_courtJurisdictionFullList", "onRowClick", courtJurisdictionFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_probationJurisdictionFullList", "onRowClick", probationJurisdictionFullList.onRowClick, "WAF");
@@ -2101,7 +2153,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_button39", "click", button39.click, "WAF");
 	WAF.addListener(this.id + "_textField101", "keyup", textField101.keyup, "WAF");
 	WAF.addListener(this.id + "_textField101", "blur", textField101.blur, "WAF");
-	WAF.addListener(this.id + "_loadBAKAssessorVersions", "click", loadBAKAssessorVersions.click, "WAF");
+	WAF.addListener(this.id + "_loadBakAssessorVersions", "click", loadBakAssessorVersions.click, "WAF");
 	WAF.addListener(this.id + "_closeAssesorCurrentButton", "click", closeAssesorCurrentButton.click, "WAF");
 	WAF.addListener(this.id + "_submitAssessorCurrentInformation", "click", submitAssessorCurrentInformation.click, "WAF");
 	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
