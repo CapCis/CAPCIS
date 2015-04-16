@@ -90,3 +90,45 @@ exports.setRegistration = function setInsert(myObject)
 		return err;	
 	}
 };
+
+exports.setInsertWArray = function setInsert(myArray)
+{
+	try{
+		
+			var serverUtil = require('serverUtilities');
+			var dBQueryBuilder = require('dSelectsQuery');
+			var dBInsertBuilder = require('dInsertQuery');
+			for(var x = 0; x < myArray.size ; x++)
+			{
+				var myObject = myArray[x];
+				var tokenArray = {token:myObject.token,major:0,minor:1};
+				var selectStatement = dBQueryBuilder.buildQuery(tokenArray);
+				var connection = serverUtil.getDBConnection();
+				var result = connection.execute(selectStatement);
+				var myResults = result.getAllRows();
+				if(myResults.length > 0)
+				{
+					var insertStatement = dBInsertBuilder.buildQuery(myObject);
+					connection.execute(insertStatement);
+					console.log(myReturnedID);		
+					var myResults = ["suc"];
+					connection.close;
+					return myResults;
+				}
+				else
+				{
+					var myResults = ["err", "Invalid Token"];
+					connection.close;
+					return myResults;
+				}
+			}
+		}
+	catch(err)
+	{
+		return err;
+	}	
+		
+		
+	
+	
+};

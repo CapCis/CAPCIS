@@ -3498,17 +3498,6 @@
 	 
 }
 
-#{id}textField3 {
-	 z-index: 13;
-	 width: 100px;
-	 height: 22px;
-	 top: 475px;
-	 left: 500px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label4 {
 	 z-index: 11;
 	 width: 98px;
@@ -3526,17 +3515,6 @@
 	 height: 13px;
 	 top: 429px;
 	 left: 414px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField1 {
-	 z-index: 11;
-	 width: 100px;
-	 height: 22px;
-	 top: 425px;
-	 left: 500px;
 	
 	 position: absolute;
 	 
@@ -6930,6 +6908,28 @@
 	 width: 100px;
 	 height: 22px;
 	 top: 345px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}backBalenceField {
+	 z-index: 11;
+	 width: 100px;
+	 height: 22px;
+	 top: 425px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}amountPaidBottom {
+	 z-index: 13;
+	 width: 100px;
+	 height: 22px;
+	 top: 475px;
 	 left: 500px;
 	
 	 position: absolute;
