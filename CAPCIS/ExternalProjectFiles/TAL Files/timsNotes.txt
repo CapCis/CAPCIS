@@ -17,6 +17,8 @@ MOST USED COMMANDS
 	var mywidget = document.getElementById("parentWC_widgetName");
 	mywidget.style.top = "25px";
 	
+	var mywidget = document.getElementById($comp.id +"_AssessorMainContainer");
+	mywidget.style.left = "450px";
 
 
 HOW TO SET FOCUS
