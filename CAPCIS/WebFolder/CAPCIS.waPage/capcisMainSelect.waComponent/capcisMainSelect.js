@@ -11,7 +11,7 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	this.load = function (data) {// @lock
-	
+	 
 	 var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};
 	 myMenuButtons = rpcDSelects.getSelect(myObject);
 	 sources.myMenuButtons.sync();

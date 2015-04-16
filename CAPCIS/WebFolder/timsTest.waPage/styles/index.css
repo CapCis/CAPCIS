@@ -3,8 +3,45 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#component1 {
+	 z-index: 36;
+	 width: 733px;
+	 height: 501px;
+	 top: 1417px;
+	 left: 1301px;
+	
+	 position: absolute;
+	 
+}
+
+#container9 {
+	 z-index: 1;
+	 width: 255px;
+	 height: 155px;
+	 top: 61px;
+	 left: 93px;
+	
+	 position: absolute;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
+#container8 {
+	 z-index: 35;
+	 width: 629px;
+	 height: 440px;
+	 top: 1467px;
+	 right: 100px;
+	
+	 position: absolute;
+	 
+}
+
 #button15 {
-	 z-index: 34;
+	 z-index: 33;
 	 width: 91px;
 	 height: 25px;
 	 top: 172px;
@@ -22,15 +59,6 @@
 	 left: 33px;
 	
 	 position: absolute;
-	 
-}
-
-#button13 {
-	 width: 128px;
-	 height: 27px;
-	 top: 446px;
-	 left: 432px;
-	
 	 
 }
 

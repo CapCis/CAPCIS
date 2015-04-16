@@ -1,0 +1,1 @@
+CREATE TABLE testClientInfo LIKE capcis.clientinformation; INSERT testClientInfo SELECT * FROM capcis.clientinformation;

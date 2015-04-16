@@ -7,7 +7,8 @@
 
 exports.getToken = function getToken(array)
 {
-	//var address = getToken.remoteAddress;
+	
+	console.log(array);
 	var serverUtil = require('serverUtilities'); 					//include serverUtilities Module
 	var dBQueryBuilder1 = require('dSelectsQuery'); 					//include dSelectsQuery Module
 	var dBQueryBuilder2 = require('dInsertQuery');
@@ -30,7 +31,7 @@ exports.getToken = function getToken(array)
 			
 			
 			var myTokenRan = Math.floor((Math.random() *9000000000000000) +1);
-			var returnData = [{myToken: myTokenRan, FxUserAccountsID: myResults[0].FxUserAccountsID,FullName:myResults[0].FullName,myDivisionResults:myDivisionResults}];
+			var returnData = [{myToken: myTokenRan, FxUserAccountsID: myResults[0].FxUserAccountsID,FullName:myResults[0].FullName,myDivisionResults:myDivisionResults,verified:true}];
 			
 			insertStatement = dBQueryBuilder2.buildQuery(insertToken = {major:0, minor:1,id:myResults[0].FxUserAccountsID,token:myTokenRan});
 			var result4 = connection2.execute(insertStatement);
@@ -44,13 +45,13 @@ exports.getToken = function getToken(array)
 			var connection2 = serverUtil.getDBConnection(); 											
 			var result2 = connection2.execute(insertStatement);
 			connection2.close;
-			var returnData = [{myToken:"err", UserAccpuntsID:"Invalid Attempt"}];
+			var returnData = [{myToken:"err", UserAccpuntsID:"Invalid Attempt",verified:false}];
 			return returnData;
 		}
 	}
 	catch(err)
 	{
-		var returnData = ["err", "Invalid Attempt"];
-		return returnData;
+		var returnData = [{myToken:"err", UserAccpuntsID:"Invalid Attempt",verified:false}]; //["err", "Invalid Attempt"];
+		return err;
 	}
 };

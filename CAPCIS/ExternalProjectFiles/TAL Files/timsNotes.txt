@@ -1,18 +1,83 @@
+
+
+
 HOW TO RUN A REPORT IN JASPER REPORTS
 
 	http://localhost:8080/jasperserver/rest_v2/reports/reports/dickReport2.html?whereFilter=9
 													  direcotry/reportname   	? report parameter
 
+MOST USED COMMANDS
 
-HOW TO CHANGE CSS OF A WIDGET 
+	$$(getHtmlId("widgetName")).getValue();
+
+	$$(getHtmlId('widgetName')).setValue("stringValue");
+
+	$$(getHtmlId('container3')).setSplitPosition(420);
+
+	var mywidget = document.getElementById("parentWC_widgetName");
+	mywidget.style.top = "25px";
+	
+
+
+HOW TO SET FOCUS
+
+$$(getHtmlId("widget")).focus();
+
+
+HOW TO SYNC A DATA SOURCE
+    
+	cwmClientInfo = resultoffunction;  //must be global var
+	sources.cwmClientInfo.sync();
+
+
+HOW TO EDIT CSS OF A WIDGET
 
 	getHtmlObj('button1').css('background-color' , 'red');
 	
-						OR
-	var mywidget = document.getElementById("parentWC_widgetName")
-	mywidget.style.top = "25px"
+
+HOW TO FORMAT A DATE FOR MYSQL UPDATE
+
+	myDate = datetimepicker
+	var myDateFormated = (myDate.getFullYear() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getDate());  //yyyy-mm-dd required for insert to work
+	
+
+  //Client Side Prep
+	var myBirthday = $$(getHtmlId("jQDateTime3"));
+	var myBirthdayFormated = 'NULL';
+    try
+		{
+			if (myBirthday.getValue() != "" && myBirthday.getValue != "undefined")
+			{
+				var myBirthdayDate = myBirthday.getDate();
+				var myBirthDayMonth = (myBirthdayDate.getMonth() + 1).toString();
+				//var myMonth = myDate.getMonth().toString();
+				var myBirthDayDay = myBirthdayDate.getDate().toString();
+				if (myBirthDayDay.length == 1){myBirthDayDay = "0" + myBirthDayDay}
+				if (myBirthDayMonth.length == 1){myBirthDayMonth = "0" + myBirthDayMonth}
+				myBirthdayFormated = ("'" +myBirthdayDate.getFullYear() + "-" + myBirthDayMonth + "-" + myBirthDayDay + "'");  //add quotes so that the select query works
+			}
+		}
+		catch(err)
+		{
+			alert("Incorrect Birthday");
+			return;
+		}
+  
+  //Server Side Query
+	'UPDATE capcis.employeeinformation SET EmployeeBirthdate = '+myObject.birthday+''  //notice the missing "" around the variable which allows a NULL from above
 
 
+HOW TO WORK WITH DATETIME PICKER
+  
+  //get times from the widget
+	var myTime = $$(getHtmlId("jQDateTime1"));
+	var myDate = myTime.getDate();
+	alert(myTime.getValue());
+	alert(myDate.getHours());
+	alert(myDate.getMinutes());
+	alert(myDate.getDay());
+  
+  
 
 HOW TO OPEN A WEB COMPONENT
 
@@ -23,6 +88,7 @@ HOW TO OPEN A WEB COMPONENT
 
 
 
+	
 RPCDSELECTS
 
 	var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:2};	
@@ -89,5 +155,7 @@ RPCDINSERT
 	}
 
 
+HOW TO SEE PREVIOUS QUERIES IN MYSQL
 
+	SELECT * FROM mysql.general_log ORDER BY event_time desc
 

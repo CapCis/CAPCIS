@@ -9,27 +9,35 @@
 
 exports.getSelect = function getSelect(myObject)
 {
-	var serverUtil = require('serverUtilities');
-	var dBQueryBuilder = require('dSelectsQuery');
-	var token = {token:myObject.token,major:0,minor:1};
-	var checkToken = dBQueryBuilder.buildQuery(token);
-	var connection = serverUtil.getDBConnection();
-	var tokenAnswer = connection.execute(checkToken);
-	var myResults = tokenAnswer.getAllRows();
-	connection.close;
-	if (myResults.length > 0) 
+	
+	try
 	{
-		var selectStatement = dBQueryBuilder.buildQuery(myObject);	
+		var serverUtil = require('serverUtilities');
+		var dBQueryBuilder = require('dSelectsQuery');
+		var token = {token:myObject.token,major:0,minor:1};
+		var checkToken = dBQueryBuilder.buildQuery(token);
 		var connection = serverUtil.getDBConnection();
-		var result = connection.execute(selectStatement);
-		var myResults = result.getAllRows();
+		var tokenAnswer = connection.execute(checkToken);
+		var myResults = tokenAnswer.getAllRows();
 		connection.close;
-		return myResults;
-	}
-	else 
-	{		
+		if (myResults.length > 0) 
+		{
+			var selectStatement = dBQueryBuilder.buildQuery(myObject);	
+			var connection = serverUtil.getDBConnection();
+			var result = connection.execute(selectStatement);
+			var myResults = result.getAllRows();
+			connection.close;
+			return myResults;
+		}
+		else 
+		{		
 		return myResults = ["err","Invalid Token"];
-	}	
+		}	
+	}
+	catch(err)
+	{
+		return err.message;
+	}
 };
 
 exports.getReferralCount = function getSelect(myObject)
