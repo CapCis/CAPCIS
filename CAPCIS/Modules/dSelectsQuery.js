@@ -332,7 +332,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				
 				case 45: answer = 'SELECT *,DATE_FORMAT( bakjudges.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakjudges \
-								LEFT JOIN capcis.fxuseraccounts on bakjudges.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakjudges.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_judges_JudgesID = "'+myObject.data1+'" \
 								ORDER BY bakjudges.CreatedDateTime DESC';
 						return answer;

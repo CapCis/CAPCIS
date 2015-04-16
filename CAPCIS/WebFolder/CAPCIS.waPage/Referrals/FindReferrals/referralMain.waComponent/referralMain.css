@@ -3163,17 +3163,6 @@
 	 
 }
 
-#{id}button18 {
-	 z-index: 35;
-	 width: 125px;
-	 height: 25px;
-	 top: 300px;
-	 left: 9px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}dataGrid14 {
 	 z-index: 34;
 	 width: 215px;
@@ -3903,17 +3892,6 @@
 	 height: 16px;
 	 top: 270px;
 	 left: 285px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button12 {
-	 z-index: 27;
-	 width: 125px;
-	 height: 25px;
-	 top: 299px;
-	 left: 9px;
 	
 	 position: absolute;
 	 
@@ -5478,50 +5456,6 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 11;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}AttorneyContainer {
-	 z-index: 12;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}DHSOfficerContainer {
-	 z-index: 13;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}JudgeContainer {
-	 z-index: 5;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}OtherMonitorContainer {
 	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
@@ -5532,8 +5466,52 @@
 	 
 }
 
+#{id}AttorneyContainer {
+	 z-index: 11;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}DHSOfficerContainer {
+	 z-index: 12;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}JudgeContainer {
+	 z-index: 13;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}OtherMonitorContainer {
+	 z-index: 9;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}ProsecutorContainer {
-	 z-index: 6;
+	 z-index: 5;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5544,7 +5522,7 @@
 }
 
 #{id}ProbationOfficerContainer {
-	 z-index: 7;
+	 z-index: 6;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5555,7 +5533,7 @@
 }
 
 #{id}ProbationJursidictionContainer {
-	 z-index: 8;
+	 z-index: 7;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5566,7 +5544,7 @@
 }
 
 #{id}CourtJursidictionContainer {
-	 z-index: 9;
+	 z-index: 8;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -6314,6 +6292,28 @@
 	 height: 25px;
 	 top: 300px;
 	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadBakDHSOfficerVersions {
+	 z-index: 27;
+	 width: 125px;
+	 height: 25px;
+	 top: 299px;
+	 left: 9px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadBakJudgesVersions {
+	 z-index: 35;
+	 width: 125px;
+	 height: 25px;
+	 top: 300px;
+	 left: 9px;
 	
 	 position: absolute;
 	 

@@ -139,7 +139,7 @@ function constructor (id) {
 	var button21 = {};	// @button
 	var button19 = {};	// @button
 	var dataGrid16 = {};	// @dataGrid
-	var button18 = {};	// @button
+	var loadBakJudgesVersions = {};	// @button
 	var dataGrid14 = {};	// @dataGrid
 	var button17 = {};	// @button
 	var textField49 = {};	// @textField
@@ -152,7 +152,7 @@ function constructor (id) {
 	var dataGrid10 = {};	// @dataGrid
 	var button14 = {};	// @button
 	var textField24 = {};	// @textField
-	var button12 = {};	// @button
+	var loadBakDHSOfficerVersions = {};	// @button
 	var button3 = {};	// @button
 	var button1 = {};	// @button
 	var dataGrid8 = {};	// @dataGrid
@@ -292,6 +292,7 @@ function constructor (id) {
 	 	
 	};// @lock
 	
+	
 	loadBakAttorneyVersions.click = function loadBakAttorneyVersions_click (event)// @startlock
 	{// @endlock
 		
@@ -317,6 +318,71 @@ function constructor (id) {
 					'params': [myObject5]
 				});
 	};// @lock
+	
+	
+	loadBakDHSOfficerVersions.click = function loadBakDHSOfficerVersions_click (event)// @startlock
+	{// @endlock
+			 
+			 
+		var myWidget = document.getElementById($comp.id +"_dhsOfficerMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component15', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralBAKDHSOfficersList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:36,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakDhsInfo = result;
+		 				sources.bakDhsInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+		
+	
+	loadBakJudgesVersions.click = function loadBakJudgesVersions_click (event)// @startlock
+	{// @endlock
+			 
+		
+		var myWidget = document.getElementById($comp.id +"_judgeMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component19', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesList.waComponent'				//designate the webcomponent to load
+		});
+		debugger;
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:45,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						bakJudgeInfo = result;
+		 				sources.bakJudgeInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -1167,23 +1233,7 @@ var myObject7 =
 		$$(getHtmlId('omCityComboBox')).setValue(recValue);
 	};// @lock
 
-	button18.click = function button18_click (event)// @startlock
-	{// @endlock
-			 
-		
-		$$(getHtmlId('container3')).setSplitPosition(420);
-		
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:45,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	dataGrid14.onRowClick = function dataGrid14_onRowClick (event)// @startlock
 	{// @endlock
@@ -1416,23 +1466,7 @@ var myObject7 =
 			grid.style.display = 'none';
 	};// @lock
 
-	button12.click = function button12_click (event)// @startlock
-	{// @endlock
-			 
-
-		$$(getHtmlId('container3')).setSplitPosition(420);
-		var name = $$(getHtmlId('dhsNameField')).getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:36,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
@@ -1745,7 +1779,10 @@ var myObject7 =
 	
 	
 	dhsOfficerFullList.onRowClick = function dhsOfficerFullList_onRowClick (event)// @startlock
-	{// @endlock		
+	{// @endlock	
+		
+		currentID = sources.dhsList.DhsInformationID;
+		
 		var myWidget = document.getElementById($comp.id +"_dhsOfficerMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -1758,6 +1795,9 @@ var myObject7 =
 	
 	judgeFullList.onRowClick = function judgeFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.judgeList.JudgesID;
+		
 		var myWidget = document.getElementById($comp.id +"_judgeMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -1770,6 +1810,9 @@ var myObject7 =
 	
 	prosecutorFullList.onRowClick = function prosecutorFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.prosecutorList.ProsecutorsID;
+		
 		var myWidget = document.getElementById($comp.id +"_prosecutorMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -1782,6 +1825,9 @@ var myObject7 =
 	
 	otherMonitorFullList.onRowClick = function otherMonitorFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.otherMonitorList.OtherMonitorsID;
+		
 		var myWidget = document.getElementById($comp.id +"_otherMonitorMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -1794,6 +1840,9 @@ var myObject7 =
 
 	courtJurisdictionFullList.onRowClick = function courtJurisdictionFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.courtJurisdictionList.CourtJurisdictionID;
+		
 		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -1806,6 +1855,9 @@ var myObject7 =
 
 	probationJurisdictionFullList.onRowClick = function probationJurisdictionFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.probationJurisdictionList.POJurisdictionID;
+		
 		var myWidget = document.getElementById($comp.id +"_probationJurisdictionMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -1818,6 +1870,9 @@ var myObject7 =
 
 	probationOfficerFullList.onRowClick = function probationOfficerFullList_onRowClick (event)// @startlock
 	{// @endlock
+	
+		currentID = sources.probationOfficerList.POInformationID;
+		
 		var myWidget = document.getElementById($comp.id +"_probationOfficerMainContainer");
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
@@ -2200,7 +2255,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_button21", "click", button21.click, "WAF");
 	WAF.addListener(this.id + "_button19", "click", button19.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid16", "onRowClick", dataGrid16.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button18", "click", button18.click, "WAF");
+	WAF.addListener(this.id + "_loadBakJudgesVersions", "click", loadBakJudgesVersions.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid14", "onRowClick", dataGrid14.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button17", "click", button17.click, "WAF");
 	WAF.addListener(this.id + "_textField49", "keyup", textField49.keyup, "WAF");
@@ -2216,7 +2271,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");
 	WAF.addListener(this.id + "_textField24", "keyup", textField24.keyup, "WAF");
 	WAF.addListener(this.id + "_textField24", "blur", textField24.blur, "WAF");
-	WAF.addListener(this.id + "_button12", "click", button12.click, "WAF");
+	WAF.addListener(this.id + "_loadBakDHSOfficerVersions", "click", loadBakDHSOfficerVersions.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid8", "onRowClick", dataGrid8.onRowClick, "WAF");
