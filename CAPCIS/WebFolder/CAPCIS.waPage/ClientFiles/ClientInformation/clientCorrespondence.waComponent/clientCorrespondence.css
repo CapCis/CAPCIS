@@ -4,39 +4,40 @@
 */
 
 #{id}label23 {
+	 z-index: 3;
 	 width: 180px;
 	 height: 13px;
 	 top: 7px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}label21 {
+	 z-index: 6;
 	 width: 24px;
 	 height: 13px;
 	 top: 218px;
 	 left: 71px;
 	
 	 position: absolute;
-	 z-index: 6;
 	 
 }
 
 #{id}textField11 {
+	 z-index: 3;
 	 width: 385px;
 	 height: 180px;
 	 top: 25px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}button12 {
+	 z-index: 2;
 	 width: 75px;
 	 height: 25px;
 	 top: 210px;
@@ -44,22 +45,22 @@
 	
 	 position: absolute;
 	 font-size: 12px;
-	 z-index: 2;
 	 
 }
 
 #{id}container25 {
-	 width: -396px;
+	 z-index: 2;
+	 width: -70px;
 	 height: 243px;
 	 top: 0px;
 	 left: 401px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}button10 {
+	 z-index: 7;
 	 width: 75px;
 	 height: 25px;
 	 top: 210px;
@@ -67,22 +68,22 @@
 	
 	 position: absolute;
 	 font-size: 12px;
-	 z-index: 7;
 	 
 }
 
 #{id}checkbox1 {
+	 z-index: 6;
 	 width: 22px;
 	 height: 22px;
 	 top: 214px;
 	 left: 100px;
 	
 	 position: absolute;
-	 z-index: 6;
 	 
 }
 
 #{id}richText23 {
+	 z-index: 5;
 	 width: 300px;
 	 height: 22px;
 	 top: 5px;
@@ -93,11 +94,11 @@
 	 font-size: 16px;
 	 text-align: left;
 	 color: rgb(0, 27, 90);
-	 z-index: 5;
 	 
 }
 
 #{id}richText20 {
+	 z-index: 4;
 	 width: 175px;
 	 height: 18px;
 	 top: 30px;
@@ -106,11 +107,11 @@
 	 position: absolute;
 	 color: rgb(0, 0, 255);
 	 font-style: italic;
-	 z-index: 4;
 	 
 }
 
 #{id}richText22 {
+	 z-index: 3;
 	 width: 150px;
 	 height: 18px;
 	 top: 30px;
@@ -120,66 +121,66 @@
 	 color: rgb(255, 0, 0);
 	 font-style: italic;
 	 text-align: right;
-	 z-index: 3;
 	 
 }
 
 #{id}textField12 {
+	 z-index: 2;
 	 width: 360px;
 	 height: 150px;
 	 top: 50px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}container24 {
+	 z-index: 1;
 	 width: 401px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}container23 {
-	 width: 5px;
+	 z-index: 2;
+	 width: 331px;
 	 height: 243px;
 	 top: 0px;
-	 left: 403px;
+	 left: 77px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}dataGrid3 {
+	 z-index: 4;
 	 height: 175px;
 	 top: 30px;
 	 left: 0px;
-	 right: 17px;
+	 right: 19px;
 	
 	 position: absolute;
-	 z-index: 4;
 	 
 }
 
 #{id}combobox3 {
+	 z-index: 3;
 	 width: 120px;
 	 height: 22px;
 	 top: 5px;
 	 left: 270px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}button11 {
+	 z-index: 2;
 	 width: 75px;
 	 height: 25px;
 	 top: 210px;
@@ -187,11 +188,11 @@
 	
 	 position: absolute;
 	 font-size: 12px;
-	 z-index: 2;
 	 
 }
 
 #{id}richText21 {
+	 z-index: 1;
 	 width: 210px;
 	 height: 22px;
 	 top: 5px;
@@ -202,12 +203,12 @@
 	 font-size: 16px;
 	 text-align: left;
 	 color: rgb(0, 27, 90);
-	 z-index: 1;
 	 
 }
 
 #{id}container20 {
-	 width: 403px;
+	 z-index: 1;
+	 width: 77px;
 	 height: 243px;
 	 top: 0px;
 	 left: 0px;
@@ -225,11 +226,11 @@
 	 border-bottom-color: rgb(0, 27, 90);
 	 border-bottom-style: solid;
 	 border-bottom-width: 1px;
-	 z-index: 1;
 	 
 }
 
 #{id}container19 {
+	 z-index: 1;
 	 width: 410px;
 	 height: 245px;
 	 top: 0px;
@@ -257,7 +258,6 @@
 	 border-bottom-style: solid;
 	 border-bottom-width: 1px;
 	 background-color: rgba(240, 240, 255, 0.898438);
-	 z-index: 1;
 	 
 }
 
