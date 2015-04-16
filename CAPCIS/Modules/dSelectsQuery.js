@@ -71,7 +71,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 4: answer = 'SELECT WeekDayNumber, Class, TimeNumber,ClassRoom FROM capcis.capclasses where ClassStatus = "OPEN" and ClassDay = "'+ myObject.data1 + '"order by 1,3,2';
 						return answer;
-				case 5: answer = 'SELECT ALL clientinformation.ClientFullNameReverse, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
+				case 5: answer = 'SELECT ALL clientinformation.ClientFullNameReverse,CurrentBalence, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
 								clientrequirements.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								clientrequirements.ClientInformation_CIID, clientrequirements.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, clientrequirements.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
 								(IDEntryAmountCharged-IDEntryAmountPaid) as CurrentBalence,  clientrequirements.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
@@ -90,7 +90,7 @@ exports.buildQuery = function buildQuery(myObject)
 								HAVING clientrequirements.ClientStatus = "Active" AND Class = "'+myObject.data1+'" AND clientrequirements.FK_MonitoringCategoryID = 1 \
 								ORDER BY ClientFullNameReverse ASC';
 						return answer;
-				case 6: answer = 'SELECT ALL  clientinformation.ClientFullNameReverse, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
+				case 6: answer = 'SELECT ALL  clientinformation.ClientFullNameReverse,CurrentBalence, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
 							activeclientrequirementsq.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 							activeclientrequirementsq.ClientInformation_CIID, activeclientrequirementsq.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, \
 							activeclientrequirementsq.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
@@ -118,12 +118,13 @@ exports.buildQuery = function buildQuery(myObject)
 							(MUClass = "'+myObject.data1 +'" AND RecurringMU =1 AND activeclientrequirementsq.FK_MonitoringCategoryID=1) \
 							ORDER BY ClientFullNameReverse ASC';
 						return answer;
-						
 				case 7: answer = 'SELECT ReceiptPurpose FROM capcis.receiptpurpose';
 						return answer;
 				case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
 						return answer;	
 				case 9: answer = 'SELECT * FROM capcis.itempricelist where ItemDiscontinued = false';
+						return answer;
+				case 10: answer = 'select * from capcis.clientinformation where clientinformation.ClientInformation_CIID = '+myObject.data1;
 						return answer;	
 				default:
 						answer = null;
