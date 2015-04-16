@@ -65,6 +65,7 @@ function constructor (id) {
 		$$(getHtmlId('receiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var button5 = {};	// @button
 	var field100 = {};	// @textField
 	var field95 = {};	// @textField
 	var field90 = {};	// @textField
@@ -103,6 +104,12 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button5.click = function button5_click (event)// @startlock
+	{// @endlock
+		var paid = $$($comp.id+'_amountPaidField').getValue();
+		$$($comp.id+'_amountPaidBottom').setValue(paid.toFixed(2));
+	};// @lock
 
 	field100.click = function field100_click (event)// @startlock
 	{// @endlock
@@ -378,6 +385,9 @@ function constructor (id) {
 		
 		//var reciept = document.getElementById(getHtmlId('classRosterRecieptCont'));
 		//reciept.style.left = '150px';
+		currentBal = sources.myRosterList.CurrentBalence.toFixed(2);
+		$$(getHtmlId("backBalenceField")).setValue(currentBal);
+		
 		$$(getHtmlId('classRosterMainCont')).setSplitPosition(600);
 		
 		
@@ -438,7 +448,7 @@ function constructor (id) {
 		else if(day == "None")
 		{
 			
-			var myObject3 = {token:'7836140170460568' ,id:'1',major:2,minor:3,data1:program}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+			var myObject3 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:3,data1:program}; //dontforget to add this to token   
 	 		filterResults = rpcDSelects.getSelect(myObject3);
 	 		sources.filterResults.sync();
 			
@@ -743,6 +753,7 @@ function constructor (id) {
 				alert(errMessage);
 	}
 	
+		
 	function itemListeSuccess(result)
 	{
 		itemList= result;
@@ -760,6 +771,7 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_field100", "click", field100.click, "WAF");
 	WAF.addListener(this.id + "_field95", "click", field95.click, "WAF");
 	WAF.addListener(this.id + "_field90", "click", field90.click, "WAF");
