@@ -12,7 +12,7 @@ function constructor (id) {
 		
 	this.load = function (data) {// @lock
 		
-		
+		debugger;
 		oldVisContainer = "";
 		oldVisComponent = "";
 		
@@ -128,7 +128,7 @@ function constructor (id) {
 	var dataGrid15 = {};	// @dataGrid
 	var textField71 = {};	// @textField
 	var button31 = {};	// @button
-	var button27 = {};	// @button
+	var loadBAKProsecutors = {};	// @button
 	var button26 = {};	// @button
 	var button25 = {};	// @button
 	var dataGrid9 = {};	// @dataGrid
@@ -361,7 +361,6 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:45,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
 						bakJudgeInfo = result;
 		 				sources.bakJudgeInfo.sync();
 					},
@@ -373,10 +372,55 @@ function constructor (id) {
 	};// @lock
 	
 	
+	loadBAKOtherMonitors.click = function loadBAKOtherMonitors_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_otherMonitorMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component23', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralBAKOtherMonitorsList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakOtherMonitorInfo = result;
+		 				sources.bakOtherMonitorInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
 	
 	
-	
-	
+	loadBAKProsecutors.click = function loadBAKProsecutors_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_prosecutorMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component27', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralBAKProsecutorsList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:81,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						debugger;
+						bakProsecutorInfo = result;
+		 				sources.bakProsecutorInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
 	
 	
 	
@@ -1003,21 +1047,7 @@ var myObject7 =
 		}
 	};// @lock
 
-	button27.click = function button27_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('prosSpecificInfoCont')).setSplitPosition(420);
-		
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:81,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button26.click = function button26_click (event)// @startlock
 	{// @endlock
@@ -1135,22 +1165,7 @@ var myObject7 =
 			grid.style.display = 'none';
 	};// @lock
 
-	loadBAKOtherMonitors.click = function loadBAKOtherMonitors_click (event)// @startlock
-	{// @endlock
-		
-		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(420);
-		
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button21.click = function button21_click (event)// @startlock
 	{// @endlock
@@ -2243,7 +2258,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_textField71", "keyup", textField71.keyup, "WAF");
 	WAF.addListener(this.id + "_textField71", "blur", textField71.blur, "WAF");
 	WAF.addListener(this.id + "_button31", "click", button31.click, "WAF");
-	WAF.addListener(this.id + "_button27", "click", button27.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKProsecutors", "click", loadBAKProsecutors.click, "WAF");
 	WAF.addListener(this.id + "_button26", "click", button26.click, "WAF");
 	WAF.addListener(this.id + "_button25", "click", button25.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid9", "onRowClick", dataGrid9.onRowClick, "WAF");
