@@ -9,7 +9,7 @@
 
 exports.getSelect = function getSelect(myObject)
 {
-	debugger;
+	//debugger;
 	try
 	{
 		var serverUtil = require('serverUtilities');

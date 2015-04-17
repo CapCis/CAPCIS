@@ -412,7 +412,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				
 				case 63: answer = 'SELECT *,DATE_FORMAT( bakpojurisdiction.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakpojurisdiction \
-								LEFT JOIN capcis.fxuseraccounts on bakpojurisdiction.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakpojurisdiction.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_pojurisdiction_POJurisdictionID = "'+myObject.data1+'" \
 								ORDER BY bakpojurisdiction.CreatedDateTime DESC';
 						return answer;
@@ -453,7 +453,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;		
 				
 				case 72: answer = 'SELECT *,DATE_FORMAT( bakpoinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakpoinformation \
-								LEFT JOIN capcis.fxuseraccounts on bakpoinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakpoinformation.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_poinformation_POInformationID = "'+myObject.data1+'" \
 								ORDER BY bakpoinformation.CreatedDateTime DESC';
 						return answer;
