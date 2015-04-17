@@ -20,7 +20,10 @@ function constructor (id) {
 
 	closeCourtJurisdictionPreviousButton.click = function closeCourtJurisdictionPreviousButton_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container9')).setSplitPosition(625);
+		//$$(getHtmlId('container9')).setSplitPosition(625);
+		moveMe = document.getElementById(data.userData.mainContainer);
+		moveMe.style.left = "600px"
+		
 	};// @lock
 
 	// @region eventManager// @startlock

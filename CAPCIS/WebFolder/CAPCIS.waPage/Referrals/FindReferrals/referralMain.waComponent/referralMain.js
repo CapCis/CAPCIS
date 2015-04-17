@@ -477,12 +477,14 @@ function constructor (id) {
 	{// @endlock
 		
 		
-		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
-		myWidget.style.left = "150px";
-		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component39', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsList.waComponent'				//designate the webcomponent to load
+		});
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component40', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsView.waComponent',				//designate the webcomponent to load
+			userData: {mainContainer: $comp.id+'_courtJurisdictionMainContainer' }
 		});
 		
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
@@ -496,6 +498,8 @@ function constructor (id) {
 					},
 					'params': [myObject5]
 				});
+		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
+		myWidget.style.left = "150px";
 	 	
 	};// @lock
 	
