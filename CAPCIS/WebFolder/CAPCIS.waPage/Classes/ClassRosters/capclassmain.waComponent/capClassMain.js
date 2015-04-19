@@ -36,17 +36,7 @@ function constructor (id) {
 					'params': [myObject]
 				});
 				
-		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:9}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		 		rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-		 				
-						itemListeSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject]
-				});
+		
 				
 		var today = new Date();
 		var dd = today.getDate();
@@ -425,10 +415,35 @@ function constructor (id) {
 					},
 					'params': [myObject]
 				});
+				
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:12,
+						data1:sources.myRosterList.ClientInformation_CIID ,weekStartDate:'2014-3-16', weekEndDate:'2014-3-22'}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						balenceCarrySuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+				
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:9,data1:sources.myRosterList.ClientRequirementsID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						itemListeSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
 		currentBal = Number(sources.myRosterList.CurrentBalence).toFixed(2);
 		$$(getHtmlId("backBalenceField")).setValue(currentBal);
 		
-		$$(getHtmlId('classRosterMainCont')).setSplitPosition(600);
+		$$(getHtmlId('classRosterMainCont')).setSplitPosition(400);
 		
 		
 	};// @lock
@@ -816,6 +831,21 @@ function constructor (id) {
 		sources.clientFlag.sync();
 	}
 	function flagError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
+	function balenceCarrySuccess(result)
+	{
+		carryBalence= result;
+		sources.carryBalence.sync();
+		$$(getHtmlId('balenceMayCarry')).setValue(Number(sources.carryBalence.ItemPrice).toFixed(2));
+	}
+	function balenceCarryError(event)
 	{
 		var errMessage;
 				for (var x = 0;x < event.error.length;x++)
