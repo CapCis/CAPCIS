@@ -122,7 +122,14 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
 						return answer;	
-				case 9: answer = 'SELECT * FROM capcis.itempricelist where ItemDiscontinued = false';
+				case 9: answer = 'SELECT * FROM capcis.itempricelist \
+									join ( \
+											SELECT FK_itempricelist_ItemPriceListID FROM capcis.clientrequirements \
+											join itempriceconnector on \
+											FK_PriceCategoryID = FK_pricecategory_PriceCategoryID \
+											where ClientRequirementsID = '+myObject.data1+') as ids \
+									on  itempricelist.ItemPriceListID = FK_itempricelist_ItemPriceListID \
+									where ItemDiscontinued = false';
 						return answer;
 				case 10: answer = 'select * from capcis.clientinformation where clientinformation.ClientInformation_CIID = '+myObject.data1;
 						return answer;
@@ -133,6 +140,21 @@ exports.buildQuery = function buildQuery(myObject)
 							where ClientInformation_CIID = '+myObject.data1+') as latest \
 							on latestFlag = clientflaggednotes.ClientFlaggedNotesID \
 							where FlagStatus = "Flagged"';
+						return answer;
+				case 12: answer = 'SELECT itemizedsales.ItemPrice \
+									FROM capcis.clienttestmonitoring \
+									join clientmonitoringdata on \
+									FK_clientmonitoringdata_ClientMonitoringDataID = ClientMonitoringDataID \
+									join clienttransaction on \
+									ClientMonitoringDataID = clienttransaction.FK_clientmonitoring_ClientMonitoringDataID \
+									join itemizedsales on \
+									clienttransaction.FK_receiptnumbers_ReceiptNumbersID = itemizedsales.FK_receiptnumbers_ReceiptNumbersID \
+									where clienttestmonitoring.CreatedDateTime between "'+myObject.weekStartDate+'"and "'+myObject.weekEndDate+'" \
+									and clienttestmonitoring.TestingStatus = "Alert" \
+									and clienttestmonitoring.FK_clientInformation_CIID = '+myObject.data1+' \
+									and VoidEntry = false \
+									order by clienttestmonitoring.CreatedDateTIme desc \
+									limit 1;';
 						return answer;		
 				default:
 						answer = null;
@@ -728,6 +750,8 @@ exports.buildQuery = function buildQuery(myObject)
 								  `capcis`.`fxuserpageaccess` AS `fxuserpageaccess`, `capcis`.`fxmainselectwebcomponentnames` AS `fxmainselectwebcomponentnames` WHERE \
 								  `fxuserpageaccess`.`FK_FxMainSelectWebComponentNamesID` = `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` AND \
 								  `fxuserpageaccess`.`FK_UserAccountsID` = '"+myObject.UserAccountsID+"' ORDER BY `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` ASC"
+						return answer;
+				case 3 : answer = "SELECT * FROM capcis.fxmainselectwebcomponentnames order by WebComponentSort asc";
 						return answer;
 						
 				default:answer = null;

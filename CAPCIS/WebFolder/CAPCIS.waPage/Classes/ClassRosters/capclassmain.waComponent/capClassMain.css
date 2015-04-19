@@ -3445,21 +3445,10 @@
 
 #{id}label9 {
 	 z-index: 14;
-	 width: 256px;
-	 height: 16px;
-	 top: 528px;
-	 left: 239px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField5 {
-	 z-index: 15;
-	 width: 100px;
-	 height: 22px;
-	 top: 525px;
-	 left: 500px;
+	 width: 268px;
+	 height: 13px;
+	 top: 529px;
+	 left: 227px;
 	
 	 position: absolute;
 	 
@@ -6930,6 +6919,17 @@
 	 width: 100px;
 	 height: 22px;
 	 top: 500px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}balenceMayCarry {
+	 z-index: 15;
+	 width: 100px;
+	 height: 22px;
+	 top: 525px;
 	 left: 500px;
 	
 	 position: absolute;
