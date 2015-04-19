@@ -8,5 +8,5 @@ join
         where temp.VoidEntry = false
         group by clienttransaction.ClientInformation_CIID
 	) as mon
-on req.ClientInformation_CIID  = mon.ClientInformation_CIID
+on req.CIID  = mon.ClientInformation_CIID
 set req.TotalPaid = mon.totalCount

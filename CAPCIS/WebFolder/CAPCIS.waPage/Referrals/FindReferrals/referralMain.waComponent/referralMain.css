@@ -5423,7 +5423,7 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 5;
+	 z-index: 13;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5434,7 +5434,7 @@
 }
 
 #{id}AttorneyContainer {
-	 z-index: 6;
+	 z-index: 5;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5445,7 +5445,7 @@
 }
 
 #{id}DHSOfficerContainer {
-	 z-index: 7;
+	 z-index: 6;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5456,7 +5456,7 @@
 }
 
 #{id}JudgeContainer {
-	 z-index: 8;
+	 z-index: 7;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5467,7 +5467,7 @@
 }
 
 #{id}OtherMonitorContainer {
-	 z-index: 9;
+	 z-index: 8;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5478,7 +5478,7 @@
 }
 
 #{id}ProsecutorContainer {
-	 z-index: 10;
+	 z-index: 12;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5500,7 +5500,7 @@
 }
 
 #{id}ProbationJursidictionContainer {
-	 z-index: 12;
+	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5511,7 +5511,7 @@
 }
 
 #{id}CourtJursidictionContainer {
-	 z-index: 13;
+	 z-index: 9;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;

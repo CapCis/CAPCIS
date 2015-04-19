@@ -20,7 +20,8 @@ function constructor (id) {
 
 	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container9')).setSplitPosition(625);
+		moveMe = document.getElementById(data.userData.mainContainer);
+		moveMe.style.left = "600px"
 		//close me hide me  
 	};// @lock
 

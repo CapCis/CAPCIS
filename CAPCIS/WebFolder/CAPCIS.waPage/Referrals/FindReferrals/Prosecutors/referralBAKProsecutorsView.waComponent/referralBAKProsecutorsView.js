@@ -20,7 +20,8 @@ function constructor (id) {
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('prosPrevVersionCont')).setSplitPosition(625);
+		moveMe = document.getElementById(data.userData.mainContainer);
+		moveMe.style.left = "600px"
 	};// @lock
 
 	// @region eventManager// @startlock

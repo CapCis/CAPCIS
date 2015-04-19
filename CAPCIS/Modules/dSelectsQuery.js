@@ -74,7 +74,7 @@ exports.buildQuery = function buildQuery(myObject)
 				case 5: answer = 'SELECT ALL clientinformation.ClientFullNameReverse,CurrentBalence, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
 								clientrequirements.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								clientrequirements.ClientInformation_CIID, clientrequirements.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, clientrequirements.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
-								(IDEntryAmountCharged-IDEntryAmountPaid) as CurrentBalence,  clientrequirements.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
+								 clientrequirements.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
 								concat(ClassesRequired, "|", (ClassesCredited + coalesce(AttendedClass, 0))) as ClassesTotalView, concat(TwelveStepMeetingsRequired, "|",(TwelveStepMeetingsCredited + TwelveStepMeetingsAttended)) as TwelveStepMeetingView, \
 								testingflagactiveq.Flag, testingflagactiveq.Alert, testingflagactiveq.PC_PriceCategoryID, testingflagactiveq.ItemPriceListID, testingflagactiveq.Flag_TT_TestingTypeID, testingflagactiveq.TestingFlagID,testingflagactiveq.ItemPrice, \
 								testingflagactiveq.Item, testingflagactiveq.IsClass, testingflagactiveq.ItemDescription, classrosterimportclassq.ClassItemPrice, classrosterimportclassq.ClassItemDesc, classrosterimportclassq.ClassIsClass, \
@@ -94,7 +94,7 @@ exports.buildQuery = function buildQuery(myObject)
 							activeclientrequirementsq.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 							activeclientrequirementsq.ClientInformation_CIID, activeclientrequirementsq.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, \
 							activeclientrequirementsq.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
-							(IDEntryAmountCharged-IDEntryAmountPaid) as CurrentBalence, activeclientrequirementsq.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
+							 activeclientrequirementsq.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
 							concat(ClassesRequired, "|", (ClassesCredited + coalesce(AttendedClass, 0))) as ClassesTotalView, \
 							concat(TwelveStepMeetingsRequired, "|",(TwelveStepMeetingsCredited + TwelveStepMeetingsAttended)) as TwelveStepMeetingView, \
 							activeschedulemuclassesq.MUClass ,activeschedulemuclassesq.MUDate,activeschedulemuclassesq.RecurringMU,testingflagactiveq.Flag, testingflagactiveq.Alert, \
@@ -125,7 +125,15 @@ exports.buildQuery = function buildQuery(myObject)
 				case 9: answer = 'SELECT * FROM capcis.itempricelist where ItemDiscontinued = false';
 						return answer;
 				case 10: answer = 'select * from capcis.clientinformation where clientinformation.ClientInformation_CIID = '+myObject.data1;
-						return answer;	
+						return answer;
+				case 11: answer = 'select * \
+							from clientflaggednotes join \
+							(select max(ClientFlaggedNotesID) as latestFlag \
+							from clientflaggednotes \
+							where ClientInformation_CIID = '+myObject.data1+') as latest \
+							on latestFlag = clientflaggednotes.ClientFlaggedNotesID \
+							where FlagStatus = "Flagged"';
+						return answer;		
 				default:
 						answer = null;
 					}
