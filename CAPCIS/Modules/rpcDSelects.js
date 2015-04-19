@@ -9,7 +9,7 @@
 
 exports.getSelect = function getSelect(myObject)
 {
-	debugger;
+
 	try
 	{
 		var serverUtil = require('serverUtilities');
@@ -30,12 +30,14 @@ exports.getSelect = function getSelect(myObject)
 			return myResults;
 		}
 		else 
-		{		
+		{	
+			
 		return myResults = ["err","Invalid Token"];
 		}	
 	}
 	catch(err)
 	{
+		debugger;
 		return err.message;
 	}
 };

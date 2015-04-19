@@ -374,7 +374,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				
 				case 54: answer = 'SELECT *,DATE_FORMAT( bakothermonitors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakothermonitors \
-								LEFT JOIN capcis.fxuseraccounts on bakothermonitors.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakothermonitors.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_othermonitors_OtherMonitorsID = "'+myObject.data1+'" \
 								ORDER BY bakothermonitors.CreatedDateTime DESC';
 						return answer;
@@ -412,7 +412,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				
 				case 63: answer = 'SELECT *,DATE_FORMAT( bakpojurisdiction.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakpojurisdiction \
-								LEFT JOIN capcis.fxuseraccounts on bakpojurisdiction.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakpojurisdiction.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_pojurisdiction_POJurisdictionID = "'+myObject.data1+'" \
 								ORDER BY bakpojurisdiction.CreatedDateTime DESC';
 						return answer;
@@ -453,7 +453,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;		
 				
 				case 72: answer = 'SELECT *,DATE_FORMAT( bakpoinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakpoinformation \
-								LEFT JOIN capcis.fxuseraccounts on bakpoinformation.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakpoinformation.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_poinformation_POInformationID = "'+myObject.data1+'" \
 								ORDER BY bakpoinformation.CreatedDateTime DESC';
 						return answer;
@@ -494,7 +494,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				
 				case 81: answer = 'SELECT *,DATE_FORMAT( bakprosecutors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakprosecutors \
-								LEFT JOIN capcis.fxuseraccounts on bakprosecutors.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+								LEFT JOIN capcis.fxuseraccounts on bakprosecutors.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_prosecutors_ProsecutorsID = "'+myObject.data1+'" \
 								ORDER BY bakprosecutors.CreatedDateTime DESC';
 						return answer;
@@ -721,6 +721,7 @@ exports.buildQuery = function buildQuery(myObject)
 								  `fxuserpageaccess`.`FK_FxMainSelectWebComponentNamesID` = `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` AND \
 								  `fxuserpageaccess`.`FK_UserAccountsID` = '"+myObject.UserAccountsID+"' ORDER BY `fxmainselectwebcomponentnames`.`FxMainSelectWebComponentNamesID` ASC"
 						return answer;
+						
 				default:answer = null;
 						return answer;
 			}

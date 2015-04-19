@@ -104,14 +104,14 @@ function constructor (id) {
 	var cityComboboxGrid = {};	// @dataGrid
 	var button28 = {};	// @button
 	var cityComboBox = {};	// @textField
-	var previousVersionButton = {};	// @button
+	var loadBAKCourtJurisdictionVersions = {};	// @button
 	var button23 = {};	// @button
 	var submitButton = {};	// @button
 	var dataGrid6 = {};	// @dataGrid
 	var dataGrid18 = {};	// @dataGrid
 	var button38 = {};	// @button
 	var textField96 = {};	// @textField
-	var button20 = {};	// @button
+	var loadBAKProbationJurisdictionVersions = {};	// @button
 	var button5 = {};	// @button
 	var button2 = {};	// @button
 	var dataGrid1 = {};	// @dataGrid
@@ -119,7 +119,7 @@ function constructor (id) {
 	var dataGrid12 = {};	// @dataGrid
 	var textField82 = {};	// @textField
 	var button35 = {};	// @button
-	var button34 = {};	// @button
+	var loadBAKProbationOfficers = {};	// @button
 	var button33 = {};	// @button
 	var dataGrid11 = {};	// @dataGrid
 	var textField73 = {};	// @textField
@@ -128,7 +128,7 @@ function constructor (id) {
 	var dataGrid15 = {};	// @dataGrid
 	var textField71 = {};	// @textField
 	var button31 = {};	// @button
-	var button27 = {};	// @button
+	var loadBAKProsecutors = {};	// @button
 	var button26 = {};	// @button
 	var button25 = {};	// @button
 	var dataGrid9 = {};	// @dataGrid
@@ -361,7 +361,6 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:45,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
 						bakJudgeInfo = result;
 		 				sources.bakJudgeInfo.sync();
 					},
@@ -373,7 +372,136 @@ function constructor (id) {
 	};// @lock
 	
 	
+	loadBAKOtherMonitors.click = function loadBAKOtherMonitors_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_otherMonitorMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component23', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralBAKOtherMonitorsList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakOtherMonitorInfo = result;
+		 				sources.bakOtherMonitorInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
 	
+	
+	loadBAKProsecutors.click = function loadBAKProsecutors_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_prosecutorMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component27', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralBAKProsecutorsList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:81,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakProsecutorInfo = result;
+		 				sources.bakProsecutorInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+	
+	
+	loadBAKProbationOfficers.click = function loadBAKProbationOfficers_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_probationOfficerMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component31', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationOfficers/referralBAKProbationOfficersList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:72,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						bakProbationOfficerInfo = result;
+		 				sources.bakProbationOfficerInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+	
+	
+	loadBAKProbationJurisdictionVersions.click = function loadBAKProbationJurisdictionVersions_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_probationJurisdictionMainContainer");
+		myWidget.style.left = "150px";
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component35', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationJurisdictions/referralBAKProbationJurisdictionsList.waComponent'				//designate the webcomponent to load
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:63,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakProbationJurisdictionInfo = result;
+		 				sources.bakProbationJurisdictionInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+	
+	
+	loadBAKCourtJurisdictionVersions.click = function loadBAKCourtJurisdictionVersions_click (event)// @startlock
+	{// @endlock
+		
+		
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component39', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsList.waComponent'				//designate the webcomponent to load
+		});
+		WAF.loadComponent ( {											//load webcomponent into this page component1 element
+    		id: 	$comp.id+'_component40', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsView.waComponent',				//designate the webcomponent to load
+			userData: {mainContainer: $comp.id+'_courtJurisdictionMainContainer' }
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakCourtJurisdictionInfo = result;
+		 				sources.bakCourtJurisdictionInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
+		myWidget.style.left = "150px";
+	 	
+	};// @lock
 	
 	
 	
@@ -518,24 +646,7 @@ function constructor (id) {
 			grid.style.display = 'none';
 	};// @lock
 
-	previousVersionButton.click = function previousVersionButton_click (event)// @startlock
-	{// @endlock
-		
-		
-		$$(getHtmlId('container3')).setSplitPosition(420);
-		
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	 	
-	};// @lock
+	
 
 	button23.click = function button23_click (event)// @startlock
 	{// @endlock
@@ -689,20 +800,7 @@ function constructor (id) {
 			grid.style.display = 'none';
 	};// @lock
 
-	button20.click = function button20_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('pjSpecificInfoCont')).setSplitPosition(420);
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:63,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
@@ -871,21 +969,7 @@ var myObject7 =
 		}
 	};// @lock
 
-	button34.click = function button34_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('poSpecificInfoCont')).setSplitPosition(420);
-		
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:72,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button33.click = function button33_click (event)// @startlock
 	{// @endlock
@@ -1003,21 +1087,7 @@ var myObject7 =
 		}
 	};// @lock
 
-	button27.click = function button27_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('prosSpecificInfoCont')).setSplitPosition(420);
-		
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:81,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button26.click = function button26_click (event)// @startlock
 	{// @endlock
@@ -1135,22 +1205,7 @@ var myObject7 =
 			grid.style.display = 'none';
 	};// @lock
 
-	loadBAKOtherMonitors.click = function loadBAKOtherMonitors_click (event)// @startlock
-	{// @endlock
-		
-		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(420);
-		
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	button21.click = function button21_click (event)// @startlock
 	{// @endlock
@@ -2215,7 +2270,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_button28", "click", button28.click, "WAF");
 	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
 	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
-	WAF.addListener(this.id + "_previousVersionButton", "click", previousVersionButton.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKCourtJurisdictionVersions", "click", loadBAKCourtJurisdictionVersions.click, "WAF");
 	WAF.addListener(this.id + "_button23", "click", button23.click, "WAF");
 	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid6", "onRowClick", dataGrid6.onRowClick, "WAF");
@@ -2223,7 +2278,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_button38", "click", button38.click, "WAF");
 	WAF.addListener(this.id + "_textField96", "keyup", textField96.keyup, "WAF");
 	WAF.addListener(this.id + "_textField96", "blur", textField96.blur, "WAF");
-	WAF.addListener(this.id + "_button20", "click", button20.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKProbationJurisdictionVersions", "click", loadBAKProbationJurisdictionVersions.click, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
@@ -2232,7 +2287,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_textField82", "keyup", textField82.keyup, "WAF");
 	WAF.addListener(this.id + "_textField82", "blur", textField82.blur, "WAF");
 	WAF.addListener(this.id + "_button35", "click", button35.click, "WAF");
-	WAF.addListener(this.id + "_button34", "click", button34.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKProbationOfficers", "click", loadBAKProbationOfficers.click, "WAF");
 	WAF.addListener(this.id + "_button33", "click", button33.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid11", "onRowClick", dataGrid11.onRowClick, "WAF");
 	WAF.addListener(this.id + "_textField73", "keyup", textField73.keyup, "WAF");
@@ -2243,7 +2298,7 @@ var myObject7 =
 	WAF.addListener(this.id + "_textField71", "keyup", textField71.keyup, "WAF");
 	WAF.addListener(this.id + "_textField71", "blur", textField71.blur, "WAF");
 	WAF.addListener(this.id + "_button31", "click", button31.click, "WAF");
-	WAF.addListener(this.id + "_button27", "click", button27.click, "WAF");
+	WAF.addListener(this.id + "_loadBAKProsecutors", "click", loadBAKProsecutors.click, "WAF");
 	WAF.addListener(this.id + "_button26", "click", button26.click, "WAF");
 	WAF.addListener(this.id + "_button25", "click", button25.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid9", "onRowClick", dataGrid9.onRowClick, "WAF");
