@@ -13,18 +13,19 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var closeAssesorPreviousButton = {};	// @button
+	var button1 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
+	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container9')).setSplitPosition(625);
+		moveMe = document.getElementById(data.userData.mainContainer);
+		moveMe.style.left = "600px"
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_closeAssesorPreviousButton", "click", closeAssesorPreviousButton.click, "WAF");
+	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
