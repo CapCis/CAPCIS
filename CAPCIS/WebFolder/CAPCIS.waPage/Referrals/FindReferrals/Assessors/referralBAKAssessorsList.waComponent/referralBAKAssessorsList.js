@@ -13,17 +13,10 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var button1 = {};	// @button
 	var assesorPreviousGrid = {};	// @dataGrid
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	button1.click = function button1_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('container3')).setSplitPosition(900);
-		//close me or hide me and the bottom below me
-	};// @lock
 
 	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
@@ -35,7 +28,6 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_assesorPreviousGrid", "onRowClick", assesorPreviousGrid.onRowClick, "WAF");
 	// @endregion// @endlock
 
