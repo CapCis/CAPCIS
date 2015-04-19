@@ -24,7 +24,7 @@ function constructor (id) {
 	{// @endlock
 		WAF.loadComponent ({											//load webcomponent into this page component1 element
     		id: 	$comp.id + '_adminMainComp', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/capcisAccountPermissionsAdmin.waComponent'				//designate the webcomponent to load
+			path: 	'/CAPCIS.waPage/Utilities/Admin/Accounts/capcisAccountPermissionsAdmin.waComponent'				//designate the webcomponent to load
 		});
 	};// @lock
 
@@ -32,7 +32,7 @@ function constructor (id) {
 	{// @endlock
 		WAF.loadComponent ({											//load webcomponent into this page component1 element
     		id: 	$comp.id + '_adminMainComp', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/capcisEmployeeSetupAdmin.waComponent'				//designate the webcomponent to load
+			path: 	'/CAPCIS.waPage/Utilities/Admin/Accounts/capcisEmployeeSetupAdmin.waComponent'				//designate the webcomponent to load
 		});
 	};// @lock
 
@@ -41,7 +41,7 @@ function constructor (id) {
 		debugger;
 		WAF.loadComponent ({											//load webcomponent into this page component1 element
     		id: 	$comp.id + '_adminMainComp', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/capcisRegistrationRequestAdmin.waComponent'				//designate the webcomponent to load
+			path: 	'/CAPCIS.waPage/Utilities/Admin/Accounts/capcisRegistrationRequestAdmin.waComponent'				//designate the webcomponent to load
 		});
 				
 		

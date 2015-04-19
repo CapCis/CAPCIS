@@ -3,12 +3,34 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button2 {
+	 z-index: 7;
+	 width: 58px;
+	 height: 26px;
+	 top: 572px;
+	 left: 489px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button1 {
+	 z-index: 6;
+	 width: 58px;
+	 height: 27px;
+	 top: 604px;
+	 left: 490px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}dataGrid3 {
 	 z-index: 4;
 	 width: 441px;
 	 height: 414px;
-	 top: 382px;
-	 left: 550px;
+	 top: 388px;
+	 left: 561px;
 	
 	 position: absolute;
 	 
@@ -18,8 +40,8 @@
 	 z-index: 3;
 	 width: 446px;
 	 height: 413px;
-	 top: 384px;
-	 left: 66px;
+	 top: 385px;
+	 left: 22px;
 	
 	 position: absolute;
 	 
@@ -29,8 +51,8 @@
 	 z-index: 2;
 	 width: 405px;
 	 height: 323px;
-	 top: 4px;
-	 left: 243px;
+	 top: -1px;
+	 left: 300px;
 	
 	 position: absolute;
 	 
