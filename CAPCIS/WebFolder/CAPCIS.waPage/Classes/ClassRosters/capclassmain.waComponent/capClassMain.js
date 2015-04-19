@@ -65,6 +65,8 @@ function constructor (id) {
 		$$(getHtmlId('receiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var currentChargesField = {};	// @textField
+	var amountPaidField = {};	// @textField
 	var button5 = {};	// @button
 	var field100 = {};	// @textField
 	var field95 = {};	// @textField
@@ -105,10 +107,39 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	currentChargesField.change = function currentChargesField_change (event)// @startlock
+	{// @endlock
+		changeBalence();
+	};// @lock
+
+	amountPaidField.keyup = function amountPaidField_keyup (event)// @startlock
+	{// @endlock
+		changeBalence();
+		
+	};// @lock
+
+	amountPaidField.change = function amountPaidField_change (event)// @startlock
+	{// @endlock
+		changeBalence();
+	};// @lock
+	
+	function changeBalence()
+	{
+		var paid = Number($$(getHtmlId('amountPaidField')).getValue());
+		$$($comp.id+'_amountPaidBottom').setValue(paid.toFixed(2));
+		
+		var backBalence = Number($$(getHtmlId('backBalenceField')).getValue());
+		var currentCharges = Number($$(getHtmlId('currentChargesField')).getValue());
+		
+		var newBalence = (backBalence + currentCharges) - paid;
+		$$($comp.id+'_newBalenceField').setValue(newBalence.toFixed(2))
+	}
+
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
-		var paid = $$($comp.id+'_amountPaidField').getValue();
-		$$($comp.id+'_amountPaidBottom').setValue(paid.toFixed(2));
+		
+		
+		
 	};// @lock
 
 	field100.click = function field100_click (event)// @startlock
@@ -247,7 +278,7 @@ function constructor (id) {
 
 	dataGrid4.onRowClick = function dataGrid4_onRowClick (event)// @startlock
 	{// @endlock
-		debugger;
+		
 		var notInArray = true;
 		
 		for(var x = 0; x < cart.length ; x++)
@@ -383,9 +414,18 @@ function constructor (id) {
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
 		
-		//var reciept = document.getElementById(getHtmlId('classRosterRecieptCont'));
-		//reciept.style.left = '150px';
-		currentBal = sources.myRosterList.CurrentBalence.toFixed(2);
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:11,data1:sources.myRosterList.ClientInformation_CIID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						flagSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+		currentBal = Number(sources.myRosterList.CurrentBalence).toFixed(2);
 		$$(getHtmlId("backBalenceField")).setValue(currentBal);
 		
 		$$(getHtmlId('classRosterMainCont')).setSplitPosition(600);
@@ -769,8 +809,26 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
+	function flagSuccess(result)
+	{
+		clientFlag= result;
+		
+		sources.clientFlag.sync();
+	}
+	function flagError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_currentChargesField", "change", currentChargesField.change, "WAF");
+	WAF.addListener(this.id + "_amountPaidField", "keyup", amountPaidField.keyup, "WAF");
+	WAF.addListener(this.id + "_amountPaidField", "change", amountPaidField.change, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_field100", "click", field100.click, "WAF");
 	WAF.addListener(this.id + "_field95", "click", field95.click, "WAF");
