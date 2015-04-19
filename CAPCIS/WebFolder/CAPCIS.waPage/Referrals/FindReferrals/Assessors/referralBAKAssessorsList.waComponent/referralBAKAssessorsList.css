@@ -3,17 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}button1 {
-	 z-index: 4;
-	 width: 75px;
-	 height: 25px;
-	 top: 210px;
-	 left: 335px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}assesorPreviousGrid {
 	 z-index: 3;
 	 width: 400px;
