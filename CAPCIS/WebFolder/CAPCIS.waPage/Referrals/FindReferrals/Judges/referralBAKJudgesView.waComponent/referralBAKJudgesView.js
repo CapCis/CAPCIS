@@ -22,8 +22,6 @@ function constructor (id) {
 	judgePreviousGrid.onRowClick = function judgePreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
 		
-		$$(getHtmlId('container9')).setSplitPosition(250);
-				
 	};// @lock
 
 	closeJudgePreviousButton.click = function closeJudgePreviousButton_click (event)// @startlock

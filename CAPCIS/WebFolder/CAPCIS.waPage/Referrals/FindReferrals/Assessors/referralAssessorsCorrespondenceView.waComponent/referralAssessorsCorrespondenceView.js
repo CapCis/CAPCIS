@@ -40,8 +40,8 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();  //refresh grid data on correspondencelist box page
-		$$(getHtmlId('container6')).setSplitPosition(1290);
+		//fillCorrespondance();  //refresh grid data on correspondencelist box page
+		//$$(getHtmlId('container6')).setSplitPosition(1290);
 	};// @lock
 
 	checkbox1.change = function checkbox1_change (event)// @startlock

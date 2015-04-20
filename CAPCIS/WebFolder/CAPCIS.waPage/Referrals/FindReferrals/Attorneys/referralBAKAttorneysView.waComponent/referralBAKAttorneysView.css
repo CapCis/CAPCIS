@@ -443,8 +443,8 @@
 #{id}container4 {
 	 width: 415px;
 	 height: 245px;
-	 top: auto;
-	 left: auto;
+	 top: 0px;
+	 left: 0px;
 	
 	 position: absolute;
 	 background-color: rgb(240, 240, 255);
@@ -471,26 +471,6 @@
 #{id}label20 {
 	 width: 75px;
 	 height: 22px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label29 {
-	 width: 75px;
-	 height: 22px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container3 {
-	 width: 294px;
-	 height: 211px;
 	 top: auto;
 	 left: auto;
 	
