@@ -264,6 +264,7 @@ function constructor (id) {
 		currentCharges = currentCharges.toFixed(2);
 		$$(getHtmlId("currentChargesField")).setValue(currentCharges);
 		sources.cart.removeCurrent();
+		sources.cart.sync();
 	};// @lock
 
 	dataGrid4.onRowClick = function dataGrid4_onRowClick (event)// @startlock

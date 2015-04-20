@@ -6,6 +6,7 @@
 */
 exports.setInsert = function setInsert(myObject)
 {
+	
 	try
 	{
 		var serverUtil = require('serverUtilities');
@@ -42,7 +43,7 @@ exports.setInsert = function setInsert(myObject)
 
 
 
-exports.setInsertWReturn = function setInsert(myObject)
+exports.setInsertWReturn = function setInsertWReturn(myObject)
 {
 	debugger;
 	var serverUtil = require('serverUtilities');
@@ -72,7 +73,7 @@ exports.setInsertWReturn = function setInsert(myObject)
 };
 
 
-exports.setRegistration = function setInsert(myObject)
+exports.setRegistration = function setRegistration(myObject)
 {
 	try
 	{
@@ -91,7 +92,7 @@ exports.setRegistration = function setInsert(myObject)
 	}
 };
 
-exports.setInsertWArray = function setInsert(myArray)
+exports.setInsertWArray = function setInsertWArray(myArray)
 {
 	try{
 		

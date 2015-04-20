@@ -157,7 +157,6 @@ exports.buildQuery = function buildQuery(myObject)
 						("'+myObject.postFirstName+'","'+myObject.postMiddleName+'","'+myObject.postLastName+'","'+myObject.postSuffix+'" \
 						,"'+myObject.postSSN+'","'+myObject.postAlias+'","'+myObject.postNotes+'","'+myObject.postDate+'","'+fullName+'" \
 						,"'+reverseName+'")';
-						
 						return answer;				
 			}
 		case 5:  //Admin
@@ -165,6 +164,10 @@ exports.buildQuery = function buildQuery(myObject)
 			{
 				case 0: answer = 'INSERT INTO capcis.fxuserdivisionlinkage (FK_DivisionInformationID,FK_FxUserAccountsID) \
 								 VALUES ("'+myObject.mySelectedDivisionID+'","'+myObject.mySelectedEmpID+'")';
+					return answer;
+					
+				case 1: answer = 'INSERT INTO capcis.fxuserpageaccess (FK_UserAccountsID,FK_FxMainSelectWebComponentNamesID) \
+								 VALUES ("'+myObject.userAccountsID+'","'+myObject.fxMainSelectWebComponentNamesID+'")';
 					return answer; 
 			}
 			break;
