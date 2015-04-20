@@ -13,11 +13,52 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var button5 = {};	// @button
+	var correspondanceGrid = {};	// @dataGrid
+	var correspondanceActiveBox = {};	// @combobox
 	var button2 = {};	// @button
 	var voidCorrespondanceCheck = {};	// @checkbox
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	button5.click = function button5_click (event)// @startlock
+	{// @endlock
+		
+		
+			var x = $$(getHtmlId("newCorrespondanceField"));
+			var myObject8 = 
+			{
+				token:'7836140170460568' ,id:'1',major:3,minor:8,
+				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data2:currentID
+			}; //dontf
+			
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
+			
+			$$(getHtmlId('newCorrespondanceField')).setValue("");
+			fillCorrespondance();
+	};// @lock
+
+	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('container6')).setSplitPosition(420);
+		$$(getHtmlId('container3')).setSplitPosition(900);
+		;
+	};// @lock
+
+	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();
+	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
@@ -52,6 +93,9 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
+	WAF.addListener(this.id + "_correspondanceGrid", "onRowClick", correspondanceGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_correspondanceActiveBox", "change", correspondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	// @endregion// @endlock

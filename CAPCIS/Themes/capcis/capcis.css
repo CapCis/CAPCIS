@@ -1316,10 +1316,15 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
 	border-color: rgb(153, 153, 153);
     border-top-right-radius: 0;
 	border-top-left-radius: 0;
+	
     
     box-shadow: none;
 }
 
+.waf-theme.capcis .waf-widget-footer-body.waf-dialog-footer {
+	height: 50px;
+
+}
 /**
  * -------------------------------------------------------
  * @subsection dialog footer buttons
@@ -1328,6 +1333,10 @@ body.yui-layout .waf-theme.capcis .waf-accordion > div.yui-overlay:last-of-type 
 .waf-theme.capcis .waf-widget-footer.waf-dialog-footer .waf-button {
 	font-size: 12px;
 	line-height: 20px;
+	border-radius: 1;
+	height: 25px;
+	width: 75px;
+	
 }
 
 
