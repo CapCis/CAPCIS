@@ -19,6 +19,7 @@ exports.getHash = function getHash(user, pass)
 };
 
 exports.timMatrixData = function helloWorld () {
+	
 	var dbConnect = require('waf-sql');
 	var param ={
 		hostname: '68.106.70.68',
@@ -30,7 +31,7 @@ exports.timMatrixData = function helloWorld () {
 		dbType: 'mysql'
 	};
 	var connection = dbConnect.connect(param);
-	var result = connection.execute("SELECT WebComponentName,PrimaryHeaderOption FROM fxwebcomponentnames WHERE FxWebComponentNamesID > 0");
+	var result = connection.execute("SELECT WebComponentName,PrimaryHeaderOption FROM fxmainselectwebcomponentnames WHERE FxMainSelectWebComponentNamesID > 0");
 	result = result.getAllRows();
 	return (result);
 	
