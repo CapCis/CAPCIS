@@ -22,7 +22,7 @@ function constructor (id) {
 	{// @endlock
 		
 		
-		$$(getHtmlId('container9')).setSplitPosition(250);
+		
 		
 	};// @lock
 

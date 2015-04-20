@@ -22,9 +22,6 @@ function constructor (id) {
 	dhsPreviousGrid.onRowClick = function dhsPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
 		
-		
-		$$(getHtmlId('container9')).setSplitPosition(250);
-		
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock

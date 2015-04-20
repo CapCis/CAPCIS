@@ -22,7 +22,7 @@ function constructor (id) {
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
 		
-		//$$(getHtmlId('container9')).setSplitPosition(250);
+		
 		
 		
 	};// @lock
