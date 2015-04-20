@@ -230,7 +230,7 @@ function fillMainTable()
 			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
-						
+					
 					},
 					'onError': function(error){
 						console.log(error);
@@ -244,26 +244,26 @@ function fillMainTable()
 		
 		
 		var myObject7 = {
-    token: userConfigObj.secToken,
-    id: userConfigObj.userID,
-    major: 3,
-    minor: 0,
-    data1: $$(getHtmlId("assessorNameField")).getValue(),
-    data2: phone,
-    data3: $$(getHtmlId("assesorEmailField")).getValue(),
-    data4: fax,
-    data5: $$(getHtmlId("assesorAddressField")).getValue(),
-    data6: $$(getHtmlId("cityComboBox")).getValue(),
-    data7: $$(getHtmlId("assesorStateField")).getValue(),
-    data8: $$(getHtmlId("assesorZipField")).getValue(),
-    data9: $$(getHtmlId("assesorExtField")).getValue(),
-    data10: mobile,
-    data11: $$(getHtmlId("assesorNotesField")).getValue(),
-    data12: $$(getHtmlId("assessorFullNameField")).getValue(),
-    data13: $$(getHtmlId("reportingComboBox")).getValue(),
-    data14: currentID,
-    data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
-}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+    		token: userConfigObj.secToken,
+    		id: userConfigObj.userID,
+    		major: 3,
+    		minor: 0,
+    		data1: $$(getHtmlId("assessorNameField")).getValue(),
+    		data2: phone,
+    		data3: $$(getHtmlId("assesorEmailField")).getValue(),
+    		data4: fax,
+    		data5: $$(getHtmlId("assesorAddressField")).getValue(),
+    		data6: $$(getHtmlId("cityComboBox")).getValue(),
+    		data7: $$(getHtmlId("assesorStateField")).getValue(),
+    		data8: $$(getHtmlId("assesorZipField")).getValue(),
+    		data9: $$(getHtmlId("assesorExtField")).getValue(),
+    		data10: mobile,
+    		data11: $$(getHtmlId("assesorNotesField")).getValue(),
+    		data12: $$(getHtmlId("assessorFullNameField")).getValue(),
+    		data13: $$(getHtmlId("reportingComboBox")).getValue(),
+    		data14: currentID,
+    		data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
+	}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 
 	rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){

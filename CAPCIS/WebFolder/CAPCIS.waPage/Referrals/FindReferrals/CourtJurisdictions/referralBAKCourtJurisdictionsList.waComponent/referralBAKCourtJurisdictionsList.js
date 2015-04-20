@@ -21,7 +21,7 @@ function constructor (id) {
 	courtJurisdictionPreviousGrid.onRowClick = function courtJurisdictionPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
 		
-		//$$(getHtmlId('container9')).setSplitPosition(250);
+		
 		
 		
 	};// @lock

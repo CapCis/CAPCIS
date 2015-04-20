@@ -273,10 +273,7 @@ function constructor (id) {
 		var myWidget = document.getElementById($comp.id +"_AssessorMainContainer");
 		myWidget.style.left = "150px";
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component7', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralBAKAssessorsList.waComponent'				//designate the webcomponent to load
-		});
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component10', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralBAKAssessorsView.waComponent',				//designate the webcomponent to load
@@ -309,10 +306,6 @@ function constructor (id) {
 		myWidget.style.left = "150px";
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component13', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Attorneys/referralBAKAttorneysList.waComponent'				//designate the webcomponent to load
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component14', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Attorneys/referralBAKAttorneysView.waComponent',				//designate the webcomponent to load
 			userData: {mainContainer: $comp.id+'_AttorneyMainContainer' }
@@ -321,7 +314,7 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				
+		 				debugger;
 						bakAttorneyInfo = result;
 		 				sources.bakAttorneyInfo.sync();
 					},
@@ -340,10 +333,6 @@ function constructor (id) {
 		var myWidget = document.getElementById($comp.id +"_dhsOfficerMainContainer");
 		myWidget.style.left = "150px";
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component15', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralBAKDHSOfficersList.waComponent'				//designate the webcomponent to load
-		});
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component16', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralBAKDHSOfficersView.waComponent',				//designate the webcomponent to load
@@ -372,10 +361,6 @@ function constructor (id) {
 		myWidget.style.left = "150px";
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component19', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesList.waComponent'				//designate the webcomponent to load
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component20', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent',				//designate the webcomponent to load
 			userData: {mainContainer: $comp.id+'_judgeMainContainer' }
@@ -403,10 +388,6 @@ function constructor (id) {
 		myWidget.style.left = "150px";
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component23', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralBAKOtherMonitorsList.waComponent'				//designate the webcomponent to load
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component24', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralBAKOtherMonitorsView.waComponent',				//designate the webcomponent to load
 			userData: {mainContainer: $comp.id+'_otherMonitorMainContainer' }
@@ -433,10 +414,6 @@ function constructor (id) {
 		myWidget.style.left = "150px";
 		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component27', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralBAKProsecutorsList.waComponent'				//designate the webcomponent to load
-		});
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component28', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralBAKProsecutorsView.waComponent',				//designate the webcomponent to load
 			userData: {mainContainer: $comp.id+'_prosecutorMainContainer' }
@@ -462,10 +439,7 @@ function constructor (id) {
 		var myWidget = document.getElementById($comp.id +"_probationOfficerMainContainer");
 		myWidget.style.left = "150px";
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component31', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationOfficers/referralBAKProbationOfficersList.waComponent'				//designate the webcomponent to load
-		});
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component32', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationOfficers/referralBAKProbationOfficersView.waComponent',				//designate the webcomponent to load
@@ -492,10 +466,7 @@ function constructor (id) {
 		var myWidget = document.getElementById($comp.id +"_probationJurisdictionMainContainer");
 		myWidget.style.left = "150px";
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component35', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationJurisdictions/referralBAKProbationJurisdictionsList.waComponent'				//designate the webcomponent to load
-		});
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component36', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationJurisdictions/referralBAKProbationJurisdictionsView.waComponent',				//designate the webcomponent to load
@@ -519,11 +490,9 @@ function constructor (id) {
 	loadBAKCourtJurisdictionVersions.click = function loadBAKCourtJurisdictionVersions_click (event)// @startlock
 	{// @endlock
 		
+		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
+		myWidget.style.left = "150px";
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component39', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsList.waComponent'				//designate the webcomponent to load
-		});
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component40', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsView.waComponent',				//designate the webcomponent to load
@@ -541,9 +510,6 @@ function constructor (id) {
 					},
 					'params': [myObject5]
 				});
-		var myWidget = document.getElementById($comp.id +"_courtJurisdictionMainContainer");
-		myWidget.style.left = "150px";
-	 	
 	};// @lock
 	
 	
@@ -562,9 +528,21 @@ function constructor (id) {
 	loadAssessorCorrespondence.click = function loadAssessorCorrespondence_click (event)// @startlock
 	{// @endlock
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component5', 											//designate the component to load into
-			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralAssessorsCorrespondenceList.waComponent'				//designate the webcomponent to load
+    		id: 	$comp.id+'_component6', 											//designate the component to load into
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralAssessorsCorrespondenceView.waComponent'	
 		});
+		debugger;
+		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:false};
+        rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [assessorCorrespondenceObject]
+				});
 		
 	};// @lock
 	

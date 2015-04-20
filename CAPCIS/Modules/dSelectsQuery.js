@@ -13,13 +13,13 @@ exports.buildQuery = function buildQuery(myObject)
 			switch(myObject.minor){
 				case 0: answer = 'SELECT FullName, FxUserAccountsID FROM fxuseraccounts WHERE UserPassword = "' + myObject.data1 + '" AND UserName = "' + myObject.user +'"';
 						return answer;
-				case 1: answer = 'SELECT * FROM fxauthenticationtokens WHERE Token = "' + myObject.token + '"';
+				case 1: answer = 'SELECT * FROM fxauthenticationtokens WHERE Token = "'+myObject.token+'"';
 						return answer;
-				case 2: answer = "SELECT FxMainSelectWebComponentNamesID, PrimaryHeaderOption, SubHeaderOption,WebComponentSort FROM fxuserpageaccess LEFT JOIN fxmainselectwebcomponentnames on FxMainSelectWebComponentNamesID = FK_FxMainSelectWebComponentNamesID WHERE FK_UserAccountsID = '" + myObject.id + "' ORDER BY 4 asc";
+				case 2: answer = "SELECT FxMainSelectWebComponentNamesID, PrimaryHeaderOption, SubHeaderOption,WebComponentSort FROM fxuserpageaccess LEFT JOIN fxmainselectwebcomponentnames on FxMainSelectWebComponentNamesID = FK_FxMainSelectWebComponentNamesID WHERE FK_UserAccountsID = '"+myObject.id+"' ORDER BY 4 asc";
 						return answer;
-				case 3: answer = "SELECT WebComponentName, PrimaryHeaderOption FROM fxmainselectwebcomponentnames WHERE FxMainSelectWebComponentNamesID = " + myObject.data1;
+				case 3: answer = "SELECT WebComponentName, PrimaryHeaderOption FROM fxmainselectwebcomponentnames WHERE FxMainSelectWebComponentNamesID = '"+myObject.data1+"'";
 						return answer;
-				case 4: answer = 'SELECT FK_DivisionInformationID FROM fxuserdivisionlinkage WHERE FK_FxuserAccountsID = ' + myObject.id + ' ORDER BY 1 asc';
+				case 4: answer = 'SELECT FK_DivisionInformationID FROM fxuserdivisionlinkage WHERE FK_FxuserAccountsID = "'+myObject.id+'" ORDER BY 1 asc';
 						return answer;
 				case 5: answer = 'SELECT * FROM fxcapcisregistrations WHERE RegistrationComplete = 0 ORDER BY CreatedDateTime asc';
 						return answer;
@@ -120,8 +120,8 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 7: answer = 'SELECT ReceiptPurpose FROM capcis.receiptpurpose';
 						return answer;
-				case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
-						return answer;	
+			/*	case 8: answer = "SELECT ReceiptPurpose FROM capcis.receiptpurpose WHERE ReceiptPurpose LIKE '%"+myObject.data1+"%'";
+						return answer; */	
 				case 9: answer = 'SELECT * FROM capcis.itempricelist \
 									join ( \
 											SELECT FK_itempricelist_ItemPriceListID FROM capcis.clientrequirements \
@@ -151,7 +151,7 @@ exports.buildQuery = function buildQuery(myObject)
 									clienttransaction.FK_receiptnumbers_ReceiptNumbersID = itemizedsales.FK_receiptnumbers_ReceiptNumbersID \
 									where clienttestmonitoring.CreatedDateTime between "'+myObject.weekStartDate+'"and "'+myObject.weekEndDate+'" \
 									and clienttestmonitoring.TestingStatus = "Alert" \
-									and clienttestmonitoring.FK_clientInformation_CIID = '+myObject.data1+' \
+									and clienttestmonitoring.FK_clientInformation_CIID = "'+myObject.data1+'" \
 									and VoidEntry = false \
 									order by clienttestmonitoring.CreatedDateTIme desc \
 									limit 1;';
@@ -175,8 +175,14 @@ exports.buildQuery = function buildQuery(myObject)
 								FROM capcis.assessorcorrespondence \
 								LEFT JOIN capcis.assessorinformation on assessorcorrespondence.FK_AssessorInformationID = AssessorInformationID \
 								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE assessorinformation.AssessorName = '"+myObject.data1+"' AND assessorcorrespondence.VoidedAssessorCorrespondence = "+myObject.data2+" \
+								WHERE assessorinformation.AssessorName = '"+myObject.data1+"' AND assessorcorrespondence.VoidedAssessorCorrespondence = '"+myObject.data2+"' \
 								ORDER BY 1 DESC";
+						return answer;
+				case 2: answer = 'SELECT *,DATE_FORMAT(assessorcorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime \
+								 FROM capcis.assessorcorrespondence \
+								 LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
+								 WHERE FK_AssessorInformationID = "'+myObject.data1+'" AND \
+								 VoidedAssessorCorrespondence = "'+myObject.data2+'"';
 						return answer;
 				case 3: answer = 'SELECT CityListing FROM capcis.citylistings';
 						return answer;
@@ -188,14 +194,14 @@ exports.buildQuery = function buildQuery(myObject)
 								ORDER BY bakassessorinformation.CreatedDateTime DESC';
 						return answer;
 				
-				case 7: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
+				/*case 7: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
 								fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID  \
 								FROM capcis.assessorcorrespondence \
 								LEFT JOIN capcis.assessorinformation on assessorcorrespondence.FK_AssessorInformationID = AssessorInformationID \
 								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE assessorinformation.AssessorName = '"+myObject.data1+"' \
 								ORDER BY 1 DESC";
-						return answer;
+						return answer; */
 				case 8: answer = 'SELECT * FROM capcis.assessorinformation';
 						return answer;
 				case 9: answer = "SELECT * FROM capcis.assessorinformation where assessorinformation.AssessorName LIKE '%"+myObject.data1+"%' or assessorinformation.AssessorPhone LIKE '%"+myObject.data1+"%' \
@@ -229,22 +235,22 @@ exports.buildQuery = function buildQuery(myObject)
 								OR attorneyinformation.AttorneyFullNameDisplay LIKE '%"+myObject.data1+"%') AND InactiveAttorneyInfo = "+myObject.data2;
 						return answer;
 				
-				case 16 : answer = "SELECT DATE_FORMAT(attorneycorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, attorneycorrespondence.AttorneyCorrespondence, \
+				/*case 16 : answer = "SELECT DATE_FORMAT(attorneycorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, attorneycorrespondence.AttorneyCorrespondence, \
 								fxuseraccounts.FullName, attorneycorrespondence.VoidedAttorneyCorrespondence, attorneycorrespondence.AttorneyCorrespondenceID \
 								FROM capcis.attorneycorrespondence \
 								LEFT JOIN capcis.attorneyinformation on attorneycorrespondence.FK_AttorneyInformationID = AttorneyInformationID \
 								LEFT JOIN capcis.fxuseraccounts on attorneycorrespondence.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE attorneyinformation.AttorneyName = '"+myObject.data1+"' \
 								ORDER BY 1 DESC";
-						return answer;
-				case 17 : answer = "SELECT DATE_FORMAT(attorneycorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, attorneycorrespondence.AttorneyCorrespondence, \
+						return answer; */
+				/*case 17 : answer = "SELECT DATE_FORMAT(attorneycorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, attorneycorrespondence.AttorneyCorrespondence, \
 								fxuseraccounts.FullName, attorneycorrespondence.VoidedAttorneyCorrespondence, attorneycorrespondence.AttorneyCorrespondenceID \
 								FROM capcis.attorneycorrespondence \
 								LEFT JOIN capcis.attorneyinformation on attorneycorrespondence.FK_AttorneyInformationID = AttorneyInformationID \
 								LEFT JOIN capcis.fxuseraccounts on attorneycorrespondence.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE attorneyinformation.AttorneyName = '"+myObject.data1+"' AND attorneycorrespondence.VoidedAttorneyCorrespondence = '"+myObject.data2+"' \
 								ORDER BY 1 DESC";
-						return answer;
+						return answer; */
 				case 18: answer = 'SELECT *, DATE_FORMAT(bakattorneyinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakattorneyinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakattorneyinformation.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_attorneyinformation_AttorneyInformationID = "'+myObject.data1+'" \
@@ -270,22 +276,22 @@ exports.buildQuery = function buildQuery(myObject)
 								OR courtjurisdiction.SearchFormat LIKE '%"+myObject.data1+"%') AND InactiveCourtJurisdictionInfo = "+myObject.data2;
 						return answer;
 				
-				case 25 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
+				/*case 25 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
 								fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
 								FROM capcis.courtjurisdictioncorrespondence \
 								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE courtjurisdiction.CourtJurisdiction = '"+myObject.data1+"' \
 								ORDER BY 1 DESC";
-						return answer;
-				case 26 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
+						return answer; */
+				/*case 26 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
 								fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
 								FROM capcis.courtjurisdictioncorrespondence \
 								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE courtjurisdiction.CourtJurisdiction = '"+myObject.data1+"' AND courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence = '"+myObject.data2+"' \
 								ORDER BY courtjurisdictioncorrespondence.CreatedDateTime DESC"
-						return answer;
+						return answer; */
 				case 27: answer = 'SELECT *, DATE_FORMAT(bakcourtjurisdiction.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakcourtjurisdiction \
 								LEFT JOIN capcis.fxuseraccounts on bakcourtjurisdiction.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_courtjurisdiction_CourtJurisdictionID = "'+myObject.data1+'" \
@@ -311,22 +317,22 @@ exports.buildQuery = function buildQuery(myObject)
 								OR dhsinformation.DhsPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveDhsInfo = "+myObject.data2;
 						return answer;
 				
-				case 34 : answer = 'SELECT DATE_FORMAT(dhscorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, dhscorrespondence.DhsCorrespondence, \
+				/*case 34 : answer = 'SELECT DATE_FORMAT(dhscorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, dhscorrespondence.DhsCorrespondence, \
 								fxuseraccounts.FullName, dhscorrespondence.VoidedDhsCorrespondence, dhscorrespondence.DhsCorrespondenceID \
 								FROM capcis.dhscorrespondence \
 								LEFT JOIN capcis.dhsinformation on dhscorrespondence.FK_DhsInformationID = DhsInformationID \
 								LEFT JOIN capcis.fxuseraccounts on dhscorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE dhsinformation.DhsName = "'+myObject.data1+'" \
 								ORDER BY 1 DESC';
-						return answer;
-				case 35 : answer = "SELECT DATE_FORMAT(dhscorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, dhscorrespondence.DhsCorrespondence, \
+						return answer; */
+				/*case 35 : answer = "SELECT DATE_FORMAT(dhscorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, dhscorrespondence.DhsCorrespondence, \
 								fxuseraccounts.FullName, dhscorrespondence.VoidedDhsCorrespondence, dhscorrespondence.DhsCorrespondenceID \
 								FROM capcis.dhscorrespondence \
 								LEFT JOIN capcis.dhsinformation on dhscorrespondence.FK_DhsInformationID = DhsInformationID \
 								LEFT JOIN capcis.fxuseraccounts on dhscorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE dhsinformation.DhsName = '"+myObject.data1+"' AND dhscorrespondence.VoidedDhsCorrespondence = '"+myObject.data2+"' \
 								ORDER BY 1 DESC";
-						return answer;
+						return answer; */
 				case 36: answer = 'SELECT *,DATE_FORMAT( bakdhsinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakdhsinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakdhsinformation.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_dhsinformation_DhsInformationID = "'+myObject.data1+'" \
@@ -351,22 +357,22 @@ exports.buildQuery = function buildQuery(myObject)
 								OR judges.JudgeMobilePhone LIKE '%"+myObject.data1+"%' OR judges.JudgeNotes LIKE '%"+myObject.data1+"%' OR judges.JudgeFullNameDisplay LIKE '%"+myObject.data1+"%'\
 								OR judges.JPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveJudge = "+myObject.data2;
 						return answer;
-				case 42 : answer = 'SELECT DATE_FORMAT(judgecorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, judgecorrespondence.JudgeCorrespondence, \
+				/*case 42 : answer = 'SELECT DATE_FORMAT(judgecorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, judgecorrespondence.JudgeCorrespondence, \
 								fxuseraccounts.FullName, judgecorrespondence.VoidedJudgeCorrespondence, judgecorrespondence.JudgeCorrespondenceID \
 								FROM capcis.judgecorrespondence \
 								LEFT JOIN capcis.judges on judgecorrespondence.FK_JudgeInformationID = JudgesID \
 								LEFT JOIN capcis.fxuseraccounts on judgecorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE judges.Judge = "'+myObject.data1+'" \
 								ORDER BY 1 DESC';
-						return answer;
-				case 43 : answer = "SELECT DATE_FORMAT(judgecorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, judgecorrespondence.JudgeCorrespondence, \
+						return answer; */
+				/*case 43 : answer = "SELECT DATE_FORMAT(judgecorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, judgecorrespondence.JudgeCorrespondence, \
 								fxuseraccounts.FullName, judgecorrespondence.VoidedJudgeCorrespondence, judgecorrespondence.JudgeCorrespondenceID \
 								FROM capcis.judgecorrespondence \
 								LEFT JOIN capcis.judges on judgecorrespondence.FK_JudgeInformationID = JudgesID \
 								LEFT JOIN capcis.fxuseraccounts on judgecorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE judges.Judge = '"+myObject.data1+"' AND judgecorrespondence.VoidedJudgeCorrespondence = "+myObject.data2+" \
 								ORDER BY 1 DESC";
-						return answer;
+						return answer; */
 				
 				case 45: answer = 'SELECT *,DATE_FORMAT( bakjudges.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakjudges \
 								LEFT JOIN capcis.fxuseraccounts on bakjudges.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
@@ -392,22 +398,22 @@ exports.buildQuery = function buildQuery(myObject)
 								OR othermonitors.OtherMonitorsMobilePhone LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsNotes LIKE '%"+myObject.data1+"%' OR othermonitors.OtherMonitorsFullNameDisplay LIKE '%"+myObject.data1+"%'\
 								OR othermonitors.OMPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactiveOtherMonitors = "+myObject.data2;
 						return answer;	
-				case 51 : answer = 'SELECT DATE_FORMAT(othermonitorscorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, othermonitorscorrespondence.OtherMonitorsCorrespondence, \
+				/*case 51 : answer = 'SELECT DATE_FORMAT(othermonitorscorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, othermonitorscorrespondence.OtherMonitorsCorrespondence, \
 								fxuseraccounts.FullName, othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence, othermonitorscorrespondence.OtherMonitorsCorrespondenceID \
 								FROM capcis.othermonitorscorrespondence \
 								LEFT JOIN capcis.othermonitors on othermonitorscorrespondence.FK_OtherMonitorsInformationID = OtherMonitorsID \
 								LEFT JOIN capcis.fxuseraccounts on othermonitorscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE othermonitors.OtherMonitors = "'+myObject.data1+'" \
 								ORDER BY 1 DESC';
-						return answer;
-				case 52 : answer = "SELECT DATE_FORMAT(othermonitorscorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, othermonitorscorrespondence.OtherMonitorsCorrespondence, \
+						return answer; */
+				/*case 52 : answer = "SELECT DATE_FORMAT(othermonitorscorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, othermonitorscorrespondence.OtherMonitorsCorrespondence, \
 								fxuseraccounts.FullName, othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence, othermonitorscorrespondence.OtherMonitorsCorrespondenceID \
 								FROM capcis.othermonitorscorrespondence \
 								LEFT JOIN capcis.othermonitors on othermonitorscorrespondence.FK_OtherMonitorsInformationID = OtherMonitorsID \
 								LEFT JOIN capcis.fxuseraccounts on othermonitorscorrespondence.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE othermonitors.OtherMonitors = '"+myObject.data1+"' AND othermonitorscorrespondence.VoidedOtherMonitorsCorrespondence = "+myObject.data2+" \
 								ORDER BY 1 DESC";
-						return answer;
+						return answer; */
 				
 				case 54: answer = 'SELECT *,DATE_FORMAT( bakothermonitors.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakothermonitors \
 								LEFT JOIN capcis.fxuseraccounts on bakothermonitors.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
@@ -535,7 +541,9 @@ exports.buildQuery = function buildQuery(myObject)
 								ORDER BY bakprosecutors.CreatedDateTime DESC';
 						return answer;
 				////////////////////////////////////////////////////////////////////////////////////End Prosecutors////////////////////////////////////////////////
-				case 83: answer = "SELECT * FROM capcis.citylistings WHERE CityListing = '"+myObject.data1+"'";
+				
+
+				//case 83: answer = "SELECT * FROM capcis.citylistings WHERE CityListing = '"+myObject.data1+"'";
 						return answer;
 				case 84: answer = "SELECT CourtJurisdiction FROM capcis.courtjurisdiction";
 						return answer;
@@ -620,7 +628,7 @@ exports.buildQuery = function buildQuery(myObject)
 				case 99 : answer = "SELECT count(*) as total,'pojurisdiction' as source FROM capcis.pojurisdiction where (pojurisdiction.JurisdictionName LIKE '%"+myObject.data1+"%' or pojurisdiction.JurisdictionPhone LIKE '%"+myObject.data1+"%' \
 								OR pojurisdiction.JurisdictionFax LIKE '%"+myObject.data1+"%' OR pojurisdiction.POJurisdictionID LIKE '%"+myObject.data1+"%' \
 								OR pojurisdiction.JurisdictionNotes LIKE '%"+myObject.data1+"%') \
-								 AND InactivePOJurisdiction = "+myObject.data2;
+								 AND InactivePOJurisdiction = '"+myObject.data2+"'";
 						return answer;
 				case 100 : answer = "SELECT count(*) as total,'po' as source FROM capcis.poinformation LEFT JOIN pojurisdiction on FK_pojurisdiction_POJurisdictionID = POJurisdictionID where poinformation.POName LIKE '%"+myObject.data1+"%' or poinformation.POPhone LIKE '%"+myObject.data1+"%' \
 								OR poinformation.POEmail LIKE  '%"+myObject.data1+"%' OR poinformation.POFax LIKE '%"+myObject.data1+"%' \
