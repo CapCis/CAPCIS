@@ -3,324 +3,39 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}textField57 {
-	 width: 200px;
+#{id}richText9 {
+	 width: 405px;
 	 height: 22px;
-	 top: 50px;
-	 left: 210px;
+	 top: 5px;
+	 left: 5px;
 	
 	 position: absolute;
-	 color: rgb(0, 0, 255);
-	 z-index: 35;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 z-index: 34;
+	 
+}
+
+#{id}textField77 {
+	 width: 35px;
+	 height: 22px;
+	 top: 230px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 33;
 	 
 }
 
 #{id}label16 {
-	 width: 59px;
+	 width: 28px;
 	 height: 13px;
-	 top: 32px;
-	 left: 210px;
-	
-	 position: absolute;
-	 z-index: 35;
-	 
-}
-
-#{id}textField58 {
-	 width: 200px;
-	 height: 22px;
-	 top: 50px;
-	 left: 8px;
-	
-	 position: absolute;
-	 color: rgb(255, 0, 0);
-	 z-index: 33;
-	 
-}
-
-#{id}label15 {
-	 width: 101px;
-	 height: 13px;
-	 top: 32px;
-	 left: 8px;
+	 top: 217px;
+	 left: 5px;
 	
 	 position: absolute;
 	 z-index: 33;
-	 
-}
-
-#{id}textField70 {
-	 width: 200px;
-	 height: 22px;
-	 top: 95px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 31;
-	 
-}
-
-#{id}label14 {
-	 width: 175px;
-	 height: 13px;
-	 top: 77px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 31;
-	 
-}
-
-#{id}textField71 {
-	 width: 200px;
-	 height: 22px;
-	 top: 95px;
-	 left: 210px;
-	
-	 position: absolute;
-	 z-index: 29;
-	 
-}
-
-#{id}label13 {
-	 width: 118px;
-	 height: 13px;
-	 top: 77px;
-	 left: 210px;
-	
-	 position: absolute;
-	 z-index: 29;
-	 
-}
-
-#{id}textField72 {
-	 width: 100px;
-	 height: 22px;
-	 top: 140px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 27;
-	 
-}
-
-#{id}label12 {
-	 width: 70px;
-	 height: 13px;
-	 top: 122px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 27;
-	 
-}
-
-#{id}textField73 {
-	 width: 50px;
-	 height: 22px;
-	 top: 140px;
-	 left: 115px;
-	
-	 position: absolute;
-	 z-index: 25;
-	 
-}
-
-#{id}label11 {
-	 width: 53px;
-	 height: 13px;
-	 top: 122px;
-	 left: 115px;
-	
-	 position: absolute;
-	 z-index: 25;
-	 
-}
-
-#{id}textField74 {
-	 width: 105px;
-	 height: 22px;
-	 top: 140px;
-	 left: 190px;
-	
-	 position: absolute;
-	 z-index: 23;
-	 
-}
-
-#{id}label10 {
-	 width: 66px;
-	 height: 13px;
-	 top: 122px;
-	 left: 190px;
-	
-	 position: absolute;
-	 z-index: 23;
-	 
-}
-
-#{id}textField75 {
-	 width: 105px;
-	 height: 22px;
-	 top: 140px;
-	 left: 305px;
-	
-	 position: absolute;
-	 z-index: 21;
-	 
-}
-
-#{id}label9 {
-	 width: 67px;
-	 height: 13px;
-	 top: 122px;
-	 left: 305px;
-	
-	 position: absolute;
-	 z-index: 21;
-	 
-}
-
-#{id}textField76 {
-	 width: 250px;
-	 height: 22px;
-	 top: 185px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 19;
-	 
-}
-
-#{id}label8 {
-	 width: 79px;
-	 height: 13px;
-	 top: 167px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 19;
-	 
-}
-
-#{id}Close {
-	 width: 75px;
-	 height: 25px;
-	 top: 335px;
-	 left: 335px;
-	
-	 position: absolute;
-	 z-index: 17;
-	 
-}
-
-#{id}textField82 {
-	 width: 150px;
-	 height: 22px;
-	 top: 184px;
-	 left: 260px;
-	
-	 position: absolute;
-	 z-index: 16;
-	 
-}
-
-#{id}label7 {
-	 width: 21px;
-	 height: 13px;
-	 top: 166px;
-	 left: 260px;
-	
-	 position: absolute;
-	 z-index: 16;
-	 
-}
-
-#{id}textField81 {
-	 width: 150px;
-	 height: 22px;
-	 top: 275px;
-	 left: 260px;
-	
-	 position: absolute;
-	 z-index: 14;
-	 
-}
-
-#{id}label6 {
-	 width: 98px;
-	 height: 13px;
-	 top: 257px;
-	 left: 260px;
-	
-	 position: absolute;
-	 z-index: 14;
-	 
-}
-
-#{id}checkbox6 {
-	 width: 22px;
-	 height: 22px;
-	 top: 308px;
-	 left: 388px;
-	
-	 position: absolute;
-	 z-index: 12;
-	 
-}
-
-#{id}label5 {
-	 width: 124px;
-	 height: 13px;
-	 top: 312px;
-	 left: 259px;
-	
-	 position: absolute;
-	 z-index: 12;
-	 
-}
-
-#{id}textField80 {
-	 width: 240px;
-	 height: 55px;
-	 top: 275px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 10;
-	 
-}
-
-#{id}label4 {
-	 width: 113px;
-	 height: 13px;
-	 top: 257px;
-	 left: 8px;
-	
-	 position: absolute;
-	 z-index: 10;
-	 
-}
-
-#{id}textField79 {
-	 width: 260px;
-	 height: 22px;
-	 top: 230px;
-	 left: 150px;
-	
-	 position: absolute;
-	 z-index: 8;
-	 
-}
-
-#{id}label3 {
-	 width: 77px;
-	 height: 13px;
-	 top: 212px;
-	 left: 150px;
-	
-	 position: absolute;
-	 z-index: 8;
 	 
 }
 
@@ -331,45 +46,344 @@
 	 left: 45px;
 	
 	 position: absolute;
-	 z-index: 6;
+	 z-index: 31;
+	 
+}
+
+#{id}label15 {
+	 width: 48px;
+	 height: 13px;
+	 top: 217px;
+	 left: 45px;
+	
+	 position: absolute;
+	 z-index: 31;
+	 
+}
+
+#{id}textField80 {
+	 width: 240px;
+	 height: 55px;
+	 top: 275px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}label14 {
+	 width: 113px;
+	 height: 13px;
+	 top: 262px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 29;
+	 
+}
+
+#{id}textField82 {
+	 width: 150px;
+	 height: 22px;
+	 top: 184px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}label13 {
+	 width: 21px;
+	 height: 13px;
+	 top: 171px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 27;
+	 
+}
+
+#{id}textField76 {
+	 width: 250px;
+	 height: 22px;
+	 top: 185px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}label12 {
+	 width: 79px;
+	 height: 13px;
+	 top: 172px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 25;
+	 
+}
+
+#{id}textField75 {
+	 width: 105px;
+	 height: 22px;
+	 top: 140px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}label11 {
+	 width: 67px;
+	 height: 13px;
+	 top: 127px;
+	 left: 305px;
+	
+	 position: absolute;
+	 z-index: 23;
+	 
+}
+
+#{id}textField74 {
+	 width: 105px;
+	 height: 22px;
+	 top: 140px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}label10 {
+	 width: 66px;
+	 height: 13px;
+	 top: 127px;
+	 left: 190px;
+	
+	 position: absolute;
+	 z-index: 21;
+	 
+}
+
+#{id}textField73 {
+	 width: 50px;
+	 height: 22px;
+	 top: 140px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}label9 {
+	 width: 53px;
+	 height: 13px;
+	 top: 127px;
+	 left: 115px;
+	
+	 position: absolute;
+	 z-index: 19;
+	 
+}
+
+#{id}textField72 {
+	 width: 100px;
+	 height: 22px;
+	 top: 140px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}label8 {
+	 width: 70px;
+	 height: 13px;
+	 top: 127px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 17;
+	 
+}
+
+#{id}textField71 {
+	 width: 200px;
+	 height: 22px;
+	 top: 95px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 15;
+	 
+}
+
+#{id}label7 {
+	 width: 118px;
+	 height: 13px;
+	 top: 82px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 15;
+	 
+}
+
+#{id}textField70 {
+	 width: 200px;
+	 height: 22px;
+	 top: 95px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 13;
+	 
+}
+
+#{id}label6 {
+	 width: 175px;
+	 height: 13px;
+	 top: 82px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 13;
+	 
+}
+
+#{id}textField58 {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 5px;
+	
+	 position: absolute;
+	 color: rgb(255, 0, 0);
+	 z-index: 11;
+	 
+}
+
+#{id}label5 {
+	 width: 101px;
+	 height: 13px;
+	 top: 37px;
+	 left: 5px;
+	
+	 position: absolute;
+	 z-index: 11;
+	 
+}
+
+#{id}textField57 {
+	 width: 200px;
+	 height: 22px;
+	 top: 50px;
+	 left: 210px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 255);
+	 z-index: 9;
+	 
+}
+
+#{id}label4 {
+	 width: 59px;
+	 height: 13px;
+	 top: 37px;
+	 left: 210px;
+	
+	 position: absolute;
+	 z-index: 9;
+	 
+}
+
+#{id}textField81 {
+	 width: 150px;
+	 height: 22px;
+	 top: 275px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 7;
+	 
+}
+
+#{id}label3 {
+	 width: 98px;
+	 height: 13px;
+	 top: 262px;
+	 left: 260px;
+	
+	 position: absolute;
+	 z-index: 7;
+	 
+}
+
+#{id}checkbox6 {
+	 width: 22px;
+	 height: 22px;
+	 top: 306px;
+	 left: 388px;
+	
+	 position: absolute;
+	 z-index: 5;
 	 
 }
 
 #{id}label2 {
-	 width: 48px;
+	 width: 124px;
 	 height: 13px;
-	 top: 212px;
-	 left: 45px;
+	 top: 311px;
+	 left: 259px;
 	
 	 position: absolute;
-	 z-index: 6;
+	 z-index: 5;
 	 
 }
 
-#{id}textField77 {
-	 width: 35px;
+#{id}textField79 {
+	 width: 260px;
 	 height: 22px;
 	 top: 230px;
-	 left: 8px;
+	 left: 150px;
 	
 	 position: absolute;
-	 z-index: 4;
+	 z-index: 3;
 	 
 }
 
 #{id}label1 {
-	 width: 28px;
+	 width: 77px;
 	 height: 13px;
-	 top: 212px;
-	 left: 8px;
+	 top: 217px;
+	 left: 150px;
 	
 	 position: absolute;
-	 z-index: 4;
+	 z-index: 3;
 	 
 }
 
-#{id}richText9 {
-	 width: 365px;
+#{id}dataGrid1 {
+	 height: 210px;
+	 top: 30px;
+	 left: 5px;
+	 right: 5px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}richText7 {
+	 width: 405px;
 	 height: 22px;
 	 top: 5px;
 	 left: 5px;
@@ -378,7 +392,68 @@
 	 font-weight: bold;
 	 text-align: center;
 	 font-size: 16px;
-	 z-index: 2;
+	 z-index: 1;
+	 
+}
+
+#{id}container2 {
+	 z-index: 36;
+	 width: 415px;
+	 height: 370px;
+	 top: 245px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 0px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 0px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-top-width: 5px;
+	 border-left-width: 0px;
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240, 240, 255)),color-stop(1, rgb(240, 240, 255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 
+}
+
+#{id}container1 {
+	 z-index: 35;
+	 width: 415px;
+	 height: 245px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240, 240, 255)),color-stop(1, rgb(240, 240, 255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 
+}
+
+#{id}Close {
+	 z-index: 1;
+	 width: 75px;
+	 height: 25px;
+	 top: 335px;
+	 left: 335px;
+	
+	 position: absolute;
 	 
 }
 
