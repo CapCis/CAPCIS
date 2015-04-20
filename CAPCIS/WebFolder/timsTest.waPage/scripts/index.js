@@ -2,6 +2,8 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var button13 = {};	// @button
+	var textField2 = {};	// @textField
 	var button15 = {};	// @button
 	var button7 = {};	// @button
 	var button6 = {};	// @button
@@ -16,6 +18,29 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 // @endregion// @endlock
 
 // eventHandlers// @lock
+
+	button13.click = function button13_click (event)// @startlock
+	{// @endlock
+		debugger;
+		matrixarray;
+		
+	};// @lock
+
+	textField2.blur = function textField2_blur (event)// @startlock
+	{// @endlock
+		
+		matrixarray;
+		setTimeout(function(){
+		debugger;
+		matrixarray;
+		},3000);
+	};// @lock
+
+	textField2.keyup = function textField2_keyup (event)// @startlock
+	{// @endlock
+		debugger;
+		matrixarray;
+	};// @lock
 
 	button15.click = function button15_click (event)// @startlock
 	{// @endlock
@@ -133,9 +158,15 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		//alert($$("richtext1").getValue);
 	};// @lock
 
-	button2.click = function button2_click (event)// @startlock
+	button2.mouseover = function button2_mouseover (event)// @startlock
 	{// @endlock
 		
+		
+	};// @lock
+
+	button2.click = function button2_click (event)// @startlock
+	{// @endlock
+		debugger;
 		matrixarray = rpcUtilities.timMatrixData();
 		source.matrixarray.sync();		
 	};// @lock
@@ -176,6 +207,10 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("button13", "click", button13.click, "WAF");
+	WAF.addListener("button2", "mouseover", button2.mouseover, "WAF");
+	WAF.addListener("textField2", "blur", textField2.blur, "WAF");
+	WAF.addListener("textField2", "keyup", textField2.keyup, "WAF");
 	WAF.addListener("button15", "click", button15.click, "WAF");
 	WAF.addListener("button7", "click", button7.click, "WAF");
 	WAF.addListener("button6", "click", button6.click, "WAF");

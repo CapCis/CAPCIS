@@ -6,6 +6,7 @@
 */
 exports.setDelete = function setDelete (myObject) 
 {
+	
 	try
 	{
 		
