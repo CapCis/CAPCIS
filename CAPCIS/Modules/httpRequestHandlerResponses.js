@@ -59,7 +59,7 @@ function getPic (request, response)
 	var dBQueryBuilder = require('dSelectsQuery');
 	//add code to check token recievd from body of xhr request
 	//add code to get the CIID from the body of xhr request
-	var selectStatement = 'SELECT ClientPicture FROM clientpicture WHERE ClientPictureID = 1'; 		//build query for client pictures
+	var selectStatement = 'SELECT ClientPicture FROM clientpicture WHERE ClientPictureID = "'+myCIID+'"';; 		//build query for client pictures
 	var connection = serverUtil.getDBConnection();
 	var result = connection.execute(selectStatement);
 	var myResults = result.getAllRows();
