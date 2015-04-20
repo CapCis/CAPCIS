@@ -3,6 +3,201 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}richText30 {
+	 z-index: 4;
+	 width: 285px;
+	 height: 152px;
+	 top: 27px;
+	 left: 3px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField4 {
+	 z-index: 5;
+	 width: 130px;
+	 height: 22px;
+	 top: 0px;
+	 left: 0px;
+	
+	 
+}
+
+#{id}label37 {
+	 z-index: 5;
+	 width: 29px;
+	 height: 13px;
+	 top: 4px;
+	 left: -34px;
+	
+	 
+}
+
+#{id}button25 {
+	 z-index: 2;
+	 width: 60px;
+	 height: 20px;
+	 top: 2px;
+	 right: 8px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button24 {
+	 z-index: 1;
+	 width: 60px;
+	 height: 20px;
+	 top: 2px;
+	 right: 73px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container20 {
+	 z-index: 3;
+	 height: 25px;
+	 bottom: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container19 {
+	 z-index: 2;
+	 top: 25px;
+	 bottom: 25px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button23 {
+	 z-index: 3;
+	 width: 15px;
+	 height: 15px;
+	 top: 5px;
+	 right: 8px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button22 {
+	 z-index: 2;
+	 width: 15px;
+	 height: 15px;
+	 top: 5px;
+	 right: 46px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button21 {
+	 z-index: 1;
+	 width: 15px;
+	 height: 15px;
+	 top: 5px;
+	 right: 27px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}image5 {
+	 width: 20px;
+	 height: 20px;
+	 top: 2px;
+	 left: 2px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}richText29 {
+	 z-index: -1;
+	 height: 14px;
+	 top: 6px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}container18 {
+	 z-index: 1;
+	 height: 25px;
+	 top: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label20 {
+	 z-index: 41;
+	 width: 51px;
+	 height: 13px;
+	 top: 475px;
+	 left: 18px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label18 {
+	 z-index: 39;
+	 width: 34px;
+	 height: 13px;
+	 top: 380px;
+	 left: 37px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label32 {
+	 z-index: 35;
+	 width: 51px;
+	 height: 13px;
+	 top: 473px;
+	 left: 27px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label21 {
+	 z-index: 33;
+	 width: 34px;
+	 height: 13px;
+	 top: 383px;
+	 left: 35px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField1 {
+	 z-index: 33;
+	 width: 130px;
+	 height: 22px;
+	 top: 379px;
+	 left: 74px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}dataGrid7 {
 	 z-index: 37;
 	 width: 160px;
@@ -17,10 +212,10 @@
 
 #{id}label36 {
 	 z-index: 4;
-	 width: 26px;
-	 height: 16px;
-	 top: 21px;
-	 left: -31px;
+	 width: 29px;
+	 height: 13px;
+	 top: 22px;
+	 left: -34px;
 	
 	 position: absolute;
 	 
@@ -90,10 +285,10 @@
 
 #{id}label35 {
 	 z-index: 4;
-	 width: 26px;
-	 height: 16px;
-	 top: 21px;
-	 left: -31px;
+	 width: 29px;
+	 height: 13px;
+	 top: 22px;
+	 left: -34px;
 	
 	 position: absolute;
 	 
@@ -145,21 +340,10 @@
 
 #{id}label34 {
 	 z-index: 33;
-	 width: 85px;
-	 height: 16px;
-	 top: 324px;
+	 width: 93px;
+	 height: 13px;
+	 top: 327px;
 	 left: 215px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField58 {
-	 z-index: 32;
-	 width: 100px;
-	 height: 22px;
-	 top: 345px;
-	 left: 500px;
 	
 	 position: absolute;
 	 
@@ -167,43 +351,10 @@
 
 #{id}label33 {
 	 z-index: 32;
-	 width: 64px;
-	 height: 16px;
-	 top: 324px;
+	 width: 70px;
+	 height: 13px;
+	 top: 327px;
 	 left: 500px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox10 {
-	 z-index: 30;
-	 width: 125px;
-	 height: 22px;
-	 top: 475px;
-	 left: 75px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label31 {
-	 z-index: 30;
-	 width: 52px;
-	 height: 16px;
-	 top: 478px;
-	 left: 18px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox9 {
-	 z-index: 29;
-	 width: 125px;
-	 height: 22px;
-	 top: 440px;
-	 left: 75px;
 	
 	 position: absolute;
 	 
@@ -211,43 +362,10 @@
 
 #{id}label30 {
 	 z-index: 29;
-	 width: 55px;
-	 height: 16px;
-	 top: 443px;
-	 left: 15px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox1 {
-	 z-index: 27;
-	 width: 125px;
-	 height: 22px;
-	 top: 380px;
-	 left: 75px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label29 {
-	 z-index: 27;
-	 width: 30px;
-	 height: 16px;
-	 top: 383px;
-	 left: 40px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}checkbox2 {
-	 z-index: 25;
-	 width: 22px;
-	 height: 22px;
-	 top: 410px;
-	 left: 178px;
+	 width: 59px;
+	 height: 13px;
+	 top: 444px;
+	 left: 11px;
 	
 	 position: absolute;
 	 
@@ -255,10 +373,10 @@
 
 #{id}label28 {
 	 z-index: 25;
-	 width: 84px;
-	 height: 16px;
-	 top: 413px;
-	 left: 89px;
+	 width: 91px;
+	 height: 13px;
+	 top: 414px;
+	 left: 82px;
 	
 	 position: absolute;
 	 
@@ -277,9 +395,9 @@
 
 #{id}label27 {
 	 z-index: 23;
-	 width: 69px;
-	 height: 16px;
-	 top: 424px;
+	 width: 75px;
+	 height: 13px;
+	 top: 427px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -2886,23 +3004,12 @@
 	 
 }
 
-#{id}textField35 {
-	 z-index: 18;
-	 width: 125px;
-	 height: 22px;
-	 top: 345px;
-	 left: 75px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label26 {
 	 z-index: 18;
-	 width: 54px;
-	 height: 16px;
-	 top: 348px;
-	 left: 16px;
+	 width: 57px;
+	 height: 13px;
+	 top: 349px;
+	 left: 13px;
 	
 	 position: absolute;
 	 
@@ -2921,21 +3028,10 @@
 
 #{id}label25 {
 	 z-index: 15;
-	 width: 247px;
-	 height: 16px;
-	 top: 532px;
-	 left: 248px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField33 {
-	 z-index: 14;
-	 width: 100px;
-	 height: 22px;
-	 top: 504px;
-	 left: 500px;
+	 width: 259px;
+	 height: 13px;
+	 top: 533px;
+	 left: 236px;
 	
 	 position: absolute;
 	 
@@ -2943,21 +3039,10 @@
 
 #{id}label24 {
 	 z-index: 14;
-	 width: 63px;
-	 height: 16px;
-	 top: 507px;
-	 left: 432px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField21 {
-	 z-index: 13;
-	 width: 100px;
-	 height: 22px;
-	 top: 479px;
-	 left: 500px;
+	 width: 70px;
+	 height: 13px;
+	 top: 508px;
+	 left: 425px;
 	
 	 position: absolute;
 	 
@@ -2965,21 +3050,10 @@
 
 #{id}label23 {
 	 z-index: 13;
-	 width: 64px;
-	 height: 16px;
-	 top: 482px;
-	 left: 431px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField10 {
-	 z-index: 12;
-	 width: 100px;
-	 height: 22px;
-	 top: 454px;
-	 left: 500px;
+	 width: 70px;
+	 height: 13px;
+	 top: 483px;
+	 left: 425px;
 	
 	 position: absolute;
 	 
@@ -2987,21 +3061,10 @@
 
 #{id}label22 {
 	 z-index: 12;
-	 width: 78px;
-	 height: 16px;
-	 top: 457px;
-	 left: 417px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField8 {
-	 z-index: 11;
-	 width: 100px;
-	 height: 22px;
-	 top: 429px;
-	 left: 500px;
+	 width: 89px;
+	 height: 13px;
+	 top: 458px;
+	 left: 406px;
 	
 	 position: absolute;
 	 
@@ -3009,10 +3072,10 @@
 
 #{id}label15 {
 	 z-index: 11;
-	 width: 64px;
-	 height: 16px;
-	 top: 432px;
-	 left: 431px;
+	 width: 71px;
+	 height: 13px;
+	 top: 433px;
+	 left: 424px;
 	
 	 position: absolute;
 	 
@@ -3031,9 +3094,9 @@
 
 #{id}label13 {
 	 z-index: 10;
-	 width: 63px;
-	 height: 16px;
-	 top: 179px;
+	 width: 70px;
+	 height: 13px;
+	 top: 182px;
 	 left: 405px;
 	
 	 position: absolute;
@@ -3053,9 +3116,9 @@
 
 #{id}label12 {
 	 z-index: 8;
-	 width: 90px;
-	 height: 16px;
-	 top: 179px;
+	 width: 103px;
+	 height: 13px;
+	 top: 182px;
 	 left: 190px;
 	
 	 position: absolute;
@@ -3152,67 +3215,12 @@
 	 
 }
 
-#{id}label20 {
-	 z-index: 29;
-	 width: 52px;
-	 height: 16px;
-	 top: 478px;
-	 left: 18px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox7 {
-	 z-index: 29;
-	 width: 125px;
-	 height: 22px;
-	 top: 475px;
-	 left: 75px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}label19 {
 	 z-index: 28;
-	 width: 55px;
-	 height: 16px;
-	 top: 443px;
-	 left: 15px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox4 {
-	 z-index: 28;
-	 width: 125px;
-	 height: 22px;
-	 top: 440px;
-	 left: 75px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label18 {
-	 z-index: 27;
-	 width: 30px;
-	 height: 16px;
-	 top: 383px;
-	 left: 40px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}combobox3 {
-	 z-index: 27;
-	 width: 125px;
-	 height: 22px;
-	 top: 380px;
-	 left: 75px;
+	 width: 59px;
+	 height: 13px;
+	 top: 444px;
+	 left: 11px;
 	
 	 position: absolute;
 	 
@@ -3220,21 +3228,10 @@
 
 #{id}label17 {
 	 z-index: 26;
-	 width: 84px;
-	 height: 16px;
-	 top: 413px;
-	 left: 89px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}checkbox1 {
-	 z-index: 26;
-	 width: 22px;
-	 height: 22px;
-	 top: 410px;
-	 left: 178px;
+	 width: 91px;
+	 height: 13px;
+	 top: 414px;
+	 left: 82px;
 	
 	 position: absolute;
 	 
@@ -3253,9 +3250,9 @@
 
 #{id}label16 {
 	 z-index: 25;
-	 width: 69px;
-	 height: 16px;
-	 top: 424px;
+	 width: 75px;
+	 height: 13px;
+	 top: 427px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -3401,9 +3398,9 @@
 
 #{id}label14 {
 	 z-index: 19;
-	 width: 85px;
-	 height: 16px;
-	 top: 324px;
+	 width: 93px;
+	 height: 13px;
+	 top: 327px;
 	 left: 215px;
 	
 	 position: absolute;
@@ -3434,10 +3431,10 @@
 
 #{id}label10 {
 	 z-index: 15;
-	 width: 54px;
-	 height: 16px;
-	 top: 348px;
-	 left: 16px;
+	 width: 57px;
+	 height: 13px;
+	 top: 349px;
+	 left: 13px;
 	
 	 position: absolute;
 	 
@@ -3467,10 +3464,10 @@
 
 #{id}label7 {
 	 z-index: 12;
-	 width: 73px;
-	 height: 16px;
-	 top: 478px;
-	 left: 422px;
+	 width: 80px;
+	 height: 13px;
+	 top: 479px;
+	 left: 415px;
 	
 	 position: absolute;
 	 
@@ -3500,9 +3497,9 @@
 
 #{id}label2 {
 	 z-index: 9;
-	 width: 63px;
-	 height: 16px;
-	 top: 179px;
+	 width: 70px;
+	 height: 13px;
+	 top: 182px;
 	 left: 405px;
 	
 	 position: absolute;
@@ -3522,9 +3519,9 @@
 
 #{id}label1 {
 	 z-index: 8;
-	 width: 90px;
-	 height: 16px;
-	 top: 179px;
+	 width: 103px;
+	 height: 13px;
+	 top: 182px;
 	 left: 190px;
 	
 	 position: absolute;
@@ -3800,8 +3797,8 @@
 #{id}label6 {
 	 z-index: 4;
 	 width: 21px;
-	 height: 16px;
-	 top: 49px;
+	 height: 13px;
+	 top: 52px;
 	 left: 10px;
 	
 	 position: absolute;
@@ -3810,9 +3807,9 @@
 
 #{id}label5 {
 	 z-index: 3;
-	 width: 40px;
-	 height: 16px;
-	 top: 0px;
+	 width: 47px;
+	 height: 13px;
+	 top: 3px;
 	 left: 10px;
 	
 	 position: absolute;
@@ -4276,7 +4273,7 @@
 
 #{id}muClassRosterSubCont {
 	 z-index: 1;
-	 width: 1122px;
+	 width: 453px;
 	 height: 610px;
 	 top: 0px;
 	 left: 0px;
@@ -4287,10 +4284,10 @@
 
 #{id}muClassRecieptCont {
 	 z-index: 2;
-	 width: 18px;
+	 width: 685px;
 	 height: 610px;
 	 top: 0px;
-	 left: 1122px;
+	 left: 453px;
 	
 	 position: absolute;
 	 background-color: rgba(240, 240, 255, 0.898438);
@@ -4330,33 +4327,6 @@
 
 #{id}comboboxButton.waf-state-hover {
 	 color: rgb(51, 51, 51);
-	 
-}
-
-#{id}comboboxGrid {
-	 z-index: 31;
-	 width: 158px;
-	 height: 69px;
-	 top: 537px;
-	 left: 19px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 127, 0);
-	 
-}
-
-#{id}comboBoxTextInput {
-	 z-index: 4;
-	 width: 160px;
-	 height: 22px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-right-radius: 0px;
-	-moz-border-radius-topright: 0px;
-	 border-bottom-right-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
 	 
 }
 
@@ -6931,6 +6901,187 @@
 	 height: 22px;
 	 top: 525px;
 	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}attendedCheckBox {
+	 z-index: 26;
+	 width: 22px;
+	 height: 22px;
+	 top: 410px;
+	 left: 178px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}testStatus {
+	 z-index: 28;
+	 width: 125px;
+	 height: 22px;
+	 top: 440px;
+	 left: 75px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}testType {
+	 z-index: 35;
+	 width: 130px;
+	 height: 22px;
+	 top: 469px;
+	 left: 83px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}comboboxGrid {
+	 z-index: 31;
+	 width: 158px;
+	 height: 69px;
+	 top: 537px;
+	 left: 19px;
+	
+	 position: absolute;
+	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}comboBoxTextInput {
+	 z-index: 4;
+	 width: 160px;
+	 height: 22px;
+	 top: 18px;
+	 left: 0px;
+	
+	 position: absolute;
+	 border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	 border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	 
+}
+
+#{id}muReceiptDate {
+	 z-index: 18;
+	 width: 125px;
+	 height: 22px;
+	 top: 345px;
+	 left: 75px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muVenue {
+	 z-index: 39;
+	 width: 130px;
+	 height: 22px;
+	 top: 376px;
+	 left: 76px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muAmountPaid {
+	 z-index: 32;
+	 width: 100px;
+	 height: 22px;
+	 top: 345px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muAmountPaidBottom {
+	 z-index: 13;
+	 width: 100px;
+	 height: 22px;
+	 top: 479px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muBackBalence {
+	 z-index: 11;
+	 width: 100px;
+	 height: 22px;
+	 top: 429px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muCurrentCharges {
+	 z-index: 12;
+	 width: 100px;
+	 height: 22px;
+	 top: 454px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muNewBalence {
+	 z-index: 14;
+	 width: 100px;
+	 height: 22px;
+	 top: 504px;
+	 left: 500px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muAttendedCheckBox {
+	 z-index: 25;
+	 width: 22px;
+	 height: 22px;
+	 top: 410px;
+	 left: 178px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muTestStatus {
+	 z-index: 29;
+	 width: 125px;
+	 height: 22px;
+	 top: 440px;
+	 left: 75px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}muTestType {
+	 z-index: 41;
+	 width: 130px;
+	 height: 22px;
+	 top: 471px;
+	 left: 74px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dupRec {
+	 z-index: 2;
+	 width: 294px;
+	 height: 211px;
+	 top: 258px;
+	 left: 84px;
 	
 	 position: absolute;
 	 

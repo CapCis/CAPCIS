@@ -155,7 +155,13 @@ exports.buildQuery = function buildQuery(myObject)
 									and VoidEntry = false \
 									order by clienttestmonitoring.CreatedDateTIme desc \
 									limit 1;';
-						return answer;		
+						return answer;
+				case 13: answer = 'select * \
+									from clientmonitoringdata \
+									where VoidEntry = false and EntryDate = "'+myObject.data1+'" and \
+									FK_clientrequirements_ClientRequirementsID = '+myObject.data2;
+						return answer;	
+							
 				default:
 						answer = null;
 					}
