@@ -13,10 +13,20 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var assesorPreviousGrid = {};	// @dataGrid
 	var closeAssesorPreviousButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
+	{// @endlock
+		
+		$$(getHtmlId('container9')).setSplitPosition(250);
+		//load referalBAKAssessorView Page lower right box
+		
+		
+	};// @lock
 
 	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
 	{// @endlock
@@ -26,6 +36,7 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_assesorPreviousGrid", "onRowClick", assesorPreviousGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_closeAssesorPreviousButton", "click", closeAssesorPreviousButton.click, "WAF");
 	// @endregion// @endlock
 

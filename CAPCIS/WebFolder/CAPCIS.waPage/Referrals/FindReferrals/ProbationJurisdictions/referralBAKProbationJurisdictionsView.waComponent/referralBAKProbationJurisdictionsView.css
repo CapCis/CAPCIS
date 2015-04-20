@@ -3,17 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}Close {
-	 width: 75px;
-	 height: 25px;
-	 top: 335px;
-	 left: 335px;
-	
-	 position: absolute;
-	 z-index: 25;
-	 
-}
-
 #{id}textField82 {
 	 width: 220px;
 	 height: 22px;
@@ -28,7 +17,7 @@
 #{id}label11 {
 	 width: 21px;
 	 height: 13px;
-	 top: 167px;
+	 top: 172px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -39,7 +28,7 @@
 #{id}checkbox6 {
 	 width: 22px;
 	 height: 22px;
-	 top: 303px;
+	 top: 300px;
 	 left: 388px;
 	
 	 position: absolute;
@@ -50,7 +39,7 @@
 #{id}label10 {
 	 width: 106px;
 	 height: 13px;
-	 top: 307px;
+	 top: 305px;
 	 left: 277px;
 	
 	 position: absolute;
@@ -72,7 +61,7 @@
 #{id}label9 {
 	 width: 152px;
 	 height: 13px;
-	 top: 212px;
+	 top: 217px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -94,7 +83,7 @@
 #{id}label8 {
 	 width: 48px;
 	 height: 13px;
-	 top: 167px;
+	 top: 172px;
 	 left: 300px;
 	
 	 position: absolute;
@@ -116,7 +105,7 @@
 #{id}label7 {
 	 width: 28px;
 	 height: 13px;
-	 top: 167px;
+	 top: 172px;
 	 left: 250px;
 	
 	 position: absolute;
@@ -138,7 +127,7 @@
 #{id}label6 {
 	 width: 79px;
 	 height: 13px;
-	 top: 122px;
+	 top: 127px;
 	 left: 220px;
 	
 	 position: absolute;
@@ -160,7 +149,7 @@
 #{id}label5 {
 	 width: 67px;
 	 height: 13px;
-	 top: 122px;
+	 top: 127px;
 	 left: 110px;
 	
 	 position: absolute;
@@ -182,7 +171,7 @@
 #{id}label4 {
 	 width: 70px;
 	 height: 13px;
-	 top: 122px;
+	 top: 127px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -204,7 +193,7 @@
 #{id}label3 {
 	 width: 153px;
 	 height: 13px;
-	 top: 77px;
+	 top: 82px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -213,7 +202,7 @@
 }
 
 #{id}richText9 {
-	 width: 365px;
+	 width: 405px;
 	 height: 22px;
 	 top: 5px;
 	 left: 5px;
@@ -241,7 +230,7 @@
 #{id}label2 {
 	 width: 101px;
 	 height: 13px;
-	 top: 32px;
+	 top: 37px;
 	 left: 5px;
 	
 	 position: absolute;
@@ -264,11 +253,97 @@
 #{id}label1 {
 	 width: 59px;
 	 height: 13px;
-	 top: 32px;
+	 top: 37px;
 	 left: 210px;
 	
 	 position: absolute;
 	 z-index: 3;
+	 
+}
+
+#{id}dataGrid1 {
+	 height: 210px;
+	 top: 30px;
+	 left: 5px;
+	 right: 3px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}richText7 {
+	 width: 405px;
+	 height: 22px;
+	 top: 5px;
+	 left: 5px;
+	
+	 position: absolute;
+	 font-weight: bold;
+	 text-align: center;
+	 font-size: 16px;
+	 z-index: 1;
+	 
+}
+
+#{id}container2 {
+	 z-index: 27;
+	 width: 415px;
+	 height: 370px;
+	 top: 245px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 border-top-color: rgb(229, 229, 229);
+	 border-top-style: ridge;
+	 border-right-color: rgb(229, 229, 229);
+	 border-right-style: ridge;
+	 border-right-width: 0px;
+	 border-bottom-color: rgb(229, 229, 229);
+	 border-bottom-style: ridge;
+	 border-bottom-width: 0px;
+	 border-left-color: rgb(229, 229, 229);
+	 border-left-style: ridge;
+	 border-top-width: 5px;
+	 border-left-width: 0px;
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240, 240, 255)),color-stop(1, rgb(240, 240, 255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 
+}
+
+#{id}container1 {
+	 z-index: 26;
+	 width: 415px;
+	 height: 245px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240, 240, 255)),color-stop(1, rgb(240, 240, 255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
+	 
+}
+
+#{id}Close {
+	 z-index: 1;
+	 width: 75px;
+	 height: 28px;
+	 top: 335px;
+	 left: 335px;
+	
+	 position: absolute;
 	 
 }
 
