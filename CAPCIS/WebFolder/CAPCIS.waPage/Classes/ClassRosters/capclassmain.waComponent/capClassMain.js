@@ -879,7 +879,7 @@ function constructor (id) {
 	{// @endlock
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:13,data1:today,data2:sources.myRosterList.ClientRequirementsID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		prevRec = rpcDSelects.getSelect(myObject);
-		debugger;
+		
 		if(prevRec.length !== 0)
 		{
 			
@@ -933,14 +933,14 @@ function constructor (id) {
 		
 		
 
-
+		debugger;
 		//-----------------------------how to send a xmlhttprequest with body string !!!!!
 		xhr = new XMLHttpRequest();
 		URLText = "http://localhost:8082/getPicture";
 		xhr.open("POST",URLText,true);		
 		xhr.setRequestHeader("Content-type","text/plain");
 		xhr.send(userConfigObj.secToken + "," + userConfigObj.userID + "," + sources.myRosterList.ClientInformation_CIID);
-		
+		$$(getHtmlId('clientPicture')).setValue(xhr.response);
 		
 		
 		
