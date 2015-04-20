@@ -49,6 +49,12 @@
 function getPic (request, response)
 {
 	debugger;
+	var myArray = request.body.split(",");
+	var myToken = myArray[0];
+	var myUserID = myArray[1];
+	var myCIID = myArray[2];
+	
+	
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	//add code to check token recievd from body of xhr request
