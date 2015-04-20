@@ -51,10 +51,41 @@ function constructor (id) {
 	    mm='0'+mm;
 		} 
 
-		today = mm+'/'+dd+'/'+yyyy;
+		today = yyyy+'-'+mm+'-'+dd;
 		$$(getHtmlId('receiptDate')).setValue(today);
+		$$(getHtmlId('muReceiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var button25 = {};	// @button
+	var button24 = {};	// @button
+	var textField60 = {};	// @textField
+	var dataGrid7 = {};	// @dataGrid
+	var button9 = {};	// @button
+	var dataGrid3 = {};	// @dataGrid
+	var dataGrid2 = {};	// @dataGrid
+	var muCurrentCharges = {};	// @textField
+	var muAmountPaid = {};	// @textField
+	var textField52 = {};	// @textField
+	var textField50 = {};	// @textField
+	var textField51 = {};	// @textField
+	var textField49 = {};	// @textField
+	var textField48 = {};	// @textField
+	var textField47 = {};	// @textField
+	var textField46 = {};	// @textField
+	var textField45 = {};	// @textField
+	var textField56 = {};	// @textField
+	var textField44 = {};	// @textField
+	var textField53 = {};	// @textField
+	var textField55 = {};	// @textField
+	var textField43 = {};	// @textField
+	var textField54 = {};	// @textField
+	var textField41 = {};	// @textField
+	var textField40 = {};	// @textField
+	var textField39 = {};	// @textField
+	var textField38 = {};	// @textField
+	var textField37 = {};	// @textField
+	var textField36 = {};	// @textField
+	var textField42 = {};	// @textField
 	var currentChargesField = {};	// @textField
 	var amountPaidField = {};	// @textField
 	var button5 = {};	// @button
@@ -97,6 +128,212 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	button25.click = function button25_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId("dialog3")).closeDialog(); //ok button
+	};// @lock
+
+	button24.click = function button24_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId("dialog3")).closeDialog(); //cancel button
+	};// @lock
+
+	textField60.keyup = function textField60_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			
+			$$($comp.id+'_textField60').setValue(sources.receiptPurpose.ReceiptPurpose);
+			var grid = document.getElementById($comp.id+'_dataGrid7');
+			grid.style.display = 'none';
+		}
+		else
+		{
+			receiptPurpose=tempStore;
+			sources.receiptPurpose.sync();
+
+			var grid = document.getElementById($comp.id+'_dataGrid7');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_textField60').getValue();//textInput.value;
+			sources.receiptPurpose.query('ReceiptPurpose = :1 order by ReceiptPurpose', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	dataGrid7.onRowClick = function dataGrid7_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('dataGrid7'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('dataGrid7')).sourceAtt.getValue();
+		$$(getHtmlId('textField60')).setValue(recValue);
+	};// @lock
+
+	button9.click = function button9_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('dataGrid7'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+		
+	};// @lock
+
+	dataGrid3.onRowClick = function dataGrid3_onRowClick (event)// @startlock
+	{// @endlock
+		removeFromMUCart(sources.cart.ItemPriceListID);
+	};// @lock
+
+	dataGrid2.onRowClick = function dataGrid2_onRowClick (event)// @startlock
+	{// @endlock
+		addToMUCart(sources.itemList.ItemPriceListID);
+	};// @lock
+
+	muCurrentCharges.change = function muCurrentCharges_change (event)// @startlock
+	{// @endlock
+		changeMUBalence();
+	};// @lock
+
+	muAmountPaid.keyup = function muAmountPaid_keyup (event)// @startlock
+	{// @endlock
+		changeMUBalence();
+	};// @lock
+
+	muAmountPaid.change = function muAmountPaid_change (event)// @startlock
+	{// @endlock
+		changeMUBalence();
+	};// @lock
+
+	textField52.click = function textField52_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField52")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField50.click = function textField50_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField50")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField51.click = function textField51_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField51")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField49.click = function textField49_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField49")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField48.click = function textField48_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField48")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField47.click = function textField47_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField47")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField46.click = function textField46_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField46")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField45.click = function textField45_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField45")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField56.click = function textField56_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField56")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField44.click = function textField44_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField44")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField53.click = function textField53_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField53")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField55.click = function textField55_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField55")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField43.click = function textField43_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField43")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField54.click = function textField54_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField54")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField41.click = function textField41_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField41")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField40.click = function textField40_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField40")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField39.click = function textField39_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField39")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField38.click = function textField38_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField38")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField37.click = function textField37_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField37")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField36.click = function textField36_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField36")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
+	textField42.click = function textField42_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("textField42")).getValue();
+		$$(getHtmlId("muAmountPaid")).setValue(value);
+	};// @lock
+
 	currentChargesField.change = function currentChargesField_change (event)// @startlock
 	{// @endlock
 		changeBalence();
@@ -123,6 +360,18 @@ function constructor (id) {
 		
 		var newBalence = (backBalence + currentCharges) - paid;
 		$$($comp.id+'_newBalenceField').setValue(newBalence.toFixed(2))
+	}
+	
+	function changeMUBalence()
+	{
+		var paid = Number($$(getHtmlId('muAmountPaid')).getValue());
+		$$($comp.id+'_muAmountPaidBottom').setValue(paid.toFixed(2));
+		
+		var backBalence = Number($$(getHtmlId('muBackBalence')).getValue());
+		var currentCharges = Number($$(getHtmlId('muCurrentCharges')).getValue());
+		
+		var newBalence = (backBalence + currentCharges) - paid;
+		$$($comp.id+'_muNewBalence').setValue(newBalence.toFixed(2))
 	}
 
 	button5.click = function button5_click (event)// @startlock
@@ -260,43 +509,222 @@ function constructor (id) {
 
 	dataGrid5.onRowClick = function dataGrid5_onRowClick (event)// @startlock
 	{// @endlock
-		currentCharges = (Number(currentCharges) - Number(sources.cart.ItemPrice));
-		currentCharges = currentCharges.toFixed(2);
-		$$(getHtmlId("currentChargesField")).setValue(currentCharges);
-		sources.cart.removeCurrent();
+		removeFromCart(sources.cart.ItemPriceListID);
 	};// @lock
 
 	dataGrid4.onRowClick = function dataGrid4_onRowClick (event)// @startlock
 	{// @endlock
-		
+		 addToCart(sources.itemList.ItemPriceListID);
+					
+	};// @lock
+	
+	function removeFromCart(itemID)
+	{
+		var itemToRemove;
+			for(var x = 0; x < cart.length ; x++)
+			{
+				if(cart[x].ItemPriceListID === itemID)
+				{
+					itemToRemove = cart[x];
+					//cart[x] = null;
+				}
+			}
+		if(itemToRemove !== null)
+		{
+			currentCharges = (Number(currentCharges) - Number(itemToRemove.ItemPrice));
+			currentCharges = currentCharges.toFixed(2);
+			$$(getHtmlId("currentChargesField")).setValue(currentCharges);
+			sources.cart.removeCurrent();
+			var classNotLeft = true;
+			var testNotLeft = true;
+			if(itemToRemove.IsClass === 1)
+			{
+				
+				$$(getHtmlId('attendedCheckBox')).setValue(false);			
+			}
+			
+			if(itemToRemove.TT_TestingTypeID !== null)
+			{
+				$$($comp.id+'_testStatus').setValue('None');
+				$$(getHtmlId('testType')).setValue("");				
+			}
+		}
+				
+	}
+	
+	function addToCart(itemID)
+	{
 		var notInArray = true;
-		
+		var itemToAdd;
+			for(var x = 0; x < itemList.length ; x++)
+			{
+				if(itemList[x].ItemPriceListID === itemID)
+				{
+					itemToAdd = itemList[x];
+				}
+			}
+	if(itemToAdd != null)
+	{		
+			
 		for(var x = 0; x < cart.length ; x++)
 		{
-			if(cart[x].ItemPriceListID === sources.itemList.ItemPriceListID)
+			if(itemToAdd.IsClass === 1)
 			{
-				notInArray = false;
+				if(cart[x].IsClass ===1)
+				{
+					notInArray = false;
+				}
+			}	
+			if(itemToAdd.TT_TestingTypeID !== null)
+			{
+				if(cart[x].TT_TestingTypeID !== null)
+				{
+					notInArray = false;
+				}
 			}
 		}
 		
 		if(notInArray)
 		{
-			cart.push({
-				Item: sources.itemList.Item,
-				ItemPriceListID: sources.itemList.ItemPriceListID,
-				ItemPrice: sources.itemList.ItemPrice,
-				ItemDescription: sources.itemList.ItemDescription,
-				TT_TestingTypeID: sources.itemList.TT_TestingTypeID,
-				IsClass: sources.itemList.IsClass
+			
+				cart.push({
+				Item: itemToAdd.Item,
+				ItemPriceListID: itemToAdd.ItemPriceListID,
+				ItemPrice: itemToAdd.ItemPrice,
+				ItemDescription: itemToAdd.ItemDescription,
+				TT_TestingTypeID: itemToAdd.TT_TestingTypeID,
+				IsClass: itemToAdd.IsClass
 			});
 			sources.cart.sync();
 			
-			currentCharges = (Number(currentCharges) + Number(sources.itemList.ItemPrice));
+			
+			
+			currentCharges = (Number(currentCharges) + Number(itemToAdd.ItemPrice));
 			currentCharges = currentCharges.toFixed(2);
 			$$(getHtmlId("currentChargesField")).setValue(currentCharges);
+				
+			
+			
+			if(itemToAdd.IsClass === 1)
+			{
+				$$(getHtmlId('attendedCheckBox')).setValue(true);
+				$$(getHtmlId('comboBoxTextInput')).setValue('Class Attendance Receipt');
+				
+			}
+			if(itemToAdd.TT_TestingTypeID !== null)
+			{
+				$$($comp.id+'_testStatus').setValue('Alert');
+				$$(getHtmlId('testType')).setValue(itemToAdd.Item);
+								
+			}	
+
+		}
+	}
+	};
+	
+	function removeFromMUCart(itemID)
+	{
+		var itemToRemove;
+			for(var x = 0; x < cart.length ; x++)
+			{
+				if(cart[x].ItemPriceListID === itemID)
+				{
+					itemToRemove = cart[x];
+					//cart[x] = null;
+				}
+			}
+		if(itemToRemove !== null)
+		{
+			currentCharges = (Number(currentCharges) - Number(itemToRemove.ItemPrice));
+			currentCharges = currentCharges.toFixed(2);
+			$$(getHtmlId("muCurrentCharges")).setValue(currentCharges);
+			sources.cart.removeCurrent();
+			var classNotLeft = true;
+			var testNotLeft = true;
+			if(itemToRemove.IsClass === 1)
+			{
+				
+				$$(getHtmlId('muAttendedCheckBox')).setValue(false);			
+			}
+			
+			if(itemToRemove.TT_TestingTypeID !== null)
+			{
+				$$($comp.id+'_muTestStatus').setValue('None');
+				$$(getHtmlId('muTestType')).setValue("");				
+			}
+		}
+				
+	}
+	
+	function addToMUCart(itemID)
+	{
+		var notInArray = true;
+		var itemToAdd;
+			for(var x = 0; x < itemList.length ; x++)
+			{
+				if(itemList[x].ItemPriceListID === itemID)
+				{
+					itemToAdd = itemList[x];
+				}
+			}
+	if(itemToAdd != null)
+	{		
+			
+		for(var x = 0; x < cart.length ; x++)
+		{
+			if(itemToAdd.IsClass === 1)
+			{
+				if(cart[x].IsClass ===1)
+				{
+					notInArray = false;
+				}
+			}	
+			if(itemToAdd.TT_TestingTypeID !== null)
+			{
+				if(cart[x].TT_TestingTypeID !== null)
+				{
+					notInArray = false;
+				}
+			}
 		}
 		
-	};// @lock
+		if(notInArray)
+		{
+			
+				cart.push({
+				Item: itemToAdd.Item,
+				ItemPriceListID: itemToAdd.ItemPriceListID,
+				ItemPrice: itemToAdd.ItemPrice,
+				ItemDescription: itemToAdd.ItemDescription,
+				TT_TestingTypeID: itemToAdd.TT_TestingTypeID,
+				IsClass: itemToAdd.IsClass
+			});
+			sources.cart.sync();
+			
+			
+			
+			currentCharges = (Number(currentCharges) + Number(itemToAdd.ItemPrice));
+			currentCharges = currentCharges.toFixed(2);
+			$$(getHtmlId("muCurrentCharges")).setValue(currentCharges);
+				
+			
+			
+			if(itemToAdd.IsClass === 1)
+			{
+				$$(getHtmlId('muAttendedCheckBox')).setValue(true);
+				$$(getHtmlId('textField60')).setValue('Class Attendance Receipt');
+				
+			}
+			if(itemToAdd.TT_TestingTypeID !== null)
+			{
+				$$($comp.id+'_muTestStatus').setValue('Alert');
+				$$(getHtmlId('muTestType')).setValue(itemToAdd.Item);
+								
+			}	
+
+		}
+	}
+	};
 
 	comboBoxTextInput.keyup = function comboBoxTextInput_keyup (event)// @startlock
 	{// @endlock
@@ -373,8 +801,54 @@ function constructor (id) {
 
 	muClassRosterDG.onRowClick = function muClassRosterDG_onRowClick (event)// @startlock
 	{// @endlock
+		cart = [];
+		$$(getHtmlId('muAttendedCheckBox')).setValue(false);
+		currentCharges = 0;	
+		$$($comp.id+'_muTestStatus').setValue('None');
+		$$(getHtmlId("muAmountPaid")).setValue(null);
+			
 		
-		$$(getHtmlId('muClassRosterMainCont')).setSplitPosition(600);
+
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:11,data1:sources.myMURosterList.ClientInformation_CIID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						flagSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+				
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:12,
+						data1:sources.myMURosterList.ClientInformation_CIID ,weekStartDate:'2014-3-16', weekEndDate:'2014-3-22'}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						balenceCarrySuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+				
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:9,data1:sources.myMURosterList.ClientRequirementsID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						itemListeMUSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+		currentBal = Number(sources.myMURosterList.CurrentBalence).toFixed(2);
+		$$(getHtmlId("muBackBalence")).setValue(currentBal);
+		
+		$$(getHtmlId('muClassRosterMainCont')).setSplitPosition(400);
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
@@ -403,7 +877,21 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:13,data1:today,data2:sources.myRosterList.ClientRequirementsID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		prevRec = rpcDSelects.getSelect(myObject);
+		debugger;
+		if(prevRec.length !== 0)
+		{
+			
+		}		
+		cart = [];
+		$$(getHtmlId('attendedCheckBox')).setValue(false);
+		currentCharges = 0;	
+		$$($comp.id+'_testStatus').setValue('None');
+		$$(getHtmlId("amountPaidField")).setValue(null);
+			
 		
+
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:11,data1:sources.myRosterList.ClientInformation_CIID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -442,6 +930,7 @@ function constructor (id) {
 				});
 		currentBal = Number(sources.myRosterList.CurrentBalence).toFixed(2);
 		$$(getHtmlId("backBalenceField")).setValue(currentBal);
+		
 		
 		$$(getHtmlId('classRosterMainCont')).setSplitPosition(400);
 		
@@ -814,6 +1303,9 @@ function constructor (id) {
 		itemList= result;
 		tempStore= result;
 		sources.itemList.sync();
+		addToCart(2);
+		addToCart(4);
+		addToCart(sources.myRosterList.ItemPriceListID);
 	}
 	function itemListError(event)
 	{
@@ -824,8 +1316,27 @@ function constructor (id) {
 				}
 				alert(errMessage);
 	}
+	function itemListeMUSuccess(result)
+	{
+		itemList= result;
+		tempStore= result;
+		sources.itemList.sync();
+		addToMUCart(3);
+		addToMUCart(5);
+		addToMUCart(sources.myMURosterList.ItemPriceListID);
+	}
+	function itemListMUError(event)
+	{
+		var errMessage;
+				for (var x = 0;x < event.error.length;x++)
+				{
+					errMessage += (event.error[x].message + ",");
+				}
+				alert(errMessage);
+	}
 	function flagSuccess(result)
 	{
+		
 		clientFlag= result;
 		
 		sources.clientFlag.sync();
@@ -856,6 +1367,37 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button25", "click", button25.click, "WAF");
+	WAF.addListener(this.id + "_button24", "click", button24.click, "WAF");
+	WAF.addListener(this.id + "_textField60", "keyup", textField60.keyup, "WAF");
+	WAF.addListener(this.id + "_dataGrid7", "onRowClick", dataGrid7.onRowClick, "WAF");
+	WAF.addListener(this.id + "_button9", "click", button9.click, "WAF");
+	WAF.addListener(this.id + "_dataGrid3", "onRowClick", dataGrid3.onRowClick, "WAF");
+	WAF.addListener(this.id + "_dataGrid2", "onRowClick", dataGrid2.onRowClick, "WAF");
+	WAF.addListener(this.id + "_muCurrentCharges", "change", muCurrentCharges.change, "WAF");
+	WAF.addListener(this.id + "_muAmountPaid", "keyup", muAmountPaid.keyup, "WAF");
+	WAF.addListener(this.id + "_muAmountPaid", "change", muAmountPaid.change, "WAF");
+	WAF.addListener(this.id + "_textField52", "click", textField52.click, "WAF");
+	WAF.addListener(this.id + "_textField50", "click", textField50.click, "WAF");
+	WAF.addListener(this.id + "_textField51", "click", textField51.click, "WAF");
+	WAF.addListener(this.id + "_textField49", "click", textField49.click, "WAF");
+	WAF.addListener(this.id + "_textField48", "click", textField48.click, "WAF");
+	WAF.addListener(this.id + "_textField47", "click", textField47.click, "WAF");
+	WAF.addListener(this.id + "_textField46", "click", textField46.click, "WAF");
+	WAF.addListener(this.id + "_textField45", "click", textField45.click, "WAF");
+	WAF.addListener(this.id + "_textField56", "click", textField56.click, "WAF");
+	WAF.addListener(this.id + "_textField44", "click", textField44.click, "WAF");
+	WAF.addListener(this.id + "_textField53", "click", textField53.click, "WAF");
+	WAF.addListener(this.id + "_textField55", "click", textField55.click, "WAF");
+	WAF.addListener(this.id + "_textField43", "click", textField43.click, "WAF");
+	WAF.addListener(this.id + "_textField54", "click", textField54.click, "WAF");
+	WAF.addListener(this.id + "_textField41", "click", textField41.click, "WAF");
+	WAF.addListener(this.id + "_textField40", "click", textField40.click, "WAF");
+	WAF.addListener(this.id + "_textField39", "click", textField39.click, "WAF");
+	WAF.addListener(this.id + "_textField38", "click", textField38.click, "WAF");
+	WAF.addListener(this.id + "_textField37", "click", textField37.click, "WAF");
+	WAF.addListener(this.id + "_textField36", "click", textField36.click, "WAF");
+	WAF.addListener(this.id + "_textField42", "click", textField42.click, "WAF");
 	WAF.addListener(this.id + "_currentChargesField", "change", currentChargesField.change, "WAF");
 	WAF.addListener(this.id + "_amountPaidField", "keyup", amountPaidField.keyup, "WAF");
 	WAF.addListener(this.id + "_amountPaidField", "change", amountPaidField.change, "WAF");
