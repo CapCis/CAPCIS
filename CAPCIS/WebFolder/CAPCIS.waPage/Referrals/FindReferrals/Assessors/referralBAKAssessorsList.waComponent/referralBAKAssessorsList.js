@@ -21,8 +21,7 @@ function constructor (id) {
 	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
 		
-		$$(getHtmlId('container9')).setSplitPosition(250);
-		//load referalBAKAssessorView Page lower right box
+		
 		
 		
 	};// @lock

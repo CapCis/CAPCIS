@@ -21,7 +21,7 @@ function constructor (id) {
 
 	dataGrid2.onRowClick = function dataGrid2_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);	
+		
 	};// @lock
 
 	Close.click = function Close_click (event)// @startlock
