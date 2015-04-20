@@ -3,6 +3,150 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button9 {
+	 height: 25px;
+	 bottom: 4px;
+	 left: 320px;
+	 right: 3px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#button8 {
+	 z-index: 1;
+	 width: 75px;
+	 top: 4px;
+	 bottom: 4px;
+	 right: 88px;
+	
+	 position: absolute;
+	 
+}
+
+#container10 {
+	 z-index: 3;
+	 top: 35px;
+	 bottom: 35px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 border-top-color: rgb(0, 27, 90);
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-left-width: 1px;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-right-width: 1px;
+	 
+}
+
+#container9 {
+	 z-index: 2;
+	 height: 35px;
+	 bottom: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 border-left-color: rgb(0, 27, 90);
+	 border-left-style: solid;
+	 border-right-color: rgb(0, 27, 90);
+	 border-right-style: solid;
+	 border-bottom-color: rgb(0, 27, 90);
+	 border-bottom-style: solid;
+	 border-top-color: rgb(0, 27, 90);
+	 border-top-style: solid;
+	 border-top-width: 1px;
+	 border-right-width: 1px;
+	 border-left-width: 1px;
+	 border-bottom-width: 1px;
+	 
+}
+
+#richText6 {
+	 z-index: 1;
+	 height: 18px;
+	 top: 10px;
+	 left: 5px;
+	 right: 5px;
+	
+	 position: absolute;
+	 color: rgba(240, 240, 255, 0.898438);
+	 font-size: 14px;
+	 font-style: normal;
+	 font-weight: bold;
+	 
+}
+
+#container8 {
+	 z-index: 1;
+	 height: 35px;
+	 top: 0px;
+	 left: 0px;
+	 right: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(0, 27, 90);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwLjM5ODQzOCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjZmZmZmZmIiBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMCIgLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjd2FmLWllLWdyYWRpZW50KSIgLz48L3N2Zz4=");
+	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgba(255,255,255,0.398438)),color-stop(1, rgba(255,255,255,0)));
+	 background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.398438) 0%,rgba(255,255,255,0) 100%);
+	 background-image:-moz-linear-gradient(top, rgba(255,255,255,0.398438) 0%,rgba(255,255,255,0) 100%);
+	 background-image:-ms-linear-gradient(top, rgba(255,255,255,0.398438) 0%,rgba(255,255,255,0) 100%);
+	 background-image:-o-linear-gradient(top, rgba(255,255,255,0.398438) 0%,rgba(255,255,255,0) 100%);
+	 background-image:linear-gradient(top, rgba(255,255,255,0.398438) 0%,rgba(255,255,255,0) 100%);
+	 
+}
+
+#container7 {
+	 z-index: 7;
+	 width: 400px;
+	 height: 300px;
+	 top: 265px;
+	 left: 268px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240,240,255)),color-stop(1, rgb(240,240,255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 
+}
+
+#matrix1 .waf-widget.waf-clone-container1 {
+	 position: absolute;
+	 
+}
+
+#container6 {
+	 z-index: 2;
+	 width: 213px;
+	 height: 112px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#component1 {
+	 z-index: 6;
+	 width: 131px;
+	 height: 136px;
+	 top: 79px;
+	 left: 186px;
+	
+	 position: absolute;
+	 
+}
+
 #button2 {
 	 z-index: 4;
 	 width: 97px;
@@ -53,7 +197,7 @@
 
 #label1 {
 	 z-index: 1;
-	 width: 29px;
+	 width: 31px;
 	 height: 13px;
 	 top: 0px;
 	 left: 0px;
@@ -93,62 +237,15 @@
 	 
 }
 
-#richText5 {
-	 z-index: 3;
-	 width: 375px;
-	 height: 32px;
-	 top: 18px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
 #matrix1 .waf-widget.waf-clone-richText4 {
-	 position: absolute;
 	 color: rgb(0, 0, 255);
 	 text-align: right;
-	 
-}
-
-#richText4 {
-	 z-index: 2;
-	 width: 150px;
-	 height: 18px;
-	 top: 0px;
-	 left: 225px;
-	
 	 position: absolute;
-	 color: rgb(0, 0, 255);
-	 text-align: right;
 	 
 }
 
 #matrix1 .waf-widget.waf-clone-richText3 {
-	 position: absolute;
 	 color: rgb(191, 0, 0);
-	 
-}
-
-#richText3 {
-	 z-index: 1;
-	 width: 200px;
-	 height: 18px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 color: rgb(191, 0, 0);
-	 
-}
-
-#container1 {
-	 z-index: 1;
-	 width: 375px;
-	 height: 50px;
-	 top: 0px;
-	 left: 0px;
-	
 	 position: absolute;
 	 
 }

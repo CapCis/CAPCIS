@@ -13,11 +13,30 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var submitNewCorrespondence = {};	// @button
+	var assessorCorespondanceGrid = {};	// @dataGrid
+	var combobox1 = {};	// @combobox
 	var button1 = {};	// @button
 	var checkbox1 = {};	// @checkbox
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	submitNewCorrespondence.click = function submitNewCorrespondence_click (event)// @startlock
+	{// @endlock
+		//Submit Correspondence Notes
+	};// @lock
+
+	assessorCorespondanceGrid.onRowClick = function assessorCorespondanceGrid_onRowClick (event)// @startlock
+	{// @endlock
+		//Load referralAssessorsCorrespondenceView Page
+		
+	};// @lock
+
+	combobox1.change = function combobox1_change (event)// @startlock
+	{// @endlock
+
+	};// @lock
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
@@ -41,6 +60,9 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_submitNewCorrespondence", "click", submitNewCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_assessorCorespondanceGrid", "onRowClick", assessorCorespondanceGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_combobox1", "change", combobox1.change, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_checkbox1", "change", checkbox1.change, "WAF");
 	// @endregion// @endlock

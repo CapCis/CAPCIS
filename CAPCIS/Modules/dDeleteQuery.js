@@ -24,6 +24,9 @@ exports.buildQuery = function buildQuery(myObject)
 			{
 				case 0: answer = 'DELETE FROM capcis.fxuserdivisionlinkage WHERE FXUserDivisionLinkage_ID = "'+myObject.divID+'"';
 					return answer;	
+				
+				case 1: answer = 'DELETE FROM capcis.fxuserpageaccess WHERE FK_UserAccountsID = "'+myObject.userAccountsID+'" AND FK_FxMainSelectWebComponentNamesID = "'+myObject.ComponentNamesID+'"';
+					return answer;
 			}
 			//return answer;
 	}

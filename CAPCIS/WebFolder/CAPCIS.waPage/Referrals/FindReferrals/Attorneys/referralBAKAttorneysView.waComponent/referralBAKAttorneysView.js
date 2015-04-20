@@ -13,10 +13,16 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var dataGrid2 = {};	// @dataGrid
 	var Close = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	dataGrid2.onRowClick = function dataGrid2_onRowClick (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('attPrevVersionCont')).setSplitPosition(250);	
+	};// @lock
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
@@ -25,6 +31,7 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_dataGrid2", "onRowClick", dataGrid2.onRowClick, "WAF");
 	WAF.addListener(this.id + "_Close", "click", Close.click, "WAF");
 	// @endregion// @endlock
 
