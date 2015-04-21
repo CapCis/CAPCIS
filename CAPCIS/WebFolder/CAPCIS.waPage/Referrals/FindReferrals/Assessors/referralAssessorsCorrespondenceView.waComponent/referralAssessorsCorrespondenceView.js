@@ -35,7 +35,42 @@ function constructor (id) {
 
 	combobox1.change = function combobox1_change (event)// @startlock
 	{// @endlock
-
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('combobox1')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 7,data1: sources.assessorCorespondance.FK_AssessorInformationID}; 
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    	}
+    	else
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorCorespondance.FK_AssessorInformationID,data2: currentCorrespondenceActiveSelected};
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    
+    	}
+    	
 	};// @lock
 
 	button1.click = function button1_click (event)// @startlock

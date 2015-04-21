@@ -171,18 +171,12 @@ exports.buildQuery = function buildQuery(myObject)
 				case 0: answer = 'SELECT * FROM capcis.assessorinformation where InactiveAssessorInfo = '+myObject.data1;
 						return answer;
 				case 2: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
-								fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID \
+								assessorcorrespondence.FK_AssessorInformationID, fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID \
 								FROM capcis.assessorcorrespondence \
 								LEFT JOIN capcis.assessorinformation on assessorcorrespondence.FK_AssessorInformationID = AssessorInformationID \
-								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE assessorinformation.AssessorName = '"+myObject.data1+"' AND assessorcorrespondence.VoidedAssessorCorrespondence = '"+myObject.data2+"' \
+								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
+								WHERE assessorcorrespondence.FK_AssessorInformationID = '"+myObject.data1+"' AND assessorcorrespondence.VoidedAssessorCorrespondence = '"+myObject.data2+"' \
 								ORDER BY 1 DESC";
-						return answer;
-				case 2: answer = 'SELECT *,DATE_FORMAT(assessorcorrespondence.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime \
-								 FROM capcis.assessorcorrespondence \
-								 LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
-								 WHERE FK_AssessorInformationID = "'+myObject.data1+'" AND \
-								 VoidedAssessorCorrespondence = "'+myObject.data2+'"';
 						return answer;
 				case 3: answer = 'SELECT CityListing FROM capcis.citylistings';
 						return answer;
@@ -194,14 +188,14 @@ exports.buildQuery = function buildQuery(myObject)
 								ORDER BY bakassessorinformation.CreatedDateTime DESC';
 						return answer;
 				
-				/*case 7: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
-								fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID  \
+				case 7: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
+								assessorcorrespondence.FK_AssessorInformationID, fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID  \
 								FROM capcis.assessorcorrespondence \
 								LEFT JOIN capcis.assessorinformation on assessorcorrespondence.FK_AssessorInformationID = AssessorInformationID \
 								LEFT JOIN capcis.fxuseraccounts on assessorcorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE assessorinformation.AssessorName = '"+myObject.data1+"' \
+								WHERE assessorcorrespondence.FK_AssessorInformationID = '"+myObject.data1+"' \
 								ORDER BY 1 DESC";
-						return answer; */
+						return answer; 
 				case 8: answer = 'SELECT * FROM capcis.assessorinformation';
 						return answer;
 				case 9: answer = "SELECT * FROM capcis.assessorinformation where assessorinformation.AssessorName LIKE '%"+myObject.data1+"%' or assessorinformation.AssessorPhone LIKE '%"+myObject.data1+"%' \

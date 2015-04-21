@@ -527,14 +527,21 @@ function constructor (id) {
 	
 	loadAssessorCorrespondence.click = function loadAssessorCorrespondence_click (event)// @startlock
 	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_container77");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
     		id: 	$comp.id+'_component6', 											//designate the component to load into
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralAssessorsCorrespondenceView.waComponent'	
 		});
 		debugger;
-		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:false};
+		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:0};
         rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
+		 				debugger;
 						assessorCorespondance = result;
 						sources.assessorCorespondance.sync();
 					},
@@ -545,22 +552,6 @@ function constructor (id) {
 				});
 		
 	};// @lock
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -639,6 +630,39 @@ function constructor (id) {
 	 	
 	 	
 	};// @lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
 	{// @endlock
@@ -1861,6 +1885,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:0};
+        rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [assessorCorrespondenceObject]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
