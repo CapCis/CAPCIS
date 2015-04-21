@@ -30,6 +30,17 @@ exports.buildQuery = function buildQuery(myObject)
 				default: answer = null;				
 			}
 			break;
+		case 2:
+			switch(myObject.minor)
+			{
+				case 0: answer = 'call make_receipt("'+myObject.id+'","'+myObject.todayDate+'","'+myObject.CIID+'","'+myObject.CRID+'", \
+								"'+myObject.testintStatus+'","'+myObject.cartContent+'","'+myObject.amountCharged+'", \
+								"'+myObject.amountPaid+'","'+myObject.balence+'",'+myObject.attendedClass+', \
+								"'+myObject.classAttended+'","'+myObject.testingTypePerformed+'","'+myObject.recieptPurpose+'", \
+								"'+myObject.receiptNotes+'","'+myObject.testingTypeId+'")';
+					return answer;
+				}
+			break;
 		case 3:
 			switch(myObject.minor)
 			{

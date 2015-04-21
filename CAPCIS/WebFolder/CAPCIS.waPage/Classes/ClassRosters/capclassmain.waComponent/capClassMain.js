@@ -56,6 +56,7 @@ function constructor (id) {
 		$$(getHtmlId('muReceiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var submitButton = {};	// @button
 	var button25 = {};	// @button
 	var button24 = {};	// @button
 	var textField60 = {};	// @textField
@@ -127,6 +128,53 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	submitButton.click = function submitButton_click (event)// @startlock
+	{// @endlock
+
+		var cartConcat ="";
+		var testingTypeId;
+		for(var x = 0 ; x< cart.length ; x++)
+		{
+			cartConcat = cartConcat + cart[x].ItemPriceListID + "," + cart[x].ItemPrice + ",";
+			if(cart[x].TT_TestingTypeID)
+			{
+				
+				testigTypeId = cart[x].TT_TestingTypeID;
+			}	
+		}
+		
+		var myObject = {
+			token:userConfigObj.secToken ,
+			id:userConfigObj.userID,
+			major:2,
+			minor:0,
+			todayDate:today,
+			CIID:sources.myRosterList.ClientInformation_CIID,
+			CRID:sources.myRosterList.ClientRequirementsID,
+			testintStatus:$$(getHtmlId('testStatus')).getValue(),
+			cartContent:cartConcat,
+			amountCharged: $$(getHtmlId('currentChargesField')).getValue(),
+			amountPaid: $$(getHtmlId('amountPaidBottom')).getValue(),
+			balence: $$(getHtmlId('newBalenceField')).getValue(),
+			attendedClass:$$(getHtmlId('attendedCheckBox')).getValue(),
+			classAttended: $$(getHtmlId('textField1')).getValue(),
+			testingTypePerformed:$$(getHtmlId('testType')).getValue(),
+			recieptPurpose:$$(getHtmlId('comboBoxTextInput')).getValue(),
+			receiptNotes:$$(getHtmlId('receiptNotes')).getValue(),
+			testingTypeId:testigTypeId
+		};
+		rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){	
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+		
+		
+	};// @lock
 
 	button25.click = function button25_click (event)// @startlock
 	{// @endlock
@@ -932,7 +980,7 @@ function constructor (id) {
 		$$(getHtmlId("backBalenceField")).setValue(currentBal);
 		
 		
-
+		/*
 		debugger;
 		//-----------------------------how to send a xmlhttprequest with body string !!!!!
 		xhr = new XMLHttpRequest();
@@ -941,7 +989,7 @@ function constructor (id) {
 		xhr.setRequestHeader("Content-type","text/plain");
 		xhr.send(userConfigObj.secToken + "," + userConfigObj.userID + "," + sources.myRosterList.ClientInformation_CIID);
 		//$$(getHtmlId('clientPicture')).setValue(xhr.response);
-		
+		*/
 		
 		
 		
@@ -1379,6 +1427,7 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
 	WAF.addListener(this.id + "_button25", "click", button25.click, "WAF");
 	WAF.addListener(this.id + "_button24", "click", button24.click, "WAF");
 	WAF.addListener(this.id + "_textField60", "keyup", textField60.keyup, "WAF");
