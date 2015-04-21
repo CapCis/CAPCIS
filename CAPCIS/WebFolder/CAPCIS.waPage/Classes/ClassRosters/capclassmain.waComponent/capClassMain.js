@@ -940,7 +940,7 @@ function constructor (id) {
 		xhr.open("POST",URLText,true);		
 		xhr.setRequestHeader("Content-type","text/plain");
 		xhr.send(userConfigObj.secToken + "," + userConfigObj.userID + "," + sources.myRosterList.ClientInformation_CIID);
-		$$(getHtmlId('clientPicture')).setValue(xhr.response);
+		//$$(getHtmlId('clientPicture')).setValue(xhr.response);
 		
 		
 		
