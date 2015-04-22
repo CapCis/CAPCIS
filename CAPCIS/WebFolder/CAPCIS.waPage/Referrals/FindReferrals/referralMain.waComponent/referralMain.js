@@ -86,6 +86,10 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var loadProsecutorCorrespondence = {};	// @button
+	var loadOtherCorrespondence = {};	// @button
+	var loadJudgesCorrespondence = {};	// @button
+	var loadDHSOfficerCorrespondence = {};	// @button
 	var loadAssessorCorrespondence = {};	// @button
 	var loadBakAttorneyVersions = {};	// @button
 	var otherMonitorFullList = {};	// @dataGrid
@@ -163,7 +167,7 @@ function constructor (id) {
 	var textField3 = {};	// @textField
 	var button10 = {};	// @button
 	var textField2 = {};	// @textField
-	var button6 = {};	// @button
+	var loadAttorneyCorrespondence = {};	// @button
 	var button43 = {};	// @button
 	var button37 = {};	// @button
 	var button36 = {};	// @button
@@ -191,6 +195,14 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	
+
+	
+
+	
+
+	
 
 	
 
@@ -262,6 +274,22 @@ function constructor (id) {
 	{// @endlock
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 	};// @startlock
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -525,6 +553,9 @@ function constructor (id) {
 	
 	
 	
+	
+	
+	
 	loadAssessorCorrespondence.click = function loadAssessorCorrespondence_click (event)// @startlock
 	{// @endlock
 		var myWidget = document.getElementById($comp.id +"_container77");
@@ -533,15 +564,14 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.top = "325px";
 		
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component6', 											//designate the component to load into
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component6', 											
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralAssessorsCorrespondenceView.waComponent'	
 		});
-		debugger;
+		
 		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:0};
         rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
 						assessorCorespondance = result;
 						sources.assessorCorespondance.sync();
 					},
@@ -549,13 +579,166 @@ function constructor (id) {
 						console.log(error);
 					},
 					'params': [assessorCorrespondenceObject]
-				});
+		});
 		
 	};// @lock
 	
 	
+	loadAttorneyCorrespondence.click = function loadAttorneyCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		
+		var myWidget = document.getElementById($comp.id +"_container82");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component12', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Attorneys/referralAttorneysCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:17,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						attorneyCorespondance = result;
+						sources.attorneyCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+	};// @lock
 	
 	
+	loadDHSOfficerCorrespondence.click = function loadDHSOfficerCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container12");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component9', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralDHSOfficersCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						dhsCorespondance = result;
+						sources.dhsCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+
+
+	loadJudgesCorrespondence.click = function loadJudgesCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container28");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component18', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralJudgesCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:43,data1:sources.judgeList.JudgesID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						judgeCorespondance = result;
+						sources.judgeCorespondance.sync();
+					},
+					'onError': function(error){
+						
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+
+
+	loadOtherCorrespondence.click = function loadOtherCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container42");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component22', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralOtherMonitorsCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:52,data1:sources.otherMonitorList.OtherMonitorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorCorespondance = result;
+						sources.otherMonitorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+	};// @lock
+
+
+	loadProsecutorCorrespondence.click = function loadProsecutorCorrespondence_click (event)// @startlock
+	{// @endlock
+	
+		var myWidget = document.getElementById($comp.id +"_container48");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component26', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralProsecutorsCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:79,data1:sources.prosecutorList.ProsecutorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						prosecutorCorespondance = result;
+						sources.prosecutorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+	};// @lock
+
+
+
+
+
+
+
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
@@ -1771,21 +1954,7 @@ function constructor (id) {
 			grid.style.display = 'none';
 	};// @lock
 
-	button6.click = function button6_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	
 
@@ -1888,7 +2057,6 @@ function constructor (id) {
 		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:0};
         rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
 						assessorCorespondance = result;
 						sources.assessorCorespondance.sync();
 					},
@@ -1911,6 +2079,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:17,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+						attorneyCorespondance = result;
+						sources.attorneyCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -1926,6 +2105,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.dhsList.DhsInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+						dhsCorespondance = result;
+						sources.dhsCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @endlock
 
@@ -1941,6 +2131,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:43,data1:sources.judgeList.JudgesID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeCorespondance = result;
+						sources.judgeCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -1971,6 +2172,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:52,data1:sources.otherMonitorList.OtherMonitorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						otherMonitorCorespondance = result;
+						sources.otherMonitorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 
@@ -2332,6 +2545,10 @@ function constructor (id) {
 	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_loadProsecutorCorrespondence", "click", loadProsecutorCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadOtherCorrespondence", "click", loadOtherCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadJudgesCorrespondence", "click", loadJudgesCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadDHSOfficerCorrespondence", "click", loadDHSOfficerCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadAssessorCorrespondence", "click", loadAssessorCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadBakAttorneyVersions", "click", loadBakAttorneyVersions.click, "WAF");
 	WAF.addListener(this.id + "_otherMonitorFullList", "onRowClick", otherMonitorFullList.onRowClick, "WAF");
@@ -2421,7 +2638,7 @@ function constructor (id) {
 	WAF.addListener(this.id + "_button10", "click", button10.click, "WAF");
 	WAF.addListener(this.id + "_textField2", "keyup", textField2.keyup, "WAF");
 	WAF.addListener(this.id + "_textField2", "blur", textField2.blur, "WAF");
-	WAF.addListener(this.id + "_button6", "click", button6.click, "WAF");
+	WAF.addListener(this.id + "_loadAttorneyCorrespondence", "click", loadAttorneyCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_button43", "click", button43.click, "WAF");
 	WAF.addListener(this.id + "_button37", "click", button37.click, "WAF");
 	WAF.addListener(this.id + "_button36", "click", button36.click, "WAF");

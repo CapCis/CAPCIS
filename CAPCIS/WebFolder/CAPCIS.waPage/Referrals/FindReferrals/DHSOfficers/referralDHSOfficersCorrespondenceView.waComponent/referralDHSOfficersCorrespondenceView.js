@@ -50,20 +50,51 @@ function constructor (id) {
 
 	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container6')).setSplitPosition(420);
-		$$(getHtmlId('container3')).setSplitPosition(900);
-
+		
 	};// @lock
 
 	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('correspondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 34,data1: sources.assessorList.AssessorInformationID}; 
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    	}
+    	else
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 35,data1: sources.assessorList.AssessorInformationID,data2: currentCorrespondenceActiveSelected};
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    
+    	}
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('container6')).setSplitPosition(1290);
+		
 	};// @lock
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock

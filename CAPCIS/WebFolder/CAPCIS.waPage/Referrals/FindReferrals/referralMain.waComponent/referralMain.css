@@ -3,17 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}button4 {
-	 z-index: 33;
-	 width: 92px;
-	 height: 22px;
-	 top: 286px;
-	 left: 237px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}dataGrid19 {
 	 z-index: 32;
 	 width: 125px;
@@ -1825,7 +1814,7 @@
 }
 
 #{id}textField74 {
-	 z-index: 36;
+	 z-index: 35;
 	 width: 200px;
 	 height: 22px;
 	 top: 47px;
@@ -1836,7 +1825,7 @@
 }
 
 #{id}label119 {
-	 z-index: 36;
+	 z-index: 35;
 	 width: 156px;
 	 height: 13px;
 	 top: 29px;
@@ -2365,7 +2354,7 @@
 }
 
 #{id}combobox4 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 150px;
 	 height: 22px;
 	 top: 234px;
@@ -2376,7 +2365,7 @@
 }
 
 #{id}label89 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 98px;
 	 height: 13px;
 	 top: 216px;
@@ -2438,7 +2427,7 @@
 }
 
 #{id}container46 {
-	 z-index: 31;
+	 z-index: 30;
 	 width: 150px;
 	 height: 41px;
 	 top: 126px;
@@ -2449,7 +2438,7 @@
 }
 
 #{id}textField60 {
-	 z-index: 30;
+	 z-index: 29;
 	 width: 200px;
 	 height: 22px;
 	 top: 54px;
@@ -2460,7 +2449,7 @@
 }
 
 #{id}label87 {
-	 z-index: 29;
+	 z-index: 28;
 	 width: 140px;
 	 height: 13px;
 	 top: 36px;
@@ -2471,7 +2460,7 @@
 }
 
 #{id}textField59 {
-	 z-index: 28;
+	 z-index: 27;
 	 width: 200px;
 	 height: 22px;
 	 top: 54px;
@@ -2482,7 +2471,7 @@
 }
 
 #{id}label86 {
-	 z-index: 28;
+	 z-index: 27;
 	 width: 118px;
 	 height: 13px;
 	 top: 36px;
@@ -2493,7 +2482,7 @@
 }
 
 #{id}textField58 {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 100px;
 	 height: 22px;
 	 top: 99px;
@@ -2504,7 +2493,7 @@
 }
 
 #{id}label85 {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 70px;
 	 height: 13px;
 	 top: 81px;
@@ -2831,7 +2820,7 @@
 }
 
 #{id}dataGrid14 {
-	 z-index: 34;
+	 z-index: 33;
 	 width: 215px;
 	 height: 80px;
 	 top: 246px;
@@ -2894,7 +2883,7 @@
 }
 
 #{id}container89 {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 245px;
 	 height: 41px;
 	 top: 207px;
@@ -2905,7 +2894,7 @@
 }
 
 #{id}dataGrid13 {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 125px;
 	 height: 135px;
 	 top: 155px;
@@ -2968,7 +2957,7 @@
 }
 
 #{id}container88 {
-	 z-index: 31;
+	 z-index: 30;
 	 width: 150px;
 	 height: 41px;
 	 top: 117px;
@@ -2979,7 +2968,7 @@
 }
 
 #{id}richText8 {
-	 z-index: 30;
+	 z-index: 29;
 	 width: 415px;
 	 height: 22px;
 	 top: 0px;
@@ -2994,7 +2983,7 @@
 }
 
 #{id}checkbox3 {
-	 z-index: 29;
+	 z-index: 28;
 	 width: 22px;
 	 height: 22px;
 	 top: 268px;
@@ -3005,7 +2994,7 @@
 }
 
 #{id}label74 {
-	 z-index: 28;
+	 z-index: 27;
 	 width: 93px;
 	 height: 13px;
 	 top: 272px;
@@ -3016,7 +3005,7 @@
 }
 
 #{id}button15 {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 75px;
 	 height: 25px;
 	 top: 300px;
@@ -3027,7 +3016,7 @@
 }
 
 #{id}button13 {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 75px;
 	 height: 25px;
 	 top: 300px;
@@ -3038,7 +3027,7 @@
 }
 
 #{id}textField47 {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 245px;
 	 height: 22px;
 	 top: 270px;
@@ -3049,7 +3038,7 @@
 }
 
 #{id}label73 {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 65px;
 	 height: 13px;
 	 top: 252px;
@@ -3340,8 +3329,8 @@
 	 z-index: 2;
 	 width: 720px;
 	 height: 285px;
-	 top: 0px;
-	 left: 420px;
+	 top: 1px;
+	 left: 1px;
 	
 	 position: absolute;
 	 
@@ -3372,7 +3361,7 @@
 }
 
 #{id}dataGrid10 {
-	 z-index: 33;
+	 z-index: 31;
 	 width: 125px;
 	 height: 135px;
 	 top: 164px;
@@ -3435,7 +3424,7 @@
 }
 
 #{id}container26 {
-	 z-index: 32;
+	 z-index: 30;
 	 width: 151px;
 	 height: 41px;
 	 top: 124px;
@@ -3446,7 +3435,7 @@
 }
 
 #{id}textField23 {
-	 z-index: 31;
+	 z-index: 29;
 	 width: 105px;
 	 height: 22px;
 	 top: 99px;
@@ -3457,7 +3446,7 @@
 }
 
 #{id}label59 {
-	 z-index: 30;
+	 z-index: 28;
 	 width: 67px;
 	 height: 13px;
 	 top: 81px;
@@ -3468,7 +3457,7 @@
 }
 
 #{id}richText5 {
-	 z-index: 29;
+	 z-index: 27;
 	 width: 415px;
 	 height: 22px;
 	 top: 9px;
@@ -3483,7 +3472,7 @@
 }
 
 #{id}checkbox1 {
-	 z-index: 29;
+	 z-index: 27;
 	 width: 22px;
 	 height: 22px;
 	 top: 267px;
@@ -3494,7 +3483,7 @@
 }
 
 #{id}label58 {
-	 z-index: 29;
+	 z-index: 27;
 	 width: 109px;
 	 height: 13px;
 	 top: 271px;
@@ -3505,7 +3494,7 @@
 }
 
 #{id}button3 {
-	 z-index: 26;
+	 z-index: 25;
 	 width: 75px;
 	 height: 25px;
 	 top: 299px;
@@ -3516,7 +3505,7 @@
 }
 
 #{id}button1 {
-	 z-index: 25;
+	 z-index: 24;
 	 width: 75px;
 	 height: 25px;
 	 top: 299px;
@@ -3527,7 +3516,7 @@
 }
 
 #{id}textField15 {
-	 z-index: 24;
+	 z-index: 23;
 	 width: 250px;
 	 height: 55px;
 	 top: 234px;
@@ -3538,7 +3527,7 @@
 }
 
 #{id}label57 {
-	 z-index: 24;
+	 z-index: 23;
 	 width: 98px;
 	 height: 13px;
 	 top: 216px;
@@ -3815,7 +3804,7 @@
 }
 
 #{id}container12 {
-	 z-index: 1;
+	 z-index: 33;
 	 width: 725px;
 	 height: 290px;
 	 top: 325px;
@@ -3980,17 +3969,6 @@
 	 height: 41px;
 	 top: 112px;
 	 left: 260px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button6 {
-	 z-index: 34;
-	 width: 120px;
-	 height: 25px;
-	 top: 300px;
-	 left: 130px;
 	
 	 position: absolute;
 	 
@@ -4882,61 +4860,6 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 13;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}AttorneyContainer {
-	 z-index: 12;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}DHSOfficerContainer {
-	 z-index: 5;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}JudgeContainer {
-	 z-index: 6;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}OtherMonitorContainer {
-	 z-index: 7;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}ProsecutorContainer {
 	 z-index: 8;
 	 width: 1290px;
 	 height: 625px;
@@ -4947,7 +4870,7 @@
 	 
 }
 
-#{id}ProbationOfficerContainer {
+#{id}AttorneyContainer {
 	 z-index: 9;
 	 width: 1290px;
 	 height: 625px;
@@ -4958,7 +4881,7 @@
 	 
 }
 
-#{id}ProbationJursidictionContainer {
+#{id}DHSOfficerContainer {
 	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
@@ -4969,8 +4892,63 @@
 	 
 }
 
-#{id}CourtJursidictionContainer {
+#{id}JudgeContainer {
 	 z-index: 11;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}OtherMonitorContainer {
+	 z-index: 12;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}ProsecutorContainer {
+	 z-index: 13;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}ProbationOfficerContainer {
+	 z-index: 5;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}ProbationJursidictionContainer {
+	 z-index: 6;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}CourtJursidictionContainer {
+	 z-index: 7;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -5724,7 +5702,7 @@
 }
 
 #{id}loadBakDHSOfficerVersions {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 125px;
 	 height: 25px;
 	 top: 299px;
@@ -5735,7 +5713,7 @@
 }
 
 #{id}loadBakJudgesVersions {
-	 z-index: 35;
+	 z-index: 34;
 	 width: 125px;
 	 height: 25px;
 	 top: 300px;
@@ -5784,6 +5762,61 @@
 	 height: 25px;
 	 top: 295px;
 	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadAttorneyCorrespondence {
+	 z-index: 34;
+	 width: 120px;
+	 height: 25px;
+	 top: 300px;
+	 left: 130px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadDHSOfficerCorrespondence {
+	 z-index: 32;
+	 width: 92px;
+	 height: 22px;
+	 top: 299px;
+	 left: 141px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadJudgesCorrespondence {
+	 z-index: 35;
+	 width: 92px;
+	 height: 22px;
+	 top: 300px;
+	 left: 157px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadOtherCorrespondence {
+	 z-index: 33;
+	 width: 92px;
+	 height: 22px;
+	 top: 296px;
+	 left: 145px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}loadProsecutorCorrespondence {
+	 z-index: 36;
+	 width: 92px;
+	 height: 22px;
+	 top: 301px;
+	 left: 144px;
 	
 	 position: absolute;
 	 

@@ -39,7 +39,7 @@ function constructor (id) {
 		var currentCorrespondenceActiveSelected = $$(getHtmlId('combobox1')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
-    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 7,data1: sources.assessorCorespondance.FK_AssessorInformationID}; 
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 7,data1: sources.assessorList.AssessorInformationID}; 
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
@@ -55,7 +55,7 @@ function constructor (id) {
     	}
     	else
     	{
-    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorCorespondance.FK_AssessorInformationID,data2: currentCorrespondenceActiveSelected};
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2: currentCorrespondenceActiveSelected};
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
