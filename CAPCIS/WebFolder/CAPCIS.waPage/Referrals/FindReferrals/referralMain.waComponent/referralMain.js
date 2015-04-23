@@ -86,6 +86,7 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var loadProbationCorrespondence = {};	// @button
 	var loadProsecutorCorrespondence = {};	// @button
 	var loadOtherCorrespondence = {};	// @button
 	var loadJudgesCorrespondence = {};	// @button
@@ -195,6 +196,8 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	
 
 	
 
@@ -732,6 +735,39 @@ function constructor (id) {
 		});
 		
 	};// @lock
+
+
+	loadProbationCorrespondence.click = function loadProbationCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container55");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component30', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationOfficers/referralProbationOfficersCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationOfficerCorespondance = result;
+						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+	};// @lock
+
+
+
+
 
 
 
@@ -2157,6 +2193,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:79,data1:sources.prosecutorList.ProsecutorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						prosecutorCorespondance = result;
+						sources.prosecutorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -2229,6 +2277,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationOfficerCorespondance = result;
+						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -2545,6 +2605,7 @@ function constructor (id) {
 	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_loadProbationCorrespondence", "click", loadProbationCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadProsecutorCorrespondence", "click", loadProsecutorCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadOtherCorrespondence", "click", loadOtherCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadJudgesCorrespondence", "click", loadJudgesCorrespondence.click, "WAF");

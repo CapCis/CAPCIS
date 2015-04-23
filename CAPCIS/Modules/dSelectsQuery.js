@@ -472,19 +472,19 @@ exports.buildQuery = function buildQuery(myObject)
 								OR poinformation.POPreferredReportingMethod LIKE '%"+myObject.data1+"%') AND InactivePO = "+myObject.data2;
 						return answer;	
 				case 69 : answer = 'SELECT DATE_FORMAT(pocorrespondance.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, pocorrespondance.POCorrespondence, \
-								fxuseraccounts.FullName, pocorrespondance.VoidedPOCorrespondence, pocorrespondance.POCorrespondenceID \
+								pocorrespondance.FK_POInformationID, fxuseraccounts.FullName, pocorrespondance.VoidedPOCorrespondence, pocorrespondance.POCorrespondenceID \
 								FROM capcis.pocorrespondance \
 								LEFT JOIN capcis.poinformation on pocorrespondance.FK_POInformationID = POInformationID \
 								LEFT JOIN capcis.fxuseraccounts on pocorrespondance.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE poinformation.POInformationID = "'+myObject.data1+'" \
+								WHERE pocorrespondance.FK_POInformationID = "'+myObject.data1+'" \
 								ORDER BY 1 DESC';
 						return answer;
 				case 70 : answer = "SELECT DATE_FORMAT(pocorrespondance.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, pocorrespondance.POCorrespondence, \
-								fxuseraccounts.FullName, pocorrespondance.VoidedPOCorrespondence, pocorrespondance.POCorrespondenceID \
+								pocorrespondance.FK_POInformationID, fxuseraccounts.FullName, pocorrespondance.VoidedPOCorrespondence, pocorrespondance.POCorrespondenceID \
 								FROM capcis.pocorrespondance \
 								LEFT JOIN capcis.poinformation on pocorrespondance.FK_POInformationID = POInformationID \
 								LEFT JOIN capcis.fxuseraccounts on pocorrespondance.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE poinformation.POInformationID = '"+myObject.data1+"' AND pocorrespondance.VoidedPOCorrespondence = "+myObject.data2+" \
+								WHERE pocorrespondance.FK_POInformationID = '"+myObject.data1+"' AND pocorrespondance.VoidedPOCorrespondence = "+myObject.data2+" \
 								ORDER BY 1 DESC";
 						return answer;		
 				
