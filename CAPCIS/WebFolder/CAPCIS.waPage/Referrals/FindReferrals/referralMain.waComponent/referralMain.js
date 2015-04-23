@@ -86,6 +86,8 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var loadCourtJurisdictionCorresp = {};	// @button
+	var loadProbationJurisdictionCorresp = {};	// @button
 	var loadProbationCorrespondence = {};	// @button
 	var loadProsecutorCorrespondence = {};	// @button
 	var loadOtherCorrespondence = {};	// @button
@@ -196,6 +198,10 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	
+
+	
 
 	
 
@@ -754,9 +760,67 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:0};
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){	
-		 				debugger;	 				
+		 					 				
 						probationOfficerCorespondance = result;
 						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+	};// @lock
+
+
+	loadProbationJurisdictionCorresp.click = function loadProbationJurisdictionCorresp_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container4");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component34', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationJurisdictions/referralProbationJurisdictionsCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:61,data1:sources.probationJurisdictionList.POJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationJurisdictionCorespondance = result;
+						sources.probationJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+	};// @lock
+
+
+	loadCourtJurisdictionCorresp.click = function loadCourtJurisdictionCorresp_click (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_container10");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component38', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralCourtJurisdictionsCorrespondenceView.waComponent'	
+		});
+		debugger;
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:26,data1:sources.courtJurisdictionList.CourtJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						courtJurisdictionCorespondance = result;
+						sources.courtJurisdictionCorespondance.sync();
 					},
 					'onError': function(error){						
 						console.log(error);
@@ -944,6 +1008,8 @@ function constructor (id) {
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
+	
+		debugger;
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject5);
@@ -1002,7 +1068,7 @@ function constructor (id) {
 				
 	 		
 			var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
+	 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakListSuccess(result);
 					},
@@ -2247,6 +2313,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:26,data1:sources.courtJurisdictionList.CourtJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						courtJurisdictionCorespondance = result;
+						sources.courtJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 
@@ -2262,6 +2340,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:61,data1:sources.probationJurisdictionList.POJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationJurisdictionCorespondance = result;
+						sources.probationJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 
@@ -2605,6 +2695,8 @@ function constructor (id) {
 	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_loadCourtJurisdictionCorresp", "click", loadCourtJurisdictionCorresp.click, "WAF");
+	WAF.addListener(this.id + "_loadProbationJurisdictionCorresp", "click", loadProbationJurisdictionCorresp.click, "WAF");
 	WAF.addListener(this.id + "_loadProbationCorrespondence", "click", loadProbationCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadProsecutorCorrespondence", "click", loadProsecutorCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadOtherCorrespondence", "click", loadOtherCorrespondence.click, "WAF");

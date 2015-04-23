@@ -270,22 +270,22 @@ exports.buildQuery = function buildQuery(myObject)
 								OR courtjurisdiction.SearchFormat LIKE '%"+myObject.data1+"%') AND InactiveCourtJurisdictionInfo = "+myObject.data2;
 						return answer;
 				
-				/*case 25 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
-								fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
+				case 25 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
+								courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID, fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
 								FROM capcis.courtjurisdictioncorrespondence \
 								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE courtjurisdiction.CourtJurisdiction = '"+myObject.data1+"' \
+								WHERE courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = '"+myObject.data1+"' \
 								ORDER BY 1 DESC";
-						return answer; */
-				/*case 26 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
-								fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
+						return answer; 
+				case 26 : answer = "SELECT DATE_FORMAT(courtjurisdictioncorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondence, \
+								courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID, fxuseraccounts.FullName, courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence, courtjurisdictioncorrespondence.CourtJurisdictionCorrespondenceID \
 								FROM capcis.courtjurisdictioncorrespondence \
 								LEFT JOIN capcis.courtjurisdiction on courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = CourtJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on courtjurisdictioncorrespondence.FK_fxuseraccounts_FxUserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE courtjurisdiction.CourtJurisdiction = '"+myObject.data1+"' AND courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence = '"+myObject.data2+"' \
-								ORDER BY courtjurisdictioncorrespondence.CreatedDateTime DESC"
-						return answer; */
+								WHERE courtjurisdictioncorrespondence.FK_CourtJurisdictionInformationID = '"+myObject.data1+"' AND courtjurisdictioncorrespondence.VoidedCourtJurisdictionCorrespondence = '"+myObject.data2+"' \
+								ORDER BY 1 DESC"
+						return answer; 
 				case 27: answer = 'SELECT *, DATE_FORMAT(bakcourtjurisdiction.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakcourtjurisdiction \
 								LEFT JOIN capcis.fxuseraccounts on bakcourtjurisdiction.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_courtjurisdiction_CourtJurisdictionID = "'+myObject.data1+'" \
@@ -431,19 +431,19 @@ exports.buildQuery = function buildQuery(myObject)
 								 AND InactivePOJurisdiction = "+myObject.data2;
 						return answer;	
 				case 60 : answer = 'SELECT DATE_FORMAT(pojurisdictioncorrespondance.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime, pojurisdictioncorrespondance.POJurisdictionCorrespondence, \
-								fxuseraccounts.FullName, pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence, pojurisdictioncorrespondance.POJurisdictionCorrespondenceID \
+								pojurisdictioncorrespondance.FK_POJurisdictionInformationID, fxuseraccounts.FullName, pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence, pojurisdictioncorrespondance.POJurisdictionCorrespondenceID \
 								FROM capcis.pojurisdictioncorrespondance \
 								LEFT JOIN capcis.pojurisdiction on pojurisdictioncorrespondance.FK_POJurisdictionInformationID = POJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on pojurisdictioncorrespondance.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE pojurisdiction.POJurisdictionID = "'+myObject.data1+'" \
+								WHERE pojurisdictioncorrespondance.FK_POJurisdictionInformationID = "'+myObject.data1+'" \
 								ORDER BY 1 DESC';
 						return answer;
 				case 61 : answer = "SELECT DATE_FORMAT(pojurisdictioncorrespondance.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, pojurisdictioncorrespondance.POJurisdictionCorrespondence, \
-								fxuseraccounts.FullName, pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence, pojurisdictioncorrespondance.POJurisdictionCorrespondenceID \
+								pojurisdictioncorrespondance.FK_POJurisdictionInformationID, fxuseraccounts.FullName, pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence, pojurisdictioncorrespondance.POJurisdictionCorrespondenceID \
 								FROM capcis.pojurisdictioncorrespondance \
 								LEFT JOIN capcis.pojurisdiction on pojurisdictioncorrespondance.FK_POJurisdictionInformationID = POJurisdictionID \
 								LEFT JOIN capcis.fxuseraccounts on pojurisdictioncorrespondance.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
-								WHERE pojurisdiction.POJurisdictionID = '"+myObject.data1+"' AND pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence = "+myObject.data2+" \
+								WHERE pojurisdictioncorrespondance.FK_POJurisdictionInformationID = '"+myObject.data1+"' AND pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence = "+myObject.data2+" \
 								ORDER BY 1 DESC";
 						return answer;
 				

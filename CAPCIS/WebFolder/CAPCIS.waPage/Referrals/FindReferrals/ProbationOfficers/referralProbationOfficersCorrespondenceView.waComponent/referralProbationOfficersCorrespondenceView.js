@@ -30,13 +30,13 @@ function constructor (id) {
 	poCorrespondanceActiveBox.change = function poCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
 		debugger;
-		var currentCorrespondenceActiveSelected = $$(getHtmlId('prosCorrespondanceActiveBox')).getValue();
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('poCorrespondanceActiveBox')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
-    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:78,data1:sources.probationOfficerList.POInformationID};
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:69,data1:sources.probationOfficerList.POInformationID};
 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){	
-		 					 				
+		 					 	debugger;			
 						probationOfficerCorespondance = result;
 						sources.probationOfficerCorespondance.sync();
 					},
@@ -48,10 +48,10 @@ function constructor (id) {
     	}
     	else
     	{
-    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:79,data1:sources.probationOfficerList.POInformationID,data2:currentCorrespondenceActiveSelected};
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:currentCorrespondenceActiveSelected};
 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){	
-		 					 				
+		 				debugger;	 				
 						probationOfficerCorespondance = result;
 						sources.probationOfficerCorespondance.sync();
 					},
