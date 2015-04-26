@@ -56,9 +56,8 @@ function constructor (id) {
 		$$(getHtmlId('muReceiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var button7 = {};	// @button
 	var submitButton = {};	// @button
-	var button25 = {};	// @button
-	var button24 = {};	// @button
 	var textField60 = {};	// @textField
 	var dataGrid7 = {};	// @dataGrid
 	var button9 = {};	// @button
@@ -129,15 +128,60 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
-	submitButton.click = function submitButton_click (event)// @startlock
+	button7.click = function button7_click (event)// @startlock
 	{// @endlock
-
 		var cartConcat ="";
 		var testingTypeId;
 		for(var x = 0 ; x< cart.length ; x++)
 		{
 			cartConcat = cartConcat + cart[x].ItemPriceListID + "," + cart[x].ItemPrice + ",";
-			if(cart[x].TT_TestingTypeID)
+			if(cart[x].TT_TestingTypeID != null)
+			{
+				
+				testigTypeId = cart[x].TT_TestingTypeID;
+			}	
+		}
+		
+		var myObject = {
+			token:userConfigObj.secToken ,
+			id:userConfigObj.userID,
+			major:2,
+			minor:0,
+			todayDate:today,
+			CIID:sources.myMURosterList.ClientInformation_CIID,
+			CRID:sources.myMURosterList.ClientRequirementsID,
+			testintStatus:$$(getHtmlId('muTestStatus')).getValue(),
+			cartContent:cartConcat,
+			amountCharged: $$(getHtmlId('muCurrentCharges')).getValue(),
+			amountPaid: $$(getHtmlId('muAmountPaidBottom')).getValue(),
+			balence: $$(getHtmlId('muNewBalence')).getValue(),
+			attendedClass:$$(getHtmlId('muAttendedCheckBox')).getValue(),
+			classAttended: $$(getHtmlId('muVenue')).getValue(),
+			testingTypePerformed:$$(getHtmlId('muTestType')).getValue(),
+			recieptPurpose:$$(getHtmlId('textField60')).getValue(),
+			receiptNotes:$$(getHtmlId('textField57')).getValue(),
+			testingTypeId:testigTypeId
+		};
+		rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){	
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});
+				cart.clear();
+	};// @lock
+
+	submitButton.click = function submitButton_click (event)// @startlock
+	{// @endlock
+		
+		var cartConcat ="";
+		var testingTypeId;
+		for(var x = 0 ; x< cart.length ; x++)
+		{
+			cartConcat = cartConcat + cart[x].ItemPriceListID + "," + cart[x].ItemPrice + ",";
+			if(cart[x].TT_TestingTypeID != null)
 			{
 				
 				testigTypeId = cart[x].TT_TestingTypeID;
@@ -173,17 +217,7 @@ function constructor (id) {
 					'params': [myObject]
 				});
 		
-		
-	};// @lock
-
-	button25.click = function button25_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId("dialog3")).closeDialog(); //ok button
-	};// @lock
-
-	button24.click = function button24_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId("dialog3")).closeDialog(); //cancel button
+		cart.clear();
 	};// @lock
 
 	textField60.keyup = function textField60_keyup (event)// @startlock
@@ -1427,9 +1461,8 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_button7", "click", button7.click, "WAF");
 	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
-	WAF.addListener(this.id + "_button25", "click", button25.click, "WAF");
-	WAF.addListener(this.id + "_button24", "click", button24.click, "WAF");
 	WAF.addListener(this.id + "_textField60", "keyup", textField60.keyup, "WAF");
 	WAF.addListener(this.id + "_dataGrid7", "onRowClick", dataGrid7.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button9", "click", button9.click, "WAF");
