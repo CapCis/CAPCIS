@@ -3,46 +3,659 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}richText13 {
-	 width: 105px;
-	 height: 26px;
-	 top: 17px;
-	 left: 259px;
+#{id}matrix3 .waf-widget.waf-clone-{id}label51 {
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}label52 {
+	 width: 29px;
+	 height: 13px;
+	 top: 3px;
+	 left: 70px;
 	
+	 position: absolute;
+	 z-index: 4;
+	 
+}
+
+#{id}label51 {
+	 width: 29px;
+	 height: 13px;
+	 top: -8px;
+	 left: 50px;
+	
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}textField39 {
+	 width: 62px;
+	 height: 22px;
+	 top: 21px;
+	 left: 70px;
+	
+	 position: absolute;
+	 z-index: 4;
+	 
+}
+
+#{id}textField38 {
+	 width: 65px;
+	 height: 20px;
+	 top: 10px;
+	 left: 50px;
+	
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}matrix3 {
+	 width: 667px;
+	 height: 75px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}matrix3 .waf-widget.waf-clone-{id}textField38 {
+	 position: absolute;
+	 z-index: 2;
+	 
+}
+
+#{id}matrix3 .waf-widget.waf-clone-{id}textField39 {
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}matrix3 .waf-widget.waf-clone-{id}label52 {
+	 position: absolute;
+	 z-index: 3;
+	 
+}
+
+#{id}container27 {
+	 z-index: 2;
+	 width: 1288px;
+	 height: 75px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}component10 {
+	 z-index: 1;
+	 width: 1288px;
+	 height: 525px;
+	 top: 75px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid1 {
+	 z-index: 1;
+	 width: 1288px;
+	 height: 615px;
+	 top: 0px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label50 {
+	 position: absolute;
+	 
+}
+
+#{id}label50 {
+	 z-index: 34;
+	 width: 26px;
+	 height: 13px;
+	 top: 47px;
+	 left: 90px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label49 {
+	 position: absolute;
+	 
+}
+
+#{id}label49 {
+	 z-index: 33;
+	 width: 52px;
+	 height: 13px;
+	 top: 47px;
+	 left: 175px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label48 {
+	 position: absolute;
+	 
+}
+
+#{id}label48 {
+	 z-index: 32;
+	 width: 61px;
+	 height: 13px;
+	 top: 47px;
+	 left: 260px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label47 {
+	 position: absolute;
+	 
+}
+
+#{id}label47 {
+	 z-index: 31;
+	 width: 68px;
+	 height: 13px;
+	 top: 47px;
+	 left: 345px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label46 {
+	 position: absolute;
+	 
+}
+
+#{id}label46 {
+	 z-index: 30;
+	 width: 28px;
+	 height: 13px;
+	 top: 2px;
+	 left: 495px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label45 {
+	 position: absolute;
+	 text-align: right;
+	 
+}
+
+#{id}label45 {
+	 z-index: 29;
+	 width: 47px;
+	 height: 13px;
+	 top: 2px;
+	 left: 443px;
+	
+	 position: absolute;
+	 text-align: right;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label44 {
+	 position: absolute;
+	 
+}
+
+#{id}label44 {
+	 z-index: 28;
+	 width: 90px;
+	 height: 13px;
+	 top: 2px;
+	 left: 345px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label43 {
+	 position: absolute;
+	 
+}
+
+#{id}label43 {
+	 z-index: 27;
+	 width: 88px;
+	 height: 13px;
+	 top: 2px;
+	 left: 195px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label42 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}label42 {
+	 z-index: 26;
+	 width: 111px;
+	 height: 13px;
+	 top: 2px;
+	 left: 62px;
+	
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label41 {
+	 position: absolute;
+	 
+}
+
+#{id}label41 {
+	 z-index: 25;
+	 width: 44px;
+	 height: 13px;
+	 top: 2px;
+	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label40 {
+	 position: absolute;
+	 
+}
+
+#{id}label40 {
+	 z-index: 24;
+	 width: 60px;
+	 height: 13px;
+	 top: 47px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField37 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label39 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label14 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label9 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label8 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label7 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label1 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label39 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label14 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label9 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label8 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label7 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label1 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField37 {
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}label39 {
+	 z-index: 10;
+	 width: 78px;
+	 height: 13px;
+	 top: 2px;
+	 left: 455px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField37 {
+	 z-index: 10;
+	 width: 115px;
+	 height: 20px;
+	 top: 20px;
+	 left: 455px;
+	
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+.waf-widget.waf-clone-{id}label6 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField32 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField36 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField35 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField34 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField33 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField30 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}textField31 {
+	 position: absolute;
+	 
+}
+
+.waf-widget.waf-clone-{id}label3 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label6 {
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField36 {
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}label14 {
+	 z-index: 9;
+	 width: 59px;
+	 height: 13px;
+	 top: 47px;
+	 left: 430px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField36 {
+	 z-index: 9;
+	 width: 140px;
+	 height: 20px;
+	 top: 65px;
+	 left: 430px;
+	
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField35 {
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}label9 {
+	 z-index: 8;
+	 width: 93px;
+	 height: 13px;
+	 top: 47px;
+	 left: 285px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField35 {
+	 z-index: 8;
+	 width: 140px;
+	 height: 20px;
+	 top: 65px;
+	 left: 285px;
+	
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField34 {
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}label8 {
+	 z-index: 7;
+	 width: 30px;
+	 height: 13px;
+	 top: 47px;
+	 left: 145px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField34 {
+	 z-index: 7;
+	 width: 135px;
+	 height: 20px;
+	 top: 65px;
+	 left: 145px;
+	
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField33 {
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}label7 {
+	 z-index: 6;
+	 width: 47px;
+	 height: 13px;
+	 top: 47px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField33 {
+	 z-index: 6;
+	 width: 135px;
+	 height: 20px;
+	 top: 65px;
+	 left: 5px;
+	
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField32 {
+	 position: absolute;
+	 
+}
+
+#{id}label6 {
+	 z-index: 5;
+	 width: 63px;
+	 height: 13px;
+	 top: 2px;
+	 left: 330px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField32 {
+	 z-index: 5;
+	 width: 120px;
+	 height: 20px;
+	 top: 20px;
+	 left: 330px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField30 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}label1 {
+	 z-index: 4;
+	 width: 108px;
+	 height: 13px;
+	 top: 2px;
+	 left: 215px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}textField30 {
+	 z-index: 4;
+	 width: 110px;
+	 height: 20px;
+	 top: 20px;
+	 left: 215px;
+	
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}textField31 {
+	 position: absolute;
+	 text-align: left;
+	 
+}
+
+#{id}matrix5 .waf-widget.waf-clone-{id}label3 {
+	 text-align: left;
+	 position: absolute;
 	 
 }
 
 #{id}label3 {
 	 z-index: 3;
-	 width: 29px;
+	 width: 61px;
 	 height: 13px;
-	 top: 26px;
-	 left: 86px;
+	 top: 2px;
+	 left: 100px;
 	
 	 position: absolute;
+	 text-align: left;
 	 
 }
 
 #{id}textField31 {
 	 z-index: 3;
-	 width: 107px;
-	 height: 21px;
-	 top: 22px;
-	 left: 120px;
+	 width: 110px;
+	 height: 20px;
+	 top: 20px;
+	 left: 100px;
 	
 	 position: absolute;
+	 text-align: left;
 	 
 }
 
 .waf-widget.waf-clone-{id}label2 {
-	 position: absolute;
 	 z-index: 1;
+	 position: absolute;
 	 
 }
 
 .waf-widget.waf-clone-{id}textField29 {
-	 position: absolute;
 	 z-index: 1;
+	 position: absolute;
 	 
 }
 
@@ -63,28 +676,31 @@
 }
 
 #{id}label2 {
-	 width: 29px;
+	 z-index: 2;
+	 width: 74px;
 	 height: 13px;
 	 top: 2px;
-	 left: 37px;
+	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
+	 text-align: left;
 	 
 }
 
 #{id}textField29 {
-	 width: 84px;
+	 z-index: 2;
+	 width: 90px;
 	 height: 20px;
 	 top: 20px;
-	 left: 10px;
+	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
+	 text-align: left;
 	 
 }
 
 #{id}container28 {
+	 z-index: 1;
 	 width: 580px;
 	 height: 90px;
 	 top: 5px;
@@ -103,46 +719,47 @@
 	 border-right-width: 1px;
 	 border-bottom-style: solid;
 	 border-bottom-width: 1px;
-	 z-index: 1;
 	 
 }
 
 #{id}matrix5 {
+	 z-index: 5;
 	 width: 611px;
 	 height: 385px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 5;
 	 
 }
 
 #{id}matrix5 .waf-widget.waf-clone-{id}textField29 {
-	 position: absolute;
 	 z-index: 1;
+	 position: absolute;
+	 text-align: left;
 	 
 }
 
 #{id}matrix5 .waf-widget.waf-clone-{id}label2 {
-	 text-align: center;
-	 position: absolute;
 	 z-index: 1;
+	 position: absolute;
+	 text-align: left;
 	 
 }
 
 #{id}component9 {
+	 z-index: 1;
 	 width: 639px;
 	 height: 388px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}container23 {
+	 z-index: 1;
 	 width: 639px;
 	 height: 388px;
 	 top: 0px;
@@ -157,95 +774,94 @@
 	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgba(255, 255, 255, 0) 100%);
 	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgba(255, 255, 255, 0) 100%);
-	 z-index: 1;
 	 
 }
 
 #{id}richText12 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem14 {
+	 z-index: 2;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}richText11 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem13 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuBar4 {
+	 z-index: 2;
 	 width: 209px;
 	 height: 47px;
 	 top: 25px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}richText10 {
+	 z-index: 1;
 	 width: 212px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem12 {
+	 z-index: 3;
 	 width: 213px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}richText9 {
+	 z-index: 1;
 	 width: 212px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
@@ -268,6 +884,7 @@
 }
 
 #{id}menuItem11 {
+	 z-index: 2;
 	 width: 213px;
 	 height: 23px;
 	 top: 0px;
@@ -276,117 +893,116 @@
 	 position: absolute;
 	 font-weight: bold;
 	 font-size: 18px;
-	 z-index: 2;
 	 
 }
 
 #{id}richText8 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem10 {
+	 z-index: 3;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 3;
 	 
 }
 
 #{id}richText7 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem9 {
+	 z-index: 2;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}richText5 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem8 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 22px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuBar3 {
+	 z-index: 2;
 	 width: 209px;
 	 height: 70px;
 	 top: 25px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}richText4 {
+	 z-index: 1;
 	 width: 212px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuItem7 {
+	 z-index: 1;
 	 width: 213px;
 	 height: 23px;
 	 top: 0px;
 	 left: 0px;
 	
 	 position: absolute;
-	 z-index: 1;
 	 
 }
 
 #{id}menuBar1 {
+	 z-index: 16;
 	 width: 641px;
 	 height: 25px;
 	 top: 275px;
 	 left: 647px;
 	
 	 position: absolute;
-	 z-index: 16;
 	 
 }
 
@@ -660,12 +1276,6 @@
 	 
 }
 
-.waf-widget.waf-clone-{id}label34 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
 .waf-widget.waf-clone-{id}textField24 {
 	 position: absolute;
 	 
@@ -727,96 +1337,6 @@
 
 .waf-widget.waf-clone-{id}textField18 {
 	 position: absolute;
-	 
-}
-
-.waf-widget.waf-clone-{id}label38 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label37 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label36 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label35 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label33 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label32 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label31 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label30 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label29 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-.waf-widget.waf-clone-{id}label28 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label32 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label31 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label30 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label29 {
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label28 {
-	 position: absolute;
-	 text-align: center;
 	 
 }
 
@@ -926,378 +1446,6 @@
 	 left: 10px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}richText24 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText25 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem5 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText26 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem6 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText27 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem15 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuBar6 {
-	 width: 332px;
-	 height: 52px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem4 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText28 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem16 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText29 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText30 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem18 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText31 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem19 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuBar7 {
-	 width: 332px;
-	 height: 52px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem17 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText23 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem23 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText32 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem24 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText33 {
-	 width: 50px;
-	 height: 16px;
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}menuItem25 {
-	 width: 110px;
-	 height: function (a) {var b="22px";if(a&&a.parent&&a.parent.getLevel()==0){b="50px"}return b;};
-	 top: auto;
-	 left: auto;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label38 {
-	 z-index: 22;
-	 width: 68px;
-	 height: 13px;
-	 top: 47px;
-	 left: 386px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label37 {
-	 z-index: 21;
-	 width: 61px;
-	 height: 13px;
-	 top: 47px;
-	 left: 269px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label36 {
-	 z-index: 20;
-	 width: 52px;
-	 height: 13px;
-	 top: 47px;
-	 left: 189px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label35 {
-	 z-index: 19;
-	 width: 26px;
-	 height: 13px;
-	 top: 47px;
-	 left: 117px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label34 {
-	 z-index: 18;
-	 width: 60px;
-	 height: 13px;
-	 top: 47px;
-	 left: 15px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label33 {
-	 z-index: 17;
-	 width: 111px;
-	 height: 13px;
-	 top: 2px;
-	 left: 62px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label32 {
-	 z-index: 16;
-	 width: 28px;
-	 height: 13px;
-	 top: 2px;
-	 left: 521px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label31 {
-	 z-index: 15;
-	 width: 47px;
-	 height: 13px;
-	 top: 2px;
-	 left: 434px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label30 {
-	 z-index: 14;
-	 width: 90px;
-	 height: 13px;
-	 top: 2px;
-	 left: 337px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label29 {
-	 z-index: 13;
-	 width: 88px;
-	 height: 13px;
-	 top: 2px;
-	 left: 223px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label28 {
-	 z-index: 12;
-	 width: 44px;
-	 height: 13px;
-	 top: 2px;
-	 left: 3px;
-	
-	 position: absolute;
-	 text-align: center;
 	 
 }
 
@@ -1422,48 +1570,6 @@
 
 #{id}matrix1 .waf-widget.waf-clone-{id}textField28 {
 	 z-index: 14;
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label33 {
-	 z-index: 17;
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label34 {
-	 z-index: 12;
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label35 {
-	 z-index: 13;
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label36 {
-	 z-index: 14;
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label37 {
-	 z-index: 15;
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}matrix1 .waf-widget.waf-clone-{id}label38 {
-	 z-index: 16;
 	 position: absolute;
 	 text-align: center;
 	 
@@ -1940,7 +2046,7 @@
 
 #{id}label21 {
 	 z-index: 3;
-	 width: 75px;
+	 width: 73px;
 	 height: 13px;
 	 top: 43px;
 	 left: 129px;
@@ -2058,7 +2164,7 @@
 #{id}container5 {
 	 z-index: 12;
 	 width: 1290px;
-	 height: 715px;
+	 height: 1000px;
 	 top: 0px;
 	 left: 0px;
 	
@@ -2076,32 +2182,6 @@
 	 border-bottom-color: rgb(0, 27, 90);
 	 border-bottom-style: solid;
 	 border-bottom-width: 1px;
-	 
-}
-
-#{id}container4 {
-	 z-index: 20;
-	 width: 1310px;
-	 height: 123px;
-	 top: 574px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container1 {
-	 z-index: 19;
-	 width: 1310px;
-	 height: 574px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 -webkit-box-shadow: rgb(0, 27, 90) 0px 0px 0px 0px inset;
-	 -moz-box-shadow: rgb(0, 27, 90) 0px 0px 0px 0px inset;
-	 box-shadow: rgb(0, 27, 90) 0px 0px 0px 0px inset;
-	
 	 
 }
 
@@ -2148,497 +2228,6 @@
 	
 	 position: absolute;
 	 font-size: 12px;
-	 
-}
-
-#{id}button10 {
-	 z-index: 5;
-	 width: 75px;
-	 height: 25px;
-	 top: 210px;
-	 left: 380px;
-	
-	 position: absolute;
-	 font-size: 12px;
-	 
-}
-
-#{id}component3 {
-	 z-index: 15;
-	 width: 410px;
-	 height: 245px;
-	 top: 30px;
-	 left: 880px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}component2 {
-	 z-index: 14;
-	 width: 641px;
-	 height: 390px;
-	 top: 300px;
-	 left: 650px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}component1 {
-	 z-index: 13;
-	 width: 641px;
-	 height: 390px;
-	 top: 300px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}richText19 {
-	 z-index: 4;
-	 width: 365px;
-	 height: 22px;
-	 top: 27px;
-	 left: 5px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 font-size: 16px;
-	 text-align: left;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}richText18 {
-	 z-index: 18;
-	 width: 90px;
-	 height: 25px;
-	 top: 5px;
-	 left: 90px;
-	
-	 position: absolute;
-	 font-size: 20px;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}richText17 {
-	 z-index: 17;
-	 width: 90px;
-	 height: 25px;
-	 top: 5px;
-	 left: 5px;
-	
-	 position: absolute;
-	 font-size: 20px;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}richText16 {
-	 z-index: 3;
-	 width: 90px;
-	 height: 25px;
-	 top: 5px;
-	 left: 90px;
-	
-	 position: absolute;
-	 font-size: 20px;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}richText15 {
-	 z-index: 2;
-	 width: 90px;
-	 height: 25px;
-	 top: 5px;
-	 left: 5px;
-	
-	 position: absolute;
-	 font-size: 20px;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}richText6 {
-	 z-index: 16;
-	 width: 365px;
-	 height: 22px;
-	 top: 27px;
-	 left: 5px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 font-size: 16px;
-	 text-align: left;
-	 color: rgb(0, 27, 90);
-	 
-}
-
-#{id}textField14 {
-	 z-index: 15;
-	 width: 175px;
-	 height: 22px;
-	 top: 65px;
-	 left: 5px;
-	
-	 position: absolute;
-	 color: rgb(255, 0, 0);
-	 
-}
-
-#{id}label20 {
-	 z-index: 15;
-	 width: 101px;
-	 height: 13px;
-	 top: 47px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField13 {
-	 z-index: 14;
-	 width: 175px;
-	 height: 22px;
-	 top: 65px;
-	 left: 185px;
-	
-	 position: absolute;
-	 color: rgb(0, 0, 255);
-	 
-}
-
-#{id}label19 {
-	 z-index: 14;
-	 width: 59px;
-	 height: 13px;
-	 top: 47px;
-	 left: 185px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField9 {
-	 z-index: 13;
-	 width: 50px;
-	 height: 22px;
-	 top: 110px;
-	 left: 310px;
-	
-	 position: absolute;
-	 text-align: left;
-	 
-}
-
-#{id}label18 {
-	 z-index: 13;
-	 width: 31px;
-	 height: 13px;
-	 top: 92px;
-	 left: 310px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField8 {
-	 z-index: 11;
-	 width: 355px;
-	 height: 40px;
-	 top: 200px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label17 {
-	 z-index: 10;
-	 width: 66px;
-	 height: 13px;
-	 top: 182px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField7 {
-	 z-index: 9;
-	 width: 155px;
-	 height: 22px;
-	 top: 155px;
-	 left: 205px;
-	
-	 position: absolute;
-	 text-align: left;
-	 
-}
-
-#{id}label16 {
-	 z-index: 9;
-	 width: 38px;
-	 height: 13px;
-	 top: 137px;
-	 left: 205px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField6 {
-	 z-index: 8;
-	 width: 100px;
-	 height: 22px;
-	 top: 155px;
-	 left: 100px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label15 {
-	 z-index: 7;
-	 width: 22px;
-	 height: 13px;
-	 top: 137px;
-	 left: 100px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField5 {
-	 z-index: 5;
-	 width: 90px;
-	 height: 22px;
-	 top: 155px;
-	 left: 5px;
-	
-	 position: absolute;
-	 text-align: center;
-	 
-}
-
-#{id}label13 {
-	 z-index: 5;
-	 width: 55px;
-	 height: 13px;
-	 top: 137px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField4 {
-	 z-index: 4;
-	 width: 95px;
-	 height: 22px;
-	 top: 110px;
-	 left: 205px;
-	
-	 position: absolute;
-	 text-align: left;
-	 
-}
-
-#{id}label12 {
-	 z-index: 4;
-	 width: 58px;
-	 height: 13px;
-	 top: 92px;
-	 left: 205px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField2 {
-	 z-index: 3;
-	 width: 95px;
-	 height: 22px;
-	 top: 110px;
-	 left: 105px;
-	
-	 position: absolute;
-	 text-align: left;
-	 
-}
-
-#{id}label11 {
-	 z-index: 3;
-	 width: 73px;
-	 height: 13px;
-	 top: 92px;
-	 left: 105px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}textField1 {
-	 z-index: 2;
-	 width: 95px;
-	 height: 22px;
-	 top: 110px;
-	 left: 5px;
-	
-	 position: absolute;
-	 text-align: left;
-	 
-}
-
-#{id}label10 {
-	 z-index: 2;
-	 width: 59px;
-	 height: 13px;
-	 top: 92px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container13 {
-	 z-index: 3;
-	 width: 294px;
-	 height: 243px;
-	 top: 0px;
-	 left: 470px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container12 {
-	 z-index: 2;
-	 width: 470px;
-	 height: 243px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}dataGrid2 {
-	 z-index: 1;
-	 width: 455px;
-	 height: 157px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container11 {
-	 z-index: 3;
-	 width: 312px;
-	 height: 243px;
-	 top: 0px;
-	 left: 166px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container10 {
-	 z-index: 2;
-	 width: 166px;
-	 height: 243px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container9 {
-	 z-index: 10;
-	 width: 480px;
-	 height: 245px;
-	 top: 30px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 border-top-color: rgb(0, 27, 90);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-color: rgb(0, 27, 90);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-color: rgb(0, 27, 90);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(0, 27, 90);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 
-}
-
-#{id}container8 {
-	 z-index: 15;
-	 width: 1310px;
-	 height: 3px;
-	 top: 697px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}container7 {
-	 z-index: 14;
-	 width: 1310px;
-	 height: 697px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}component4 {
-	 z-index: 1;
-	 width: 400px;
-	 height: 245px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 border-top-color: rgb(78, 117, 163);
-	 border-top-style: solid;
-	 border-top-width: 1px;
-	 border-left-color: rgb(78, 117, 163);
-	 border-left-style: solid;
-	 border-left-width: 1px;
-	 border-right-color: rgb(78, 117, 163);
-	 border-right-style: solid;
-	 border-right-width: 1px;
-	 border-bottom-color: rgb(78, 117, 163);
-	 border-bottom-style: solid;
-	 border-bottom-width: 1px;
-	 
-}
-
-#{id}container3 {
-	 z-index: 9;
-	 width: 400px;
-	 height: 245px;
-	 top: 30px;
-	 left: 480px;
-	
-	 position: absolute;
 	 
 }
 
@@ -2758,18 +2347,6 @@
 	 
 }
 
-#{id}container2 {
-	 z-index: 1;
-	 width: 1310px;
-	 height: 700px;
-	 top: 1000px;
-	 left: 0px;
-	
-	 position: absolute;
-	 background-color: rgba(240, 240, 255, 0.898438);
-	 
-}
-
 #{id}textField3 {
 	 z-index: 3;
 	 width: 125px;
@@ -2800,14 +2377,190 @@
 	 
 }
 
-#{id}menuBar5 {
+.waf-widget.waf-clone-{id}label34 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label34 {
 	 z-index: 12;
-	 width: 642px;
-	 height: 25px;
-	 top: 275px;
-	 left: 649px;
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label28 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label28 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label33 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label33 {
+	 z-index: 17;
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label29 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label29 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label30 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label30 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label31 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label31 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label32 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label32 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label38 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label38 {
+	 z-index: 16;
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label37 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label37 {
+	 z-index: 15;
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label36 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label36 {
+	 z-index: 14;
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+.waf-widget.waf-clone-{id}label35 {
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}matrix1 .waf-widget.waf-clone-{id}label35 {
+	 z-index: 13;
+	 position: absolute;
+	 text-align: center;
+	 
+}
+
+#{id}clientsearchcont {
+	 z-index: 18;
+	 width: 1288px;
+	 height: 659px;
+	 top: 725px;
+	 left: 0px;
 	
 	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240,240,255)),color-stop(1, rgb(240,240,255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 
+}
+
+#{id}button8 {
+	 z-index: 2;
+	 width: 75px;
+	 height: 25px;
+	 top: 625px;
+	 left: 1200px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}clientmonitoringcont {
+	 z-index: 19;
+	 width: 1288px;
+	 height: 600px;
+	 top: 275px;
+	 left: 0px;
+	
+	 position: absolute;
+	 background-color: rgb(240, 240, 255);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
+	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240,240,255)),color-stop(1, rgb(240,240,255)));
+	 background-image:-webkit-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-moz-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-ms-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:-o-linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
+	 background-image:linear-gradient(left, rgb(240,240,255) 0%,rgb(240,240,255) 100%);
 	 
 }
 

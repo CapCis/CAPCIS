@@ -4,28 +4,29 @@
 */
 
 #{id}button5 {
+	 z-index: 6;
 	 width: 75px;
 	 height: 25px;
 	 top: 255px;
 	 left: 335px;
 	
 	 position: absolute;
-	 z-index: 6;
 	 
 }
 
 #{id}correspondanceGrid {
+	 z-index: 5;
 	 width: 405px;
 	 height: 165px;
 	 top: 30px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 5;
 	 
 }
 
 #{id}correspondanceActiveBox {
+	 z-index: 4;
 	 width: 110px;
 	 height: 22px;
 	 top: 5px;
@@ -33,11 +34,11 @@
 	
 	 position: absolute;
 	 text-align: left;
-	 z-index: 4;
 	 
 }
 
 #{id}richText2 {
+	 z-index: 3;
 	 width: 250px;
 	 height: 22px;
 	 top: 5px;
@@ -48,29 +49,28 @@
 	 font-size: 16px;
 	 color: rgb(0, 27, 90);
 	 text-align: left;
-	 z-index: 3;
 	 
 }
 
 #{id}newCorrespondanceField {
+	 z-index: 2;
 	 width: 325px;
 	 height: 60px;
 	 top: 220px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 
 #{id}label1 {
+	 z-index: 2;
 	 width: 150px;
 	 height: 13px;
 	 top: 202px;
 	 left: 5px;
 	
 	 position: absolute;
-	 z-index: 2;
 	 
 }
 

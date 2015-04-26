@@ -38,7 +38,7 @@ exports.getSelect = function getSelect(myObject)
 	catch(err)
 	{
 		debugger;
-		return err.message;
+		return err.messages;
 	}
 };
 

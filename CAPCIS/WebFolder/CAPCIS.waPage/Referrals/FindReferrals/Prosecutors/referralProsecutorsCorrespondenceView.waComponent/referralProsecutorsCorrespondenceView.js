@@ -24,13 +24,44 @@ function constructor (id) {
 
 	prosCorrespondanceGrid.onRowClick = function prosCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('prosCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('prosSpecificInfoCont')).setSplitPosition(900);
+		
 	};// @lock
 
 	prosCorrespondanceActiveBox.change = function prosCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('prosCorrespondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:78,data1:sources.prosecutorList.ProsecutorsID};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 					 				
+						prosecutorCorespondance = result;
+						sources.prosecutorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    	}
+    	else
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:79,data1:sources.prosecutorList.ProsecutorsID,data2:currentCorrespondenceActiveSelected};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 					 				
+						prosecutorCorespondance = result;
+						sources.prosecutorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    
+    	}
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
