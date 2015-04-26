@@ -24,13 +24,46 @@ function constructor (id) {
 
 	attCorrespondanceActiveBox.change = function attCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('attCorrespondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 16,data1: sources.attorneyList.AttorneyInformationID}; 
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						attorneyCorespondance = result;
+						sources.attorneyCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    	}
+    	else
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 17,data1: sources.attorneyList.AttorneyInformationID,data2: currentCorrespondenceActiveSelected};
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						attorneyCorespondance = result;
+						sources.attorneyCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    
+    	}
+    	
 	};// @lock
 
 	attCorrespondanceGrid.onRowClick = function attCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('attCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(900);
 		
 	};// @lock
 
@@ -81,8 +114,7 @@ function constructor (id) {
 
 	attCorCloseButton.click = function attCorCloseButton_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('attCorrCont')).setSplitPosition(1290);
+		
 	};// @lock
 
 	// @region eventManager// @startlock

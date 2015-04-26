@@ -24,13 +24,44 @@ function constructor (id) {
 
 	poCorrespondanceGrid.onRowClick = function poCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('poCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('poSpecificInfoCont')).setSplitPosition(900);		
+				
 	};// @lock
 
 	poCorrespondanceActiveBox.change = function poCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('poCorrespondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:69,data1:sources.probationOfficerList.POInformationID};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 					 	debugger;			
+						probationOfficerCorespondance = result;
+						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    	}
+    	else
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:currentCorrespondenceActiveSelected};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationOfficerCorespondance = result;
+						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    
+    	}
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -83,8 +114,7 @@ function constructor (id) {
 
 	poCorCloseButton.click = function poCorCloseButton_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('poCorrCont')).setSplitPosition(1290);
+		
 	};// @lock
 
 	// @region eventManager// @startlock

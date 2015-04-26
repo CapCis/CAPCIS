@@ -24,15 +24,50 @@ function constructor (id) {
 
 	pjCorrespondanceGrid.onRowClick = function pjCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('pjCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('pjSpecificInfoCont')).setSplitPosition(900);
-		
+				
 	};// @lock
+
+
 
 	pjCorrespondanceActiveBox.change = function pjCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('pjCorrespondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 60,data1: sources.probationJurisdictionList.POJurisdictionID}; 
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						probationJurisdictionCorespondance = result;
+						sources.probationJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    	}
+    	else
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:61,data1:sources.probationJurisdictionList.POJurisdictionID,data2:currentCorrespondenceActiveSelected};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationJurisdictionCorespondance = result;
+						sources.probationJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    
+    	}
 	};// @lock
+
+
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
@@ -83,8 +118,7 @@ function constructor (id) {
 
 	pjCorCloseButton.click = function pjCorCloseButton_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('pjCorrCont')).setSplitPosition(1290);
+		
 	};// @lock
 
 	// @region eventManager// @startlock

@@ -86,6 +86,14 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var AssessorMainContainer = {};	// @container
+	var loadCourtJurisdictionCorresp = {};	// @button
+	var loadProbationJurisdictionCorresp = {};	// @button
+	var loadProbationCorrespondence = {};	// @button
+	var loadProsecutorCorrespondence = {};	// @button
+	var loadOtherCorrespondence = {};	// @button
+	var loadJudgesCorrespondence = {};	// @button
+	var loadDHSOfficerCorrespondence = {};	// @button
 	var loadAssessorCorrespondence = {};	// @button
 	var loadBakAttorneyVersions = {};	// @button
 	var otherMonitorFullList = {};	// @dataGrid
@@ -96,74 +104,74 @@ function constructor (id) {
 	var judgeFullList = {};	// @dataGrid
 	var dhsOfficerFullList = {};	// @dataGrid
 	var attorneyFullList = {};	// @dataGrid
-	var dataGrid19 = {};	// @dataGrid
-	var button39 = {};	// @button
-	var textField101 = {};	// @textField
+	var assessorCityGrid = {};	// @dataGrid
+	var assessorCityButton = {};	// @button
+	var assessorCityTextbox = {};	// @textField
 	var loadBakAssessorVersions = {};	// @button
 	var closeAssesorCurrentButton = {};	// @button
 	var submitAssessorCurrentInformation = {};	// @button
-	var cityComboboxGrid = {};	// @dataGrid
-	var button28 = {};	// @button
-	var cityComboBox = {};	// @textField
+	var courtJurisdictionCityGrid = {};	// @dataGrid
+	var courtJurisdictionCityButton = {};	// @button
+	var courtJurisdictionCityTextbox = {};	// @textField
 	var loadBAKCourtJurisdictionVersions = {};	// @button
 	var button23 = {};	// @button
 	var submitButton = {};	// @button
 	var dataGrid6 = {};	// @dataGrid
-	var dataGrid18 = {};	// @dataGrid
-	var button38 = {};	// @button
-	var textField96 = {};	// @textField
+	var probationJurisdictionCityGrid = {};	// @dataGrid
+	var probationJurisdictionCityButton = {};	// @button
+	var probationJurisdictionCityTextbox = {};	// @textField
 	var loadBAKProbationJurisdictionVersions = {};	// @button
 	var button5 = {};	// @button
 	var button2 = {};	// @button
 	var dataGrid1 = {};	// @dataGrid
 	var button4 = {};	// @button
-	var dataGrid12 = {};	// @dataGrid
-	var textField82 = {};	// @textField
-	var button35 = {};	// @button
+	var probationOfficerCityGrid = {};	// @dataGrid
+	var probationOfficerCityTextbox = {};	// @textField
+	var probationOfficerCityButton = {};	// @button
 	var loadBAKProbationOfficers = {};	// @button
 	var button33 = {};	// @button
 	var dataGrid11 = {};	// @dataGrid
 	var textField73 = {};	// @textField
 	var button32 = {};	// @button
 	var dataGrid17 = {};	// @dataGrid
-	var dataGrid15 = {};	// @dataGrid
-	var textField71 = {};	// @textField
-	var button31 = {};	// @button
+	var prosecutorCityGrid = {};	// @dataGrid
+	var prosecutorCityTextbox = {};	// @textField
+	var prosecutorCityButton = {};	// @button
 	var loadBAKProsecutors = {};	// @button
 	var button26 = {};	// @button
 	var button25 = {};	// @button
 	var dataGrid9 = {};	// @dataGrid
 	var dataGrid7 = {};	// @dataGrid
-	var button24 = {};	// @button
-	var textField61 = {};	// @textField
+	var otherMonitorCityButton = {};	// @button
+	var otherMonitorCityTextbox = {};	// @textField
 	var loadBAKOtherMonitors = {};	// @button
 	var button21 = {};	// @button
 	var button19 = {};	// @button
-	var dataGrid16 = {};	// @dataGrid
+	var otherMonitorCityGrid = {};	// @dataGrid
 	var loadBakJudgesVersions = {};	// @button
 	var dataGrid14 = {};	// @dataGrid
 	var button17 = {};	// @button
 	var textField49 = {};	// @textField
-	var dataGrid13 = {};	// @dataGrid
-	var button16 = {};	// @button
-	var textField48 = {};	// @textField
+	var judgesCityGrid = {};	// @dataGrid
+	var judgesCityButton = {};	// @button
+	var judgesCityTextbox = {};	// @textField
 	var button15 = {};	// @button
 	var button13 = {};	// @button
 	var dataGrid5 = {};	// @dataGrid
-	var dataGrid10 = {};	// @dataGrid
-	var button14 = {};	// @button
-	var textField24 = {};	// @textField
+	var dhsCityGrid = {};	// @dataGrid
+	var dhsCityButton = {};	// @button
+	var dhsCityTextbox = {};	// @textField
 	var loadBakDHSOfficerVersions = {};	// @button
 	var button3 = {};	// @button
 	var button1 = {};	// @button
 	var dataGrid8 = {};	// @dataGrid
-	var dataGrid4 = {};	// @dataGrid
+	var attorneyCityGrid = {};	// @dataGrid
 	var dataGrid2 = {};	// @dataGrid
 	var button11 = {};	// @button
 	var textField3 = {};	// @textField
-	var button10 = {};	// @button
-	var textField2 = {};	// @textField
-	var button6 = {};	// @button
+	var attorneyCityButton = {};	// @button
+	var attorneyCityTextbox = {};	// @textField
+	var loadAttorneyCorrespondence = {};	// @button
 	var button43 = {};	// @button
 	var button37 = {};	// @button
 	var button36 = {};	// @button
@@ -192,70 +200,40 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	dataGrid19.onRowClick = function dataGrid19_onRowClick (event)// @startlock
+	AssessorMainContainer.click = function AssessorMainContainer_click (event)// @startlock
 	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('cityComboBox')).setValue(recValue);
+		//debugger;
+		//$$(getHtmlId('assessorCityGrid'))
+		//document.getElementById(getHtmlId('assessorCityGrid').style.display = "none";
 	};// @lock
 
-	button39.click = function button39_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
+	
 
-	textField101.keyup = function textField101_keyup (event)// @startlock
-	{// @endlock
-		
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();
-			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
+	
 
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
+	
 
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
+	
 
-	textField101.blur = function textField101_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 	closeAssesorCurrentButton.click = function closeAssesorCurrentButton_click (event)// @startlock
@@ -265,6 +243,22 @@ function constructor (id) {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//BAK VERSION SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<	
 	
 	
 	loadBakAssessorVersions.click = function loadBakAssessorVersions_click (event)
@@ -522,17 +516,26 @@ function constructor (id) {
 	
 	
 	
-	
+
+
+
+//CORRESPONDENCE SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<	
 	
 	
 	loadAssessorCorrespondence.click = function loadAssessorCorrespondence_click (event)// @startlock
 	{// @endlock
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-    		id: 	$comp.id+'_component6', 											//designate the component to load into
+		var myWidget = document.getElementById($comp.id +"_container77");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component6', 											
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralAssessorsCorrespondenceView.waComponent'	
 		});
-		debugger;
-		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:false};
+		
+		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:0};
         rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						assessorCorespondance = result;
@@ -542,8 +545,486 @@ function constructor (id) {
 						console.log(error);
 					},
 					'params': [assessorCorrespondenceObject]
-				});
+		});
 		
+	};// @lock
+	
+	
+	loadAttorneyCorrespondence.click = function loadAttorneyCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		
+		var myWidget = document.getElementById($comp.id +"_container82");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component12', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Attorneys/referralAttorneysCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:17,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						attorneyCorespondance = result;
+						sources.attorneyCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+	};// @lock
+	
+	
+	loadDHSOfficerCorrespondence.click = function loadDHSOfficerCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container12");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component9', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralDHSOfficersCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						dhsCorespondance = result;
+						sources.dhsCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+
+
+	loadJudgesCorrespondence.click = function loadJudgesCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container28");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component18', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralJudgesCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:43,data1:sources.judgeList.JudgesID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						judgeCorespondance = result;
+						sources.judgeCorespondance.sync();
+					},
+					'onError': function(error){
+						
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+
+
+	loadOtherCorrespondence.click = function loadOtherCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container42");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component22', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralOtherMonitorsCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:52,data1:sources.otherMonitorList.OtherMonitorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						otherMonitorCorespondance = result;
+						sources.otherMonitorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+	};// @lock
+
+
+	loadProsecutorCorrespondence.click = function loadProsecutorCorrespondence_click (event)// @startlock
+	{// @endlock
+	
+		var myWidget = document.getElementById($comp.id +"_container48");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component26', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralProsecutorsCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:79,data1:sources.prosecutorList.ProsecutorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						prosecutorCorespondance = result;
+						sources.prosecutorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+	};// @lock
+
+
+	loadProbationCorrespondence.click = function loadProbationCorrespondence_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container55");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component30', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationOfficers/referralProbationOfficersCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 					 				
+						probationOfficerCorespondance = result;
+						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+	};// @lock
+
+
+	loadProbationJurisdictionCorresp.click = function loadProbationJurisdictionCorresp_click (event)// @startlock
+	{// @endlock
+		
+		var myWidget = document.getElementById($comp.id +"_container4");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component34', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationJurisdictions/referralProbationJurisdictionsCorrespondenceView.waComponent'	
+		});
+		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:61,data1:sources.probationJurisdictionList.POJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationJurisdictionCorespondance = result;
+						sources.probationJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+	};// @lock
+
+
+	loadCourtJurisdictionCorresp.click = function loadCourtJurisdictionCorresp_click (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_container10");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
+		
+		WAF.loadComponent ( {											
+    		id: 	$comp.id+'_component38', 											
+			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralCourtJurisdictionsCorrespondenceView.waComponent'	
+		});
+		debugger;
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:26,data1:sources.courtJurisdictionList.CourtJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						courtJurisdictionCorespondance = result;
+						sources.courtJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+	};// @lock
+
+
+
+
+
+
+
+
+
+//CITY GRID SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+	assessorCityGrid.onRowClick = function assessorCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('assessorCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('assessorCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('assessorCityTextbox')).setValue(recValue);
+	};// @lock
+
+	assessorCityButton.click = function assessorCityButton_click (event)// @startlock
+	{// @endlock
+		city=tempStore;
+		sources.city.sync();
+			
+		var grid = document.getElementById(getHtmlId('assessorCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	assessorCityTextbox.keyup = function assessorCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_assessorCityTextbox').getValue();
+			$$($comp.id+'_assessorCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_assessorCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_assessorCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_assessorCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	assessorCityTextbox.blur = function assessorCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_assessorCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+
+
+
+
+
+	
+	attorneyCityGrid.onRowClick = function attorneyCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('attorneyCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('attorneyCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('attorneyCityTextbox')).setValue(recValue);
+	};// @lock
+	
+	attorneyCityButton.click = function attorneyCityButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('attorneyCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	attorneyCityTextbox.keyup = function attorneyCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_attorneyCityTextbox').getValue();
+			$$($comp.id+'_attorneyCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_attorneyCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_attorneyCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_attorneyCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	attorneyCityTextbox.blur = function attorneyCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_attorneyCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+	
+	
+	
+	
+	
+	
+	
+	dhsCityGrid.onRowClick = function dhsCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('dhsCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('dhsCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('dhsCityTextbox')).setValue(recValue);
+	};// @lock
+
+	dhsCityButton.click = function dhsCityButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('dhsCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	dhsCityTextbox.keyup = function dhsCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_dhsCityTextbox').getValue();
+			$$($comp.id+'_dhsCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_dhsCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_dhsCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_dhsCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	dhsCityTextbox.blur = function dhsCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_dhsCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+	
+	
+	
+	
+	
+	
+	
+	judgesCityGrid.onRowClick = function judgesCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('judgesCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('judgesCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('judgesCityTextbox')).setValue(recValue);
+	};// @lock
+
+	judgesCityButton.click = function judgesCityButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('judgesCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	judgesCityTextbox.keyup = function judgesCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_judgesCityTextbox').getValue();
+			$$($comp.id+'_judgesCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_judgesCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_judgesCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_judgesCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	judgesCityTextbox.blur = function judgesCityTextbox_blur (event)// @startlock
+	{// @endlock
+			var grid = document.getElementById($comp.id+'_judgesCityGrid');
+			grid.style.display = 'none';
 	};// @lock
 	
 	
@@ -553,6 +1034,291 @@ function constructor (id) {
 	
 	
 	
+	otherMonitorCityGrid.onRowClick = function otherMonitorCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('otherMonitorCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('otherMonitorCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('otherMonitorCityTextbox')).setValue(recValue);
+	};// @startlock
+	otherMonitorCityButton.click = function otherMonitorCityButton_click (event)
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('otherMonitorCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	otherMonitorCityTextbox.keyup = function otherMonitorCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_otherMonitorCityTextbox').getValue();
+			$$($comp.id+'_otherMonitorCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_otherMonitorCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_otherMonitorCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_otherMonitorCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	otherMonitorCityTextbox.blur = function otherMonitorCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_otherMonitorCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+	
+	
+	
+	
+	
+	
+	prosecutorCityGrid.onRowClick = function prosecutorCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('prosecutorCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('prosecutorCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('prosecutorCityTextbox')).setValue(recValue);
+	};// @lock
+	
+	prosecutorCityButton.click = function prosecutorCityButton_click (event)// @startlock
+	{// @endlock
+		
+		var grid = document.getElementById(getHtmlId('prosecutorCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+	
+	prosecutorCityTextbox.keyup = function prosecutorCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_prosecutorCityTextbox').getValue();
+			$$($comp.id+'_prosecutorCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_prosecutorCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_prosecutorCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_prosecutorCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	prosecutorCityTextbox.blur = function prosecutorCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_prosecutorCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+	
+
+
+
+
+
+	probationOfficerCityGrid.onRowClick = function probationOfficerCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('probationOfficerCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('probationOfficerCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('probationOfficerCityTextbox')).setValue(recValue);
+	};// @lock
+	
+	probationOfficerCityButton.click = function probationOfficerCityButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('probationOfficerCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+	
+	probationOfficerCityTextbox.keyup = function probationOfficerCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_probationOfficerCityTextbox').getValue();
+			$$($comp.id+'_probationOfficerCityTextbox').setValue(sources.poJurisdiction.JurisdictionName);
+			var grid = document.getElementById($comp.id+'_probationOfficerCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			poJurisdiction=tempStore2;
+			sources.poJurisdiction.sync();
+
+			var grid = document.getElementById($comp.id+'_probationOfficerCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_probationOfficerCityTextbox').getValue();//textInput.value;
+			sources.poJurisdiction.query('JurisdictionName = :1 order by JurisdictionName', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	probationOfficerCityTextbox.blur = function probationOfficerCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var currentInput = $$($comp.id+'_probationOfficerCityTextbox').getValue();
+			$$($comp.id+'_probationOfficerCityTextbox').setValue(sources.poJurisdiction.JurisdictionName);
+			var grid = document.getElementById($comp.id+'_probationOfficerCityGrid');
+			grid.style.display = 'none';
+		
+	};// @lock
+
+	
+	
+	
+	
+	
+	probationJurisdictionCityGrid.onRowClick = function probationJurisdictionCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('probationJurisdictionCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('probationJurisdictionCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('probationJurisdictionCityTextbox')).setValue(recValue);
+	};// @lock
+
+	probationJurisdictionCityButton.click = function probationJurisdictionCityButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('probationJurisdictionCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	probationJurisdictionCityTextbox.keyup = function probationJurisdictionCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_probationJurisdictionCityTextbox').getValue();
+			$$($comp.id+'_probationJurisdictionCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_probationJurisdictionCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_probationJurisdictionCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_probationJurisdictionCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	probationJurisdictionCityTextbox.blur = function probationJurisdictionCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_probationJurisdictionCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+
+
+
+	
+	
+	
+	
+	courtJurisdictionCityGrid.onRowClick = function courtJurisdictionCityGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('courtJurisdictionCityGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('courtJurisdictionCityGrid')).sourceAtt.getValue();
+		$$(getHtmlId('courtJurisdictionCityTextbox')).setValue(recValue);
+	};// @lock
+
+	courtJurisdictionCityButton.click = function courtJurisdictionCityButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('courtJurisdictionCityGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	courtJurisdictionCityTextbox.keyup = function courtJurisdictionCityTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_cityComboBox').getValue();
+			$$($comp.id+'_courtJurisdictionCityTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_courtJurisdictionCityGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			city=tempStore;
+			sources.city.sync();
+
+			var grid = document.getElementById($comp.id+'_courtJurisdictionCityGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_courtJurisdictionCityTextbox').getValue();//textInput.value;
+			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	courtJurisdictionCityTextbox.blur = function courtJurisdictionCityTextbox_blur (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById($comp.id+'_courtJurisdictionCityGrid');
+			grid.style.display = 'none';
+	};// @lock
+
 	
 	
 	
@@ -565,6 +1331,41 @@ function constructor (id) {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	button23.click = function button23_click (event)// @startlock
+	{// @endlock
+		$$(getHtmlId('mainCourtJurisdictionCont')).setSplitPosition(1290);
+	};// @lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
@@ -640,67 +1441,44 @@ function constructor (id) {
 	 	
 	};// @lock
 
-	cityComboboxGrid.onRowClick = function cityComboboxGrid_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('cityComboBox')).setValue(recValue);
-	};// @lock
 
-	button28.click = function button28_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
 
-	cityComboBox.keyup = function cityComboBox_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();
-			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
 
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
 
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
 
-	cityComboBox.blur = function cityComboBox_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
 
-	
 
-	button23.click = function button23_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('mainCourtJurisdictionCont')).setSplitPosition(1290);
-	};// @lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	submitButton.click = function submitButton_click (event)// @startlock
 	{// @endlock
+	
+		debugger;
 		var currentCity = $$($comp.id + "_cityComboBox").getValue();
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelect(myObject5);
@@ -759,7 +1537,7 @@ function constructor (id) {
 				
 	 		
 			var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:27,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
+	 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakListSuccess(result);
 					},
@@ -794,58 +1572,7 @@ function constructor (id) {
 
 	
 
-	dataGrid18.onRowClick = function dataGrid18_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('pjCityComboBox')).setValue(recValue);
-	};// @lock
-
-	button38.click = function button38_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
-
-	textField96.keyup = function textField96_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_pjCityComboBox').getValue();
-			$$($comp.id+'_pjCityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
-
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_pjCityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField96.blur = function textField96_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
-
+	
 	
 
 	button5.click = function button5_click (event)// @startlock
@@ -960,60 +1687,7 @@ function constructor (id) {
 				});
 	};// @lock
 
-	dataGrid12.onRowClick = function dataGrid12_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('judgeJurisdictionGrid')).sourceAtt.getValue();
-		$$(getHtmlId('judgeJurisdiction')).setValue(recValue);
-	};// @lock
-
-	textField82.keyup = function textField82_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();
-			$$($comp.id+'_judgeJurisdiction').setValue(sources.poJurisdiction.JurisdictionName);
-			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			poJurisdiction=tempStore2;
-			sources.poJurisdiction.sync();
-
-			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();//textInput.value;
-			sources.poJurisdiction.query('JurisdictionName = :1 order by JurisdictionName', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField82.blur = function textField82_blur (event)// @startlock
-	{// @endlock
-		var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();
-			$$($comp.id+'_judgeJurisdiction').setValue(sources.poJurisdiction.JurisdictionName);
-			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
-			grid.style.display = 'none';
-		
-	};// @lock
-
-	button35.click = function button35_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
+	
 
 	
 
@@ -1080,59 +1754,7 @@ function constructor (id) {
 		$$(getHtmlId('prosJurisdiction')).setValue(recValue);
 	};// @lock
 
-	dataGrid15.onRowClick = function dataGrid15_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('prosCityComboBox')).setValue(recValue);
-	};// @lock
-
-	textField71.keyup = function textField71_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_prosCityComboBox').getValue();
-			$$($comp.id+'_prosCityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
-
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_prosCityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField71.blur = function textField71_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
-
-	button31.click = function button31_click (event)// @startlock
-	{// @endlock
-		
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
-
+	
 	
 
 	button26.click = function button26_click (event)// @startlock
@@ -1208,48 +1830,7 @@ function constructor (id) {
 
 	
 
-	button24.click = function button24_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
-
-	textField61.keyup = function textField61_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_omCityComboBox').getValue();
-			$$($comp.id+'_omCityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
-
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_omCityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField61.blur = function textField61_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
+	
 
 	
 
@@ -1325,14 +1906,7 @@ function constructor (id) {
 				});
 	};// @lock
 
-	dataGrid16.onRowClick = function dataGrid16_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('omCityComboBox')).setValue(recValue);
-	};// @lock
+	
 
 	
 
@@ -1391,57 +1965,7 @@ function constructor (id) {
 		
 	};// @lock
 
-	dataGrid13.onRowClick = function dataGrid13_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('cityComboBox')).setValue(recValue);
-	};// @lock
-
-	button16.click = function button16_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
-
-	textField48.keyup = function textField48_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();
-			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
-
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField48.blur = function textField48_blur (event)// @startlock
-	{// @endlock
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
+	
 
 	button15.click = function button15_click (event)// @startlock
 	{// @endlock
@@ -1515,57 +2039,7 @@ function constructor (id) {
 
 	
 
-	dataGrid10.onRowClick = function dataGrid10_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('cityComboBox')).setValue(recValue);
-	};// @lock
-
-	button14.click = function button14_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
-
-	textField24.keyup = function textField24_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();
-			$$($comp.id+'_cityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
-
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_cityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField24.blur = function textField24_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
+	
 
 	
 
@@ -1642,14 +2116,7 @@ function constructor (id) {
 
 	
 
-	dataGrid4.onRowClick = function dataGrid4_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('cityComboboxGrid')).sourceAtt.getValue();
-		$$(getHtmlId('attCityComboBox')).setValue(recValue);
-	};// @lock
+	
 
 	dataGrid2.onRowClick = function dataGrid2_onRowClick (event)// @startlock
 	{// @endlock
@@ -1704,64 +2171,9 @@ function constructor (id) {
 			grid.style.display = 'none';
 	};// @lock
 
-	button10.click = function button10_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
+	
 
-	textField2.keyup = function textField2_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_attCityComboBox').getValue();
-			$$($comp.id+'_attCityComboBox').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			city=tempStore;
-			sources.city.sync();
-
-			var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_attCityComboBox').getValue();//textInput.value;
-			sources.city.query('CityListing = :1 order by CityListing', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField2.blur = function textField2_blur (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById($comp.id+'_cityComboboxGrid');
-			grid.style.display = 'none';
-	};// @lock
-
-	button6.click = function button6_click (event)// @startlock
-	{// @endlock
-		$$(getHtmlId('attSpecificInfoCont')).setSplitPosition(420);
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 	
 
@@ -1861,6 +2273,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var assessorCorrespondenceObject = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 2,data1: sources.assessorList.AssessorInformationID,data2:0};
+        rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						assessorCorespondance = result;
+						sources.assessorCorespondance.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [assessorCorrespondenceObject]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -1875,6 +2298,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:17,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+						attorneyCorespondance = result;
+						sources.attorneyCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -1890,6 +2324,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.dhsList.DhsInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+						dhsCorespondance = result;
+						sources.dhsCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @endlock
 
@@ -1905,6 +2350,17 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:43,data1:sources.judgeList.JudgesID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						judgeCorespondance = result;
+						sources.judgeCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -1920,6 +2376,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:79,data1:sources.prosecutorList.ProsecutorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						prosecutorCorespondance = result;
+						sources.prosecutorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -1935,6 +2403,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:52,data1:sources.otherMonitorList.OtherMonitorsID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						otherMonitorCorespondance = result;
+						sources.otherMonitorCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 
@@ -1950,6 +2430,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:26,data1:sources.courtJurisdictionList.CourtJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						courtJurisdictionCorespondance = result;
+						sources.courtJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 
@@ -1965,6 +2457,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:61,data1:sources.probationJurisdictionList.POJurisdictionID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationJurisdictionCorespondance = result;
+						sources.probationJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 
@@ -1980,6 +2484,18 @@ function constructor (id) {
 		myWidget.style.transitionDuration = ".5s";
 		myWidget.style.left = "560px";
 		
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:0};
+		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 				debugger;	 				
+						probationOfficerCorespondance = result;
+						sources.probationOfficerCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
 		//fillCorrespondance();
 	};// @lock
 	
@@ -2139,7 +2655,7 @@ function constructor (id) {
 
 
 
-
+//MAIN REFERRAL TAB BUTTON CLICKS
 
 	courtJurisdictionButton.click = function courtJurisdictionButton_click (event)// @startlock
 	{// @endlock
@@ -2190,6 +2706,24 @@ function constructor (id) {
 		changeWindow("ProbationOfficerContainer","ProbationOfficerComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:85}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						var tempCity = result[0];
+						result[0] = {
+	    					JurisdictionName: "None"
+						};
+						result[result.length] = tempCity;
+		
+						poJurisdiction = result;
+						sources.poJurisdiction.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+		});
 		
 		/*
 		WAF.loadComponent ( {											//load webcomponent into this page component1 element
@@ -2285,6 +2819,15 @@ function constructor (id) {
 		
 	};// @lock
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	SearchReferralButton.click = function SearchReferralButton_click (event)// @startlock
 	{// @endlock
 		
@@ -2296,6 +2839,14 @@ function constructor (id) {
 	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_AssessorMainContainer", "click", AssessorMainContainer.click, "WAF");
+	WAF.addListener(this.id + "_loadCourtJurisdictionCorresp", "click", loadCourtJurisdictionCorresp.click, "WAF");
+	WAF.addListener(this.id + "_loadProbationJurisdictionCorresp", "click", loadProbationJurisdictionCorresp.click, "WAF");
+	WAF.addListener(this.id + "_loadProbationCorrespondence", "click", loadProbationCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadProsecutorCorrespondence", "click", loadProsecutorCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadOtherCorrespondence", "click", loadOtherCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadJudgesCorrespondence", "click", loadJudgesCorrespondence.click, "WAF");
+	WAF.addListener(this.id + "_loadDHSOfficerCorrespondence", "click", loadDHSOfficerCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadAssessorCorrespondence", "click", loadAssessorCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_loadBakAttorneyVersions", "click", loadBakAttorneyVersions.click, "WAF");
 	WAF.addListener(this.id + "_otherMonitorFullList", "onRowClick", otherMonitorFullList.onRowClick, "WAF");
@@ -2306,34 +2857,34 @@ function constructor (id) {
 	WAF.addListener(this.id + "_judgeFullList", "onRowClick", judgeFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dhsOfficerFullList", "onRowClick", dhsOfficerFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_attorneyFullList", "onRowClick", attorneyFullList.onRowClick, "WAF");
-	WAF.addListener(this.id + "_dataGrid19", "onRowClick", dataGrid19.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button39", "click", button39.click, "WAF");
-	WAF.addListener(this.id + "_textField101", "keyup", textField101.keyup, "WAF");
-	WAF.addListener(this.id + "_textField101", "blur", textField101.blur, "WAF");
+	WAF.addListener(this.id + "_assessorCityGrid", "onRowClick", assessorCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_assessorCityButton", "click", assessorCityButton.click, "WAF");
+	WAF.addListener(this.id + "_assessorCityTextbox", "keyup", assessorCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_assessorCityTextbox", "blur", assessorCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBakAssessorVersions", "click", loadBakAssessorVersions.click, "WAF");
 	WAF.addListener(this.id + "_closeAssesorCurrentButton", "click", closeAssesorCurrentButton.click, "WAF");
 	WAF.addListener(this.id + "_submitAssessorCurrentInformation", "click", submitAssessorCurrentInformation.click, "WAF");
-	WAF.addListener(this.id + "_cityComboboxGrid", "onRowClick", cityComboboxGrid.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button28", "click", button28.click, "WAF");
-	WAF.addListener(this.id + "_cityComboBox", "keyup", cityComboBox.keyup, "WAF");
-	WAF.addListener(this.id + "_cityComboBox", "blur", cityComboBox.blur, "WAF");
+	WAF.addListener(this.id + "_courtJurisdictionCityGrid", "onRowClick", courtJurisdictionCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_courtJurisdictionCityButton", "click", courtJurisdictionCityButton.click, "WAF");
+	WAF.addListener(this.id + "_courtJurisdictionCityTextbox", "keyup", courtJurisdictionCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_courtJurisdictionCityTextbox", "blur", courtJurisdictionCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBAKCourtJurisdictionVersions", "click", loadBAKCourtJurisdictionVersions.click, "WAF");
 	WAF.addListener(this.id + "_button23", "click", button23.click, "WAF");
 	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid6", "onRowClick", dataGrid6.onRowClick, "WAF");
-	WAF.addListener(this.id + "_dataGrid18", "onRowClick", dataGrid18.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button38", "click", button38.click, "WAF");
-	WAF.addListener(this.id + "_textField96", "keyup", textField96.keyup, "WAF");
-	WAF.addListener(this.id + "_textField96", "blur", textField96.blur, "WAF");
+	WAF.addListener(this.id + "_probationJurisdictionCityGrid", "onRowClick", probationJurisdictionCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_probationJurisdictionCityButton", "click", probationJurisdictionCityButton.click, "WAF");
+	WAF.addListener(this.id + "_probationJurisdictionCityTextbox", "keyup", probationJurisdictionCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_probationJurisdictionCityTextbox", "blur", probationJurisdictionCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBAKProbationJurisdictionVersions", "click", loadBAKProbationJurisdictionVersions.click, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
-	WAF.addListener(this.id + "_dataGrid12", "onRowClick", dataGrid12.onRowClick, "WAF");
-	WAF.addListener(this.id + "_textField82", "keyup", textField82.keyup, "WAF");
-	WAF.addListener(this.id + "_textField82", "blur", textField82.blur, "WAF");
-	WAF.addListener(this.id + "_button35", "click", button35.click, "WAF");
+	WAF.addListener(this.id + "_probationOfficerCityGrid", "onRowClick", probationOfficerCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_probationOfficerCityTextbox", "keyup", probationOfficerCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_probationOfficerCityTextbox", "blur", probationOfficerCityTextbox.blur, "WAF");
+	WAF.addListener(this.id + "_probationOfficerCityButton", "click", probationOfficerCityButton.click, "WAF");
 	WAF.addListener(this.id + "_loadBAKProbationOfficers", "click", loadBAKProbationOfficers.click, "WAF");
 	WAF.addListener(this.id + "_button33", "click", button33.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid11", "onRowClick", dataGrid11.onRowClick, "WAF");
@@ -2341,51 +2892,51 @@ function constructor (id) {
 	WAF.addListener(this.id + "_textField73", "blur", textField73.blur, "WAF");
 	WAF.addListener(this.id + "_button32", "click", button32.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid17", "onRowClick", dataGrid17.onRowClick, "WAF");
-	WAF.addListener(this.id + "_dataGrid15", "onRowClick", dataGrid15.onRowClick, "WAF");
-	WAF.addListener(this.id + "_textField71", "keyup", textField71.keyup, "WAF");
-	WAF.addListener(this.id + "_textField71", "blur", textField71.blur, "WAF");
-	WAF.addListener(this.id + "_button31", "click", button31.click, "WAF");
+	WAF.addListener(this.id + "_prosecutorCityGrid", "onRowClick", prosecutorCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_prosecutorCityTextbox", "keyup", prosecutorCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_prosecutorCityTextbox", "blur", prosecutorCityTextbox.blur, "WAF");
+	WAF.addListener(this.id + "_prosecutorCityButton", "click", prosecutorCityButton.click, "WAF");
 	WAF.addListener(this.id + "_loadBAKProsecutors", "click", loadBAKProsecutors.click, "WAF");
 	WAF.addListener(this.id + "_button26", "click", button26.click, "WAF");
 	WAF.addListener(this.id + "_button25", "click", button25.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid9", "onRowClick", dataGrid9.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dataGrid7", "onRowClick", dataGrid7.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button24", "click", button24.click, "WAF");
-	WAF.addListener(this.id + "_textField61", "keyup", textField61.keyup, "WAF");
-	WAF.addListener(this.id + "_textField61", "blur", textField61.blur, "WAF");
+	WAF.addListener(this.id + "_otherMonitorCityButton", "click", otherMonitorCityButton.click, "WAF");
+	WAF.addListener(this.id + "_otherMonitorCityTextbox", "keyup", otherMonitorCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_otherMonitorCityTextbox", "blur", otherMonitorCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBAKOtherMonitors", "click", loadBAKOtherMonitors.click, "WAF");
 	WAF.addListener(this.id + "_button21", "click", button21.click, "WAF");
 	WAF.addListener(this.id + "_button19", "click", button19.click, "WAF");
-	WAF.addListener(this.id + "_dataGrid16", "onRowClick", dataGrid16.onRowClick, "WAF");
+	WAF.addListener(this.id + "_otherMonitorCityGrid", "onRowClick", otherMonitorCityGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_loadBakJudgesVersions", "click", loadBakJudgesVersions.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid14", "onRowClick", dataGrid14.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button17", "click", button17.click, "WAF");
 	WAF.addListener(this.id + "_textField49", "keyup", textField49.keyup, "WAF");
 	WAF.addListener(this.id + "_textField49", "blur", textField49.blur, "WAF");
-	WAF.addListener(this.id + "_dataGrid13", "onRowClick", dataGrid13.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button16", "click", button16.click, "WAF");
-	WAF.addListener(this.id + "_textField48", "keyup", textField48.keyup, "WAF");
-	WAF.addListener(this.id + "_textField48", "blur", textField48.blur, "WAF");
+	WAF.addListener(this.id + "_judgesCityGrid", "onRowClick", judgesCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_judgesCityButton", "click", judgesCityButton.click, "WAF");
+	WAF.addListener(this.id + "_judgesCityTextbox", "keyup", judgesCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_judgesCityTextbox", "blur", judgesCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_button15", "click", button15.click, "WAF");
 	WAF.addListener(this.id + "_button13", "click", button13.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid5", "onRowClick", dataGrid5.onRowClick, "WAF");
-	WAF.addListener(this.id + "_dataGrid10", "onRowClick", dataGrid10.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button14", "click", button14.click, "WAF");
-	WAF.addListener(this.id + "_textField24", "keyup", textField24.keyup, "WAF");
-	WAF.addListener(this.id + "_textField24", "blur", textField24.blur, "WAF");
+	WAF.addListener(this.id + "_dhsCityGrid", "onRowClick", dhsCityGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_dhsCityButton", "click", dhsCityButton.click, "WAF");
+	WAF.addListener(this.id + "_dhsCityTextbox", "keyup", dhsCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_dhsCityTextbox", "blur", dhsCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBakDHSOfficerVersions", "click", loadBakDHSOfficerVersions.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid8", "onRowClick", dataGrid8.onRowClick, "WAF");
-	WAF.addListener(this.id + "_dataGrid4", "onRowClick", dataGrid4.onRowClick, "WAF");
+	WAF.addListener(this.id + "_attorneyCityGrid", "onRowClick", attorneyCityGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dataGrid2", "onRowClick", dataGrid2.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button11", "click", button11.click, "WAF");
 	WAF.addListener(this.id + "_textField3", "keyup", textField3.keyup, "WAF");
 	WAF.addListener(this.id + "_textField3", "blur", textField3.blur, "WAF");
-	WAF.addListener(this.id + "_button10", "click", button10.click, "WAF");
-	WAF.addListener(this.id + "_textField2", "keyup", textField2.keyup, "WAF");
-	WAF.addListener(this.id + "_textField2", "blur", textField2.blur, "WAF");
-	WAF.addListener(this.id + "_button6", "click", button6.click, "WAF");
+	WAF.addListener(this.id + "_attorneyCityButton", "click", attorneyCityButton.click, "WAF");
+	WAF.addListener(this.id + "_attorneyCityTextbox", "keyup", attorneyCityTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_attorneyCityTextbox", "blur", attorneyCityTextbox.blur, "WAF");
+	WAF.addListener(this.id + "_loadAttorneyCorrespondence", "click", loadAttorneyCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_button43", "click", button43.click, "WAF");
 	WAF.addListener(this.id + "_button37", "click", button37.click, "WAF");
 	WAF.addListener(this.id + "_button36", "click", button36.click, "WAF");

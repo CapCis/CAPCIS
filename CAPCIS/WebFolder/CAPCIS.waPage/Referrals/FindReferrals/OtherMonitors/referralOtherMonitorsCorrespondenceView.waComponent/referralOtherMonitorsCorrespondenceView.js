@@ -24,14 +24,46 @@ function constructor (id) {
 
 	omCorrespondanceGrid.onRowClick = function omCorrespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('omCorrCont')).setSplitPosition(420);
-		$$(getHtmlId('omSpecificInfoCont')).setSplitPosition(900);
-		
+				
 	};// @lock
 
 	omCorrespondanceActiveBox.change = function omCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('omCorrespondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 51,data1: sources.otherMonitorList.OtherMonitorsID}; 
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						otherMonitorCorespondance = result;
+						sources.otherMonitorCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    	}
+    	else
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 52,data1: sources.otherMonitorList.OtherMonitorsID,data2: currentCorrespondenceActiveSelected};
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						otherMonitorCorespondance = result;
+						sources.otherMonitorCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    
+    	}
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -85,8 +117,7 @@ function constructor (id) {
 
 	omCorCloseButton.click = function omCorCloseButton_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('omCorrCont')).setSplitPosition(1290);
+		
 	};// @lock
 
 	// @region eventManager// @startlock

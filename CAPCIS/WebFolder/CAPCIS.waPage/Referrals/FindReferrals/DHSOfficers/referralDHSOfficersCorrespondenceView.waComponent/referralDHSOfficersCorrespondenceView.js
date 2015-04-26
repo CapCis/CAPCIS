@@ -13,14 +13,51 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var dhsCorrespondenceActiveCombo = {};	// @combobox
 	var button5 = {};	// @button
 	var correspondanceGrid = {};	// @dataGrid
-	var correspondanceActiveBox = {};	// @combobox
 	var button2 = {};	// @button
 	var voidCorrespondanceCheck = {};	// @checkbox
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	dhsCorrespondenceActiveCombo.change = function dhsCorrespondenceActiveCombo_change (event)// @startlock
+	{// @endlock
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('dhsCorrespondenceActiveCombo')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:34,data1:sources.dhsList.DhsInformationID};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 					 				
+						dhsCorespondance = result;
+						sources.dhsCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    	}
+    	else
+    	{
+    		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.dhsList.DhsInformationID,data2:currentCorrespondenceActiveSelected};
+			rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){	
+		 					 				
+						dhsCorespondance = result;
+						sources.dhsCorespondance.sync();
+					},
+					'onError': function(error){						
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+    
+    	}
+	};// @lock
 
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
@@ -50,20 +87,12 @@ function constructor (id) {
 
 	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container6')).setSplitPosition(420);
-		$$(getHtmlId('container3')).setSplitPosition(900);
-
-	};// @lock
-
-	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
-	{// @endlock
-		fillCorrespondance();
+		
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('container6')).setSplitPosition(1290);
+		
 	};// @lock
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
@@ -95,9 +124,9 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_dhsCorrespondenceActiveCombo", "change", dhsCorrespondenceActiveCombo.change, "WAF");
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_correspondanceGrid", "onRowClick", correspondanceGrid.onRowClick, "WAF");
-	WAF.addListener(this.id + "_correspondanceActiveBox", "change", correspondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	// @endregion// @endlock
