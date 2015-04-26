@@ -25,18 +25,6 @@
 	 
 }
 
-#{id}correspondanceActiveBox {
-	 z-index: 4;
-	 width: 110px;
-	 height: 22px;
-	 top: 5px;
-	 left: 300px;
-	
-	 position: absolute;
-	 text-align: left;
-	 
-}
-
 #{id}richText2 {
 	 z-index: 3;
 	 width: 292px;
@@ -190,6 +178,18 @@
 	 left: 5px;
 	
 	 position: absolute;
+	 
+}
+
+#{id}courtCorrespondanceActiveBox {
+	 z-index: 4;
+	 width: 110px;
+	 height: 22px;
+	 top: 5px;
+	 left: 300px;
+	
+	 position: absolute;
+	 text-align: left;
 	 
 }
 

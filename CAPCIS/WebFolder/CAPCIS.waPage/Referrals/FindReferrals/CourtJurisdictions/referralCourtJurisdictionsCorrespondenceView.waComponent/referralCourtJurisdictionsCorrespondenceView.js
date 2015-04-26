@@ -15,7 +15,7 @@ function constructor (id) {
 	// @region namespaceDeclaration// @startlock
 	var button5 = {};	// @button
 	var correspondanceGrid = {};	// @dataGrid
-	var correspondanceActiveBox = {};	// @combobox
+	var courtCorrespondanceActiveBox = {};	// @combobox
 	var button2 = {};	// @button
 	var voidCorrespondanceCheck = {};	// @checkbox
 	// @endregion// @endlock
@@ -51,20 +51,51 @@ function constructor (id) {
 
 	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		$$(getHtmlId('container6')).setSplitPosition(420);
-		$$(getHtmlId('container3')).setSplitPosition(900);
 		
 	};// @lock
 
-	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
+	courtCorrespondanceActiveBox.change = function courtCorrespondanceActiveBox_change (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
+		debugger;
+		var currentCorrespondenceActiveSelected = $$(getHtmlId('courtCorrespondanceActiveBox')).getValue();
+    	if (currentCorrespondenceActiveSelected == "All")
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 25,data1: sources.courtJurisdictionList.CourtJurisdictionID}; 
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						courtJurisdictionCorespondance = result;
+						sources.courtJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    	}
+    	else
+    	{
+    		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 26,data1: sources.courtJurisdictionList.CourtJurisdictionID,data2: currentCorrespondenceActiveSelected};
+        	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						courtJurisdictionCorespondance = result;
+						sources.courtJurisdictionCorespondance.sync();
+					},
+					'onError': function(error){
+						debugger;
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
+    
+    	}
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('container6')).setSplitPosition(1290);
+		
 	};// @lock
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
@@ -102,7 +133,7 @@ function constructor (id) {
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_correspondanceGrid", "onRowClick", correspondanceGrid.onRowClick, "WAF");
-	WAF.addListener(this.id + "_correspondanceActiveBox", "change", correspondanceActiveBox.change, "WAF");
+	WAF.addListener(this.id + "_courtCorrespondanceActiveBox", "change", courtCorrespondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	// @endregion// @endlock
