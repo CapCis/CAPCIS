@@ -36,13 +36,7 @@ function constructor (id) {
 		
 		
 		
-		var myObject3 = {
-	    token: userConfigObj.secToken,
-	    id: userConfigObj.userID,
-	    major: 3,
-	    minor: 3
-		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-		
+		var myObject3 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 3};
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						var tempCity = result[0];
@@ -60,12 +54,7 @@ function constructor (id) {
 					'params': [myObject3]
 				});
 		
-		var myObject4 = {
-		    token: userConfigObj.secToken,
-		    id: userConfigObj.userID,
-		    major: 3,
-		    minor: 4
-		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject4 = {token: userConfigObj.secToken, id: userConfigObj.userID,major: 3,minor: 4};
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						var tempReporting = result[0];
@@ -80,7 +69,7 @@ function constructor (id) {
 					'params': [myObject4]
 				});
 	
-	
+		
 		
 		
 		
@@ -146,24 +135,24 @@ function constructor (id) {
 	var otherMonitorCityTextbox = {};	// @textField
 	var loadBAKOtherMonitors = {};	// @button
 	var button21 = {};	// @button
-	var button19 = {};	// @button
+	var submitOtherMonitorInformation = {};	// @button
 	var otherMonitorCityGrid = {};	// @dataGrid
 	var loadBakJudgesVersions = {};	// @button
-	var dataGrid14 = {};	// @dataGrid
-	var button17 = {};	// @button
-	var textField49 = {};	// @textField
+	var judgeJurisdictionGrid = {};	// @dataGrid
+	var judgeJurisdictionButton = {};	// @button
+	var judgeJurisdictionTextbox = {};	// @textField
 	var judgesCityGrid = {};	// @dataGrid
 	var judgesCityButton = {};	// @button
 	var judgesCityTextbox = {};	// @textField
 	var button15 = {};	// @button
-	var button13 = {};	// @button
+	var submitJudgeInformation = {};	// @button
 	var dataGrid5 = {};	// @dataGrid
 	var dhsCityGrid = {};	// @dataGrid
 	var dhsCityButton = {};	// @button
 	var dhsCityTextbox = {};	// @textField
 	var loadBakDHSOfficerVersions = {};	// @button
 	var button3 = {};	// @button
-	var button1 = {};	// @button
+	var submitDHSInformation = {};	// @button
 	var dataGrid8 = {};	// @dataGrid
 	var attorneyCityGrid = {};	// @dataGrid
 	var dataGrid2 = {};	// @dataGrid
@@ -1034,6 +1023,66 @@ function constructor (id) {
 	
 	
 	
+	judgeJurisdictionGrid.onRowClick = function judgeJurisdictionGrid_onRowClick (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
+		grid.style.display = 'none';
+		
+		var recValue = $$(getHtmlId('judgeJurisdictionGrid')).sourceAtt.getValue();
+		$$(getHtmlId('judgeJurisdictionTextbox')).setValue(recValue);
+	};// @lock
+
+	judgeJurisdictionButton.click = function judgeJurisdictionButton_click (event)// @startlock
+	{// @endlock
+		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
+		if(grid.style.display == 'none')
+		{
+			grid.style.display = 'block';
+		}
+		else
+		{
+			grid.style.display = 'none';
+		}
+	};// @lock
+
+	judgeJurisdictionTextbox.keyup = function judgeJurisdictionTextbox_keyup (event)// @startlock
+	{// @endlock
+		if(event.keyCode ===13)
+		{
+			var currentInput = $$($comp.id+'_judgeJurisdictionTextbox').getValue();
+			$$($comp.id+'_judgeJurisdictionTextbox').setValue(sources.jurisdiction.CourtJurisdiction);
+			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
+			grid.style.display = 'none';
+		}
+		
+		else
+		{
+			
+			jurisdiction=tempJurisdiction;
+			sources.jurisdiction.sync();
+
+			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
+			grid.style.display = 'block';
+
+			var currentInput = $$($comp.id+'_judgeJurisdictionTextbox').getValue();//textInput.value;
+			sources.jurisdiction.query('CourtJurisdiction = :1 order by CourtJurisdiction', { params: [currentInput + "*"]});
+		}
+	};// @lock
+
+	judgeJurisdictionTextbox.blur = function judgeJurisdictionTextbox_blur (event)// @startlock
+	{// @endlock
+		var currentInput = $$($comp.id+'_judgeJurisdictionTextbox').getValue();
+			$$($comp.id+'_judgeJurisdictionTextbox').setValue(sources.city.CityListing);
+			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
+			grid.style.display = 'none';
+		
+	};// @lock
+	
+	
+	
+	
+	
+	
 	
 	otherMonitorCityGrid.onRowClick = function otherMonitorCityGrid_onRowClick (event)// @startlock
 	{// @endlock
@@ -1177,7 +1226,7 @@ function constructor (id) {
 	
 	probationOfficerCityTextbox.keyup = function probationOfficerCityTextbox_keyup (event)// @startlock
 	{// @endlock
-		if(event.keyCode ===13)
+		if(event.keyCode === 13)
 		{
 			var currentInput = $$($comp.id+'_probationOfficerCityTextbox').getValue();
 			$$($comp.id+'_probationOfficerCityTextbox').setValue(sources.poJurisdiction.JurisdictionName);
@@ -1188,7 +1237,7 @@ function constructor (id) {
 		else
 		{
 			
-			poJurisdiction=tempStore2;
+			poJurisdiction = tempJurisdiction;
 			sources.poJurisdiction.sync();
 
 			var grid = document.getElementById($comp.id+'_probationOfficerCityGrid');
@@ -1376,8 +1425,8 @@ function constructor (id) {
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
 		debugger;
-		var currentCity = sources.assessorList.AssessorCity; //$$($comp.id + "_cityComboBox").getValue();
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		//var currentCity = sources.assessorList.AssessorCity; //$$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.assessorList.AssessorCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -1385,7 +1434,7 @@ function constructor (id) {
 						city = result;
 						if( city.length ===0)
 						{
-							var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
+							var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:sources.assessorList.AssessorCity};
 							rpcDInsert.setInsertAsync({
 		 							'onSuccess': function(result){
 						
@@ -1442,7 +1491,7 @@ function constructor (id) {
 
 
 
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:sources.assessorList.AssessorInformationID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakAssessorInfo = result;
@@ -1454,10 +1503,7 @@ function constructor (id) {
 					'params': [myObject5]
 				});
 	 	
-	 	
 	};// @lock
-
-
 
 
 
@@ -1467,60 +1513,67 @@ function constructor (id) {
 
 	submitAttorneyInformation.click = function submitAttorneyInformation_click (event)// @startlock
 	{// @endlock
-		var currentCity = $$($comp.id + "_attCityComboBox").getValue();
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
+		//var currentCity = $$($comp.id + "_attCityComboBox").getValue();
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.attorneyList.AttorneyCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelectAsync({
+	 				'onSuccess': function(result){
+	 					city = result;
+						if( city.length ===0)
+						{
+							var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:attorneyList.AttorneyCity};
+							rpcDInsert.setInsertAsync({
+		 							'onSuccess': function(result){
+						
+									},
+									'onError': function(error){
+										console.log(error);
+									},
+									'params': [myObject7]
+								});
+						}
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
 		
-		if( city.length ===0)
+		
+		
+		var myObject7 = 
 		{
-			
-			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-		}
-		
-			var myObject7 = 
-			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:3,
-				data1:$$(getHtmlId("attName")).getValue(),
-				data2:$$(getHtmlId("attPhone")).getValue(),
-				data3:$$(getHtmlId("attEmail")).getValue(),
-				data4:$$(getHtmlId("attFax")).getValue(),
-				data5:$$(getHtmlId("attAddress")).getValue(),
-				data6:$$(getHtmlId("attCityComboBox")).getValue(),
-				data7:$$(getHtmlId("attState")).getValue(),
-				data8:$$(getHtmlId("attZip")).getValue(),
-				data9:$$(getHtmlId("attExt")).getValue(),
-				data10:$$(getHtmlId("attAdditional")).getValue(),
-				data11:$$(getHtmlId("attNotes")).getValue(),
-				data12:$$(getHtmlId("attFullName")).getValue(),
-				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("attInactive")).getValue(),
-				data16:$$(getHtmlId("attPublicDef")).getValue(),
-				data17:$$(getHtmlId("attStaffInfo")).getValue()
-				
-				
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+				data1:sources.attorneyList.AttorneyName,
+				data2:sources.attorneyList.AttorneyPhone,
+				data3:sources.attorneyList.AttorneyEmail,
+				data4:sources.attorneyList.AttorneyFax,
+				data5:sources.attorneyList.AttorneyAddress,
+				data6:sources.attorneyList.AttorneyCity,
+				data7:sources.attorneyList.AttorneyState,
+				data8:sources.attorneyList.AttorneyZipCode,
+				data9:sources.attorneyList.AttorneyPhoneExt,
+				data10:sources.attorneyList.AttorneyAdditionalPhone,
+				data11:sources.attorneyList.AttorneyNotes,
+				data12:sources.attorneyList.AttorneyFullNameDisplay,
+				data13:sources.reporting.ReportingMethod,
+				data14:sources.attorneyList.AttorneyInformationID,
+				data15:sources.attorneyList.InactiveAttorneyInfo,
+				data16:sources.attorneyList.PublicDefender,
+				data17:sources.attorneyList.AttorneyStaffInfo
+		}; 
 	 		
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
+	 	rpcDUpdate.setUpdateAsync({
+		 		'onSuccess': function(result){
+					debugger;	
+				},
+				'onError': function(error){
+					debugger;
+					console.log(error);
+				},
+				'params': [myObject7]
+		});
 
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:sources.attorneyList.AttorneyInformationID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 						bakAttorneyInfo = result;
@@ -1536,6 +1589,246 @@ function constructor (id) {
 
 
 
+
+
+
+
+
+	submitDHSInformation.click = function submitDHSInformation_click (event)// @startlock
+	{// @endlock
+		//var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.dhsList.DhsCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						city = result;
+						if( city.length ===0)
+						{
+							var myObject7 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:18,data1:sources.dhsList.DhsCity};
+							rpcDInsert.setInsertAsync({
+		 							'onSuccess': function(result){
+						
+									},
+									'onError': function(error){
+										console.log(error);
+									},
+									'params': [myObject7]
+								});
+						}
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+		
+		
+		
+			
+		var myObject7 = 
+		{
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:7,
+				data1:sources.dhsList.DhsName,
+				data2:sources.dhsList.DhsPhone,
+				data3:sources.dhsList.DhsEmail,
+				data4:sources.dhsList.DhsFax,
+				data5:sources.dhsList.DhsAddress,
+				data6:sources.dhsList.DhsCity,
+				data7:sources.dhsList.DhsState,
+				data8:sources.dhsList.DhsZipCode,
+				data9:sources.dhsList.DhsPhoneExt,
+				data10:sources.dhsList.DhsAlternatPhone,
+				data11:sources.dhsList.DhsNotes,
+				data12:sources.dhsList.DhsFullNameDisplay,
+				data13:sources.reporting.ReportingMethod,
+				data14:sources.dhsList.DhsInformationID,
+				data15:sources.dhsList.InactiveDhsInfo
+		}; 
+	 	rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+		});
+			
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:36,data1:DhsInformationID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakDhsInfo = result;
+						sources.bakDhsInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+		
+	};// @lock
+
+
+
+
+
+
+
+
+
+	submitJudgeInformation.click = function submitJudgeInformation_click (event)// @startlock
+	{// @endlock
+		//var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:83,data1:sources.judgeList.JudgeCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect({
+		 			'onSuccess': function(result){
+						city = result;
+						if( city.length ===0)
+						{
+							var myObject7 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:18,data1:sources.judgeList.JudgeCity};
+							rpcDInsert.setInsertAsync({
+		 							'onSuccess': function(result){
+						
+									},
+									'onError': function(error){
+										console.log(error);
+									},
+									'params': [myObject7]
+								});
+						}
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+		
+		var myObject7 = 
+		{
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:9,
+				data1:sources.judgeList.Judge,
+				data2:sources.judgeList.JudgeOfficePhone,
+				data3:sources.judgeList.JudgeEmail,
+				data4:sources.judgeList.JudgeFax,
+				data5:sources.judgeList.JudgeAddress,
+				data6:sources.judgeList.JudgeCity,
+				data7:sources.judgeList.JudgeState,
+				data8:sources.judgeList.JudgeZipCode,
+				data9:sources.judgeList.JudgeOfficePhoneExt,
+				data10:sources.judgeList.JudgeMobilePhone,
+				data11:sources.judgeList.JudgeNotes,
+				data12:sources.judgeList.JudgeFullNameDisplay,
+				data13:sources.reporting.ReportingMethod,
+				data14:sources.judgeList.JudgesID,
+				data15:sources.judgeList.InactiveJudge,
+				data16:sources.judgeList.JudgeJurisdiction
+		}; 
+	 	rpcDUpdate.setUpdateAsync({
+		 		'onSuccess': function(result){
+						
+				},
+				'onError': function(error){
+					console.log(error);
+				},
+				'params': [myObject7]
+		});
+				
+	 		
+	 		
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:45,data1:sources.judgeList.JudgesID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakJudgeInfo = result;
+						sources.bakJudgeInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
+
+
+
+
+
+
+
+
+	submitOtherMonitorInformation.click = function submitOtherMonitorInformation_click (event)// @startlock
+	{// @endlock
+		//var currentCity = $$($comp.id + "_omCityComboBox").getValue();
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:83,data1:sources.otherMonitorList.OtherMonitorsCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect({
+		 			'onSuccess': function(result){
+						city = result;
+						if( city.length === 0)
+						{
+							var myObject7 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:18,data1:sources.otherMonitorList.OtherMonitorsCity};
+							rpcDInsert.setInsertAsync({
+		 							'onSuccess': function(result){
+						
+									},
+									'onError': function(error){
+										console.log(error);
+									},
+									'params': [myObject7]
+								});
+						}
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+		});
+		
+		
+		var myObject7 = 
+		{
+				
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor: 11,
+				data1:sources.otherMonitorList.OtherMonitors,
+				data2:sources.otherMonitorList.OtherMonitorsOfficePhone,
+				data3:sources.otherMonitorList.OtherMonitorsEmail,
+				data4:sources.otherMonitorList.OtherMonitorsFax,
+				data5:sources.otherMonitorList.OtherMonitorsAddress,
+				data6:sources.otherMonitorList.OtherMonitorsCity,
+				data7:sources.otherMonitorList.OtherMonitorsState,
+				data8:sources.otherMonitorList.OtherMonitorsZipCode,
+				data9:sources.otherMonitorList.OtherMonitorsOfficePhoneExt,
+				data10:sources.otherMonitorList.OtherMonitorsMobilePhone,
+				data11:sources.otherMonitorList.OtherMonitorsNotes,
+				data12:sources.otherMonitorList.OtherMonitorsFullNameDisplay,
+				data13:sources.reporting.ReportingMethod,
+				data14:sources.sources.otherMonitorList.OtherMonitorsID,
+				data15:sources.otherMonitorList.InactiveOtherMonitors
+		};
+	 	rpcDUpdate.setUpdateAsync({
+		 		'onSuccess': function(result){
+						
+				},
+				'onError': function(error){
+					console.log(error);
+				},
+				'params': [myObject7]
+			});
+				
+	 		
+				
+				
+	 		
+	 		
+		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:54,data1:sources.otherMonitorList.OtherMonitorsID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakOtherMonitorInfo = result;
+						sources.bakOtherMonitorInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
 
 
 
@@ -1924,131 +2217,12 @@ function constructor (id) {
 		$$(getHtmlId('mainOtherMonitorsCont')).setSplitPosition(1290);
 	};// @lock
 
-	button19.click = function button19_click (event)// @startlock
-	{// @endlock
-		var currentCity = $$($comp.id + "_omCityComboBox").getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
-		
-		if( city.length ===0)
-		{
-			
-			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-		}
-			var myObject7 = 
-			{
-				
-				token:'7836140170460568' ,id:'1',major:3,minor: 11,
-				data1:$$(getHtmlId("omName")).getValue(),
-				data2:$$(getHtmlId("omPhone")).getValue(),
-				data3:$$(getHtmlId("omEmail")).getValue(),
-				data4:$$(getHtmlId("omFax")).getValue(),
-				data5:$$(getHtmlId("omAddress")).getValue(),
-				data6:$$(getHtmlId("omCityComboBox")).getValue(),
-				data7:$$(getHtmlId("omState")).getValue(),
-				data8:$$(getHtmlId("omZip")).getValue(),
-				data9:$$(getHtmlId("omExt")).getValue(),
-				data10:$$(getHtmlId("omAdditional")).getValue(),
-				data11:$$(getHtmlId("omNotes")).getValue(),
-				data12:$$(getHtmlId("omFullName")).getValue(),
-				data13:$$(getHtmlId("omReportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("omInactive")).getValue()
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);vo
-					},
-					'params': [myObject7]
-				});
-				
-	 		
-				
-				
-	 		
-	 		
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:54,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
-
+	
 	
 
 	
 
-	dataGrid14.onRowClick = function dataGrid14_onRowClick (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
-		grid.style.display = 'none';
-		
-		var recValue = $$(getHtmlId('judgeJurisdictionGrid')).sourceAtt.getValue();
-		$$(getHtmlId('judgeJurisdiction')).setValue(recValue);
-	};// @lock
-
-	button17.click = function button17_click (event)// @startlock
-	{// @endlock
-		var grid = document.getElementById(getHtmlId('judgeJurisdictionGrid'));
-		if(grid.style.display == 'none')
-		{
-			grid.style.display = 'block';
-		}
-		else
-		{
-			grid.style.display = 'none';
-		}
-	};// @lock
-
-	textField49.keyup = function textField49_keyup (event)// @startlock
-	{// @endlock
-		if(event.keyCode ===13)
-		{
-			var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();
-			$$($comp.id+'_judgeJurisdiction').setValue(sources.jurisdiction.CourtJurisdiction);
-			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
-			grid.style.display = 'none';
-		}
-		
-		else
-		{
-			
-			jurisdiction=tempStore2;
-			sources.jurisdiction.sync();
-
-			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
-			grid.style.display = 'block';
-
-			var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();//textInput.value;
-			sources.jurisdiction.query('CourtJurisdiction = :1 order by CourtJurisdiction', { params: [currentInput + "*"]});
-		}
-	};// @lock
-
-	textField49.blur = function textField49_blur (event)// @startlock
-	{// @endlock
-		var currentInput = $$($comp.id+'_judgeJurisdiction').getValue();
-			$$($comp.id+'_judgeJurisdiction').setValue(sources.city.CityListing);
-			var grid = document.getElementById($comp.id+'_judgeJurisdictionGrid');
-			grid.style.display = 'none';
-		
-	};// @lock
+	
 
 	
 
@@ -2057,71 +2231,7 @@ function constructor (id) {
 		$$(getHtmlId('mainJudgeCont')).setSplitPosition(1290);
 	};// @lock
 
-	button13.click = function button13_click (event)// @startlock
-	{// @endlock
-		var currentCity = $$($comp.id + "_cityComboBox").getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
-		
-		if( city.length ===0)
-		{
-			
-			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-		}
-			var myObject7 = 
-			{
-				
-				token:'7836140170460568' ,id:'1',major:3,minor:9,
-				data1:$$(getHtmlId("judgeNameField")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("judgePhoneField")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("judgeEmailField")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("judgeFaxField")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("judgeAddressField")).getValue(),
-				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("judgeStateField")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("judgeZipField")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("judgeExtField")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("judgeMobileField")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("judgeNotesField")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("judgeFullNameField")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("reportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("judgeInactiveCheckBox")).getValue(),
-				data16:$$(getHtmlId("judgeJurisdiction")).getValue()
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-				
-	 		
-	 		
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:45,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
-
+	
 	
 
 	
@@ -2133,71 +2243,7 @@ function constructor (id) {
 		$$(getHtmlId('mainAssessorCont')).setSplitPosition(1290);
 	};// @lock
 
-	button1.click = function button1_click (event)// @startlock
-	{// @endlock
-		var currentCity = $$($comp.id + "_cityComboBox").getValue();
-		var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
-		
-		if( city.length ===0)
-		{
-			
-			var myObject7 = {token:'7836140170460568' ,id:'1',major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-		}
-		
-
-		changed = false;
-		
-			var myObject7 = 
-			{
-				token:'7836140170460568' ,id:'1',major:3,minor:7,
-				data1:$$(getHtmlId("dhsNameField")).sourceAtt.getValue(),
-				data2:$$(getHtmlId("dhsPhoneField")).sourceAtt.getValue(),
-				data3:$$(getHtmlId("dhsEmailField")).sourceAtt.getValue(),
-				data4:$$(getHtmlId("dhsFaxField")).sourceAtt.getValue(),
-				data5:$$(getHtmlId("dhsAddressField")).sourceAtt.getValue(),
-				data6:$$(getHtmlId("cityComboBox")).getValue(),
-				data7:$$(getHtmlId("dhsStateField")).sourceAtt.getValue(),
-				data8:$$(getHtmlId("dhsZipField")).sourceAtt.getValue(),
-				data9:$$(getHtmlId("dhsExtField")).sourceAtt.getValue(),
-				data10:$$(getHtmlId("dhsMobileField")).sourceAtt.getValue(),
-				data11:$$(getHtmlId("dhsNotesField")).sourceAtt.getValue(),
-				data12:$$(getHtmlId("dhsFullNameField")).sourceAtt.getValue(),
-				data13:$$(getHtmlId("reportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("dhsInactiveCheckBox")).getValue()
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-			
-			var myObject5 = {token:'7836140170460568' ,id:'1',major:3,minor:36,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-		
-	};// @lock
+	
 
 	
 
@@ -2741,6 +2787,18 @@ function constructor (id) {
 		changeWindow("JudgeContainer","JudgeComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
+		var myObject = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:84}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+		 		rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						tempJurisdiction = result;
+						jurisdiction = result;
+						sources.jurisdiction.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+		});
 		refillCity();
 	};// @lock
 
@@ -2856,19 +2914,19 @@ function constructor (id) {
 	WAF.addListener(this.id + "_otherMonitorCityTextbox", "blur", otherMonitorCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBAKOtherMonitors", "click", loadBAKOtherMonitors.click, "WAF");
 	WAF.addListener(this.id + "_button21", "click", button21.click, "WAF");
-	WAF.addListener(this.id + "_button19", "click", button19.click, "WAF");
+	WAF.addListener(this.id + "_submitOtherMonitorInformation", "click", submitOtherMonitorInformation.click, "WAF");
 	WAF.addListener(this.id + "_otherMonitorCityGrid", "onRowClick", otherMonitorCityGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_loadBakJudgesVersions", "click", loadBakJudgesVersions.click, "WAF");
-	WAF.addListener(this.id + "_dataGrid14", "onRowClick", dataGrid14.onRowClick, "WAF");
-	WAF.addListener(this.id + "_button17", "click", button17.click, "WAF");
-	WAF.addListener(this.id + "_textField49", "keyup", textField49.keyup, "WAF");
-	WAF.addListener(this.id + "_textField49", "blur", textField49.blur, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdictionGrid", "onRowClick", judgeJurisdictionGrid.onRowClick, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdictionButton", "click", judgeJurisdictionButton.click, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdictionTextbox", "keyup", judgeJurisdictionTextbox.keyup, "WAF");
+	WAF.addListener(this.id + "_judgeJurisdictionTextbox", "blur", judgeJurisdictionTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_judgesCityGrid", "onRowClick", judgesCityGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_judgesCityButton", "click", judgesCityButton.click, "WAF");
 	WAF.addListener(this.id + "_judgesCityTextbox", "keyup", judgesCityTextbox.keyup, "WAF");
 	WAF.addListener(this.id + "_judgesCityTextbox", "blur", judgesCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_button15", "click", button15.click, "WAF");
-	WAF.addListener(this.id + "_button13", "click", button13.click, "WAF");
+	WAF.addListener(this.id + "_submitJudgeInformation", "click", submitJudgeInformation.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid5", "onRowClick", dataGrid5.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dhsCityGrid", "onRowClick", dhsCityGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dhsCityButton", "click", dhsCityButton.click, "WAF");
@@ -2876,7 +2934,7 @@ function constructor (id) {
 	WAF.addListener(this.id + "_dhsCityTextbox", "blur", dhsCityTextbox.blur, "WAF");
 	WAF.addListener(this.id + "_loadBakDHSOfficerVersions", "click", loadBakDHSOfficerVersions.click, "WAF");
 	WAF.addListener(this.id + "_button3", "click", button3.click, "WAF");
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
+	WAF.addListener(this.id + "_submitDHSInformation", "click", submitDHSInformation.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid8", "onRowClick", dataGrid8.onRowClick, "WAF");
 	WAF.addListener(this.id + "_attorneyCityGrid", "onRowClick", attorneyCityGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_dataGrid2", "onRowClick", dataGrid2.onRowClick, "WAF");

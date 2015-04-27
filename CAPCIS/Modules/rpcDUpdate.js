@@ -20,7 +20,7 @@ exports.setUpdate = function setUpdate(myObject)
 	//connection.close;
 	if(myResults.length > 0)
 	{
-		
+		debugger;
 		var updateStatement = dBUpdateBuilder.buildQuery(myObject);
 		//var connection = serverUtil.getDBConnection();
 		connection.execute(updateStatement);
