@@ -3,12 +3,45 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}button5 {
-	 z-index: 5;
-	 width: 75px;
-	 height: 25px;
+#{id}label4 {
+	 z-index: 6;
+	 width: 29px;
+	 height: 13px;
+	 top: 256px;
+	 left: 43px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}checkbox1 {
+	 z-index: 6;
+	 width: 16px;
+	 height: 16px;
 	 top: 255px;
-	 left: 335px;
+	 left: 17px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}button1 {
+	 z-index: 8;
+	 width: 74px;
+	 height: 22px;
+	 top: 249px;
+	 left: 331px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}combobox1 {
+	 z-index: 7;
+	 width: 118px;
+	 height: 24px;
+	 top: 4px;
+	 left: 272px;
 	
 	 position: absolute;
 	 
@@ -112,39 +145,6 @@
 	 
 }
 
-#{id}button2 {
-	 z-index: 5;
-	 width: 75px;
-	 height: 25px;
-	 top: 255px;
-	 left: 220px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}voidCorrespondanceCheck {
-	 z-index: 4;
-	 width: 22px;
-	 height: 22px;
-	 top: 255px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label1 {
-	 z-index: 4;
-	 width: 170px;
-	 height: 13px;
-	 top: 259px;
-	 left: 37px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText12 {
 	 z-index: 3;
 	 width: 125px;
@@ -176,17 +176,6 @@
 	 height: 210px;
 	 top: 30px;
 	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}dhsCorrespondenceActiveCombo {
-	 z-index: 7;
-	 width: 108px;
-	 height: 24px;
-	 top: 2px;
-	 left: 283px;
 	
 	 position: absolute;
 	 

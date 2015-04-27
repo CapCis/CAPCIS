@@ -21,53 +21,20 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	button5.click = function button5_click (event)// @startlock
-	{// @endlock
-		
-		
-			var x = $$(getHtmlId("newCorrespondanceField"));
-			var myObject8 = 
-			{
-				token:'7836140170460568' ,id:'1',major:3,minor:8,
-				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
-				data2:currentID
-			}; //dontf
-			
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject8]
-				});
-			
-			$$(getHtmlId('newCorrespondanceField')).setValue("");
-			fillCorrespondance();
-	};// @lock
-
-	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
-	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
-	{// @endlock
-		debugger;
+	function fillCorrespondance()
+	{
 		var currentCorrespondenceActiveSelected = $$(getHtmlId('correspondanceActiveBox')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
     		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 42,data1: sources.judgeList.JudgesID}; 
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 						judgeCorespondance = result;
 						sources.judgeCorespondance.sync();
 					},
 					'onError': function(error){
-						debugger;
+						
 						console.log(error);
 					},
 					'params': [myObject2]
@@ -78,18 +45,54 @@ function constructor (id) {
     		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 43,data1: sources.judgeList.JudgesID,data2: currentCorrespondenceActiveSelected};
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 						judgeCorespondance = result;
 						sources.judgeCorespondance.sync();
 					},
 					'onError': function(error){
-						debugger;
+						
 						console.log(error);
 					},
 					'params': [myObject2]
 				});
     
     	}
+	}
+	button5.click = function button5_click (event)// @startlock
+	{// @endlock
+		
+		
+			var x = $$(getHtmlId("newCorrespondanceField"));
+			var myObject8 = 
+			{
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:8,
+				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data2:sources.judgeList.JudgesID
+			}; //dontf
+			
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						fillCorrespondance();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
+			
+			$$(getHtmlId('newCorrespondanceField')).setValue("");
+			
+	};// @lock
+
+	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
+	{// @endlock
+		
+	};// @lock
+
+	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();
+		
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock

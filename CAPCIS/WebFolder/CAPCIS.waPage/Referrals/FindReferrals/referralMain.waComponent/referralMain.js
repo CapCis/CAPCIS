@@ -174,7 +174,7 @@ function constructor (id) {
 	var loadAttorneyCorrespondence = {};	// @button
 	var button43 = {};	// @button
 	var button37 = {};	// @button
-	var button36 = {};	// @button
+	var submitAttorneyInformation = {};	// @button
 	var assessorFullList = {};	// @dataGrid
 	var attorneyDataGird = {};	// @dataGrid
 	var newProbJ = {};	// @menuItem
@@ -202,9 +202,7 @@ function constructor (id) {
 
 	AssessorMainContainer.click = function AssessorMainContainer_click (event)// @startlock
 	{// @endlock
-		//debugger;
-		//$$(getHtmlId('assessorCityGrid'))
-		//document.getElementById(getHtmlId('assessorCityGrid').style.display = "none";
+		
 	};// @lock
 
 	
@@ -595,7 +593,7 @@ function constructor (id) {
 			path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralDHSOfficersCorrespondenceView.waComponent'	
 		});
 		
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.attorneyList.AttorneyInformationID,data2:0};
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:35,data1:sources.dhsList.DhsInformationID,data2:0};
 		rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
 		 				debugger;
@@ -808,8 +806,8 @@ function constructor (id) {
 
 	assessorCityButton.click = function assessorCityButton_click (event)// @startlock
 	{// @endlock
-		city=tempStore;
-		sources.city.sync();
+	
+		refillCity();  //reset the city data for combobox grid display
 			
 		var grid = document.getElementById(getHtmlId('assessorCityGrid'));
 		if(grid.style.display == 'none')
@@ -821,7 +819,7 @@ function constructor (id) {
 			grid.style.display = 'none';
 		}
 	};// @lock
-
+	
 	assessorCityTextbox.keyup = function assessorCityTextbox_keyup (event)// @startlock
 	{// @endlock
 		
@@ -836,8 +834,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_assessorCityGrid');
 			grid.style.display = 'block';
@@ -870,6 +867,8 @@ function constructor (id) {
 	
 	attorneyCityButton.click = function attorneyCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('attorneyCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -894,8 +893,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_attorneyCityGrid');
 			grid.style.display = 'block';
@@ -928,6 +926,8 @@ function constructor (id) {
 
 	dhsCityButton.click = function dhsCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('dhsCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -952,8 +952,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_dhsCityGrid');
 			grid.style.display = 'block';
@@ -977,6 +976,7 @@ function constructor (id) {
 	
 	judgesCityGrid.onRowClick = function judgesCityGrid_onRowClick (event)// @startlock
 	{// @endlock
+		
 		var grid = document.getElementById(getHtmlId('judgesCityGrid'));
 		grid.style.display = 'none';
 		
@@ -986,6 +986,8 @@ function constructor (id) {
 
 	judgesCityButton.click = function judgesCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('judgesCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -1010,8 +1012,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_judgesCityGrid');
 			grid.style.display = 'block';
@@ -1044,6 +1045,8 @@ function constructor (id) {
 	};// @startlock
 	otherMonitorCityButton.click = function otherMonitorCityButton_click (event)
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('otherMonitorCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -1068,8 +1071,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_otherMonitorCityGrid');
 			grid.style.display = 'block';
@@ -1101,6 +1103,7 @@ function constructor (id) {
 	
 	prosecutorCityButton.click = function prosecutorCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
 		
 		var grid = document.getElementById(getHtmlId('prosecutorCityGrid'));
 		if(grid.style.display == 'none')
@@ -1126,8 +1129,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_prosecutorCityGrid');
 			grid.style.display = 'block';
@@ -1160,6 +1162,8 @@ function constructor (id) {
 	
 	probationOfficerCityButton.click = function probationOfficerCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('probationOfficerCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -1220,6 +1224,8 @@ function constructor (id) {
 
 	probationJurisdictionCityButton.click = function probationJurisdictionCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('probationJurisdictionCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -1244,8 +1250,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_probationJurisdictionCityGrid');
 			grid.style.display = 'block';
@@ -1278,6 +1283,8 @@ function constructor (id) {
 
 	courtJurisdictionCityButton.click = function courtJurisdictionCityButton_click (event)// @startlock
 	{// @endlock
+		refillCity();
+		
 		var grid = document.getElementById(getHtmlId('courtJurisdictionCityGrid'));
 		if(grid.style.display == 'none')
 		{
@@ -1302,8 +1309,7 @@ function constructor (id) {
 		else
 		{
 			
-			city=tempStore;
-			sources.city.sync();
+			refillCity();
 
 			var grid = document.getElementById($comp.id+'_courtJurisdictionCityGrid');
 			grid.style.display = 'block';
@@ -1364,33 +1370,42 @@ function constructor (id) {
 
 
 
-
+//SUBMIT REFERRAL DATA SECTION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
-		
-		var currentCity = $$($comp.id + "_cityComboBox").getValue();
+		debugger;
+		var currentCity = sources.assessorList.AssessorCity; //$$($comp.id + "_cityComboBox").getValue();
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
-		
-		if( city.length ===0)
-		{
-			
-			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
+	 	
+	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
+		 				debugger;
+						city = result;
+						if( city.length ===0)
+						{
+							var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
+							rpcDInsert.setInsertAsync({
+		 							'onSuccess': function(result){
 						
+									},
+									'onError': function(error){
+										console.log(error);
+									},
+									'params': [myObject7]
+								});
+						}
 					},
 					'onError': function(error){
 						console.log(error);
 					},
-					'params': [myObject7]
+					'params': [myObject5]
 				});
-		}
-		var phone = $$(getHtmlId("assessorPhoneField")).getValue();
-		var fax = $$(getHtmlId("assesorFaxField")).getValue();
-		var mobile = $$(getHtmlId("assesorMobileField")).getValue();
+		
+		//var phone = $$(getHtmlId("assessorPhoneField")).getValue();
+		//var fax = $$(getHtmlId("assesorFaxField")).getValue();
+		//var mobile = $$(getHtmlId("assesorMobileField")).getValue();
 		
 		
 		var myObject7 = {
@@ -1398,21 +1413,21 @@ function constructor (id) {
     		id: userConfigObj.userID,
     		major: 3,
     		minor: 0,
-    		data1: $$(getHtmlId("assessorNameField")).getValue(),
-    		data2: phone,
-    		data3: $$(getHtmlId("assesorEmailField")).getValue(),
-    		data4: fax,
-    		data5: $$(getHtmlId("assesorAddressField")).getValue(),
-    		data6: $$(getHtmlId("cityComboBox")).getValue(),
-    		data7: $$(getHtmlId("assesorStateField")).getValue(),
-    		data8: $$(getHtmlId("assesorZipField")).getValue(),
-    		data9: $$(getHtmlId("assesorExtField")).getValue(),
-    		data10: mobile,
-    		data11: $$(getHtmlId("assesorNotesField")).getValue(),
-    		data12: $$(getHtmlId("assessorFullNameField")).getValue(),
-    		data13: $$(getHtmlId("reportingComboBox")).getValue(),
-    		data14: currentID,
-    		data15: $$(getHtmlId("assessorInactiveCheckBox")).getValue()
+    		data1: sources.assessorList.AssessorName, //$$(getHtmlId("assessorNameField")).getValue(),
+    		data2: sources.assessorList.AssesorPhone, //phone,
+    		data3: sources.assessorList.AssessorEmail, //$$(getHtmlId("assesorEmailField")).getValue(),
+    		data4: sources.assessorList.AssessorFax, //fax,
+    		data5: sources.assessorList.AssessorAddress, //$$(getHtmlId("assesorAddressField")).getValue(),
+    		data6: sources.assessorList.AssessorCity, //$$(getHtmlId("cityComboBox")).getValue(),
+    		data7: sources.assessorList.AssessorState, //$$(getHtmlId("assesorStateField")).getValue(),
+    		data8: sources.assessorList.AssessorZipCode, //$$(getHtmlId("assesorZipField")).getValue(),
+    		data9: sources.assessorList.AssessorPhoneExt, //$$(getHtmlId("assesorExtField")).getValue(),
+    		data10: sources.assessorList.AssessorMobilePhone, //mobile,
+    		data11: sources.assessorList.AssessorNotes, //$$(getHtmlId("assesorNotesField")).getValue(),
+    		data12: sources.assessorList.AssessorFullNameDisplay, //$$(getHtmlId("assessorFullNameField")).getValue(),
+    		data13: sources.assessorList.AssPreferredReportingMethod, //$$(getHtmlId("reportingComboBox")).getValue(),
+    		data14: sources.assessorList.AssessorInformationID, //currentID,
+    		data15: sources.assessorList.InactiveAssessorInfo //$$(getHtmlId("assessorInactiveCheckBox")).getValue()
 		}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 
 		rpcDUpdate.setUpdateAsync({
@@ -1430,7 +1445,8 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-						bakListSuccess(result);
+						bakAssessorInfo = result;
+		 				sources.bakAssessorInfo.sync();
 					},
 					'onError': function(error){
 						console.log(error);
@@ -1447,6 +1463,75 @@ function constructor (id) {
 
 
 
+	
+
+	submitAttorneyInformation.click = function submitAttorneyInformation_click (event)// @startlock
+	{// @endlock
+		var currentCity = $$($comp.id + "_attCityComboBox").getValue();
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	city = rpcDSelects.getSelect(myObject5);
+		
+		if( city.length ===0)
+		{
+			
+			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+		}
+		
+			var myObject7 = 
+			{
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:3,
+				data1:$$(getHtmlId("attName")).getValue(),
+				data2:$$(getHtmlId("attPhone")).getValue(),
+				data3:$$(getHtmlId("attEmail")).getValue(),
+				data4:$$(getHtmlId("attFax")).getValue(),
+				data5:$$(getHtmlId("attAddress")).getValue(),
+				data6:$$(getHtmlId("attCityComboBox")).getValue(),
+				data7:$$(getHtmlId("attState")).getValue(),
+				data8:$$(getHtmlId("attZip")).getValue(),
+				data9:$$(getHtmlId("attExt")).getValue(),
+				data10:$$(getHtmlId("attAdditional")).getValue(),
+				data11:$$(getHtmlId("attNotes")).getValue(),
+				data12:$$(getHtmlId("attFullName")).getValue(),
+				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
+				data14:currentID,
+				data15:$$(getHtmlId("attInactive")).getValue(),
+				data16:$$(getHtmlId("attPublicDef")).getValue(),
+				data17:$$(getHtmlId("attStaffInfo")).getValue()
+				
+				
+			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 		
+	 		rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+						
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject7]
+				});
+
+		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+						bakAttorneyInfo = result;
+						sources.bakAttorneyInfo.sync();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject5]
+				});
+	};// @lock
 
 
 
@@ -2120,6 +2205,7 @@ function constructor (id) {
 
 	dataGrid2.onRowClick = function dataGrid2_onRowClick (event)// @startlock
 	{// @endlock
+		debugger
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
 		grid.style.display = 'none';
 		
@@ -2182,72 +2268,7 @@ function constructor (id) {
 		$$(getHtmlId('mainAttorneyCont')).setSplitPosition(1290);
 	};// @lock
 
-	button36.click = function button36_click (event)// @startlock
-	{// @endlock
-			var currentCity = $$($comp.id + "_attCityComboBox").getValue();
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:currentCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	city = rpcDSelects.getSelect(myObject5);
-		
-		if( city.length ===0)
-		{
-			
-			var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentCity};
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-		}
-		
-			var myObject7 = 
-			{
-				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:3,
-				data1:$$(getHtmlId("attName")).getValue(),
-				data2:$$(getHtmlId("attPhone")).getValue(),
-				data3:$$(getHtmlId("attEmail")).getValue(),
-				data4:$$(getHtmlId("attFax")).getValue(),
-				data5:$$(getHtmlId("attAddress")).getValue(),
-				data6:$$(getHtmlId("attCityComboBox")).getValue(),
-				data7:$$(getHtmlId("attState")).getValue(),
-				data8:$$(getHtmlId("attZip")).getValue(),
-				data9:$$(getHtmlId("attExt")).getValue(),
-				data10:$$(getHtmlId("attAdditional")).getValue(),
-				data11:$$(getHtmlId("attNotes")).getValue(),
-				data12:$$(getHtmlId("attFullName")).getValue(),
-				data13:$$(getHtmlId("attReportingComboBox")).getValue(),
-				data14:currentID,
-				data15:$$(getHtmlId("attInactive")).getValue(),
-				data16:$$(getHtmlId("attPublicDef")).getValue(),
-				data17:$$(getHtmlId("attStaffInfo")).getValue()
-				
-				
-			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 		
-	 		rpcDUpdate.setUpdateAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject7]
-				});
-
-		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:currentID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
-	 	rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						bakListSuccess(result);
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject5]
-				});
-	};// @lock
+	
 
 
 
@@ -2662,24 +2683,7 @@ function constructor (id) {
 		changeWindow("CourtJursidictionContainer","CourtJursidictionComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		
-		/*
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_CourtJursidictionComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralCourtJurisdictions.waComponent',		
-		userData: 	{searchCrit: searchCrit, searchType: searchType},					//data that you want to send to the webcomponent
-		onSuccess: function () {}	
-		});
-		*/
-		//var test = $$(getHtmlId("CourtJursidictionContainer"));
-		//test.domNode.style.visibility = "visible";
-		//$$(getHtmlId("CourtJursidictionContainer")).domNode.style.visibility = "visible";
-		//$$(getHtmlId("CourtJursidictionContainer")).domNode.style.zIndex = "10";
-		//$$(getHtmlId(oldRefVis)).domNode.style.visibility = "hidden";
-		//$$(getHtmlId(oldRefVis)).domNode.style.zIndex = "0";
-		//oldRefVis = id;
-		
+		refillCity();
 	};// @lock
 
 	probationJurisdictionButton.click = function probationJurisdictionButton_click (event)// @startlock
@@ -2687,18 +2691,7 @@ function constructor (id) {
 		changeWindow("ProbationJursidictionContainer","ProbationJursidictionComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		/*
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_ProbationJursidictionComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},			//data that you want to send to the webcomponent
-		onSuccess: function () {}
-		});
-		*/
-		
-		
-		
+		refillCity();
 	};// @lock
 
 	probationOfficerButton.click = function probationOfficerButton_click (event)// @startlock
@@ -2724,15 +2717,7 @@ function constructor (id) {
 					},
 					'params': [myObject]
 		});
-		
-		/*
-		WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_ProbationOfficerComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent',	
-		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
-		onSuccess: function () {}
-		});
-		*/
+		refillCity();
 	};// @lock
 
 	prosecutorsButton.click = function prosecutorsButton_click (event)// @startlock
@@ -2740,15 +2725,7 @@ function constructor (id) {
 		changeWindow("ProsecutorContainer","ProsecutorComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		
-		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_ProsecutorComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
-		onSuccess: function () {}
-		});
-		*/
+		refillCity();
 	};// @lock
 
 	otherButton.click = function otherButton_click (event)// @startlock
@@ -2756,15 +2733,7 @@ function constructor (id) {
 		changeWindow("OtherMonitorContainer","OtherMonitorComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		
-		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_OtherMonitorComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralOtherMonitors.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},				//data that you want to send to the webcomponent
-		onSuccess: function () {}
-		});
-		*/
+		refillCity();
 	};// @lock
 
 	judgesButton.click = function judgesButton_click (event)// @startlock
@@ -2772,15 +2741,7 @@ function constructor (id) {
 		changeWindow("JudgeContainer","JudgeComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		
-		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_JudgeComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralJudges.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},			//data that you want to send to the webcomponent
-		onSuccess: function () {}
-		});
-		*/
+		refillCity();
 	};// @lock
 
 	dhsButton.click = function dhsButton_click (event)// @startlock
@@ -2788,16 +2749,7 @@ function constructor (id) {
 		changeWindow("DHSOfficerContainer","DHSOfficerComponent");		
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		
-		/* WAF.loadComponent ( {											//load webcomponent into this page component1 element
-		id: 	$comp.id+'_DHSOfficerComponent', 											//designate the component to load into
-		path: 	'/CAPCIS.waPage/referralDHSOfficers.waComponent',
-		userData: 	{searchCrit: searchCrit, searchType: searchType},					//designate the webcomponent to load
-		onSuccess: function () {}							//data that you want to send to the webcomponent
-		});
-		*/
-		
+		refillCity();
 	};// @lock
 
 	assessorButton.click = function assessorButton_click (event)// @startlock
@@ -2805,7 +2757,7 @@ function constructor (id) {
 		changeWindow("AssessorContainer","AssessorComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
+		refillCity();
 	};// @lock
 	
 	attorneyButton.click = function attorneyButton_click (event)// @startlock
@@ -2814,9 +2766,7 @@ function constructor (id) {
 		changeWindow("AttorneyContainer","AttorneyComponent");
 		var searchCrit = $$(getHtmlId('searchField')).getValue();
 		var searchType = $$(getHtmlId('searchOptionsBox')).getValue();
-		
-		
-		
+		refillCity();	
 	};// @lock
 	
 	
@@ -2939,7 +2889,7 @@ function constructor (id) {
 	WAF.addListener(this.id + "_loadAttorneyCorrespondence", "click", loadAttorneyCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_button43", "click", button43.click, "WAF");
 	WAF.addListener(this.id + "_button37", "click", button37.click, "WAF");
-	WAF.addListener(this.id + "_button36", "click", button36.click, "WAF");
+	WAF.addListener(this.id + "_submitAttorneyInformation", "click", submitAttorneyInformation.click, "WAF");
 	WAF.addListener(this.id + "_assessorFullList", "onRowClick", assessorFullList.onRowClick, "WAF");
 	WAF.addListener(this.id + "_attorneyDataGird", "onRowClick", attorneyDataGird.onRowClick, "WAF");
 	WAF.addListener(this.id + "_newProbJ", "click", newProbJ.click, "WAF");
@@ -3781,7 +3731,11 @@ function constructor (id) {
 		
 	}
 	
-	
+	function refillCity()
+	{
+		city=tempStore;
+		sources.city.sync();
+	}
 	
 	
 }

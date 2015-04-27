@@ -63,17 +63,6 @@
 	 
 }
 
-#{id}textField1 {
-	 z-index: 2;
-	 width: 325px;
-	 height: 60px;
-	 top: 220px;
-	 left: 5px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}container1 {
 	 z-index: 9;
 	 width: 415px;
@@ -92,17 +81,6 @@
 	 height: 25px;
 	 top: 250px;
 	 left: 220px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}checkbox1 {
-	 z-index: 6;
-	 width: 22px;
-	 height: 22px;
-	 top: 251px;
-	 left: 5px;
 	
 	 position: absolute;
 	 
@@ -167,6 +145,28 @@
 	 border-left-color: rgb(229, 229, 229);
 	 border-left-style: ridge;
 	 border-left-width: 5px;
+	 
+}
+
+#{id}voidCorrespondanceCheck {
+	 z-index: 6;
+	 width: 22px;
+	 height: 22px;
+	 top: 251px;
+	 left: 5px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}newCorrespondanceField {
+	 z-index: 2;
+	 width: 325px;
+	 height: 60px;
+	 top: 220px;
+	 left: 5px;
+	
+	 position: absolute;
 	 
 }
 
