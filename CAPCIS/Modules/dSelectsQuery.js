@@ -537,7 +537,7 @@ exports.buildQuery = function buildQuery(myObject)
 				////////////////////////////////////////////////////////////////////////////////////End Prosecutors////////////////////////////////////////////////
 				
 
-				//case 83: answer = "SELECT * FROM capcis.citylistings WHERE CityListing = '"+myObject.data1+"'";
+				case 83: answer = "SELECT * FROM capcis.citylistings WHERE CityListing = '"+myObject.data1+"'";
 						return answer;
 				case 84: answer = "SELECT CourtJurisdiction FROM capcis.courtjurisdiction";
 						return answer;
