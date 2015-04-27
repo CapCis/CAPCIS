@@ -17,7 +17,6 @@ function constructor (id) {
 	var poCorrespondanceActiveBox = {};	// @combobox
 	var button2 = {};	// @button
 	var poVoidedCorrespondanceCheck = {};	// @checkbox
-	var poCorCloseButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
@@ -26,17 +25,15 @@ function constructor (id) {
 	{// @endlock
 				
 	};// @lock
-
-	poCorrespondanceActiveBox.change = function poCorrespondanceActiveBox_change (event)// @startlock
-	{// @endlock
-		debugger;
+	function fillCorrespondance()
+	{
 		var currentCorrespondenceActiveSelected = $$(getHtmlId('poCorrespondanceActiveBox')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
     		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:69,data1:sources.probationOfficerList.POInformationID};
 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){	
-		 					 	debugger;			
+		 					 				
 						probationOfficerCorespondance = result;
 						sources.probationOfficerCorespondance.sync();
 					},
@@ -51,7 +48,7 @@ function constructor (id) {
     		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:70,data1:sources.probationOfficerList.POInformationID,data2:currentCorrespondenceActiveSelected};
 			rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){	
-		 				debugger;	 				
+		 					 				
 						probationOfficerCorespondance = result;
 						sources.probationOfficerCorespondance.sync();
 					},
@@ -62,6 +59,13 @@ function constructor (id) {
 		});
     
     	}
+	
+	}
+
+	poCorrespondanceActiveBox.change = function poCorrespondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();
+		
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
@@ -70,12 +74,12 @@ function constructor (id) {
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:14,
 				data1:$$(getHtmlId("poNewCoresspondenceField")).getValue(),
-				data2:currentID
+				data2:sources.probationOfficerList.POInformationID
 			}; //dontf
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);
@@ -112,17 +116,11 @@ function constructor (id) {
 		
 	};// @lock
 
-	poCorCloseButton.click = function poCorCloseButton_click (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_poCorrespondanceGrid", "onRowClick", poCorrespondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_poCorrespondanceActiveBox", "change", poCorrespondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_poVoidedCorrespondanceCheck", "change", poVoidedCorrespondanceCheck.change, "WAF");
-	WAF.addListener(this.id + "_poCorCloseButton", "click", poCorCloseButton.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock

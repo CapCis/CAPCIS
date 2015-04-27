@@ -21,54 +21,20 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	button5.click = function button5_click (event)// @startlock
-	{// @endlock
-		
-		
-			var x = $$(getHtmlId("newCorrespondanceField"));
-		var myObject8 = 
-			{
-				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
-				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
-				data2:currentID
-			}; //dontf
-			
-			
-			rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){
-						
-					},
-					'onError': function(error){
-						console.log(error);
-					},
-					'params': [myObject8]
-				});
-			$$(getHtmlId('newCorrespondanceField')).setValue("");
-			fillCorrespondance();
-		
-	};// @lock
-
-	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
-	courtCorrespondanceActiveBox.change = function courtCorrespondanceActiveBox_change (event)// @startlock
-	{// @endlock
-		debugger;
+	function fillCorrespondance()
+	{
 		var currentCorrespondenceActiveSelected = $$(getHtmlId('courtCorrespondanceActiveBox')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
     		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 25,data1: sources.courtJurisdictionList.CourtJurisdictionID}; 
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 						courtJurisdictionCorespondance = result;
 						sources.courtJurisdictionCorespondance.sync();
 					},
 					'onError': function(error){
-						debugger;
+						
 						console.log(error);
 					},
 					'params': [myObject2]
@@ -79,18 +45,56 @@ function constructor (id) {
     		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 26,data1: sources.courtJurisdictionList.CourtJurisdictionID,data2: currentCorrespondenceActiveSelected};
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 						courtJurisdictionCorespondance = result;
 						sources.courtJurisdictionCorespondance.sync();
 					},
 					'onError': function(error){
-						debugger;
+						
 						console.log(error);
 					},
 					'params': [myObject2]
 				});
     
     	}
+	
+	}
+	button5.click = function button5_click (event)// @startlock
+	{// @endlock
+		
+		
+			var x = $$(getHtmlId("newCorrespondanceField"));
+		var myObject8 = 
+			{
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
+				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data2:sources.courtJurisdictionList.CourtJurisdictionID
+			}; //dontf
+			
+			
+			rpcDInsert.setInsertAsync({
+		 			'onSuccess': function(result){
+						fillCorrespondance();
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
+			$$(getHtmlId('newCorrespondanceField')).setValue("");
+			
+		
+	};// @lock
+
+	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
+	{// @endlock
+		
+	};// @lock
+
+	courtCorrespondanceActiveBox.change = function courtCorrespondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();
+		
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock

@@ -17,7 +17,6 @@ function constructor (id) {
 	var prosCorrespondanceActiveBox = {};	// @combobox
 	var button2 = {};	// @button
 	var prosVoidedCorrespondanceCheck = {};	// @checkbox
-	var prosCorCloseButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
@@ -26,10 +25,9 @@ function constructor (id) {
 	{// @endlock
 		
 	};// @lock
-
-	prosCorrespondanceActiveBox.change = function prosCorrespondanceActiveBox_change (event)// @startlock
-	{// @endlock
-		debugger;
+	
+	function fillCorrespondance()
+	{
 		var currentCorrespondenceActiveSelected = $$(getHtmlId('prosCorrespondanceActiveBox')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
@@ -62,20 +60,27 @@ function constructor (id) {
 		});
     
     	}
+		
+	}
+
+	prosCorrespondanceActiveBox.change = function prosCorrespondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();
+		
 	};// @lock
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:16,
+				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:16,
 				data1:$$(getHtmlId("prosNewCoresspondenceField")).getValue(),
-				data2:currentID
+				data2:sources.prosecutorList.ProsecutorsID
 			}; //dontf
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);
@@ -84,7 +89,7 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('prosNewCoresspondenceField')).setValue("");
-			fillCorrespondance();
+			
 	};// @lock
 
 	prosVoidedCorrespondanceCheck.change = function prosVoidedCorrespondanceCheck_change (event)// @startlock
@@ -112,18 +117,11 @@ function constructor (id) {
 
 	};// @lock
 
-	prosCorCloseButton.click = function prosCorCloseButton_click (event)// @startlock
-	{// @endlock
-		fillCorrespondance();
-		$$(getHtmlId('prosCorrCont')).setSplitPosition(1290);
-	};// @lock
-
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_prosCorrespondanceGrid", "onRowClick", prosCorrespondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_prosCorrespondanceActiveBox", "change", prosCorrespondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_prosVoidedCorrespondanceCheck", "change", prosVoidedCorrespondanceCheck.change, "WAF");
-	WAF.addListener(this.id + "_prosCorCloseButton", "click", prosCorCloseButton.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock
