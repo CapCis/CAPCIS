@@ -15,7 +15,7 @@
 }
 
 #{id}container64 {
-	 z-index: 31;
+	 z-index: 30;
 	 width: 150px;
 	 height: 41px;
 	 top: 122px;
@@ -26,7 +26,7 @@
 }
 
 #{id}richText29 {
-	 z-index: 30;
+	 z-index: 29;
 	 width: 415px;
 	 height: 22px;
 	 top: 5px;
@@ -41,7 +41,7 @@
 }
 
 #{id}assessorInactiveCheckBox {
-	 z-index: 29;
+	 z-index: 28;
 	 width: 22px;
 	 height: 22px;
 	 top: 263px;
@@ -52,7 +52,7 @@
 }
 
 #{id}label144 {
-	 z-index: 28;
+	 z-index: 27;
 	 width: 93px;
 	 height: 13px;
 	 top: 267px;
@@ -63,7 +63,7 @@
 }
 
 #{id}closeAssesorCurrentButton {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 75px;
 	 height: 25px;
 	 top: 295px;
@@ -3578,17 +3578,6 @@
 	 
 }
 
-#{id}button36 {
-	 z-index: 28;
-	 width: 75px;
-	 height: 25px;
-	 top: 300px;
-	 left: 255px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}textField45 {
 	 z-index: 27;
 	 width: 250px;
@@ -4395,72 +4384,6 @@
 }
 
 #{id}AssessorContainer {
-	 z-index: 13;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}AttorneyContainer {
-	 z-index: 10;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}DHSOfficerContainer {
-	 z-index: 9;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}JudgeContainer {
-	 z-index: 11;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}OtherMonitorContainer {
-	 z-index: 5;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}ProsecutorContainer {
-	 z-index: 8;
-	 width: 1290px;
-	 height: 625px;
-	 top: 45px;
-	 left: 0px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}ProbationOfficerContainer {
 	 z-index: 12;
 	 width: 1290px;
 	 height: 625px;
@@ -4471,7 +4394,29 @@
 	 
 }
 
-#{id}ProbationJursidictionContainer {
+#{id}AttorneyContainer {
+	 z-index: 13;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}DHSOfficerContainer {
+	 z-index: 5;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}JudgeContainer {
 	 z-index: 6;
 	 width: 1290px;
 	 height: 625px;
@@ -4482,8 +4427,52 @@
 	 
 }
 
-#{id}CourtJursidictionContainer {
+#{id}OtherMonitorContainer {
+	 z-index: 11;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}ProsecutorContainer {
 	 z-index: 7;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}ProbationOfficerContainer {
+	 z-index: 8;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}ProbationJursidictionContainer {
+	 z-index: 9;
+	 width: 1290px;
+	 height: 625px;
+	 top: 45px;
+	 left: 0px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}CourtJursidictionContainer {
+	 z-index: 10;
 	 width: 1290px;
 	 height: 625px;
 	 top: 45px;
@@ -4868,7 +4857,7 @@
 }
 
 #{id}loadAssessorCorrespondence {
-	 z-index: 33;
+	 z-index: 32;
 	 width: 92px;
 	 height: 22px;
 	 top: 297px;
@@ -4879,7 +4868,7 @@
 }
 
 #{id}submitAssessorCurrentInformation {
-	 z-index: 26;
+	 z-index: 33;
 	 width: 75px;
 	 height: 25px;
 	 top: 295px;
@@ -5215,7 +5204,7 @@
 }
 
 #{id}loadBakAssessorVersions {
-	 z-index: 27;
+	 z-index: 26;
 	 width: 125px;
 	 height: 25px;
 	 top: 295px;
@@ -5391,7 +5380,7 @@
 }
 
 #{id}assessorCityGrid {
-	 z-index: 32;
+	 z-index: 31;
 	 width: 125px;
 	 height: 134px;
 	 top: 162px;
@@ -5853,6 +5842,17 @@
 	
 	 position: absolute;
 	 background-color: rgb(255, 127, 0);
+	 
+}
+
+#{id}submitAttorneyInformation {
+	 z-index: 28;
+	 width: 75px;
+	 height: 25px;
+	 top: 300px;
+	 left: 255px;
+	
+	 position: absolute;
 	 
 }
 
