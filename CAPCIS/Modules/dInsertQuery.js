@@ -45,18 +45,18 @@ exports.buildQuery = function buildQuery(myObject)
 			switch(myObject.minor)
 			{
 				
-				case 1: answer = 'INSERT into capcis.assessorcorrespondence(AssessorCorrespondence, FK_useraccounts_UserAccountsID, \
+				case 1: answer = 'INSERT into capcis.assessorcorrespondence(AssessorCorrespondence, FK_fxuseraccounts_FxUserAccountsID, \
 				 				FK_AssessorInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
 						break;
-				case 2: answer = 'INSERT into capcis.attorneycorrespondence(AttorneyCorrespondence, FK_useraccounts_UserAccountsID, \
+				case 2: answer = 'INSERT into capcis.attorneycorrespondence(AttorneyCorrespondence, FK_fxuseraccounts_FxUserAccountsID, \
 				 				FK_AttorneyInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
 						break;
 				
 				
-				case 5: answer = 'INSERT into capcis.courtjurisdictioncorrespondence(CourtJurisdictionCorrespondence, FK_useraccounts_UserAccountsID, \
+				case 5: answer = 'INSERT into capcis.courtjurisdictioncorrespondence(CourtJurisdictionCorrespondence, FK_fxuseraccounts_FxUserAccountsID, \
 				 				FK_CourtJurisdictionInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
 						break;
-				case 6: answer = 'INSERT into capcis.dhscorrespondence(DhsCorrespondence, FK_useraccounts_UserAccountsID, \
+				case 6: answer = 'INSERT into capcis.dhscorrespondence(DhsCorrespondence, FK_fxuseraccounts_FxUserAccountsID, \
 				 				FK_DhsInformationID) VALUES ("'+myObject.data1+'",'+myObject.id+','+myObject.data2+')';
 						break;
 				

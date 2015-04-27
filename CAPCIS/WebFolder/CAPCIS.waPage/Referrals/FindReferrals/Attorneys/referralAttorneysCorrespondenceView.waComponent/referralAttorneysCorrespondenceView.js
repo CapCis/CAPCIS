@@ -21,22 +21,20 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	attCorrespondanceActiveBox.change = function attCorrespondanceActiveBox_change (event)// @startlock
-	{// @endlock
-		debugger;
+	function fillCorrespondance()
+	{
 		var currentCorrespondenceActiveSelected = $$(getHtmlId('attCorrespondanceActiveBox')).getValue();
     	if (currentCorrespondenceActiveSelected == "All")
     	{
     		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 16,data1: sources.attorneyList.AttorneyInformationID}; 
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 						attorneyCorespondance = result;
 						sources.attorneyCorespondance.sync();
 					},
 					'onError': function(error){
-						debugger;
+						
 						console.log(error);
 					},
 					'params': [myObject2]
@@ -47,18 +45,22 @@ function constructor (id) {
     		var myObject2 = {token: userConfigObj.secToken,id: userConfigObj.userID,major: 3,minor: 17,data1: sources.attorneyList.AttorneyInformationID,data2: currentCorrespondenceActiveSelected};
         	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 						attorneyCorespondance = result;
 						sources.attorneyCorespondance.sync();
 					},
 					'onError': function(error){
-						debugger;
+						
 						console.log(error);
 					},
 					'params': [myObject2]
 				});
     
     	}
+	}
+	attCorrespondanceActiveBox.change = function attCorrespondanceActiveBox_change (event)// @startlock
+	{// @endlock
+		fillCorrespondance();	
     	
 	};// @lock
 
@@ -74,18 +76,18 @@ function constructor (id) {
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:2,
 				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
-				data2:currentID
+				data2:sources.attorneyList.AttorneyInformationID
 			}; //dontf
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);
 					},
 					'params': [myObject8]
 				});
-			fillCorrespondance();
+			$$(getHtmlId("attNewCoresspondenceField")).setValue("")
 			
 	};// @lock
 

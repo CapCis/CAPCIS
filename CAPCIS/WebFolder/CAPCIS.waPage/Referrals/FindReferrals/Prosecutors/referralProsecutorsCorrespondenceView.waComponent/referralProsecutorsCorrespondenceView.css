@@ -145,17 +145,6 @@
 	 
 }
 
-#{id}prosCorCloseButton {
-	 z-index: 4;
-	 width: 75px;
-	 height: 25px;
-	 top: 255px;
-	 left: 220px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText5 {
 	 z-index: 3;
 	 width: 125px;
