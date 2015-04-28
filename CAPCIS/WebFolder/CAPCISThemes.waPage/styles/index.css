@@ -3,6 +3,63 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#textField1.waf-state-hover {
+	border-top-color: rgb(78, 117, 163);
+	border-left-color: rgb(78, 117, 163);
+	border-right-color: rgb(78, 117, 163);
+	border-bottom-color: rgb(78, 117, 163);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
+	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
+	 box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
+}
+
+#textField1.waf-state-focus {
+	border-top-color: rgb(78, 117, 163);
+	border-left-color: rgb(78, 117, 163);
+	border-right-color: rgb(78, 117, 163);
+	border-bottom-color: rgb(78, 117, 163);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
+	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
+	 box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
+}
+
+#label1 {
+	z-index: 7;
+	width: 26px;
+	height: 14px;
+	top: 354px;
+	left: 101px;
+	position: absolute;
+	color: rgb(0, 27, 90);
+}
+
+#textField1 {
+	z-index: 7;
+	width: 239px;
+	height: 59px;
+	top: 332px;
+	left: 132px;
+	position: absolute;
+}
+
+#button2.waf-state-focus {
+}
+
+#button2.waf-state-active {
+}
+
+#button2.waf-state-hover {
+}
+
+#button2 {
+	z-index: 5;
+	width: 24px;
+	height: 27px;
+	top: 200px;
+	left: 80px;
+	position: absolute;
+}
+
 #waf-body {
 	background-color: rgb(229, 229, 229);
 }

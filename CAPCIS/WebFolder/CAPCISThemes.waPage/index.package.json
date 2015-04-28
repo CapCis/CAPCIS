@@ -16,6 +16,14 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
 			"id": "capcismetal/package.json",
 			"path": "THEMES_CUSTOM",
 			"type": "theme"
