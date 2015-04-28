@@ -1,1 +1,120 @@
-﻿{"name":"CAPCIS/CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent","version":"1.0.0","webComponent":"CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.js","loadDependencies":[{"id":"Widget/container","type":"widget"},{"id":"Widget/component","type":"widget"},{"id":"Widget/menuBar","type":"widget"},{"id":"Widget/menuItem","type":"widget"},{"id":"Widget/richText","type":"widget"},{"id":"Widget/textField","type":"widget"},{"id":"Widget/label","type":"widget"},{"id":"Widget/button","type":"widget"},{"id":"Widget/combobox","type":"widget"},{"id":"Widget/dataGrid","type":"widget"},{"id":"JQDateTime/package.json","path":"WIDGETS_CUSTOM","type":"widget"},{"id":"Widget/image","type":"widget"},{"id":"Widget/matrix","type":"widget"},{"id":"CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.html","path":"WEBFOLDER","type":"html"},{"id":"CAPCIS.waPage/clientInformation.waComponent/clientInformation.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/ClientCorrespondenceList.waComponent/ClientCorrespondenceList.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/clientCorrespondenceList.waComponent/clientCorrespondenceList.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/clientRequirementsList.waComponent/clientRequirementsList.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/clientReferralInformation.waComponent/clientReferralInformation.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/clientRequirements.waComponent/clientRequirements.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/clientCorrespondence.waComponent/clientCorrespondence.package.json","path":"WEBFOLDER","type":"component"},{"id":"CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.css","path":"WEBFOLDER","type":"style"},{"id":"CAPCIS.waPage/clientMain.waComponent/clientMain.css","path":"WEBFOLDER","type":"style"},{"id":"CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.js","path":"WEBFOLDER","type":"script"},{"id":"CAPCIS.waPage/clientMain.waComponent/clientMain.js","path":"WEBFOLDER","type":"script"}]}
+{
+	"name": "CAPCIS/CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent",
+	"version": "1.0.0",
+	"webComponent": "CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/component",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/menuBar",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/menuItem",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/combobox",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "JQDateTime/package.json",
+			"path": "WIDGETS_CUSTOM",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/image",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/matrix",
+			"type": "widget"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "CAPCIS.waPage/clientInformation.waComponent/clientInformation.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientCorrespondenceList.waComponent/ClientCorrespondenceList.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/clientCorrespondenceList.waComponent/clientCorrespondenceList.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/clientRequirementsList.waComponent/clientRequirementsList.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/clientReferralInformation.waComponent/clientReferralInformation.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/clientRequirements.waComponent/clientRequirements.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/clientCorrespondence.waComponent/clientCorrespondence.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/clientMain.waComponent/clientMain.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		},
+		{
+			"id": "CAPCIS.waPage/clientMain.waComponent/clientMain.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}
