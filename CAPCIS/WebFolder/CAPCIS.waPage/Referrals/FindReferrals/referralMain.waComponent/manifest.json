@@ -1,1 +1,10 @@
-﻿{"name":"referralMain","html":"referralMain.html","scripts":["referralMain.js"],"styles":["referralMain.css"]}
+{
+	"name": "referralMain",
+	"html": "referralMain.html",
+	"scripts": [
+		"referralMain.js"
+	],
+	"styles": [
+		"referralMain.css"
+	]
+}

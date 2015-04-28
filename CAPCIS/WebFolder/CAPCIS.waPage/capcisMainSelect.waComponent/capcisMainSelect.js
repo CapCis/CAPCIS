@@ -65,7 +65,7 @@ function constructor (id) {
             'id': myMenuButtons[x].FxMainSelectWebComponentNamesID.toString(), // ID 
             'data-lib': 'WAF',
             'data-type': 'button',
-            'data-theme':'capcis capcis',    
+            'data-theme':'capcismetal',    
             'data-text': "- "+myMenuButtons[x].SubHeaderOption, // title for the button                         
             'class': 'waf-widget waf-button capcis capcis'
             });
