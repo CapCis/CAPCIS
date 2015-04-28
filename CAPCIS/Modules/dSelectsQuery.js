@@ -446,7 +446,8 @@ exports.buildQuery = function buildQuery(myObject)
 								WHERE pojurisdictioncorrespondance.FK_POJurisdictionInformationID = '"+myObject.data1+"' AND pojurisdictioncorrespondance.VoidedPOJurisdictionCorrespondence = "+myObject.data2+" \
 								ORDER BY 1 DESC";
 						return answer;
-				
+				case 62 : answer = 'SELECT * FROM capcis.pojurisdiction WHERE POJurisdictionID = "'+myObject.data1+'"';
+						return answer;
 				case 63: answer = 'SELECT *,DATE_FORMAT( bakpojurisdiction.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakpojurisdiction \
 								LEFT JOIN capcis.fxuseraccounts on bakpojurisdiction.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_pojurisdiction_POJurisdictionID = "'+myObject.data1+'" \
