@@ -2495,7 +2495,7 @@ body.yui-layout .waf-theme.capcis .waf-designer-fileupload .waf-button.waf-fileU
  */
 .waf-theme.capcis .o2k7SkinSilver .mceExternalToolbar, 
 .waf-theme.capcis .o2k7SkinSilver .mceListBox .mceText, 
-.waf-theme.capcis .o2k7SkinSilver div.mceMenu, 
+/**.waf-theme.capcis .o2k7SkinSilver div.mceMenu, 
 .waf-theme.capcis .o2k7SkinSilver table.mceLayout, 
 .waf-theme.capcis .o2k7SkinSilver .mceMenuItemTitle a, 
 .waf-theme.capcis .o2k7SkinSilver table.mceLayout tr.mceFirst td, 

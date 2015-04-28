@@ -1,1 +1,10 @@
-﻿{"name":"clientMain","html":"clientMain.html","scripts":["clientMain.js"],"styles":["clientMain.css"]}
+{
+	"name": "clientMain",
+	"html": "clientMain.html",
+	"scripts": [
+		"clientMain.js"
+	],
+	"styles": [
+		"clientMain.css"
+	]
+}
