@@ -3,6 +3,85 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}htmlTag9 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag8 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag7 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag4 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag3 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag2 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}textField10.waf-state-focus {
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
+	text-shadow: transparent 0px 0px 0px;
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 127, 0, 0.496094);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmN2YwMCIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwLjQ5NjA5NCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjZmY3ZjAwIiBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMC40OTYwOTQiIC8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3dhZi1pZS1ncmFkaWVudCkiIC8+PC9zdmc+");
+	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgba(255, 127, 0, 0.496094)),color-stop(1, rgba(255, 127, 0, 0.496094)));
+	 background-image:-webkit-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:-moz-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:-ms-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:-o-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+}
+
+#{id}textField10.waf-state-hover {
+	background-color: rgba(78, 117, 163, 0.125);
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
+}
+
 #{id}dataGrid4 .waf-dataGrid-header .waf-dataGrid-cell {
 	font-size: 10px;
 }
@@ -129,14 +208,28 @@
 
 #{id}matrix3 .waf-widget.waf-clone-{id}textField1 {
 	position: absolute;
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
+	text-shadow: transparent 0px 0px 0px;
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 127, 0, 0.496094);
+	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmN2YwMCIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwLjQ5NjA5NCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjZmY3ZjAwIiBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMC40OTYwOTQiIC8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3dhZi1pZS1ncmFkaWVudCkiIC8+PC9zdmc+");
+	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgba(255, 127, 0, 0.496094)),color-stop(1, rgba(255, 127, 0, 0.496094)));
+	 background-image:-webkit-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:-moz-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:-ms-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:-o-linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
+	 background-image:linear-gradient(bottom, rgba(255, 127, 0, 0.496094) 0%,rgba(255, 127, 0, 0.496094) 100%);
 }
 
 #{id}label10 {
 	z-index: 5;
-	width: 31px;
-	height: 14px;
-	top: 58px;
-	left: 14px;
+	width: 30px;
+	height: 16px;
+	top: 57px;
+	left: 15px;
 	position: absolute;
 }
 
@@ -168,18 +261,18 @@
 
 #{id}label52 {
 	z-index: 4;
-	width: 96px;
-	height: 14px;
-	top: -1px;
+	width: 102px;
+	height: 16px;
+	top: -3px;
 	left: 50px;
 	position: absolute;
 }
 
 #{id}label51 {
 	z-index: 3;
-	width: 37px;
-	height: 14px;
-	top: -1px;
+	width: 44px;
+	height: 16px;
+	top: -3px;
 	left: 0px;
 	position: absolute;
 }
@@ -264,8 +357,8 @@
 #{id}label50 {
 	z-index: 34;
 	width: 23px;
-	height: 14px;
-	top: 46px;
+	height: 16px;
+	top: 44px;
 	left: 90px;
 	position: absolute;
 }
@@ -277,8 +370,8 @@
 #{id}label49 {
 	z-index: 33;
 	width: 49px;
-	height: 14px;
-	top: 46px;
+	height: 16px;
+	top: 44px;
 	left: 175px;
 	position: absolute;
 }
@@ -290,8 +383,8 @@
 #{id}label48 {
 	z-index: 32;
 	width: 55px;
-	height: 14px;
-	top: 46px;
+	height: 16px;
+	top: 44px;
 	left: 260px;
 	position: absolute;
 }
@@ -302,9 +395,9 @@
 
 #{id}label47 {
 	z-index: 31;
-	width: 60px;
-	height: 14px;
-	top: 46px;
+	width: 62px;
+	height: 16px;
+	top: 44px;
 	left: 345px;
 	position: absolute;
 }
@@ -315,9 +408,9 @@
 
 #{id}label46 {
 	z-index: 30;
-	width: 27px;
-	height: 14px;
-	top: 1px;
+	width: 26px;
+	height: 16px;
+	top: -1px;
 	left: 495px;
 	position: absolute;
 }
@@ -330,8 +423,8 @@
 #{id}label45 {
 	z-index: 29;
 	width: 40px;
-	height: 14px;
-	top: 1px;
+	height: 16px;
+	top: -1px;
 	left: 450px;
 	position: absolute;
 	text-align: right;
@@ -343,9 +436,9 @@
 
 #{id}label44 {
 	z-index: 28;
-	width: 80px;
-	height: 14px;
-	top: 1px;
+	width: 81px;
+	height: 16px;
+	top: -1px;
 	left: 345px;
 	position: absolute;
 }
@@ -356,9 +449,9 @@
 
 #{id}label43 {
 	z-index: 27;
-	width: 79px;
-	height: 14px;
-	top: 1px;
+	width: 80px;
+	height: 16px;
+	top: -1px;
 	left: 195px;
 	position: absolute;
 }
@@ -370,10 +463,10 @@
 
 #{id}label42 {
 	z-index: 26;
-	width: 96px;
-	height: 14px;
-	top: 1px;
-	left: 69px;
+	width: 102px;
+	height: 16px;
+	top: -1px;
+	left: 66px;
 	position: absolute;
 	text-align: center;
 }
@@ -384,9 +477,9 @@
 
 #{id}label41 {
 	z-index: 25;
-	width: 37px;
-	height: 14px;
-	top: 1px;
+	width: 44px;
+	height: 16px;
+	top: -1px;
 	left: 10px;
 	position: absolute;
 }
@@ -397,9 +490,9 @@
 
 #{id}label40 {
 	z-index: 24;
-	width: 49px;
-	height: 14px;
-	top: 46px;
+	width: 53px;
+	height: 16px;
+	top: 44px;
 	left: 5px;
 	position: absolute;
 }
@@ -463,9 +556,9 @@
 
 #{id}label39 {
 	z-index: 10;
-	width: 65px;
-	height: 14px;
-	top: 1px;
+	width: 72px;
+	height: 16px;
+	top: -1px;
 	left: 455px;
 	position: absolute;
 }
@@ -527,9 +620,9 @@
 
 #{id}label14 {
 	z-index: 9;
-	width: 53px;
-	height: 14px;
-	top: 46px;
+	width: 52px;
+	height: 16px;
+	top: 44px;
 	left: 430px;
 	position: absolute;
 }
@@ -551,9 +644,9 @@
 
 #{id}label9 {
 	z-index: 8;
-	width: 82px;
-	height: 14px;
-	top: 46px;
+	width: 84px;
+	height: 16px;
+	top: 44px;
 	left: 285px;
 	position: absolute;
 }
@@ -576,8 +669,8 @@
 #{id}label8 {
 	z-index: 7;
 	width: 29px;
-	height: 14px;
-	top: 46px;
+	height: 16px;
+	top: 44px;
 	left: 145px;
 	position: absolute;
 }
@@ -599,9 +692,9 @@
 
 #{id}label7 {
 	z-index: 6;
-	width: 42px;
-	height: 14px;
-	top: 46px;
+	width: 45px;
+	height: 16px;
+	top: 44px;
 	left: 5px;
 	position: absolute;
 }
@@ -622,9 +715,9 @@
 
 #{id}label6 {
 	z-index: 5;
-	width: 58px;
-	height: 14px;
-	top: 1px;
+	width: 61px;
+	height: 16px;
+	top: -1px;
 	left: 330px;
 	position: absolute;
 }
@@ -645,9 +738,9 @@
 
 #{id}label1 {
 	z-index: 4;
-	width: 98px;
-	height: 14px;
-	top: 1px;
+	width: 92px;
+	height: 16px;
+	top: -1px;
 	left: 215px;
 	position: absolute;
 }
@@ -674,9 +767,9 @@
 
 #{id}label3 {
 	z-index: 3;
-	width: 54px;
-	height: 14px;
-	top: 1px;
+	width: 56px;
+	height: 16px;
+	top: -1px;
 	left: 100px;
 	position: absolute;
 	text-align: left;
@@ -720,8 +813,8 @@
 #{id}label2 {
 	z-index: 2;
 	width: 65px;
-	height: 14px;
-	top: 1px;
+	height: 16px;
+	top: -1px;
 	left: 5px;
 	position: absolute;
 	text-align: left;
@@ -1709,9 +1802,9 @@
 
 #{id}label27 {
 	z-index: 16;
-	width: 47px;
-	height: 14px;
-	top: 87px;
+	width: 51px;
+	height: 16px;
+	top: 85px;
 	left: 9px;
 	position: absolute;
 }
@@ -1768,9 +1861,9 @@
 
 #{id}label26 {
 	z-index: 10;
-	width: 57px;
-	height: 14px;
-	top: 132px;
+	width: 61px;
+	height: 16px;
+	top: 130px;
 	left: 9px;
 	position: absolute;
 }
@@ -1787,9 +1880,9 @@
 
 #{id}label25 {
 	z-index: 9;
-	width: 38px;
-	height: 14px;
-	top: 87px;
+	width: 35px;
+	height: 16px;
+	top: 85px;
 	left: 209px;
 	position: absolute;
 }
@@ -1807,8 +1900,8 @@
 #{id}label24 {
 	z-index: 7;
 	width: 21px;
-	height: 14px;
-	top: 87px;
+	height: 16px;
+	top: 85px;
 	left: 104px;
 	position: absolute;
 }
@@ -1824,9 +1917,9 @@
 
 #{id}label23 {
 	z-index: 6;
-	width: 31px;
-	height: 14px;
-	top: 42px;
+	width: 28px;
+	height: 16px;
+	top: 40px;
 	left: 369px;
 	position: absolute;
 }
@@ -1843,9 +1936,9 @@
 
 #{id}label22 {
 	z-index: 5;
-	width: 51px;
-	height: 14px;
-	top: 42px;
+	width: 52px;
+	height: 16px;
+	top: 40px;
 	left: 249px;
 	position: absolute;
 }
@@ -1857,14 +1950,13 @@
 	top: 61px;
 	left: 129px;
 	position: absolute;
-	text-align: left;
 }
 
 #{id}label21 {
 	z-index: 3;
-	width: 60px;
-	height: 14px;
-	top: 42px;
+	width: 66px;
+	height: 16px;
+	top: 40px;
 	left: 129px;
 	position: absolute;
 }
@@ -1876,16 +1968,16 @@
 	top: 61px;
 	left: 10px;
 	position: absolute;
-	text-align: left;
 }
 
 #{id}label4 {
 	z-index: 2;
-	width: 51px;
-	height: 14px;
-	top: 42px;
+	width: 54px;
+	height: 16px;
+	top: 40px;
 	left: 10px;
 	position: absolute;
+	color: rgb(0, 27, 90);
 }
 
 #{id}richText34 {
@@ -1986,10 +2078,10 @@
 
 #{id}label5 {
 	z-index: 2;
-	width: 55px;
-	height: 15px;
+	width: 49px;
+	height: 16px;
 	top: 7px;
-	left: 880px;
+	left: 886px;
 	position: absolute;
 	color: rgba(240, 240, 255, 0.898438);
 	font-size: 12px;
