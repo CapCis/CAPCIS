@@ -3,40 +3,77 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#dataGrid1 .waf-dataGrid-row.waf-state-selected {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-state-active {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-state-hover {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-widget-even {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-widget-odd {
+}
+
+#dataGrid1 .waf-dataGrid-footer {
+}
+
+#dataGrid1 .waf-dataGrid-body {
+}
+
+#dataGrid1 .waf-dataGrid-header {
+}
+
+#dataGrid1 {
+	z-index: 10;
+	width: 508px;
+	height: 258px;
+	top: 483px;
+	left: 352px;
+	position: absolute;
+}
+
+#richText2 {
+	z-index: 9;
+	width: 162px;
+	height: 28px;
+	top: 285px;
+	left: 439px;
+	position: absolute;
+}
+
+#richText1 {
+	z-index: 8;
+	width: 67px;
+	height: 26px;
+	top: 296px;
+	left: 259px;
+	position: absolute;
+	color: rgb(0, 27, 90);
+}
+
 #textField1.waf-state-hover {
-	border-top-color: rgb(78, 117, 163);
-	border-left-color: rgb(78, 117, 163);
-	border-right-color: rgb(78, 117, 163);
-	border-bottom-color: rgb(78, 117, 163);
-	-webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
-	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
-	 box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
 }
 
 #textField1.waf-state-focus {
-	border-top-color: rgb(78, 117, 163);
-	border-left-color: rgb(78, 117, 163);
-	border-right-color: rgb(78, 117, 163);
-	border-bottom-color: rgb(78, 117, 163);
-	-webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
-	 -moz-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
-	 box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 2px 0px;
 }
 
 #label1 {
 	z-index: 7;
 	width: 26px;
 	height: 14px;
-	top: 354px;
+	top: 345px;
 	left: 101px;
 	position: absolute;
-	color: rgb(0, 27, 90);
 }
 
 #textField1 {
 	z-index: 7;
-	width: 239px;
-	height: 59px;
+	width: 171px;
+	height: 40px;
 	top: 332px;
 	left: 132px;
 	position: absolute;
@@ -80,6 +117,10 @@
 	top: 94px;
 	left: 318px;
 	position: absolute;
+	border-top-color: rgb(240, 240, 255);
+	border-left-color: rgb(240, 240, 255);
+	border-right-color: rgb(240, 240, 255);
+	border-bottom-color: rgb(240, 240, 255);
 }
 
 #button1.waf-state-focus {

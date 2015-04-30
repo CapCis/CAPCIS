@@ -24,6 +24,14 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
 			"id": "capcismetal/package.json",
 			"path": "THEMES_CUSTOM",
 			"type": "theme"
