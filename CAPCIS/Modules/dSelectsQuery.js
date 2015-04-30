@@ -296,7 +296,7 @@ exports.buildQuery = function buildQuery(myObject)
 				/////////////////////////////////////////////////////////////////////////////Begin DHS/////////////////////////////////////////////////////////////////////////
 				case 29 : answer = 'SELECT * FROM capcis.dhsinformation where InactiveDhsInfo = '+myObject.data1;
 						return answer;
-				case 30 : answer = 'SELECT * FROM capcis.dhsinformation';
+				case 30 : answer = 'SELECT * FROM capcis.dhsinformation'; //fixme
 						return answer;
 				case 31 : answer = "SELECT * FROM capcis.dhsinformation where dhsinformation.DhsName LIKE '%"+myObject.data1+"%' or dhsinformation.DhsPhone LIKE '%"+myObject.data1+"%' \
 								OR dhsinformation.DhsEmail LIKE  '%"+myObject.data1+"%' OR dhsinformation.DhsFax LIKE '%"+myObject.data1+"%' \
