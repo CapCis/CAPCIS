@@ -47,8 +47,11 @@
 			"type": "widget"
 		},
 		{
-			"id": "metal1/package.json",
-			"path": "THEMES_CUSTOM",
+			"id": "Widget/combobox",
+			"type": "widget"
+		},
+		{
+			"id": "default",
 			"type": "theme"
 		},
 		{

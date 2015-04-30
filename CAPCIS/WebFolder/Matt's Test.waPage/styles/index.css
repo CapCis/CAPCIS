@@ -3,6 +3,24 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#label2 {
+	z-index: 19;
+	width: 29px;
+	height: 13px;
+	top: 86px;
+	left: 118px;
+	position: absolute;
+}
+
+#combobox1 {
+	z-index: 19;
+	width: 86px;
+	height: 28px;
+	top: 79px;
+	left: 152px;
+	position: absolute;
+}
+
 #tableView2 {
 	z-index: 17;
 	width: 256px;
@@ -180,7 +198,7 @@
 
 #label1 {
 	z-index: 1;
-	width: 27px;
+	width: 29px;
 	height: 13px;
 	top: 0px;
 	left: 0px;
