@@ -60,6 +60,11 @@
 			"type": "widget"
 		},
 		{
+			"id": "Select2/package.json",
+			"path": "WIDGETS_CUSTOM",
+			"type": "widget"
+		},
+		{
 			"id": "CAPCIS.waPage/Referrals/FindReferrals/referralMain.waComponent/referralMain.html",
 			"path": "WEBFOLDER",
 			"type": "html"
