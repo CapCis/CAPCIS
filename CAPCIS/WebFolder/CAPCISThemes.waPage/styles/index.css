@@ -3,141 +3,220 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#dataGrid1 .waf-dataGrid-row.waf-state-selected {
+#invisiblebutton.waf-state-focus {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-state-active {
+#invisiblebutton.waf-state-active {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-state-hover {
+#invisiblebutton.waf-state-hover {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-widget-even {
+#exitbutton.waf-state-focus {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-widget-odd {
+#exitbutton.waf-state-active {
 }
 
-#dataGrid1 .waf-dataGrid-footer {
+#exitbutton.waf-state-hover {
 }
 
-#dataGrid1 .waf-dataGrid-body {
+#CMDefaultButton.waf-state-focus {
 }
 
-#dataGrid1 .waf-dataGrid-header {
+#CMDefaultButton.waf-state-active {
 }
 
-#dataGrid1 {
-	z-index: 10;
-	width: 508px;
-	height: 258px;
-	top: 483px;
-	left: 352px;
-	position: absolute;
+#CMDefaultButton.waf-state-hover {
 }
 
-#richText2 {
-	z-index: 9;
-	width: 162px;
-	height: 28px;
-	top: 285px;
-	left: 439px;
-	position: absolute;
+#CMdefaulttextinput.waf-state-hover {
 }
 
-#richText1 {
-	z-index: 8;
-	width: 67px;
-	height: 26px;
-	top: 296px;
-	left: 259px;
-	position: absolute;
-	color: rgb(0, 27, 90);
+#CMdefaulttextinput.waf-state-focus {
 }
 
-#textField1.waf-state-hover {
-}
-
-#textField1.waf-state-focus {
-}
-
-#label1 {
+#label2 {
 	z-index: 7;
 	width: 26px;
 	height: 14px;
-	top: 345px;
-	left: 101px;
+	top: 184px;
+	left: 189px;
 	position: absolute;
 }
 
-#textField1 {
-	z-index: 7;
-	width: 171px;
-	height: 40px;
-	top: 332px;
-	left: 132px;
-	position: absolute;
-}
-
-#button2.waf-state-focus {
-}
-
-#button2.waf-state-active {
-}
-
-#button2.waf-state-hover {
-}
-
-#button2 {
+#label1 {
 	z-index: 5;
-	width: 24px;
-	height: 27px;
-	top: 200px;
-	left: 80px;
+	width: 26px;
+	height: 14px;
+	top: 181px;
+	left: 20px;
+	position: absolute;
+}
+
+#container3 {
+	z-index: 3;
+	width: 188px;
+	height: 95px;
+	top: 18px;
+	left: 629px;
 	position: absolute;
 }
 
 #waf-body {
-	background-color: rgb(229, 229, 229);
+	background-color: rgb(78, 117, 163);
 }
 
-#container2 {
-	z-index: 4;
-	width: 222px;
-	height: 131px;
-	top: 65px;
-	left: 626px;
-	position: absolute;
-}
-
-#container1 {
-	z-index: 3;
-	width: 220px;
-	height: 126px;
-	top: 94px;
-	left: 318px;
-	position: absolute;
-	border-top-color: rgb(240, 240, 255);
-	border-left-color: rgb(240, 240, 255);
-	border-right-color: rgb(240, 240, 255);
-	border-bottom-color: rgb(240, 240, 255);
-}
-
-#button1.waf-state-focus {
-}
-
-#button1.waf-state-active {
-}
-
-#button1.waf-state-hover {
-}
-
-#button1 {
+#DefaultContainer {
 	z-index: 1;
-	width: 75px;
-	height: 25px;
-	top: 44px;
-	left: 52px;
+	width: 200px;
+	height: 100px;
+	top: 24px;
+	left: 175px;
+	position: absolute;
+}
+
+#invisiblecontainer {
+	z-index: 2;
+	width: 173px;
+	height: 102px;
+	top: 21px;
+	left: 419px;
+	position: absolute;
+}
+
+#capcismetalviewcontainer {
+	z-index: 4;
+	width: 151px;
+	height: 94px;
+	top: 29px;
+	left: 14px;
+	position: absolute;
+}
+
+#capcismetalviewtextinput {
+	z-index: 6;
+	width: 117px;
+	height: 32px;
+	top: 172px;
+	left: 51px;
+	position: absolute;
+}
+
+#CMdefaulttextinput {
+	z-index: 7;
+	width: 129px;
+	height: 32px;
+	top: 175px;
+	left: 220px;
+	position: absolute;
+}
+
+#capcismetalviewtextrich {
+	z-index: 8;
+	width: 125px;
+	height: 31px;
+	top: 242px;
+	left: 42px;
+	position: absolute;
+}
+
+#CMdefaulttextrich {
+	z-index: 9;
+	width: 156px;
+	height: 34px;
+	top: 243px;
+	left: 190px;
+	position: absolute;
+}
+
+#headertextrich {
+	z-index: 10;
+	width: 155px;
+	height: 40px;
+	top: 245px;
+	left: 364px;
+	position: absolute;
+}
+
+#lighttextrich {
+	z-index: 11;
+	width: 176px;
+	height: 38px;
+	top: 244px;
+	left: 544px;
+	position: absolute;
+}
+
+#headerlighttextrich {
+	z-index: 12;
+	width: 176px;
+	height: 38px;
+	top: 236px;
+	left: 722px;
+	position: absolute;
+}
+
+#capcismetalview {
+	z-index: 13;
+	width: 120px;
+	height: 42px;
+	top: 328px;
+	left: 44px;
+	position: absolute;
+}
+
+#CMDefaultButton {
+	z-index: 14;
+	width: 136px;
+	height: 44px;
+	top: 327px;
+	left: 199px;
+	position: absolute;
+}
+
+#exitbutton {
+	z-index: 19;
+	width: 25px;
+	height: 35px;
+	top: 333px;
+	left: 492px;
+	position: absolute;
+}
+
+#accentbutton {
+	z-index: 15;
+	width: 133px;
+	height: 45px;
+	top: 328px;
+	left: 623px;
+	position: absolute;
+}
+
+#invisiblebutton {
+	z-index: 16;
+	width: 160px;
+	height: 41px;
+	top: 329px;
+	left: 764px;
+	position: absolute;
+}
+
+#menubutton {
+	z-index: 17;
+	width: 126px;
+	height: 36px;
+	top: 332px;
+	left: 937px;
+	position: absolute;
+}
+
+#bigtabbutton {
+	z-index: 18;
+	width: 150px;
+	height: 35px;
+	top: 333px;
+	left: 367px;
 	position: absolute;
 }
 

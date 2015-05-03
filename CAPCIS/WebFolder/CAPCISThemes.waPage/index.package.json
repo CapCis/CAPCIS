@@ -8,10 +8,6 @@
 			"type": "core"
 		},
 		{
-			"id": "Widget/button",
-			"type": "widget"
-		},
-		{
 			"id": "Widget/container",
 			"type": "widget"
 		},
@@ -28,7 +24,7 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/dataGrid",
+			"id": "Widget/button",
 			"type": "widget"
 		},
 		{
