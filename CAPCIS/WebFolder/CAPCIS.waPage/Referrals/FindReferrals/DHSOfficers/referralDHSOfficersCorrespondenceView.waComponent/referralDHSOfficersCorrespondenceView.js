@@ -26,18 +26,16 @@ function constructor (id) {
 	{// @endlock
 		var status = $$(getHtmlId("checkbox1")).getValue();
 		var id = sources.dhsCorespondance.DhsCorrespondenceID;
-		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
+		
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:6,
 				data2:status,
 				data3: id
-			}; //dontf
-			
-			
+			}; 
 			rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);
@@ -56,7 +54,7 @@ function constructor (id) {
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:6,
 				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
 				data2:sources.dhsList.DhsInformationID
-			}; //dontf
+			}; 
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -73,8 +71,11 @@ function constructor (id) {
 
 	combobox1.change = function combobox1_change (event)// @startlock
 	{// @endlock
-		// Add your code here
+		
 	};// @lock
+	
+	
+	
 	function fillCorrespondance()
 	{
 		debugger;

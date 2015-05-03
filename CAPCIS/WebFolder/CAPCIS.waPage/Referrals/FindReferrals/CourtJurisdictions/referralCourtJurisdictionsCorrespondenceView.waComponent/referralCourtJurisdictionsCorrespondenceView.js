@@ -69,7 +69,7 @@ function constructor (id) {
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
 				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
 				data2:sources.courtJurisdictionList.CourtJurisdictionID
-			}; //dontf
+			}; 
 			
 			
 			rpcDInsert.setInsertAsync({
@@ -107,7 +107,7 @@ function constructor (id) {
 		
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
 		var id = sources.courtJurisdictionCorespondance.CourtJurisdictionCorrespondenceID;
-		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
+		
 		var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
@@ -119,7 +119,7 @@ function constructor (id) {
 			
 			rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);

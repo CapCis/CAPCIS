@@ -64,8 +64,30 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		debugger;
 		//window.open("http://localhost:8082/getPicture");
-		$$('image3').setValue("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
+		//$$('image3').setValue("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
 		
+		xhr = new XMLHttpRequest();
+		URLText = "http://127.0.0.1:8082/getPicture";
+		xhr.open("POST",URLText,true);		
+		xhr.setRequestHeader("Content-type","text/plain");
+		xhr.responseType = "blob";
+		xhr.send("0,0,1");
+		
+		xhr.onreadystatechange = function()
+		{
+			
+			if (this.readyState === 4)
+			{
+				debugger;
+				alert("hello");
+				$$('image3').setValue(xhr.response);
+				$$('frame1').setValue(xhr.response.url);
+				//URL.cr;
+			}
+		}
+		
+		
+		$$('image3').setValue(xhr.response);
 	};// @lock
 
 	button5.click = function button5_click (event)// @startlock

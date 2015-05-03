@@ -68,7 +68,7 @@ function constructor (id) {
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:1,
 				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
 				data2:sources.assessorList.AssessorInformationID
-			}; //dontf
+			}; 
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -86,7 +86,7 @@ function constructor (id) {
 
 	assessorCorespondanceGrid.onRowClick = function assessorCorespondanceGrid_onRowClick (event)// @startlock
 	{// @endlock
-		//Load referralAssessorsCorrespondenceView Page
+		
 		
 	};// @lock
 
@@ -99,8 +99,7 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		//fillCorrespondance();  //refresh grid data on correspondencelist box page
-		//$$(getHtmlId('container6')).setSplitPosition(1290);
+		
 	};// @lock
 
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
@@ -114,8 +113,20 @@ function constructor (id) {
 	    	minor: 1,
 	    	data2: status,
 	    	data3: id
-		}; //dontf
-		assessorUpdate = rpcDUpdate.setUpdate(myObject8);
+		}; 
+		assessorUpdate = rpcDUpdate.setUpdateAsync({
+		 			'onSuccess': function(result){
+		 			  fillCorrespondance();
+					},
+					'onError': function(error){
+						
+						console.log(error);
+					},
+					'params': [myObject8]
+				});
+		
+		
+		
 	};// @lock
 
 	// @region eventManager// @startlock

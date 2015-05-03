@@ -107,7 +107,7 @@ function constructor (id) {
 			
 			rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);
