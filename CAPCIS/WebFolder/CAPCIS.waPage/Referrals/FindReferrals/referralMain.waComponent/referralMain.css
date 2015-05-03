@@ -3,31 +3,58 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}htmlTag20 {
-	position: absolute;
+#{id}htmlTag15 {
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
+	position: absolute;
 }
 
-#{id}htmlTag16 {
-	position: absolute;
+#{id}htmlTag14 {
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
+	position: absolute;
 }
 
-#{id}htmlTag19 {
-	position: absolute;
+#{id}htmlTag13 {
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag8 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag6 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag4 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
 }
 
 #{id}richText32 {
@@ -73,15 +100,6 @@
 	top: 256px;
 	left: -34px;
 	position: absolute;
-}
-
-#{id}htmlTag18 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
 }
 
 #{id}label145 {
