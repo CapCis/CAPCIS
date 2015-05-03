@@ -76,7 +76,7 @@ function constructor (id) {
 				token:'7836140170460568' ,id:'1',major:3,minor:10,
 				data1:$$(getHtmlId("omNewCoresspondenceField")).getValue(),
 				data2:sources.otherMonitorList.OtherMonitorsID
-			}; //dontf
+			};
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -96,18 +96,18 @@ function constructor (id) {
 	{// @endlock
 		var status = $$(getHtmlId("omVoidedCorrespondanceCheck")).getValue();
 		var id = sources.otherMonitorCorespondance.OtherMonitorsCorrespondenceID;
-		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
+		
 		var myObject8 = 
 			{
 				token:'7836140170460568' ,id:'1',major:3,minor:10,
 				data2:status,
 				data3: id
-			}; //dontf
+			}; 
 			
 			
 			rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);

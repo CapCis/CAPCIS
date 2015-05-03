@@ -77,7 +77,7 @@ function constructor (id) {
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:2,
 				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
 				data2:sources.attorneyList.AttorneyInformationID
-			}; //dontf
+			}; 
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
 						fillCorrespondance();
@@ -103,7 +103,7 @@ function constructor (id) {
 			}; //dontf
 		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						fillCorrespondance();
 					},
 					'onError': function(error){
 						console.log(error);
