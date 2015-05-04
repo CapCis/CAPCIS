@@ -67,7 +67,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		//$$('image3').setValue("http://localhost:8082/getPicture"); //must change this to xhr request with body, see below functions
 		
 		xhr = new XMLHttpRequest();
-		URLText = "http://127.0.0.1:8082/getPicture";
+		URLText = "http://127.0.0.1:8082/1.getClientPicture";  //should be localhost or 127.0.0.1
 		xhr.open("POST",URLText,true);		
 		xhr.setRequestHeader("Content-type","text/plain");
 		xhr.responseType = "blob";
@@ -75,14 +75,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 		xhr.onreadystatechange = function()
 		{
-			
 			if (this.readyState === 4)
 			{
-				debugger;
-				alert("hello");
-				$$('image3').setValue(xhr.response);
-				$$('frame1').setValue(xhr.response.url);
-				//URL.cr;
+				myBlob = this.response
+				$$('frame1').setValue(URL.createObjectURL(myBlob));
+				$$('image3').setValue(URL.createObjectURL(myBlob));
 			}
 		}
 		

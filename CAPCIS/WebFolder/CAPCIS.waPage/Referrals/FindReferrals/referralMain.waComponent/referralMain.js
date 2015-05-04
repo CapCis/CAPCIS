@@ -1506,7 +1506,7 @@ function constructor (id) {
 					},
 					'params': [myObject5]
 				});
-		
+		debugger;
 		var myObject7 = {
     		token: userConfigObj.secToken,
     		id: userConfigObj.userID,
@@ -1533,12 +1533,23 @@ function constructor (id) {
 						
 					},
 					'onError': function(error){
+						
 						console.log(error);
 					},
 					'params': [myObject7]
 				});
 
-
+		 var myObject = {token: userConfigObj.secToken,id: userConfigObj.userID, major: 3,minor: 0, data1: false}; 
+            rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+						assessorSuccess(result);
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject]
+				});	
 
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,data1:sources.assessorList.AssessorInformationID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
@@ -1613,10 +1624,10 @@ function constructor (id) {
 	 		
 	 	rpcDUpdate.setUpdateAsync({
 		 		'onSuccess': function(result){
-						
+						debugger;
 				},
 				'onError': function(error){
-					
+					debugger;
 					console.log(error);
 				},
 				'params': [myObject7]
@@ -2432,7 +2443,7 @@ function constructor (id) {
 					'params': [myObject5]
 		});
 		
-	};// @lock
+	};// @endlock
 
 	
 	judgeFullList.onRowClick = function judgeFullList_onRowClick (event)// @startlock

@@ -1564,7 +1564,7 @@ function constructor (id) {
 
 	function mainTabClick(clickedMainTabId)
 	{	
-	for (var myMasterTabButtonNumber = 0; myMasterTabButtonNumber <= (masterTabArray.length - 1); myMasterTabButtonNumber++)
+	for (var myMasterTabButtonNumber = 0; myMasterTabButtonNumber <= (tabColumnTracking.length - 1); myMasterTabButtonNumber++)
 	{
 		
 		if (clickedMainTabId === "capcisMainWC_mt" + myMasterTabButtonNumber)

@@ -972,7 +972,20 @@ function constructor (id) {
 		$$($comp.id+'_testStatus').setValue('None');
 		$$(getHtmlId("amountPaidField")).setValue(null);
 			
-		
+		xhr = new XMLHttpRequest();
+		URLText = userConfigObj.serverDomain + "/1.getClientPicture";  //should be localhost or 127.0.0.1
+		xhr.open("POST",URLText,true);		
+		xhr.setRequestHeader("Content-type","text/plain");
+		xhr.responseType = "blob";    //omit this line in order to recieve string from server
+		xhr.send("0,0,1");  //text in body that needs to be parsed on server
+		xhr.onreadystatechange = function()
+		{
+			if (this.readyState === 4)
+			{
+				myBlob = this.response
+				$$($comp.id +'_clientPicture').setValue(URL.createObjectURL(myBlob));
+			}
+		}
 
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:11,data1:sources.myRosterList.ClientInformation_CIID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		 		rpcDSelects.getSelectAsync({

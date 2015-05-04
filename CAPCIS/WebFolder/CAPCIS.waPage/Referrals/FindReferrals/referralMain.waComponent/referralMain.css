@@ -3,7 +3,61 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}htmlTag15 {
+#{id}htmlTag20 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag18 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag17 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag16 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag12 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag10 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag2 {
 	z-index: 0;
 	width: 0px;
 	height: 0px;
@@ -13,48 +67,39 @@
 }
 
 #{id}htmlTag14 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
-}
-
-#{id}htmlTag13 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
 }
 
 #{id}htmlTag8 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
 }
 
 #{id}htmlTag6 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
 }
 
 #{id}htmlTag4 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
 }
 
 #{id}richText32 {
@@ -3497,24 +3542,6 @@
 }
 
 #{id}AssessorContainer {
-	z-index: 5;
-	width: 1290px;
-	height: 625px;
-	top: 45px;
-	left: 0px;
-	position: absolute;
-}
-
-#{id}AttorneyContainer {
-	z-index: 6;
-	width: 1290px;
-	height: 625px;
-	top: 45px;
-	left: 0px;
-	position: absolute;
-}
-
-#{id}DHSOfficerContainer {
 	z-index: 13;
 	width: 1290px;
 	height: 625px;
@@ -3523,8 +3550,8 @@
 	position: absolute;
 }
 
-#{id}JudgeContainer {
-	z-index: 7;
+#{id}AttorneyContainer {
+	z-index: 5;
 	width: 1290px;
 	height: 625px;
 	top: 45px;
@@ -3532,25 +3559,7 @@
 	position: absolute;
 }
 
-#{id}OtherMonitorContainer {
-	z-index: 9;
-	width: 1290px;
-	height: 625px;
-	top: 45px;
-	left: 0px;
-	position: absolute;
-}
-
-#{id}ProsecutorContainer {
-	z-index: 8;
-	width: 1290px;
-	height: 625px;
-	top: 45px;
-	left: 0px;
-	position: absolute;
-}
-
-#{id}ProbationOfficerContainer {
+#{id}DHSOfficerContainer {
 	z-index: 12;
 	width: 1290px;
 	height: 625px;
@@ -3559,7 +3568,34 @@
 	position: absolute;
 }
 
-#{id}ProbationJursidictionContainer {
+#{id}JudgeContainer {
+	z-index: 6;
+	width: 1290px;
+	height: 625px;
+	top: 45px;
+	left: 0px;
+	position: absolute;
+}
+
+#{id}OtherMonitorContainer {
+	z-index: 8;
+	width: 1290px;
+	height: 625px;
+	top: 45px;
+	left: 0px;
+	position: absolute;
+}
+
+#{id}ProsecutorContainer {
+	z-index: 7;
+	width: 1290px;
+	height: 625px;
+	top: 45px;
+	left: 0px;
+	position: absolute;
+}
+
+#{id}ProbationOfficerContainer {
 	z-index: 11;
 	width: 1290px;
 	height: 625px;
@@ -3568,8 +3604,17 @@
 	position: absolute;
 }
 
-#{id}CourtJursidictionContainer {
+#{id}ProbationJursidictionContainer {
 	z-index: 10;
+	width: 1290px;
+	height: 625px;
+	top: 45px;
+	left: 0px;
+	position: absolute;
+}
+
+#{id}CourtJursidictionContainer {
+	z-index: 9;
 	width: 1290px;
 	height: 625px;
 	top: 45px;
