@@ -3,60 +3,6 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}htmlTag9 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
-}
-
-#{id}htmlTag8 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
-}
-
-#{id}htmlTag7 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
-}
-
-#{id}htmlTag4 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
-}
-
-#{id}htmlTag3 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
-}
-
-#{id}htmlTag2 {
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-	position: absolute;
-}
-
 #{id}textField10.waf-state-focus {
 	border-top-color: rgb(0, 27, 90);
 	border-left-color: rgb(0, 27, 90);
@@ -75,7 +21,7 @@
 }
 
 #{id}textField10.waf-state-hover {
-	background-color: rgba(78, 117, 163, 0.125);
+	background-color: rgba(78, 117, 163, 0.121094);
 	border-top-color: rgb(0, 27, 90);
 	border-left-color: rgb(0, 27, 90);
 	border-right-color: rgb(0, 27, 90);
@@ -226,10 +172,10 @@
 
 #{id}label10 {
 	z-index: 5;
-	width: 30px;
-	height: 16px;
-	top: 57px;
-	left: 15px;
+	width: 31px;
+	height: 14px;
+	top: 58px;
+	left: 14px;
 	position: absolute;
 }
 
@@ -261,18 +207,18 @@
 
 #{id}label52 {
 	z-index: 4;
-	width: 102px;
-	height: 16px;
-	top: -3px;
+	width: 96px;
+	height: 14px;
+	top: -1px;
 	left: 50px;
 	position: absolute;
 }
 
 #{id}label51 {
 	z-index: 3;
-	width: 44px;
-	height: 16px;
-	top: -3px;
+	width: 37px;
+	height: 14px;
+	top: -1px;
 	left: 0px;
 	position: absolute;
 }
@@ -357,8 +303,8 @@
 #{id}label50 {
 	z-index: 34;
 	width: 23px;
-	height: 16px;
-	top: 44px;
+	height: 14px;
+	top: 46px;
 	left: 90px;
 	position: absolute;
 }
@@ -370,8 +316,8 @@
 #{id}label49 {
 	z-index: 33;
 	width: 49px;
-	height: 16px;
-	top: 44px;
+	height: 14px;
+	top: 46px;
 	left: 175px;
 	position: absolute;
 }
@@ -383,8 +329,8 @@
 #{id}label48 {
 	z-index: 32;
 	width: 55px;
-	height: 16px;
-	top: 44px;
+	height: 14px;
+	top: 46px;
 	left: 260px;
 	position: absolute;
 }
@@ -396,8 +342,8 @@
 #{id}label47 {
 	z-index: 31;
 	width: 62px;
-	height: 16px;
-	top: 44px;
+	height: 14px;
+	top: 46px;
 	left: 345px;
 	position: absolute;
 }
@@ -408,9 +354,9 @@
 
 #{id}label46 {
 	z-index: 30;
-	width: 26px;
-	height: 16px;
-	top: -1px;
+	width: 27px;
+	height: 14px;
+	top: 1px;
 	left: 495px;
 	position: absolute;
 }
@@ -423,8 +369,8 @@
 #{id}label45 {
 	z-index: 29;
 	width: 40px;
-	height: 16px;
-	top: -1px;
+	height: 14px;
+	top: 1px;
 	left: 450px;
 	position: absolute;
 	text-align: right;
@@ -436,9 +382,9 @@
 
 #{id}label44 {
 	z-index: 28;
-	width: 81px;
-	height: 16px;
-	top: -1px;
+	width: 80px;
+	height: 14px;
+	top: 1px;
 	left: 345px;
 	position: absolute;
 }
@@ -449,9 +395,9 @@
 
 #{id}label43 {
 	z-index: 27;
-	width: 80px;
-	height: 16px;
-	top: -1px;
+	width: 79px;
+	height: 14px;
+	top: 1px;
 	left: 195px;
 	position: absolute;
 }
@@ -463,10 +409,10 @@
 
 #{id}label42 {
 	z-index: 26;
-	width: 102px;
-	height: 16px;
-	top: -1px;
-	left: 66px;
+	width: 96px;
+	height: 14px;
+	top: 1px;
+	left: 69px;
 	position: absolute;
 	text-align: center;
 }
@@ -477,9 +423,9 @@
 
 #{id}label41 {
 	z-index: 25;
-	width: 44px;
-	height: 16px;
-	top: -1px;
+	width: 37px;
+	height: 14px;
+	top: 1px;
 	left: 10px;
 	position: absolute;
 }
@@ -490,9 +436,9 @@
 
 #{id}label40 {
 	z-index: 24;
-	width: 53px;
-	height: 16px;
-	top: 44px;
+	width: 49px;
+	height: 14px;
+	top: 46px;
 	left: 5px;
 	position: absolute;
 }
@@ -556,9 +502,9 @@
 
 #{id}label39 {
 	z-index: 10;
-	width: 72px;
-	height: 16px;
-	top: -1px;
+	width: 65px;
+	height: 14px;
+	top: 1px;
 	left: 455px;
 	position: absolute;
 }
@@ -620,9 +566,9 @@
 
 #{id}label14 {
 	z-index: 9;
-	width: 52px;
-	height: 16px;
-	top: 44px;
+	width: 53px;
+	height: 14px;
+	top: 46px;
 	left: 430px;
 	position: absolute;
 }
@@ -645,8 +591,8 @@
 #{id}label9 {
 	z-index: 8;
 	width: 84px;
-	height: 16px;
-	top: 44px;
+	height: 14px;
+	top: 46px;
 	left: 285px;
 	position: absolute;
 }
@@ -669,8 +615,8 @@
 #{id}label8 {
 	z-index: 7;
 	width: 29px;
-	height: 16px;
-	top: 44px;
+	height: 14px;
+	top: 46px;
 	left: 145px;
 	position: absolute;
 }
@@ -692,9 +638,9 @@
 
 #{id}label7 {
 	z-index: 6;
-	width: 45px;
-	height: 16px;
-	top: 44px;
+	width: 42px;
+	height: 14px;
+	top: 46px;
 	left: 5px;
 	position: absolute;
 }
@@ -715,9 +661,9 @@
 
 #{id}label6 {
 	z-index: 5;
-	width: 61px;
-	height: 16px;
-	top: -1px;
+	width: 58px;
+	height: 14px;
+	top: 1px;
 	left: 330px;
 	position: absolute;
 }
@@ -738,9 +684,9 @@
 
 #{id}label1 {
 	z-index: 4;
-	width: 92px;
-	height: 16px;
-	top: -1px;
+	width: 98px;
+	height: 14px;
+	top: 1px;
 	left: 215px;
 	position: absolute;
 }
@@ -768,8 +714,8 @@
 #{id}label3 {
 	z-index: 3;
 	width: 56px;
-	height: 16px;
-	top: -1px;
+	height: 14px;
+	top: 1px;
 	left: 100px;
 	position: absolute;
 	text-align: left;
@@ -813,8 +759,8 @@
 #{id}label2 {
 	z-index: 2;
 	width: 65px;
-	height: 16px;
-	top: -1px;
+	height: 14px;
+	top: 1px;
 	left: 5px;
 	position: absolute;
 	text-align: left;
@@ -1802,9 +1748,9 @@
 
 #{id}label27 {
 	z-index: 16;
-	width: 51px;
-	height: 16px;
-	top: 85px;
+	width: 47px;
+	height: 14px;
+	top: 87px;
 	left: 9px;
 	position: absolute;
 }
@@ -1861,9 +1807,9 @@
 
 #{id}label26 {
 	z-index: 10;
-	width: 61px;
-	height: 16px;
-	top: 130px;
+	width: 57px;
+	height: 14px;
+	top: 132px;
 	left: 9px;
 	position: absolute;
 }
@@ -1880,9 +1826,9 @@
 
 #{id}label25 {
 	z-index: 9;
-	width: 35px;
-	height: 16px;
-	top: 85px;
+	width: 36px;
+	height: 14px;
+	top: 87px;
 	left: 209px;
 	position: absolute;
 }
@@ -1900,8 +1846,8 @@
 #{id}label24 {
 	z-index: 7;
 	width: 21px;
-	height: 16px;
-	top: 85px;
+	height: 14px;
+	top: 87px;
 	left: 104px;
 	position: absolute;
 }
@@ -1917,9 +1863,9 @@
 
 #{id}label23 {
 	z-index: 6;
-	width: 28px;
-	height: 16px;
-	top: 40px;
+	width: 29px;
+	height: 14px;
+	top: 42px;
 	left: 369px;
 	position: absolute;
 }
@@ -1936,9 +1882,9 @@
 
 #{id}label22 {
 	z-index: 5;
-	width: 52px;
-	height: 16px;
-	top: 40px;
+	width: 51px;
+	height: 14px;
+	top: 42px;
 	left: 249px;
 	position: absolute;
 }
@@ -1954,9 +1900,9 @@
 
 #{id}label21 {
 	z-index: 3;
-	width: 66px;
-	height: 16px;
-	top: 40px;
+	width: 60px;
+	height: 14px;
+	top: 42px;
 	left: 129px;
 	position: absolute;
 }
@@ -1972,9 +1918,9 @@
 
 #{id}label4 {
 	z-index: 2;
-	width: 54px;
-	height: 16px;
-	top: 40px;
+	width: 51px;
+	height: 14px;
+	top: 42px;
 	left: 10px;
 	position: absolute;
 	color: rgb(0, 27, 90);
@@ -2078,10 +2024,10 @@
 
 #{id}label5 {
 	z-index: 2;
-	width: 49px;
-	height: 16px;
+	width: 55px;
+	height: 15px;
 	top: 7px;
-	left: 886px;
+	left: 880px;
 	position: absolute;
 	color: rgba(240, 240, 255, 0.898438);
 	font-size: 12px;
@@ -2236,14 +2182,6 @@
 	top: 0px;
 	left: 0px;
 	position: absolute;
-	background-color: rgb(0, 27, 90);
-	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwLjM5ODQzOCIgLz48c3RvcCBzdG9wLWNvbG9yPSIjZmZmZmZmIiBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMCIgLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjd2FmLWllLWdyYWRpZW50KSIgLz48L3N2Zz4=");
-	 background-image:-webkit-gradient(linear,0% 0%, 0% 100%,color-stop(0, rgba(255, 255, 255, 0.398438)),color-stop(1, rgba(255, 255, 255, 0)));
-	 background-image:-webkit-linear-gradient(top, rgba(255, 255, 255, 0.398438) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:-moz-linear-gradient(top, rgba(255, 255, 255, 0.398438) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:-ms-linear-gradient(top, rgba(255, 255, 255, 0.398438) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:-o-linear-gradient(top, rgba(255, 255, 255, 0.398438) 0%,rgba(255, 255, 255, 0) 100%);
-	 background-image:linear-gradient(top, rgba(255, 255, 255, 0.398438) 0%,rgba(255, 255, 255, 0) 100%);
 }
 
 .waf-widget.waf-clone-{id}label34 {

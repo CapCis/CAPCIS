@@ -3,19 +3,43 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#dataGrid1 .waf-dataGrid-row.waf-state-selected {
-}
-
 #dataGrid1 .waf-dataGrid-row.waf-state-active {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-state-hover {
+#button1.waf-state-hover {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-widget-even {
+#combobox1 button {
 }
 
-#dataGrid1 .waf-dataGrid-row.waf-widget-odd {
+.waf-combobox-list-combobox1 {
+	color: rgb(0, 27, 90);
+	background-color: rgb(240, 240, 255);
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
+}
+
+#combobox1 input {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+}
+
+#combobox1.waf-state-active input {
+}
+
+#combobox1.waf-state-disabled button {
+}
+
+#combobox1.waf-state-active {
+}
+
+#combobox1.waf-state-hover {
+}
+
+#dataGrid1 .waf-dataGrid-header {
 }
 
 #dataGrid1 .waf-dataGrid-footer {
@@ -24,120 +48,490 @@
 #dataGrid1 .waf-dataGrid-body {
 }
 
-#dataGrid1 .waf-dataGrid-header {
+#dataGrid1 .waf-dataGrid-row.waf-widget-even {
+}
+
+#button1 {
+	z-index: 31;
+	width: 83px;
+	height: 62px;
+	top: 179px;
+	left: 901px;
+	position: absolute;
 }
 
 #dataGrid1 {
-	z-index: 10;
-	width: 508px;
-	height: 258px;
-	top: 483px;
-	left: 352px;
+	z-index: 29;
+	width: 233px;
+	height: 171px;
+	top: 719px;
+	left: 601px;
 	position: absolute;
 }
 
-#richText2 {
-	z-index: 9;
-	width: 162px;
-	height: 28px;
-	top: 285px;
-	left: 439px;
+#label5 {
+	z-index: 27;
+	width: 26px;
+	height: 14px;
+	top: 656px;
+	left: 299px;
 	position: absolute;
 }
 
-#richText1 {
-	z-index: 8;
-	width: 67px;
-	height: 26px;
-	top: 296px;
-	left: 259px;
+#combobox1 {
+	z-index: 28;
+	width: 174px;
+	height: 40px;
+	top: 643px;
+	left: 330px;
+	position: absolute;
+}
+
+#matrix1 {
+	z-index: 26;
+	width: 228px;
+	height: 127px;
+	top: 725px;
+	left: 854px;
+	position: absolute;
+}
+
+#label4 {
+	z-index: 26;
+	width: 22px;
+	height: 14px;
+	top: 654px;
+	left: 84px;
+	position: absolute;
+}
+
+#jQDateTime1 {
+	z-index: 26;
+	width: 137px;
+	height: 43px;
+	top: 640px;
+	left: 111px;
+	position: absolute;
+}
+
+#menuBar1 .waf-menuItem {
+}
+
+#checkbox1.waf-state-hover .waf-checkbox-box {
+}
+
+#checkbox1.waf-state-focus .waf-checkbox-box {
+}
+
+#checkbox1.waf-state-active .waf-checkbox-box {
+}
+
+#checkbox1 .waf-checkbox-box {
+}
+
+#label3 {
+	z-index: 24;
+	width: 26px;
+	height: 14px;
+	top: 555px;
+	left: 124px;
+	position: absolute;
+}
+
+#checkbox1 {
+	z-index: 24;
+	width: 50px;
+	height: 39px;
+	top: 543px;
+	left: 69px;
+	position: absolute;
+}
+
+#menuItem1.waf-state-selected {
+}
+
+#menuItem1.waf-state-active {
+}
+
+#menuItem1.waf-state-hover {
+}
+
+#menuItem4 .waf-menuItem.waf-state-selected {
+	text-shadow: transparent 0px 0px 0px;
+	color: rgb(230, 96, 0);
+}
+
+#menuItem4 .waf-menuItem.waf-state-active {
+	text-shadow: transparent 0px 0px 0px;
+}
+
+#menuItem4 .waf-menuItem.waf-state-hover {
+	text-shadow: transparent 0px 0px 0px;
+}
+
+#menuItem4.waf-state-selected {
+}
+
+#menuItem4.waf-state-active {
+}
+
+#menuItem4.waf-state-hover {
+}
+
+#container1 {
+	z-index: 4;
+	top: 23px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+}
+
+#richText8 {
+	z-index: 1;
+	width: 64px;
+	height: 23px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem4 {
+	z-index: 1;
+	width: 66px;
+	height: 23px;
+	top: 0px;
+	left: 0px;
 	position: absolute;
 	color: rgb(0, 27, 90);
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
 }
 
-#textField1.waf-state-hover {
+#menuBar2 > .waf-menuItem {
+	margin-bottom: 0px;
 }
 
-#textField1.waf-state-focus {
+#menuBar2 > .waf-menuItem:not(.waf-menuItem-last) {
+	margin-right: 5px;
 }
 
-#label1 {
+#menuBar2 {
+	z-index: 3;
+	height: 23px;
+	top: 0px;
+	left: 0px;
+	right: 5px;
+	position: absolute;
+}
+
+#tabView1 {
+	z-index: 22;
+	width: 362px;
+	height: 202px;
+	top: 437px;
+	left: 625px;
+	position: absolute;
+}
+
+#component1 {
+	z-index: 21;
+	width: 157px;
+	height: 136px;
+	top: 17px;
+	left: 868px;
+	position: absolute;
+}
+
+#richText7 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem3 {
+	z-index: 3;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#richText6 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem2 {
+	z-index: 2;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#richText5 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem1 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuBar1 {
+	z-index: 20;
+	width: 551px;
+	height: 49px;
+	top: 445px;
+	left: 46px;
+	position: absolute;
+}
+
+#accentbutton.waf-state-focus {
+}
+
+#accentbutton.waf-state-active {
+}
+
+#accentbutton.waf-state-hover {
+}
+
+#invisiblebutton.waf-state-focus {
+}
+
+#invisiblebutton.waf-state-active {
+}
+
+#invisiblebutton.waf-state-hover {
+}
+
+#exitbutton.waf-state-focus {
+}
+
+#exitbutton.waf-state-active {
+}
+
+#exitbutton.waf-state-hover {
+}
+
+#CMDefaultButton.waf-state-focus {
+}
+
+#CMDefaultButton.waf-state-active {
+}
+
+#CMDefaultButton.waf-state-hover {
+}
+
+#CMdefaulttextinput.waf-state-hover {
+}
+
+#CMdefaulttextinput.waf-state-focus {
+}
+
+#label2 {
 	z-index: 7;
 	width: 26px;
 	height: 14px;
-	top: 345px;
-	left: 101px;
+	top: 184px;
+	left: 189px;
 	position: absolute;
 }
 
-#textField1 {
-	z-index: 7;
-	width: 171px;
-	height: 40px;
-	top: 332px;
-	left: 132px;
-	position: absolute;
-}
-
-#button2.waf-state-focus {
-}
-
-#button2.waf-state-active {
-}
-
-#button2.waf-state-hover {
-}
-
-#button2 {
+#label1 {
 	z-index: 5;
-	width: 24px;
-	height: 27px;
-	top: 200px;
-	left: 80px;
+	width: 26px;
+	height: 14px;
+	top: 181px;
+	left: 20px;
+	position: absolute;
+}
+
+#container3 {
+	z-index: 30;
+	width: 188px;
+	height: 95px;
+	top: 29px;
+	left: 631px;
 	position: absolute;
 }
 
 #waf-body {
-	background-color: rgb(229, 229, 229);
+	background-color: rgb(78, 117, 163);
 }
 
-#container2 {
-	z-index: 4;
-	width: 222px;
-	height: 131px;
-	top: 65px;
-	left: 626px;
-	position: absolute;
-}
-
-#container1 {
-	z-index: 3;
-	width: 220px;
-	height: 126px;
-	top: 94px;
-	left: 318px;
-	position: absolute;
-	border-top-color: rgb(240, 240, 255);
-	border-left-color: rgb(240, 240, 255);
-	border-right-color: rgb(240, 240, 255);
-	border-bottom-color: rgb(240, 240, 255);
-}
-
-#button1.waf-state-focus {
-}
-
-#button1.waf-state-active {
-}
-
-#button1.waf-state-hover {
-}
-
-#button1 {
+#DefaultContainer {
 	z-index: 1;
-	width: 75px;
-	height: 25px;
-	top: 44px;
-	left: 52px;
+	width: 200px;
+	height: 100px;
+	top: 24px;
+	left: 175px;
+	position: absolute;
+}
+
+#invisiblecontainer {
+	z-index: 2;
+	width: 173px;
+	height: 102px;
+	top: 21px;
+	left: 419px;
+	position: absolute;
+}
+
+#capcismetalviewcontainer {
+	z-index: 4;
+	width: 151px;
+	height: 94px;
+	top: 29px;
+	left: 14px;
+	position: absolute;
+}
+
+#capcismetalviewtextinput {
+	z-index: 6;
+	width: 117px;
+	height: 32px;
+	top: 172px;
+	left: 51px;
+	position: absolute;
+}
+
+#CMdefaulttextinput {
+	z-index: 7;
+	width: 129px;
+	height: 32px;
+	top: 175px;
+	left: 220px;
+	position: absolute;
+}
+
+#capcismetalviewtextrich {
+	z-index: 8;
+	width: 125px;
+	height: 31px;
+	top: 242px;
+	left: 42px;
+	position: absolute;
+}
+
+#CMdefaulttextrich {
+	z-index: 9;
+	width: 156px;
+	height: 34px;
+	top: 243px;
+	left: 190px;
+	position: absolute;
+}
+
+#headertextrich {
+	z-index: 10;
+	width: 155px;
+	height: 40px;
+	top: 245px;
+	left: 364px;
+	position: absolute;
+}
+
+#lighttextrich {
+	z-index: 11;
+	width: 176px;
+	height: 38px;
+	top: 244px;
+	left: 544px;
+	position: absolute;
+}
+
+#headerlighttextrich {
+	z-index: 12;
+	width: 176px;
+	height: 38px;
+	top: 236px;
+	left: 722px;
+	position: absolute;
+}
+
+#capcismetalview {
+	z-index: 13;
+	width: 120px;
+	height: 42px;
+	top: 328px;
+	left: 44px;
+	position: absolute;
+}
+
+#CMDefaultButton {
+	z-index: 14;
+	width: 136px;
+	height: 44px;
+	top: 327px;
+	left: 199px;
+	position: absolute;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+}
+
+#exitbutton {
+	z-index: 19;
+	width: 25px;
+	height: 35px;
+	top: 333px;
+	left: 492px;
+	position: absolute;
+}
+
+#accentbutton {
+	z-index: 15;
+	width: 133px;
+	height: 45px;
+	top: 327px;
+	left: 733px;
+	position: absolute;
+}
+
+#invisiblebutton {
+	z-index: 16;
+	width: 160px;
+	height: 41px;
+	top: 330px;
+	left: 543px;
+	position: absolute;
+}
+
+#menubutton {
+	z-index: 17;
+	width: 126px;
+	height: 36px;
+	top: 332px;
+	left: 937px;
+	position: absolute;
+}
+
+#bigtabbutton {
+	z-index: 18;
+	width: 150px;
+	height: 35px;
+	top: 333px;
+	left: 367px;
 	position: absolute;
 }
 
