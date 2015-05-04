@@ -1,1 +1,10 @@
-﻿{"name":"referralDHSOfficersCorrespondenceList","html":"referralDHSOfficersCorrespondenceList.html","scripts":["referralDHSOfficersCorrespondenceList.js"],"styles":["referralDHSOfficersCorrespondenceList.css"]}
+{
+	"name": "referralDHSOfficersCorrespondenceList",
+	"html": "referralDHSOfficersCorrespondenceList.html",
+	"scripts": [
+		"referralDHSOfficersCorrespondenceList.js"
+	],
+	"styles": [
+		"referralDHSOfficersCorrespondenceList.css"
+	]
+}
