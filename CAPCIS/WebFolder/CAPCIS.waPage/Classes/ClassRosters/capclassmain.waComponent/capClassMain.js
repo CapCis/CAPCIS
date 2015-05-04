@@ -959,13 +959,14 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
+		/*
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:13,data1:today,data2:sources.myRosterList.ClientRequirementsID}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 		prevRec = rpcDSelects.getSelect(myObject);
 		
 		if(prevRec.length !== 0)
 		{
 			
-		}		
+		}*/		
 		cart = [];
 		$$(getHtmlId('attendedCheckBox')).setValue(false);
 		currentCharges = 0;	
