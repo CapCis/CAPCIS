@@ -3,6 +3,320 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#dataGrid1 .waf-dataGrid-row.waf-state-active {
+}
+
+#button1.waf-state-hover {
+}
+
+#combobox1 button {
+}
+
+.waf-combobox-list-combobox1 {
+	color: rgb(0, 27, 90);
+	background-color: rgb(240, 240, 255);
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
+}
+
+#combobox1 input {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+}
+
+#combobox1.waf-state-active input {
+}
+
+#combobox1.waf-state-disabled button {
+}
+
+#combobox1.waf-state-active {
+}
+
+#combobox1.waf-state-hover {
+}
+
+#dataGrid1 .waf-dataGrid-header {
+}
+
+#dataGrid1 .waf-dataGrid-footer {
+}
+
+#dataGrid1 .waf-dataGrid-body {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-widget-even {
+}
+
+#button1 {
+	z-index: 31;
+	width: 83px;
+	height: 62px;
+	top: 179px;
+	left: 901px;
+	position: absolute;
+}
+
+#dataGrid1 {
+	z-index: 29;
+	width: 233px;
+	height: 171px;
+	top: 719px;
+	left: 601px;
+	position: absolute;
+}
+
+#label5 {
+	z-index: 27;
+	width: 26px;
+	height: 14px;
+	top: 656px;
+	left: 299px;
+	position: absolute;
+}
+
+#combobox1 {
+	z-index: 28;
+	width: 174px;
+	height: 40px;
+	top: 643px;
+	left: 330px;
+	position: absolute;
+}
+
+#matrix1 {
+	z-index: 26;
+	width: 228px;
+	height: 127px;
+	top: 725px;
+	left: 854px;
+	position: absolute;
+}
+
+#label4 {
+	z-index: 26;
+	width: 22px;
+	height: 14px;
+	top: 654px;
+	left: 84px;
+	position: absolute;
+}
+
+#jQDateTime1 {
+	z-index: 26;
+	width: 137px;
+	height: 43px;
+	top: 640px;
+	left: 111px;
+	position: absolute;
+}
+
+#menuBar1 .waf-menuItem {
+}
+
+#checkbox1.waf-state-hover .waf-checkbox-box {
+}
+
+#checkbox1.waf-state-focus .waf-checkbox-box {
+}
+
+#checkbox1.waf-state-active .waf-checkbox-box {
+}
+
+#checkbox1 .waf-checkbox-box {
+}
+
+#label3 {
+	z-index: 24;
+	width: 26px;
+	height: 14px;
+	top: 555px;
+	left: 124px;
+	position: absolute;
+}
+
+#checkbox1 {
+	z-index: 24;
+	width: 50px;
+	height: 39px;
+	top: 543px;
+	left: 69px;
+	position: absolute;
+}
+
+#menuItem1.waf-state-selected {
+}
+
+#menuItem1.waf-state-active {
+}
+
+#menuItem1.waf-state-hover {
+}
+
+#menuItem4 .waf-menuItem.waf-state-selected {
+	text-shadow: transparent 0px 0px 0px;
+	color: rgb(230, 96, 0);
+}
+
+#menuItem4 .waf-menuItem.waf-state-active {
+	text-shadow: transparent 0px 0px 0px;
+}
+
+#menuItem4 .waf-menuItem.waf-state-hover {
+	text-shadow: transparent 0px 0px 0px;
+}
+
+#menuItem4.waf-state-selected {
+}
+
+#menuItem4.waf-state-active {
+}
+
+#menuItem4.waf-state-hover {
+}
+
+#container1 {
+	z-index: 4;
+	top: 23px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+}
+
+#richText8 {
+	z-index: 1;
+	width: 64px;
+	height: 23px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem4 {
+	z-index: 1;
+	width: 66px;
+	height: 23px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	color: rgb(0, 27, 90);
+	border-top-color: rgb(0, 27, 90);
+	border-left-color: rgb(0, 27, 90);
+	border-right-color: rgb(0, 27, 90);
+	border-bottom-color: rgb(0, 27, 90);
+}
+
+#menuBar2 > .waf-menuItem {
+	margin-bottom: 0px;
+}
+
+#menuBar2 > .waf-menuItem:not(.waf-menuItem-last) {
+	margin-right: 5px;
+}
+
+#menuBar2 {
+	z-index: 3;
+	height: 23px;
+	top: 0px;
+	left: 0px;
+	right: 5px;
+	position: absolute;
+}
+
+#tabView1 {
+	z-index: 22;
+	width: 362px;
+	height: 202px;
+	top: 437px;
+	left: 625px;
+	position: absolute;
+}
+
+#component1 {
+	z-index: 21;
+	width: 157px;
+	height: 136px;
+	top: 17px;
+	left: 868px;
+	position: absolute;
+}
+
+#richText7 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem3 {
+	z-index: 3;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#richText6 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem2 {
+	z-index: 2;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#richText5 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuItem1 {
+	z-index: 1;
+	width: 110px;
+	height: 47px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+#menuBar1 {
+	z-index: 20;
+	width: 551px;
+	height: 49px;
+	top: 445px;
+	left: 46px;
+	position: absolute;
+}
+
+#accentbutton.waf-state-focus {
+}
+
+#accentbutton.waf-state-active {
+}
+
+#accentbutton.waf-state-hover {
+}
+
 #invisiblebutton.waf-state-focus {
 }
 
@@ -55,11 +369,11 @@
 }
 
 #container3 {
-	z-index: 3;
+	z-index: 30;
 	width: 188px;
 	height: 95px;
-	top: 18px;
-	left: 629px;
+	top: 29px;
+	left: 631px;
 	position: absolute;
 }
 
@@ -173,6 +487,7 @@
 	top: 327px;
 	left: 199px;
 	position: absolute;
+	text-shadow: rgb(255, 255, 255) 0px 0px 0px;
 }
 
 #exitbutton {
@@ -188,8 +503,8 @@
 	z-index: 15;
 	width: 133px;
 	height: 45px;
-	top: 328px;
-	left: 623px;
+	top: 327px;
+	left: 733px;
 	position: absolute;
 }
 
@@ -197,8 +512,8 @@
 	z-index: 16;
 	width: 160px;
 	height: 41px;
-	top: 329px;
-	left: 764px;
+	top: 330px;
+	left: 543px;
 	position: absolute;
 }
 

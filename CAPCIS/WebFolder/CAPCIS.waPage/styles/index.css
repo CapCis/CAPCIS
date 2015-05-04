@@ -44,7 +44,7 @@
 
 #capcisMainSelect {
 	z-index: 16;
-	width: 173px;
+	width: 175px;
 	height: 695px;
 	top: 100px;
 	left: 5px;
@@ -77,7 +77,6 @@
 	left: 0px;
 	position: absolute;
 }
-
 
 #capcisRegisterButton {
 	z-index: 14;

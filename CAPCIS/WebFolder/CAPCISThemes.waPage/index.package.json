@@ -28,6 +28,43 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/menuBar",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/menuItem",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/component",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/tabView",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/checkbox",
+			"type": "widget"
+		},
+		{
+			"id": "JQDateTime/package.json",
+			"path": "WIDGETS_CUSTOM",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/matrix",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/combobox",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
 			"id": "capcismetal/package.json",
 			"path": "THEMES_CUSTOM",
 			"type": "theme"
