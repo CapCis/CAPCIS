@@ -74,9 +74,12 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var myObject8 = 
+		var myBlog = $$(getHtmlId("pjNewCoresspondenceField")).getValue();
+		if (myBlog != "")
+		{
+			var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:12,
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:12,
 				data1:$$(getHtmlId("pjNewCoresspondenceField")).getValue(),
 				data2:sources.probationJurisdictionList.POJurisdictionID
 			}; //dontf
@@ -92,7 +95,7 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('pjNewCoresspondenceField')).setValue("");
-			
+		}
 	};// @lock
 
 	pjVoidedCorrespondanceCheck.change = function pjVoidedCorrespondanceCheck_change (event)// @startlock
@@ -101,7 +104,7 @@ function constructor (id) {
 		var id = sources.probationJurisdictionCorespondance.POJurisdictionCorrespondenceID;
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:12,
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:12,
 				data2:status,
 				data3: id
 			}; //dontf

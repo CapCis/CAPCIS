@@ -62,26 +62,28 @@ function constructor (id) {
     }
 	submitNewCorrespondence.click = function submitNewCorrespondence_click (event)// @startlock
 	{// @endlock
-		
-		var myObject8 = 
+		var myBlog = $$(getHtmlId("newCorrespondanceField")).getValue();
+		if (myBlog != "")
+		{
+			var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:1,
-				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data1:myBlog,
 				data2:sources.assessorList.AssessorInformationID
 			}; 
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
-		 			fillCorrespondance();
+		 				fillCorrespondance();
 					},
 					'onError': function(error){
-						
 						console.log(error);
 					},
 					'params': [myObject8]
-				});
-			
-		$$(getHtmlId("newCorrespondanceField")).setValue("");
+			});
+			$$(getHtmlId("newCorrespondanceField")).setValue("");
+		}	
+		
 	};// @lock
 
 	assessorCorespondanceGrid.onRowClick = function assessorCorespondanceGrid_onRowClick (event)// @startlock

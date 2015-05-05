@@ -70,11 +70,13 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-
-		var myObject8 = 
+		var myBlog = $$(getHtmlId("omNewCoresspondenceField")).getValue();
+		if (myBlog != "")
+		{
+			var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:10,
-				data1:$$(getHtmlId("omNewCoresspondenceField")).getValue(),
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:10,
+				data1:myBlog,
 				data2:sources.otherMonitorList.OtherMonitorsID
 			};
 			
@@ -89,7 +91,7 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('omNewCoresspondenceField')).setValue("");
-			
+		}
 	};// @lock
 
 	omVoidedCorrespondanceCheck.change = function omVoidedCorrespondanceCheck_change (event)// @startlock
@@ -99,7 +101,7 @@ function constructor (id) {
 		
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:10,
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:10,
 				data2:status,
 				data3: id
 			}; 

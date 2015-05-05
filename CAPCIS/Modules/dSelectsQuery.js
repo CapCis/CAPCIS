@@ -172,9 +172,9 @@ exports.buildQuery = function buildQuery(myObject)
 			return answer;	
 		case 3: //referalls
 			switch(myObject.minor){
-				case 0: answer = 'AssessorName, AssessorPhone, AssessorEmail, AssessorFax, AssessorAddress, AssessorCity, AssessorState, \
+				case 0: answer = 'SELECT AssessorName, AssessorPhone, AssessorEmail, AssessorFax, AssessorAddress, AssessorCity, AssessorState, InactiveAssessorInfo, \
 								AssessorZipCode, AssessorInformationID, AssessorPhoneExt, AssessorMobilePhone, AssessorNotes, AssessorFullNameDisplay,   \
-							    AssPreferredReportingMethod, InactiveAssessorInfo '+myObject.data1;
+							    AssPreferredReportingMethod FROM capcis.assessorinformation WHERE InactiveAssessorInfo = '+myObject.data1;
 						return answer;
 				case 2: answer = "SELECT DATE_FORMAT(assessorcorrespondence.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, assessorcorrespondence.AssessorCorrespondence, \
 								assessorcorrespondence.FK_AssessorInformationID, fxuseraccounts.FullName, assessorcorrespondence.VoidedAssessorCorrespondence, assessorcorrespondence.AssessorCorrespondenceID \
@@ -274,7 +274,7 @@ exports.buildQuery = function buildQuery(myObject)
 				case 18: answer = 'SELECT AttorneyName, FullName, AttorneyPhone, AttorneyEmail, AttorneyFax, AttorneyAddress, AttorneyCity, \
 								AttorneyState, AttorneyZipCode, PublicDefender, AttorneyFullNameDisplay, AttorneyAdditionalPhone, BAKAttorneyInformationID \
 								 AttorneyNotes, AttorneyPhoneExt, AttPreferredReportingMethod, InactiveAttorneyInfo, AttorneyStaffInfo, \
-								, DATE_FORMAT(bakattorneyinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakattorneyinformation \
+							    DATE_FORMAT(bakattorneyinformation.CreatedDateTime, "%m/%d/%Y %h:%i:%s:%p") as CreatedDateTime FROM capcis.bakattorneyinformation \
 								LEFT JOIN capcis.fxuseraccounts on bakattorneyinformation.FK_fxuseraccounts_FXUserAccountsID = fxuseraccounts.FxUserAccountsID \
 								WHERE FK_attorneyinformation_AttorneyInformationID = "'+myObject.data1+'" \
 								ORDER BY bakattorneyinformation.CreatedDateTime DESC';
@@ -911,7 +911,11 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 			}
 			return answer;
-		case 6:
+		case 6: //blob data return
+			switch(myObject.minor){
+				case 0 : answer = 'SELECT ClientPicture FROM clientpictures WHERE FK_ClientInformation_CIID = "'+myObject.CIID+'"';
+					return answer;
+			}
 			return answer;
 		case 7:
 			return answer;

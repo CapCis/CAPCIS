@@ -32,6 +32,9 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+		//debugger;
+		//var myCode =$$(getHtmlId("tfUserName")).getValue();
+		//test = myCode.charCodeAt(0);
 		loginGo();
 	};// @lock
 	

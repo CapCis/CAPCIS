@@ -71,10 +71,13 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var myObject8 = 
+		var myBlog = $$(getHtmlId("prosNewCoresspondenceField")).getValue();
+		if (myBlog != "")
+		{
+			var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:16,
-				data1:$$(getHtmlId("prosNewCoresspondenceField")).getValue(),
+				data1:myBlog,
 				data2:sources.prosecutorList.ProsecutorsID
 			}; //dontf
 			
@@ -89,7 +92,7 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('prosNewCoresspondenceField')).setValue("");
-			
+		}
 	};// @lock
 
 	prosVoidedCorrespondanceCheck.change = function prosVoidedCorrespondanceCheck_change (event)// @startlock

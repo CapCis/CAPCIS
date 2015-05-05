@@ -1,1 +1,10 @@
-﻿{"name":"referralOtherMonitorsCorrespondenceView","html":"referralOtherMonitorsCorrespondenceView.html","scripts":["referralOtherMonitorsCorrespondenceView.js"],"styles":["referralOtherMonitorsCorrespondenceView.css"]}
+{
+	"name": "referralOtherMonitorsCorrespondenceView",
+	"html": "referralOtherMonitorsCorrespondenceView.html",
+	"scripts": [
+		"referralOtherMonitorsCorrespondenceView.js"
+	],
+	"styles": [
+		"referralOtherMonitorsCorrespondenceView.css"
+	]
+}
