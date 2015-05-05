@@ -17,7 +17,6 @@ function constructor (id) {
 	var attCorrespondanceGrid = {};	// @dataGrid
 	var button2 = {};	// @button
 	var attVoidedCorrespondanceCheck = {};	// @checkbox
-	var attCorCloseButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
@@ -71,11 +70,13 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var x = $$(getHtmlId("attNewCoresspondenceField"));
-		var myObject8 = 
+		var myBlog = $$(getHtmlId("attNewCoresspondenceField")).getValue();
+		if (myBlog != "")
+		{
+			var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:2,
-				data1:$$(getHtmlId("attNewCoresspondenceField")).getValue(),
+				data1:myBlog,
 				data2:sources.attorneyList.AttorneyInformationID
 			}; 
 			rpcDInsert.setInsertAsync({
@@ -88,7 +89,7 @@ function constructor (id) {
 					'params': [myObject8]
 				});
 			$$(getHtmlId("attNewCoresspondenceField")).setValue("")
-			
+		}
 	};// @lock
 
 	attVoidedCorrespondanceCheck.change = function attVoidedCorrespondanceCheck_change (event)// @startlock
@@ -114,17 +115,11 @@ function constructor (id) {
 		
 	};// @lock
 
-	attCorCloseButton.click = function attCorCloseButton_click (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_attCorrespondanceActiveBox", "change", attCorrespondanceActiveBox.change, "WAF");
 	WAF.addListener(this.id + "_attCorrespondanceGrid", "onRowClick", attCorrespondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_attVoidedCorrespondanceCheck", "change", attVoidedCorrespondanceCheck.change, "WAF");
-	WAF.addListener(this.id + "_attCorCloseButton", "click", attCorCloseButton.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock

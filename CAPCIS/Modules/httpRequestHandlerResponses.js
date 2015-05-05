@@ -46,7 +46,7 @@
     //myAwsomeFile.close();
 }
 
-function getPic (request, response)
+function getClientPic (request, response)
 {
 	debugger;
 	var myArray = request.body.split(",");
@@ -58,8 +58,9 @@ function getPic (request, response)
 	var serverUtil = require('serverUtilities');
 	var dBQueryBuilder = require('dSelectsQuery');
 	//add code to check token recievd from body of xhr request
-	//add code to get the CIID from the body of xhr request               
-	var selectStatement = 'SELECT ClientPicture FROM clientpictures WHERE FK_ClientInformation_CIID = "'+myCIID+'"'; 		//build query for client pictures
+	//add code to get the CIID from the body of xhr request   
+	myObject = {token: myToken,id: myUserID,major: 6,minor: 0,CIID:myCIID};         
+	var selectStatement = dBQueryBuilder.buildQuery(myObject); 		//build query for client pictures
 	var connection = serverUtil.getDBConnectionCapcisClientPicture();
 	var result = connection.execute(selectStatement);
 	var myResults = result.getAllRows();

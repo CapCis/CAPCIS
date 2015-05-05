@@ -62,12 +62,14 @@ function constructor (id) {
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
 		
-		
+		var myBlog = $$(getHtmlId("newCorrespondanceField")).getValue();
+		if (myBlog != "")
+		{
 			var x = $$(getHtmlId("newCorrespondanceField"));
-		var myObject8 = 
+			var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:5,
-				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data1:myBlog,
 				data2:sources.courtJurisdictionList.CourtJurisdictionID
 			}; 
 			
@@ -82,7 +84,7 @@ function constructor (id) {
 					'params': [myObject8]
 				});
 			$$(getHtmlId('newCorrespondanceField')).setValue("");
-			
+		}
 		
 	};// @lock
 

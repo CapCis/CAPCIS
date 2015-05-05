@@ -1,1 +1,10 @@
-﻿{"name":"referralProbationJurisdictionsCorrespondenceView","html":"referralProbationJurisdictionsCorrespondenceView.html","scripts":["referralProbationJurisdictionsCorrespondenceView.js"],"styles":["referralProbationJurisdictionsCorrespondenceView.css"]}
+{
+	"name": "referralProbationJurisdictionsCorrespondenceView",
+	"html": "referralProbationJurisdictionsCorrespondenceView.html",
+	"scripts": [
+		"referralProbationJurisdictionsCorrespondenceView.js"
+	],
+	"styles": [
+		"referralProbationJurisdictionsCorrespondenceView.css"
+	]
+}

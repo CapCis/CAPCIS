@@ -1,1 +1,10 @@
-﻿{"name":"referralAssessorsCorrespondenceView","html":"referralAssessorsCorrespondenceView.html","scripts":["referralAssessorsCorrespondenceView.js"],"styles":["referralAssessorsCorrespondenceView.css"]}
+{
+	"name": "referralAssessorsCorrespondenceView",
+	"html": "referralAssessorsCorrespondenceView.html",
+	"scripts": [
+		"referralAssessorsCorrespondenceView.js"
+	],
+	"styles": [
+		"referralAssessorsCorrespondenceView.css"
+	]
+}

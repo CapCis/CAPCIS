@@ -3,23 +3,36 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}combobox2 {
+#{id}htmlTag4 {
+	z-index: 0;
 	width: 0px;
 	height: 0px;
-	top: 203px;
-	left: 271px;
+	top: auto;
+	left: auto;
+	position: absolute;
 }
 
-#{id}label1 {
-	width: 29px;
-	height: 13px;
-	top: 196px;
-	left: 237px;
+#{id}htmlTag3 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag2 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
 }
 
 #{id}label4 {
 	z-index: 6;
-	width: 29px;
+	width: 130px;
 	height: 13px;
 	top: 256px;
 	left: 43px;
@@ -86,7 +99,7 @@
 
 #{id}label2 {
 	z-index: 2;
-	width: 183px;
+	width: 117px;
 	height: 13px;
 	top: 202px;
 	left: 5px;
