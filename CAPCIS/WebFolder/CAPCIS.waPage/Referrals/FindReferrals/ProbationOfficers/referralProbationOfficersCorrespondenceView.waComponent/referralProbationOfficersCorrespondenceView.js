@@ -70,12 +70,15 @@ function constructor (id) {
 
 	button2.click = function button2_click (event)// @startlock
 	{// @endlock
-		var myObject8 = 
+		var myBlog = $$(getHtmlId("poNewCoresspondenceField")).getValue();
+		if (myBlog != "")
+		{
+			var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:14,
-				data1:$$(getHtmlId("poNewCoresspondenceField")).getValue(),
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:14,
+				data1:myBlog,
 				data2:sources.probationOfficerList.POInformationID
-			}; //dontf
+			};
 			
 			rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -88,20 +91,19 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('poNewCoresspondenceField')).setValue("");
-			fillCorrespondance();
+		}	
 	};// @lock
 
 	poVoidedCorrespondanceCheck.change = function poVoidedCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
 		var status = $$(getHtmlId("poVoidedCorrespondanceCheck")).getValue();
 		var id = sources.probationOfficerCorespondance.POCorrespondenceID;
-		//var id  = $$(getHtmlId('attHiddenCorrId')).getValue();
 		var myObject8 = 
 			{
-				token:'7836140170460568' ,id:'1',major:3,minor:14,
+				token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:14,
 				data2:status,
 				data3: id
-			}; //dontf
+			};
 			
 			
 			rpcDUpdate.setUpdateAsync({

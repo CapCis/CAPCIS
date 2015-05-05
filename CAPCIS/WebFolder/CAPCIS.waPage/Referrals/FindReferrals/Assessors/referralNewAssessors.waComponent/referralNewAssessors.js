@@ -35,6 +35,8 @@ function constructor (id) {
 	button4.click = function button4_click (event)// @startlock
 	{// @endlock
 		var grid = document.getElementById(getHtmlId('cityComboboxGrid'));
+		city = tempstore;
+		sources.city.sync();
 		if(grid.style.display == 'none')
 		{
 			grid.style.display = 'block';

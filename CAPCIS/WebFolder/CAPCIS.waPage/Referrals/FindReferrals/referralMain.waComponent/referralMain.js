@@ -88,6 +88,7 @@ function constructor (id) {
 		
 
 	// @region namespaceDeclaration// @startlock
+	var menuItem1 = {};	// @menuItem
 	var submitProbationOfficerInformation = {};	// @button
 	var AssessorMainContainer = {};	// @container
 	var loadCourtJurisdictionCorresp = {};	// @button
@@ -203,6 +204,13 @@ function constructor (id) {
 
 	// eventHandlers// @lock
 
+	menuItem1.click = function menuItem1_click (event)// @startlock
+	{// @endlock
+		
+		//var myWidget = document.getElementById($comp.id + "_menuBar1");
+		//myWidget.style.zIndex = "1000";
+	};// @lock
+
 	
 
 	
@@ -234,7 +242,7 @@ function constructor (id) {
 	 	
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-		 				debugger;
+		 				
 		 				bakAssessorInfo = result;
 		 				sources.bakAssessorInfo.sync();
 						//bakListSuccess(result);
@@ -1506,7 +1514,7 @@ function constructor (id) {
 					},
 					'params': [myObject5]
 				});
-		debugger;
+		
 		var myObject7 = {
     		token: userConfigObj.secToken,
     		id: userConfigObj.userID,
@@ -1624,10 +1632,10 @@ function constructor (id) {
 	 		
 	 	rpcDUpdate.setUpdateAsync({
 		 		'onSuccess': function(result){
-						debugger;
+						
 				},
 				'onError': function(error){
-					debugger;
+					
 					console.log(error);
 				},
 				'params': [myObject7]
@@ -2650,85 +2658,85 @@ function constructor (id) {
 
 	newProbJ.click = function newProbJ_click (event)// @startlock
 	{// @endlock
-		newPJ.style.zIndex = '10';
+		newPJ.style.zIndex = '1000';
 		newPJ.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newProbationJurisdictionComponent', 											
-		path: 	'/CAPCIS.waPage/referralProbationJurisdictions.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationJurisdictions/referralNewProbationJurisdictions.waComponent'});
 	};// @lock
 
 	newCourtJ.click = function newCourtJ_click (event)// @startlock
 	{// @endlock
-		newCJ.style.zIndex = '10';
+		newCJ.style.zIndex = '1000';
 		newCJ.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newCourtJurisdictionComponent', 											
-		path: 	'/CAPCIS.waPage/referralNewCourtJurisdictions.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralNewCourtJurisdictions.waComponent'});
 	};// @lock
 
 	newOtherM.click = function newOtherM_click (event)// @startlock
 	{// @endlock
-		newOther.style.zIndex = '10';
+		newOther.style.zIndex = '1000';
 		newOther.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newOtherMoniterComponent', 											
-		path: 	'/CAPCIS.waPage/referralNewOtherMonitors.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/OtherMonitors/referralNewOtherMonitors.waComponent'});
 	};// @lock
 
 	newPros.click = function newPros_click (event)// @startlock
 	{// @endlock
-		newProsecutor.style.zIndex = '10';
+		newProsecutor.style.zIndex = '1000';
 		newProsecutor.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newProsecutorsComponent', 											
-		path: 	'/CAPCIS.waPage/referralProsecutors.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Prosecutors/referralNewProsecutors.waComponent'});
 	};// @lock
 
 	newPOfficer.click = function newPOfficer_click (event)// @startlock
 	{// @endlock
-		newPO.style.zIndex = '10';
+		newPO.style.zIndex = '1000';
 		newPO.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newPOComponent', 											
-		path: 	'/CAPCIS.waPage/referralProbationOfficers.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/ProbationOfficers/referralNewProbationOfficers.waComponent'});
 	};// @lock
 
 	newJudge.click = function newJudge_click (event)// @startlock
 	{// @endlock
-		newJudges.style.zIndex = '10';
+		newJudges.style.zIndex = '1000';
 		newJudges.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newJudgeComponent', 											
-		path: 	'/CAPCIS.waPage/referralNewJudges.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralNewJudges.waComponent'});
 	
 	};// @lock
 
 	newDHSO.click = function newDHSO_click (event)// @startlock
 	{// @endlock
-		newDHS.style.zIndex = '10';
+		newDHS.style.zIndex = '1000';
 		newDHS.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newDHSOfficerComponent', 											
-		path: 	'/CAPCIS.waPage/referralNewDHSOfficers.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/DHSOfficers/referralNewDHSOfficers.waComponent'});
 	};// @lock
 
 	newAtt.click = function newAtt_click (event)// @startlock
 	{// @endlock
-		newAttorney.style.zIndex = '10';
+		newAttorney.style.zIndex = '1000';
 		newAttorney.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newAttorneyComponent', 											
-		path: 	'/CAPCIS.waPage/referralNewAttorneys.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Attorneys/referralNewAttorneys.waComponent'});
 	};// @lock
 
 	newAss.click = function newAss_click (event)// @startlock
 	{// @endlock
 		
-		newAssessor.style.zIndex = '10';
+		newAssessor.style.zIndex = '1000';
 		newAssessor.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newAssesorComponent', 											
-		path: 	'/CAPCIS.waPage/referralNewAssessors.waComponent'});
+		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralNewAssessors.waComponent'});
 	};// @lock
 
 
@@ -2891,6 +2899,7 @@ function constructor (id) {
 	
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_menuItem1", "click", menuItem1.click, "WAF");
 	WAF.addListener(this.id + "_submitProbationOfficerInformation", "click", submitProbationOfficerInformation.click, "WAF");
 	WAF.addListener(this.id + "_AssessorMainContainer", "click", AssessorMainContainer.click, "WAF");
 	WAF.addListener(this.id + "_loadCourtJurisdictionCorresp", "click", loadCourtJurisdictionCorresp.click, "WAF");

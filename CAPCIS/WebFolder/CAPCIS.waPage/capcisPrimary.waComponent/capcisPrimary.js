@@ -1626,6 +1626,7 @@ function constructor (id) {
 					var hideSubTabXButton = document.getElementById("capcisMainWC_st" + clickedTabID.toString() + subTabLoop.toString());
 						hideSubTabXButton.style.visibility = "hidden";														
 				}
+				
 				for (x = mainColumn; x <= (tabColumnTracking.length - 1); x++) 			//find the next tabs to the right and bring them down one
 				{
 						if (tabColumnTracking[x].mainColumnOpen === true) 		//see if the next column is open  (masterTabArray[x].tabName !== "")
@@ -1672,6 +1673,7 @@ function constructor (id) {
 						thisTabButton.style.visible = "visible";
 						thisTabXButton.style.visible = "visible";
 						thisContainer.style.display = "block";
+						thisContainer.style.zIndex = "100";
 						currentVisibleMainContainerId = "capcisMainWC_mc" + originalColumnNewTabNumber;
 						currentVisibleMainTabNumber	= originalColumnNewTabNumber;								
 						return;	
@@ -1689,6 +1691,7 @@ function constructor (id) {
 									thisTabButton.style.visible = "visible";
 									thisTabXButton.style.visible = "visible";
 									thisContainer.style.display = "block";
+									thisContainer.style.zIndex = "100";
 									currentVisibleMainContainerId = "capcisMainWC_mc" + foundTabID;
 									currentVisibleMainTabNumber = foundTabID;
 									return;

@@ -47,12 +47,14 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
-		debugger;
-
+		
+		var myBlog = $$(getHtmlId("newCorrespondanceField")).getValue();
+		if (myBlog != "")
+		{
 		var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:6,
-				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data1:myBlog,
 				data2:sources.dhsList.DhsInformationID
 			}; 
 			
@@ -67,6 +69,7 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('newCorrespondanceField')).setValue("");
+		}
 	};// @lock
 
 	combobox1.change = function combobox1_change (event)// @startlock
