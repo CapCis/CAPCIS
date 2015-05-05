@@ -3,6 +3,24 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#dataGrid1 .waf-dataGrid-row.waf-widget-odd {
+}
+
+#dataGrid1 .waf-dataGrid-row {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-state-active .waf-dataGrid-row.waf-widget-odd {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-state-hover .waf-dataGrid-row.waf-widget-odd {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-state-selected {
+}
+
+#dataGrid1 .waf-dataGrid-row.waf-state-hover {
+}
+
 #dataGrid1 .waf-dataGrid-row.waf-state-active {
 }
 
