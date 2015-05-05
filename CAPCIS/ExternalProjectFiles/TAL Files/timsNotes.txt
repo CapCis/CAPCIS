@@ -161,3 +161,23 @@ HOW TO SEE PREVIOUS QUERIES IN MYSQL
 
 	SELECT * FROM mysql.general_log ORDER BY event_time desc
 
+
+
+HOW TO DO XMLHTTPREQUEST FROM BROWSER
+
+		xhr = new XMLHttpRequest();
+		URLText = "http://127.0.0.1:8082/1.getClientPicture";  //should be localhost or 127.0.0.1
+		xhr.open("POST",URLText,true);		
+		xhr.setRequestHeader("Content-type","text/plain");
+		xhr.responseType = "blob";    //omit this line in order to recieve string from server
+		xhr.send("0,0,1");  //text in the body of the post that needs to be parsed
+		
+		xhr.onreadystatechange = function()
+		{
+			if (this.readyState === 4)
+			{
+				myBlob = this.response
+				$$('frame1').setValue(URL.createObjectURL(myBlob));
+				$$('image3').setValue(URL.createObjectURL(myBlob));
+			}
+		}

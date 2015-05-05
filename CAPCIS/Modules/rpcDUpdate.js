@@ -36,7 +36,7 @@ exports.setUpdate = function setUpdate(myObject)
 	catch(err)
 	{
 		connection.close;
-		return err;
+		return err.messages;
 	}
 	
 };

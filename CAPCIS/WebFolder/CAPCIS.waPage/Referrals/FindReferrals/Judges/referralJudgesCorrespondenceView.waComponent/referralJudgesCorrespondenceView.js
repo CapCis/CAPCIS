@@ -16,7 +16,6 @@ function constructor (id) {
 	var button5 = {};	// @button
 	var correspondanceGrid = {};	// @dataGrid
 	var correspondanceActiveBox = {};	// @combobox
-	var button2 = {};	// @button
 	var voidCorrespondanceCheck = {};	// @checkbox
 	// @endregion// @endlock
 
@@ -60,13 +59,14 @@ function constructor (id) {
 	}
 	button5.click = function button5_click (event)// @startlock
 	{// @endlock
-		
-		
+		var myBlog = $$(getHtmlId("newCorrespondanceField")).getValue();
+		if (myBlog != "")
+		{		
 			var x = $$(getHtmlId("newCorrespondanceField"));
 			var myObject8 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:8,
-				data1:$$(getHtmlId("newCorrespondanceField")).getValue(),
+				data1:myBlog,
 				data2:sources.judgeList.JudgesID
 			}; //dontf
 			
@@ -81,7 +81,7 @@ function constructor (id) {
 				});
 			
 			$$(getHtmlId('newCorrespondanceField')).setValue("");
-			
+		}
 	};// @lock
 
 	correspondanceGrid.onRowClick = function correspondanceGrid_onRowClick (event)// @startlock
@@ -92,11 +92,6 @@ function constructor (id) {
 	correspondanceActiveBox.change = function correspondanceActiveBox_change (event)// @startlock
 	{// @endlock
 		fillCorrespondance();
-		
-	};// @lock
-
-	button2.click = function button2_click (event)// @startlock
-	{// @endlock
 		
 	};// @lock
 
@@ -130,7 +125,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_correspondanceGrid", "onRowClick", correspondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_correspondanceActiveBox", "change", correspondanceActiveBox.change, "WAF");
-	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	// @endregion// @endlock
 

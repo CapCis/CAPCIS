@@ -1,1 +1,10 @@
-﻿{"name":"referralProbationOfficersCorrespondenceView","html":"referralProbationOfficersCorrespondenceView.html","scripts":["referralProbationOfficersCorrespondenceView.js"],"styles":["referralProbationOfficersCorrespondenceView.css"]}
+{
+	"name": "referralProbationOfficersCorrespondenceView",
+	"html": "referralProbationOfficersCorrespondenceView.html",
+	"scripts": [
+		"referralProbationOfficersCorrespondenceView.js"
+	],
+	"styles": [
+		"referralProbationOfficersCorrespondenceView.css"
+	]
+}
