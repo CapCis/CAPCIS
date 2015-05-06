@@ -1,1 +1,51 @@
-﻿{"name":"CAPCIS/CAPCIS.waPage/capcisRegistration.waComponent","version":"1.0.0","webComponent":"CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.js","loadDependencies":[{"id":"Widget/richText","type":"widget"},{"id":"Widget/textField","type":"widget"},{"id":"Widget/label","type":"widget"},{"id":"Widget/button","type":"widget"},{"id":"Widget/combobox","type":"widget"},{"id":"Widget/container","type":"widget"},{"id":"CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.html","path":"WEBFOLDER","type":"html"},{"id":"CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.css","path":"WEBFOLDER","type":"style"},{"id":"CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.js","path":"WEBFOLDER","type":"script"},{"id":"CAPCIS.waPage/capcisRegistration.waComponent/scripts/sha3.js","path":"WEBFOLDER","type":"script"}]}
+{
+	"name": "CAPCIS/CAPCIS.waPage/capcisRegistration.waComponent",
+	"version": "1.0.0",
+	"webComponent": "CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/combobox",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/capcisRegistration.waComponent/capcisRegistration.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		},
+		{
+			"id": "CAPCIS.waPage/capcisRegistration.waComponent/scripts/sha3.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}
