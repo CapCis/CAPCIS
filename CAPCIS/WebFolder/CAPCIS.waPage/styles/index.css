@@ -28,6 +28,9 @@
 	top: 5px;
 	left: 1410px;
 	position: absolute;
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	font-style: normal;
 }
 
 #waf-body {
@@ -37,17 +40,17 @@
 	z-index: 9;
 	width: 275px;
 	height: 27px;
-	top: 5px;
-	left: 290px;
+	top: 10px;
+	left: 280px;
 	position: absolute;
 }
 
 #capcisMainSelect {
 	z-index: 16;
-	width: 175px;
+	width: 180px;
 	height: 695px;
 	top: 100px;
-	left: 5px;
+	left: 0px;
 	position: absolute;
 }
 

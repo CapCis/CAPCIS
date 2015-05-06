@@ -1,0 +1,39 @@
+{
+	"name": "CAPCIS/CAPCISThemes.waPage/Test.waComponent",
+	"version": "1.0.0",
+	"webComponent": "CAPCISThemes.waPage/Test.waComponent/Test.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/combobox",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "CAPCISThemes.waPage/Test.waComponent/Test.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "CAPCISThemes.waPage/Test.waComponent/Test.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCISThemes.waPage/Test.waComponent/styles/Test.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCISThemes.waPage/Test.waComponent/Test.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}
