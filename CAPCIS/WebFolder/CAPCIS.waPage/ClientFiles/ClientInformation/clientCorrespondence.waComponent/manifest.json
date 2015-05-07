@@ -1,1 +1,10 @@
-﻿{"name":"clientCorrespondence","html":"clientCorrespondence.html","scripts":["clientCorrespondence.js"],"styles":["clientCorrespondence.css"]}
+{
+	"name": "clientCorrespondence",
+	"html": "clientCorrespondence.html",
+	"scripts": [
+		"clientCorrespondence.js"
+	],
+	"styles": [
+		"clientCorrespondence.css"
+	]
+}

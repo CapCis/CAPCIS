@@ -3500,3 +3500,29 @@ background-image: -o-linear-gradient(bottom, rgb(255,255,255) 0%,rgb(255,255,255
 background-image: linear-gradient(bottom, rgb(255,255,255) 0%,rgb(255,255,255) 100%);
 background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%,rgb(255,255,255) 100%);
 	}
+
+
+.waf-theme.capcismetal .waf-richText.waf-role-UserNameText {
+	color: rgb(0, 0, 255);
+}
+
+.waf-theme.capcismetal .waf-richText.waf-role-CreatedDateTimeText {
+	text-align: right;
+	color: rgb(255, 0, 0);
+}
+
+
+.waf-theme.capcismetal .waf-container.waf-role-ridgedcontainer {
+	border-top-style: ridge;
+border-top-color: rgb(229, 229, 229);
+border-left-style: ridge;
+border-left-width: 5px;
+border-left-color: rgb(229, 229, 229);
+border-right-style: ridge;
+border-right-width: 5px;
+border-right-color: rgb(229, 229, 229);
+border-bottom-style: ridge;
+border-bottom-color: rgb(229, 229, 229);
+border-top-width: 0px;
+border-bottom-width: 0px;
+}

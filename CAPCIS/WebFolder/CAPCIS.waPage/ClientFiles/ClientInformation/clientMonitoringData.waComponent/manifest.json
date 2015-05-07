@@ -1,1 +1,10 @@
-﻿{"name":"clientMonitoringData","html":"clientMonitoringData.html","scripts":["clientMonitoringData.js"],"styles":["clientMonitoringData.css"]}
+{
+	"name": "clientMonitoringData",
+	"html": "clientMonitoringData.html",
+	"scripts": [
+		"clientMonitoringData.js"
+	],
+	"styles": [
+		"clientMonitoringData.css"
+	]
+}
