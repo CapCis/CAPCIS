@@ -22,6 +22,7 @@ exports.getSelect = function getSelect(myObject)
 		connection.close;
 		if (myResults.length > 0) 
 		{
+			
 			var selectStatement = dBQueryBuilder.buildQuery(myObject);	
 			var connection = serverUtil.getDBConnection();
 			var result = connection.execute(selectStatement);

@@ -16,7 +16,6 @@ function constructor (id) {
 	var submitNewCorrespondence = {};	// @button
 	var assessorCorespondanceGrid = {};	// @dataGrid
 	var combobox1 = {};	// @combobox
-	var button1 = {};	// @button
 	var voidCorrespondanceCheck = {};	// @checkbox
 	// @endregion// @endlock
 
@@ -99,11 +98,6 @@ function constructor (id) {
     	
 	};// @lock
 
-	button1.click = function button1_click (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
 		var status = $$(getHtmlId("voidCorrespondanceCheck")).getValue();
@@ -135,7 +129,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_submitNewCorrespondence", "click", submitNewCorrespondence.click, "WAF");
 	WAF.addListener(this.id + "_assessorCorespondanceGrid", "onRowClick", assessorCorespondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_combobox1", "change", combobox1.change, "WAF");
-	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	// @endregion// @endlock
 

@@ -163,14 +163,18 @@ function constructor (id) {
 			testingTypeId:testigTypeId
 		};
 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){	
+		 			'onSuccess': function(result){
+		 				pageOpener(lastClickedClass);	
 					},
 					'onError': function(error){
 						console.log(error);
 					},
 					'params': [myObject]
 				});
-				cart.clear();
+				cart= [];
+				sources.cart.sync();
+				
+				$$(getHtmlId('muClassRosterMainCont')).setSplitPosition(1400);
 	};// @lock
 
 	submitButton.click = function submitButton_click (event)// @startlock
@@ -187,6 +191,7 @@ function constructor (id) {
 				testigTypeId = cart[x].TT_TestingTypeID;
 			}	
 		}
+		
 		
 		var myObject = {
 			token:userConfigObj.secToken ,
@@ -209,7 +214,8 @@ function constructor (id) {
 			testingTypeId:testigTypeId
 		};
 		rpcDInsert.setInsertAsync({
-		 			'onSuccess': function(result){	
+		 			'onSuccess': function(result){
+		 				pageOpener(lastClickedClass);	
 					},
 					'onError': function(error){
 						console.log(error);
@@ -217,7 +223,11 @@ function constructor (id) {
 					'params': [myObject]
 				});
 		
-		cart.clear();
+		cart =[];
+		sources.cart.sync();
+		
+		$$(getHtmlId('classRosterMainCont')).setSplitPosition(1400);
+		
 	};// @lock
 
 	textField60.keyup = function textField60_keyup (event)// @startlock
@@ -1157,15 +1167,15 @@ function constructor (id) {
 	 function pageOpener (id) 
 	{
 	
-			
-		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:id.id.toString()}; //dont forget to change token and id
+		lastClickedClass = 	id;
+		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:lastClickedClass.id.toString()}; //dont forget to change token and id
 	 	myRosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myRosterList.sync();
 	 	
 	 	//$comp.sourcesVar.myRosterList = myRosterList;
 	 	
 	 	
-	 	pageOpenerMU(id.id.toString());
+	 	pageOpenerMU(lastClickedClass.id.toString());
 	 	
 	
 		

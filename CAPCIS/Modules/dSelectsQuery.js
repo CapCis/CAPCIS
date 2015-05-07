@@ -284,18 +284,18 @@ exports.buildQuery = function buildQuery(myObject)
 				////////////////////////////////////////////////////////////////Begin Court Jurisdiction//////////////////////////////////////////////////////////////////
 				case 20 : answer = 'SELECT CourtJurisdiction, CourtJurisdictionID, CourtJurisdictionPhone, CourtJurisdictionEmail, CourtJurisdictionFax,\
 								CourtJurisdictionAddress, CourtJurisdictionCity, CourtJurisdictionState, CourtJurisdictionZipCode, CourtJurisdictionPhoneExt, \
-								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo \
+								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo, \
 								SearchFormat, SearchDatabase\
 								FROM capcis.courtjurisdiction where InactiveCourtJurisdictionInfo = '+myObject.data1;
 						return answer;
 				case 21 : answer = 'SELECT CourtJurisdiction, CourtJurisdictionID, CourtJurisdictionPhone, CourtJurisdictionEmail, CourtJurisdictionFax,\
 								CourtJurisdictionAddress, CourtJurisdictionCity, CourtJurisdictionState, CourtJurisdictionZipCode, CourtJurisdictionPhoneExt, \
-								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo \
+								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo, \
 								SearchFormat, SearchDatabase FROM capcis.courtjurisdiction';
 						return answer;
 				case 22 : answer = "SELECT CourtJurisdiction, CourtJurisdictionID, CourtJurisdictionPhone, CourtJurisdictionEmail, CourtJurisdictionFax,\
 								CourtJurisdictionAddress, CourtJurisdictionCity, CourtJurisdictionState, CourtJurisdictionZipCode, CourtJurisdictionPhoneExt, \
-								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo \
+								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo, \
 								SearchFormat, SearchDatabase FROM capcis.courtjurisdiction where courtjurisdiction.CourtJurisdiction LIKE '%"+myObject.data1+"%' or courtjurisdiction.CourtJurisdictionPhone LIKE '%"+myObject.data1+"%' \
 								OR courtjurisdiction.CourtJurisdictionEmail LIKE  '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionFax LIKE '%"+myObject.data1+"%' \
 								OR courtjurisdiction.CourtJurisdictionID LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionPhoneExt LIKE '%"+myObject.data1+"%' \
@@ -304,7 +304,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 23 : answer = "SELECT CourtJurisdiction, CourtJurisdictionID, CourtJurisdictionPhone, CourtJurisdictionEmail, CourtJurisdictionFax,\
 								CourtJurisdictionAddress, CourtJurisdictionCity, CourtJurisdictionState, CourtJurisdictionZipCode, CourtJurisdictionPhoneExt, \
-								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo \
+								CourtJurisdictionAlternatePhone, CourtJurisdictionNotes, CourtJurisdictionPreferredReportingMethod, InactiveCourtJurisdictionInfo, \
 								SearchFormat, SearchDatabase FROM capcis.courtjurisdiction where (courtjurisdiction.CourtJurisdiction LIKE '%"+myObject.data1+"%' or courtjurisdiction.CourtJurisdictionPhone LIKE '%"+myObject.data1+"%' \
 								OR courtjurisdiction.CourtJurisdictionEmail LIKE  '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionFax LIKE '%"+myObject.data1+"%' \
 								OR courtjurisdiction.CourtJurisdictionID LIKE '%"+myObject.data1+"%' OR courtjurisdiction.CourtJurisdictionPhoneExt LIKE '%"+myObject.data1+"%' \
