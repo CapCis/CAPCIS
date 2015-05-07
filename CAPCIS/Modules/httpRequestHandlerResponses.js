@@ -48,7 +48,7 @@
 
 function getClientPic (request, response)
 {
-	debugger;
+	//debugger;
 	var myArray = request.body.split(",");
 	var myToken = myArray[0];
 	var myUserID = myArray[1];
