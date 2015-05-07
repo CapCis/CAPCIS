@@ -4,30 +4,30 @@
 */
 
 #{id}htmlTag4 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
 }
 
 #{id}htmlTag3 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
 }
 
 #{id}htmlTag2 {
+	position: absolute;
 	z-index: 0;
 	width: 0px;
 	height: 0px;
 	top: auto;
 	left: auto;
-	position: absolute;
 }
 
 #{id}label1 {
@@ -88,15 +88,6 @@
 	left: 0px;
 	position: absolute;
 	background-color: rgba(240, 240, 255, 0.898438);
-}
-
-#{id}button1 {
-	z-index: 7;
-	width: 75px;
-	height: 25px;
-	top: 250px;
-	left: 220px;
-	position: absolute;
 }
 
 #{id}label2 {
