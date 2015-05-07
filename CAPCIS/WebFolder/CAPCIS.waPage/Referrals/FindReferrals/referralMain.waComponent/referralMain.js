@@ -1581,7 +1581,8 @@ function constructor (id) {
 
 	submitAttorneyInformation.click = function submitAttorneyInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitAttorneyInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitAttorneyInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.attorneyList.AttorneyCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 	 				'onSuccess': function(result){
@@ -1665,7 +1666,8 @@ function constructor (id) {
 
 	submitDHSInformation.click = function submitDHSInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitDHSInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitDHSInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.dhsList.DhsCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -1746,7 +1748,8 @@ function constructor (id) {
 
 	submitJudgeInformation.click = function submitJudgeInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitJudgeInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitJudgeInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:83,data1:sources.judgeList.JudgeCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -1826,7 +1829,8 @@ function constructor (id) {
 
 	submitOtherMonitorInformation.click = function submitOtherMonitorInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitOtherMonitorInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitOtherMonitorInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:83,data1:sources.otherMonitorList.OtherMonitorsCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -1910,7 +1914,8 @@ function constructor (id) {
 
 	submitProsecutorInformation.click = function submitProsecutorInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitProsecutorInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitProsecutorInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:83,data1:sources.prosecutorList.ProsecutorCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -1990,7 +1995,8 @@ function constructor (id) {
 
 	submitProbationOfficerInformation.click = function submitProbationOfficerInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitProbationOfficerInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitProbationOfficerInformation").disabled = false;}, 10000);
 		var myObject7 = 
 			{
 				
@@ -2042,7 +2048,8 @@ function constructor (id) {
 
 	submitProbationJurisdictionInformation.click = function submitProbationJurisdictionInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitProbationJurisdictionInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitProbationJurisdictionInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.probationJurisdictionList.JurisdictionCity}; 
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -2119,7 +2126,8 @@ function constructor (id) {
 
 	submitCourtJurisdictionInformation.click = function submitCourtJurisdictionInformation_click (event)// @startlock
 	{// @endlock
-	 
+	 	document.getElementById($comp.id + "_submitCourtJurisdictionInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitCourtJurisdictionInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.courtJurisdictionList.CourtJurisdictionCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	city = rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
@@ -2740,6 +2748,9 @@ function constructor (id) {
 		id: 	$comp.id+'_newAssesorComponent', 											
 		path: 	'/CAPCIS.waPage/Referrals/FindReferrals/Assessors/referralNewAssessors.waComponent'});
 	};// @lock
+
+
+
 
 
 
@@ -3712,9 +3723,11 @@ function constructor (id) {
 		{
 			if(result[x].source == 'assesor')
 			{
-				
+				debugger;
 				currentLabel= "Assessors" + '\n(' + result[x].total + ')';
-				$$($comp.id+"_assessorButton").domNode.innerText = currentLabel;
+				//$$($comp.id+"_assessorButton").domNode.innerText = currentLabel;
+				//document.getElementById($comp.id + "_assessorButton").innerText = currentLabel;  //works with mozilla
+				$$($comp.id + "_assessorButton").Value = currentLabel;
 				
 			}
 			else if(result[x].source == 'attorney')
