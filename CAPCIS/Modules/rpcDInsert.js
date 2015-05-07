@@ -19,6 +19,7 @@ exports.setInsert = function setInsert(myObject)
 		var myResults = result.getAllRows();
 		if(myResults.length > 0)
 		{
+			
 			var insertStatement = dBInsertBuilder.buildQuery(myObject);
 			connection.execute(insertStatement);
 			console.log(myReturnedID);		
@@ -57,6 +58,7 @@ exports.setInsertWReturn = function setInsertWReturn(myObject)
 	//connection.close;
 	if(myResults.length > 0)
 	{
+		
 		var insertStatement = dBInsertBuilder.buildQuery(myObject);
 		connection.execute(insertStatement);
 		selectStatement = "SELECT LAST_INSERT_ID()";
