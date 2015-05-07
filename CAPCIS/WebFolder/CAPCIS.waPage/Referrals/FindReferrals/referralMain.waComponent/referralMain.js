@@ -1488,7 +1488,8 @@ function constructor (id) {
 
 	submitAssessorCurrentInformation.click = function submitAssessorCurrentInformation_click (event)// @startlock
 	{// @endlock
-		
+		document.getElementById($comp.id + "_submitAssessorCurrentInformation").disabled = true;
+		setTimeout(function(){document.getElementById($comp.id + "_submitAssessorCurrentInformation").disabled = false;}, 10000);
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.assessorList.AssessorCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	
 	 	rpcDSelects.getSelectAsync({
@@ -1500,17 +1501,17 @@ function constructor (id) {
 							var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:sources.assessorList.AssessorCity};
 							rpcDInsert.setInsertAsync({
 		 							'onSuccess': function(result){
-						
+										
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1538,11 +1539,10 @@ function constructor (id) {
 		}; 
 		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						alert("Data Submitted");
 					},
 					'onError': function(error){
-						
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject7]
 				});
@@ -1554,7 +1554,7 @@ function constructor (id) {
 						assessorSuccess(result);
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject]
 				});	
@@ -1566,7 +1566,7 @@ function constructor (id) {
 		 				sources.bakAssessorInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1585,23 +1585,24 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:83,data1:sources.attorneyList.AttorneyCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 	 				'onSuccess': function(result){
+	 					
 	 					city = result;
 						if( city.length ===0)
 						{
 							var myObject7 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:18,data1:attorneyList.AttorneyCity};
 							rpcDInsert.setInsertAsync({
 		 							'onSuccess': function(result){
-						
+											
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1632,7 +1633,7 @@ function constructor (id) {
 	 		
 	 	rpcDUpdate.setUpdateAsync({
 		 		'onSuccess': function(result){
-						
+					alert("Data Submitted");	
 				},
 				'onError': function(error){
 					
@@ -1674,17 +1675,17 @@ function constructor (id) {
 							var myObject7 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:18,data1:sources.dhsList.DhsCity};
 							rpcDInsert.setInsertAsync({
 		 							'onSuccess': function(result){
-						
+										
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1713,10 +1714,10 @@ function constructor (id) {
 		}; 
 	 	rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						alert("Data Submitted");
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject7]
 		});
@@ -1728,7 +1729,7 @@ function constructor (id) {
 						sources.bakDhsInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1749,23 +1750,24 @@ function constructor (id) {
 		var myObject5 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:83,data1:sources.judgeList.JudgeCity}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 	rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
+		 				
 						city = result;
 						if( city.length ===0)
 						{
 							var myObject7 = {token:userConfigObj.secToken,id:userConfigObj.userID,major:3,minor:18,data1:sources.judgeList.JudgeCity};
 							rpcDInsert.setInsertAsync({
 		 							'onSuccess': function(result){
-						
+										
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1792,10 +1794,10 @@ function constructor (id) {
 		}; 
 	 	rpcDUpdate.setUpdateAsync({
 		 		'onSuccess': function(result){
-						
+					alert("Data Submitted");	
 				},
 				'onError': function(error){
-					console.log(error);
+					alert(error);
 				},
 				'params': [myObject7]
 		});
@@ -1809,7 +1811,7 @@ function constructor (id) {
 						sources.bakJudgeInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1837,14 +1839,14 @@ function constructor (id) {
 						
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 		});
@@ -1872,10 +1874,10 @@ function constructor (id) {
 		};
 	 	rpcDUpdate.setUpdateAsync({
 		 		'onSuccess': function(result){
-						
+					alert("Data Submitted");	
 				},
 				'onError': function(error){
-					console.log(error);
+					alert(error);
 				},
 				'params': [myObject7]
 			});
@@ -1892,7 +1894,7 @@ function constructor (id) {
 						sources.bakOtherMonitorInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -1921,14 +1923,14 @@ function constructor (id) {
 						
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 		});
@@ -1956,10 +1958,10 @@ function constructor (id) {
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						alert("Data Submitted");
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject7]
 				});
@@ -1972,7 +1974,7 @@ function constructor (id) {
 						sources.bakProsecutorInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -2008,10 +2010,10 @@ function constructor (id) {
 			}; //dontforget to add this to token userConfigObj.secToken  userConfigObj.userID
 	 		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						alert("Data Submitted");
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject7]
 				});
@@ -2025,7 +2027,7 @@ function constructor (id) {
 						sources.bakProbationOfficerInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -2053,14 +2055,14 @@ function constructor (id) {
 						
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 		});
@@ -2085,10 +2087,10 @@ function constructor (id) {
 				
 	 	rpcDUpdate.setUpdateAsync({
 		 		'onSuccess': function(result){
-						
+					alert("Data Submitted");	
 				},
 				'onError': function(error){
-					console.log(error);
+					alert(error);
 				},
 				'params': [myObject7]
 		});
@@ -2102,7 +2104,7 @@ function constructor (id) {
 						sources.bakProbationJurisdictionInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -2130,19 +2132,19 @@ function constructor (id) {
 						
 									},
 									'onError': function(error){
-										console.log(error);
+										alert(error);
 									},
 									'params': [myObject7]
 								});
 						}
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject7]
 		});
 		
-		
+		debugger;
 			var myObject7 = 
 			{
 				token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:4,
@@ -2168,10 +2170,10 @@ function constructor (id) {
 			}; 
 	 		rpcDUpdate.setUpdateAsync({
 		 			'onSuccess': function(result){
-						
+						alert("Data Submitted");
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject7]
 				});
@@ -2184,7 +2186,7 @@ function constructor (id) {
 						sources.bakCourtJurisdictionInfo.sync();
 					},
 					'onError': function(error){
-						console.log(error);
+						alert(error);
 					},
 					'params': [myObject5]
 				});
@@ -2658,7 +2660,7 @@ function constructor (id) {
 
 	newProbJ.click = function newProbJ_click (event)// @startlock
 	{// @endlock
-		newPJ.style.zIndex = '1000';
+		newPJ.style.zIndex = '2000';
 		newPJ.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newProbationJurisdictionComponent', 											
@@ -2667,7 +2669,7 @@ function constructor (id) {
 
 	newCourtJ.click = function newCourtJ_click (event)// @startlock
 	{// @endlock
-		newCJ.style.zIndex = '1000';
+		newCJ.style.zIndex = '2000';
 		newCJ.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newCourtJurisdictionComponent', 											
@@ -2676,7 +2678,7 @@ function constructor (id) {
 
 	newOtherM.click = function newOtherM_click (event)// @startlock
 	{// @endlock
-		newOther.style.zIndex = '1000';
+		newOther.style.zIndex = '2000';
 		newOther.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newOtherMoniterComponent', 											
@@ -2685,7 +2687,7 @@ function constructor (id) {
 
 	newPros.click = function newPros_click (event)// @startlock
 	{// @endlock
-		newProsecutor.style.zIndex = '1000';
+		newProsecutor.style.zIndex = '2000';
 		newProsecutor.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newProsecutorsComponent', 											
@@ -2694,7 +2696,7 @@ function constructor (id) {
 
 	newPOfficer.click = function newPOfficer_click (event)// @startlock
 	{// @endlock
-		newPO.style.zIndex = '1000';
+		newPO.style.zIndex = '2000';
 		newPO.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newPOComponent', 											
@@ -2703,7 +2705,7 @@ function constructor (id) {
 
 	newJudge.click = function newJudge_click (event)// @startlock
 	{// @endlock
-		newJudges.style.zIndex = '1000';
+		newJudges.style.zIndex = '2000';
 		newJudges.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newJudgeComponent', 											
@@ -2713,7 +2715,7 @@ function constructor (id) {
 
 	newDHSO.click = function newDHSO_click (event)// @startlock
 	{// @endlock
-		newDHS.style.zIndex = '1000';
+		newDHS.style.zIndex = '2000';
 		newDHS.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newDHSOfficerComponent', 											
@@ -2722,7 +2724,7 @@ function constructor (id) {
 
 	newAtt.click = function newAtt_click (event)// @startlock
 	{// @endlock
-		newAttorney.style.zIndex = '1000';
+		newAttorney.style.zIndex = '2000';
 		newAttorney.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newAttorneyComponent', 											
@@ -2732,7 +2734,7 @@ function constructor (id) {
 	newAss.click = function newAss_click (event)// @startlock
 	{// @endlock
 		
-		newAssessor.style.zIndex = '1000';
+		newAssessor.style.zIndex = '2000';
 		newAssessor.style.visibility = 'visible';
 		WAF.loadComponent ( {											
 		id: 	$comp.id+'_newAssesorComponent', 											
@@ -3788,6 +3790,7 @@ function constructor (id) {
 	
 	function courtJurisdictionSuccess(result)
 	{
+		debugger;
 		courtJurisdictionList = result;
 		sources.courtJurisdictionList.sync();
 		

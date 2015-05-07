@@ -18,7 +18,9 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
+	debugger;
+	document.getElementById($comp.id + "_checkbox2").disabled = true;
+	
 	assesorPreviousGrid.onRowClick = function assesorPreviousGrid_onRowClick (event)// @startlock
 	{// @endlock
 		
