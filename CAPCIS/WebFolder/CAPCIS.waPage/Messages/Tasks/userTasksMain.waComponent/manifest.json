@@ -1,1 +1,10 @@
-﻿{"name":"userTasksMain","html":"userTasksMain.html","scripts":["userTasksMain.js"],"styles":["userTasksMain.css"]}
+{
+	"name": "userTasksMain",
+	"html": "userTasksMain.html",
+	"scripts": [
+		"userTasksMain.js"
+	],
+	"styles": [
+		"userTasksMain.css"
+	]
+}

@@ -1,1 +1,10 @@
-﻿{"name":"clientMainBAKClientInformationView","html":"clientMainBAKClientInformationView.html","scripts":["clientMainBAKClientInformationView.js"],"styles":["clientMainBAKClientInformationView.css"]}
+{
+	"name": "clientMainBAKClientInformationView",
+	"html": "clientMainBAKClientInformationView.html",
+	"scripts": [
+		"clientMainBAKClientInformationView.js"
+	],
+	"styles": [
+		"clientMainBAKClientInformationView.css"
+	]
+}

@@ -1,1 +1,10 @@
-﻿{"name":"capcisRegistrationRequestAdmin","html":"capcisRegistrationRequestAdmin.html","scripts":["capcisRegistrationRequestAdmin.js"],"styles":["capcisRegistrationRequestAdmin.css"]}
+{
+	"name": "capcisRegistrationRequestAdmin",
+	"html": "capcisRegistrationRequestAdmin.html",
+	"scripts": [
+		"capcisRegistrationRequestAdmin.js"
+	],
+	"styles": [
+		"capcisRegistrationRequestAdmin.css"
+	]
+}

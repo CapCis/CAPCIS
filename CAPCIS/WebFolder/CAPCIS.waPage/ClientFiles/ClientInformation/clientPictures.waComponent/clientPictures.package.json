@@ -1,1 +1,54 @@
-﻿{"name":"CAPCIS/CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent","version":"1.0.0","webComponent":"CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.js","loadDependencies":[{"id":"Widget/container","type":"widget"},{"id":"Widget/image","type":"widget"},{"id":"Widget/button","type":"widget"},{"id":"Widget/fileUpload","type":"widget"},{"id":"Widget/label","type":"widget"},{"id":"Widget/checkbox","type":"widget"},{"id":"Widget/textField","type":"widget"},{"id":"Widget/dataGrid","type":"widget"},{"id":"CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.html","path":"WEBFOLDER","type":"html"},{"id":"CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.css","path":"WEBFOLDER","type":"style"},{"id":"CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.js","path":"WEBFOLDER","type":"script"}]}
+{
+	"name": "CAPCIS/CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent",
+	"version": "1.0.0",
+	"webComponent": "CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/image",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/fileUpload",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/checkbox",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientPictures.waComponent/clientPictures.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}
