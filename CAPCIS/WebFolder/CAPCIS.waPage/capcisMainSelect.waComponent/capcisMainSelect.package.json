@@ -21,11 +21,7 @@
 			"path": "WEBFOLDER",
 			"type": "style"
 		},
-		{
-			"id": "CAPCIS.waPage/capcisMainSelect.waComponent/styles/capcisMainSelect.css",
-			"path": "WEBFOLDER",
-			"type": "style"
-		},
+		
 		{
 			"id": "CAPCIS.waPage/capcisMainSelect.waComponent/capcisMainSelect.js",
 			"path": "WEBFOLDER",
