@@ -1034,7 +1034,7 @@ function constructor (id) {
 					},
 					'params': [myObject]
 				});
-		currentBal = Number(sources.myRosterList.CurrentBalence).toFixed(2);
+		currentBal = Number(sources.myRosterList.CurrentBalance).toFixed(2);
 		$$(getHtmlId("backBalenceField")).setValue(currentBal);
 		
 		
