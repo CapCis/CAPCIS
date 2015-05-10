@@ -1202,7 +1202,7 @@ function constructor (id) {
 	 				var textInput1 =  document.createElement('richText');
 	 				textInput1.setAttribute('type','richText');
 	 				textInput1.setAttribute('id','Class2'); // ID that links to the widget constructor ID
-        			textInput1.setAttribute('style','width:60px;height:12px;left:0px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
+        			textInput1.setAttribute('style','width:60px;height:18px;left:0px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
         			textInput1.setAttribute('rel','capcis.css');
         		
         			textInput1.setAttribute('class','waf-widget waf-richText waf-state-default');
@@ -1222,7 +1222,7 @@ function constructor (id) {
             		$$('Class2').setValue('Class');
             		textField2.setWidth(100);
             		textField2.setTop(top);
-            		textField2.setHeight(12);
+            		textField2.setHeight(18);
             		top = top + 14;
 	 			
 	 			}
@@ -1232,7 +1232,7 @@ function constructor (id) {
 	 					var textInput =  document.createElement('richText');
 	 					textInput.setAttribute('type','richText');
 						textInput.setAttribute('id',myClassList[x].ClassDay.toString()+ "class"); // ID that links to the widget constructor ID
-        				textInput.setAttribute('style','width:60px;height:12px;left:15px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
+        				textInput.setAttribute('style','width:60px;height:18px;left:15px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
         				textInput.setAttribute('rel','capcis.css');
         				//textInput.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         				textInput.setAttribute('class','waf-widget waf-richText waf-state-default');
@@ -1253,29 +1253,30 @@ function constructor (id) {
             			$$(myClassList[x].ClassDay.toString()+"class").setValue(myClassList[x].ClassDay.toString());
             			textField2.setWidth(100);
             			textField2.setTop(top);
-            			textField2.setHeight(12);
+            			textField2.setHeight(18);
             			top = top + 14;
 	 					lastDayWritten = myClassList[x].ClassDay;
 	 				}
 	 				if(lastDayWritten == myClassList[x].ClassDay) // this is not a new day
 	 				{
-	 					var textInput2 =  document.createElement('richText');
-	 					textInput2.setAttribute('type','richText');
+	 					var textInput2 =  document.createElement('input');
+	 					//textInput2.setAttribute('type','richText');
 						textInput2.setAttribute('id',myClassList[x].Class.toString()); // ID that links to the widget constructor ID
-        				textInput2.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal;cursor:pointer');
-        				textInput2.setAttribute('rel','capcis.css');
+        				textInput2.setAttribute('style','width:60px;height:18px;left:30px;top:0px;position:absolute;cursor:pointer');
+        				textInput2.setAttribute('rel','capcismetal.css');
         				textInput2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
-        				textInput2.setAttribute('class','waf-widget waf-richText waf-state-default');
+        				textInput2.setAttribute('class','waf-widget waf-textField waf-role-classhovertextinput');
         				document.body.appendChild(textInput2); //insert html tag
         			
-        				var textField2 = new WAF.widget.RichText({
+        				var textField2 = new WAF.widget.TextField({
             				'id': myClassList[x].Class.toString(), // ID 
             				'data-lib': 'WAF',
             				'data-type': 'textField',
             				//'background-color':'#E5E5E5', 
             				//'data-theme':'#E5E5E5',                           
-            				'class': 'waf-widget waf-textField default inherited'
+            				'class': 'waf-widget waf-textField waf-role-classhovertextinput',
             				//'style': 'top:500;position:relative'
+            				'data-readOnly': 'true'
             			});
             
             			$$(getHtmlId('classFullViewCont')).addChild($$(myClassList[x].Class.toString()));
@@ -1283,7 +1284,7 @@ function constructor (id) {
             			$$(myClassList[x].Class.toString()).setValue(myClassList[x].Class.toString());
             			textField2.setWidth(100);
             			textField2.setTop(top);
-            			textField2.setHeight(12);
+            			textField2.setHeight(18);
             			top = top + 14;
 	 					currentDay = myClassList[x].WeekDayNumber;	 			
 	 				}
@@ -1304,7 +1305,7 @@ function constructor (id) {
 	 				var textInput3 =  document.createElement('richText');
 	 				textInput3.setAttribute('type','richText');
 	 				textInput3.setAttribute('id','muClass2'); // ID that links to the widget constructor ID
-        			textInput3.setAttribute('style','width:60px;height:12px;left:0px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
+        			textInput3.setAttribute('style','width:60px;height:18px;left:0px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
         			textInput3.setAttribute('rel','capcis.css');
         			textInput3.setAttribute('class','waf-widget waf-richText waf-state-default');
         			document.body.appendChild(textInput3); //insert html tag
@@ -1321,7 +1322,7 @@ function constructor (id) {
             		$$('muClass2').setValue('MU Class');
             		textField2.setWidth(100);
             		textField2.setTop(top);
-            		textField2.setHeight(12);
+            		textField2.setHeight(18);
             		top = top + 14;
 	 			
 	 			}
@@ -1331,7 +1332,7 @@ function constructor (id) {
 	 				var textInput4 =  document.createElement('richText');
 	 				textInput4.setAttribute('type','richText');
 					textInput4.setAttribute('id',myClassList[x].ClassDay.toString()); // ID that links to the widget constructor ID
-        			textInput4.setAttribute('style','width:60px;height:12px;left:15px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
+        			textInput4.setAttribute('style','width:60px;height:18px;left:15px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:Normal');
         			textInput4.setAttribute('rel','capcis.css');
         			//textInput.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         			textInput4.setAttribute('class','waf-widget waf-richText waf-state-default');
@@ -1352,29 +1353,30 @@ function constructor (id) {
             		$$(myClassList[x].ClassDay.toString()).setValue(myClassList[x].ClassDay.toString());
             		textField2.setWidth(100);
             		textField2.setTop(top);
-            		textField2.setHeight(12);
+            		textField2.setHeight(18);
             		top = top + 14;
 	 				lastDayWritten = myClassList[x].ClassDay;
 	 			}
 	 			if(lastDayWritten == myClassList[x].ClassDay)//not a new day
 	 			{
-	 				var textInput5 =  document.createElement('richText');
-	 				textInput5.setAttribute('type','richText');
+	 				var textInput5 =  document.createElement('input');
+	 				//textInput5.setAttribute('type','textField');
 					textInput5.setAttribute('id',myClassList[x].Class.toString()); // ID that links to the widget constructor ID
-        			textInput5.setAttribute('style','width:60px;height:12px;left:30px;top:0px;position:absolute;font:12px sans-serif;color:rgba(0,27,90,100);font-weight:normal;cursor:pointer');
-        			textInput5.setAttribute('rel','capcis.css');
+        			textInput5.setAttribute('style','width:60px;height:18px;left:30px;top:0px;position:absolute;cursor:pointer');
+        			//textInput5.setAttribute('rel','capcismetal.css');
         			textInput5.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
-        			textInput5.setAttribute('class','waf-widget waf-richText waf-state-default');
+        			textInput5.setAttribute('class','waf-widget waf-textField waf-role-classhovertextinput');
         			document.body.appendChild(textInput5); //insert html tag
         		
-        			var textField2 = new WAF.widget.RichText({
+        			var textField2 = new WAF.widget.TextField({
             			'id': myClassList[x].Class.toString(), // ID 
             			'data-lib': 'WAF',
             			'data-type': 'textField',
             			//'background-color':'#E5E5E5', 
             			//'data-theme':'#E5E5E5',                           
-            			'class': 'waf-widget waf-textField default inherited'
+            			'class': 'waf-widget waf-textField waf-role-classhovertextinput',
             			//'style': 'top:500;position:relative'
+            			'data-readOnly': 'true'
             		});
             
             		$$(getHtmlId('classFullViewCont')).addChild($$(myClassList[x].Class.toString()));
@@ -1382,7 +1384,7 @@ function constructor (id) {
             		$$(myClassList[x].Class.toString()).setValue(myClassList[x].Class.toString());
             		textField2.setWidth(100);
             		textField2.setTop(top);
-            		textField2.setHeight(12);
+            		textField2.setHeight(18);
             		top = top + 14;
 	 				currentDay = myClassList[x].WeekDayNumber;
 	 			
