@@ -25,27 +25,24 @@ function constructor (id) {
 	 		tempID = getRandom();
 			var buttonElement2 = document.createElement('button'); //HTML tag
         	buttonElement2.setAttribute('id',myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()); // ID that links to the widget constructor ID
-        	buttonElement2.setAttribute('style','width:0px;height:0px;left:0px;top:0px;position:absolute;text-align:left;color:#E1E1E1;font:14px sans-serif;font-weight:bold;background-color:#001B5A \
-        	;border: 0px; border: 0px ;background-color: transparent;cursor:pointer');
+        	buttonElement2.setAttribute('style','width:0px;height:0px;left:0px;top:0px;position:absolute;text-align:left;font:14px sans-serif;font-weight:bold; \
+        	border: 0px; border: 0px ;cursor:pointer');
+        	buttonElement2.setAttribute('class','waf-widget waf-button default inherited');
         	buttonElement2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         	document.body.appendChild(buttonElement2); //insert html tag        	
         	var button5 = new WAF.widget.Button({
             'id': myMenuButtons[x].FxMainSelectWebComponentNamesID.toString(), // ID 
-            'data-lib': 'WAF',
-            'data-type': 'button',
-            'background-color':'#E5E5E5', 
-            'data-theme':'#E5E5E5',    
+            //'data-lib': 'WAF',
+            //'data-type': 'button',
+            //'background-color':'#E5E5E5', 
+            //'data-theme':'#E5E5E5',    
             'data-text': myMenuButtons[x].PrimaryHeaderOption, // title for the button                         
             'class': 'waf-widget waf-button default inherited',
             'style': 'top:500;position:relative'
             });
-            //$$(getHtmlId('button' + tempID)).style.top(50);
             $$(getHtmlId('menuButtonCont')).addChild($$(myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()));
-            //$$(getHtmlId('button'+ tempID)).setHeight(25);  
-                     
             button5.setWidth(140);            
             button5.setTop(top);
-            //button5.setLeft(20);
             button5.setHeight(20);
             top = top + 20;
         }
@@ -54,18 +51,18 @@ function constructor (id) {
 	 		tempID = getRandom();
 			var buttonElement2 = document.createElement('button'); //HTML tag
         	buttonElement2.setAttribute('id',myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()); // ID that links to the widget constructor ID
-        	buttonElement2.setAttribute('style','width:0px;height:0px;left:5px;top:0px;position:absolute;text-align:left;color:#E1E1E1;font:12px sans-serif;background-color:#001B5A \
+        	buttonElement2.setAttribute('style','width:0px;height:0px;left:5px;top:0px;position:absolute;text-align:left;font:12px sans-serif\
         	;border: 0px; border: 0px ;background-color: transparent;cursor:pointer');
-        	/*buttonElement2.setAttribute('rel','capcis.css');
-        	buttonElement2.setAttribute('class','waf-widget waf-button capcis capcis');*/
+        	//buttonElement2.setAttribute('rel','capcis.css');
+        	buttonElement2.setAttribute('class','waf-widget waf-button default inherited');
         	buttonElement2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         	//buttonElement2.addEventListener('mouseover', function(){linkHover(document.getElementById(this.id))}, false);
         	document.body.appendChild(buttonElement2); //insert html tag        	
         	var button6 = new WAF.widget.Button({
             'id': myMenuButtons[x].FxMainSelectWebComponentNamesID.toString(), // ID 
-            'data-lib': 'WAF',
-            'data-type': 'button',
-            'data-theme':'capcismetal',    
+            //'data-lib': 'WAF',
+            //'data-type': 'button',
+            //'data-theme':'capcismetal',    
             'data-text': "- "+myMenuButtons[x].SubHeaderOption, // title for the button                         
             'class': 'waf-widget waf-button capcis capcis'
             });
@@ -111,7 +108,7 @@ function constructor (id) {
 	
 	
 	
-	function pageOpener (id) 
+	function pageOpener(id) 
 	{
 		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:0,minor:3,data1:id.id};
 	 	myWCName = rpcDSelects.getSelect(myObject);	 	
