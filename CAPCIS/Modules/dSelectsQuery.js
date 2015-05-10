@@ -71,7 +71,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 4: answer = 'SELECT WeekDayNumber, Class, TimeNumber,ClassRoom FROM capcis.capclasses where ClassStatus = "OPEN" and ClassDay = "'+ myObject.data1 + '"order by 1,3,2';
 						return answer;
-				case 5: answer = 'SELECT ALL clientinformation.ClientFullNameReverse,CurrentBalence, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
+				case 5: answer = 'SELECT ALL clientinformation.ClientFullNameReverse,CurrentBalance, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
 								clientrequirements.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								clientrequirements.ClientInformation_CIID, clientrequirements.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, clientrequirements.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
 								 clientrequirements.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
@@ -90,7 +90,7 @@ exports.buildQuery = function buildQuery(myObject)
 								HAVING clientrequirements.ClientStatus = "Active" AND Class = "'+myObject.data1+'" AND clientrequirements.FK_MonitoringCategoryID = 1 \
 								ORDER BY ClientFullNameReverse ASC';
 						return answer;
-				case 6: answer = 'SELECT ALL  clientinformation.ClientFullNameReverse,CurrentBalence, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
+				case 6: answer = 'SELECT ALL  clientinformation.ClientFullNameReverse,CurrentBalance, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
 							activeclientrequirementsq.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 							activeclientrequirementsq.ClientInformation_CIID, activeclientrequirementsq.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, \
 							activeclientrequirementsq.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
@@ -917,7 +917,23 @@ exports.buildQuery = function buildQuery(myObject)
 					return answer;
 			}
 			return answer;
-		case 7:
+		case 7: //ClientInformation
+			switch(myObject.minor){
+				case 0 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m/%d/%Y') as ClientBirthdate, \
+						TotalPaid, TotalCharged, CurrentBalance from clientinformation \
+						where (ClientFirstName like '"+myObject.data1+"%' \
+						or ClientMiddleName like '"+myObject.data1+"%' or ClientLastName like  '"+myObject.data1+"%') and \
+						(ClientFirstName like '"+myObject.data2+"%' \
+						or ClientMiddleName like '"+myObject.data2+"%' or ClientLastName like  '"+myObject.data2+"%')";
+					return answer;
+				case 1 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m/%d/%Y') as ClientBirthdate, TotalPaid, TotalCharged, CurrentBalance from clientinformation \
+						where CIID = '"+myObject.data1+"' or ClientFirstName like '"+myObject.data1+"%' \
+						or ClientMiddleName like '"+myObject.data1+"%' or ClientLastName like  '"+myObject.data1+"%' or \
+						ClientNameSuffix like '"+myObject.data1+"%' or ClientAliases like '"+myObject.data1+"%'"
+					return answer;
+			}
 			return answer;
 		case 8:
 			return answer;
