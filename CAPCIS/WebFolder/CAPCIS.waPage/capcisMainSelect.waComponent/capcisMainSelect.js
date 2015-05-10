@@ -25,9 +25,8 @@ function constructor (id) {
 	 		tempID = getRandom();
 			var buttonElement2 = document.createElement('button'); //HTML tag
         	buttonElement2.setAttribute('id',myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()); // ID that links to the widget constructor ID
-        	buttonElement2.setAttribute('style','width:0px;height:0px;left:0px;top:0px;position:absolute;text-align:left;font:14px sans-serif;font-weight:bold; \
-        	border: 0px; border: 0px ;cursor:pointer');
-        	buttonElement2.setAttribute('class','waf-widget waf-button default inherited');
+        	buttonElement2.setAttribute('style','width:0px;height:0px;left:0px;top:0px;position:absolute;text-align:left;border: 0px; border: 0px ;cursor:pointer');
+        	buttonElement2.setAttribute('class','waf-widget waf-button waf-role-mainselectbutton');
         	buttonElement2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         	document.body.appendChild(buttonElement2); //insert html tag        	
         	var button5 = new WAF.widget.Button({
@@ -37,7 +36,7 @@ function constructor (id) {
             //'background-color':'#E5E5E5', 
             //'data-theme':'#E5E5E5',    
             'data-text': myMenuButtons[x].PrimaryHeaderOption, // title for the button                         
-            'class': 'waf-widget waf-button default inherited',
+            'class': 'waf-widget waf-button waf-role-mainselectbutton',
             'style': 'top:500;position:relative'
             });
             $$(getHtmlId('menuButtonCont')).addChild($$(myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()));
@@ -51,10 +50,9 @@ function constructor (id) {
 	 		tempID = getRandom();
 			var buttonElement2 = document.createElement('button'); //HTML tag
         	buttonElement2.setAttribute('id',myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()); // ID that links to the widget constructor ID
-        	buttonElement2.setAttribute('style','width:0px;height:0px;left:5px;top:0px;position:absolute;text-align:left;font:12px sans-serif\
-        	;border: 0px; border: 0px ;background-color: transparent;cursor:pointer');
+        	buttonElement2.setAttribute('style','width:0px;height:0px;left:5px;top:0px;position:absolute;text-align:left;font-weight:normal;border: 0px; border: 0px ;cursor:pointer');
         	//buttonElement2.setAttribute('rel','capcis.css');
-        	buttonElement2.setAttribute('class','waf-widget waf-button default inherited');
+        	buttonElement2.setAttribute('class','waf-widget waf-button waf-role-mainselectbutton');
         	buttonElement2.addEventListener('click', function(){pageOpener(document.getElementById(this.id))}, false);
         	//buttonElement2.addEventListener('mouseover', function(){linkHover(document.getElementById(this.id))}, false);
         	document.body.appendChild(buttonElement2); //insert html tag        	
@@ -64,7 +62,7 @@ function constructor (id) {
             //'data-type': 'button',
             //'data-theme':'capcismetal',    
             'data-text': "- "+myMenuButtons[x].SubHeaderOption, // title for the button                         
-            'class': 'waf-widget waf-button capcis capcis'
+            'class': 'waf-widget waf-button waf-role-mainselectbutton'
             });
 	 		$$(getHtmlId('menuButtonCont')).addChild($$(myMenuButtons[x].FxMainSelectWebComponentNamesID.toString()));
 	 		button6.setParent('menuButtonCont');
