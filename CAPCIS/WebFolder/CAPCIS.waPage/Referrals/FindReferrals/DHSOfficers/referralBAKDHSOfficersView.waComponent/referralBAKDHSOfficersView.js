@@ -13,16 +13,13 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var dhsPreviousGrid = {};	// @dataGrid
 	var button1 = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	dhsPreviousGrid.onRowClick = function dhsPreviousGrid_onRowClick (event)// @startlock
-	{// @endlock
-		
-	};// @lock
+	
+	document.getElementById($comp.id + "_checkbox2").disabled = true;
+	
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
@@ -31,7 +28,6 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_dhsPreviousGrid", "onRowClick", dhsPreviousGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	// @endregion// @endlock
 

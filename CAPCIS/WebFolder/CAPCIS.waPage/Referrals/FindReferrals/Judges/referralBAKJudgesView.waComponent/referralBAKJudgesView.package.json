@@ -1,1 +1,50 @@
-﻿{"name":"CAPCIS/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent","version":"1.0.0","webComponent":"CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.js","loadDependencies":[{"id":"Widget/button","type":"widget"},{"id":"Widget/richText","type":"widget"},{"id":"Widget/container","type":"widget"},{"id":"Widget/dataGrid","type":"widget"},{"id":"Widget/textField","type":"widget"},{"id":"Widget/label","type":"widget"},{"id":"Widget/checkbox","type":"widget"},{"id":"CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.html","path":"WEBFOLDER","type":"html"},{"id":"CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.css","path":"WEBFOLDER","type":"style"},{"id":"CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.js","path":"WEBFOLDER","type":"script"}]}
+{
+	"name": "CAPCIS/CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent",
+	"version": "1.0.0",
+	"webComponent": "CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/button",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/container",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/textField",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/checkbox",
+			"type": "widget"
+		},
+		{
+			"id": "CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.html",
+			"path": "WEBFOLDER",
+			"type": "html"
+		},
+		{
+			"id": "CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/Referrals/FindReferrals/Judges/referralBAKJudgesView.waComponent/referralBAKJudgesView.js",
+			"path": "WEBFOLDER",
+			"type": "script"
+		}
+	]
+}
