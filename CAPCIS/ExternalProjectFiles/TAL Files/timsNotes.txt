@@ -37,7 +37,7 @@ HOW TO EDIT CSS OF A WIDGET
 	getHtmlObj('button1').css('background-color' , 'red');
 	
 
-HOW TO FORMAT A DATE FOR MYSQL UPDATE
+HOW TO FORMAT A DATE FOR MYSQL
 
 	myDate = datetimepicker
 	var myDateFormated = (myDate.getFullYear() + "-" + (myDate.getMonth() + 1) + "-" + myDate.getDate());  //yyyy-mm-dd required for insert to work

@@ -57,6 +57,14 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/buttonImage",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/icon",
+			"type": "widget"
+		},
+		{
 			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/clientMain.html",
 			"path": "WEBFOLDER",
 			"type": "html"
@@ -103,6 +111,11 @@
 		},
 		{
 			"id": "CAPCIS.waPage/clientMain.waComponent/clientMain.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/ClientFiles/ClientInformation/clientMain.waComponent/styles/clientMain.css",
 			"path": "WEBFOLDER",
 			"type": "style"
 		},
