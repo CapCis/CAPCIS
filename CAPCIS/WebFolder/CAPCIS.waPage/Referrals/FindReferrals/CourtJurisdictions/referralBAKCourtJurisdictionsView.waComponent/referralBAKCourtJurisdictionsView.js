@@ -13,19 +13,13 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var dataGrid1 = {};	// @dataGrid
 	var closeCourtJurisdictionPreviousButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
-	{// @endlock
-		
-		
-		
-		
-	};// @lock
+	document.getElementById($comp.id + "_checkbox2").disabled = true;
+	
 
 	closeCourtJurisdictionPreviousButton.click = function closeCourtJurisdictionPreviousButton_click (event)// @startlock
 	{// @endlock
@@ -36,7 +30,6 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_closeCourtJurisdictionPreviousButton", "click", closeCourtJurisdictionPreviousButton.click, "WAF");
 	// @endregion// @endlock
 

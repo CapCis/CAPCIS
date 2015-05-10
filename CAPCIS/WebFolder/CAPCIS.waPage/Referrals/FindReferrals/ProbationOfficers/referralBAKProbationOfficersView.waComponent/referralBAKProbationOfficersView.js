@@ -13,17 +13,13 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var dataGrid1 = {};	// @dataGrid
 	var Close = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
-	{// @endlock
-		
-		
-	};// @lock
+	
+	document.getElementById($comp.id + "_checkbox6").disabled = true;
+	
 
 	Close.click = function Close_click (event)// @startlock
 	{// @endlock
@@ -32,7 +28,6 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_Close", "click", Close.click, "WAF");
 	// @endregion// @endlock
 
