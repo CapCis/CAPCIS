@@ -13,17 +13,13 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var judgePreviousGrid = {};	// @dataGrid
 	var closeJudgePreviousButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
-
-	judgePreviousGrid.onRowClick = function judgePreviousGrid_onRowClick (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
+	
+	document.getElementById($comp.id + "_checkbox2").disabled = true;
+	
 	closeJudgePreviousButton.click = function closeJudgePreviousButton_click (event)// @startlock
 	{// @endlock
 		moveMe = document.getElementById(data.userData.mainContainer);
@@ -31,7 +27,6 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_judgePreviousGrid", "onRowClick", judgePreviousGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_closeJudgePreviousButton", "click", closeJudgePreviousButton.click, "WAF");
 	// @endregion// @endlock
 

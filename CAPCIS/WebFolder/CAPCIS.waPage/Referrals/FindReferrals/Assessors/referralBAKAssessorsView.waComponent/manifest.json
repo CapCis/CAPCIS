@@ -1,1 +1,10 @@
-﻿{"name":"referralBAKAssessorsView","html":"referralBAKAssessorsView.html","scripts":["referralBAKAssessorsView.js"],"styles":["referralBAKAssessorsView.css"]}
+{
+	"name": "referralBAKAssessorsView",
+	"html": "referralBAKAssessorsView.html",
+	"scripts": [
+		"referralBAKAssessorsView.js"
+	],
+	"styles": [
+		"referralBAKAssessorsView.css"
+	]
+}

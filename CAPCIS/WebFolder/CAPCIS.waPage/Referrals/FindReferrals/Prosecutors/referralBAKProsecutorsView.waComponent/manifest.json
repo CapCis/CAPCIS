@@ -1,1 +1,10 @@
-﻿{"name":"referralBAKProsecutorsView","html":"referralBAKProsecutorsView.html","scripts":["referralBAKProsecutorsView.js"],"styles":["referralBAKProsecutorsView.css"]}
+{
+	"name": "referralBAKProsecutorsView",
+	"html": "referralBAKProsecutorsView.html",
+	"scripts": [
+		"referralBAKProsecutorsView.js"
+	],
+	"styles": [
+		"referralBAKProsecutorsView.css"
+	]
+}
