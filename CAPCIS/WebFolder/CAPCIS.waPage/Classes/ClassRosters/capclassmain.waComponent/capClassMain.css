@@ -3,41 +3,220 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button8 {
+	width: 92px;
+	height: 22px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag25 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag24 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag22 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag21 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag20 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag18 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag17 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag16 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag14 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag13 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag11 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag10 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag9 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag8 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag7 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag6 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag5 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag4 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag2 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
 #{id}label20 {
 	z-index: 41;
-	width: 48px;
-	height: 14px;
-	top: 361px;
-	left: 48px;
+	width: 52px;
+	height: 16px;
+	top: 383px;
+	left: -47px;
 	position: absolute;
 	text-align: center;
 }
 
 #{id}label18 {
 	z-index: 39;
-	width: 34px;
-	height: 14px;
-	top: 316px;
-	left: 335px;
+	width: 30px;
+	height: 16px;
+	top: 338px;
+	left: 280px;
 	position: absolute;
 	text-align: center;
 }
 
 #{id}label32 {
 	z-index: 35;
-	width: 48px;
-	height: 14px;
-	top: 473px;
-	left: 30px;
+	width: 52px;
+	height: 16px;
+	top: 472px;
+	left: 21px;
 	position: absolute;
 }
 
 #{id}label21 {
 	z-index: 33;
-	width: 34px;
-	height: 14px;
-	top: 383px;
-	left: 35px;
+	width: 30px;
+	height: 16px;
+	top: 382px;
+	left: 34px;
 	position: absolute;
 }
 
@@ -62,8 +241,8 @@
 #{id}label36 {
 	z-index: 4;
 	width: 26px;
-	height: 14px;
-	top: 22px;
+	height: 16px;
+	top: 21px;
 	left: -31px;
 	position: absolute;
 }
@@ -124,8 +303,8 @@
 #{id}label35 {
 	z-index: 4;
 	width: 26px;
-	height: 14px;
-	top: 22px;
+	height: 16px;
+	top: 21px;
 	left: -31px;
 	position: absolute;
 }
@@ -159,20 +338,20 @@
 
 #{id}label34 {
 	z-index: 33;
-	width: 79px;
-	height: 14px;
-	top: 316px;
-	left: 415px;
+	width: 85px;
+	height: 16px;
+	top: 314px;
+	left: 412px;
 	position: absolute;
 	text-align: center;
 }
 
 #{id}label33 {
 	z-index: 32;
-	width: 60px;
-	height: 14px;
-	top: 316px;
-	left: 527px;
+	width: 64px;
+	height: 16px;
+	top: 314px;
+	left: 525px;
 	position: absolute;
 	text-align: center;
 }
@@ -180,19 +359,19 @@
 #{id}label30 {
 	z-index: 29;
 	width: 55px;
-	height: 14px;
-	top: 316px;
-	left: 45px;
+	height: 16px;
+	top: 338px;
+	left: -50px;
 	position: absolute;
 	text-align: center;
 }
 
 #{id}label28 {
 	z-index: 25;
-	width: 83px;
-	height: 14px;
-	top: 315px;
-	left: 238px;
+	width: 84px;
+	height: 16px;
+	top: 337px;
+	left: 180px;
 	position: absolute;
 	text-align: center;
 }
@@ -208,10 +387,10 @@
 
 #{id}label27 {
 	z-index: 23;
-	width: 67px;
-	height: 14px;
-	top: 426px;
-	left: 215px;
+	width: 69px;
+	height: 16px;
+	top: 424px;
+	left: 210px;
 	position: absolute;
 }
 
@@ -2716,10 +2895,10 @@
 
 #{id}label26 {
 	z-index: 18;
-	width: 50px;
-	height: 14px;
-	top: 316px;
-	left: 165px;
+	width: 54px;
+	height: 16px;
+	top: 338px;
+	left: 86px;
 	position: absolute;
 	text-align: center;
 }
@@ -2736,50 +2915,50 @@
 
 #{id}label25 {
 	z-index: 15;
-	width: 244px;
-	height: 14px;
-	top: 533px;
-	left: 246px;
+	width: 247px;
+	height: 16px;
+	top: 532px;
+	left: 243px;
 	position: absolute;
 	text-align: right;
 }
 
 #{id}label24 {
 	z-index: 14;
-	width: 74px;
-	height: 14px;
-	top: 508px;
-	left: 416px;
+	width: 63px;
+	height: 16px;
+	top: 507px;
+	left: 427px;
 	position: absolute;
 	text-align: right;
 }
 
 #{id}label23 {
 	z-index: 13;
-	width: 69px;
-	height: 14px;
-	top: 483px;
-	left: 421px;
+	width: 64px;
+	height: 16px;
+	top: 482px;
+	left: 426px;
 	position: absolute;
 	text-align: right;
 }
 
 #{id}label22 {
 	z-index: 12;
-	width: 89px;
-	height: 14px;
-	top: 458px;
-	left: 401px;
+	width: 78px;
+	height: 16px;
+	top: 457px;
+	left: 412px;
 	position: absolute;
 	text-align: right;
 }
 
 #{id}label15 {
 	z-index: 11;
-	width: 75px;
-	height: 14px;
-	top: 433px;
-	left: 415px;
+	width: 64px;
+	height: 16px;
+	top: 432px;
+	left: 426px;
 	position: absolute;
 	text-align: right;
 }
@@ -2795,10 +2974,10 @@
 
 #{id}label13 {
 	z-index: 10;
-	width: 59px;
-	height: 14px;
-	top: 181px;
-	left: 460px;
+	width: 63px;
+	height: 16px;
+	top: 179px;
+	left: 458px;
 	position: absolute;
 	text-align: center;
 }
@@ -2814,10 +2993,10 @@
 
 #{id}label12 {
 	z-index: 8;
-	width: 91px;
-	height: 14px;
-	top: 181px;
-	left: 229px;
+	width: 90px;
+	height: 16px;
+	top: 179px;
+	left: 230px;
 	position: absolute;
 	text-align: center;
 }
@@ -2903,27 +3082,27 @@
 #{id}label19 {
 	z-index: 28;
 	width: 55px;
-	height: 14px;
-	top: 444px;
-	left: 15px;
+	height: 16px;
+	top: 443px;
+	left: 10px;
 	position: absolute;
 }
 
 #{id}label17 {
 	z-index: 26;
-	width: 83px;
-	height: 14px;
-	top: 414px;
-	left: 90px;
+	width: 84px;
+	height: 16px;
+	top: 413px;
+	left: 84px;
 	position: absolute;
 }
 
 #{id}label16 {
 	z-index: 25;
-	width: 67px;
-	height: 14px;
-	top: 426px;
-	left: 215px;
+	width: 69px;
+	height: 16px;
+	top: 424px;
+	left: 210px;
 	position: absolute;
 }
 
@@ -3034,10 +3213,10 @@
 
 #{id}label14 {
 	z-index: 19;
-	width: 79px;
-	height: 14px;
-	top: 326px;
-	left: 215px;
+	width: 85px;
+	height: 16px;
+	top: 324px;
+	left: 210px;
 	position: absolute;
 }
 
@@ -3052,73 +3231,73 @@
 
 #{id}label11 {
 	z-index: 16;
-	width: 60px;
-	height: 14px;
-	top: 326px;
-	left: 500px;
+	width: 64px;
+	height: 16px;
+	top: 324px;
+	left: 495px;
 	position: absolute;
 }
 
 #{id}label10 {
 	z-index: 15;
-	width: 50px;
-	height: 14px;
-	top: 349px;
-	left: 20px;
+	width: 54px;
+	height: 16px;
+	top: 348px;
+	left: 11px;
 	position: absolute;
 }
 
 #{id}label9 {
 	z-index: 14;
-	width: 244px;
-	height: 14px;
-	top: 529px;
-	left: 251px;
+	width: 256px;
+	height: 16px;
+	top: 528px;
+	left: 234px;
 	position: absolute;
 }
 
 #{id}label8 {
 	z-index: 13;
 	width: 74px;
-	height: 14px;
-	top: 504px;
-	left: 421px;
+	height: 16px;
+	top: 503px;
+	left: 416px;
 	position: absolute;
 }
 
 #{id}label7 {
 	z-index: 12;
-	width: 69px;
-	height: 14px;
-	top: 479px;
-	left: 426px;
+	width: 73px;
+	height: 16px;
+	top: 478px;
+	left: 417px;
 	position: absolute;
 }
 
 #{id}label4 {
 	z-index: 11;
 	width: 89px;
-	height: 14px;
-	top: 454px;
-	left: 406px;
+	height: 16px;
+	top: 453px;
+	left: 401px;
 	position: absolute;
 }
 
 #{id}label3 {
 	z-index: 10;
-	width: 75px;
-	height: 14px;
+	width: 81px;
+	height: 13px;
 	top: 429px;
-	left: 420px;
+	left: 409px;
 	position: absolute;
 }
 
 #{id}label2 {
 	z-index: 9;
-	width: 59px;
-	height: 14px;
-	top: 181px;
-	left: 405px;
+	width: 63px;
+	height: 16px;
+	top: 179px;
+	left: 400px;
 	position: absolute;
 }
 
@@ -3133,10 +3312,10 @@
 
 #{id}label1 {
 	z-index: 8;
-	width: 91px;
-	height: 14px;
-	top: 181px;
-	left: 190px;
+	width: 90px;
+	height: 16px;
+	top: 179px;
+	left: 185px;
 	position: absolute;
 }
 
@@ -3299,8 +3478,8 @@
 #{id}label6 {
 	z-index: 4;
 	width: 21px;
-	height: 14px;
-	top: 51px;
+	height: 16px;
+	top: 49px;
 	left: 10px;
 	position: absolute;
 }
@@ -3308,8 +3487,8 @@
 #{id}label5 {
 	z-index: 3;
 	width: 40px;
-	height: 14px;
-	top: 2px;
+	height: 16px;
+	top: 0px;
 	left: 10px;
 	position: absolute;
 }
@@ -3659,7 +3838,7 @@
 
 #{id}classRosterSubCont {
 	z-index: 1;
-	width: 1106px;
+	width: 485px;
 	height: 611px;
 	top: 0px;
 	left: 0px;
@@ -3668,10 +3847,10 @@
 
 #{id}classRosterRecieptCont {
 	z-index: 2;
-	width: 4px;
+	width: 623px;
 	height: 611px;
 	top: 0px;
-	left: 1106px;
+	left: 485px;
 	position: absolute;
 	background-color: rgba(240, 240, 255, 0.898438);
 	border-top-left-radius: 0px;
