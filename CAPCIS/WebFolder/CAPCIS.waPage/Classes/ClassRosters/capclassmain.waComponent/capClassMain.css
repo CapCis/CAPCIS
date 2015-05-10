@@ -3,6 +3,7 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+<<<<<<< Updated upstream
 #{id}button8 {
 	width: 92px;
 	height: 22px;
@@ -179,6 +180,17 @@
 	height: 0px;
 	top: auto;
 	left: auto;
+=======
+#{id}matrix4 .waf-widget.waf-clone-{id}classFilterMatrix {
+	position: absolute;
+}
+
+#{id}matrix4 .waf-widget.waf-clone-{id}textField2 {
+	position: absolute;
+}
+
+#{id}matrix4 .waf-widget.waf-clone-{id}button3 {
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
@@ -204,19 +216,33 @@
 
 #{id}label32 {
 	z-index: 35;
+<<<<<<< Updated upstream
 	width: 52px;
 	height: 16px;
 	top: 472px;
 	left: 21px;
+=======
+	width: 48px;
+	height: 14px;
+	top: 473px;
+	left: 25px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
 #{id}label21 {
 	z-index: 33;
+<<<<<<< Updated upstream
 	width: 30px;
 	height: 16px;
 	top: 382px;
 	left: 34px;
+=======
+	width: 34px;
+	height: 14px;
+	top: 383px;
+	left: 30px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
@@ -387,9 +413,15 @@
 
 #{id}label27 {
 	z-index: 23;
+<<<<<<< Updated upstream
 	width: 69px;
 	height: 16px;
 	top: 424px;
+=======
+	width: 67px;
+	height: 14px;
+	top: 426px;
+>>>>>>> Stashed changes
 	left: 210px;
 	position: absolute;
 }
@@ -3082,26 +3114,44 @@
 #{id}label19 {
 	z-index: 28;
 	width: 55px;
+<<<<<<< Updated upstream
 	height: 16px;
 	top: 443px;
+=======
+	height: 14px;
+	top: 444px;
+>>>>>>> Stashed changes
 	left: 10px;
 	position: absolute;
 }
 
 #{id}label17 {
 	z-index: 26;
+<<<<<<< Updated upstream
 	width: 84px;
 	height: 16px;
 	top: 413px;
 	left: 84px;
+=======
+	width: 83px;
+	height: 14px;
+	top: 414px;
+	left: 85px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
 #{id}label16 {
 	z-index: 25;
+<<<<<<< Updated upstream
 	width: 69px;
 	height: 16px;
 	top: 424px;
+=======
+	width: 67px;
+	height: 14px;
+	top: 426px;
+>>>>>>> Stashed changes
 	left: 210px;
 	position: absolute;
 }
@@ -3213,9 +3263,15 @@
 
 #{id}label14 {
 	z-index: 19;
+<<<<<<< Updated upstream
 	width: 85px;
 	height: 16px;
 	top: 324px;
+=======
+	width: 79px;
+	height: 14px;
+	top: 326px;
+>>>>>>> Stashed changes
 	left: 210px;
 	position: absolute;
 }
@@ -3231,54 +3287,91 @@
 
 #{id}label11 {
 	z-index: 16;
+<<<<<<< Updated upstream
 	width: 64px;
 	height: 16px;
 	top: 324px;
+=======
+	width: 60px;
+	height: 14px;
+	top: 326px;
+>>>>>>> Stashed changes
 	left: 495px;
 	position: absolute;
 }
 
 #{id}label10 {
 	z-index: 15;
+<<<<<<< Updated upstream
 	width: 54px;
 	height: 16px;
 	top: 348px;
 	left: 11px;
+=======
+	width: 50px;
+	height: 14px;
+	top: 349px;
+	left: 15px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
 #{id}label9 {
 	z-index: 14;
+<<<<<<< Updated upstream
 	width: 256px;
 	height: 16px;
 	top: 528px;
 	left: 234px;
+=======
+	width: 244px;
+	height: 14px;
+	top: 529px;
+	left: 246px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
 #{id}label8 {
 	z-index: 13;
 	width: 74px;
+<<<<<<< Updated upstream
 	height: 16px;
 	top: 503px;
+=======
+	height: 14px;
+	top: 504px;
+>>>>>>> Stashed changes
 	left: 416px;
 	position: absolute;
 }
 
 #{id}label7 {
 	z-index: 12;
+<<<<<<< Updated upstream
 	width: 73px;
 	height: 16px;
 	top: 478px;
 	left: 417px;
+=======
+	width: 69px;
+	height: 14px;
+	top: 479px;
+	left: 421px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
 #{id}label4 {
 	z-index: 11;
 	width: 89px;
+<<<<<<< Updated upstream
 	height: 16px;
 	top: 453px;
+=======
+	height: 14px;
+	top: 454px;
+>>>>>>> Stashed changes
 	left: 401px;
 	position: absolute;
 }
@@ -3288,15 +3381,25 @@
 	width: 81px;
 	height: 13px;
 	top: 429px;
+<<<<<<< Updated upstream
 	left: 409px;
+=======
+	left: 415px;
+>>>>>>> Stashed changes
 	position: absolute;
 }
 
 #{id}label2 {
 	z-index: 9;
+<<<<<<< Updated upstream
 	width: 63px;
 	height: 16px;
 	top: 179px;
+=======
+	width: 59px;
+	height: 14px;
+	top: 181px;
+>>>>>>> Stashed changes
 	left: 400px;
 	position: absolute;
 }
@@ -3312,9 +3415,15 @@
 
 #{id}label1 {
 	z-index: 8;
+<<<<<<< Updated upstream
 	width: 90px;
 	height: 16px;
 	top: 179px;
+=======
+	width: 91px;
+	height: 14px;
+	top: 181px;
+>>>>>>> Stashed changes
 	left: 185px;
 	position: absolute;
 }
@@ -3385,36 +3494,6 @@
 	text-align: left;
 }
 
-#{id}matrix4 .waf-widget.waf-clone-{id}container9.waf-state-selected {
-	border-top-width: 0px;
-	border-top-style: none;
-	border-left-width: 0px;
-	border-left-style: none;
-	border-right-width: 0px;
-	border-right-style: none;
-	border-bottom-width: 0px;
-	border-bottom-style: none;
-	-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-	 -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-	 box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-}
-
-#{id}container9.waf-state-selected {
-	border-top-width: 0px;
-	border-top-style: none;
-	border-left-width: 0px;
-	border-left-style: none;
-	border-right-width: 0px;
-	border-right-style: none;
-	border-bottom-width: 0px;
-	border-bottom-style: none;
-	-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-	 -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-	 box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.496094) 0px 0px 0px 0px inset;
-}
-
 #{id}button2 {
 	z-index: 1;
 	width: 75px;
@@ -3440,13 +3519,6 @@
 	left: 0px;
 	right: 1px;
 	position: absolute;
-}
-
-#{id}matrix4 .waf-widget.waf-clone-{id}classFilterMatrix {
-	position: absolute;
-	color: rgb(0, 27, 90);
-	font-size: 13px;
-	font-weight: normal;
 }
 
 #{id}matrix4 .waf-widget.waf-clone-{id}richText31 {
@@ -3523,7 +3595,7 @@
 #{id}classFullViewCont {
 	z-index: 3;
 	width: 150px;
-	height: 570px;
+	height: 565px;
 	top: 70px;
 	left: 2px;
 	position: absolute;
@@ -3813,18 +3885,6 @@
 	top: 5px;
 	left: 12px;
 	position: absolute;
-}
-
-#{id}classFilterMatrix {
-	z-index: 1;
-	width: 75px;
-	height: 16px;
-	top: 0px;
-	left: 25px;
-	position: absolute;
-	color: rgb(0, 27, 90);
-	font-size: 13px;
-	font-weight: normal;
 }
 
 #{id}classRosterMainCont {
@@ -6599,6 +6659,15 @@
 	height: 75px;
 	top: 445px;
 	left: 215px;
+	position: absolute;
+}
+
+#{id}classFilterMatrix {
+	z-index: 3;
+	width: 75px;
+	height: 16px;
+	top: 0px;
+	left: 40px;
 	position: absolute;
 }
 
