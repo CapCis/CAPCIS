@@ -12,9 +12,7 @@
 	position: absolute;
 }
 
-#{id} {
-	background-color: rgb(78, 117, 163);
-}
+
 
 #{id}menuButtonCont {
 	z-index: 7;
