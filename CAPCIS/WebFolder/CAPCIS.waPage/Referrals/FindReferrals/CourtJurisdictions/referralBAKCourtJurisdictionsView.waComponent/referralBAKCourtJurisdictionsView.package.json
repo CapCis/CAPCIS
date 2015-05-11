@@ -20,15 +20,15 @@
 			"type": "widget"
 		},
 		{
-			"id": "Widget/button",
-			"type": "widget"
-		},
-		{
 			"id": "Widget/container",
 			"type": "widget"
 		},
 		{
 			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/button",
 			"type": "widget"
 		},
 		{
@@ -38,6 +38,11 @@
 		},
 		{
 			"id": "CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsView.waComponent/referralBAKCourtJurisdictionsView.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
+			"id": "CAPCIS.waPage/Referrals/FindReferrals/CourtJurisdictions/referralBAKCourtJurisdictionsView.waComponent/styles/referralBAKCourtJurisdictionsView.css",
 			"path": "WEBFOLDER",
 			"type": "style"
 		},
