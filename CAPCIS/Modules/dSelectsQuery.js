@@ -71,7 +71,7 @@ exports.buildQuery = function buildQuery(myObject)
 						return answer;
 				case 4: answer = 'SELECT WeekDayNumber, Class, TimeNumber,ClassRoom FROM capcis.capclasses where ClassStatus = "OPEN" and ClassDay = "'+ myObject.data1 + '"order by 1,3,2';
 						return answer;
-				case 5: answer = 'SELECT ALL clientinformation.ClientFullNameReverse,CurrentBalance, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
+				case 5: answer = 'SELECT clientinformation.ClientFullNameReverse,CurrentBalance, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix, ClientRequirementsID, clientrequirements.ClientStatus, Class, clientrequirements.Program, \
 								clientrequirements.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 								clientrequirements.ClientInformation_CIID, clientrequirements.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, clientrequirements.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
 								 clientrequirements.AttendedClass, concat(ClientLastName, ",", ClientFirstName, " ", coalesce(ClientMiddleName, ",")," ", coalesce(ClientNameSuffix, ",")) as CoalescedName, \
@@ -90,7 +90,7 @@ exports.buildQuery = function buildQuery(myObject)
 								HAVING clientrequirements.ClientStatus = "Active" AND Class = "'+myObject.data1+'" AND clientrequirements.FK_MonitoringCategoryID = 1 \
 								ORDER BY ClientFullNameReverse ASC';
 						return answer;
-				case 6: answer = 'SELECT ALL  clientinformation.ClientFullNameReverse,CurrentBalance, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
+				case 6: answer = 'SELECT *, clientinformation.ClientFullNameReverse,CurrentBalance, ClientLastName, ClientFirstName, ClientMiddleName, ClientNameSuffix,ClientRequirementsID, activeclientrequirementsq.ClientStatus, Class, activeclientrequirementsq.Program, \
 							activeclientrequirementsq.ReportingStatus, EnrollmentDate, StartDate, ReviewDate, DischargedDate, ClassesRequired, ClassesCredited, TwelveStepMeetingsRequired, TwelveStepMeetingsCredited, TwelveStepMeetingsAttended, \
 							activeclientrequirementsq.ClientInformation_CIID, activeclientrequirementsq.IDEntryAmountPaid, coalesce(IDEntryAmountPaid, 0) as TotalAmountPaid, \
 							activeclientrequirementsq.IDEntryAmountCharged, coalesce(IDEntryAmountCharged, 0) as TotalAmountCharged, \
@@ -165,6 +165,10 @@ exports.buildQuery = function buildQuery(myObject)
 									FK_clientrequirements_ClientRequirementsID = '+myObject.data2;
 						return answer;	
 						*/
+				case 14: answer ="select ClassDay, Class, FullProgramName, ClassTime, ClassRoom \
+									from capclasses join programs on capclasses.Program = programs.Program \
+									where class = '"+myObject.data1+"'";
+						return answer;
 							
 				default:
 						answer = null;
@@ -919,19 +923,69 @@ exports.buildQuery = function buildQuery(myObject)
 			return answer;
 		case 7: //ClientInformation
 			switch(myObject.minor){
-				case 0 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases \
-						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m/%d/%Y') as ClientBirthdate, \
+				case 0 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases, \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m-%d-%Y') as ClientBirthdate, \
 						TotalPaid, TotalCharged, CurrentBalance from clientinformation \
 						where (ClientFirstName like '"+myObject.data1+"%' \
 						or ClientMiddleName like '"+myObject.data1+"%' or ClientLastName like  '"+myObject.data1+"%') and \
 						(ClientFirstName like '"+myObject.data2+"%' \
 						or ClientMiddleName like '"+myObject.data2+"%' or ClientLastName like  '"+myObject.data2+"%')";
 					return answer;
-				case 1 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases \
-						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m/%d/%Y') as ClientBirthdate, TotalPaid, TotalCharged, CurrentBalance from clientinformation \
+				case 1 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases, \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m-%d-%Y') as ClientBirthdate, TotalPaid, TotalCharged, CurrentBalance from clientinformation \
 						where CIID = '"+myObject.data1+"' or ClientFirstName like '"+myObject.data1+"%' \
 						or ClientMiddleName like '"+myObject.data1+"%' or ClientLastName like  '"+myObject.data1+"%' or \
 						ClientNameSuffix like '"+myObject.data1+"%' or ClientAliases like '"+myObject.data1+"%'"
+					return answer;
+				case 2 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases, \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m-%d-%Y') as ClientBirthdate, \
+						TotalPaid, TotalCharged, CurrentBalance from clientinformation left join clientcontact on \
+						clientinformation.CIID = clientcontact.ClientInformation_CIID left join clientemergencycontact on \
+						clientcontact.ClientInformation_CIID = clientemergencycontact.ClientInformation_CIID left join \
+						clientvictim on clientvictim.ClientInformation_CIID = clientemergencycontact.ClientInformation_CIID \
+						where clientcontact.ClientInformation_CIID = '"+myObject.data1+"' or clientcontact.ClientPrimaryPhone like '"+myObject.data1+"%' or \
+						clientcontact.ClientAdditionalPhone like '"+myObject.data1+"%' or clientcontact.ClientAdditionalPhoneExt like '"+myObject.data1+"%' \
+						or clientcontact.ClientEmail like '"+myObject.data1+"%' or clientcontact.ClientAddress like '"+myObject.data1+"%' or \
+						clientcontact.ClientCity like '"+myObject.data1+"%' or clientcontact.ClientState like '"+myObject.data1+"%' or \
+						clientcontact.ClientZipCode like '"+myObject.data1+"%' or clientcontact.ClientContactNotes like '"+myObject.data1+"%' or \
+						clientemergencycontact.EmergencyContactName like '"+myObject.data1+"%' or \
+						clientemergencycontact.EmergencyContactPhone like '"+myObject.data1+"%' or \
+						clientemergencycontact.EmergencyContactNotesOLD like '"+myObject.data1+"%' or \
+						clientemergencycontact.EmergencyContactAddress like '"+myObject.data1+"%' or \
+						clientemergencycontact.AdditionReleaseContacts like '"+myObject.data1+"%' or \
+						clientemergencycontact.EmergencyContactNotes like '"+myObject.data1+"%' or \
+						clientvictim.ClientVictimName like '"+myObject.data1+"%' or \
+						clientvictim.ClientVictimPhone like '"+myObject.data1+"%' or \
+						clientvictim.ClientVictimAddress like '"+myObject.data1+"%' or \
+						clientvictim.ClientVictimNotes like '"+myObject.data1+"%'";
+					return answer;
+				case 3 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases, \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m/%d/%Y') as ClientBirthdate, TotalPaid, TotalCharged, CurrentBalance from clientinformation \
+						where ClientSSN = '"+myObject.data1+"' or ClientBirthdate = '"+myObject.data1+"'";
+					return answer;
+				case 4 : answer = "SELECT CIID, ClientFirstName, ClientMiddleName, ClientLastName, \
+						ClientNameSuffix, ClientSSN, ClientAliases, \
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m-%d-%Y') as ClientBirthdate, \
+						TotalPaid, TotalCharged, CurrentBalance \
+						FROM capcis.clientreferralinformation \
+						left join clientinformation on CIID = clientreferralinformation.ClientInformation_CIID \
+						left join attorneyinformation on FK_AttorneyInformationID = AttorneyInformationID \
+						left join judges on FK_JudgesID = JudgesID \
+						left join courtjurisdiction on FK_JurisdictionID = CourtJurisdictionID \
+						left join poinformation on FK_POInformationID = POInformationID \
+						left join pojurisdiction on POJurisdictionID = FK_pojurisdiction_POJurisdictionID \
+						left join prosecutors on ProsecutorsID = FK_ProsecutorsID \
+						left join assessorinformation on FK_AssessorInformationID = AssessorInformationID \
+						where AssessorName like '"+myObject.data1+"%' or AttorneyName like '"+myObject.data1+"%' or Judge like '"+myObject.data1+"%' \
+						or CourtJurisdiction like '"+myObject.data1+"%' or POName like '"+myObject.data1+"%' or JurisdictionName like '"+myObject.data1+"%' \
+						or Prosecutor like '"+myObject.data1+"%'";
+					return answer;
+				case 5 : answer = "SELECT ClientCallNotesID, CallNotes, \
+						DATE_FORMAT(clientcallnotes.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, \
+						fxuseraccounts.FullName, VoidNote \
+						FROM capcis.clientcallnotes LEFT JOIN capcis.fxuseraccounts \
+						on clientcallnotes.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+						where ClientInformation_CIID = '"+myObject.data1+"%'";
 					return answer;
 			}
 			return answer;

@@ -130,14 +130,14 @@ function constructor (id) {
 	button7.click = function button7_click (event)// @startlock
 	{// @endlock
 		var cartConcat ="";
-		var testingTypeId;
+		var testingTypeId = 0;
 		for(var x = 0 ; x< cart.length ; x++)
 		{
 			cartConcat = cartConcat + cart[x].ItemPriceListID + "," + cart[x].ItemPrice + ",";
 			if(cart[x].TT_TestingTypeID != null)
 			{
 				
-				testigTypeId = cart[x].TT_TestingTypeID;
+				testingTypeId = cart[x].TT_TestingTypeID;
 			}	
 		}
 		
@@ -159,7 +159,7 @@ function constructor (id) {
 			testingTypePerformed:$$(getHtmlId('muTestType')).getValue(),
 			recieptPurpose:$$(getHtmlId('textField60')).getValue(),
 			receiptNotes:$$(getHtmlId('textField57')).getValue(),
-			testingTypeId:testigTypeId
+			testingTypeId:testingTypeId
 		};
 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -180,14 +180,14 @@ function constructor (id) {
 	{// @endlock
 		
 		var cartConcat ="";
-		var testingTypeId;
+		var testingTypeId = 0;
 		for(var x = 0 ; x< cart.length ; x++)
 		{
 			cartConcat = cartConcat + cart[x].ItemPriceListID + "," + cart[x].ItemPrice + ",";
 			if(cart[x].TT_TestingTypeID != null)
 			{
 				
-				testigTypeId = cart[x].TT_TestingTypeID;
+				testingTypeId = cart[x].TT_TestingTypeID;
 			}	
 		}
 		
@@ -210,7 +210,7 @@ function constructor (id) {
 			testingTypePerformed:$$(getHtmlId('testType')).getValue(),
 			recieptPurpose:$$(getHtmlId('comboBoxTextInput')).getValue(),
 			receiptNotes:$$(getHtmlId('receiptNotes')).getValue(),
-			testingTypeId:testigTypeId
+			testingTypeId:testingTypeId
 		};
 		rpcDInsert.setInsertAsync({
 		 			'onSuccess': function(result){
@@ -455,10 +455,11 @@ function constructor (id) {
 	
 	function changeMUBalence()
 	{
+		
 		var paid = Number($$(getHtmlId('muAmountPaid')).getValue());
 		$$($comp.id+'_muAmountPaidBottom').setValue(paid.toFixed(2));
 		
-		var backBalence = Number($$(getHtmlId('muBackBalence')).getValue());
+		var backBalence = Number($$(getHtmlId('muBackBalance')).getValue());
 		var currentCharges = Number($$(getHtmlId('muCurrentCharges')).getValue());
 		
 		var newBalence = (backBalence + currentCharges) - paid;
@@ -896,7 +897,7 @@ function constructor (id) {
 		$$(getHtmlId('muAttendedCheckBox')).setValue(false);
 		currentCharges = 0;	
 		$$($comp.id+'_muTestStatus').setValue('None');
-		$$(getHtmlId("muAmountPaid")).setValue(null);
+		$$(getHtmlId("muAmountPaid")).setValue("0.00");
 			
 		
 
@@ -936,8 +937,8 @@ function constructor (id) {
 					},
 					'params': [myObject]
 				});
-		currentBal = Number(sources.myMURosterList.CurrentBalence).toFixed(2);
-		$$(getHtmlId("muBackBalence")).setValue(currentBal);
+		currentBal = Number(sources.myMURosterList.CurrentBalance).toFixed(2);
+		$$(getHtmlId("muBackBalance")).setValue(currentBal);
 		
 		$$(getHtmlId('muClassRosterMainCont')).setSplitPosition(400);
 	};// @lock
@@ -980,7 +981,7 @@ function constructor (id) {
 		$$(getHtmlId('attendedCheckBox')).setValue(false);
 		currentCharges = 0;	
 		$$($comp.id+'_testStatus').setValue('None');
-		$$(getHtmlId("amountPaidField")).setValue(null);
+		$$(getHtmlId("amountPaidField")).setValue("0.00");
 			
 		xhr = new XMLHttpRequest();
 		URLText = userConfigObj.serverDomain + "/1.getClientPicture";  //should be localhost or 127.0.0.1
@@ -1038,7 +1039,7 @@ function constructor (id) {
 		
 		
 		/*
-		debugger;
+		
 		//-----------------------------how to send a xmlhttprequest with body string !!!!!
 		xhr = new XMLHttpRequest();
 		URLText = "http://localhost:8082/getPicture";
@@ -1160,12 +1161,23 @@ function constructor (id) {
 	 
 	 function pageOpener (id) 
 	{
-	
+		
 		lastClickedClass = 	id;
-		var myObject = {token:'7836140170460568' ,id:'1',major:2,minor:5,data1:lastClickedClass.id.toString()}; //dont forget to change token and id
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:5,data1:lastClickedClass.id.toString()}; //dont forget to change token and id
 	 	myRosterList = rpcDSelects.getSelect(myObject);
 	 	sources.myRosterList.sync();
-	 	
+	 	var myObject2 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:2,minor:14,data1:lastClickedClass.id.toString()};
+	 	rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				
+		 				specificClassInfo = result;
+		 				sources.specificClassInfo.sync();	
+					},
+					'onError': function(error){
+						console.log(error);
+					},
+					'params': [myObject2]
+				});
 	 	//$comp.sourcesVar.myRosterList = myRosterList;
 	 	
 	 	
@@ -1466,9 +1478,12 @@ function constructor (id) {
 	}
 	function balenceCarrySuccess(result)
 	{
+		
 		carryBalence= result;
 		sources.carryBalence.sync();
 		$$(getHtmlId('balenceMayCarry')).setValue(Number(sources.carryBalence.ItemPrice).toFixed(2));
+		$$(getHtmlId('balenceMUMayCarry')).setValue(Number(sources.carryBalence.ItemPrice).toFixed(2));
+		
 	}
 	function balenceCarryError(event)
 	{

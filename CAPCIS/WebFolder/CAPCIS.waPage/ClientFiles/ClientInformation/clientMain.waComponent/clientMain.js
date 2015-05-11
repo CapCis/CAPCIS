@@ -14,52 +14,145 @@ function constructor (id) {
 	
 	//$$('combobox1').setErrorMessage({message:"Use combo box to select search properties.",tooltip:true})
 	// @region namespaceDeclaration// @startlock
-	var clientInfoSearchButton = {};	// @button
+	var dataGrid1 = {};	// @dataGrid
+	var clientInformationSearchButton = {};	// @button
+	var openSearchButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	clientInfoSearchButton.click = function clientInfoSearchButton_click (event)// @startlock
+	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
+	{// @endlock
+		syncBlogs(sources.clientInfoMain0.CIID);
+		var myWidget = document.getElementById($comp.id +"_clientsearchcont");
+		myWidget.style.top = "750px";
+	};// @lock
+
+	clientInformationSearchButton.click = function clientInformationSearchButton_click (event)// @startlock
 	{// @endlock
 		debugger;
 		var mySearchStr = $$($comp.id + "_clientInfoSearchTextBox").getValue();
-		n = mySearchStr.search(" ");
-		if (n != -1)
+		var mySearchOption = $$($comp.id + "_combobox1").getValue();
+		if (mySearchOption == "0")
 		{
-			var mySplitStr = mySearchStr.split(" ");
-			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:0,data1:mySplitStr[0],data2:mySplitStr[1]};	
-			rpcDSelects.getSelectAsync({
+			n = mySearchStr.search(" ");
+			if (n != -1)
+			{
+				var mySplitStr = mySearchStr.split(" ");
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:0,data1:mySplitStr[0],data2:mySplitStr[1]};	
+				rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
+		 				debugger;
+						syncClientInfoMain(result);
 						
 					},
 					'onError': function(error){
 						
 					},
 					'params': [myObject]
+				});
+			}
+			else
+			{
+				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:1,data1:mySearchStr};	
+				rpcDSelects.getSelectAsync({
+		 			'onSuccess': function(result){
+		 				debugger;
+						syncClientInfoMain(result);
+								
+					},
+					'onError': function(error){
+						
+					},
+					'params': [myObject]
+				});
+			}
+		}
+		
+		
+		if ($$($comp.id + "_combobox1").value == "1")
+		{
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:2,data1:mySearchStr};	
+			rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					syncClientInfoMain(result);					
+				},
+				'onError': function(error){
+						
+				},
+				'params': [myObject]
 			});
 		}
-		else
+		
+		if ($$($comp.id + "_combobox1").value == "2")
 		{
-			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:1,data1:mySearchStr};	
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:3,data1:mySearchStr};	
 			rpcDSelects.getSelectAsync({
-		 			'onSuccess': function(result){
-						debugger;
-						document.getElementById($comp.id + "_textField10").dataset.binding = "clientInfoMain1.ClientFirstName";
-						document.getElementById($comp.id + "_dataGrid3").dataset.binding = clientInfoMain1;
-						clientInfoMain1 = result;
-						sources.clientInfoMain1.sync();
+		 		'onSuccess': function(result){
+					syncClientInfoMain(result);				
+				},
+				'onError': function(error){
 						
-					},
-					'onError': function(error){
+				},
+				'params': [myObject]
+			});
+		}
+		
+		if ($$($comp.id + "_combobox1").value == "3")
+		{
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:4,data1:mySearchStr};	
+			rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+						syncClientInfoMain(result);				
+				},
+				'onError': function(error){
 						
-					},
-					'params': [myObject]
+				},
+				'params': [myObject]
 			});
 		}
 	};// @lock
 
+	openSearchButton.click = function openSearchButton_click (event)// @startlock
+	{// @endlock
+		var myWidget = document.getElementById($comp.id +"_clientsearchcont");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".3s";
+		myWidget.style.top = "20px";
+	};// @lock
+
+
+
+
+	function syncClientInfoMain (request)
+	{
+		debugger;
+		clientInfoMain0 = request;
+		sources.clientInfoMain0.sync();
+		
+	}
+
+	function syncBlogs (request)
+	{
+		debugger;
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:5,data1:request};	
+			rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					clientInfoBlogs0 = result;
+					sources.clientInfoBlogs0.sync();					
+				},
+				'onError': function(error){
+						
+				},
+				'params': [myObject]
+			});
+	}
+		
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_clientInfoSearchButton", "click", clientInfoSearchButton.click, "WAF");
+	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
+	WAF.addListener(this.id + "_clientInformationSearchButton", "click", clientInformationSearchButton.click, "WAF");
+	WAF.addListener(this.id + "_openSearchButton", "click", openSearchButton.click, "WAF");
 	// @endregion// @endlock
 
 	};// @lock

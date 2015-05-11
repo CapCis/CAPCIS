@@ -3,6 +3,15 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}button9 {
+	z-index: 13;
+	width: 92px;
+	height: 22px;
+	top: 646px;
+	left: 187px;
+	position: absolute;
+}
+
 #{id}label11 {
 	z-index: 2;
 	width: 84px;
@@ -50,33 +59,6 @@
 }
 
 #{id}htmlTag7 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
-#{id}htmlTag4 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
-#{id}htmlTag3 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
-#{id}htmlTag2 {
 	position: absolute;
 	z-index: 0;
 	width: 0px;
@@ -356,8 +338,8 @@
 #{id}dataGrid1 {
 	z-index: 1;
 	width: 1288px;
-	height: 615px;
-	top: 0px;
+	height: 300px;
+	top: 205px;
 	left: 0px;
 	position: absolute;
 }
@@ -2272,10 +2254,10 @@
 }
 
 #{id}clientsearchcont {
-	z-index: 17;
+	z-index: 30;
 	width: 1288px;
 	height: 659px;
-	top: 725px;
+	top: 740px;
 	left: 0px;
 	position: absolute;
 	background-color: rgb(240, 240, 255);
@@ -2314,7 +2296,25 @@
 	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
 }
 
-#{id}clientInfoSearchButton {
+#{id}clientInfoSearchTextBox {
+	z-index: 4;
+	width: 125px;
+	height: 22px;
+	top: 159px;
+	left: 1016px;
+	position: absolute;
+}
+
+#{id}clientInformationSearchButton {
+	z-index: 3;
+	width: 92px;
+	height: 22px;
+	top: 159px;
+	left: 1165px;
+	position: absolute;
+}
+
+#{id}openSearchButton {
 	z-index: 10;
 	width: 65px;
 	height: 30px;
@@ -2322,14 +2322,5 @@
 	left: 1225px;
 	position: absolute;
 	font-size: 12px;
-}
-
-#{id}clientInfoSearchTextBox {
-	z-index: 3;
-	width: 125px;
-	height: 22px;
-	top: 3px;
-	left: 1100px;
-	position: absolute;
 }
 

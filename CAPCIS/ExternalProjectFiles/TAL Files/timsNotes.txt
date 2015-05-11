@@ -181,3 +181,13 @@ HOW TO DO XMLHTTPREQUEST FROM BROWSER
 				$$('image3').setValue(URL.createObjectURL(myBlob));
 			}
 		}
+
+
+
+HOW TO DO WIDGET TRANSITIONS
+
+		var myWidget = document.getElementById($comp.id +"_container28");
+		myWidget.style.transitionProperty = "top";
+		myWidget.style.transitionDelay = "0s";
+		myWidget.style.transitionDuration = ".5s";
+		myWidget.style.top = "325px";
