@@ -3,6 +3,57 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#container2 {
+	z-index: 41;
+	width: 713px;
+	height: 141px;
+	top: 772px;
+	left: 194px;
+	position: absolute;
+}
+
+.waf-widget.waf-clone-image4 {
+	position: absolute;
+}
+
+.waf-widget.waf-clone-textField1 {
+	position: absolute;
+}
+
+.waf-widget.waf-clone-richText1 {
+	position: absolute;
+}
+
+.waf-widget.waf-clone-button3 {
+	position: absolute;
+}
+
+.waf-widget.waf-clone-label1 {
+	position: absolute;
+}
+
+#matrix1 .waf-widget.waf-clone-image4 {
+	position: absolute;
+}
+
+#image4 {
+	z-index: 4;
+	width: 85px;
+	height: 34px;
+	top: 4px;
+	left: 447px;
+	position: absolute;
+}
+
+#matrix2 {
+	z-index: 40;
+	width: 353px;
+	height: 286px;
+	top: 341px;
+	left: 251px;
+	position: absolute;
+}
+
 #button13 {
 	z-index: 39;
 	width: 108px;
@@ -72,9 +123,9 @@
 
 #label4 {
 	z-index: 2;
-	width: 29px;
-	height: 13px;
-	top: 18px;
+	width: 26px;
+	height: 16px;
+	top: 15px;
 	left: 33px;
 	position: absolute;
 }
@@ -276,7 +327,7 @@
 
 #container1 {
 	z-index: 1;
-	width: 478px;
+	width: 604px;
 	height: 43px;
 	top: 10px;
 	left: 10px;
@@ -293,11 +344,11 @@
 }
 
 #matrix1 {
-	z-index: 7;
-	width: 500px;
-	height: 500px;
-	top: 716px;
-	left: 220px;
+	z-index: 1;
+	width: 624px;
+	height: 63px;
+	top: 28px;
+	left: 45px;
 	position: absolute;
 }
 

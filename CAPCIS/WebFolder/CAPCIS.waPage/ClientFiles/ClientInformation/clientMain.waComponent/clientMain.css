@@ -3,6 +3,51 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}htmlTag10 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag5 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag4 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag3 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
+#{id}htmlTag2 {
+	z-index: 0;
+	width: 0px;
+	height: 0px;
+	top: auto;
+	left: auto;
+	position: absolute;
+}
+
 #{id}button9 {
 	z-index: 13;
 	width: 92px;
@@ -50,15 +95,6 @@
 }
 
 #{id}htmlTag8 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
-#{id}htmlTag7 {
 	position: absolute;
 	z-index: 0;
 	width: 0px;

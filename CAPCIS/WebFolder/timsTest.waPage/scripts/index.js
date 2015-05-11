@@ -2,6 +2,7 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var matrix1 = {};	// @matrix
 	var button13 = {};	// @button
 	var textField2 = {};	// @textField
 	var button15 = {};	// @button
@@ -19,10 +20,28 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
+	matrix1.onChildrenDraw = function matrix1_onChildrenDraw (event)// @startlock
+	{// @endlock
+		
+		this;
+		$$("matrix1");
+		
+		
+	};// @lock
+
 	button13.click = function button13_click (event)// @startlock
 	{// @endlock
 		debugger;
 		matrixarray;
+		$$("matrix1");
+		$$("container2");
+		
+		for (x = 0;x <= $$("matrix1").clones.length;x++)
+		{
+			var myImageBox = $$("matrix1").clones[x][0].children[4]
+		}
+		
+		
 		
 	};// @lock
 
@@ -187,6 +206,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	{// @endlock
 		debugger;
 		matrixarray = rpcUtilities.timMatrixData();
+		myAdjustedHeight = matrixarray.length * 55
+		$$("matrix1").setHeight(myAdjustedHeight.toString());
+		$$("container2").domNode.style.overflow = "auto";
 		source.matrixarray.sync();		
 	};// @lock
 
@@ -226,6 +248,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("matrix1", "onChildrenDraw", matrix1.onChildrenDraw, "WAF");
 	WAF.addListener("button13", "click", button13.click, "WAF");
 	WAF.addListener("button2", "mouseover", button2.mouseover, "WAF");
 	WAF.addListener("textField2", "blur", textField2.blur, "WAF");
