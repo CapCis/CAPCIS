@@ -96,6 +96,11 @@
 			"type": "style"
 		},
 		{
+			"id": "CAPCIS.waPage/Classes/ClassRosters/capclassmain.waComponent/styles/capClassMain.css",
+			"path": "WEBFOLDER",
+			"type": "style"
+		},
+		{
 			"id": "CAPCIS.waPage/Classes/ClassRosters/capClassMain.waComponent/capClassMain.js",
 			"path": "WEBFOLDER",
 			"type": "script"

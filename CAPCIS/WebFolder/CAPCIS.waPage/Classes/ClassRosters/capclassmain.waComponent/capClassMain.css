@@ -194,10 +194,10 @@
 
 #{id}label18 {
 	z-index: 39;
-	width: 30px;
-	height: 16px;
-	top: 338px;
-	left: 280px;
+	width: 34px;
+	height: 13px;
+	top: 339px;
+	left: 276px;
 	position: absolute;
 	text-align: center;
 }
@@ -2903,22 +2903,12 @@
 	text-align: center;
 }
 
-#{id}textField34 {
-	z-index: 16;
-	width: 100px;
-	height: 22px;
-	top: 529px;
-	left: 500px;
-	position: absolute;
-	text-align: right;
-}
-
 #{id}label25 {
 	z-index: 15;
-	width: 247px;
-	height: 16px;
-	top: 532px;
-	left: 243px;
+	width: 259px;
+	height: 13px;
+	top: 533px;
+	left: 231px;
 	position: absolute;
 	text-align: right;
 }
@@ -2955,10 +2945,10 @@
 
 #{id}label15 {
 	z-index: 11;
-	width: 64px;
-	height: 16px;
-	top: 432px;
-	left: 426px;
+	width: 71px;
+	height: 13px;
+	top: 433px;
+	left: 419px;
 	position: absolute;
 	text-align: right;
 }
@@ -3231,9 +3221,9 @@
 
 #{id}label11 {
 	z-index: 16;
-	width: 64px;
-	height: 16px;
-	top: 324px;
+	width: 70px;
+	height: 13px;
+	top: 327px;
 	left: 495px;
 	position: absolute;
 }
@@ -3249,10 +3239,10 @@
 
 #{id}label9 {
 	z-index: 14;
-	width: 256px;
-	height: 16px;
-	top: 528px;
-	left: 234px;
+	width: 268px;
+	height: 13px;
+	top: 529px;
+	left: 222px;
 	position: absolute;
 }
 
@@ -6506,16 +6496,6 @@
 	text-align: right;
 }
 
-#{id}muBackBalence {
-	z-index: 11;
-	width: 100px;
-	height: 22px;
-	top: 429px;
-	left: 500px;
-	position: absolute;
-	text-align: right;
-}
-
 #{id}muCurrentCharges {
 	z-index: 12;
 	width: 100px;
@@ -6600,5 +6580,70 @@
 	top: 445px;
 	left: 215px;
 	position: absolute;
+}
+
+#{id}classNameField {
+	z-index: 5;
+	width: 128px;
+	height: 13px;
+	top: 5px;
+	left: 12px;
+	position: absolute;
+}
+
+#{id}orgNameField {
+	z-index: 6;
+	width: 199px;
+	height: 14px;
+	top: 5px;
+	left: 73px;
+	position: absolute;
+}
+
+#{id}dayField {
+	z-index: 7;
+	width: 149px;
+	height: 13px;
+	top: 7px;
+	left: 286px;
+	position: absolute;
+}
+
+#{id}timeField {
+	z-index: 8;
+	width: 155px;
+	height: 13px;
+	top: 7px;
+	left: 366px;
+	position: absolute;
+}
+
+#{id}classRoomField {
+	z-index: 9;
+	width: 160px;
+	height: 13px;
+	top: 6px;
+	left: 437px;
+	position: absolute;
+}
+
+#{id}muBackBalance {
+	z-index: 11;
+	width: 100px;
+	height: 22px;
+	top: 429px;
+	left: 500px;
+	position: absolute;
+	text-align: right;
+}
+
+#{id}balenceMUMayCarry {
+	z-index: 16;
+	width: 100px;
+	height: 22px;
+	top: 529px;
+	left: 500px;
+	position: absolute;
+	text-align: right;
 }
 
