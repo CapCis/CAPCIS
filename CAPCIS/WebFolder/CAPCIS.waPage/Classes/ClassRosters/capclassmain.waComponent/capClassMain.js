@@ -120,7 +120,6 @@ function constructor (id) {
 	var button1 = {};	// @button
 	var dataGrid1 = {};	// @dataGrid
 	var matrix4 = {};	// @matrix
-	var classFilterMatrix = {};	// @richText
 	var filterButton = {};	// @button
 	var button4 = {};	// @button
 	var fullButton = {};	// @button
@@ -1067,11 +1066,6 @@ function constructor (id) {
 		
 	};// @lock
 
-	classFilterMatrix.click = function classFilterMatrix_click (event)// @startlock
-	{// @endlock
-		// Add your code here
-	};// @lock
-
 	filterButton.click = function filterButton_click (event)// @startlock
 	{// @endlock
 		
@@ -1570,7 +1564,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_button1", "click", button1.click, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_matrix4", "click", matrix4.click, "WAF");
-	WAF.addListener(this.id + "_classFilterMatrix", "click", classFilterMatrix.click, "WAF");
 	WAF.addListener(this.id + "_filterButton", "click", filterButton.click, "WAF");
 	WAF.addListener(this.id + "_button4", "click", button4.click, "WAF");
 	WAF.addListener(this.id + "_fullButton", "click", fullButton.click, "WAF");

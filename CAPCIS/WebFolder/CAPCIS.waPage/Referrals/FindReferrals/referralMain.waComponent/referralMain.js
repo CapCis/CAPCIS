@@ -2394,7 +2394,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox8').setValue(sources.assessorList.AssPreferredReportingMethod);
 		
@@ -2419,7 +2419,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox6').setValue(sources.attorneyList.AttPreferredReportingMethod);
 		
@@ -2445,7 +2445,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox2').setValue(sources.dhsList.DhsPreferredReportingMethod);
 		
@@ -2471,7 +2471,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox3').setValue(sources.judgeList.JPreferredReportingMethod);
 		
@@ -2498,7 +2498,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox5').setValue(sources.prosecutorList.ProsPreferredReportingMethod);
 		
@@ -2525,7 +2525,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox4').setValue(sources.otherMonitorList.OMPreferredReportingMethod);
 		
@@ -2552,7 +2552,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_reportingComboBox').setValue(sources.courtJurisdictionList.CourtJurisdictionPreferredReportingMethod);
 		
@@ -2579,7 +2579,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		var myObject5 = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:3,minor:61,data1:sources.probationJurisdictionList.POJurisdictionID,data2:0};
 		rpcDSelects.getSelectAsync({
@@ -2604,7 +2604,7 @@ function constructor (id) {
 		myWidget.style.transitionProperty = "left";
 		myWidget.style.transitionDelay = "0s";
 		myWidget.style.transitionDuration = ".5s";
-		myWidget.style.left = "560px";
+		myWidget.style.left = "565px";
 		
 		$$($comp.id+'_combobox7').setValue(sources.probationOfficerList.POPreferredReportingMethod);
 		

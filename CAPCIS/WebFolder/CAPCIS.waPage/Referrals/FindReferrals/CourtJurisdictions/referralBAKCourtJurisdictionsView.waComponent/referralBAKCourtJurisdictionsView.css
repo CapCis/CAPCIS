@@ -3,8 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}textField25 {
+#{id}button1 {
 	z-index: 19;
+	width: 75px;
+	height: 25px;
+	top: 335px;
+	left: 335px;
+	position: absolute;
+}
+
+#{id}textField25 {
+	z-index: 18;
 	width: 250px;
 	height: 55px;
 	top: 275px;
@@ -13,17 +22,17 @@
 }
 
 #{id}label12 {
-	z-index: 19;
-	width: 129px;
-	height: 13px;
-	top: 262px;
+	z-index: 18;
+	width: 114px;
+	height: 14px;
+	top: 256px;
 	left: 5px;
 	position: absolute;
 }
 
 #{id}dataGrid1 {
 	z-index: 3;
-	height: 210px;
+	height: 215px;
 	top: 30px;
 	left: 5px;
 	right: 5px;
@@ -37,65 +46,28 @@
 	top: 5px;
 	left: 5px;
 	position: absolute;
-	font-weight: bold;
 	text-align: center;
-	font-size: 16px;
-	color: rgb(0, 27, 90);
 }
 
 #{id}container2 {
 	z-index: 33;
 	width: 415px;
 	height: 370px;
-	top: 245px;
+	top: 253px;
 	left: 0px;
 	position: absolute;
-	background-color: rgb(240, 240, 255);
-	border-top-color: rgb(229, 229, 229);
-	border-top-style: ridge;
-	border-right-color: rgb(229, 229, 229);
-	border-right-style: ridge;
-	border-right-width: 0px;
-	border-bottom-color: rgb(229, 229, 229);
-	border-bottom-style: ridge;
-	border-bottom-width: 0px;
-	border-left-color: rgb(229, 229, 229);
-	border-left-style: ridge;
-	border-top-width: 5px;
-	border-left-width: 0px;
-	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
-	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240, 240, 255)),color-stop(1, rgb(240, 240, 255)));
-	 background-image:-webkit-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:-moz-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
 }
 
 #{id}container1 {
 	z-index: 32;
 	width: 415px;
-	height: 245px;
+	height: 253px;
 	top: 0px;
 	left: 0px;
 	position: absolute;
-	background-color: rgb(240, 240, 255);
-	 background-image:url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2YwZjBmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmMGYwZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==");
-	 background-image:-webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgb(240, 240, 255)),color-stop(1, rgb(240, 240, 255)));
-	 background-image:-webkit-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:-moz-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:-ms-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:-o-linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-	 background-image:linear-gradient(left, rgb(240, 240, 255) 0%,rgb(240, 240, 255) 100%);
-}
-
-#{id}closeCourtJurisdictionPreviousButton {
-	z-index: 17;
-	width: 75px;
-	height: 25px;
-	top: 335px;
-	left: 335px;
-	position: absolute;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 5px;
 }
 
 #{id}textField27 {
@@ -109,9 +81,9 @@
 
 #{id}label15 {
 	z-index: 16;
-	width: 21px;
-	height: 13px;
-	top: 172px;
+	width: 18px;
+	height: 14px;
+	top: 166px;
 	left: 260px;
 	position: absolute;
 }
@@ -127,9 +99,9 @@
 
 #{id}label14 {
 	z-index: 15;
-	width: 98px;
-	height: 13px;
-	top: 262px;
+	width: 84px;
+	height: 14px;
+	top: 256px;
 	left: 260px;
 	position: absolute;
 }
@@ -145,10 +117,10 @@
 
 #{id}label13 {
 	z-index: 14;
-	width: 106px;
-	height: 13px;
-	top: 311px;
-	left: 277px;
+	width: 94px;
+	height: 14px;
+	top: 306px;
+	left: 289px;
 	position: absolute;
 }
 
@@ -163,9 +135,9 @@
 
 #{id}label11 {
 	z-index: 12;
-	width: 77px;
-	height: 13px;
-	top: 217px;
+	width: 69px;
+	height: 14px;
+	top: 211px;
 	left: 150px;
 	position: absolute;
 }
@@ -181,9 +153,9 @@
 
 #{id}label10 {
 	z-index: 11;
-	width: 48px;
-	height: 13px;
-	top: 217px;
+	width: 43px;
+	height: 14px;
+	top: 211px;
 	left: 45px;
 	position: absolute;
 }
@@ -199,9 +171,9 @@
 
 #{id}label9 {
 	z-index: 10;
-	width: 28px;
-	height: 13px;
-	top: 217px;
+	width: 25px;
+	height: 14px;
+	top: 211px;
 	left: 5px;
 	position: absolute;
 }
@@ -217,9 +189,9 @@
 
 #{id}label8 {
 	z-index: 9;
-	width: 79px;
-	height: 13px;
-	top: 172px;
+	width: 74px;
+	height: 14px;
+	top: 166px;
 	left: 5px;
 	position: absolute;
 }
@@ -235,9 +207,9 @@
 
 #{id}label7 {
 	z-index: 8;
-	width: 67px;
-	height: 13px;
-	top: 127px;
+	width: 58px;
+	height: 14px;
+	top: 121px;
 	left: 305px;
 	position: absolute;
 }
@@ -253,9 +225,9 @@
 
 #{id}label6 {
 	z-index: 7;
-	width: 66px;
-	height: 13px;
-	top: 127px;
+	width: 58px;
+	height: 14px;
+	top: 121px;
 	left: 190px;
 	position: absolute;
 }
@@ -271,9 +243,9 @@
 
 #{id}label5 {
 	z-index: 6;
-	width: 53px;
-	height: 13px;
-	top: 127px;
+	width: 47px;
+	height: 14px;
+	top: 121px;
 	left: 115px;
 	position: absolute;
 }
@@ -289,9 +261,9 @@
 
 #{id}label4 {
 	z-index: 5;
-	width: 65px;
-	height: 13px;
-	top: 127px;
+	width: 55px;
+	height: 14px;
+	top: 121px;
 	left: 5px;
 	position: absolute;
 }
@@ -307,9 +279,9 @@
 
 #{id}label3 {
 	z-index: 4;
-	width: 130px;
-	height: 13px;
-	top: 82px;
+	width: 113px;
+	height: 14px;
+	top: 76px;
 	left: 5px;
 	position: absolute;
 }
@@ -321,10 +293,7 @@
 	top: 5px;
 	left: 5px;
 	position: absolute;
-	font-weight: bold;
 	text-align: center;
-	font-size: 16px;
-	color: rgb(0, 27, 90);
 }
 
 #{id}textField14 {
@@ -334,14 +303,13 @@
 	top: 50px;
 	left: 5px;
 	position: absolute;
-	color: rgb(255, 0, 0);
 }
 
 #{id}label2 {
 	z-index: 2;
-	width: 101px;
-	height: 13px;
-	top: 37px;
+	width: 88px;
+	height: 14px;
+	top: 31px;
 	left: 5px;
 	position: absolute;
 }
@@ -353,14 +321,13 @@
 	top: 50px;
 	left: 210px;
 	position: absolute;
-	color: rgb(0, 0, 255);
 }
 
 #{id}label1 {
 	z-index: 1;
-	width: 59px;
-	height: 13px;
-	top: 37px;
+	width: 53px;
+	height: 14px;
+	top: 31px;
 	left: 210px;
 	position: absolute;
 }
