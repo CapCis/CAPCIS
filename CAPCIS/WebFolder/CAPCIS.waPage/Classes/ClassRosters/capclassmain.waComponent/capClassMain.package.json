@@ -96,11 +96,9 @@
 			"type": "style"
 		},
 		{
-<<<<<<< HEAD
-			"id": "CAPCIS.waPage/Classes/ClassRosters/capclassmain.waComponent/styles/capClassMain.css",
-=======
+
 			"id": "CAPCIS.waPage/Classes/ClassRosters/capClassMain.waComponent/styles/capClassMain.css",
->>>>>>> MELCAPCIS
+
 			"path": "WEBFOLDER",
 			"type": "style"
 		},
