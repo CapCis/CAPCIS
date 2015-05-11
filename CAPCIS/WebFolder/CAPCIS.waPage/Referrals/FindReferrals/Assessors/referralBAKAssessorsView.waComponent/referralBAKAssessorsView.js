@@ -24,7 +24,7 @@ function constructor (id) {
 	closeAssesorPreviousButton.click = function closeAssesorPreviousButton_click (event)// @startlock
 	{// @endlock
 		moveMe = document.getElementById(data.userData.mainContainer);
-		moveMe.style.left = "600px"
+		moveMe.style.left = "565px"
 		//close me hide me  
 	};// @lock
 

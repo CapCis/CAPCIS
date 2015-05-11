@@ -16,7 +16,6 @@ function constructor (id) {
 	var button5 = {};	// @button
 	var correspondanceGrid = {};	// @dataGrid
 	var courtCorrespondanceActiveBox = {};	// @combobox
-	var button2 = {};	// @button
 	var voidCorrespondanceCheck = {};	// @checkbox
 	// @endregion// @endlock
 
@@ -99,11 +98,6 @@ function constructor (id) {
 		
 	};// @lock
 
-	button2.click = function button2_click (event)// @startlock
-	{// @endlock
-		
-	};// @lock
-
 	voidCorrespondanceCheck.change = function voidCorrespondanceCheck_change (event)// @startlock
 	{// @endlock
 		
@@ -140,7 +134,6 @@ function constructor (id) {
 	WAF.addListener(this.id + "_button5", "click", button5.click, "WAF");
 	WAF.addListener(this.id + "_correspondanceGrid", "onRowClick", correspondanceGrid.onRowClick, "WAF");
 	WAF.addListener(this.id + "_courtCorrespondanceActiveBox", "change", courtCorrespondanceActiveBox.change, "WAF");
-	WAF.addListener(this.id + "_button2", "click", button2.click, "WAF");
 	WAF.addListener(this.id + "_voidCorrespondanceCheck", "change", voidCorrespondanceCheck.change, "WAF");
 	// @endregion// @endlock
 

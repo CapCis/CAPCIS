@@ -3,38 +3,11 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}htmlTag4 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
-#{id}htmlTag3 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
-#{id}htmlTag2 {
-	position: absolute;
-	z-index: 0;
-	width: 0px;
-	height: 0px;
-	top: auto;
-	left: auto;
-}
-
 #{id}label1 {
 	z-index: 2;
-	width: 102px;
-	height: 13px;
-	top: 202px;
+	width: 98px;
+	height: 14px;
+	top: 201px;
 	left: 5px;
 	position: absolute;
 }
@@ -74,10 +47,6 @@
 	top: 10px;
 	left: 5px;
 	position: absolute;
-	font-weight: bold;
-	text-align: center;
-	font-size: 16px;
-	color: rgb(0, 27, 90);
 }
 
 #{id}container1 {
@@ -87,15 +56,15 @@
 	top: 0px;
 	left: 0px;
 	position: absolute;
-	background-color: rgba(240, 240, 255, 0.898438);
+	border-left-width: 0px;
 }
 
 #{id}label2 {
 	z-index: 6;
-	width: 115px;
-	height: 13px;
+	width: 109px;
+	height: 14px;
 	top: 255px;
-	left: 36px;
+	left: 32px;
 	position: absolute;
 }
 
@@ -106,7 +75,6 @@
 	top: 5px;
 	left: 158px;
 	position: absolute;
-	color: rgb(0, 0, 255);
 	text-align: right;
 }
 
@@ -117,7 +85,6 @@
 	top: 5px;
 	left: 5px;
 	position: absolute;
-	color: rgb(255, 0, 0);
 }
 
 #{id}richText1 {
@@ -136,10 +103,6 @@
 	top: 0px;
 	left: 415px;
 	position: absolute;
-	background-color: rgba(240, 240, 255, 0.898438);
-	border-left-color: rgb(229, 229, 229);
-	border-left-style: ridge;
-	border-left-width: 5px;
 }
 
 #{id}voidCorrespondanceCheck {
