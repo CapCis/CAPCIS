@@ -957,29 +957,36 @@ exports.buildQuery = function buildQuery(myObject)
 						clientvictim.ClientVictimName like '"+myObject.data1+"%' or \
 						clientvictim.ClientVictimPhone like '"+myObject.data1+"%' or \
 						clientvictim.ClientVictimAddress like '"+myObject.data1+"%' or \
-						clientvictim.ClientVictimNotes like '"+myObject.data1+"%'"
+						clientvictim.ClientVictimNotes like '"+myObject.data1+"%'";
 					return answer;
 				case 3 : answer = "select CIID, ClientFirstName, ClientMiddleName, ClientLastName, ClientNameSuffix, ClientSSN, ClientAliases, \
 						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m/%d/%Y') as ClientBirthdate, TotalPaid, TotalCharged, CurrentBalance from clientinformation \
-						where ClientSSN = '"+myObject.data1+"' or ClientBirthdate = '"+myObject.data1+"'"
+						where ClientSSN = '"+myObject.data1+"' or ClientBirthdate = '"+myObject.data1+"'";
 					return answer;
 				case 4 : answer = "SELECT CIID, ClientFirstName, ClientMiddleName, ClientLastName, \
 						ClientNameSuffix, ClientSSN, ClientAliases, \
-					ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m-%d-%Y') as ClientBirthdate, \
-					TotalPaid, TotalCharged, CurrentBalance \
-					FROM capcis.clientreferralinformation \
-					left join clientinformation on CIID = clientreferralinformation.ClientInformation_CIID \
-					left join attorneyinformation on FK_AttorneyInformationID = AttorneyInformationID \
-					left join judges on FK_JudgesID = JudgesID \
-					left join courtjurisdiction on FK_JurisdictionID = CourtJurisdictionID \
-					left join poinformation on FK_POInformationID = POInformationID \
-					left join pojurisdiction on POJurisdictionID = FK_pojurisdiction_POJurisdictionID \
-					left join prosecutors on ProsecutorsID = FK_ProsecutorsID \
-					left join assessorinformation on FK_AssessorInformationID = AssessorInformationID \
-					where AssessorName like '"+myObject.data1+"%' or AttorneyName like '"+myObject.data1+"%' or Judge like '"+myObject.data1+"%' \
-					or CourtJurisdiction like '"+myObject.data1+"%' or POName like '"+myObject.data1+"%' or JurisdictionName like '"+myObject.data1+"%' \
-					or Prosecutor like '"+myObject.data1+"%'"
-				
+						ClientNotes, Flagged, DATE_FORMAT(ClientBirthdate,'%m-%d-%Y') as ClientBirthdate, \
+						TotalPaid, TotalCharged, CurrentBalance \
+						FROM capcis.clientreferralinformation \
+						left join clientinformation on CIID = clientreferralinformation.ClientInformation_CIID \
+						left join attorneyinformation on FK_AttorneyInformationID = AttorneyInformationID \
+						left join judges on FK_JudgesID = JudgesID \
+						left join courtjurisdiction on FK_JurisdictionID = CourtJurisdictionID \
+						left join poinformation on FK_POInformationID = POInformationID \
+						left join pojurisdiction on POJurisdictionID = FK_pojurisdiction_POJurisdictionID \
+						left join prosecutors on ProsecutorsID = FK_ProsecutorsID \
+						left join assessorinformation on FK_AssessorInformationID = AssessorInformationID \
+						where AssessorName like '"+myObject.data1+"%' or AttorneyName like '"+myObject.data1+"%' or Judge like '"+myObject.data1+"%' \
+						or CourtJurisdiction like '"+myObject.data1+"%' or POName like '"+myObject.data1+"%' or JurisdictionName like '"+myObject.data1+"%' \
+						or Prosecutor like '"+myObject.data1+"%'";
+					return answer;
+				case 5 : answer = "SELECT ClientCallNotesID, CallNotes, \
+						DATE_FORMAT(clientcallnotes.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, \
+						fxuseraccounts.FullName, VoidNote \
+						FROM capcis.clientcallnotes LEFT JOIN capcis.fxuseraccounts \
+						on clientcallnotes.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+						where ClientInformation_CIID = '"+myObject.data1+"%'";
+					return answer;
 			}
 			return answer;
 		case 8:
