@@ -3,6 +3,24 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button3.waf-state-focus {
+}
+
+#button3.waf-state-active {
+}
+
+#button3.waf-state-hover {
+}
+
+#button3 {
+	z-index: 37;
+	width: 25px;
+	height: 22px;
+	top: 332px;
+	left: 965px;
+	position: absolute;
+}
+
 #richText9 {
 	z-index: 36;
 	width: 95px;
