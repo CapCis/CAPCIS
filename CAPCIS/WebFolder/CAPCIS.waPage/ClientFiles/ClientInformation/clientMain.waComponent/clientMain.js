@@ -23,6 +23,7 @@ function constructor (id) {
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
+		syncBlogs(sources.clientInfoMain0.CIID);
 		var myWidget = document.getElementById($comp.id +"_clientsearchcont");
 		myWidget.style.top = "750px";
 	};// @lock
@@ -41,8 +42,9 @@ function constructor (id) {
 				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:0,data1:mySplitStr[0],data2:mySplitStr[1]};	
 				rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-						clientInfoMain0 = result;
-						sources.clientInfoMain0.sync();
+		 				debugger;
+						syncClientInfoMain(result);
+						
 					},
 					'onError': function(error){
 						
@@ -55,8 +57,9 @@ function constructor (id) {
 				var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:1,data1:mySearchStr};	
 				rpcDSelects.getSelectAsync({
 		 			'onSuccess': function(result){
-						clientInfoMain0 = result;
-						sources.clientInfoMain0.sync();					
+		 				debugger;
+						syncClientInfoMain(result);
+								
 					},
 					'onError': function(error){
 						
@@ -72,8 +75,7 @@ function constructor (id) {
 			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:2,data1:mySearchStr};	
 			rpcDSelects.getSelectAsync({
 		 		'onSuccess': function(result){
-					clientInfoMain0 = result;
-					sources.clientInfoMain0.sync();					
+					syncClientInfoMain(result);					
 				},
 				'onError': function(error){
 						
@@ -87,8 +89,7 @@ function constructor (id) {
 			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:3,data1:mySearchStr};	
 			rpcDSelects.getSelectAsync({
 		 		'onSuccess': function(result){
-					clientInfoMain0 = result;
-					sources.clientInfoMain0.sync();					
+					syncClientInfoMain(result);				
 				},
 				'onError': function(error){
 						
@@ -102,8 +103,7 @@ function constructor (id) {
 			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:4,data1:mySearchStr};	
 			rpcDSelects.getSelectAsync({
 		 		'onSuccess': function(result){
-					clientInfoMain0 = result;
-					sources.clientInfoMain0.sync();					
+						syncClientInfoMain(result);				
 				},
 				'onError': function(error){
 						
@@ -122,6 +122,33 @@ function constructor (id) {
 		myWidget.style.top = "20px";
 	};// @lock
 
+
+
+
+	function syncClientInfoMain (request)
+	{
+		debugger;
+		clientInfoMain0 = request;
+		sources.clientInfoMain0.sync();
+		
+	}
+
+	function syncBlogs (request)
+	{
+		debugger;
+		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:5,data1:request};	
+			rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					clientInfoBlogs0 = result;
+					sources.clientInfoBlogs0.sync();					
+				},
+				'onError': function(error){
+						
+				},
+				'params': [myObject]
+			});
+	}
+		
 	// @region eventManager// @startlock
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_clientInformationSearchButton", "click", clientInformationSearchButton.click, "WAF");
