@@ -1032,31 +1032,6 @@ background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%,rgba(25
 	-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, transparent 0px 0px 0px 0px inset;
 	}
 
-.waf-theme.capcismetal .waf-image.waf-role-DefaultPictureView {
-	border-top-color: rgb(0, 27, 90);
-	border-top-style: double;
-	border-top-width: 3px;
-	border-left-color: rgb(0, 27, 90);
-	border-left-style: double;
-	border-left-width: 3px;
-	border-right-color: rgb(0, 27, 90);
-	border-right-style: double;
-	border-right-width: 3px;
-	border-bottom-color: rgb(0, 27, 90);
-	border-bottom-style: double;
-	border-bottom-width: 3px;
-	box-shadow: transparent 0px 0px 0px 0px;
-	-moz-box-shadow: transparent 0px 0px 0px 0px;
-	-webkit-box-shadow: transparent 0px 0px 0px 0px;
-		background-color: transparent;
-	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==');
-background-image: -webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(255,255,255,0)),color-stop(1, rgba(255,255,255,0)));
-background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
-background-image: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
-background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
-background-image: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
-background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
-}
 
 .waf-theme.capcismetal .waf-richText.waf-role-MultiLineTextRich {
 	background-color: rgb(255, 255, 255);
@@ -1069,4 +1044,32 @@ background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 }
+
+.waf-theme.capcismetal .waf-image.waf-role-DefaultPictureView {
+	border-top-color: rgb(0, 27, 90);
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-left-color: rgb(0, 27, 90);
+	border-left-style: solid;
+	border-left-width: 3px;
+	border-right-color: rgb(0, 27, 90);
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-bottom-color: rgb(0, 27, 90);
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	box-shadow: transparent 0px 0px 0px 0px;
+	-moz-box-shadow: transparent 0px 0px 0px 0px;
+	box-shadow: transparent 0px 0px 0px 0px;
+	-moz-box-shadow: transparent 0px 0px 0px 0px;
+	-webkit-box-shadow: transparent 0px 0px 0px 0px;
+		background-color: transparent;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9IndhZi1pZS1ncmFkaWVudCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHgyPSIxMDAlIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIwIiAvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN3YWYtaWUtZ3JhZGllbnQpIiAvPjwvc3ZnPg==');
+background-image: -webkit-gradient(linear,0% 0%, 100% 0%,color-stop(0, rgba(255,255,255,0)),color-stop(1, rgba(255,255,255,0)));
+background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
+background-image: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
+background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
+background-image: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
+background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
+	}
 
