@@ -65,6 +65,10 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/image",
+			"type": "widget"
+		},
+		{
 			"id": "capcismetal/package.json",
 			"path": "THEMES_CUSTOM",
 			"type": "theme"

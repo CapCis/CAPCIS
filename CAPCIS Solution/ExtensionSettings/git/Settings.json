@@ -1,7 +1,6 @@
 ﻿{
 	"serverType": "github",
-	"gitURL": "https://github.com/capcis",
-	"gitEmail": "derek@techdudes.com",
-	"gitEmail": "talevey@courtap.com",
+	"gitURL": "https://github.com/CapCis",
+	"gitEmail": "mlevey@courtap.com",
 	"gitIsPrivateRepository": "false"
 }

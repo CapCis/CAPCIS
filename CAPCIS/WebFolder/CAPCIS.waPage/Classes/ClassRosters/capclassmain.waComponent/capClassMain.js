@@ -56,6 +56,7 @@ function constructor (id) {
 		$$(getHtmlId('muReceiptDate')).setValue(today);
 	 	
 	// @region namespaceDeclaration// @startlock
+	var textField2 = {};	// @textField
 	var button7 = {};	// @button
 	var submitButton = {};	// @button
 	var textField60 = {};	// @textField
@@ -126,6 +127,12 @@ function constructor (id) {
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	textField2.click = function textField2_click (event)// @startlock
+	{// @endlock
+		var value = $$(getHtmlId("field35")).getValue();
+		$$(getHtmlId("amountPaidField")).setValue(value);
+	};// @lock
 
 	button7.click = function button7_click (event)// @startlock
 	{// @endlock
@@ -1496,6 +1503,7 @@ function constructor (id) {
 	}
 
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_textField2", "click", textField2.click, "WAF");
 	WAF.addListener(this.id + "_button7", "click", button7.click, "WAF");
 	WAF.addListener(this.id + "_submitButton", "click", submitButton.click, "WAF");
 	WAF.addListener(this.id + "_textField60", "keyup", textField60.keyup, "WAF");
