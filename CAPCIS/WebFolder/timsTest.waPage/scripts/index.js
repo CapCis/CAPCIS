@@ -38,7 +38,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 		
 		for (x = 0;x <= $$("matrix1").clones.length;x++)
 		{
-			var myImageBox = $$("matrix1").clones[x][0].children[4]
+			var myImageBox = $$("matrix1").clones[x][0].children[4];  //get the widget from the matrix row
 		}
 		
 		

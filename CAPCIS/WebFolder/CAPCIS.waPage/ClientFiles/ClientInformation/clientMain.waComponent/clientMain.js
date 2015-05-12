@@ -14,12 +14,18 @@ function constructor (id) {
 	
 	//$$('combobox1').setErrorMessage({message:"Use combo box to select search properties.",tooltip:true})
 	// @region namespaceDeclaration// @startlock
+	var blogVoidComboBox = {};	// @combobox
 	var dataGrid1 = {};	// @dataGrid
 	var clientInformationSearchButton = {};	// @button
 	var openSearchButton = {};	// @button
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
+
+	blogVoidComboBox.change = function blogVoidComboBox_change (event)// @startlock
+	{// @endlock
+		syncBlogs(sources.clientInfoMain0.CIID);
+	};// @lock
 
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
@@ -136,7 +142,11 @@ function constructor (id) {
 	function syncBlogs (request)
 	{
 		debugger;
-		var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:5,data1:request};	
+		blogFilterBy = $$($comp.id + "_blogVoidComboBox").getValue();
+		
+		if (blogFilterBy == "0")
+		{
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:6,data1:request,data2:blogFilterBy};	
 			rpcDSelects.getSelectAsync({
 		 		'onSuccess': function(result){
 					clientInfoBlogs0 = result;
@@ -147,9 +157,40 @@ function constructor (id) {
 				},
 				'params': [myObject]
 			});
+		}
+		if (blogFilterBy == "1")
+		{
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:6,data1:request,data2:blogFilterBy};	
+			rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					clientInfoBlogs0 = result;
+					sources.clientInfoBlogs0.sync();					
+				},
+				'onError': function(error){
+						
+				},
+				'params': [myObject]
+			});
+		}
+		if (blogFilterBy == "2")
+		{
+			var myObject = {token:userConfigObj.secToken ,id:userConfigObj.userID,major:7,minor:5,data1:request};	
+			rpcDSelects.getSelectAsync({
+		 		'onSuccess': function(result){
+					clientInfoBlogs0 = result;
+					sources.clientInfoBlogs0.sync();					
+				},
+				'onError': function(error){
+						
+				},
+				'params': [myObject]
+			});
+		}
+		
 	}
 		
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_blogVoidComboBox", "change", blogVoidComboBox.change, "WAF");
 	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	WAF.addListener(this.id + "_clientInformationSearchButton", "click", clientInformationSearchButton.click, "WAF");
 	WAF.addListener(this.id + "_openSearchButton", "click", openSearchButton.click, "WAF");

@@ -987,6 +987,14 @@ exports.buildQuery = function buildQuery(myObject)
 						on clientcallnotes.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
 						where ClientInformation_CIID = '"+myObject.data1+"%'";
 					return answer;
+				case 6 : answer = "SELECT ClientCallNotesID, CallNotes, \
+						DATE_FORMAT(clientcallnotes.CreatedDateTime, '%m/%d/%Y %h:%i:%s:%p') as CreatedDateTime, \
+						fxuseraccounts.FullName, VoidNote \
+						FROM capcis.clientcallnotes LEFT JOIN capcis.fxuseraccounts \
+						on clientcallnotes.FK_useraccounts_UserAccountsID = fxuseraccounts.FxUserAccountsID \
+						where ClientInformation_CIID = '"+myObject.data1+"%' and VoidNote = '"+myObject.data2+"'";
+					return answer;
+				
 			}
 			return answer;
 		case 8:
